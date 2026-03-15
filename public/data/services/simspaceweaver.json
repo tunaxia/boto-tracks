@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.16",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.31.47",
+    "t": "Edited the introductory text for the API reference."
+  },
+  {
+    "v": "1.31.43",
+    "t": "BucketName and ObjectKey are now required for the S3Location data type. BucketName is now required for the S3Destination data type."
+  },
+  {
+    "v": "1.29.153",
+    "t": "This release fixes using aws-us-gov ARNs in API calls and adds documentation for snapshot APIs."
+  },
+  {
+    "v": "1.29.123",
+    "t": "Added a new CreateSnapshot API. For the StartSimulation API, SchemaS3Location is now optional, added a new SnapshotS3Location parameter. For the DescribeSimulation API, added SNAPSHOT_IN_PROGRESS simulation state, deprecated SchemaError, added new fields: StartError and SnapshotS3Location."
+  },
+  {
+    "v": "1.29.19",
+    "t": "AWS SimSpace Weaver is a new service that helps customers build spatial simulations at new levels of scale - resulting in virtual worlds with millions of dynamic entities. See the AWS SimSpace Weaver developer guide for more details on how to get started. https://docs.aws.amazon.com/simspaceweaver"
+  }
+]

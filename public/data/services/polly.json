@@ -1,0 +1,186 @@
+[
+  {
+    "v": "1.42.66",
+    "t": "Added support for the new voices - Ambre (fr-FR), Beatrice (it-IT), Florian (fr-FR), Lennart (de-DE), Lorenzo (it-IT) and Tiffany (en-US). They are available as a Generative voices only."
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.13",
+    "t": "Added support for new output format - Opus."
+  },
+  {
+    "v": "1.37.21",
+    "t": "Added support for the new voice - Jihye (ko-KR). Jihye is available as a Neural voice only."
+  },
+  {
+    "v": "1.36.19",
+    "t": "Added support for the new voice - Jasmine (en-SG). Jasmine is available as a Neural voice only."
+  },
+  {
+    "v": "1.35.7",
+    "t": "Amazon Polly adds 2 new voices: Jitka (cs-CZ) and Sabrina (de-CH)."
+  },
+  {
+    "v": "1.34.129",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.101",
+    "t": "Add new engine - generative - that builds the most expressive conversational voices."
+  },
+  {
+    "v": "1.34.43",
+    "t": "Amazon Polly adds 1 new voice - Burcu (tr-TR)"
+  },
+  {
+    "v": "1.32.2",
+    "t": "Add new engine - long-form - dedicated for longer content, such as news articles, training materials, or marketing videos."
+  },
+  {
+    "v": "1.31.79",
+    "t": "Amazon Polly adds new US English voices - Danielle and Gregory. Danielle and Gregory are available as Neural voices only."
+  },
+  {
+    "v": "1.31.33",
+    "t": "Amazon Polly adds 1 new voice - Zayd (ar-AE)"
+  },
+  {
+    "v": "1.31.17",
+    "t": "Amazon Polly adds new French Belgian voice - Isabelle. Isabelle is available as Neural voice only."
+  },
+  {
+    "v": "1.31.12",
+    "t": "Amazon Polly adds 1 new voice - Lisa (nl-BE)"
+  },
+  {
+    "v": "1.29.143",
+    "t": "Amazon Polly adds 2 new voices - Sofie (da-DK) and Niamh (en-IE)"
+  },
+  {
+    "v": "1.29.142",
+    "t": "Remove `Content-Type` header from ``synthesize_speech`` URL presigning."
+  },
+  {
+    "v": "1.29.69",
+    "t": "Amazon Polly adds two new neural Japanese voices - Kazuha, Tomoko"
+  },
+  {
+    "v": "1.29.61",
+    "t": "Amazon Polly adds two new neural American English voices - Ruth, Stephen"
+  },
+  {
+    "v": "1.29.57",
+    "t": "Add 5 new neural voices - Sergio (es-ES), Andres (es-MX), Remi (fr-FR), Adriano (it-IT) and Thiago (pt-BR)."
+  },
+  {
+    "v": "1.29.22",
+    "t": "Add language code for Finnish (fi-FI)"
+  },
+  {
+    "v": "1.29.12",
+    "t": "Add two new neural voices - Ola (pl-PL) and Hala (ar-AE)."
+  },
+  {
+    "v": "1.29.5",
+    "t": "Amazon Polly adds new voices: Elin (sv-SE), Ida (nb-NO), Laura (nl-NL) and Suvi (fi-FI). They are available as neural voices only."
+  },
+  {
+    "v": "1.27.83",
+    "t": "Added support for the new Cantonese voice - Hiujin. Hiujin is available as a Neural voice only."
+  },
+  {
+    "v": "1.27.39",
+    "t": "Amazon Polly adds new English and Hindi voice - Kajal. Kajal is available as Neural voice only."
+  },
+  {
+    "v": "1.27.19",
+    "t": "Add 4 new neural voices - Pedro (es-US), Liam (fr-CA), Daniel (de-DE) and Arthur (en-GB)."
+  },
+  {
+    "v": "1.24.43",
+    "t": "Amazon Polly adds new Austrian German voice - Hannah. Hannah is available as Neural voice only."
+  },
+  {
+    "v": "1.24.24",
+    "t": "Amazon Polly adds new Catalan voice - Arlet. Arlet is available as Neural voice only."
+  },
+  {
+    "v": "1.21.33",
+    "t": "Amazon Polly adds new South African English voice - Ayanda. Ayanda is available as Neural voice only."
+  },
+  {
+    "v": "1.21.28",
+    "t": "Amazon Polly adds new New Zealand English voice - Aria. Aria is available as Neural voice only."
+  },
+  {
+    "v": "1.20.85",
+    "t": "Amazon Polly adds new Canadian French voice - Gabrielle. Gabrielle is available as Neural voice only."
+  },
+  {
+    "v": "1.19.17",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.17.4",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.13.1",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.12.199",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.12.132",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.12.43",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.12.4",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.10.69",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.10.59",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.10.33",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.7.45",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.7.28",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.5.51",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.5.41",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.5.1",
+    "t": "Update polly client to latest version"
+  },
+  {
+    "v": "1.4.80",
+    "t": "Update polly client to latest version"
+  }
+]

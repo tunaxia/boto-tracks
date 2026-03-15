@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.34.146",
+    "t": "The mobile client has been removed following the deprecation of the service."
+  },
+  {
+    "v": "1.7.3",
+    "t": "Update mobile client to latest version"
+  }
+]

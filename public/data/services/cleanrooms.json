@@ -1,0 +1,122 @@
+[
+  {
+    "v": "1.42.52",
+    "t": "This release adds support for federated catalogs in Athena-sourced configured tables."
+  },
+  {
+    "v": "1.42.29",
+    "t": "This release adds support for parameters in PySpark analysis templates."
+  },
+  {
+    "v": "1.42.20",
+    "t": "Added support for publishing detailed metrics to CloudWatch for operational monitoring of collaborations, including query performance and resource utilization."
+  },
+  {
+    "v": "1.42.13",
+    "t": "Adding support for collaboration change requests requiring an approval workflow. Adding support for change requests that grant or revoke results receiver ability and modifying auto approved change types in an existing collaboration."
+  },
+  {
+    "v": "1.41.6",
+    "t": "AWS Clean Rooms now supports privacy-enhancing synthetic dataset generation for custom ML training."
+  },
+  {
+    "v": "1.40.63",
+    "t": "Added support for advanced Spark configurations to optimize SQL performance"
+  },
+  {
+    "v": "1.40.45",
+    "t": "Added support for reading data sources across regions, and results delivery to allowedlisted regions."
+  },
+  {
+    "v": "1.40.43",
+    "t": "This release introduces data access budgets to control how many times a table can be used for queries and jobs in a collaboration."
+  },
+  {
+    "v": "1.40.37",
+    "t": "Added support for running incremental ID mapping for rule-based workflows."
+  },
+  {
+    "v": "1.40.24",
+    "t": "Add support for configurable compute sizes for PySpark jobs."
+  },
+  {
+    "v": "1.40.23",
+    "t": "Added support for adding new data provider members to an existing collaboration."
+  },
+  {
+    "v": "1.40.13",
+    "t": "Support error message configuration for analysis templates"
+  },
+  {
+    "v": "1.39.16",
+    "t": "This feature provides the ability to update the table reference and allowed columns on an existing configured table."
+  },
+  {
+    "v": "1.38.6",
+    "t": "This release adds support for ProtectedQuery results to be delivered to more than one collaboration member via the new distribute output configuration in StartProtectedQuery."
+  },
+  {
+    "v": "1.37.25",
+    "t": "This release adds support for updating the analytics engine of a collaboration."
+  },
+  {
+    "v": "1.37.15",
+    "t": "This release adds support for PySpark jobs. Customers can now analyze data by running jobs using approved PySpark analysis templates."
+  },
+  {
+    "v": "1.35.72",
+    "t": "This release allows customers and their partners to easily collaborate with data stored in Snowflake and Amazon Athena, without having to move or share their underlying data among collaborators."
+  },
+  {
+    "v": "1.35.56",
+    "t": "This release introduces support for Custom Models in AWS Clean Rooms ML."
+  },
+  {
+    "v": "1.35.51",
+    "t": "This release adds the option for customers to configure analytics engine when creating a collaboration, and introduces the new SPARK analytics engine type in addition to maintaining the legacy CLEAN_ROOMS_SQL engine type."
+  },
+  {
+    "v": "1.34.148",
+    "t": "Three enhancements to the AWS Clean Rooms: Disallowed Output Columns, Flexible Result Receivers, SQL as a Seed"
+  },
+  {
+    "v": "1.34.147",
+    "t": "This release adds AWS Entity Resolution integration to associate ID namespaces & ID mapping workflow resources as part of ID namespace association and  ID mapping table  in AWS Clean Rooms. It also introduces a new ID_MAPPING_TABLE analysis rule to manage the protection on ID mapping table."
+  },
+  {
+    "v": "1.34.82",
+    "t": "AWS Clean Rooms Differential Privacy is now fully available. Differential privacy protects against user-identification attempts."
+  },
+  {
+    "v": "1.34.78",
+    "t": "Feature: New schemaStatusDetails field to the existing Schema object that displays a status on Schema API responses to show whether a schema is queryable or not. New BatchGetSchemaAnalysisRule API to retrieve multiple schemaAnalysisRules using a single API call."
+  },
+  {
+    "v": "1.33.3",
+    "t": "AWS Clean Rooms now provides differential privacy to protect against user-identification attempts and machine learning modeling to allow two parties to identify similar users in their data."
+  },
+  {
+    "v": "1.32.0",
+    "t": "This feature provides the ability for the collaboration creator to configure either the member who can run queries or a different member in the collaboration to be billed for query compute costs."
+  },
+  {
+    "v": "1.31.38",
+    "t": "This release decouples member abilities in a collaboration. With this change, the member who can run queries no longer needs to be the same as the member who can receive results."
+  },
+  {
+    "v": "1.31.16",
+    "t": "This release introduces custom SQL queries - an expanded set of SQL you can run. This release adds analysis templates, a new resource for storing pre-defined custom SQL queries ahead of time. This release also adds the Custom analysis rule, which lets you approve analysis templates for querying."
+  },
+  {
+    "v": "1.29.164",
+    "t": "This release adds support for the OR operator in RSQL join match conditions and the ability to control which operators (AND, OR) are allowed in a join match condition."
+  },
+  {
+    "v": "1.29.96",
+    "t": "GA Release of AWS Clean Rooms, Added Tagging Functionality"
+  },
+  {
+    "v": "1.29.49",
+    "t": "Initial release of AWS Clean Rooms"
+  }
+]

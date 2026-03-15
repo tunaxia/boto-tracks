@@ -1,0 +1,82 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.10",
+    "t": "Added support for cross account through Id parameter overloading with ARN and allow owner account for some APIs instead of ARN"
+  },
+  {
+    "v": "1.35.81",
+    "t": "AWS Cloud Map now supports service-level attributes, allowing you to associate custom metadata directly with services. These attributes can be retrieved, updated, and deleted using the new GetServiceAttributes, UpdateServiceAttributes, and DeleteServiceAttributes API calls."
+  },
+  {
+    "v": "1.34.89",
+    "t": "This release adds examples to several Cloud Map actions."
+  },
+  {
+    "v": "1.31.52",
+    "t": "Adds a new DiscoverInstancesRevision API and also adds InstanceRevision field to the DiscoverInstances API response."
+  },
+  {
+    "v": "1.29.98",
+    "t": "Reverted the throttling exception RequestLimitExceeded for AWS Cloud Map APIs introduced in SDK version 1.12.424 2023-03-09 to previous exception specified in the ErrorCode."
+  },
+  {
+    "v": "1.29.88",
+    "t": "Updated all AWS Cloud Map APIs to provide consistent throttling exception (RequestLimitExceeded)"
+  },
+  {
+    "v": "1.27.93",
+    "t": "Updated the ListNamespaces API to support the NAME and HTTP_NAME filters, and the BEGINS_WITH filter condition."
+  },
+  {
+    "v": "1.20.103",
+    "t": "AWS Cloud Map now allows configuring the TTL of the SOA record for a hosted zone to control the negative caching for new services."
+  },
+  {
+    "v": "1.20.85",
+    "t": "Bugfixes - The DiscoverInstances API operation now provides an option to return all instances for health-checked services when there are no healthy instances available."
+  },
+  {
+    "v": "1.20.68",
+    "t": "Bugfix: Improved input validation for RegisterInstance action, InstanceId field"
+  },
+  {
+    "v": "1.20.21",
+    "t": "Update servicediscovery client to latest version"
+  },
+  {
+    "v": "1.18.11",
+    "t": "Update servicediscovery client to latest version"
+  },
+  {
+    "v": "1.17.31",
+    "t": "Update servicediscovery client to latest version"
+  },
+  {
+    "v": "1.16.25",
+    "t": "Update servicediscovery client to latest version"
+  },
+  {
+    "v": "1.15.49",
+    "t": "Update servicediscovery client to latest version"
+  },
+  {
+    "v": "1.12.55",
+    "t": "Update servicediscovery client to latest version"
+  },
+  {
+    "v": "1.9.8",
+    "t": "Update servicediscovery client to latest version"
+  },
+  {
+    "v": "1.8.38",
+    "t": "Update servicediscovery client to latest version"
+  },
+  {
+    "v": "1.8.8",
+    "t": "Update servicediscovery client to latest version"
+  }
+]

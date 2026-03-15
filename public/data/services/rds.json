@@ -1,0 +1,1066 @@
+[
+  {
+    "v": "1.42.51",
+    "t": "Adds support for the StorageEncryptionType field to specify encryption type for DB clusters, DB instances, snapshots, automated backups, and global clusters."
+  },
+  {
+    "v": "1.42.46",
+    "t": "This release adds backup configuration for RDS and Aurora restores, letting customers set backup retention period and preferred backup window during restore. It also enables viewing backup settings when describing snapshots or automated backups for instances and clusters."
+  },
+  {
+    "v": "1.42.28",
+    "t": "no feature changes. model migrated to Smithy"
+  },
+  {
+    "v": "1.42.5",
+    "t": "Adding support for tagging RDS Instance/Cluster Automated Backups"
+  },
+  {
+    "v": "1.42.1",
+    "t": "RDS Oracle and SQL Server: Add support for adding, modifying, and removing additional storage volumes, offering up to 256TiB storage; RDS SQL Server: Support Developer Edition via custom engine versions for development and testing purposes; M7i/R7i instances with Optimize CPU for cost savings."
+  },
+  {
+    "v": "1.41.2",
+    "t": "Add support for Upgrade Rollout Order"
+  },
+  {
+    "v": "1.41.1",
+    "t": "Add support for VPC Encryption Controls."
+  },
+  {
+    "v": "1.40.73",
+    "t": "Updated endpoint and service metadata"
+  },
+  {
+    "v": "1.40.50",
+    "t": "Updated the text in the Important section of the ModifyDBClusterParameterGroup page."
+  },
+  {
+    "v": "1.40.46",
+    "t": "Documentation updates to the CreateDBClusterMessage$PubliclyAccessible and CreateDBInstanceMessage$PubliclyAccessible properties."
+  },
+  {
+    "v": "1.40.42",
+    "t": "Enhanced RDS error handling: Added DBProxyEndpointNotFoundFault, DBShardGroupNotFoundFault, KMSKeyNotAccessibleFault for snapshots/restores/backups, NetworkTypeNotSupported, StorageTypeNotSupportedFault for restores, and granular state validation faults. Changed DBInstanceNotReadyFault to HTTP 400."
+  },
+  {
+    "v": "1.40.29",
+    "t": "Adds support for end-to-end IAM authentication in RDS Proxy for MySQL, MariaDB, and PostgreSQL engines."
+  },
+  {
+    "v": "1.40.24",
+    "t": "Added new EndpointNetworkType and TargetConnectionNetworkType fields in Proxy APIs to support IPv6"
+  },
+  {
+    "v": "1.40.23",
+    "t": "This release adds support for MasterUserAuthenticationType parameter on CreateDBInstance, ModifyDBInstance, CreateDBCluster, and ModifyDBCluster operations."
+  },
+  {
+    "v": "1.40.20",
+    "t": "Added RDS HTTP Endpoint feature support flag to DescribeOrderableDBInstanceOptions API"
+  },
+  {
+    "v": "1.40.16",
+    "t": "Updates Amazon RDS documentation for Db2 read-only replicas."
+  },
+  {
+    "v": "1.40.3",
+    "t": "Adds a new Aurora Serverless v2 attribute to the DBCluster resource to expose the platform version. Also updates the attribute to be part of both the engine version and platform version descriptions."
+  },
+  {
+    "v": "1.39.1",
+    "t": "Amazon RDS Custom for Oracle now supports multi-AZ database instances."
+  },
+  {
+    "v": "1.38.46",
+    "t": "StartDBCluster and StopDBCluster can now throw InvalidDBShardGroupStateFault."
+  },
+  {
+    "v": "1.38.43",
+    "t": "Adding support for RDS on Dedicated Local Zones, including local backup target, snapshot availability zone and snapshot target"
+  },
+  {
+    "v": "1.38.35",
+    "t": "Updates Amazon RDS documentation for Amazon RDS for Db2 cross-Region replicas in standby mode."
+  },
+  {
+    "v": "1.38.32",
+    "t": "Include Global Cluster Identifier in DBCluster if the DBCluster is a Global Cluster Member."
+  },
+  {
+    "v": "1.38.20",
+    "t": "This release introduces the new DescribeDBMajorEngineVersions API for describing the properties of specific major versions of database engines."
+  },
+  {
+    "v": "1.38.2",
+    "t": "This Amazon RDS release adds support for managed master user passwords for Oracle CDBs."
+  },
+  {
+    "v": "1.37.21",
+    "t": "Add note about the Availability Zone where RDS restores the DB cluster for the RestoreDBClusterToPointInTime operation."
+  },
+  {
+    "v": "1.37.6",
+    "t": "Note support for Database Insights for Amazon RDS."
+  },
+  {
+    "v": "1.36.25",
+    "t": "CloudWatch Database Insights now supports Amazon RDS."
+  },
+  {
+    "v": "1.36.14",
+    "t": "Documentation updates to clarify the description for the parameter AllocatedStorage for the DB cluster data type, the description for the parameter DeleteAutomatedBackups for the DeleteDBCluster API operation, and removing an outdated note for the CreateDBParameterGroup API operation."
+  },
+  {
+    "v": "1.36.11",
+    "t": "Updates to Aurora MySQL and Aurora PostgreSQL API pages with instance log type in the create and modify DB Cluster."
+  },
+  {
+    "v": "1.35.95",
+    "t": "Updates Amazon RDS documentation to clarify the RestoreDBClusterToPointInTime description."
+  },
+  {
+    "v": "1.35.89",
+    "t": "Updates Amazon RDS documentation to correct various descriptions."
+  },
+  {
+    "v": "1.35.82",
+    "t": "This release adds support for the \"MYSQL_CACHING_SHA2_PASSWORD\" enum value for RDS Proxy ClientPasswordAuthType."
+  },
+  {
+    "v": "1.35.72",
+    "t": "Amazon RDS supports CloudWatch Database Insights. You can use the SDK to create, modify, and describe the DatabaseInsightsMode for your DB instances and clusters."
+  },
+  {
+    "v": "1.35.66",
+    "t": "This release adds support for scale storage on the DB instance using a Blue/Green Deployment."
+  },
+  {
+    "v": "1.35.64",
+    "t": "Add support for the automatic pause/resume feature of Aurora Serverless v2."
+  },
+  {
+    "v": "1.35.59",
+    "t": "Updates Amazon RDS documentation for Amazon RDS Extended Support for Amazon Aurora MySQL."
+  },
+  {
+    "v": "1.35.50",
+    "t": "This release adds support for Enhanced Monitoring and Performance Insights when restoring Aurora Limitless Database DB clusters. It also adds support for the os-upgrade pending maintenance action."
+  },
+  {
+    "v": "1.35.46",
+    "t": "Global clusters now expose the Endpoint attribute as one of its fields. It is a Read/Write endpoint for the global cluster which resolves to the Global Cluster writer instance."
+  },
+  {
+    "v": "1.35.43",
+    "t": "Updates Amazon RDS documentation for TAZ IAM support"
+  },
+  {
+    "v": "1.35.31",
+    "t": "This release provides additional support for enabling Aurora Limitless Database DB clusters."
+  },
+  {
+    "v": "1.35.25",
+    "t": "Support ComputeRedundancy parameter in ModifyDBShardGroup API. Add DBShardGroupArn in DBShardGroup API response. Remove InvalidMaxAcuFault from CreateDBShardGroup and ModifyDBShardGroup API. Both API will throw InvalidParameterValueException for invalid ACU configuration."
+  },
+  {
+    "v": "1.35.22",
+    "t": "Updates Amazon RDS documentation with information upgrading snapshots with unsupported engine versions for RDS for MySQL and RDS for PostgreSQL."
+  },
+  {
+    "v": "1.35.21",
+    "t": "Updates Amazon RDS documentation with configuration information about the BYOL model for RDS for Db2."
+  },
+  {
+    "v": "1.35.20",
+    "t": "Launching Global Cluster tagging."
+  },
+  {
+    "v": "1.35.18",
+    "t": "This release adds support for the os-upgrade pending maintenance action for Amazon Aurora DB clusters."
+  },
+  {
+    "v": "1.34.152",
+    "t": "This release adds support for specifying optional MinACU parameter in CreateDBShardGroup and ModifyDBShardGroup API. DBShardGroup response will contain MinACU if specified."
+  },
+  {
+    "v": "1.34.145",
+    "t": "Updates Amazon RDS documentation to specify an eventual consistency model for DescribePendingMaintenanceActions."
+  },
+  {
+    "v": "1.34.135",
+    "t": "Updates Amazon RDS documentation for TAZ export to S3."
+  },
+  {
+    "v": "1.34.116",
+    "t": "Updates Amazon RDS documentation for Aurora Postgres DBname."
+  },
+  {
+    "v": "1.34.110",
+    "t": "Updates Amazon RDS documentation for Db2 license through AWS Marketplace."
+  },
+  {
+    "v": "1.34.109",
+    "t": "This release adds support for EngineLifecycleSupport on DBInstances, DBClusters, and GlobalClusters."
+  },
+  {
+    "v": "1.34.93",
+    "t": "SupportsLimitlessDatabase field added to describe-db-engine-versions to indicate whether the DB engine version supports Aurora Limitless Database."
+  },
+  {
+    "v": "1.34.92",
+    "t": "Updates Amazon RDS documentation for setting local time zones for RDS for Db2 DB instances."
+  },
+  {
+    "v": "1.34.90",
+    "t": "Fix the example ARN for ModifyActivityStreamRequest"
+  },
+  {
+    "v": "1.34.83",
+    "t": "Updates Amazon RDS documentation for Standard Edition 2 support in RDS Custom for Oracle."
+  },
+  {
+    "v": "1.34.81",
+    "t": "This release adds support for specifying the CA certificate to use for the new db instance when restoring from db snapshot, restoring from s3, restoring to point in time, and creating a db instance read replica."
+  },
+  {
+    "v": "1.34.65",
+    "t": "This release launches the ModifyIntegration API and support for data filtering for zero-ETL Integrations."
+  },
+  {
+    "v": "1.34.63",
+    "t": "Updates Amazon RDS documentation for EBCDIC collation for RDS for Db2."
+  },
+  {
+    "v": "1.34.58",
+    "t": "Updates Amazon RDS documentation for io2 storage for Multi-AZ DB clusters"
+  },
+  {
+    "v": "1.34.57",
+    "t": "Updated the input of CreateDBCluster and ModifyDBCluster to support setting CA certificates. Updated the output of DescribeDBCluster to show current CA certificate setting value."
+  },
+  {
+    "v": "1.34.50",
+    "t": "This release adds support for gp3 data volumes for Multi-AZ DB Clusters."
+  },
+  {
+    "v": "1.34.49",
+    "t": "Add pattern and length based validations for DBShardGroupIdentifier"
+  },
+  {
+    "v": "1.34.44",
+    "t": "Doc only update for a valid option in DB parameter group"
+  },
+  {
+    "v": "1.34.30",
+    "t": "Introduced support for the InsufficientDBInstanceCapacityFault error in the RDS RestoreDBClusterFromSnapshot and RestoreDBClusterToPointInTime API methods. This provides enhanced error handling, ensuring a more robust experience."
+  },
+  {
+    "v": "1.34.27",
+    "t": "This release adds support for Aurora Limitless Database."
+  },
+  {
+    "v": "1.34.24",
+    "t": "Introduced support for the InsufficientDBInstanceCapacityFault error in the RDS CreateDBCluster API method. This provides enhanced error handling, ensuring a more robust experience when creating database clusters with insufficient instance capacity."
+  },
+  {
+    "v": "1.34.6",
+    "t": "This release adds support for using RDS Data API with Aurora PostgreSQL Serverless v2 and provisioned DB clusters."
+  },
+  {
+    "v": "1.34.4",
+    "t": "RDS - The release adds two new APIs: DescribeDBRecommendations and ModifyDBRecommendation"
+  },
+  {
+    "v": "1.34.2",
+    "t": "Updates Amazon RDS documentation by adding code examples"
+  },
+  {
+    "v": "1.33.0",
+    "t": "Updates Amazon RDS documentation for support for RDS for Db2."
+  },
+  {
+    "v": "1.32.3",
+    "t": "This release adds support for option groups and replica enhancements to Amazon RDS Custom."
+  },
+  {
+    "v": "1.32.1",
+    "t": "Updates Amazon RDS documentation for support for upgrading RDS for MySQL snapshots from version 5.7 to version 8.0."
+  },
+  {
+    "v": "1.31.84",
+    "t": "Updates Amazon RDS documentation for zero-ETL integrations."
+  },
+  {
+    "v": "1.31.81",
+    "t": "This Amazon RDS release adds support for patching the OS of an RDS Custom for Oracle DB instance. You can now upgrade the database or operating system using the modify-db-instance command."
+  },
+  {
+    "v": "1.31.80",
+    "t": "This Amazon RDS release adds support for the multi-tenant configuration. In this configuration, an RDS DB instance can contain multiple tenant databases. In RDS for Oracle, a tenant database is a pluggable database (PDB)."
+  },
+  {
+    "v": "1.31.76",
+    "t": "This release adds support for customized networking resources to Amazon RDS Custom."
+  },
+  {
+    "v": "1.31.74",
+    "t": "This release launches the CreateIntegration, DeleteIntegration, and DescribeIntegrations APIs to manage zero-ETL Integrations."
+  },
+  {
+    "v": "1.31.66",
+    "t": "This release adds support for upgrading the storage file system configuration on the DB instance using a blue/green deployment or a read replica."
+  },
+  {
+    "v": "1.31.63",
+    "t": "This release adds support for adding a dedicated log volume to open-source RDS instances."
+  },
+  {
+    "v": "1.31.61",
+    "t": "Updates Amazon RDS documentation for corrections and minor improvements."
+  },
+  {
+    "v": "1.31.58",
+    "t": "Adds DefaultCertificateForNewLaunches field in the DescribeCertificates API response."
+  },
+  {
+    "v": "1.31.41",
+    "t": "Add support for feature integration with AWS Backup."
+  },
+  {
+    "v": "1.31.34",
+    "t": "This release updates the supported versions for Percona XtraBackup in Aurora MySQL."
+  },
+  {
+    "v": "1.31.32",
+    "t": "Adding parameters to CreateCustomDbEngineVersion reserved for future use."
+  },
+  {
+    "v": "1.31.31",
+    "t": "Adding support for RDS Aurora Global Database Unplanned Failover"
+  },
+  {
+    "v": "1.31.17",
+    "t": "Added support for deleted clusters PiTR."
+  },
+  {
+    "v": "1.31.16",
+    "t": "This release adds support for Aurora MySQL local write forwarding, which allows for forwarding of write operations from reader DB instances to the writer DB instance."
+  },
+  {
+    "v": "1.31.11",
+    "t": "This release adds support for monitoring storage optimization progress on the DescribeDBInstances API."
+  },
+  {
+    "v": "1.31.9",
+    "t": "Adds support for the DBSystemID parameter of CreateDBInstance to RDS Custom for Oracle."
+  },
+  {
+    "v": "1.31.0",
+    "t": "Updates Amazon RDS documentation for creating DB instances and creating Aurora global clusters."
+  },
+  {
+    "v": "1.29.163",
+    "t": "Amazon Relational Database Service (RDS) now supports joining a RDS for SQL Server instance to a self-managed Active Directory."
+  },
+  {
+    "v": "1.29.160",
+    "t": "Documentation improvements for create, describe, and modify DB clusters and DB instances."
+  },
+  {
+    "v": "1.29.144",
+    "t": "This release adds support for changing the engine for Oracle using the ModifyDbInstance API"
+  },
+  {
+    "v": "1.29.136",
+    "t": "RDS documentation update for the EngineVersion parameter of ModifyDBSnapshot"
+  },
+  {
+    "v": "1.29.132",
+    "t": "Amazon Relational Database Service (RDS) updates for the new Aurora I/O-Optimized storage type for Amazon Aurora DB clusters"
+  },
+  {
+    "v": "1.29.116",
+    "t": "Adds support for the ImageId parameter of CreateCustomDBEngineVersion to RDS Custom for Oracle"
+  },
+  {
+    "v": "1.29.114",
+    "t": "This release adds support of modifying the engine mode of database clusters."
+  },
+  {
+    "v": "1.29.108",
+    "t": "Adds and updates the SDK examples"
+  },
+  {
+    "v": "1.29.102",
+    "t": "Add support for creating a read replica DB instance from a Multi-AZ DB cluster."
+  },
+  {
+    "v": "1.29.99",
+    "t": "Added error code CreateCustomDBEngineVersionFault for when the create custom engine version for Custom engines fails."
+  },
+  {
+    "v": "1.29.72",
+    "t": "Database Activity Stream support for RDS for SQL Server."
+  },
+  {
+    "v": "1.29.47",
+    "t": "This release adds support for configuring allocated storage on the CreateDBInstanceReadReplica, RestoreDBInstanceFromDBSnapshot, and RestoreDBInstanceToPointInTime APIs."
+  },
+  {
+    "v": "1.29.44",
+    "t": "This release adds support for specifying which certificate authority (CA) to use for a DB instance's server certificate during DB instance creation, as well as other CA enhancements."
+  },
+  {
+    "v": "1.29.39",
+    "t": "This release adds support for Custom Engine Version (CEV) on RDS Custom SQL Server."
+  },
+  {
+    "v": "1.29.36",
+    "t": "Add support for managing master user password in AWS Secrets Manager for the DBInstance and DBCluster."
+  },
+  {
+    "v": "1.29.33",
+    "t": "Add support for --enable-customer-owned-ip to RDS create-db-instance-read-replica API for RDS on Outposts."
+  },
+  {
+    "v": "1.29.29",
+    "t": "This deployment adds ClientPasswordAuthType field to the Auth structure of the DBProxy."
+  },
+  {
+    "v": "1.29.28",
+    "t": "Update the RDS API model to support copying option groups during the CopyDBSnapshot operation"
+  },
+  {
+    "v": "1.29.24",
+    "t": "This release adds the BlueGreenDeploymentNotFoundFault to the AddTagsToResource, ListTagsForResource, and RemoveTagsFromResource operations."
+  },
+  {
+    "v": "1.29.23",
+    "t": "This release adds the InvalidDBInstanceStateFault to the RestoreDBClusterFromSnapshot operation."
+  },
+  {
+    "v": "1.29.17",
+    "t": "This release enables new Aurora and RDS feature called Blue/Green Deployments that makes updates to databases safer, simpler and faster."
+  },
+  {
+    "v": "1.29.11",
+    "t": "This release adds support for container databases (CDBs) to Amazon RDS Custom for Oracle. A CDB contains one PDB at creation. You can add more PDBs using Oracle SQL. You can also customize your database installation by setting the Oracle base, Oracle home, and the OS user name and group."
+  },
+  {
+    "v": "1.29.9",
+    "t": "This release adds support for restoring an RDS Multi-AZ DB cluster snapshot to a Single-AZ deployment or a Multi-AZ DB instance deployment."
+  },
+  {
+    "v": "1.29.0",
+    "t": "Relational Database Service - This release adds support for configuring Storage Throughput on RDS database instances."
+  },
+  {
+    "v": "1.28.1",
+    "t": "Relational Database Service - This release adds support for exporting DB cluster data to Amazon S3."
+  },
+  {
+    "v": "1.27.76",
+    "t": "This release adds support for Amazon RDS Proxy with SQL Server compatibility."
+  },
+  {
+    "v": "1.27.61",
+    "t": "Removes support for RDS Custom from DBInstanceClass in ModifyDBInstance"
+  },
+  {
+    "v": "1.27.58",
+    "t": "RDS for Oracle supports Oracle Data Guard switchover and read replica backups."
+  },
+  {
+    "v": "1.27.54",
+    "t": "Adds support for Internet Protocol Version 6 (IPv6) for RDS Aurora database clusters."
+  },
+  {
+    "v": "1.27.51",
+    "t": "Adds support for RDS Custom to DBInstanceClass in ModifyDBInstance"
+  },
+  {
+    "v": "1.27.38",
+    "t": "Adds support for using RDS Proxies with RDS for MariaDB databases."
+  },
+  {
+    "v": "1.27.36",
+    "t": "This release adds the \"ModifyActivityStream\" API with support for audit policy state locking and unlocking."
+  },
+  {
+    "v": "1.27.35",
+    "t": "Adds support for creating an RDS Proxy for an RDS for MariaDB database."
+  },
+  {
+    "v": "1.27.23",
+    "t": "Adds waiters support for DBCluster."
+  },
+  {
+    "v": "1.27.22",
+    "t": "Adds support for additional retention periods to Performance Insights."
+  },
+  {
+    "v": "1.25.9",
+    "t": "Various documentation improvements."
+  },
+  {
+    "v": "1.25.4",
+    "t": "Feature - Adds support for Internet Protocol Version 6 (IPv6) on RDS database instances."
+  },
+  {
+    "v": "1.24.44",
+    "t": "Added a new cluster-level attribute to set the capacity range for Aurora Serverless v2 instances."
+  },
+  {
+    "v": "1.24.42",
+    "t": "Removes Amazon RDS on VMware with the deletion of APIs related to Custom Availability Zones and Media installation"
+  },
+  {
+    "v": "1.24.20",
+    "t": "Various documentation improvements"
+  },
+  {
+    "v": "1.24.10",
+    "t": "Documentation updates for Multi-AZ DB clusters."
+  },
+  {
+    "v": "1.24.0",
+    "t": "Adds support for determining which Aurora PostgreSQL versions support Babelfish."
+  },
+  {
+    "v": "1.23.49",
+    "t": "updates for RDS Custom for Oracle 12.1 support"
+  },
+  {
+    "v": "1.23.33",
+    "t": "This release adds the db-proxy event type to support subscribing to RDS Proxy events."
+  },
+  {
+    "v": "1.23.27",
+    "t": "Multiple doc-only updates for Relational Database Service (RDS)"
+  },
+  {
+    "v": "1.23.12",
+    "t": "Adds support for Multi-AZ DB clusters for RDS for MySQL and RDS for PostgreSQL."
+  },
+  {
+    "v": "1.23.11",
+    "t": "Adds local backup support to Amazon RDS on AWS Outposts."
+  },
+  {
+    "v": "1.22.3",
+    "t": "This release adds support for Amazon RDS Custom, which is a new RDS management type that gives you full access to your database and operating system. For more information, see https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-custom.html"
+  },
+  {
+    "v": "1.21.40",
+    "t": "This release adds support for providing a custom timeout value for finding a scaling point during autoscaling in Aurora Serverless v1."
+  },
+  {
+    "v": "1.21.14",
+    "t": "This release adds AutomaticRestartTime to the DescribeDBInstances and DescribeDBClusters operations. AutomaticRestartTime indicates the time when a stopped DB instance or DB cluster is restarted automatically."
+  },
+  {
+    "v": "1.21.4",
+    "t": "Adds the OriginalSnapshotCreateTime field to the DBSnapshot response object. This field timestamps the underlying data of a snapshot and doesn't change when the snapshot is copied."
+  },
+  {
+    "v": "1.20.97",
+    "t": "This release enables Database Activity Streams for RDS Oracle"
+  },
+  {
+    "v": "1.20.96",
+    "t": "This release enables fast cloning in Aurora Serverless. You can now clone between Aurora Serverless clusters and Aurora Provisioned clusters."
+  },
+  {
+    "v": "1.20.88",
+    "t": "Documentation updates for RDS: fixing an outdated link to the RDS documentation in DBInstance$DBInstanceStatus"
+  },
+  {
+    "v": "1.20.51",
+    "t": "Clarify that enabling or disabling automated backups causes a brief downtime, not an outage."
+  },
+  {
+    "v": "1.20.24",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.20.12",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.20.7",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.20.6",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.19.59",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.19.52",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.19.42",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.19.40",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.19.30",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.19.20",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.19.12",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.18.15",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.18.11",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.18.7",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.18.2",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.17.42",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.17.30",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.17.24",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.17.17",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.17.15",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.17.14",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.17.8",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.17.6",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.15.45",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.15.40",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.15.35",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.15.24",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.15.2",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.14.13",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.14.8",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.14.0",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.13.44",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.13.32",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.13.20",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.13.10",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.252",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.239",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.233",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.227",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.214",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.183",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.181",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.173",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.160",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.159",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.158",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.157",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.154",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.149",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.135",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.133",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.110",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.85",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.61",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.54",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.46",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.43",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.34",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.24",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.12",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.10",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.12.8",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.11.8",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.11.7",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.10.82",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.10.75",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.10.74",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.10.42",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.10.36",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.10.33",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.10.27",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.10.17",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.10.16",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.10.5",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.9.16",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.9.6",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.8.45",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.8.41",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.8.30",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.8.27",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.8.22",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.7.47",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.7.41",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.7.29",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.7.28",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.7.17",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.7.15",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.6.8",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.5.94",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.5.66",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.5.58",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.5.45",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.5.44",
+    "t": "Add rds database presigner."
+  },
+  {
+    "v": "1.5.44",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.5.26",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.5.21",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.5.7",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.5.6",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.5.2",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.93",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.90",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.86",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.85",
+    "t": "Add cluster create data to DBCluster APIs."
+  },
+  {
+    "v": "1.4.64",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.61",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.56",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.55",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.52",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.51",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.49",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.43",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.42",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.37",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.31",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.28",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.23",
+    "t": "Update rds client to latest version"
+  },
+  {
+    "v": "1.4.7",
+    "t": "Update client to latest version"
+  },
+  {
+    "v": "1.4.6",
+    "t": "Add support for customizing the order in which Aurora Replicas are promoted to primary instance during a failover"
+  }
+]

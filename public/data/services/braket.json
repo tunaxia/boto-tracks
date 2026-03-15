@@ -1,0 +1,54 @@
+[
+  {
+    "v": "1.41.1",
+    "t": "Add support for Braket spending limits."
+  },
+  {
+    "v": "1.40.70",
+    "t": "Adds ExperimentalCapabilities field to CreateQuantumTask request and GetQuantumTask response objects. Enables use of experimental software capabilities when creating quantum tasks."
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.9",
+    "t": "Add support for Braket program sets."
+  },
+  {
+    "v": "1.34.39",
+    "t": "Creating a job will result in DeviceOfflineException when using an offline device, and DeviceRetiredException when using a retired device."
+  },
+  {
+    "v": "1.33.7",
+    "t": "This release enhances service support to create quantum tasks and hybrid jobs associated with Braket Direct Reservations."
+  },
+  {
+    "v": "1.31.53",
+    "t": "This release adds support to view the device queue depth (the number of queued quantum tasks and hybrid jobs on a device) and queue position for a quantum task and hybrid job."
+  },
+  {
+    "v": "1.25.3",
+    "t": "This release enables Braket Hybrid Jobs with Embedded Simulators to have multiple instances."
+  },
+  {
+    "v": "1.23.11",
+    "t": "This release adds support for Amazon Braket Hybrid Jobs."
+  },
+  {
+    "v": "1.20.86",
+    "t": "Introduction of a RETIRED status for devices."
+  },
+  {
+    "v": "1.19.9",
+    "t": "Update braket client to latest version"
+  },
+  {
+    "v": "1.17.43",
+    "t": "Update braket client to latest version"
+  },
+  {
+    "v": "1.17.42",
+    "t": "Update braket client to latest version"
+  }
+]

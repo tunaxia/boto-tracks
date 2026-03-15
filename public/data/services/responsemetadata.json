@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.4.51",
+    "t": "Add MaxAttemptsReached and RetryAttempts keys to the returned ResonseMetadata dictionary (`#1024 <https://github.com/boto/botocore/issues/1024>`__, `#965 <https://github.com/boto/botocore/issues/965>`__, `#926 <https://github.com/boto/botocore/issues/926>`__)"
+  },
+  {
+    "v": "1.4.29",
+    "t": "Add http response headers to the response metadata."
+  }
+]

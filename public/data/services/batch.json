@@ -1,0 +1,262 @@
+[
+  {
+    "v": "1.42.59",
+    "t": "This feature allows customers to specify the minimum time (in minutes) that AWS Batch keeps instances running in a compute environment after all jobs on the instance complete"
+  },
+  {
+    "v": "1.42.57",
+    "t": "AWS Batch documentation update for service job capacity units."
+  },
+  {
+    "v": "1.42.47",
+    "t": "Add support for listing jobs by share identifier and getting snapshots of active capacity utilization by job queue and share."
+  },
+  {
+    "v": "1.42.41",
+    "t": "AWS Batch Array Job Visibility feature support. Includes new statusSummaryLastUpdatedAt for array job parent DescribeJobs responses for the last time the statusSummary was updated. Includes both statusSummary and statusSummaryLastUpdatedAt in ListJobs responses for array job parents."
+  },
+  {
+    "v": "1.40.71",
+    "t": "Documentation-only update: update API and doc descriptions per EKS ImageType default value switch from AL2 to AL2023."
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.36",
+    "t": "Starting in JAN 2026, AWS Batch will change the default AMI for new Amazon ECS compute environments from Amazon Linux 2 to Amazon Linux 2023. We recommend migrating AWS Batch Amazon ECS compute environments to Amazon Linux 2023 to maintain optimal performance and security."
+  },
+  {
+    "v": "1.40.19",
+    "t": "Added ECS_AL2023_NVIDIA as an option for Ec2Configuration.imageType."
+  },
+  {
+    "v": "1.40.12",
+    "t": "Added default_x86_64 and default_arm64 as values to the instanceTypes field."
+  },
+  {
+    "v": "1.40.5",
+    "t": "This feature allows customers to use AWS Batch with Linux with ARM64 CPU Architecture with Fargate Spot compute support."
+  },
+  {
+    "v": "1.39.16",
+    "t": "AWS Batch for SageMaker Training jobs feature support.  Includes new APIs for service job submission (e.g., SubmitServiceJob) and managing service environments (e.g., CreateServiceEnvironment) that enable queueing SageMaker Training jobs."
+  },
+  {
+    "v": "1.38.43",
+    "t": "Add userdataType to LaunchTemplateSpecification and LaunchTemplateSpecificationOverride."
+  },
+  {
+    "v": "1.37.22",
+    "t": "This release will enable two features: Firelens log driver, and Execute Command on Batch jobs on ECS. Both features will be passed through to ECS."
+  },
+  {
+    "v": "1.37.2",
+    "t": "AWS Batch: Resource Aware Scheduling feature support"
+  },
+  {
+    "v": "1.36.23",
+    "t": "This documentation-only update corrects some typos."
+  },
+  {
+    "v": "1.36.3",
+    "t": "Documentation-only update: clarified the description of the shareDecaySeconds parameter of the FairsharePolicy data type, clarified the description of the priority parameter of the JobQueueDetail data type."
+  },
+  {
+    "v": "1.35.83",
+    "t": "This feature allows AWS Batch on Amazon EKS to support configuration of Pod Annotations, overriding Namespace on which the Batch job's Pod runs on, and allows Subpath and Persistent Volume claim to be set for AWS Batch on Amazon EKS jobs."
+  },
+  {
+    "v": "1.35.57",
+    "t": "This feature allows override LaunchTemplates to be specified in an AWS Batch Compute Environment."
+  },
+  {
+    "v": "1.35.53",
+    "t": "Add `podNamespace` to `EksAttemptDetail` and `containerID` to `EksAttemptContainerDetail`."
+  },
+  {
+    "v": "1.35.0",
+    "t": "Improvements of integration between AWS Batch and EC2."
+  },
+  {
+    "v": "1.34.143",
+    "t": "This feature allows AWS Batch Jobs with EKS container orchestration type to be run as Multi-Node Parallel Jobs."
+  },
+  {
+    "v": "1.34.128",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.118",
+    "t": "This release adds support for the AWS Batch GetJobQueueSnapshot API operation."
+  },
+  {
+    "v": "1.34.83",
+    "t": "This release adds the task properties field to attempt details and the name field on EKS container detail."
+  },
+  {
+    "v": "1.34.72",
+    "t": "This feature allows AWS Batch to support configuration of imagePullSecrets and allowPrivilegeEscalation for jobs running on EKS"
+  },
+  {
+    "v": "1.34.59",
+    "t": "This release adds JobStateTimeLimitActions setting to the Job Queue API. It allows you to configure an action Batch can take for a blocking job in front of the queue after the defined period of time. The new parameter applies for ECS, EKS, and FARGATE Job Queues."
+  },
+  {
+    "v": "1.34.52",
+    "t": "This release adds Batch support for configuration of multicontainer jobs in ECS, Fargate, and EKS. This support is available for all types of jobs, including both array jobs and multi-node parallel jobs."
+  },
+  {
+    "v": "1.34.39",
+    "t": "This feature allows Batch to support configuration of repository credentials for jobs running on ECS"
+  },
+  {
+    "v": "1.31.17",
+    "t": "This release adds support for price capacity optimized allocation strategy for Spot Instances."
+  },
+  {
+    "v": "1.30.0",
+    "t": "This feature allows customers to use AWS Batch with Linux with ARM64 CPU Architecture and X86_64 CPU Architecture with Windows OS on Fargate Platform."
+  },
+  {
+    "v": "1.29.103",
+    "t": "This feature allows Batch on EKS to support configuration of Pod Labels through Metadata for Batch on EKS Jobs."
+  },
+  {
+    "v": "1.29.98",
+    "t": "This feature allows Batch to support configuration of ephemeral storage size for jobs running on FARGATE"
+  },
+  {
+    "v": "1.29.34",
+    "t": "Adds isCancelled and isTerminated to DescribeJobs response."
+  },
+  {
+    "v": "1.29.11",
+    "t": "Documentation updates related to Batch on EKS"
+  },
+  {
+    "v": "1.28.0",
+    "t": "This release adds support for AWS Batch on Amazon EKS."
+  },
+  {
+    "v": "1.26.3",
+    "t": "Documentation updates for AWS Batch."
+  },
+  {
+    "v": "1.24.41",
+    "t": "Enables configuration updates for compute environments with BEST_FIT_PROGRESSIVE and SPOT_CAPACITY_OPTIMIZED allocation strategies."
+  },
+  {
+    "v": "1.24.27",
+    "t": "Bug Fix: Fixed a bug where shapes were marked as unboxed and were not serialized and sent over the wire, causing an API error from the service."
+  },
+  {
+    "v": "1.23.10",
+    "t": "Documentation updates for AWS Batch."
+  },
+  {
+    "v": "1.23.2",
+    "t": "Adds support for scheduling policy APIs."
+  },
+  {
+    "v": "1.21.8",
+    "t": "Add support for ListJob filters"
+  },
+  {
+    "v": "1.20.42",
+    "t": "AWS Batch adds support for Amazon EFS File System"
+  },
+  {
+    "v": "1.20.30",
+    "t": "Making serviceRole an optional parameter when creating a compute environment. If serviceRole is not provided then Service Linked Role will be created (or reused if it already exists)."
+  },
+  {
+    "v": "1.19.41",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.19.29",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.19.1",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.18.11",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.18.6",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.14.5",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.12.252",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.12.202",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.12.197",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.12.136",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.12.128",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.12.43",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.10.2",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.8.3",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.7.42",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.7.10",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.6.1",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.5.39",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.5.31",
+    "t": "Update batch client to latest version"
+  },
+  {
+    "v": "1.4.86",
+    "t": "Update batch client to latest version"
+  }
+]

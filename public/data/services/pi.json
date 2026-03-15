@@ -1,0 +1,66 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.36.18",
+    "t": "Documentation only update for RDS Performance Insights dimensions for execution plans and locking analysis."
+  },
+  {
+    "v": "1.36.16",
+    "t": "Adds documentation for dimension groups and dimensions to analyze locks for Database Insights."
+  },
+  {
+    "v": "1.34.154",
+    "t": "Added a description for the Dimension db.sql.tokenized_id on the DimensionGroup data type page."
+  },
+  {
+    "v": "1.34.136",
+    "t": "Noting that the filter db.sql.db_id isn't available for RDS for SQL Server DB instances."
+  },
+  {
+    "v": "1.34.110",
+    "t": "Performance Insights added a new input parameter called AuthorizedActions to support the fine-grained access feature. Performance Insights also restricted the acceptable input characters."
+  },
+  {
+    "v": "1.34.90",
+    "t": "Clarifies how aggregation works for GetResourceMetrics in the Performance Insights API."
+  },
+  {
+    "v": "1.31.27",
+    "t": "AWS Performance Insights for Amazon RDS is launching Performance Analysis On Demand, a new feature that allows you to analyze database performance metrics and find out the performance issues. You can now use SDK to create, list, get, delete, and manage tags of performance analysis reports."
+  },
+  {
+    "v": "1.29.83",
+    "t": "This release adds a new field PeriodAlignment to allow the customer specifying the returned timestamp of time periods to be either the start or end time."
+  },
+  {
+    "v": "1.27.70",
+    "t": "Increases the maximum values of two RDS Performance Insights APIs. The maximum value of the Limit parameter of DimensionGroup is 25. The MaxResult maximum is now 25 for the following APIs: DescribeDimensionKeys, GetResourceMetrics, ListAvailableResourceDimensions, and ListAvailableResourceMetrics."
+  },
+  {
+    "v": "1.24.36",
+    "t": "Adds support for DocumentDB to the Performance Insights API."
+  },
+  {
+    "v": "1.23.34",
+    "t": "This release adds three Performance Insights APIs. Use ListAvailableResourceMetrics to get available metrics, GetResourceMetadata to get feature metadata, and ListAvailableResourceDimensions to list available dimensions. The AdditionalMetrics field in DescribeDimensionKeys retrieves per-SQL metrics."
+  },
+  {
+    "v": "1.20.88",
+    "t": "The new GetDimensionKeyDetails action retrieves the attributes of the specified dimension group for a DB instance or data source."
+  },
+  {
+    "v": "1.19.35",
+    "t": "Update pi client to latest version"
+  },
+  {
+    "v": "1.10.29",
+    "t": "Update pi client to latest version"
+  }
+]

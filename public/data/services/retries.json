@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.34.107",
+    "t": "Fix backoff calculation for truncated binary exponential backoff (`#3178 <https://github.com/boto/botocore/issues/3178>`__)"
+  },
+  {
+    "v": "1.15.0",
+    "t": "Add support for retry modes, including ``standard`` and ``adaptive`` modes (`#1972 <https://github.com/boto/botocore/issues/1972>`__)"
+  },
+  {
+    "v": "1.6.0",
+    "t": "Add ability to configure the maximum amount of retry attempts a client call can make. (`#1260 <https://github.com/boto/botocore/pull/1260>`__)"
+  }
+]

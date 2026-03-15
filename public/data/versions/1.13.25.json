@@ -1,0 +1,7 @@
+[
+  {
+    "category": "imds-metadata",
+    "description": "Add 405 case to metadata fetching logic.",
+    "type": "bugfix"
+  }
+]

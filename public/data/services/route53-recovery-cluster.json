@@ -1,0 +1,26 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.31.65",
+    "t": "Adds Owner field to ListRoutingControls API."
+  },
+  {
+    "v": "1.24.31",
+    "t": "This release adds a new API \"ListRoutingControls\" to list routing control states using the highly reliable Route 53 ARC data plane endpoints."
+  },
+  {
+    "v": "1.24.9",
+    "t": "This release adds a new API option to enable overriding safety rules to allow routing control state updates."
+  },
+  {
+    "v": "1.21.8",
+    "t": "Amazon Route 53 Application Recovery Controller's routing control - Routing Control Data Plane APIs help you update the state (On/Off) of the routing controls to reroute traffic across application replicas in a 100% available manner."
+  }
+]

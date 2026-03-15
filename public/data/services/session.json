@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.22.5",
+    "t": "Added `get_partition_for_region` allowing partition lookup by region name."
+  }
+]

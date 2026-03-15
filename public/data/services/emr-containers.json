@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.29",
+    "t": "Added nodeLabel support in container provider to aid hardware isolation support for virtual cluster and security configuration."
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.36.23",
+    "t": "EMR on EKS StartJobRun Api will be supporting the configuration of log storage in AWS by using \"managedLogs\" under \"MonitoringConfiguration\"."
+  },
+  {
+    "v": "1.35.4",
+    "t": "Correct endpoint for FIPS is configured for US Gov Regions."
+  },
+  {
+    "v": "1.34.91",
+    "t": "EMRonEKS Service support for SecurityConfiguration enforcement for Spark Jobs."
+  },
+  {
+    "v": "1.34.78",
+    "t": "This release adds support for integration with EKS AccessEntry APIs to enable automatic Cluster Access for EMR on EKS."
+  },
+  {
+    "v": "1.34.70",
+    "t": "This release increases the number of supported job template parameters from 20 to 100."
+  },
+  {
+    "v": "1.29.149",
+    "t": "EMR on EKS adds support for log rotation of Spark container logs with EMR-6.11.0 onwards, to the StartJobRun API."
+  },
+  {
+    "v": "1.29.122",
+    "t": "This release adds GetManagedEndpointSessionCredentials, a new API that allows customers to generate an auth token to connect to a managed endpoint, enabling features such as self-hosted Jupyter notebooks for EMR on EKS."
+  },
+  {
+    "v": "1.29.68",
+    "t": "EMR on EKS allows configuring retry policies for job runs through the StartJobRun API. Using retry policies, a job cause a driver pod to be restarted automatically if it fails or is deleted. The job's status can be seen in the DescribeJobRun and ListJobRun APIs and monitored using CloudWatch events."
+  },
+  {
+    "v": "1.29.3",
+    "t": "Adding support for Job templates. Job templates allow you to create and store templates to configure Spark applications parameters. This helps you ensure consistent settings across applications by reusing and enforcing configuration overrides in data pipelines."
+  },
+  {
+    "v": "1.27.69",
+    "t": "EMR on EKS now allows running Spark SQL using the newly introduced Spark SQL Job Driver in the Start Job Run API"
+  },
+  {
+    "v": "1.22.4",
+    "t": "This feature enables auto-generation of certificate  to secure the managed-endpoint and removes the need for customer provided certificate-arn during managed-endpoint setup."
+  },
+  {
+    "v": "1.21.2",
+    "t": "Updated DescribeManagedEndpoint and ListManagedEndpoints to return failureReason and stateDetails in API response."
+  },
+  {
+    "v": "1.20.2",
+    "t": "Update emr-containers client to latest version"
+  },
+  {
+    "v": "1.19.32",
+    "t": "Update emr-containers client to latest version"
+  }
+]

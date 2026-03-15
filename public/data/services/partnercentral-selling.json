@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.42.56",
+    "t": "Added support for filtering opportunities by target close date in the ListOpportunities API. You can now filter results to return opportunities with a target close date before or after a specified date, enabling more precise opportunity searches based on expected closure timelines."
+  },
+  {
+    "v": "1.42.44",
+    "t": "Releasing AWS Opportunity Snapshots for SDK release."
+  },
+  {
+    "v": "1.42.7",
+    "t": "Adds support for the new Project.AwsPartition field on Opportunity and AWS Opportunity Summary. Use this field to specify the AWS partition where the opportunity will be deployed."
+  },
+  {
+    "v": "1.42.5",
+    "t": "Deal Sizing Service for AI-based deal size estimation with AWS service-level breakdown, supporting Expansion and Migration deals across Technology, and Reseller partner cohorts, including Pricing Calculator AddOn for MAP deals and funding incentives."
+  },
+  {
+    "v": "1.41.6",
+    "t": "New Features:\nLead Management APIs for capturing and nurturing leads\nLead invitation support for partner collaboration\nLead-to-opportunity conversion operations\nAWS Marketplace OfferSets support for opportunities"
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.9",
+    "t": "Add Tagging Support for Opportunity resources"
+  },
+  {
+    "v": "1.38.21",
+    "t": "Modified validation to allow expectedCustomerSpend array with zero elements in Partner Opportunity operations."
+  },
+  {
+    "v": "1.36.0",
+    "t": "Add Tagging support for ResourceSnapshotJob resources"
+  },
+  {
+    "v": "1.35.76",
+    "t": "Introducing the preview of new partner central selling APIs designed to transform how AWS partners collaborate and co-sell with multiple partners. This enables multiple partners to seamlessly engage and jointly pursue customer opportunities, fostering a new era of collaborative selling."
+  },
+  {
+    "v": "1.35.62",
+    "t": "Announcing AWS Partner Central API for Selling: This service launch Introduces new APIs for co-selling opportunity management and related functions. Key features include notifications, a dynamic sandbox for testing, and streamlined validations."
+  },
+  {
+    "v": "1.35.61",
+    "t": "Announcing AWS Partner Central API for Selling: This service launch Introduces new APIs for co-selling opportunity management and related functions. Key features include notifications, a dynamic sandbox for testing, and streamlined validations."
+  }
+]

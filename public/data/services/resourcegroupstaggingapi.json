@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.40.76",
+    "t": "Add support for new ListRequiredTags API used to retrieve the required tags specified in a customer's effective tag policy."
+  },
+  {
+    "v": "1.40.64",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.22.12",
+    "t": "Documentation updates and improvements."
+  },
+  {
+    "v": "1.19.58",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.18.2",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.17.36",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.17.33",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.16.6",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.14.11",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.13.42",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.13.28",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.12.221",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.12.175",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.12.171",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.5.53",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  },
+  {
+    "v": "1.5.32",
+    "t": "Update resourcegroupstaggingapi client to latest version"
+  }
+]

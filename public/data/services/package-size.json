@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.32.1",
+    "t": "The botocore .whl file distributed on PyPI now provides compressed service models to improve total size on disk."
+  }
+]

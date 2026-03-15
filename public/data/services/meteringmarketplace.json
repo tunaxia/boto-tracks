@@ -1,0 +1,74 @@
+[
+  {
+    "v": "1.42.58",
+    "t": "Added LicenseArn to ResolveCustomer response and BatchMeterUsage usage records. BatchMeterUsage now accepts LicenseArn in each UsageRecord to report usage at the license level. Added InvalidLicenseException error response for invalid license parameters."
+  },
+  {
+    "v": "1.42.33",
+    "t": "Customer Identifier parameter deprecation date has been removed. For new implementations, we recommend using the CustomerAWSAccountID. Your current integration will continue to work. When updating your implementation, consider migrating to CustomerAWSAccountID for improved integration."
+  },
+  {
+    "v": "1.41.2",
+    "t": "Endpoint update for new region"
+  },
+  {
+    "v": "1.40.56",
+    "t": "Added ClientToken parameter to MeterUsage API for specifying idempotent requests."
+  },
+  {
+    "v": "1.37.33",
+    "t": "Add support for Marketplace Metering Service dual-stack endpoints for CN regions"
+  },
+  {
+    "v": "1.37.23",
+    "t": "Add support for Marketplace Metering Service dual-stack endpoints."
+  },
+  {
+    "v": "1.37.20",
+    "t": "This release enhances the BatchMeterUsage API to support new field CustomerAWSAccountId in request and response and making CustomerIdentifier optional. CustomerAWSAccountId or CustomerIdentifier must be provided in request but not both."
+  },
+  {
+    "v": "1.23.48",
+    "t": "Add CustomerAWSAccountId to ResolveCustomer API response and increase UsageAllocation limit to 2500."
+  },
+  {
+    "v": "1.19.11",
+    "t": "Update meteringmarketplace client to latest version"
+  },
+  {
+    "v": "1.17.6",
+    "t": "Update meteringmarketplace client to latest version"
+  },
+  {
+    "v": "1.16.23",
+    "t": "Update meteringmarketplace client to latest version"
+  },
+  {
+    "v": "1.13.24",
+    "t": "Update meteringmarketplace client to latest version"
+  },
+  {
+    "v": "1.13.18",
+    "t": "Update meteringmarketplace client to latest version"
+  },
+  {
+    "v": "1.12.152",
+    "t": "Update meteringmarketplace client to latest version"
+  },
+  {
+    "v": "1.12.118",
+    "t": "Update meteringmarketplace client to latest version"
+  },
+  {
+    "v": "1.12.53",
+    "t": "Update meteringmarketplace client to latest version"
+  },
+  {
+    "v": "1.4.75",
+    "t": "Update meteringmarketplace client to latest version"
+  },
+  {
+    "v": "1.4.42",
+    "t": "Update meteringmarketplace client to latest version"
+  }
+]

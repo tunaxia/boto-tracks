@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.34.53",
+    "t": "Adds new CreateTemplate, UpdateTemplate and DeleteTemplate APIs."
+  },
+  {
+    "v": "1.27.83",
+    "t": "Introducing AWS MigrationHubOrchestrator. This is the first public release of AWS MigrationHubOrchestrator."
+  }
+]

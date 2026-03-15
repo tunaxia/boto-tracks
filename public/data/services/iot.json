@@ -1,0 +1,414 @@
+[
+  {
+    "v": "1.42.14",
+    "t": "This release adds event-based logging feature that enables granular event logging controls for AWS IoT logs."
+  },
+  {
+    "v": "1.42.13",
+    "t": "This release adds message batching for the IoT Rules Engine HTTP action."
+  },
+  {
+    "v": "1.42.11",
+    "t": "Add support for dynamic payloads in IoT Device Management Commands"
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.0",
+    "t": "This release allows AWS IoT Core users to use their own AWS KMS keys for data protection"
+  },
+  {
+    "v": "1.37.1",
+    "t": "AWS IoT - AWS IoT Device Defender adds support for a new Device Defender Audit Check that monitors device certificate age and custom threshold configurations for both the new device certificate age check and existing device certificate expiry check."
+  },
+  {
+    "v": "1.36.7",
+    "t": "Raised the documentParameters size limit to 30 KB for AWS IoT Device Management - Jobs."
+  },
+  {
+    "v": "1.35.84",
+    "t": "Release connectivity status query API which is a dedicated high throughput(TPS) API to query a specific device's most recent connectivity state and metadata."
+  },
+  {
+    "v": "1.35.67",
+    "t": "General Availability (GA) release of AWS IoT Device Management - Commands, to trigger light-weight remote actions on targeted devices"
+  },
+  {
+    "v": "1.35.63",
+    "t": "This release allows AWS IoT Core users to enrich MQTT messages with propagating attributes, to associate a thing to a connection, and to enable Online Certificate Status Protocol (OCSP) stapling for TLS X.509 server certificates through private endpoints."
+  },
+  {
+    "v": "1.35.33",
+    "t": "This release adds support for Custom Authentication with X.509 Client Certificates, support for Custom Client Certificate validation, and support for selecting application protocol and authentication type without requiring TLS ALPN for customer's AWS IoT Domain Configurations."
+  },
+  {
+    "v": "1.35.20",
+    "t": "This release adds additional enhancements to AWS IoT Device Management Software Package Catalog and Jobs. It also adds SBOM support in Software Package Version."
+  },
+  {
+    "v": "1.34.52",
+    "t": "This release reduces the maximum results returned per query invocation from 500 to 100 for the SearchIndex API. This change has no implications as long as the API is invoked until the nextToken is NULL."
+  },
+  {
+    "v": "1.34.39",
+    "t": "This release allows AWS IoT Core users to enable Online Certificate Status Protocol (OCSP) Stapling for TLS X.509 Server Certificates when creating and updating AWS IoT Domain Configurations with Custom Domain."
+  },
+  {
+    "v": "1.34.20",
+    "t": "Revert release of LogTargetTypes"
+  },
+  {
+    "v": "1.34.17",
+    "t": "Add ConflictException to Update APIs of AWS IoT Software Package Catalog"
+  },
+  {
+    "v": "1.34.1",
+    "t": "This release adds the ability to self-manage certificate signing in AWS IoT Core fleet provisioning using the new certificate provider resource."
+  },
+  {
+    "v": "1.32.2",
+    "t": "GA release the ability to index and search devices based on their GeoLocation data. With GeoQueries you can narrow your search to retrieve devices located in the desired geographic boundary."
+  },
+  {
+    "v": "1.32.0",
+    "t": "This release introduces new attributes in API CreateSecurityProfile, UpdateSecurityProfile and DescribeSecurityProfile to support management of Metrics Export for AWS IoT Device Defender Detect."
+  },
+  {
+    "v": "1.31.56",
+    "t": "Added support for IoT Rules Engine Kafka Action Headers"
+  },
+  {
+    "v": "1.29.148",
+    "t": "Adding IoT Device Management Software Package Catalog APIs to register, store, and report system software packages, along with their versions and metadata in a centralized location."
+  },
+  {
+    "v": "1.29.123",
+    "t": "This release allows AWS IoT Core users to specify a TLS security policy when creating and updating AWS IoT Domain Configurations."
+  },
+  {
+    "v": "1.29.117",
+    "t": "Support additional OTA states in GetOTAUpdate API"
+  },
+  {
+    "v": "1.29.83",
+    "t": "A recurring maintenance window is an optional configuration used for rolling out the job document to all devices in the target group observing a predetermined start time, duration, and frequency that the maintenance window occurs."
+  },
+  {
+    "v": "1.29.61",
+    "t": "Added support for IoT Rules Engine Cloudwatch Logs action batch mode."
+  },
+  {
+    "v": "1.29.17",
+    "t": "Job scheduling enables the scheduled rollout of a Job with start and end times and a customizable end behavior when end time is reached. This is available for continuous and snapshot jobs. Added support for MQTT5 properties to AWS IoT TopicRule Republish Action."
+  },
+  {
+    "v": "1.29.8",
+    "t": "This release add new api listRelatedResourcesForAuditFinding and new member type IssuerCertificates for Iot device device defender Audit."
+  },
+  {
+    "v": "1.28.5",
+    "t": "This release adds the Amazon Location action to IoT Rules Engine."
+  },
+  {
+    "v": "1.27.46",
+    "t": "The release is to support attach a provisioning template to CACert for JITP function,  Customer now doesn't have to hardcode a roleArn and templateBody during register a CACert to enable JITP."
+  },
+  {
+    "v": "1.27.34",
+    "t": "GA release the ability to enable/disable IoT Fleet Indexing for Device Defender and Named Shadow information, and search them through IoT Fleet Indexing APIs. This includes Named Shadow Selection as a part of the UpdateIndexingConfiguration API."
+  },
+  {
+    "v": "1.27.25",
+    "t": "This release adds support to register a CA certificate without having to provide a verification certificate. This also allows multiple AWS accounts to register the same CA in the same region."
+  },
+  {
+    "v": "1.27.18",
+    "t": "This release ease the restriction for the input of tag value to align with AWS standard, now instead of min length 1, we change it to min length 0."
+  },
+  {
+    "v": "1.25.13",
+    "t": "Documentation update for China region ListMetricValues for IoT"
+  },
+  {
+    "v": "1.25.8",
+    "t": "AWS IoT Jobs now allows you to create up to 100,000 active continuous and snapshot jobs by using concurrency control."
+  },
+  {
+    "v": "1.24.33",
+    "t": "AWS IoT - AWS IoT Device Defender adds support to list metric datapoints collected for IoT devices through the ListMetricValues API"
+  },
+  {
+    "v": "1.24.30",
+    "t": "Doc only update for IoT that fixes customer-reported issues."
+  },
+  {
+    "v": "1.23.47",
+    "t": "This release adds support for configuring AWS IoT logging level per client ID, source IP, or principal ID."
+  },
+  {
+    "v": "1.23.29",
+    "t": "This release adds an automatic retry mechanism for AWS IoT Jobs. You can now define a maximum number of retries for each Job rollout, along with the criteria to trigger the retry for FAILED/TIMED_OUT/ALL(both FAILED an TIMED_OUT) job."
+  },
+  {
+    "v": "1.23.22",
+    "t": "This release allows customer to enable caching of custom authorizer on HTTP protocol for clients that use persistent or Keep-Alive connection in order to reduce the number of Lambda invocations."
+  },
+  {
+    "v": "1.23.17",
+    "t": "Added the ability to enable/disable IoT Fleet Indexing for Device Defender and Named Shadow information, and search them through IoT Fleet Indexing APIs."
+  },
+  {
+    "v": "1.23.12",
+    "t": "This release introduces a new feature, Managed Job Template, for AWS IoT Jobs Service. Customers can now use service provided managed job templates to easily create jobs for supported standard job actions."
+  },
+  {
+    "v": "1.21.45",
+    "t": "This release adds support for verifying, viewing and filtering AWS IoT Device Defender detect violations with four verification states."
+  },
+  {
+    "v": "1.21.41",
+    "t": "AWS IoT Rules Engine adds OpenSearch action. The OpenSearch rule action lets you stream data from IoT sensors and applications to Amazon OpenSearch Service which is a successor to Amazon Elasticsearch Service."
+  },
+  {
+    "v": "1.21.33",
+    "t": "Added Create/Update/Delete/Describe/List APIs for a new IoT resource named FleetMetric. Added a new Fleet Indexing query API named GetBucketsAggregation. Added a new field named DisconnectedReason in Fleet Indexing query response. Updated their related documentations."
+  },
+  {
+    "v": "1.21.10",
+    "t": "Increase maximum credential duration of role alias to 12 hours."
+  },
+  {
+    "v": "1.20.80",
+    "t": "This release includes support for a new feature: Job templates for AWS IoT Device Management Jobs. The release includes job templates as a new resource and APIs for managing job templates."
+  },
+  {
+    "v": "1.20.42",
+    "t": "Added ability to prefix search on attribute value for ListThings API."
+  },
+  {
+    "v": "1.19.62",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.19.37",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.19.17",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.19.11",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.19.7",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.18.9",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.17.41",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.17.3",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.16.0",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.15.46",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.15.34",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.15.20",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.14.10",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.13.41",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.13.21",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.13.17",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.205",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.201",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.119",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.115",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.112",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.98",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.96",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.77",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.52",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.12.19",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.11.2",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.10.84",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.10.67",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.10.66",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.10.31",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.10.28",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.10.24",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.10.7",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.9.7",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.8.18",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.8.8",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.8.4",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.5.81",
+    "t": "Add paginators for IoT."
+  },
+  {
+    "v": "1.5.69",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.5.64",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.5.62",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.5.61",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.4.64",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.4.55",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.4.42",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.4.40",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.4.33",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.4.26",
+    "t": "Update iot client to latest version"
+  },
+  {
+    "v": "1.4.13",
+    "t": "Add SQL RulesEngine version support"
+  },
+  {
+    "v": "1.4.11",
+    "t": "Add methods for managing CA certificates."
+  },
+  {
+    "v": "1.4.5",
+    "t": "Added support for Amazon Elasticsearch Service and Amazon Cloudwatch actions for the AWS IoT rules engine."
+  }
+]

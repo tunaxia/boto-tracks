@@ -1,0 +1,62 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.32.1",
+    "t": "Adding deprecated trait to APIs in this name space."
+  },
+  {
+    "v": "1.31.54",
+    "t": "Adding sensitive trait to attributes. Change max SessionDuration from 720 to 60. Correct \"ApiAccess\" attribute to \"apiAccess\" to maintain consistency between APIs."
+  },
+  {
+    "v": "1.27.19",
+    "t": "Release new API GetExternalDataViewAccessDetails"
+  },
+  {
+    "v": "1.27.10",
+    "t": "This release adds a new set of APIs, GetPermissionGroup, DisassociateUserFromPermissionGroup, AssociateUserToPermissionGroup, ListPermissionGroupsByUser, ListUsersByPermissionGroup."
+  },
+  {
+    "v": "1.25.13",
+    "t": "We've now deprecated CreateSnapshot permission for creating a data view, instead use CreateDataView permission."
+  },
+  {
+    "v": "1.24.9",
+    "t": "Add new APIs for managing Users and Permission Groups."
+  },
+  {
+    "v": "1.23.33",
+    "t": "Documentation updates for FinSpace."
+  },
+  {
+    "v": "1.23.25",
+    "t": "Make dataset description optional and allow s3 export for dataviews"
+  },
+  {
+    "v": "1.23.12",
+    "t": "Update documentation for createChangeset API."
+  },
+  {
+    "v": "1.23.11",
+    "t": "Add new APIs for managing Datasets, Changesets, and Dataviews."
+  },
+  {
+    "v": "1.20.66",
+    "t": "Documentation updates for FinSpaceData API."
+  },
+  {
+    "v": "1.20.64",
+    "t": "Update FinSpace Data serviceAbbreviation"
+  },
+  {
+    "v": "1.20.63",
+    "t": "This is the initial SDK release for the data APIs for Amazon FinSpace. Amazon FinSpace is a data management and analytics application for the financial services industry (FSI)."
+  }
+]

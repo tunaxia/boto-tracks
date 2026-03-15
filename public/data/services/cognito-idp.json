@@ -1,0 +1,286 @@
+[
+  {
+    "v": "1.42.59",
+    "t": "Cognito is introducing a two-secret rotation model for app clients, enabling seamless credential rotation without downtime. Dedicated APIs support passing in a custom secret. Custom secrets need to be at least 24 characters. This eliminates reconfiguration needs and reduces security risks."
+  },
+  {
+    "v": "1.42.37",
+    "t": "This release adds support for a new lambda trigger to transform federated user attributes during the authentication with external identity providers on Cognito Managed Login."
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.14",
+    "t": "This release adds support for the new Terms APIs which allow displaying Terms of Use and Privacy Policy on the Managed Login user-registration page."
+  },
+  {
+    "v": "1.40.7",
+    "t": "Remove SigV4 auth requirement for GetTokensFromRefreshToken"
+  },
+  {
+    "v": "1.38.16",
+    "t": "Add exceptions to WebAuthn operations."
+  },
+  {
+    "v": "1.38.0",
+    "t": "This release adds refresh token rotation."
+  },
+  {
+    "v": "1.37.13",
+    "t": "Minor description updates to API parameters"
+  },
+  {
+    "v": "1.37.5",
+    "t": "Added the capacity to return available challenges in admin authentication and to set version 3 of the pre token generation event for M2M ATC."
+  },
+  {
+    "v": "1.36.3",
+    "t": "corrects the dual-stack endpoint configuration for cognitoidp"
+  },
+  {
+    "v": "1.35.79",
+    "t": "Updated descriptions for some API operations and parameters, corrected some errors in Cognito user pools"
+  },
+  {
+    "v": "1.35.77",
+    "t": "Change `CustomDomainConfig` from a required to an optional parameter for the `UpdateUserPoolDomain` operation."
+  },
+  {
+    "v": "1.35.68",
+    "t": "Add support for users to sign up and sign in without passwords, using email and SMS OTPs and Passkeys. Add support for Passkeys based on WebAuthn. Add support for enhanced branding customization for hosted authentication pages with Amazon Cognito Managed Login. Add feature tiers with new pricing."
+  },
+  {
+    "v": "1.35.18",
+    "t": "Added email MFA option to user pools with advanced security features."
+  },
+  {
+    "v": "1.34.158",
+    "t": "Fixed a description of AdvancedSecurityAdditionalFlows in Amazon Cognito user pool configuration."
+  },
+  {
+    "v": "1.34.157",
+    "t": "Added support for threat protection for custom authentication in Amazon Cognito user pools."
+  },
+  {
+    "v": "1.34.155",
+    "t": "Advanced security feature updates to include password history and log export for Cognito user pools."
+  },
+  {
+    "v": "1.34.128",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.101",
+    "t": "Add EXTERNAL_PROVIDER enum value to UserStatusType."
+  },
+  {
+    "v": "1.34.93",
+    "t": "Add LimitExceededException to SignUp errors"
+  },
+  {
+    "v": "1.34.59",
+    "t": "Add ConcurrentModificationException to SetUserPoolMfaConfig"
+  },
+  {
+    "v": "1.34.33",
+    "t": "Added CreateIdentityProvider and UpdateIdentityProvider details for new SAML IdP features"
+  },
+  {
+    "v": "1.34.3",
+    "t": "Amazon Cognito now supports trigger versions that define the fields in the request sent to pre token generation Lambda triggers."
+  },
+  {
+    "v": "1.31.56",
+    "t": "The UserPoolType Status field is no longer used."
+  },
+  {
+    "v": "1.31.37",
+    "t": "Added API example requests and responses for several operations. Fixed the validation regex for user pools Identity Provider name."
+  },
+  {
+    "v": "1.31.18",
+    "t": "New feature that logs Cognito user pool error messages to CloudWatch logs."
+  },
+  {
+    "v": "1.31.3",
+    "t": "API model updated in Amazon Cognito"
+  },
+  {
+    "v": "1.31.2",
+    "t": "API model updated in Amazon Cognito"
+  },
+  {
+    "v": "1.27.96",
+    "t": "This release adds a new \"DeletionProtection\" field to the UserPool in Cognito. Application admins can configure this value with either ACTIVE or INACTIVE value. Setting this field to ACTIVE will prevent a user pool from accidental deletion."
+  },
+  {
+    "v": "1.27.66",
+    "t": "This release adds a new \"AuthSessionValidity\" field to the UserPoolClient in Cognito. Application admins can configure this value for their users' authentication duration, which is currently fixed at 3 minutes, up to 15 minutes. Setting this field will also apply to the SMS MFA authentication flow."
+  },
+  {
+    "v": "1.27.55",
+    "t": "This change is being made simply to fix the public documentation based on the models. We have included the PasswordChange and ResendCode events, along with the Pass, Fail and InProgress status. We have removed the Success and Failure status which are never returned by our APIs."
+  },
+  {
+    "v": "1.27.45",
+    "t": "Add a new exception type, ForbiddenException, that is returned when request is not allowed"
+  },
+  {
+    "v": "1.27.0",
+    "t": "Amazon Cognito now supports IP Address propagation for all unauthenticated APIs (e.g. SignUp, ForgotPassword)."
+  },
+  {
+    "v": "1.26.7",
+    "t": "Amazon Cognito now supports requiring attribute verification (ex. email and phone number) before update."
+  },
+  {
+    "v": "1.24.20",
+    "t": "Updated EmailConfigurationType and SmsConfigurationType to reflect that you can now choose Amazon SES and Amazon SNS resources in the same Region."
+  },
+  {
+    "v": "1.23.46",
+    "t": "Doc updates for Cognito user pools API Reference."
+  },
+  {
+    "v": "1.21.0",
+    "t": "Documentation updates for cognito-idp"
+  },
+  {
+    "v": "1.20.92",
+    "t": "Amazon Cognito now supports targeted sign out through refresh token revocation"
+  },
+  {
+    "v": "1.20.90",
+    "t": "Documentation updates for cognito-idp"
+  },
+  {
+    "v": "1.20.56",
+    "t": "Documentation updates for cognito-idp"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.17.45",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.17.42",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.17.12",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.17.3",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.15.22",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.14.15",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.13.28",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.13.19",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.13.18",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.12.243",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.12.142",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.12.133",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.12.131",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.12.119",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.12.70",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.11.0",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.10.23",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.8.41",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.8.12",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.8.3",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.6.0",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.5.84",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.5.59",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.4.87",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.4.72",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.4.60",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.4.51",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.4.41",
+    "t": "Update cognito-idp client to latest version"
+  },
+  {
+    "v": "1.4.14",
+    "t": "Update cognito-idp client to latest version"
+  }
+]

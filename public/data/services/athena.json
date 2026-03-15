@@ -1,0 +1,186 @@
+[
+  {
+    "v": "1.42.43",
+    "t": "Reduces the minimum TargetDpus to create or update capacity reservations from 24 to 4."
+  },
+  {
+    "v": "1.41.2",
+    "t": "Introduces Spark workgroup features including log persistence, S3/CloudWatch delivery, UI and History Server APIs, and SparkConnect 3.5.6 support. Adds DPU usage limits at workgroup and query levels as well as DPU usage tracking for Capacity Reservation queries to optimize performance and costs."
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.28",
+    "t": "Add support for the managed query result in the workgroup APIs. The managed query result configuration enables users to store query results to Athena owned storage."
+  },
+  {
+    "v": "1.38.13",
+    "t": "Minor API documentation updates"
+  },
+  {
+    "v": "1.35.74",
+    "t": "Add FEDERATED type to CreateDataCatalog. This creates Athena Data Catalog, AWS Lambda connector, and AWS Glue connection. Create/DeleteDataCatalog returns DataCatalog. Add Status, ConnectionType, and Error to DataCatalog and DataCatalogSummary. Add DeleteCatalogOnly to delete Athena Catalog only."
+  },
+  {
+    "v": "1.35.44",
+    "t": "Removing FEDERATED from Create/List/Delete/GetDataCatalog API"
+  },
+  {
+    "v": "1.35.25",
+    "t": "List/Get/Update/Delete/CreateDataCatalog now integrate with AWS Glue connections. Users can create a Glue connection through Athena or use a Glue connection to define their Athena federated parameters."
+  },
+  {
+    "v": "1.34.130",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.115",
+    "t": "Throwing validation errors on CreateNotebook with Name containing `/`,`:`,`\\`"
+  },
+  {
+    "v": "1.34.23",
+    "t": "Introducing new NotebookS3LocationUri parameter to Athena ImportNotebook API. Payload is no longer required and either Payload or NotebookS3LocationUri needs to be provided (not both) for a successful ImportNotebook API call. If both are provided, an InvalidRequestException will be thrown."
+  },
+  {
+    "v": "1.33.8",
+    "t": "Adding IdentityCenter enabled request for interactive query"
+  },
+  {
+    "v": "1.32.3",
+    "t": "Adding SerivicePreProcessing time metric"
+  },
+  {
+    "v": "1.29.150",
+    "t": "You can now define custom spark properties at start of the session for use cases like cluster encryption, table formats, and general Spark tuning."
+  },
+  {
+    "v": "1.29.146",
+    "t": "This release introduces the DeleteCapacityReservation API and the ability to manage capacity reservations using CloudFormation"
+  },
+  {
+    "v": "1.29.136",
+    "t": "Removing SparkProperties from EngineConfiguration object for StartSession API call"
+  },
+  {
+    "v": "1.29.134",
+    "t": "You can now define custom spark properties at start of the session for use cases like cluster encryption, table formats, and general Spark tuning."
+  },
+  {
+    "v": "1.29.123",
+    "t": "You can now use capacity reservations on Amazon Athena to run SQL queries on fully-managed compute capacity."
+  },
+  {
+    "v": "1.29.103",
+    "t": "Make DefaultExecutorDpuSize and CoordinatorDpuSize  fields optional  in StartSession"
+  },
+  {
+    "v": "1.29.100",
+    "t": "Enforces a minimal level of encryption for the workgroup for query and calculation results that are written to Amazon S3. When enabled, workgroup users can set encryption only to the minimum level set by the administrator or higher when they submit queries."
+  },
+  {
+    "v": "1.29.87",
+    "t": "A new field SubstatementType is added to GetQueryExecution API, so customers have an error free way to detect the query type and interpret the result."
+  },
+  {
+    "v": "1.29.33",
+    "t": "Add missed InvalidRequestException in GetCalculationExecutionCode,StopCalculationExecution APIs. Correct required parameters (Payload and Type) in UpdateNotebook API. Change Notebook size from 15 Mb to 10 Mb."
+  },
+  {
+    "v": "1.29.20",
+    "t": "This release includes support for using Apache Spark in Amazon Athena."
+  },
+  {
+    "v": "1.29.4",
+    "t": "Adds support for using Query Result Reuse"
+  },
+  {
+    "v": "1.27.35",
+    "t": "This feature allows customers to retrieve runtime statistics for completed queries"
+  },
+  {
+    "v": "1.27.30",
+    "t": "This release updates data types that contain either QueryExecutionId, NamedQueryId or ExpectedBucketOwner. Ids must be between 1 and 128 characters and contain only non-whitespace characters. ExpectedBucketOwner must be 12-digit string."
+  },
+  {
+    "v": "1.27.21",
+    "t": "This feature introduces the API support for Athena's parameterized query and BatchGetPreparedStatement API."
+  },
+  {
+    "v": "1.24.42",
+    "t": "This release adds subfields, ErrorMessage, Retryable, to the AthenaError response object in the GetQueryExecution API when a query fails."
+  },
+  {
+    "v": "1.24.11",
+    "t": "This release adds support for S3 Object Ownership by allowing the S3 bucket owner full control canned ACL to be set when Athena writes query results to S3 buckets."
+  },
+  {
+    "v": "1.24.9",
+    "t": "This release adds support for updating an existing named query."
+  },
+  {
+    "v": "1.24.0",
+    "t": "This release adds a subfield, ErrorType, to the AthenaError response object in the GetQueryExecution API when a query fails."
+  },
+  {
+    "v": "1.23.49",
+    "t": "You can now optionally specify the account ID that you expect to be the owner of your query results output location bucket in Athena. If the account ID of the query results bucket owner does not match the specified account ID, attempts to output to the bucket will fail with an S3 permissions error."
+  },
+  {
+    "v": "1.23.46",
+    "t": "This release adds a field, AthenaError, to the GetQueryExecution response object when a query fails."
+  },
+  {
+    "v": "1.21.16",
+    "t": "Documentation updates for Athena."
+  },
+  {
+    "v": "1.20.22",
+    "t": "Update athena client to latest version"
+  },
+  {
+    "v": "1.20.2",
+    "t": "Update athena client to latest version"
+  },
+  {
+    "v": "1.16.20",
+    "t": "Update athena client to latest version"
+  },
+  {
+    "v": "1.15.28",
+    "t": "Update athena client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update athena client to latest version"
+  },
+  {
+    "v": "1.12.230",
+    "t": "Update athena client to latest version"
+  },
+  {
+    "v": "1.12.209",
+    "t": "Update athena client to latest version"
+  },
+  {
+    "v": "1.12.101",
+    "t": "Update athena client to latest version"
+  },
+  {
+    "v": "1.12.97",
+    "t": "Update athena client to latest version"
+  },
+  {
+    "v": "1.12.22",
+    "t": "Update athena client to latest version"
+  },
+  {
+    "v": "1.5.81",
+    "t": "Added paginators for Athena."
+  },
+  {
+    "v": "1.5.52",
+    "t": "Update athena client to latest version"
+  }
+]

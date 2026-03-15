@@ -1,0 +1,262 @@
+[
+  {
+    "v": "1.42.41",
+    "t": "Updated the CloseAccount description."
+  },
+  {
+    "v": "1.42.8",
+    "t": "Add support for policy operations on the NETWORK SECURITY DIRECTOR POLICY policy type."
+  },
+  {
+    "v": "1.41.4",
+    "t": "Add support for policy operations on the S3_POLICY and BEDROCK_POLICY policy type."
+  },
+  {
+    "v": "1.41.2",
+    "t": "Add support for policy operations on the UPGRADE_ROLLOUT_POLICY policy type."
+  },
+  {
+    "v": "1.41.1",
+    "t": "Added new APIs for Billing Transfer, new policy type INSPECTOR_POLICY, and allow an account to transfer between organizations"
+  },
+  {
+    "v": "1.40.61",
+    "t": "Added Account State field to the ListDelegatedAdministrators API response."
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.27",
+    "t": "Documentation updates for AWS Organizations APIs."
+  },
+  {
+    "v": "1.40.8",
+    "t": "This release introduces 2 new APIs in Organizations: 1. ListAccountsWithInvalidEffectivePolicy 2. ListEffectivePolicyValidationErrors"
+  },
+  {
+    "v": "1.38.38",
+    "t": "Add support for policy operations on the SECURITYHUB_POLICY policy type."
+  },
+  {
+    "v": "1.35.91",
+    "t": "Added ALL_FEATURES_MIGRATION_ORGANIZATION_SIZE_LIMIT_EXCEEDED to ConstraintViolationException for the EnableAllFeatures operation."
+  },
+  {
+    "v": "1.35.72",
+    "t": "Add support for policy operations on the DECLARATIVE_POLICY_EC2 policy type."
+  },
+  {
+    "v": "1.35.60",
+    "t": "Add support for policy operations on the Resource Control Polices."
+  },
+  {
+    "v": "1.35.28",
+    "t": "Add support for policy operations on the CHATBOT_POLICY policy type."
+  },
+  {
+    "v": "1.35.20",
+    "t": "Doc only update for AWS Organizations that fixes several customer-reported issues"
+  },
+  {
+    "v": "1.35.5",
+    "t": "Releasing minor partitional endpoint updates."
+  },
+  {
+    "v": "1.34.139",
+    "t": "Added a new reason under ConstraintViolationException in RegisterDelegatedAdministrator API to prevent registering suspended accounts as delegated administrator of a service."
+  },
+  {
+    "v": "1.34.56",
+    "t": "This release contains an endpoint addition"
+  },
+  {
+    "v": "1.34.55",
+    "t": "Documentation update for AWS Organizations"
+  },
+  {
+    "v": "1.34.24",
+    "t": "Doc only update for quota increase change"
+  },
+  {
+    "v": "1.31.36",
+    "t": "Documentation updates for permissions and links."
+  },
+  {
+    "v": "1.29.83",
+    "t": "This release introduces a new reason code, ACCOUNT_CREATION_NOT_COMPLETE, to ConstraintViolationException in CreateOrganization API."
+  },
+  {
+    "v": "1.29.17",
+    "t": "This release introduces delegated administrator for AWS Organizations, a new feature to help you delegate the management of your Organizations policies, enabling you to govern your AWS organization in a decentralized way. You can now allow member accounts to manage Organizations policies."
+  },
+  {
+    "v": "1.25.5",
+    "t": "This release adds the INVALID_PAYMENT_INSTRUMENT as a fail reason and an error message."
+  },
+  {
+    "v": "1.24.29",
+    "t": "This release provides the new CloseAccount API that enables principals in the management account to close any member account within an organization."
+  },
+  {
+    "v": "1.20.61",
+    "t": "Minor text updates for AWS Organizations API Reference"
+  },
+  {
+    "v": "1.20.3",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.20.0",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.19.2",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.18.18",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.17.62",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.17.46",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.17.40",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.17.38",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.17.32",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.17.19",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.17.10",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.17.9",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.15.33",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.15.28",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.14.3",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.13.28",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.12.245",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.12.217",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.12.181",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.12.163",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.12.133",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.12.131",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.12.103",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.12.100",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.12.65",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.12.7",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.10.20",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.9.10",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.7.46",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.7.40",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.7.34",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.7.20",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.7.11",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.7.1",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.5.81",
+    "t": "Added paginators for Organizations."
+  },
+  {
+    "v": "1.5.71",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.5.48",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.5.22",
+    "t": "Update organizations client to latest version"
+  },
+  {
+    "v": "1.5.19",
+    "t": "Update organizations client to latest version"
+  }
+]

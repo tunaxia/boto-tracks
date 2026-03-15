@@ -1,0 +1,17 @@
+[
+  {
+    "category": "iot",
+    "description": "Add methods for managing CA certificates.",
+    "type": "feature"
+  },
+  {
+    "category": "ec2",
+    "description": "Fix issues with checking an incorrect error code in waiters.",
+    "type": "bugfix"
+  },
+  {
+    "category": "accept-header",
+    "description": "Fix issue in overriding Accept header for API Gateway.",
+    "type": "bugfix"
+  }
+]

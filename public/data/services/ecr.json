@@ -1,0 +1,214 @@
+[
+  {
+    "v": "1.42.67",
+    "t": "Add Chainguard to PTC upstreamRegistry enum"
+  },
+  {
+    "v": "1.42.57",
+    "t": "Update repository name regex to comply with OCI Distribution Specification"
+  },
+  {
+    "v": "1.42.53",
+    "t": "Adds multiple artifact types filter support in ListImageReferrers API."
+  },
+  {
+    "v": "1.42.50",
+    "t": "Adds support for enabling blob mounting, and removes support for Clair based image scanning"
+  },
+  {
+    "v": "1.42.13",
+    "t": "Adds support for ECR Create On Push"
+  },
+  {
+    "v": "1.41.2",
+    "t": "Add support for ECR managed signing"
+  },
+  {
+    "v": "1.41.0",
+    "t": "Add support for ECR archival storage class and Inspector org policy for scanning"
+  },
+  {
+    "v": "1.40.73",
+    "t": "Add Amazon ECR FIPS PrivateLink endpoint support"
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.11",
+    "t": "Add support for Image Tag Mutability Exception feature, allowing repositories to define wildcard-based patterns that override the default image tag mutability settings."
+  },
+  {
+    "v": "1.38.37",
+    "t": "The `DescribeImageScanning` API now includes `lastInUseAt` and `InUseCount` fields that can be used to prioritize vulnerability remediation for images that are actively being used."
+  },
+  {
+    "v": "1.38.6",
+    "t": "Adds dualstack support for Amazon Elastic Container Registry (Amazon ECR)."
+  },
+  {
+    "v": "1.37.26",
+    "t": "Fix for customer issues related to AWS account ID and size limitation for token."
+  },
+  {
+    "v": "1.37.11",
+    "t": "This release adds Amazon ECR to Amazon ECR pull through cache rules support."
+  },
+  {
+    "v": "1.36.16",
+    "t": "Adds support to handle the new basic scanning daily quota."
+  },
+  {
+    "v": "1.36.10",
+    "t": "Temporarily updating dualstack endpoint support"
+  },
+  {
+    "v": "1.36.9",
+    "t": "Add support for Dualstack and Dualstack-with-FIPS Endpoints"
+  },
+  {
+    "v": "1.35.90",
+    "t": "Restoring custom endpoint functionality for ECR"
+  },
+  {
+    "v": "1.35.88",
+    "t": "Add support for Dualstack Endpoints"
+  },
+  {
+    "v": "1.35.87",
+    "t": "Documentation update for ECR GetAccountSetting and PutAccountSetting APIs."
+  },
+  {
+    "v": "1.35.21",
+    "t": "The `DescribeImageScanning` API now includes `fixAvailable`, `exploitAvailable`, and `fixedInVersion` fields to provide more detailed information about the availability of fixes, exploits, and fixed versions for identified image vulnerabilities."
+  },
+  {
+    "v": "1.35.17",
+    "t": "Added KMS_DSSE to EncryptionType"
+  },
+  {
+    "v": "1.34.154",
+    "t": "Released two new APIs along with documentation updates. The GetAccountSetting API is used to view the current basic scan type version setting for your registry, while the PutAccountSetting API is used to update the basic scan type version for your registry."
+  },
+  {
+    "v": "1.34.149",
+    "t": "API and documentation updates for Amazon ECR, adding support for creating, updating, describing and deleting ECR Repository Creation Template."
+  },
+  {
+    "v": "1.34.140",
+    "t": "This release for Amazon ECR makes change to bring the SDK into sync with the API."
+  },
+  {
+    "v": "1.34.101",
+    "t": "This release adds pull through cache rules support for GitLab container registry in Amazon ECR."
+  },
+  {
+    "v": "1.32.3",
+    "t": "Documentation and operational updates for Amazon ECR, adding support for pull through cache rules for upstream registries that require authentication."
+  },
+  {
+    "v": "1.31.45",
+    "t": "This release will have ValidationException be thrown from ECR LifecyclePolicy APIs in regions LifecyclePolicy is not supported, this includes existing Amazon Dedicated Cloud (ADC) regions. This release will also change Tag: TagValue and Tag: TagKey to required."
+  },
+  {
+    "v": "1.24.23",
+    "t": "This release includes a fix in the DescribeImageScanFindings paginated output."
+  },
+  {
+    "v": "1.24.11",
+    "t": "This release adds support for tracking images lastRecordedPullTime."
+  },
+  {
+    "v": "1.23.16",
+    "t": "This release adds supports for pull through cache rules and enhanced scanning."
+  },
+  {
+    "v": "1.21.45",
+    "t": "This release adds additional support for repository replication"
+  },
+  {
+    "v": "1.21.40",
+    "t": "This release updates terminology around KMS keys."
+  },
+  {
+    "v": "1.19.32",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.17.44",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.17.31",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.17.14",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.16.11",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.15.48",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.14.12",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.13.46",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.13.14",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.13.3",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.12.196",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.12.85",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.12.67",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.9.1",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.7.27",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.4.90",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.4.61",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.4.52",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.4.44",
+    "t": "Update ecr client to latest version"
+  },
+  {
+    "v": "1.4.14",
+    "t": "Update ecr client to latest version"
+  }
+]

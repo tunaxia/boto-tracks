@@ -1,0 +1,86 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Doc only updates for APIs and and datatypes related to IPAddressType and Subnets for IPv6 dualstack support."
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.38.2",
+    "t": "AWS App Runner adds Node.js 22 runtime."
+  },
+  {
+    "v": "1.34.11",
+    "t": "AWS App Runner adds Python 3.11 and Node.js 18 runtimes."
+  },
+  {
+    "v": "1.31.77",
+    "t": "AWS App Runner now supports using dual-stack address type for the public endpoint of your incoming traffic."
+  },
+  {
+    "v": "1.31.55",
+    "t": "This release allows an App Runner customer to specify a custom source directory to run the build & start command. This change allows App Runner to support monorepo based repositories"
+  },
+  {
+    "v": "1.31.52",
+    "t": "This release adds improvements for managing App Runner auto scaling configuration resources. New APIs: UpdateDefaultAutoScalingConfiguration and ListServicesForAutoScalingConfiguration. Updated API: DeleteAutoScalingConfiguration."
+  },
+  {
+    "v": "1.31.38",
+    "t": "App Runner adds support for Bitbucket. You can now create App Runner connection that connects to your Bitbucket repositories and deploy App Runner service with the source code stored in a Bitbucket repository."
+  },
+  {
+    "v": "1.29.107",
+    "t": "App Runner adds support for seven new vCPU and memory configurations."
+  },
+  {
+    "v": "1.29.74",
+    "t": "This release supports removing MaxSize limit for AutoScalingConfiguration."
+  },
+  {
+    "v": "1.29.44",
+    "t": "This release adds support of securely referencing secrets and configuration data that are stored in Secrets Manager and SSM Parameter Store by adding them as environment secrets in your App Runner service."
+  },
+  {
+    "v": "1.28.5",
+    "t": "This release adds support for private App Runner services. Services may now be configured to be made private and only accessible from a VPC. The changes include a new VpcIngressConnection resource and several new and modified APIs."
+  },
+  {
+    "v": "1.28.4",
+    "t": "AWS App Runner adds .NET 6, Go 1, PHP 8.1 and Ruby 3.1 runtimes."
+  },
+  {
+    "v": "1.27.80",
+    "t": "AWS App Runner adds a Node.js 16 runtime."
+  },
+  {
+    "v": "1.26.8",
+    "t": "Documentation-only update added for CodeConfiguration."
+  },
+  {
+    "v": "1.24.38",
+    "t": "This release adds tracing for App Runner services with X-Ray using AWS Distro for OpenTelemetry. New APIs: CreateObservabilityConfiguration, DescribeObservabilityConfiguration, ListObservabilityConfigurations, and DeleteObservabilityConfiguration. Updated APIs: CreateService and UpdateService."
+  },
+  {
+    "v": "1.24.5",
+    "t": "AWS App Runner adds a Java platform (Corretto 8, Corretto 11 runtimes) and a Node.js 14 runtime."
+  },
+  {
+    "v": "1.23.51",
+    "t": "This release adds support for App Runner to route outbound network traffic of a service through an Amazon VPC. New API: CreateVpcConnector, DescribeVpcConnector, ListVpcConnectors, and DeleteVpcConnector. Updated API: CreateService, DescribeService, and UpdateService."
+  },
+  {
+    "v": "1.21.53",
+    "t": "This release contains several minor bug fixes."
+  },
+  {
+    "v": "1.20.75",
+    "t": "AWS App Runner is a service that provides a fast, simple, and cost-effective way to deploy from source code or a container image directly to a scalable and secure web application in the AWS Cloud."
+  }
+]

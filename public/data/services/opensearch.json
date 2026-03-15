@@ -1,0 +1,178 @@
+[
+  {
+    "v": "1.42.64",
+    "t": "This change enables cross-account and cross-region access for DataSources. Customers can now define access policies on their datasources to allow other AWS accounts to access and query their data."
+  },
+  {
+    "v": "1.42.61",
+    "t": "Adding support for DeploymentStrategyOptions"
+  },
+  {
+    "v": "1.42.56",
+    "t": "Fixed HTTP binding for DescribeDomainAutoTunes API to correctly pass request parameters as query parameters in the HTTP request."
+  },
+  {
+    "v": "1.42.13",
+    "t": "Amazon OpenSearch Service adds support for warm nodes, enabling new multi-tier architecture."
+  },
+  {
+    "v": "1.42.7",
+    "t": "The CreateApplication API now supports an optional kms key arn parameter to allow customers to specify a CMK for application encryption."
+  },
+  {
+    "v": "1.42.1",
+    "t": "GPU-acceleration helps you build large-scale vector databases faster and more efficiently. You can enable this feature on new OpenSearch domains and OpenSearch Serverless collections. This feature uses GPU-acceleration to reduce the time needed to index data into vector indexes."
+  },
+  {
+    "v": "1.40.75",
+    "t": "This release adds index operation APIs to support Automatic Semantic Enrichment feature"
+  },
+  {
+    "v": "1.40.69",
+    "t": "This release introduces the Default Application feature, allowing users to set, change, or unset a preferred OpenSearch UI application on a per-region basis for a streamlined and consistent user experience."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.0",
+    "t": "Granular access control support for NEO-SAML with IAMFederation for AOS data source"
+  },
+  {
+    "v": "1.39.5",
+    "t": "AWS Opensearch adds support for enabling s3 vector engine options. After enabling this option, customers will be able to create indices with s3 vector engine."
+  },
+  {
+    "v": "1.37.27",
+    "t": "Improve descriptions for various API commands and data types."
+  },
+  {
+    "v": "1.35.72",
+    "t": "This feature introduces support for CRUDL APIs, enabling the creation and management of Connected data sources."
+  },
+  {
+    "v": "1.35.58",
+    "t": "Adds Support for new AssociatePackages and DissociatePackages API in Amazon OpenSearch Service that allows association and dissociation operations to be carried out on multiple packages at the same time."
+  },
+  {
+    "v": "1.35.52",
+    "t": "This release introduces the new OpenSearch user interface (Dashboards), a new web-based application that can be associated with multiple data sources across OpenSearch managed clusters, serverless collections, and Amazon S3, so that users can gain a comprehensive insights in an unified interface."
+  },
+  {
+    "v": "1.35.50",
+    "t": "Adds support for provisioning dedicated coordinator nodes. Coordinator nodes can be specified using the new NodeOptions parameter in ClusterConfig."
+  },
+  {
+    "v": "1.34.142",
+    "t": "This release adds support for enabling or disabling Natural Language Query Processing feature for Amazon OpenSearch Service domains, and provides visibility into the current state of the setup or tear-down."
+  },
+  {
+    "v": "1.34.136",
+    "t": "This release removes support for enabling or disabling Natural Language Query Processing feature for Amazon OpenSearch Service domains."
+  },
+  {
+    "v": "1.34.134",
+    "t": "This release adds support for enabling or disabling Natural Language Query Processing feature for Amazon OpenSearch Service domains, and provides visibility into the current state of the setup or tear-down."
+  },
+  {
+    "v": "1.34.130",
+    "t": "This release enables customers to use JSON Web Tokens (JWT) for authentication on their Amazon OpenSearch Service domains."
+  },
+  {
+    "v": "1.34.111",
+    "t": "This release adds support for enabling or disabling a data source configured as part of Zero-ETL integration with Amazon S3, by setting its status."
+  },
+  {
+    "v": "1.34.95",
+    "t": "This release enables customers to create Route53 A and AAAA alias record types to point custom endpoint domain to OpenSearch domain's dualstack search endpoint."
+  },
+  {
+    "v": "1.34.43",
+    "t": "Adds additional supported instance types."
+  },
+  {
+    "v": "1.34.36",
+    "t": "This release adds clear visibility to the customers on the changes that they make on the domain."
+  },
+  {
+    "v": "1.34.13",
+    "t": "This release adds support for new or existing Amazon OpenSearch domains to enable TLS 1.3 or TLS 1.2 with perfect forward secrecy cipher suites for domain endpoints."
+  },
+  {
+    "v": "1.34.1",
+    "t": "Updating documentation for Amazon OpenSearch Service support for new zero-ETL integration with Amazon S3."
+  },
+  {
+    "v": "1.33.3",
+    "t": "Launching Amazon OpenSearch Service support for new zero-ETL integration with Amazon S3. Customers can now manage their direct query data sources to Amazon S3 programatically"
+  },
+  {
+    "v": "1.31.72",
+    "t": "You can specify ipv4 or dualstack IPAddressType for cluster endpoints. If you specify IPAddressType as dualstack, the new endpoint will be visible under the 'EndpointV2' parameter and will support IPv4 and IPv6 requests. Whereas, the 'Endpoint' will continue to serve IPv4 requests."
+  },
+  {
+    "v": "1.31.67",
+    "t": "Added Cluster Administrative options for node restart, opensearch process restart and opensearch dashboard restart for Multi-AZ without standby domains"
+  },
+  {
+    "v": "1.31.64",
+    "t": "This release allows customers to list and associate optional plugin packages with compatible Amazon OpenSearch Service clusters for enhanced functionality."
+  },
+  {
+    "v": "1.29.152",
+    "t": "This release adds support for SkipUnavailable connection property for cross cluster search"
+  },
+  {
+    "v": "1.29.133",
+    "t": "This release fixes DescribePackages API error with null filter value parameter."
+  },
+  {
+    "v": "1.29.127",
+    "t": "DescribeDomainNodes: A new API that provides configuration information for nodes part of the domain"
+  },
+  {
+    "v": "1.29.126",
+    "t": "Amazon OpenSearch Service adds the option to deploy a domain across multiple Availability Zones, with each AZ containing a complete copy of data and with nodes in one AZ acting as a standby. This option provides 99.99% availability and consistent performance in the event of infrastructure failure."
+  },
+  {
+    "v": "1.29.77",
+    "t": "This release lets customers configure Off-peak window and software update related properties for a new/existing domain. It enhances the capabilities of StartServiceSoftwareUpdate API; adds 2 new APIs - ListScheduledActions & UpdateScheduledAction; and allows Auto-tune to make use of Off-peak window."
+  },
+  {
+    "v": "1.29.61",
+    "t": "Amazon OpenSearch Service adds the option for a VPC endpoint connection between two domains when the local domain uses OpenSearch version 1.3 or 2.3. You can now use remote reindex to copy indices from one VPC domain to another without a reverse proxy."
+  },
+  {
+    "v": "1.29.53",
+    "t": "This release adds the enhanced dry run option, that checks for validation errors that might occur when deploying configuration changes and provides a summary of these errors, if any. The feature will also indicate whether a blue/green deployment will be required to apply a change."
+  },
+  {
+    "v": "1.29.5",
+    "t": "Amazon OpenSearch Service now offers managed VPC endpoints to connect to your Amazon OpenSearch Service VPC-enabled domain in a Virtual Private Cloud (VPC). This feature allows you to privately access OpenSearch Service domain without using public IPs or requiring traffic to traverse the Internet."
+  },
+  {
+    "v": "1.27.40",
+    "t": "This release adds support for gp3 EBS (Elastic Block Store) storage."
+  },
+  {
+    "v": "1.23.45",
+    "t": "Allows customers to get progress updates for blue/green deployments"
+  },
+  {
+    "v": "1.23.30",
+    "t": "Amazon OpenSearch Service adds support for Fine Grained Access Control for existing domains running Elasticsearch version 6.7 and above"
+  },
+  {
+    "v": "1.23.12",
+    "t": "This release adds an optional parameter dry-run for the UpdateDomainConfig API to perform basic validation checks, and detect the deployment type that will be required for the configuration change, without actually applying the change."
+  },
+  {
+    "v": "1.21.44",
+    "t": "This release adds an optional parameter in the ListDomainNames API to filter domains based on the engine type (OpenSearch/Elasticsearch)."
+  },
+  {
+    "v": "1.21.38",
+    "t": "Updated Configuration APIs for Amazon OpenSearch Service (successor to Amazon Elasticsearch Service)"
+  }
+]

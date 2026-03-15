@@ -1,0 +1,206 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.21",
+    "t": "Doc only update that addresses a customer reported issue."
+  },
+  {
+    "v": "1.37.32",
+    "t": "Application Auto Scaling now supports horizontal scaling for Elasticache Memcached self-designed clusters using target tracking scaling policies and scheduled scaling."
+  },
+  {
+    "v": "1.35.78",
+    "t": "Doc only update for AAS Predictive Scaling policy configuration API."
+  },
+  {
+    "v": "1.35.67",
+    "t": "Application Auto Scaling now supports Predictive Scaling to proactively increase the desired capacity ahead of predicted demand, ensuring improved availability and responsiveness for customers' applications. This feature is currently only made available for Amazon ECS Service scalable targets."
+  },
+  {
+    "v": "1.34.149",
+    "t": "Application Auto Scaling is now more responsive to the changes in demand of your SageMaker Inference endpoints. To get started, create or update a Target Tracking policy based on High Resolution CloudWatch metrics."
+  },
+  {
+    "v": "1.34.139",
+    "t": "Doc only update for Application Auto Scaling that fixes resource name."
+  },
+  {
+    "v": "1.34.135",
+    "t": "Amazon WorkSpaces customers can now use Application Auto Scaling to automatically scale the number of virtual desktops in a WorkSpaces pool."
+  },
+  {
+    "v": "1.34.108",
+    "t": "add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.33.3",
+    "t": "Amazon SageMaker customers can now use Application Auto Scaling to automatically scale the number of Inference Component copies across an endpoint to meet the varying demand of their workloads."
+  },
+  {
+    "v": "1.29.141",
+    "t": "With this release, ElastiCache customers will be able to use predefined metricType \"ElastiCacheDatabaseCapacityUsageCountedForEvictPercentage\" for their ElastiCache instances."
+  },
+  {
+    "v": "1.29.131",
+    "t": "With this release, Amazon SageMaker Serverless Inference customers can use Application Auto Scaling to auto scale the provisioned concurrency of their serverless endpoints."
+  },
+  {
+    "v": "1.29.95",
+    "t": "With this release customers can now tag their Application Auto Scaling registered targets with key-value pairs and manage IAM permissions for all the tagged resources centrally."
+  },
+  {
+    "v": "1.29.91",
+    "t": "Application Auto Scaling customers can now use mathematical functions to customize the metric used with Target Tracking policies within the policy configuration itself, saving the cost and effort of publishing the customizations as a separate metric."
+  },
+  {
+    "v": "1.29.59",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.29.43",
+    "t": "Customers can now use the existing DescribeScalingActivities API to also see the detailed and machine-readable reasons for Application Auto Scaling not scaling their resources and, if needed, take the necessary corrective actions."
+  },
+  {
+    "v": "1.21.55",
+    "t": "With this release, Application Auto Scaling adds support for Amazon Neptune. Customers can now automatically add or remove Read Replicas of their Neptune clusters to keep the average CPU Utilization at the target value specified by the customers."
+  },
+  {
+    "v": "1.21.25",
+    "t": "This release extends Application Auto Scaling support for replication group of Amazon ElastiCache Redis clusters. Auto Scaling monitors and automatically expands node group count and number of replicas per node group when a critical usage threshold is met or according to customer-defined schedule."
+  },
+  {
+    "v": "1.20.0",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.19.49",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.18.9",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.18.7",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.17.23",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.16.14",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.15.45",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.13.32",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.12.242",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.12.219",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.12.206",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.12.105",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.12.96",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.12.87",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.10.54",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.10.53",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.9.2",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.8.30",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.7.47",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.7.46",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.7.42",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.7.6",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.7.1",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.5.68",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.5.29",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.4.76",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.4.51",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.4.42",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.4.39",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.4.25",
+    "t": "Update application-autoscaling client to latest version"
+  },
+  {
+    "v": "1.4.21",
+    "t": "Adds support for Application Auto Scaling. Application Auto Scaling is a general purpose Auto Scaling service for supported elastic AWS resources. With Application Auto Scaling, you can automatically scale your AWS resources, with an experience similar to that of Auto Scaling."
+  }
+]

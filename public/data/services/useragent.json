@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.37.4",
+    "t": "Update user agent string to include client feature use."
+  },
+  {
+    "v": "1.30.0",
+    "t": "Update User-Agent header format"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.34.51",
+    "t": "We have added the ability to tag resources after they are created"
+  },
+  {
+    "v": "1.31.54",
+    "t": "Support for generating code that is compatible with future versions of amplify project dependencies."
+  },
+  {
+    "v": "1.31.16",
+    "t": "Amplify Studio releases GraphQL support for codegen job action."
+  },
+  {
+    "v": "1.29.152",
+    "t": "AWS Amplify UIBuilder is launching Codegen UI, a new feature that enables you to generate your amplify uibuilder components and forms."
+  },
+  {
+    "v": "1.29.106",
+    "t": "Support StorageField and custom displays for data-bound options in form builder. Support non-string operands for predicates in collections. Support choosing client to get token from."
+  },
+  {
+    "v": "1.27.90",
+    "t": "We are releasing the ability for fields to be configured as arrays."
+  },
+  {
+    "v": "1.27.73",
+    "t": "Amplify Studio UIBuilder is introducing forms functionality. Forms can be configured from Data Store models, JSON, or from scratch. These forms can then be generated in your project and used like any other React components."
+  },
+  {
+    "v": "1.24.38",
+    "t": "In this release, we have added the ability to bind events to component level actions."
+  },
+  {
+    "v": "1.24.9",
+    "t": "We are adding the ability to configure workflows and actions for components."
+  },
+  {
+    "v": "1.23.19",
+    "t": "This release introduces the actions and data types for the new Amplify UI Builder API. The Amplify UI Builder API provides a programmatic interface for creating and configuring user interface (UI) component libraries and themes for use in Amplify applications."
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.57",
+    "t": "Added support for Media Capture Pipeline and Media Concatenation Pipeline for customer managed server side encryption. Now Media Capture Pipeline can use IAM sink role to get access to KMS key and encrypt/decrypt recorded artifacts. KMS key ID can also be supplied with encryption context."
+  },
+  {
+    "v": "1.34.135",
+    "t": "Added Amazon Transcribe multi language identification to Chime SDK call analytics. Enabling customers sending single stream audio to generate call recordings using Chime SDK call analytics"
+  },
+  {
+    "v": "1.31.54",
+    "t": "Adds support for sending WebRTC audio to Amazon Kineses Video Streams."
+  },
+  {
+    "v": "1.31.40",
+    "t": "This release adds support for the Voice Analytics feature for customer-owned KVS streams as part of the Amazon Chime SDK call analytics."
+  },
+  {
+    "v": "1.31.39",
+    "t": "This release adds support for feature Voice Enhancement for Call Recording as part of Amazon Chime SDK call analytics."
+  },
+  {
+    "v": "1.31.10",
+    "t": "AWS Media Pipeline compositing enhancement and Media Insights Pipeline auto language identification."
+  },
+  {
+    "v": "1.29.117",
+    "t": "This release adds support for specifying the recording file format in an S3 recording sink configuration."
+  },
+  {
+    "v": "1.29.98",
+    "t": "This release adds Amazon Chime SDK call analytics. Call analytics include voice analytics, which provides speaker search and voice tone analysis. These capabilities can be used with Amazon Transcribe and Transcribe Call Analytics to generate machine-learning-powered insights from real-time audio."
+  },
+  {
+    "v": "1.27.55",
+    "t": "The Amazon Chime SDK now supports live streaming of real-time video from the Amazon Chime SDK sessions to streaming platforms such as Amazon IVS and Amazon Elemental MediaLive. We have also added support for concatenation to create a single media capture file."
+  },
+  {
+    "v": "1.25.2",
+    "t": "For Amazon Chime SDK meetings, the Amazon Chime Media Pipelines SDK allows builders to capture audio, video, and content share streams. You can also capture meeting events, live transcripts, and data messages. The pipelines save the artifacts to an Amazon S3 bucket that you designate."
+  }
+]

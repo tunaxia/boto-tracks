@@ -1,0 +1,170 @@
+[
+  {
+    "v": "1.42.65",
+    "t": "Add dual stack endpoint to SDK"
+  },
+  {
+    "v": "1.42.50",
+    "t": "Amazon MSK now supports dual-stack connectivity (IPv4 and IPv6) for existing MSK clusters. You can enable dual-stack on existing clusters by specifying the NetworkType parameter in updateConnectivity API."
+  },
+  {
+    "v": "1.42.46",
+    "t": "Amazon MSK adds three new APIs, CreateTopic, UpdateTopic, and DeleteTopic for managing Kafka topics in your MSK clusters."
+  },
+  {
+    "v": "1.40.76",
+    "t": "Amazon MSK adds three new APIs, ListTopics, DescribeTopic, and DescribeTopicPartitions for viewing Kafka topics in your MSK clusters."
+  },
+  {
+    "v": "1.40.70",
+    "t": "Amazon MSK now supports intelligent rebalancing for MSK Express brokers."
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.15",
+    "t": "Amazon MSK Replicator can now replicate data to identically named topics between MSK clusters within the same AWS Region or across different AWS Regions."
+  },
+  {
+    "v": "1.34.114",
+    "t": "Adds ControllerNodeInfo in ListNodes response to support Raft mode for MSK"
+  },
+  {
+    "v": "1.34.107",
+    "t": "AWS MSK support for Broker Removal."
+  },
+  {
+    "v": "1.34.61",
+    "t": "Added support for specifying the starting position of topic replication in MSK-Replicator."
+  },
+  {
+    "v": "1.32.2",
+    "t": "Added a new API response field which determines if there is an action required from the customer regarding their cluster."
+  },
+  {
+    "v": "1.31.65",
+    "t": "AWS Managed Streaming for Kafka is launching MSK Replicator, a new feature that enables customers to reliably replicate data across Amazon MSK clusters in same or different AWS regions. You can now use SDK to create, list, describe, delete, update, and manage tags of MSK Replicators."
+  },
+  {
+    "v": "1.31.15",
+    "t": "Amazon MSK has introduced new versions of ListClusterOperations and DescribeClusterOperation APIs. These v2 APIs provide information and insights into the ongoing operations of both MSK Provisioned and MSK Serverless clusters."
+  },
+  {
+    "v": "1.29.134",
+    "t": "Added a fix to make clusterarn a required field in ListClientVpcConnections and RejectClientVpcConnection APIs"
+  },
+  {
+    "v": "1.29.122",
+    "t": "Amazon MSK has added new APIs that allows multi-VPC private connectivity and cluster policy support for Amazon MSK clusters that simplify connectivity and access between your Apache Kafka clients hosted in different VPCs and AWS accounts and your Amazon MSK clusters."
+  },
+  {
+    "v": "1.29.60",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.28.2",
+    "t": "This release adds support for Tiered Storage. UpdateStorage allows you to control the Storage Mode for supported storage tiers."
+  },
+  {
+    "v": "1.27.13",
+    "t": "Documentation updates to use Az Id during cluster creation."
+  },
+  {
+    "v": "1.23.45",
+    "t": "Amazon MSK has updated the CreateCluster and UpdateBrokerStorage API that allows you to specify volume throughput during cluster creation and broker volume updates."
+  },
+  {
+    "v": "1.23.17",
+    "t": "This release adds three new V2 APIs. CreateClusterV2 for creating both provisioned and serverless clusters. DescribeClusterV2 for getting information about provisioned and serverless clusters and ListClustersV2 for listing all clusters (both provisioned and serverless) in your account."
+  },
+  {
+    "v": "1.23.9",
+    "t": "Amazon MSK has added a new API that allows you to update the connectivity settings for an existing cluster to enable public accessibility."
+  },
+  {
+    "v": "1.21.38",
+    "t": "Amazon MSK has added a new API that allows you to update the encrypting and authentication settings for an existing cluster."
+  },
+  {
+    "v": "1.20.68",
+    "t": "IAM Access Control for Amazon MSK enables you to create clusters that use IAM to authenticate clients and to allow or deny Apache Kafka actions for those clients."
+  },
+  {
+    "v": "1.19.58",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.19.30",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.19.23",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.18.10",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.17.62",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.17.48",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.17.32",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.16.19",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.15.7",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.14.10",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.13.35",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.12.251",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.12.246",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.12.159",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.12.152",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.12.133",
+    "t": "Update kafka client to latest version"
+  },
+  {
+    "v": "1.12.56",
+    "t": "Update kafka client to latest version"
+  }
+]

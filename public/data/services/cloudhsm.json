@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.31.39",
+    "t": "Deprecating CloudHSM Classic API Service."
+  },
+  {
+    "v": "1.20.42",
+    "t": "Minor documentation and link updates."
+  },
+  {
+    "v": "1.7.29",
+    "t": "Update cloudhsm client to latest version"
+  },
+  {
+    "v": "1.7.21",
+    "t": "Update cloudhsm client to latest version"
+  },
+  {
+    "v": "1.4.5",
+    "t": "Added support for tagging resources."
+  }
+]

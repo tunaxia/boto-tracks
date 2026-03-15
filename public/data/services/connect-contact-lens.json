@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.37.33",
+    "t": "Making sentiment optional for ListRealtimeContactAnalysisSegments Response depending on conversational analytics configuration"
+  },
+  {
+    "v": "1.34.147",
+    "t": "Added PostContactSummary segment type on ListRealTimeContactAnalysisSegments API"
+  },
+  {
+    "v": "1.19.27",
+    "t": "Update connect-contact-lens client to latest version"
+  }
+]

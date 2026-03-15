@@ -1,0 +1,118 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.82",
+    "t": "This release adds support for Local Zones in Amazon Data Lifecycle Manager EBS snapshot lifecycle policies."
+  },
+  {
+    "v": "1.32.3",
+    "t": "Added support for SAP HANA in Amazon Data Lifecycle Manager EBS snapshot lifecycle policies with pre and post scripts."
+  },
+  {
+    "v": "1.32.2",
+    "t": "This release adds support for Amazon Data Lifecycle Manager default policies for EBS snapshots and EBS-backed AMIs."
+  },
+  {
+    "v": "1.31.80",
+    "t": "Added support for pre and post scripts in Amazon Data Lifecycle Manager EBS snapshot lifecycle policies."
+  },
+  {
+    "v": "1.29.109",
+    "t": "Updated timestamp format for GetLifecyclePolicy API"
+  },
+  {
+    "v": "1.29.60",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.27.84",
+    "t": "This release adds support for archival of single-volume snapshots created by Amazon Data Lifecycle Manager policies"
+  },
+  {
+    "v": "1.27.49",
+    "t": "This release adds support for excluding specific data (non-boot) volumes from multi-volume snapshot sets created by snapshot lifecycle policies"
+  },
+  {
+    "v": "1.21.27",
+    "t": "Added AMI deprecation support for Amazon Data Lifecycle Manager EBS-backed AMI policies."
+  },
+  {
+    "v": "1.20.2",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.19.39",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.19.13",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.17.63",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.17.0",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.16.17",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.15.46",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.14.11",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.13.43",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.13.17",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.12.158",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.12.91",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.12.41",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.10.82",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.10.62",
+    "t": "Update dlm client to latest version"
+  },
+  {
+    "v": "1.10.57",
+    "t": "Update dlm client to latest version"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.33.7",
+    "t": "Documentation-only updates for Dawn"
+  },
+  {
+    "v": "1.31.85",
+    "t": "When the customer associates a resource collection to their application with this new feature, then a new application tag will be applied to all supported resources that are part of that collection. This allows customers to more easily find the application that is associated with those resources."
+  },
+  {
+    "v": "1.29.100",
+    "t": "In this release, we started supporting ARN in applicationSpecifier and attributeGroupSpecifier. GetAttributeGroup, ListAttributeGroups and ListAttributeGroupsForApplication APIs will now have CreatedBy field in the response."
+  },
+  {
+    "v": "1.29.12",
+    "t": "This release adds support for tagged resource associations, which allows you to associate a group of resources with a defined resource tag key and value to the application."
+  },
+  {
+    "v": "1.27.10",
+    "t": "This release adds a new API ListAttributeGroupsForApplication that returns associated attribute groups of an application. In addition, the UpdateApplication and UpdateAttributeGroup APIs will not allow users to update the 'Name' attribute."
+  },
+  {
+    "v": "1.24.9",
+    "t": "AppRegistry is deprecating Application and Attribute-Group Name update feature. In this release, we are marking the name attributes for Update APIs as deprecated to give a heads up to our customers."
+  },
+  {
+    "v": "1.21.34",
+    "t": "Introduction of GetAssociatedResource API and GetApplication response extension for Resource Groups support."
+  },
+  {
+    "v": "1.19.41",
+    "t": "Update servicecatalog-appregistry client to latest version"
+  },
+  {
+    "v": "1.19.31",
+    "t": "Update servicecatalog-appregistry client to latest version"
+  },
+  {
+    "v": "1.19.23",
+    "t": "Update servicecatalog-appregistry client to latest version"
+  },
+  {
+    "v": "1.19.17",
+    "t": "Update servicecatalog-appregistry client to latest version"
+  }
+]

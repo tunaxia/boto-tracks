@@ -1,0 +1,58 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.20.43",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.19.22",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.17.37",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.13.24",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.12.247",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.12.205",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.8.40",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.7.15",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.5.34",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.5.10",
+    "t": "Update lex-runtime client to latest version"
+  },
+  {
+    "v": "1.5.8",
+    "t": "Update lex-runtime client to latest version"
+  }
+]

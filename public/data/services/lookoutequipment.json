@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.34.47",
+    "t": "This release adds a field exposing model quality to read APIs for models. It also adds a model quality field to the API response when creating an inference scheduler."
+  },
+  {
+    "v": "1.34.42",
+    "t": "This feature allows customers to see pointwise model diagnostics results for their models."
+  },
+  {
+    "v": "1.31.48",
+    "t": "This release adds APIs for the new scheduled retraining feature."
+  },
+  {
+    "v": "1.31.16",
+    "t": "This release includes new import resource, model versioning and resource policy features."
+  },
+  {
+    "v": "1.29.34",
+    "t": "This release adds support for listing inference schedulers by status."
+  },
+  {
+    "v": "1.27.63",
+    "t": "This release adds new apis for providing labels."
+  },
+  {
+    "v": "1.27.16",
+    "t": "This release adds visualizations to the scheduled inference results. Users will be able to see interference results, including diagnostic results from their running inference schedulers."
+  },
+  {
+    "v": "1.25.2",
+    "t": "This release adds the following new features: 1) Introduces an option for automatic schema creation 2) Now allows for Ingestion of data containing most common errors and allows automatic data cleaning 3) Introduces new API ListSensorStatistics that gives further information about the ingested data"
+  },
+  {
+    "v": "1.21.39",
+    "t": "Added OffCondition parameter to CreateModel API"
+  },
+  {
+    "v": "1.20.48",
+    "t": "This release introduces support for Amazon Lookout for Equipment."
+  }
+]

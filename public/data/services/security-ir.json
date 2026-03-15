@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.41.2",
+    "t": "Add ListInvestigations and SendFeedback APIs to support SecurityIR AI agents"
+  },
+  {
+    "v": "1.40.71",
+    "t": "Added support for configuring communication preferences as well as clearly displaying case comment author identities."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.9",
+    "t": "Added support for Organizational Unit-level Membership configuration and the ability to resume a cancelled membership."
+  },
+  {
+    "v": "1.38.23",
+    "t": "Update PrincipalId pattern documentation to reflect what user should receive back from the API call"
+  },
+  {
+    "v": "1.36.0",
+    "t": "Increase minimum length of Threat Actor IP 'userAgent' to 1."
+  },
+  {
+    "v": "1.35.72",
+    "t": "AWS Security Incident Response is a purpose-built security incident solution designed to help customers prepare for, respond to, and recover from security incidents."
+  }
+]

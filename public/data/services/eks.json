@@ -1,0 +1,354 @@
+[
+  {
+    "v": "1.42.66",
+    "t": "Adds support for a new tier in controlPlaneScalingConfig on EKS Clusters."
+  },
+  {
+    "v": "1.42.47",
+    "t": "This release adds support for Windows Server 2025 in Amazon EKS Managed Node Groups."
+  },
+  {
+    "v": "1.42.46",
+    "t": "Introducing an optional policy field, an IAM policy applied to pod identity associations in addition to IAM role policies. When specified, pod permissions are the intersection of IAM role policies and the policy field, ensuring the principle of least privilege."
+  },
+  {
+    "v": "1.42.45",
+    "t": "Amazon EKS adds a new DescribeUpdate update type, VendedLogsUpdate, to support an integration between EKS Auto Mode and Amazon CloudWatch Vended Logs."
+  },
+  {
+    "v": "1.42.42",
+    "t": "Update delete cluster description"
+  },
+  {
+    "v": "1.42.28",
+    "t": "Added support for BOTTLEROCKET NVIDIA FIPS AMIs to AMI types in US regions."
+  },
+  {
+    "v": "1.41.6",
+    "t": "This release adds support for EKS Capabilities"
+  },
+  {
+    "v": "1.41.2",
+    "t": "Adds support for controlPlaneScalingConfig on EKS Clusters."
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.36",
+    "t": "Adds support for RepairConfig overrides and configurations in EKS Managed Node Groups."
+  },
+  {
+    "v": "1.40.19",
+    "t": "Add support for on-demand refresh of EKS cluster insights"
+  },
+  {
+    "v": "1.40.14",
+    "t": "EKS Add-ons Custom Namespace Support"
+  },
+  {
+    "v": "1.40.3",
+    "t": "Add support for deletion protection on EKS clusters"
+  },
+  {
+    "v": "1.38.35",
+    "t": "Release for EKS Pod Identity Cross Account feature and disableSessionTags flag."
+  },
+  {
+    "v": "1.38.28",
+    "t": "Add support for filtering ListInsights API calls on MISCONFIGURATION insight category"
+  },
+  {
+    "v": "1.37.35",
+    "t": "Added support for new AL2023 ARM64 NVIDIA AMIs to the supported AMITypes."
+  },
+  {
+    "v": "1.37.24",
+    "t": "Add support for updating RemoteNetworkConfig for hybrid nodes on EKS UpdateClusterConfig API"
+  },
+  {
+    "v": "1.37.22",
+    "t": "Added support for BOTTLEROCKET FIPS AMIs to AMI types in US regions."
+  },
+  {
+    "v": "1.37.20",
+    "t": "Added support to override upgrade-blocking readiness checks via force flag when updating a cluster."
+  },
+  {
+    "v": "1.37.4",
+    "t": "Adding licenses to EKS Anywhere Subscription operations response."
+  },
+  {
+    "v": "1.36.16",
+    "t": "Introduce versionStatus field to take place of status field in EKS DescribeClusterVersions API"
+  },
+  {
+    "v": "1.36.6",
+    "t": "Adds support for UpdateStrategies in EKS Managed Node Groups."
+  },
+  {
+    "v": "1.35.87",
+    "t": "This release adds support for DescribeClusterVersions API that provides important information about Kubernetes versions along with end of support dates"
+  },
+  {
+    "v": "1.35.86",
+    "t": "This release expands the catalog of upgrade insight checks"
+  },
+  {
+    "v": "1.35.81",
+    "t": "Add NodeRepairConfig in CreateNodegroupRequest and UpdateNodegroupConfigRequest"
+  },
+  {
+    "v": "1.35.72",
+    "t": "Added support for Auto Mode Clusters, Hybrid Nodes, and specifying computeTypes in the DescribeAddonVersions API."
+  },
+  {
+    "v": "1.35.57",
+    "t": "Adds new error code `Ec2InstanceTypeDoesNotExist` for Amazon EKS managed node groups"
+  },
+  {
+    "v": "1.35.45",
+    "t": "This release adds support for Amazon Application Recovery Controller (ARC) zonal shift and zonal autoshift with EKS that enhances the resiliency of multi-AZ cluster environments"
+  },
+  {
+    "v": "1.34.159",
+    "t": "Added support for new AL2023 GPU AMIs to the supported AMITypes."
+  },
+  {
+    "v": "1.34.149",
+    "t": "This release adds support for EKS cluster to manage extended support."
+  },
+  {
+    "v": "1.34.137",
+    "t": "Updates EKS managed node groups to support EC2 Capacity Blocks for ML"
+  },
+  {
+    "v": "1.34.134",
+    "t": "Added support for disabling unmanaged addons during cluster creation."
+  },
+  {
+    "v": "1.34.129",
+    "t": "This release adds support to surface async fargate customer errors from async path to customer through describe-fargate-profile API response."
+  },
+  {
+    "v": "1.34.118",
+    "t": "Adds support for EKS add-ons pod identity associations integration"
+  },
+  {
+    "v": "1.34.73",
+    "t": "Add multiple customer error code to handle customer caused failure when managing EKS node groups"
+  },
+  {
+    "v": "1.34.53",
+    "t": "Added support for new AL2023 AMIs to the supported AMITypes."
+  },
+  {
+    "v": "1.34.5",
+    "t": "Add support for cluster insights, new EKS capability that surfaces potentially upgrade impacting issues."
+  },
+  {
+    "v": "1.34.3",
+    "t": "Add support for EKS Cluster Access Management."
+  },
+  {
+    "v": "1.32.7",
+    "t": "This release adds support for EKS Pod Identity feature. EKS Pod Identity makes it easy for customers to obtain IAM permissions for the applications running in their EKS clusters."
+  },
+  {
+    "v": "1.31.83",
+    "t": "Adding EKS Anywhere subscription related operations."
+  },
+  {
+    "v": "1.31.70",
+    "t": "Added support for Cluster Subnet and Security Group mutability."
+  },
+  {
+    "v": "1.31.13",
+    "t": "Add multiple customer error code to handle customer caused failure when managing EKS node groups"
+  },
+  {
+    "v": "1.29.31",
+    "t": "Add support for Windows managed nodes groups."
+  },
+  {
+    "v": "1.29.25",
+    "t": "Adds support for EKS add-ons configurationValues fields and DescribeAddonConfiguration function"
+  },
+  {
+    "v": "1.29.18",
+    "t": "Adds support for additional EKS add-ons metadata and filtering fields"
+  },
+  {
+    "v": "1.29.11",
+    "t": "Adds support for customer-provided placement groups for Kubernetes control plane instances when creating local EKS clusters on Outposts"
+  },
+  {
+    "v": "1.27.71",
+    "t": "Adding support for local Amazon EKS clusters on Outposts"
+  },
+  {
+    "v": "1.27.68",
+    "t": "Adds support for EKS Addons ResolveConflicts \"preserve\" flag. Also adds new update failed status for EKS Addons."
+  },
+  {
+    "v": "1.25.11",
+    "t": "Adds BOTTLEROCKET_ARM_64_NVIDIA and BOTTLEROCKET_x86_64_NVIDIA AMI types to EKS managed nodegroups"
+  },
+  {
+    "v": "1.24.15",
+    "t": "Introducing a new enum for NodeGroup error code: Ec2SubnetMissingIpv6Assignment"
+  },
+  {
+    "v": "1.23.29",
+    "t": "Amazon EKS now supports running applications using IPv6 address space"
+  },
+  {
+    "v": "1.23.11",
+    "t": "Adding missing exceptions to RegisterCluster operation"
+  },
+  {
+    "v": "1.23.6",
+    "t": "Adding Tags support to Cluster Registrations."
+  },
+  {
+    "v": "1.22.5",
+    "t": "EKS managed node groups now support BOTTLEROCKET_x86_64 and BOTTLEROCKET_ARM_64 AMI types."
+  },
+  {
+    "v": "1.21.37",
+    "t": "Adding RegisterCluster and DeregisterCluster operations, to support connecting external clusters to EKS."
+  },
+  {
+    "v": "1.21.26",
+    "t": "Adds support for EKS add-ons \"preserve\" flag, which allows customers to maintain software on their EKS clusters after removing it from EKS add-ons management."
+  },
+  {
+    "v": "1.20.110",
+    "t": "Documentation updates for Wesley to support the parallel node upgrade feature."
+  },
+  {
+    "v": "1.20.108",
+    "t": "Added waiters for EKS FargateProfiles."
+  },
+  {
+    "v": "1.20.106",
+    "t": "Adding new error code UnsupportedAddonModification for Addons in EKS"
+  },
+  {
+    "v": "1.20.89",
+    "t": "Added updateConfig option that allows customers to control upgrade velocity in Managed Node Group."
+  },
+  {
+    "v": "1.20.76",
+    "t": "Update the EKS AddonActive waiter."
+  },
+  {
+    "v": "1.20.70",
+    "t": "This release updates create-nodegroup and update-nodegroup-config APIs for adding/updating taints on managed nodegroups."
+  },
+  {
+    "v": "1.20.58",
+    "t": "This release updates existing Amazon EKS input validation so customers will see an InvalidParameterException instead of a ParamValidationError when they enter 0 for minSize and/or desiredSize. It also adds LaunchTemplate information to update responses and a new \"CUSTOM\" value for AMIType."
+  },
+  {
+    "v": "1.20.18",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.20.17",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.20.7",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.19.27",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.18.16",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.18.5",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.17.42",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.15.28",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.15.27",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.15.15",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.14.9",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.13.44",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.13.31",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.13.19",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.12.229",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.12.222",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.12.176",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.12.172",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.12.145",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.12.129",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.12.117",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.12.64",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.12.38",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.11.6",
+    "t": "Update eks client to latest version"
+  },
+  {
+    "v": "1.10.32",
+    "t": "Update eks client to latest version"
+  }
+]

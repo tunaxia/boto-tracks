@@ -1,0 +1,258 @@
+[
+  {
+    "v": "1.42.57",
+    "t": "AWS WAF now supports GetTopPathStatisticsByTraffic that provides aggregated statistics on the top URI paths accessed by bot traffic. Use this operation to see which paths receive the most bot traffic, identify the specific bots accessing them, and filter by category, organization, or bot name."
+  },
+  {
+    "v": "1.40.76",
+    "t": "AssociateWebACL, UpdateWebACL and PutLoggingConfiguration will now throw WAFFeatureNotIncludedInPricingPlanException when the request contains a feature that is not included in the CloudFront pricing plan of the WebACL."
+  },
+  {
+    "v": "1.40.70",
+    "t": "AWS WAF now supports CLOUDWATCH_TELEMETRY_RULE_MANAGED as a LogScope option, enabling automated logging configuration through Amazon CloudWatch Logs for telemetry data collection and analysis."
+  },
+  {
+    "v": "1.40.49",
+    "t": "This release adds the ability to throw WafLimitsExceededException when the maximum number of Application Load Balancer (ALB) associations per AWS WAF v2 WebACL is exceeded."
+  },
+  {
+    "v": "1.40.16",
+    "t": "test and verified, safe to release"
+  },
+  {
+    "v": "1.38.38",
+    "t": "AWS WAF can now suggest protection packs for you based on the application information you provide when you create a webACL."
+  },
+  {
+    "v": "1.38.35",
+    "t": "WAF now provides two DDoS protection options: resource-level monitoring for Application Load Balancers and the AWSManagedRulesAntiDDoSRuleSet managed rule group for CloudFront distributions."
+  },
+  {
+    "v": "1.38.31",
+    "t": "AWS WAF adds support for ASN-based traffic filtering and support for ASN-based rate limiting."
+  },
+  {
+    "v": "1.37.21",
+    "t": "This release adds the ability to associate an AWS WAF v2 web ACL with an AWS Amplify App."
+  },
+  {
+    "v": "1.37.14",
+    "t": "AWS WAF now lets you inspect fragments of request URIs. You can specify the scope of the URI to inspect and narrow the set of URI fragments."
+  },
+  {
+    "v": "1.37.8",
+    "t": "You can now perform an exact match or rate limit aggregation against the web request's JA4 fingerprint."
+  },
+  {
+    "v": "1.36.21",
+    "t": "The WAFv2 API now supports configuring data protection in webACLs."
+  },
+  {
+    "v": "1.35.45",
+    "t": "Add a property to WebACL to indicate whether it's been retrofitted by Firewall Manager."
+  },
+  {
+    "v": "1.35.9",
+    "t": "The minimum request rate for a rate-based rule is now 10. Before this, it was 100."
+  },
+  {
+    "v": "1.34.137",
+    "t": "JSON body inspection: Update documentation to clarify that JSON parsing doesn't include full validation."
+  },
+  {
+    "v": "1.34.111",
+    "t": "You can now use Security Lake to collect web ACL traffic data."
+  },
+  {
+    "v": "1.34.58",
+    "t": "You can increase the max request body inspection size for some regional resources. The size setting is in the web ACL association config. Also, the AWSManagedRulesBotControlRuleSet EnableMachineLearning setting now takes a Boolean instead of a primitive boolean type, for languages like Java."
+  },
+  {
+    "v": "1.34.52",
+    "t": "AWS WAF now supports configurable time windows for request aggregation with rate-based rules. Customers can now select time windows of 1 minute, 2 minutes or 10 minutes, in addition to the previously supported 5 minutes."
+  },
+  {
+    "v": "1.34.36",
+    "t": "You can now delete an API key that you've created for use with your CAPTCHA JavaScript integration API."
+  },
+  {
+    "v": "1.31.73",
+    "t": "Updates the descriptions for the calls that manage web ACL associations, to provide information for customer-managed IAM policies."
+  },
+  {
+    "v": "1.31.57",
+    "t": "Correct and improve the documentation for the FieldToMatch option JA3 fingerprint."
+  },
+  {
+    "v": "1.31.54",
+    "t": "You can now perform an exact match against the web request's JA3 fingerprint."
+  },
+  {
+    "v": "1.31.42",
+    "t": "The targeted protection level of the Bot Control managed rule group now provides optional, machine-learning analysis of traffic statistics to detect some bot-related activity. You can enable or disable the machine learning functionality through the API."
+  },
+  {
+    "v": "1.31.6",
+    "t": "Added the URI path to the custom aggregation keys that you can specify for a rate-based rule."
+  },
+  {
+    "v": "1.29.153",
+    "t": "You can now detect and block fraudulent account creation attempts with the new AWS WAF Fraud Control account creation fraud prevention (ACFP) managed rule group AWSManagedRulesACFPRuleSet."
+  },
+  {
+    "v": "1.29.146",
+    "t": "Added APIs to describe managed products. The APIs retrieve information about rule groups that are managed by AWS and by AWS Marketplace sellers."
+  },
+  {
+    "v": "1.29.145",
+    "t": "Corrected the information for the header order FieldToMatch setting"
+  },
+  {
+    "v": "1.29.143",
+    "t": "This SDK release provides customers the ability to use Header Order as a field to match."
+  },
+  {
+    "v": "1.29.135",
+    "t": "My AWS Service (placeholder) - You can now rate limit web requests based on aggregation keys other than IP addresses, and you can aggregate using combinations of keys. You can also rate limit all requests that match a scope-down statement, without further aggregation."
+  },
+  {
+    "v": "1.29.123",
+    "t": "You can now associate a web ACL with a Verified Access instance."
+  },
+  {
+    "v": "1.29.117",
+    "t": "You can now create encrypted API keys to use in a client application integration of the JavaScript CAPTCHA API . You can also retrieve a list of your API keys and the JavaScript application integration URL."
+  },
+  {
+    "v": "1.29.111",
+    "t": "For web ACLs that protect CloudFront protections, the default request body inspection size is now 16 KB, and you can use the new association configuration to increase the inspection size further, up to 64 KB. Sizes over 16 KB can incur additional costs."
+  },
+  {
+    "v": "1.29.106",
+    "t": "This release rolls back association config feature for webACLs that protect CloudFront protections."
+  },
+  {
+    "v": "1.29.105",
+    "t": "For web ACLs that protect CloudFront protections, the default request body inspection size is now 16 KB, and you can use the new association configuration to increase the inspection size further, up to 64 KB. Sizes over 16 KB can incur additional costs."
+  },
+  {
+    "v": "1.29.78",
+    "t": "You can now associate an AWS WAF v2 web ACL with an AWS App Runner service."
+  },
+  {
+    "v": "1.29.73",
+    "t": "Added a notice for account takeover prevention (ATP). The interface incorrectly lets you to configure ATP response inspection in regional web ACLs in Region US East (N. Virginia), without returning an error. ATP response inspection is only available in web ACLs that protect CloudFront distributions."
+  },
+  {
+    "v": "1.29.72",
+    "t": "For protected CloudFront distributions, you can now use the AWS WAF Fraud Control account takeover prevention (ATP) managed rule group to block new login attempts from clients that have recently submitted too many failed login attempts."
+  },
+  {
+    "v": "1.29.52",
+    "t": "Improved the visibility of the guidance for updating AWS WAF resources, such as web ACLs and rule groups."
+  },
+  {
+    "v": "1.29.28",
+    "t": "Documents the naming requirement for logging destinations that you use with web ACLs."
+  },
+  {
+    "v": "1.29.4",
+    "t": "The geo match statement now adds labels for country and region. You can match requests at the region level by combining a geo match statement with label match statements."
+  },
+  {
+    "v": "1.28.3",
+    "t": "This release adds the following: Challenge rule action, to silently verify client browsers; rule group rule action override to any valid rule action, not just Count; token sharing between protected applications for challenge/CAPTCHA token; targeted rules option for Bot Control managed rule group."
+  },
+  {
+    "v": "1.27.80",
+    "t": "Add the default specification for ResourceType in ListResourcesForWebACL."
+  },
+  {
+    "v": "1.27.45",
+    "t": "You can now associate an AWS WAF web ACL with an Amazon Cognito user pool."
+  },
+  {
+    "v": "1.27.31",
+    "t": "This SDK release provide customers ability to add sensitivity level for WAF SQLI Match Statements."
+  },
+  {
+    "v": "1.25.4",
+    "t": "You can now inspect all request headers and all cookies. You can now specify how to handle oversize body contents in your rules that inspect the body."
+  },
+  {
+    "v": "1.24.37",
+    "t": "Add a new CurrentDefaultVersion field to ListAvailableManagedRuleGroupVersions API response; add a new VersioningSupported boolean to each ManagedRuleGroup returned from ListAvailableManagedRuleGroups API response."
+  },
+  {
+    "v": "1.24.5",
+    "t": "Updated descriptions for logging configuration."
+  },
+  {
+    "v": "1.23.53",
+    "t": "Adds support for AWS WAF Fraud Control account takeover prevention (ATP), with configuration options for the new managed rule group AWSManagedRulesATPRuleSet and support for application integration SDKs for Android and iOS mobile apps."
+  },
+  {
+    "v": "1.23.6",
+    "t": "Your options for logging web ACL traffic now include Amazon CloudWatch Logs log groups and Amazon S3 buckets."
+  },
+  {
+    "v": "1.23.0",
+    "t": "You can now configure rules to run a CAPTCHA check against web requests and, as needed, send a CAPTCHA challenge to the client."
+  },
+  {
+    "v": "1.21.46",
+    "t": "Added the regex match rule statement, for matching web requests against a single regular expression."
+  },
+  {
+    "v": "1.21.42",
+    "t": "This release adds support for including rate based rules in a rule group."
+  },
+  {
+    "v": "1.21.17",
+    "t": "This release adds APIs to support versioning feature of AWS WAF Managed rule groups"
+  },
+  {
+    "v": "1.20.100",
+    "t": "Added support for 15 new text transformation."
+  },
+  {
+    "v": "1.20.43",
+    "t": "Added support for ScopeDownStatement for ManagedRuleGroups, Labels, LabelMatchStatement, and LoggingFilter. For more information on these features, see the AWS WAF Developer Guide."
+  },
+  {
+    "v": "1.20.40",
+    "t": "Added custom request handling and custom response support in rule actions and default action; Added the option to inspect the web request body as parsed and filtered JSON."
+  },
+  {
+    "v": "1.20.26",
+    "t": "Update wafv2 client to latest version"
+  },
+  {
+    "v": "1.20.7",
+    "t": "Update wafv2 client to latest version"
+  },
+  {
+    "v": "1.18.10",
+    "t": "Update wafv2 client to latest version"
+  },
+  {
+    "v": "1.17.33",
+    "t": "Update wafv2 client to latest version"
+  },
+  {
+    "v": "1.17.20",
+    "t": "Update wafv2 client to latest version"
+  },
+  {
+    "v": "1.15.33",
+    "t": "Update wafv2 client to latest version"
+  },
+  {
+    "v": "1.15.5",
+    "t": "Update wafv2 client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update wafv2 client to latest version"
+  }
+]

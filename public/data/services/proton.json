@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.40.47",
+    "t": "Deprecating APIs in AWS Proton namespace."
+  },
+  {
+    "v": "1.40.16",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.31.3",
+    "t": "This release adds support for deployment history for Proton provisioned resources"
+  },
+  {
+    "v": "1.29.108",
+    "t": "This release adds support for the AWS Proton service sync feature. Service sync enables managing an AWS Proton service (creating and updating instances) and all of it's corresponding service instances from a Git repository."
+  },
+  {
+    "v": "1.29.64",
+    "t": "Add new GetResourcesSummary API"
+  },
+  {
+    "v": "1.29.22",
+    "t": "CreateEnvironmentAccountConnection RoleArn input is now optional"
+  },
+  {
+    "v": "1.29.11",
+    "t": "Add support for sorting and filtering in ListServiceInstances"
+  },
+  {
+    "v": "1.29.9",
+    "t": "Add support for CodeBuild Provisioning"
+  },
+  {
+    "v": "1.27.83",
+    "t": "This release adds an option to delete pipeline provisioning repositories using the UpdateAccountSettings API"
+  },
+  {
+    "v": "1.27.2",
+    "t": "Add new \"Components\" API to enable users to Create, Delete and Update AWS Proton components."
+  },
+  {
+    "v": "1.24.33",
+    "t": "SDK release to support tagging for AWS Proton Repository resource"
+  },
+  {
+    "v": "1.23.13",
+    "t": "This release adds APIs for getting the outputs and provisioned stacks for Environments, Pipelines, and ServiceInstances.  You can now add tags to EnvironmentAccountConnections.  It also adds APIs for working with PR-based provisioning.  Also, it adds APIs for syncing templates with a git repository."
+  },
+  {
+    "v": "1.21.13",
+    "t": "Docs only add idempotent create apis"
+  },
+  {
+    "v": "1.21.7",
+    "t": "Documentation-only update links"
+  },
+  {
+    "v": "1.21.4",
+    "t": "Documentation updates for AWS Proton"
+  },
+  {
+    "v": "1.20.101",
+    "t": "Added waiters for template registration, service operations, and environment deployments."
+  },
+  {
+    "v": "1.20.91",
+    "t": "This is the initial SDK release for AWS Proton"
+  }
+]

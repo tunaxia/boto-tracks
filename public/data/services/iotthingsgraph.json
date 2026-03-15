@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.27.64",
+    "t": "This release deprecates all APIs of the ThingsGraph service"
+  },
+  {
+    "v": "1.12.158",
+    "t": "Update iotthingsgraph client to latest version"
+  }
+]

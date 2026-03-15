@@ -1,0 +1,62 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.34",
+    "t": "Amazon Chime SDK Messaging GetMessagingSessionEndpoint API now returns dual-stack WebSocket endpoints supporting IPv4/IPv6."
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.159",
+    "t": "ChannelMessages can be made visible to sender and intended recipient rather than all channel members with the target attribute. For example, a user can send messages to a bot and receive messages back in a group channel without other members seeing them."
+  },
+  {
+    "v": "1.29.120",
+    "t": "Remove non actionable field from UpdateChannelReadMarker and DeleteChannelRequest.  Add precise exceptions to DeleteChannel and DeleteStreamingConfigurations error cases."
+  },
+  {
+    "v": "1.29.98",
+    "t": "ExpirationSettings provides automatic resource deletion for Channels."
+  },
+  {
+    "v": "1.29.96",
+    "t": "Amazon Chime SDK messaging customers can now manage streaming configuration for messaging data for archival and analysis."
+  },
+  {
+    "v": "1.27.94",
+    "t": "Documentation updates for Chime Messaging SDK"
+  },
+  {
+    "v": "1.27.51",
+    "t": "The Amazon Chime SDK now supports channels with up to one million participants with elastic channels."
+  },
+  {
+    "v": "1.27.3",
+    "t": "This release adds support for searching channels by members via the SearchChannels API, removes required restrictions for Name and Mode in UpdateChannel API and enhances CreateChannel API by exposing member and moderator list as well as channel id as optional parameters."
+  },
+  {
+    "v": "1.23.26",
+    "t": "The Amazon Chime SDK now supports updating message attributes via channel flows"
+  },
+  {
+    "v": "1.22.4",
+    "t": "The Amazon Chime SDK now supports push notifications through Amazon Pinpoint"
+  },
+  {
+    "v": "1.21.65",
+    "t": "The Amazon Chime SDK now allows developers to execute business logic on in-flight messages before they are delivered to members of a messaging channel with channel flows."
+  },
+  {
+    "v": "1.21.36",
+    "t": "Documentation updates for Chime"
+  },
+  {
+    "v": "1.21.16",
+    "t": "The Amazon Chime SDK Messaging APIs allow software developers to send and receive messages in custom messaging applications."
+  }
+]

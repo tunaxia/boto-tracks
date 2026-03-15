@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.40",
+    "t": "Added support for IPv6 compatible endpoints for DynamoDB Streams."
+  },
+  {
+    "v": "1.39.5",
+    "t": "Added support for optional shard filter parameter in DescribeStream api that allows customers to fetch child shards of a read_only parent shard."
+  },
+  {
+    "v": "1.29.152",
+    "t": "Update dynamodbstreams client to latest version"
+  },
+  {
+    "v": "1.29.24",
+    "t": "Update dynamodbstreams client to latest version"
+  },
+  {
+    "v": "1.29.13",
+    "t": "Update dynamodbstreams client to latest version"
+  },
+  {
+    "v": "1.27.12",
+    "t": "Update dynamodbstreams client to latest version"
+  },
+  {
+    "v": "1.18.12",
+    "t": "Update dynamodbstreams client to latest version"
+  },
+  {
+    "v": "1.18.3",
+    "t": "Update dynamodbstreams client to latest version"
+  },
+  {
+    "v": "1.5.19",
+    "t": "Update dynamodbstreams client to latest version"
+  },
+  {
+    "v": "1.4.93",
+    "t": "Update dynamodbstreams client to latest version"
+  },
+  {
+    "v": "1.4.26",
+    "t": "Update dynamodbstreams client to latest version"
+  }
+]

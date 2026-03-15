@@ -1,0 +1,82 @@
+[
+  {
+    "v": "1.42.50",
+    "t": "Update MessageType enum to include missing types."
+  },
+  {
+    "v": "1.42.34",
+    "t": "Fixes incorrect types in the UpdateAssistantAIAgent API request, adds MESSAGE to TargetType enum, and other minor changes."
+  },
+  {
+    "v": "1.42.29",
+    "t": "Fix inference configuration shapes for the CreateAIPrompt and UpdateAIPrompt APIs, Modify Text Length Limit for SendMessage API"
+  },
+  {
+    "v": "1.41.6",
+    "t": "New AIAgent types: Orchestration for ModelContextProtocol tool integration, CaseSummary for Amazon Connect Case summaries, NoteTaker for Agent Assistance notes. Added ListSpans and Retrieve APIs. Enhanced Q in Connect AssistantAssociationType to support Bring Your Own Bedrock Knowledge Bases."
+  },
+  {
+    "v": "1.41.2",
+    "t": "This release introduces two new messaging channel subtypes: Push, WhatsApp, under MessageTemplate which is a resource in Amazon Q in Connect."
+  },
+  {
+    "v": "1.40.45",
+    "t": "Updated Amazon Q in Connect APIs to support Email Contact Recommendations."
+  },
+  {
+    "v": "1.40.16",
+    "t": "Releasing model ID support for UpdateAIPrompt"
+  },
+  {
+    "v": "1.38.46",
+    "t": "Adding UnauthorizedException to public SDK"
+  },
+  {
+    "v": "1.37.37",
+    "t": "This release adds support for the following capabilities: Chunking generative answer replies from Amazon Q in Connect. Integration support for the use of additional LLM models with Amazon Q in Connect."
+  },
+  {
+    "v": "1.37.19",
+    "t": "Provides the correct value for supported model ID."
+  },
+  {
+    "v": "1.35.85",
+    "t": "Amazon Q in Connect enables agents to ask Q for assistance in multiple languages and Q will provide answers and recommended step-by-step guides in those languages. Qs default language is English (United States) and you can switch this by setting the locale configuration on the AI Agent."
+  },
+  {
+    "v": "1.35.72",
+    "t": "This release adds following capabilities: Configuring safeguards via AIGuardrails for Q in Connect inferencing, and APIs to support Q&A self-service use cases"
+  },
+  {
+    "v": "1.35.64",
+    "t": "This release introduces MessageTemplate as a resource in Amazon Q in Connect, along with APIs to create, read, search, update, and delete MessageTemplate resources."
+  },
+  {
+    "v": "1.35.35",
+    "t": "This release adds support for the following capabilities: Configuration of the Gen AI system via AIAgent and AIPrompts. Integration support for Bedrock Knowledge Base."
+  },
+  {
+    "v": "1.34.135",
+    "t": "Adds CreateContentAssociation, ListContentAssociations, GetContentAssociation, and DeleteContentAssociation APIs."
+  },
+  {
+    "v": "1.34.82",
+    "t": "This release adds a new QiC public API updateSession and updates an existing QiC public API createSession"
+  },
+  {
+    "v": "1.34.23",
+    "t": "Increased Quick Response name max length to 100"
+  },
+  {
+    "v": "1.34.16",
+    "t": "QueryAssistant and GetRecommendations will be discontinued starting June 1, 2024. To receive generative responses after March 1, 2024 you will need to create a new Assistant in the Connect console and integrate the Amazon Q in Connect JavaScript library (amazon-q-connectjs) into your applications."
+  },
+  {
+    "v": "1.33.6",
+    "t": "This release adds the PutFeedback API and allows providing feedback against the specified assistant for the specified target."
+  },
+  {
+    "v": "1.33.2",
+    "t": "Amazon Q in Connect, an LLM-enhanced evolution of Amazon Connect Wisdom. This release adds generative AI support to Amazon Q Connect QueryAssistant and GetRecommendations APIs."
+  }
+]

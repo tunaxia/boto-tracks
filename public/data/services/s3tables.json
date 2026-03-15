@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.42.47",
+    "t": "S3 Tables now supports setting partition specifications and sort orders on tables. Partition specs allow users to define how data is organized using transform functions. Sort order configurations enable users to specify sort directions and null ordering preferences for optimized data layout."
+  },
+  {
+    "v": "1.42.1",
+    "t": "Add storage class, replication, and table record expiration features to S3 Tables."
+  },
+  {
+    "v": "1.40.72",
+    "t": "Adds support for request metrics metrics APIs for S3 Tables"
+  },
+  {
+    "v": "1.40.68",
+    "t": "Adds support for tagging APIs for S3 Tables"
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.5",
+    "t": "Adds table bucket type to ListTableBucket and GetTableBucket API operations"
+  },
+  {
+    "v": "1.38.42",
+    "t": "S3 Tables now supports sort and z-order compaction strategies for Iceberg tables in addition to binpack."
+  },
+  {
+    "v": "1.38.32",
+    "t": "S3 Tables now supports getting details about a table via its table ARN."
+  },
+  {
+    "v": "1.37.35",
+    "t": "S3 Tables now supports setting encryption configurations on table buckets and tables. Encryption configurations can use server side encryption using AES256 or KMS customer-managed keys."
+  },
+  {
+    "v": "1.36.10",
+    "t": "You can now use the CreateTable API operation to create tables with schemas by adding an optional metadata argument."
+  },
+  {
+    "v": "1.35.74",
+    "t": "Amazon S3 Tables deliver the first cloud object store with built-in open table format support, and the easiest way to store tabular data at scale."
+  }
+]

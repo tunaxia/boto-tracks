@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.27.94",
+    "t": "This release adds the RegisterSlackWorkspaceForOrganization API. You can use the API to register a Slack workspace for an AWS account that is part of an organization."
+  },
+  {
+    "v": "1.27.57",
+    "t": "This is the initial SDK release for the AWS Support App in Slack."
+  }
+]

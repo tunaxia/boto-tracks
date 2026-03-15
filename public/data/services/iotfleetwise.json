@@ -1,0 +1,86 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.36",
+    "t": "Add new status READY_FOR_CHECKIN used for vehicle synchronisation"
+  },
+  {
+    "v": "1.37.36",
+    "t": "We've added stricter parameter validations to AWS IoT FleetWise signal catalog, model manifest, and decoder manifest APIs."
+  },
+  {
+    "v": "1.37.30",
+    "t": "This release adds the option to update the strategy of state templates already associated to a vehicle, without the need to remove and re-add them."
+  },
+  {
+    "v": "1.37.7",
+    "t": "This release adds floating point support for CAN/OBD signals and adds support for signed OBD signals."
+  },
+  {
+    "v": "1.37.2",
+    "t": "This release adds an optional listResponseScope request parameter in certain list API requests to limit the response to metadata only."
+  },
+  {
+    "v": "1.35.67",
+    "t": "AWS IoT FleetWise now includes campaign parameters to store and forward data, configure MQTT topic as a data destination, and collect diagnostic trouble code data. It includes APIs for network agnostic data collection using custom decoding interfaces, and monitoring the last known state of vehicles."
+  },
+  {
+    "v": "1.35.51",
+    "t": "Updated BatchCreateVehicle and BatchUpdateVehicle APIs: LimitExceededException has been added and the maximum number of vehicles in a batch has been set to 10 explicitly"
+  },
+  {
+    "v": "1.35.38",
+    "t": "Refine campaign related API validations"
+  },
+  {
+    "v": "1.34.113",
+    "t": "AWS IoT FleetWise now supports listing vehicles with attributes filter, ListVehicles API is updated to support additional attributes filter."
+  },
+  {
+    "v": "1.34.20",
+    "t": "Updated APIs: SignalNodeType query parameter has been added to ListSignalCatalogNodesRequest and ListVehiclesResponse has been extended with attributes field."
+  },
+  {
+    "v": "1.34.17",
+    "t": "The following dataTypes have been removed: CUSTOMER_DECODED_INTERFACE in NetworkInterfaceType; CUSTOMER_DECODED_SIGNAL_INFO_IS_NULL in SignalDecoderFailureReason; CUSTOMER_DECODED_SIGNAL_NETWORK_INTERFACE_INFO_IS_NULL in NetworkInterfaceFailureReason; CUSTOMER_DECODED_SIGNAL in SignalDecoderType"
+  },
+  {
+    "v": "1.32.7",
+    "t": "AWS IoT FleetWise introduces new APIs for vision system data, such as data collected from cameras, radars, and lidars. You can now model and decode complex data types."
+  },
+  {
+    "v": "1.31.57",
+    "t": "AWS IoT FleetWise now supports encryption through a customer managed AWS KMS key. The PutEncryptionConfiguration and GetEncryptionConfiguration APIs were added."
+  },
+  {
+    "v": "1.29.143",
+    "t": "Campaigns now support selecting Timestream or S3 as the data destination, Signal catalogs now support \"Deprecation\" keyword released in VSS v2.1 and \"Comment\" keyword released in VSS v3.0"
+  },
+  {
+    "v": "1.29.58",
+    "t": "Add model validation to BatchCreateVehicle and BatchUpdateVehicle operations that invalidate requests with an empty vehicles list."
+  },
+  {
+    "v": "1.29.41",
+    "t": "Update documentation - correct the epoch constant value of default value for expiryTime field in CreateCampaign request."
+  },
+  {
+    "v": "1.29.32",
+    "t": "Updated error handling for empty resource names in \"UpdateSignalCatalog\" and \"GetModelManifest\" operations."
+  },
+  {
+    "v": "1.29.27",
+    "t": "Deprecated assignedValue property for actuators and attributes.  Added a message to invalid nodes and invalid decoder manifest exceptions."
+  },
+  {
+    "v": "1.27.90",
+    "t": "Documentation update for AWS IoT FleetWise"
+  },
+  {
+    "v": "1.27.81",
+    "t": "General availability (GA) for AWS IoT Fleetwise. It adds AWS IoT Fleetwise to AWS SDK. For more information, see https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/Welcome.html."
+  }
+]

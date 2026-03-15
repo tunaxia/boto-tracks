@@ -1,0 +1,74 @@
+[
+  {
+    "v": "1.41.2",
+    "t": "This release adds support for Tiered Storage"
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.34.48",
+    "t": "Increasing NextToken parameter length restriction for List APIs from 512 to 1024."
+  },
+  {
+    "v": "1.32.3",
+    "t": "Docs only build to bring up-to-date with public docs."
+  },
+  {
+    "v": "1.31.52",
+    "t": "Updated DescribeMediaStorageConfiguration, StartEdgeConfigurationUpdate, ImageGenerationConfiguration$SamplingInterval, and UpdateMediaStorageConfiguration to match AWS Docs."
+  },
+  {
+    "v": "1.31.21",
+    "t": "This release enables minimum of Images SamplingInterval to be as low as 200 milliseconds in Kinesis Video Stream Image feature."
+  },
+  {
+    "v": "1.29.162",
+    "t": "General Availability (GA) release of Kinesis Video Streams at Edge, enabling customers to provide a configuration for the Kinesis Video Streams EdgeAgent running on an on-premise IoT device. Customers can now locally record from cameras and stream videos to the cloud on a configured schedule."
+  },
+  {
+    "v": "1.29.33",
+    "t": "Amazon Kinesis Video Streams offers capabilities to stream video and audio in real-time via WebRTC to the cloud for storage, playback, and analytical processing. Customers can use our enhanced WebRTC SDK and cloud APIs to enable real-time streaming, as well as media ingestion to the cloud."
+  },
+  {
+    "v": "1.29.28",
+    "t": "This release adds support for public preview of Kinesis Video Stream at Edge enabling customers to provide configuration for the Kinesis Video Stream EdgeAgent running on an on-premise IoT device. Customers can now locally record from cameras and stream videos to the cloud on configured schedule."
+  },
+  {
+    "v": "1.25.6",
+    "t": "Add support for multiple image feature related APIs for configuring image generation and notification of a video stream. Add \"GET_IMAGES\" to the list of supported API names for the GetDataEndpoint API."
+  },
+  {
+    "v": "1.15.48",
+    "t": "Update kinesisvideo client to latest version"
+  },
+  {
+    "v": "1.13.33",
+    "t": "Update kinesisvideo client to latest version"
+  },
+  {
+    "v": "1.12.185",
+    "t": "Update kinesisvideo client to latest version"
+  },
+  {
+    "v": "1.12.100",
+    "t": "Update kinesisvideo client to latest version"
+  },
+  {
+    "v": "1.12.95",
+    "t": "Update kinesisvideo client to latest version"
+  },
+  {
+    "v": "1.10.58",
+    "t": "Update kinesisvideo client to latest version"
+  },
+  {
+    "v": "1.8.4",
+    "t": "Update kinesisvideo client to latest version"
+  }
+]

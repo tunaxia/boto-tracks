@@ -1,0 +1,250 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.32",
+    "t": "Adds support for defining an ordered preference list of different Rekognition Face Liveness challenge types when calling CreateFaceLivenessSession."
+  },
+  {
+    "v": "1.34.139",
+    "t": "This release adds support for tagging projects and datasets with the CreateProject and CreateDataset APIs."
+  },
+  {
+    "v": "1.34.129",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.82",
+    "t": "Added support for ContentType to content moderation detections."
+  },
+  {
+    "v": "1.34.20",
+    "t": "This release adds ContentType and TaxonomyLevel attributes to DetectModerationLabels and GetMediaAnalysisJob API responses."
+  },
+  {
+    "v": "1.31.69",
+    "t": "Amazon Rekognition introduces StartMediaAnalysisJob, GetMediaAnalysisJob, and ListMediaAnalysisJobs operations to run a bulk analysis of images with a Detect Moderation model."
+  },
+  {
+    "v": "1.31.63",
+    "t": "Amazon Rekognition introduces support for Custom Moderation. This allows the enhancement of accuracy for detect moderation labels operations by creating custom adapters tuned on customer data."
+  },
+  {
+    "v": "1.31.21",
+    "t": "This release adds code snippets for Amazon Rekognition Custom Labels."
+  },
+  {
+    "v": "1.29.152",
+    "t": "This release adds support for improved accuracy with user vector in Amazon Rekognition Face Search. Adds new APIs: AssociateFaces, CreateUser, DeleteUser, DisassociateFaces, ListUsers, SearchUsers, SearchUsersByImage. Also adds new face metadata that can be stored: user vector."
+  },
+  {
+    "v": "1.29.134",
+    "t": "This release adds a new EyeDirection attribute in Amazon Rekognition DetectFaces and IndexFaces APIs which predicts the yaw and pitch angles of a person's eye gaze direction for each face detected in the image."
+  },
+  {
+    "v": "1.29.127",
+    "t": "This release adds a new attribute FaceOccluded. Additionally, you can now select attributes individually (e.g. [\"DEFAULT\", \"FACE_OCCLUDED\", \"AGE_RANGE\"] instead of [\"ALL\"]), which can reduce response time."
+  },
+  {
+    "v": "1.29.123",
+    "t": "Added support for aggregating moderation labels by video segment timestamps for Stored Video Content Moderation APIs and added additional information about the job to all Stored Video Get API responses."
+  },
+  {
+    "v": "1.29.119",
+    "t": "Added new status result to Liveness session status."
+  },
+  {
+    "v": "1.29.110",
+    "t": "This release adds support for Face Liveness APIs in Amazon Rekognition. Updates UpdateStreamProcessor to return ResourceInUseException Exception. Minor updates to API documentation."
+  },
+  {
+    "v": "1.29.28",
+    "t": "Adds support for \"aliases\" and \"categories\", inclusion and exclusion filters for labels and label categories, and aggregating labels by video segment timestamps for Stored Video Label Detection APIs."
+  },
+  {
+    "v": "1.29.8",
+    "t": "Adding support for ImageProperties feature to detect dominant colors and image brightness, sharpness, and contrast, inclusion and exclusion filters for labels and label categories, new fields to the API response, \"aliases\" and \"categories\""
+  },
+  {
+    "v": "1.27.53",
+    "t": "This release adds APIs which support copying an Amazon Rekognition Custom Labels model and managing project policies across AWS account."
+  },
+  {
+    "v": "1.27.38",
+    "t": "This release introduces support for the automatic scaling of inference units used by Amazon Rekognition Custom Labels models."
+  },
+  {
+    "v": "1.26.1",
+    "t": "Documentation updates for Amazon Rekognition."
+  },
+  {
+    "v": "1.25.2",
+    "t": "This release adds support to configure stream-processor resources for label detections on streaming-videos. UpateStreamProcessor API is also launched with this release, which could be used to update an existing stream-processor."
+  },
+  {
+    "v": "1.23.28",
+    "t": "This release introduces a new field IndexFacesModelVersion, which is the version of the face detect and storage model that was used when indexing the face vector."
+  },
+  {
+    "v": "1.23.20",
+    "t": "This release added new KnownGender types for Celebrity Recognition."
+  },
+  {
+    "v": "1.22.8",
+    "t": "This Amazon Rekognition Custom Labels release introduces the management of datasets with  projects"
+  },
+  {
+    "v": "1.22.7",
+    "t": "This release added new attributes to Rekognition Video GetCelebrityRecognition API operations."
+  },
+  {
+    "v": "1.21.30",
+    "t": "This release added new attributes to Rekognition RecognizeCelebities and GetCelebrityInfo API operations."
+  },
+  {
+    "v": "1.21.17",
+    "t": "This release adds support for four new types of segments (opening credits, content segments, slates, and studio logos), improved accuracy for credits and shot detection and new filters to control black frame detection."
+  },
+  {
+    "v": "1.20.76",
+    "t": "Amazon Rekognition Custom Labels adds support for customer managed encryption, using AWS Key Management Service, of image files copied into the service and files written back to the customer."
+  },
+  {
+    "v": "1.20.37",
+    "t": "This release introduces AWS tagging support for Amazon Rekognition collections, stream processors, and Custom Label models."
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.18.15",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.17.8",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.15.33",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.15.1",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.13.32",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.12.213",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.12.206",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.12.112",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.12.94",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.12.81",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.12.50",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.12.37",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.12.15",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.12.6",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.11.7",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.10.84",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.10.41",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.10.9",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.8.4",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.8.3",
+    "t": "Fixed a bug causing the rekognition paginator to not return FaceModelVersions."
+  },
+  {
+    "v": "1.8.0",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.6.7",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.5.64",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.5.56",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.5.45",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.5.41",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.5.27",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.5.9",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.5.1",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.4.93",
+    "t": "Update rekognition client to latest version"
+  },
+  {
+    "v": "1.4.80",
+    "t": "Update rekognition client to latest version"
+  }
+]

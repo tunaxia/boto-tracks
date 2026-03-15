@@ -1,0 +1,634 @@
+[
+  {
+    "v": "1.42.67",
+    "t": "Adds support for account regional namespaces for general purpose buckets. The account regional namespace is a reserved subdivision of the global bucket namespace where only your account can create general purpose buckets."
+  },
+  {
+    "v": "1.42.37",
+    "t": "Adds support for the UpdateObjectEncryption API to change the server-side encryption type of objects in general purpose buckets."
+  },
+  {
+    "v": "1.42.21",
+    "t": "Clarify ``payload_signing_enabled`` documentation to cover interaction with ``request_checksum_calculation``"
+  },
+  {
+    "v": "1.42.16",
+    "t": "Add additional validation to Outpost bucket names."
+  },
+  {
+    "v": "1.42.10",
+    "t": "This release adds support for the new optional field 'LifecycleExpirationDate' in S3 Inventory configurations."
+  },
+  {
+    "v": "1.42.1",
+    "t": "New S3 Storage Class FSX_ONTAP"
+  },
+  {
+    "v": "1.41.1",
+    "t": "Enable / Disable ABAC on a general purpose bucket."
+  },
+  {
+    "v": "1.41.0",
+    "t": "Adds support for blocking SSE-C writes to general purpose buckets."
+  },
+  {
+    "v": "1.40.67",
+    "t": "Launch IPv6 dual-stack support for S3 Express"
+  },
+  {
+    "v": "1.40.61",
+    "t": "Amazon Simple Storage Service / Features: Add conditional writes in CopyObject on destination key to prevent unintended object modifications."
+  },
+  {
+    "v": "1.40.26",
+    "t": "This release includes backward compatibility work on the \"Expires\" parameter."
+  },
+  {
+    "v": "1.39.5",
+    "t": "Amazon S3 Metadata live inventory tables provide a queryable inventory of all the objects in your general purpose bucket so that you can determine the latest state of your data. To help minimize your storage costs, use journal table record expiration to set a retention period for your records."
+  },
+  {
+    "v": "1.39.2",
+    "t": "Added support for directory bucket creation with tags and bucket ARN retrieval in CreateBucket, ListDirectoryBuckets, and HeadBucket operations"
+  },
+  {
+    "v": "1.38.44",
+    "t": "Adds support for additional server-side encryption mode and storage class values for accessing Amazon FSx data from Amazon S3 using S3 Access Points"
+  },
+  {
+    "v": "1.38.39",
+    "t": "Added support for renaming objects within the same bucket using the new RenameObject API."
+  },
+  {
+    "v": "1.38.26",
+    "t": "Adding checksum support for S3 PutBucketOwnershipControls API."
+  },
+  {
+    "v": "1.37.24",
+    "t": "Amazon S3 adds support for S3 Access Points for directory buckets in AWS Dedicated Local Zones"
+  },
+  {
+    "v": "1.36.21",
+    "t": "Added support for Content-Range header in HeadObject response."
+  },
+  {
+    "v": "1.36.15",
+    "t": "Updated list of the valid AWS Region values for the LocationConstraint parameter for general purpose buckets."
+  },
+  {
+    "v": "1.36.9",
+    "t": "Change the type of MpuObjectSize in CompleteMultipartUploadRequest from int to long."
+  },
+  {
+    "v": "1.36.0",
+    "t": "This change enhances integrity protections for new SDK requests to S3. S3 SDKs now support the CRC64NVME checksum algorithm, full object checksums for multipart S3 objects, and new default integrity protections for S3 requests."
+  },
+  {
+    "v": "1.36.0",
+    "t": "The S3 client attempts to validate response checksums for all S3 API operations that support checksums. However, if the SDK has not implemented the specified checksum algorithm then this validation is skipped. Checksum validation behavior can be configured using the ``when_supported`` and ``when_required`` options - in code using the ``response_checksum_validation`` parameter for ``botocore.config.Config``, in the shared AWS config file using ``response_checksum_validation``, or as an env variable using ``AWS_RESPONSE_CHECKSUM_VALIDATION``."
+  },
+  {
+    "v": "1.36.0",
+    "t": "Added support for the CRC64NVME checksum algorithm in the S3 client through the optional AWS CRT (``awscrt``) dependency."
+  },
+  {
+    "v": "1.36.0",
+    "t": "S3 client behavior is updated to always calculate a CRC32 checksum by default for operations that support it (such as PutObject or UploadPart), or require it (such as DeleteObjects). Checksum behavior can be configured using ``when_supported`` and ``when_required`` options - in code using the ``request_checksum_calculation`` parameter for ``botocore.config.Config``, in the shared AWS config file using ``request_checksum_calculation``, or as an env variable using ``AWS_REQUEST_CHECKSUM_CALCULATION``. Note: Botocore will no longer automatically compute and populate the Content-MD5 header."
+  },
+  {
+    "v": "1.35.92",
+    "t": "This change is only for updating the model regexp of CopySource which is not for validation but only for documentation and user guide change."
+  },
+  {
+    "v": "1.35.74",
+    "t": "Amazon S3 Metadata stores object metadata in read-only, fully managed Apache Iceberg metadata tables that you can query. You can create metadata table configurations for S3 general purpose buckets."
+  },
+  {
+    "v": "1.35.72",
+    "t": "Amazon S3 introduces support for AWS Dedicated Local Zones"
+  },
+  {
+    "v": "1.35.69",
+    "t": "Amazon Simple Storage Service / Features: Add support for ETag based conditional writes in PutObject and CompleteMultiPartUpload APIs to prevent unintended object modifications."
+  },
+  {
+    "v": "1.35.67",
+    "t": "Add support for conditional deletes for the S3 DeleteObject and DeleteObjects APIs. Add support for write offset bytes option used to append to objects with the S3 PutObject API."
+  },
+  {
+    "v": "1.35.61",
+    "t": "This release updates the ListBuckets API Reference documentation in support of the new 10,000 general purpose bucket default quota on all AWS accounts. To increase your bucket quota from 10,000 to up to 1 million buckets, simply request a quota increase via Service Quotas."
+  },
+  {
+    "v": "1.35.47",
+    "t": "Fix S3 200 Error handling to address bugs introduced in payload operations."
+  },
+  {
+    "v": "1.35.46",
+    "t": "Fixed SelectObjectContent regression from `#3284 <https://github.com/boto/botocore/issues/3284>`__."
+  },
+  {
+    "v": "1.35.45",
+    "t": "Handle HTTP 200 responses with error information for all supported s3 operations."
+  },
+  {
+    "v": "1.35.42",
+    "t": "Add support for the new optional bucket-region and prefix query parameters in the ListBuckets API. For ListBuckets requests that express pagination, Amazon S3 will now return both the bucket names and associated AWS regions in the response."
+  },
+  {
+    "v": "1.35.32",
+    "t": "This release introduces a header representing the minimum object size limit for Lifecycle transitions."
+  },
+  {
+    "v": "1.35.22",
+    "t": "Added SSE-KMS support for directory buckets."
+  },
+  {
+    "v": "1.35.16",
+    "t": "Adds logic to gracefully handle invalid timestamps returned in the Expires header."
+  },
+  {
+    "v": "1.35.2",
+    "t": "Amazon Simple Storage Service / Features : Add support for conditional writes for PutObject and CompleteMultipartUpload APIs."
+  },
+  {
+    "v": "1.34.162",
+    "t": "Amazon Simple Storage Service / Features  : Adds support for pagination in the S3 ListBuckets API."
+  },
+  {
+    "v": "1.34.138",
+    "t": "Added response overrides to Head Object requests."
+  },
+  {
+    "v": "1.34.120",
+    "t": "Added new params copySource and key to copyObject API for supporting S3 Access Grants plugin. These changes will not change any of the existing S3 API functionality."
+  },
+  {
+    "v": "1.34.105",
+    "t": "Updated a few x-id in the http uri traits"
+  },
+  {
+    "v": "1.34.65",
+    "t": "Fix two issues with response root node names."
+  },
+  {
+    "v": "1.34.64",
+    "t": "Documentation updates for Amazon S3."
+  },
+  {
+    "v": "1.34.62",
+    "t": "This release makes the default option for S3 on Outposts request signing to use the SigV4A algorithm when using AWS Common Runtime (CRT)."
+  },
+  {
+    "v": "1.33.2",
+    "t": "Adds support for S3 Express One Zone."
+  },
+  {
+    "v": "1.32.7",
+    "t": "Adding new params - Key and Prefix, to S3 API operations for supporting S3 Access Grants. Note - These updates will not change any of the existing S3 API functionality."
+  },
+  {
+    "v": "1.32.5",
+    "t": "Add support for automatic date based partitioning in S3 Server Access Logs."
+  },
+  {
+    "v": "1.32.3",
+    "t": "Removes all default 0 values for numbers and false values for booleans"
+  },
+  {
+    "v": "1.31.55",
+    "t": "This release adds a new field COMPLETED to the ReplicationStatus Enum. You can now use this field to validate the replication status of S3 objects using the AWS SDK."
+  },
+  {
+    "v": "1.31.52",
+    "t": "Fix an issue where the SDK can fail to unmarshall response due to NumberFormatException"
+  },
+  {
+    "v": "1.31.8",
+    "t": "Improve performance of S3 clients by simplifying and optimizing endpoint resolution."
+  },
+  {
+    "v": "1.31.3",
+    "t": "S3 Inventory now supports Object Access Control List and Object Owner as available object metadata fields in inventory reports."
+  },
+  {
+    "v": "1.31.2",
+    "t": "Fix s3 presigned URLs for operations with query components (`#2962 <https://github.com/boto/botocore/issues/2962>`__)"
+  },
+  {
+    "v": "1.29.163",
+    "t": "The S3 LISTObjects, ListObjectsV2 and ListObjectVersions API now supports a new optional header x-amz-optional-object-attributes. If header contains RestoreStatus as the value, then S3 will include Glacier restore status i.e. isRestoreInProgress and RestoreExpiryDate in List response."
+  },
+  {
+    "v": "1.29.155",
+    "t": "This release adds SDK support for request-payer request header and request-charged response header in the \"GetBucketAccelerateConfiguration\", \"ListMultipartUploads\", \"ListObjects\", \"ListObjectsV2\" and \"ListObjectVersions\" S3 APIs."
+  },
+  {
+    "v": "1.29.153",
+    "t": "Integrate double encryption feature to SDKs."
+  },
+  {
+    "v": "1.29.127",
+    "t": "Documentation updates for Amazon S3"
+  },
+  {
+    "v": "1.29.116",
+    "t": "Provides support for \"Snow\" Storage class."
+  },
+  {
+    "v": "1.29.104",
+    "t": "Documentation updates for Amazon S3"
+  },
+  {
+    "v": "1.29.62",
+    "t": "boto3 no longer overwrites user supplied `Content-Encoding` with `aws-chunked` when user also supplies `ChecksumAlgorithm`."
+  },
+  {
+    "v": "1.29.58",
+    "t": "Allow FIPS to be used with path-style URLs."
+  },
+  {
+    "v": "1.29.15",
+    "t": "fixes missing x-amz-content-sha256 header for s3 object lambda"
+  },
+  {
+    "v": "1.29.10",
+    "t": "fixes missing x-amz-content-sha256 header for s3 on outpost"
+  },
+  {
+    "v": "1.27.94",
+    "t": "Updates internal logic for constructing API endpoints. We have added rule-based endpoints and internal model parameters."
+  },
+  {
+    "v": "1.25.6",
+    "t": "Documentation only update for doc bug fixes for the S3 API docs."
+  },
+  {
+    "v": "1.24.7",
+    "t": "This release adds support for new integrity checking capabilities in Amazon S3. You can choose from four supported checksum algorithms for data integrity checking on your upload and download requests. In addition, AWS SDK can automatically calculate a checksum as it streams data into S3"
+  },
+  {
+    "v": "1.23.28",
+    "t": "Minor doc-based updates based on feedback bugs received."
+  },
+  {
+    "v": "1.23.17",
+    "t": "Introduce Amazon S3 Glacier Instant Retrieval storage class and a new setting in S3 Object Ownership to disable ACLs for bucket and the objects in it."
+  },
+  {
+    "v": "1.23.16",
+    "t": "Amazon S3 Event Notifications adds Amazon EventBridge as a destination and supports additional event types. The PutBucketNotificationConfiguration API can now skip validation of Amazon SQS, Amazon SNS and AWS Lambda destinations."
+  },
+  {
+    "v": "1.23.12",
+    "t": "Introduce two new Filters to S3 Lifecycle configurations - ObjectSizeGreaterThan and ObjectSizeLessThan. Introduce a new way to trigger actions on noncurrent versions by providing the number of newer noncurrent versions along with noncurrent days."
+  },
+  {
+    "v": "1.21.43",
+    "t": "Add support for access point arn filtering in S3 CW Request Metrics"
+  },
+  {
+    "v": "1.21.35",
+    "t": "Added support for S3 Multi-Region Access Points"
+  },
+  {
+    "v": "1.21.31",
+    "t": "Documentation updates for Amazon S3."
+  },
+  {
+    "v": "1.21.22",
+    "t": "Documentation updates for Amazon S3"
+  },
+  {
+    "v": "1.20.87",
+    "t": "S3 Inventory now supports Bucket Key Status"
+  },
+  {
+    "v": "1.20.78",
+    "t": "Documentation updates for Amazon S3"
+  },
+  {
+    "v": "1.20.73",
+    "t": "Block endpoint resolution of clients configured with S3 pseudo-regions (e.g. ``aws-global``, ``s3-external-1``) that will never resolve to a correct access point endpoint."
+  },
+  {
+    "v": "1.20.36",
+    "t": "Fix an issue with XML newline normalization in PutBucketLifecycleConfiguration requests."
+  },
+  {
+    "v": "1.20.36",
+    "t": "Documentation updates for Amazon S3"
+  },
+  {
+    "v": "1.20.32",
+    "t": "Updated mislabeled exceptions for S3 Object Lambda"
+  },
+  {
+    "v": "1.20.31",
+    "t": "S3 Object Lambda is a new S3 feature that enables users to apply their own custom code to process the output of a standard S3 GET request by automatically invoking a Lambda function with a GET request"
+  },
+  {
+    "v": "1.20.25",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.20.23",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.20.19",
+    "t": "Fix an issue with XML newline normalization that could result in the DeleteObjects operation incorrectly deleting the wrong keys."
+  },
+  {
+    "v": "1.20.17",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.20.0",
+    "t": "Amazon S3 now supports AWS PrivateLink, providing direct access to S3 via a private endpoint within your virtual private network."
+  },
+  {
+    "v": "1.19.41",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.19.27",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.19.23",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.19.14",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.18.11",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.18.9",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.17.59",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.17.40",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.17.38",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.16.15",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.13.42",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.13.42",
+    "t": "Add support for opting into using the us-east-1 regional endpoint."
+  },
+  {
+    "v": "1.13.35",
+    "t": "Add stricter validation to s3 control account id parameter."
+  },
+  {
+    "v": "1.13.34",
+    "t": "Fixed an issue where the request path was set incorrectly if access point name was present in key path."
+  },
+  {
+    "v": "1.13.31",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.13.20",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.13.7",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.13.4",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.198",
+    "t": "Fix an issue that would cause S3 list_object_versions to sometimes fail parsing responses with certain key values."
+  },
+  {
+    "v": "1.12.183",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.161",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.150",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.123",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.111",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.59",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.57",
+    "t": "Add md5 header injection to new operations that require it"
+  },
+  {
+    "v": "1.12.57",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.56",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.52",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.51",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.46",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.7",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.12.4",
+    "t": "Adds encoding and decoding handlers for ListObjectsV2 `#1552 <https://github.com/boto/botocore/issues/1552>`__"
+  },
+  {
+    "v": "1.11.8",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.10.56",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.10.46",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.10.15",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.10.0",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.10.0",
+    "t": "Add support for S3 Select. Amazon S3 Select is an Amazon S3 feature that makes it easy to retrieve specific data from the contents of an object using simple SQL expressions without having to retrieve the entire object. With this release of the Amazon S3 SDK, S3 Select API (SelectObjectContent) is now generally available in all public regions. This release supports retrieval of a subset of data using SQL clauses, like SELECT and WHERE, from delimited text files and JSON objects in Amazon S3 through the SelectObjectContent API available in AWS S3 SDK."
+  },
+  {
+    "v": "1.9.17",
+    "t": "Fix bug where invalid head_object requests would cause an infinite loop (alternate fix to `#1400 <https://github.com/boto/botocore/issues/1400>`__)"
+  },
+  {
+    "v": "1.9.14",
+    "t": "Fix regression in redirects in using wrong region"
+  },
+  {
+    "v": "1.9.13",
+    "t": "Fixed a bug where head object and bucket calls would attempt redirects incorrectly."
+  },
+  {
+    "v": "1.9.0",
+    "t": "Default to virtual hosted addressing regardless of signature version (boto/botocore`#1387 <https://github.com/boto/botocore/issues/1387>`__)"
+  },
+  {
+    "v": "1.8.4",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.7.47",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.7.41",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.5.78",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.5.71",
+    "t": "All S3 requests will now use SigV4 by default so that we can take advantage of stronger security algorithms and improved access key isolation."
+  },
+  {
+    "v": "1.4.84",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.4.79",
+    "t": "fixes `#1059 <https://github.com/boto/botocore/issues/1059>`__ (presigned s3v4 URL bug related to blank query parameters being filtered incorrectly)"
+  },
+  {
+    "v": "1.4.79",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.4.78",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.4.60",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.4.58",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.4.45",
+    "t": "Add support for s3 dualstack configuration"
+  },
+  {
+    "v": "1.4.41",
+    "t": "S3 region redirector will now honor the orginial url scheme."
+  },
+  {
+    "v": "1.4.40",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.4.32",
+    "t": "Fixed a bug where the S3 region redirector was potentially causing a memory leak on python 2.6."
+  },
+  {
+    "v": "1.4.32",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.4.29",
+    "t": "Automatically redirect S3 sigv4 requests sent to the wrong region."
+  },
+  {
+    "v": "1.4.29",
+    "t": "Use MD5 to sign S3 bodies by default."
+  },
+  {
+    "v": "1.4.27",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.4.26",
+    "t": "Make the stubber work with get_bucket_location"
+  },
+  {
+    "v": "1.4.20",
+    "t": "Add paginator for ListObjectsV2"
+  },
+  {
+    "v": "1.4.17",
+    "t": "Update s3 client to latest version"
+  },
+  {
+    "v": "1.4.12",
+    "t": "Add support for s3 accelerate configuration"
+  },
+  {
+    "v": "1.4.12",
+    "t": "Add support for Amazon S3 Transfer Acceleration"
+  },
+  {
+    "v": "1.4.9",
+    "t": "Added support for VersionId in PutObjectAcl (`issue 856 <https://github.com/boto/botocore/pull/856>`__)"
+  },
+  {
+    "v": "1.4.9",
+    "t": "Add validation to enforce S3 metadata only contains ASCII. (`issue 861 <https://github.com/boto/botocore/pull/861>`__)"
+  },
+  {
+    "v": "1.4.5",
+    "t": "Added support for delete marker and abort multipart upload lifecycle configuration."
+  }
+]

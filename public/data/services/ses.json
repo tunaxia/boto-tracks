@@ -1,0 +1,82 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.68",
+    "t": "This release adds support for starting email contacts in your Amazon Connect instance as an email receiving action."
+  },
+  {
+    "v": "1.35.3",
+    "t": "Enable email receiving customers to provide SES with access to their S3 buckets via an IAM role for \"Deliver to S3 Action\""
+  },
+  {
+    "v": "1.34.141",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.31.25",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.12.227",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.12.163",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.12.3",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.10.24",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.8.14",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.8.10",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.7.45",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.7.27",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.7.13",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.5.92",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.4.69",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.4.41",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.4.28",
+    "t": "Update ses client to latest version"
+  },
+  {
+    "v": "1.4.4",
+    "t": "Added support for white-labeling"
+  }
+]

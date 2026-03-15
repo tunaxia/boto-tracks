@@ -1,0 +1,12 @@
+[
+  {
+    "category": "iam",
+    "description": "Update model to latest version",
+    "type": "feature"
+  },
+  {
+    "category": "redshift",
+    "description": "Update model to latest version",
+    "type": "feature"
+  }
+]

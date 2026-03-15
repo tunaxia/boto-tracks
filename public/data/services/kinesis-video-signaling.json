@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.13.33",
+    "t": "Update kinesis-video-signaling client to latest version"
+  }
+]

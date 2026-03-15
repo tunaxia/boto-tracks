@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.4.8",
+    "t": "Fix regression when providing a starting token for a paginator (`issue 849 <https://github.com/boto/botocore/pull/849>`__)"
+  }
+]

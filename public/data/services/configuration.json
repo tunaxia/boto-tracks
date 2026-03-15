@@ -1,0 +1,22 @@
+[
+  {
+    "v": "1.37.5",
+    "t": "Add support for disabling host prefix injection via the ``AWS_DISABLE_HOST_PREFIX_INJECTION`` environment variable or the ``disable_host_prefix_injection`` parameter in the shared aws configuration file."
+  },
+  {
+    "v": "1.31.71",
+    "t": "Adds client context params support to ``Config``."
+  },
+  {
+    "v": "1.31.0",
+    "t": "Configure the endpoint URL in the shared configuration file or via an environment variable for a specific AWS service or all AWS services."
+  },
+  {
+    "v": "1.23.37",
+    "t": "Adding support for `defaults_mode` configuration. The `defaults_mode` will be used to determine how certain default configuration options are resolved in the SDK."
+  },
+  {
+    "v": "1.12.38",
+    "t": "Added new configuration provider methods allowing for more flexibility in how a botocore session loads a particular configuration value."
+  }
+]

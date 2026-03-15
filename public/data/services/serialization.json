@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.38.35",
+    "t": "Fixes a bug where instances of decimal.Decimal were unable to be passed into JSON serialization"
+  },
+  {
+    "v": "1.22.0",
+    "t": "rest-json serialization defaults aligned across AWS SDKs"
+  },
+  {
+    "v": "1.12.6",
+    "t": "Fixes `#1557 <https://github.com/boto/botocore/issues/1557>`__. Fixed a regression in serialization where request bodies would be improperly encoded."
+  },
+  {
+    "v": "1.4.42",
+    "t": "Account for boolean in query string serialization"
+  }
+]

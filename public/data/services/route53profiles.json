@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.34.100",
+    "t": "Doc only update for Route 53 profiles that fixes some link  issues"
+  },
+  {
+    "v": "1.34.89",
+    "t": "Route 53 Profiles allows you to apply a central DNS configuration across many VPCs regardless of account."
+  }
+]

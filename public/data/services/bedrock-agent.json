@@ -1,0 +1,174 @@
+[
+  {
+    "v": "1.41.6",
+    "t": "Support audio and video ingestion on Bedrock Knowledge Bases."
+  },
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.11",
+    "t": "This release adds support for saving Bedrock Flows while node configuration is still in progress, even if the Flow is not yet able to be invoked"
+  },
+  {
+    "v": "1.39.5",
+    "t": "Add support for S3 Vectors as a vector store."
+  },
+  {
+    "v": "1.38.28",
+    "t": "This release adds the Agent Lifecycle Paused State feature to Amazon Bedrock agents. By using an agent's alias, you can temporarily suspend agent operations during maintenance, updates, or other situations."
+  },
+  {
+    "v": "1.38.17",
+    "t": "Amazon Bedrock Flows introduces DoWhile loops nodes, parallel node executions, and enhancements to knowledge base nodes."
+  },
+  {
+    "v": "1.38.6",
+    "t": "Features:    Add inline code node to prompt flow"
+  },
+  {
+    "v": "1.37.27",
+    "t": "Added optional \"customMetadataField\" for Amazon Aurora knowledge bases, allowing single-column metadata. Also added optional \"textIndexName\" for MongoDB Atlas knowledge bases, enabling hybrid search support."
+  },
+  {
+    "v": "1.37.20",
+    "t": "Adding support for Amazon OpenSearch Managed clusters as a vector database in Knowledge Bases for Amazon Bedrock"
+  },
+  {
+    "v": "1.37.10",
+    "t": "Add support for computer use tools"
+  },
+  {
+    "v": "1.37.9",
+    "t": "Introduces support for Neptune Analytics as a vector data store and adds Context Enrichment Configurations, enabling use cases such as GraphRAG."
+  },
+  {
+    "v": "1.37.4",
+    "t": "This release lets Amazon Bedrock Flows support newer models by increasing the maximum length of output in a prompt configuration. This release also increases the maximum number of prompt variables to 20 and the maximum number of node inputs to 20."
+  },
+  {
+    "v": "1.37.0",
+    "t": "This release improves support for newer models in Amazon Bedrock Flows."
+  },
+  {
+    "v": "1.36.26",
+    "t": "Introduce a new parameter which represents the user-agent header value used by the Bedrock Knowledge Base Web Connector."
+  },
+  {
+    "v": "1.36.19",
+    "t": "This releases adds the additionalModelRequestFields field to the CreateAgent and UpdateAgent operations. Use additionalModelRequestFields to specify  additional inference parameters for a model beyond the base inference parameters."
+  },
+  {
+    "v": "1.36.7",
+    "t": "Add support for the prompt caching feature for Bedrock Prompt Management"
+  },
+  {
+    "v": "1.35.86",
+    "t": "Support for custom user agent and max web pages crawled for web connector. Support app only credentials for SharePoint connector. Increase agents memory duration limit to 365 days. Support to specify max number of session summaries to include in agent invocation context."
+  },
+  {
+    "v": "1.35.75",
+    "t": "This release introduces the ability to generate SQL using natural language, through a new GenerateQuery API (with native integration into Knowledge Bases); ability to ingest and retrieve images through Bedrock Data Automation; and ability to create a Knowledge Base backed by Kendra GenAI Index."
+  },
+  {
+    "v": "1.35.74",
+    "t": "Releasing SDK for Multi-Agent Collaboration."
+  },
+  {
+    "v": "1.35.72",
+    "t": "This release introduces APIs to upload documents directly into a Knowledge Base"
+  },
+  {
+    "v": "1.35.71",
+    "t": "Add support for specifying embeddingDataType, either FLOAT32 or BINARY"
+  },
+  {
+    "v": "1.35.70",
+    "t": "Custom Orchestration API release for AWSBedrockAgents."
+  },
+  {
+    "v": "1.35.56",
+    "t": "Add prompt support for chat template configuration and agent generative AI resource. Add support for configuring an optional guardrail in Prompt and Knowledge Base nodes in Prompt Flows. Add API to validate flow definition"
+  },
+  {
+    "v": "1.35.54",
+    "t": "Amazon Bedrock Knowledge Bases now supports using application inference profiles to increase throughput and improve resilience."
+  },
+  {
+    "v": "1.35.49",
+    "t": "Add support of new model types for Bedrock Agents, Adding inference profile support for Flows and Prompt Management, Adding new field to configure additional inference configurations for Flows and Prompt Management"
+  },
+  {
+    "v": "1.35.43",
+    "t": "Removing support for topK property in PromptModelInferenceConfiguration object, Making PromptTemplateConfiguration property as required, Limiting the maximum PromptVariant to 1"
+  },
+  {
+    "v": "1.35.31",
+    "t": "This release adds support to stop an ongoing ingestion job using the StopIngestionJob API in Agents for Amazon Bedrock."
+  },
+  {
+    "v": "1.35.25",
+    "t": "Amazon Bedrock Prompt Flows and Prompt Management now supports using inference profiles to increase throughput and improve resilience."
+  },
+  {
+    "v": "1.35.17",
+    "t": "Amazon Bedrock Knowledge Bases now supports using inference profiles to increase throughput and improve resilience."
+  },
+  {
+    "v": "1.35.12",
+    "t": "Add support for user metadata inside PromptVariant."
+  },
+  {
+    "v": "1.35.5",
+    "t": "Releasing the support for Action User Confirmation."
+  },
+  {
+    "v": "1.34.143",
+    "t": "Introduces new data sources and chunking strategies for Knowledge bases, advanced parsing logic using FMs, session summary generation, and code interpretation (preview) for Claude V3 Sonnet and Haiku models. Also introduces Prompt Flows (preview) to link prompts, foundational models, and resources."
+  },
+  {
+    "v": "1.34.116",
+    "t": "With this release, Knowledge bases for Bedrock adds support for Titan Text Embedding v2."
+  },
+  {
+    "v": "1.34.109",
+    "t": "This release adds support for using Guardrails with Bedrock Agents."
+  },
+  {
+    "v": "1.34.98",
+    "t": "This release adds support for using Provisioned Throughput with Bedrock Agents."
+  },
+  {
+    "v": "1.34.96",
+    "t": "This release adds support for using MongoDB Atlas as a vector store when creating a knowledge base."
+  },
+  {
+    "v": "1.34.90",
+    "t": "Introducing the ability to create multiple data sources per knowledge base, specify S3 buckets as data sources from external accounts, and exposing levers to define the deletion behavior of the underlying vector store data."
+  },
+  {
+    "v": "1.34.89",
+    "t": "Releasing the support for simplified configuration and return of control"
+  },
+  {
+    "v": "1.34.85",
+    "t": "For Create Agent API, the agentResourceRoleArn parameter is no longer required."
+  },
+  {
+    "v": "1.34.72",
+    "t": "This changes introduces metadata documents statistics and also updates the documentation for bedrock agent."
+  },
+  {
+    "v": "1.34.7",
+    "t": "Adding Claude 2.1 support to Bedrock Agents"
+  },
+  {
+    "v": "1.34.6",
+    "t": "This release introduces Amazon Aurora as a vector store on Knowledge Bases for Amazon Bedrock"
+  },
+  {
+    "v": "1.33.2",
+    "t": "This release introduces Agents for Amazon Bedrock"
+  }
+]

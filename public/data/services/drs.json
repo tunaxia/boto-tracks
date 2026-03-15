@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.34.87",
+    "t": "Outpost ARN added to Source Server and Recovery Instance"
+  },
+  {
+    "v": "1.34.50",
+    "t": "Added volume status to DescribeSourceServer replicated volumes."
+  },
+  {
+    "v": "1.34.22",
+    "t": "Removed invalid and unnecessary default values."
+  },
+  {
+    "v": "1.34.0",
+    "t": "Adding AgentVersion to SourceServer and RecoveryInstance structures"
+  },
+  {
+    "v": "1.31.64",
+    "t": "Updated exsiting API to allow AWS Elastic Disaster Recovery support of launching recovery into existing EC2 instances."
+  },
+  {
+    "v": "1.31.47",
+    "t": "Updated existing APIs and added new ones to support using AWS Elastic Disaster Recovery post-launch actions. Added support for new regions."
+  },
+  {
+    "v": "1.31.16",
+    "t": "Add support for in-aws right sizing"
+  },
+  {
+    "v": "1.29.153",
+    "t": "Added APIs to support network replication and recovery using AWS Elastic Disaster Recovery."
+  },
+  {
+    "v": "1.29.115",
+    "t": "Changed existing APIs and added new APIs to support using an account-level launch configuration template with AWS Elastic Disaster Recovery."
+  },
+  {
+    "v": "1.29.103",
+    "t": "Adding a field to the replication configuration APIs to support the auto replicate new disks feature. We also deprecated RetryDataReplication."
+  },
+  {
+    "v": "1.29.80",
+    "t": "New fields were added to reflect availability zone data in source server and recovery instance description commands responses, as well as source server launch status."
+  },
+  {
+    "v": "1.29.17",
+    "t": "Non breaking changes to existing APIs, and additional APIs added to support in-AWS failing back using AWS Elastic Disaster Recovery."
+  },
+  {
+    "v": "1.27.72",
+    "t": "Fixed the data type of lagDuration that is returned in Describe Source Server API"
+  },
+  {
+    "v": "1.27.31",
+    "t": "Changed existing APIs to allow choosing a dynamic volume type for replicating volumes, to reduce costs for customers."
+  },
+  {
+    "v": "1.27.0",
+    "t": "Changed existing APIs and added new APIs to accommodate using multiple AWS accounts with AWS Elastic Disaster Recovery."
+  },
+  {
+    "v": "1.23.8",
+    "t": "Introducing AWS Elastic Disaster Recovery (AWS DRS), a new service that minimizes downtime and data loss with fast, reliable recovery of on-premises and cloud-based applications using affordable storage, minimal compute, and point-in-time recovery."
+  }
+]

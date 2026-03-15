@@ -1,0 +1,26 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.35.61",
+    "t": "Added support for CloudFormation Hooks with Cloud Control API. The GetResourceRequestStatus API response now includes an optional HooksProgressEvent and HooksRequestToken parameter for Hooks Invocation Progress as part of resource operation with Cloud Control."
+  },
+  {
+    "v": "1.31.12",
+    "t": "Updates the documentation for CreateResource."
+  },
+  {
+    "v": "1.25.10",
+    "t": "SDK release for Cloud Control API to include paginators for Python SDK."
+  },
+  {
+    "v": "1.24.31",
+    "t": "SDK release for Cloud Control API in Amazon Web Services China (Beijing) Region, operated by Sinnet, and Amazon Web Services China (Ningxia) Region, operated by NWCD"
+  },
+  {
+    "v": "1.21.52",
+    "t": "Initial release of the SDK for AWS Cloud Control API"
+  }
+]

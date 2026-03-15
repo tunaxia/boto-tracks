@@ -1,0 +1,74 @@
+[
+  {
+    "v": "1.40.72",
+    "t": "Add VPC source configuration support enabling Amazon Managed Service for Prometheus Collector to collect metrics from MSK clusters."
+  },
+  {
+    "v": "1.40.63",
+    "t": "Add Anomaly Detection APIs for Amazon Managed Prometheus"
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.29",
+    "t": "Add Vended Logs APIs for Amazon Prometheus Managed Collector"
+  },
+  {
+    "v": "1.40.11",
+    "t": "Add Resource-based Policy APIs for Amazon Prometheus"
+  },
+  {
+    "v": "1.38.22",
+    "t": "Add QueryLoggingConfiguration APIs for Amazon Managed Prometheus"
+  },
+  {
+    "v": "1.37.36",
+    "t": "Add Workspace Configuration APIs for Amazon Prometheus"
+  },
+  {
+    "v": "1.36.11",
+    "t": "Add support for sending metrics to cross account and CMCK AMP workspaces through RoleConfiguration on Create/Update Scraper."
+  },
+  {
+    "v": "1.35.53",
+    "t": "Added support for UpdateScraper API, to enable updating collector configuration in-place"
+  },
+  {
+    "v": "1.34.39",
+    "t": "Overall documentation updates."
+  },
+  {
+    "v": "1.34.6",
+    "t": "This release updates Amazon Managed Service for Prometheus APIs to support customer managed KMS keys."
+  },
+  {
+    "v": "1.32.7",
+    "t": "This release adds support for the Amazon Managed Service for Prometheus collector, a fully managed, agentless Prometheus metrics scraping capability."
+  },
+  {
+    "v": "1.29.165",
+    "t": "AWS SDK service model  generation tool version upgrade."
+  },
+  {
+    "v": "1.27.51",
+    "t": "This release adds log APIs that allow customers to manage logging for their Amazon Managed Service for Prometheus workspaces."
+  },
+  {
+    "v": "1.21.51",
+    "t": "This release adds alert manager and rule group namespace APIs"
+  },
+  {
+    "v": "1.21.37",
+    "t": "This release adds tagging support for Amazon Managed Service for Prometheus workspace."
+  },
+  {
+    "v": "1.19.38",
+    "t": "Update amp client to latest version"
+  },
+  {
+    "v": "1.19.37",
+    "t": "Update amp client to latest version"
+  }
+]

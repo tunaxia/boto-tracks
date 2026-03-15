@@ -1,0 +1,54 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.46",
+    "t": "Support for DescribeMultiRegionParameterGroups and DescribeMultiRegionParameters API."
+  },
+  {
+    "v": "1.40.16",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.37.36",
+    "t": "Added support for IPv6 and dual stack for Valkey and Redis clusters. Customers can now launch new Valkey and Redis clusters with IPv6 and dual stack networking support."
+  },
+  {
+    "v": "1.35.72",
+    "t": "Amazon MemoryDB SDK now supports all APIs for Multi-Region. Please refer to the updated Amazon MemoryDB public documentation for detailed information on API usage."
+  },
+  {
+    "v": "1.35.36",
+    "t": "Amazon MemoryDB SDK now supports all APIs for newly launched Valkey engine. Please refer to the updated Amazon MemoryDB public documentation for detailed information on API usage."
+  },
+  {
+    "v": "1.34.152",
+    "t": "Doc only update for changes to deletion API."
+  },
+  {
+    "v": "1.34.150",
+    "t": "Renaming full service name as it appears in developer documentation."
+  },
+  {
+    "v": "1.29.143",
+    "t": "Amazon MemoryDB for Redis now supports AWS Identity and Access Management authentication access to Redis clusters starting with redis-engine version 7.0"
+  },
+  {
+    "v": "1.29.38",
+    "t": "This release adds support for MemoryDB Reserved nodes which provides a significant discount compared to on-demand node pricing. Reserved nodes are not physical nodes, but rather a billing discount applied to the use of on-demand nodes in your account."
+  },
+  {
+    "v": "1.29.2",
+    "t": "Adding support for r6gd instances for MemoryDB Redis with data tiering. In a cluster with data tiering enabled, when available memory capacity is exhausted, the least recently used data is automatically tiered to solid state drives for cost-effective capacity scaling with minimal performance impact."
+  },
+  {
+    "v": "1.21.33",
+    "t": "Documentation updates for MemoryDB"
+  },
+  {
+    "v": "1.21.25",
+    "t": "AWS MemoryDB  SDK now supports all APIs for newly launched MemoryDB service."
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.12.182",
+    "t": "Support configuration of the host used in client side metrics via AWS_CSM_HOST"
+  }
+]

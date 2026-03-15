@@ -1,0 +1,190 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.5",
+    "t": "Add customer-facing logging for the EventBridge Event Bus, enabling customers to better observe their events and extract insights about their EventBridge usage."
+  },
+  {
+    "v": "1.39.0",
+    "t": "Added support for EventBridge Dualstack endpoints in AWS GovCloud (US) regions (us-gov-east-1 and us-gov-west-1). The dualstack endpoints are identical for both FIPS and non-FIPS configurations, following the format: events.{region}.api.aws"
+  },
+  {
+    "v": "1.38.25",
+    "t": "Allow for more than 2 characters for location codes in EventBridge ARNs"
+  },
+  {
+    "v": "1.37.35",
+    "t": "Adding support for KmsKeyIdentifer in CreateConnection, UpdateConnection and DescribeConnection APIs"
+  },
+  {
+    "v": "1.37.28",
+    "t": "Amazon EventBridge adds support for customer-managed keys on Archives and validations for two fields: eventSourceArn and kmsKeyIdentifier."
+  },
+  {
+    "v": "1.35.72",
+    "t": "Call private APIs by configuring Connections with VPC connectivity through PrivateLink and VPC Lattice"
+  },
+  {
+    "v": "1.34.151",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.104",
+    "t": "Amazon EventBridge introduces KMS customer-managed key (CMK) encryption support for custom and partner events published on EventBridge Event Bus (including default bus) and UpdateEventBus API."
+  },
+  {
+    "v": "1.34.17",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.32.3",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.31.46",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.31.41",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.29.111",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.29.58",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.27.94",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.24.36",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.23.50",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.21.29",
+    "t": "AWS CWEvents adds an enum of EXTERNAL for EcsParameters LaunchType for PutTargets API"
+  },
+  {
+    "v": "1.21.14",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.20.99",
+    "t": "Added the following parameters to ECS targets: CapacityProviderStrategy, EnableECSManagedTags, EnableExecuteCommand, PlacementConstraints, PlacementStrategy, PropagateTags, ReferenceId, and Tags"
+  },
+  {
+    "v": "1.20.73",
+    "t": "Update InputTransformer variable limit from 10 to 100 variables."
+  },
+  {
+    "v": "1.20.39",
+    "t": "Add support for SageMaker Model Builder Pipelines Targets to EventBridge"
+  },
+  {
+    "v": "1.20.21",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.20.19",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.19.22",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.19.12",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.18.15",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.18.2",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.17.20",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.15.6",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.12.245",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.12.187",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.12.119",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.12.56",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.12.41",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.12.26",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.12.0",
+    "t": "This migrates the event system to using sevice ids instead of either client name or endpoint prefix. This prevents issues that might arise when a service changes their endpoint prefix, also fixes a long-standing bug where you could not register an event to a particular service if it happened to share its endpoint prefix with another service (e.g. ``autoscaling`` and ``application-autoscaling`` both use the endpoint prefix ``autoscaling``). Please see the `upgrade notes <https://docs.aws.amazon.com/botocore/latest/#upgrade-notes>`_ to determine if you are impacted and how to proceed if you are."
+  },
+  {
+    "v": "1.11.0",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.9.12",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.9.3",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.7.10",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.5.77",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.5.51",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.5.26",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.5.25",
+    "t": "Update events client to latest version"
+  },
+  {
+    "v": "1.4.2",
+    "t": "Update model to latest version"
+  }
+]

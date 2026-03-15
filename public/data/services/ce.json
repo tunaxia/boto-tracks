@@ -1,0 +1,282 @@
+[
+  {
+    "v": "1.42.28",
+    "t": "Cost Categories added support to BillingView data filter expressions through the new costCategories parameter, enabling users to filter billing views by AWS Cost Categories for more granular cost management and allocation."
+  },
+  {
+    "v": "1.42.23",
+    "t": "This release updates existing reservation recommendations API to support deployment model."
+  },
+  {
+    "v": "1.42.5",
+    "t": "Add support for Cost Category resource associations including filtering by resource type on ListCostCategoryDefinitions and new ListCostCategoryResourceAssociations API."
+  },
+  {
+    "v": "1.42.1",
+    "t": "This release updates existing Savings Plans Purchase Analyzer and Recommendations APIs to support Database Savings Plans."
+  },
+  {
+    "v": "1.41.0",
+    "t": "Add support for COST_CATEGORY, TAG, and LINKED_ACCOUNT AWS managed cost anomaly detection monitors"
+  },
+  {
+    "v": "1.40.60",
+    "t": "Updated endpoint for eusc-de-east-1 region."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.40",
+    "t": "Support for payer account dimension and billing view health status."
+  },
+  {
+    "v": "1.40.31",
+    "t": "Added endpoint support for eusc-de-east-1 region."
+  },
+  {
+    "v": "1.38.33",
+    "t": "Support dual-stack endpoints for ce api"
+  },
+  {
+    "v": "1.38.24",
+    "t": "This release introduces Cost Comparison feature (GetCostAndUsageComparisons, GetCostComparisonDrivers) allowing you find cost variations across multiple dimensions and identify key drivers of spending changes."
+  },
+  {
+    "v": "1.37.30",
+    "t": "This release supports Pagination traits on Cost Anomaly Detection APIs."
+  },
+  {
+    "v": "1.37.10",
+    "t": "Releasing minor partition endpoint updates."
+  },
+  {
+    "v": "1.35.86",
+    "t": "Support for retrieving cost, usage, and forecast for billing view."
+  },
+  {
+    "v": "1.35.68",
+    "t": "This release adds the Impact field(contains Contribution field) to the GetAnomalies API response under RootCause"
+  },
+  {
+    "v": "1.35.67",
+    "t": "This release introduces three new APIs that enable you to estimate the cost, coverage, and utilization impact of Savings Plans you plan to purchase. The three APIs are StartCommitmentPurchaseAnalysis, GetCommitmentPurchaseAnalysis, and ListCommitmentPurchaseAnalyses."
+  },
+  {
+    "v": "1.35.22",
+    "t": "This release extends the GetReservationPurchaseRecommendation API to support recommendations for Amazon DynamoDB reservations."
+  },
+  {
+    "v": "1.34.90",
+    "t": "Added additional metadata that might be applicable to your reservation recommendations."
+  },
+  {
+    "v": "1.34.71",
+    "t": "Adds support for backfill of cost allocation tags, with new StartCostAllocationTagBackfill and ListCostAllocationTagBackfillHistory API."
+  },
+  {
+    "v": "1.34.52",
+    "t": "This release introduces the new API 'GetApproximateUsageRecords', which retrieves estimated usage records for hourly granularity or resource-level data at daily granularity."
+  },
+  {
+    "v": "1.31.79",
+    "t": "This release extends the GetReservationPurchaseRecommendation API to support recommendations for Amazon MemoryDB reservations."
+  },
+  {
+    "v": "1.31.32",
+    "t": "This release adds the LastUpdatedDate and LastUsedDate timestamps to help you manage your cost allocation tags."
+  },
+  {
+    "v": "1.31.10",
+    "t": "This release introduces the new API 'GetSavingsPlanPurchaseRecommendationDetails', which retrieves the details for a Savings Plan recommendation. It also updates the existing API 'GetSavingsPlansPurchaseRecommendation' to include the recommendation detail ID."
+  },
+  {
+    "v": "1.29.30",
+    "t": "This release supports percentage-based thresholds on Cost Anomaly Detection alert subscriptions."
+  },
+  {
+    "v": "1.29.25",
+    "t": "This release adds the LinkedAccountName field to the GetAnomalies API response under RootCause"
+  },
+  {
+    "v": "1.29.23",
+    "t": "This release introduces two new APIs that offer a 1-click experience to refresh Savings Plans recommendations. The two APIs are StartSavingsPlansPurchaseRecommendationGeneration and ListSavingsPlansPurchaseRecommendationGeneration."
+  },
+  {
+    "v": "1.27.82",
+    "t": "This release is to support retroactive Cost Categories. The new field will enable you to retroactively apply new and existing cost category rules to previous months."
+  },
+  {
+    "v": "1.27.4",
+    "t": "Added two new APIs to support cost allocation tags operations: ListCostAllocationTags, UpdateCostAllocationTagsStatus."
+  },
+  {
+    "v": "1.24.24",
+    "t": "Added three new APIs to support tagging and resource-level authorization on Cost Explorer resources: TagResource, UntagResource, ListTagsForResource.  Added optional parameters to CreateCostCategoryDefinition, CreateAnomalySubscription and CreateAnomalyMonitor APIs to support Tag On Create."
+  },
+  {
+    "v": "1.24.1",
+    "t": "AWS Cost Anomaly Detection now supports SNS FIFO topic subscribers."
+  },
+  {
+    "v": "1.23.47",
+    "t": "Doc-only update for Cost Explorer API that adds INVOICING_ENTITY dimensions"
+  },
+  {
+    "v": "1.23.33",
+    "t": "Doc only update for Cost Explorer API that fixes missing clarifications for MatchOptions definitions"
+  },
+  {
+    "v": "1.21.23",
+    "t": "This release is a new feature for Cost Categories: Split charge rules. Split charge rules enable you to allocate shared costs between your cost category values."
+  },
+  {
+    "v": "1.20.79",
+    "t": "Introduced FindingReasonCodes, PlatformDifferences, DiskResourceUtilization and NetworkResourceUtilization to GetRightsizingRecommendation action"
+  },
+  {
+    "v": "1.20.54",
+    "t": "Adding support for Sagemaker savings plans in GetSavingsPlansPurchaseRecommendation API"
+  },
+  {
+    "v": "1.20.35",
+    "t": "You can now create cost categories with inherited value rules and specify default values for any uncategorized costs."
+  },
+  {
+    "v": "1.20.1",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.19.49",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.19.42",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.19.38",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.19.22",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.18.15",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.18.14",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.18.4",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.17.19",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.15.43",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.15.42",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.15.29",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.13.49",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.13.46",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.13.20",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.13.15",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.13.11",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.12.197",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.12.184",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.12.112",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.12.102",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.12.80",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.12.60",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.12.47",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.12.40",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.10.56",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.10.53",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.10.33",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.10.5",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.9.12",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.8.49",
+    "t": "Update ce client to latest version"
+  },
+  {
+    "v": "1.7.48",
+    "t": "Update ce client to latest version"
+  }
+]

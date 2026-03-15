@@ -1,0 +1,22 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.136",
+    "t": "This release makes ExecutionRoleArn a required field in the StartEarthObservationJob API."
+  },
+  {
+    "v": "1.29.103",
+    "t": "Amazon SageMaker geospatial capabilities now supports server-side encryption with customer managed KMS key and SageMaker notebooks with a SageMaker geospatial image in a Amazon SageMaker Domain with VPC only mode."
+  },
+  {
+    "v": "1.29.20",
+    "t": "This release provides Amazon SageMaker geospatial APIs to build, train, deploy and visualize geospatial models."
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.87",
+    "t": "This release provides the date and time VOD resources were created."
+  },
+  {
+    "v": "1.29.27",
+    "t": "This release provides the approximate number of assets in a packaging group."
+  },
+  {
+    "v": "1.29.6",
+    "t": "This release adds \"IncludeIframeOnlyStream\" for Dash endpoints."
+  },
+  {
+    "v": "1.27.90",
+    "t": "This release adds SPEKE v2 support for MediaPackage VOD. Speke v2 is an upgrade to the existing SPEKE API to support multiple encryption keys, based on an encryption contract selected by the customer."
+  },
+  {
+    "v": "1.24.37",
+    "t": "This release adds ScteMarkersSource as an available field for Dash Packaging Configurations. When set to MANIFEST, MediaPackage will source the SCTE-35 markers from the manifest. When set to SEGMENTS, MediaPackage will source the SCTE-35 markers from the segments."
+  },
+  {
+    "v": "1.22.0",
+    "t": "MediaPackage passes through digital video broadcasting (DVB) subtitles into the output."
+  },
+  {
+    "v": "1.21.46",
+    "t": "MediaPackage VOD will now return the current processing statuses of an asset's endpoints. The status can be QUEUED, PROCESSING, PLAYABLE, or FAILED."
+  },
+  {
+    "v": "1.20.103",
+    "t": "Add support for Widevine DRM on CMAF packaging configurations. Both Widevine and FairPlay DRMs can now be used simultaneously, with CBCS encryption."
+  },
+  {
+    "v": "1.20.60",
+    "t": "MediaPackage now offers the option to place your Sequence Parameter Set (SPS), Picture Parameter Set (PPS), and Video Parameter Set (VPS) encoder metadata in every video segment instead of in the init fragment for DASH and CMAF endpoints."
+  },
+  {
+    "v": "1.20.15",
+    "t": "Update mediapackage-vod client to latest version"
+  },
+  {
+    "v": "1.16.23",
+    "t": "Update mediapackage-vod client to latest version"
+  },
+  {
+    "v": "1.15.45",
+    "t": "Update mediapackage-vod client to latest version"
+  },
+  {
+    "v": "1.14.17",
+    "t": "Update mediapackage-vod client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update mediapackage-vod client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update mediapackage-vod client to latest version"
+  },
+  {
+    "v": "1.12.215",
+    "t": "Update mediapackage-vod client to latest version"
+  },
+  {
+    "v": "1.12.152",
+    "t": "Update mediapackage-vod client to latest version"
+  }
+]

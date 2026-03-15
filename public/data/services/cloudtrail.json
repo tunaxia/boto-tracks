@@ -1,0 +1,194 @@
+[
+  {
+    "v": "1.41.1",
+    "t": "AWS launches CloudTrail aggregated events to simplify monitoring of data events at scale. This feature delivers both granular and summarized data events for resources like S3/Lambda, helping security teams identify patterns without custom aggregation logic."
+  },
+  {
+    "v": "1.41.0",
+    "t": "AWS CloudTrail now supports Insights for data events, expanding beyond management events to automatically detect unusual activity on data plane operations."
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.26",
+    "t": "CloudTrail Feature Release: Support for Enriched Events with Configurable Context for Event Data Store"
+  },
+  {
+    "v": "1.37.8",
+    "t": "Doc-only update for CloudTrail."
+  },
+  {
+    "v": "1.36.6",
+    "t": "This release introduces the SearchSampleQueries API that allows users to search for CloudTrail Lake sample queries."
+  },
+  {
+    "v": "1.35.79",
+    "t": "Doc-only updates for CloudTrail."
+  },
+  {
+    "v": "1.35.67",
+    "t": "This release introduces new APIs for creating and managing CloudTrail Lake dashboards. It also adds support for resource-based policies on CloudTrail EventDataStore and Dashboard resource."
+  },
+  {
+    "v": "1.35.60",
+    "t": "This release adds a new API GenerateQuery that generates a query from a natural language prompt about the event data in your event data store. This operation uses generative artificial intelligence (generative AI) to produce a ready-to-use SQL query from the prompt."
+  },
+  {
+    "v": "1.35.27",
+    "t": "Doc-only update for CloudTrail network activity events release (in preview)"
+  },
+  {
+    "v": "1.34.129",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.116",
+    "t": "CloudTrail Lake returns PartitionKeys in the GetEventDataStore API response. Events are grouped into partitions based on these keys for better query performance. For example, the calendarday key groups events by day, while combining the calendarday key with the hour key groups them by day and hour."
+  },
+  {
+    "v": "1.34.59",
+    "t": "Added exceptions to CreateTrail, DescribeTrails, and ListImportFailures APIs."
+  },
+  {
+    "v": "1.34.22",
+    "t": "This release adds a new API ListInsightsMetricData to retrieve metric data from CloudTrail Insights."
+  },
+  {
+    "v": "1.32.7",
+    "t": "CloudTrail Lake now supports federating event data stores. giving users the ability to run queries against their event data using Amazon Athena."
+  },
+  {
+    "v": "1.32.1",
+    "t": "The Lake Repricing feature lets customers configure a BillingMode for an event data store. The BillingMode determines the cost for ingesting and storing events and the default and maximum retention period for the event data store."
+  },
+  {
+    "v": "1.31.83",
+    "t": "The Insights in Lake feature lets customers enable CloudTrail Insights on a source CloudTrail Lake event data store and create a destination event data store to collect Insights events based on unusual management event activity in the source event data store."
+  },
+  {
+    "v": "1.31.35",
+    "t": "Add ThrottlingException with error code 429 to handle CloudTrail Delegated Admin request rate exceeded on organization resources."
+  },
+  {
+    "v": "1.31.24",
+    "t": "Documentation updates for CloudTrail."
+  },
+  {
+    "v": "1.29.153",
+    "t": "This feature allows users to view dashboards for CloudTrail Lake event data stores."
+  },
+  {
+    "v": "1.29.146",
+    "t": "This feature allows users to start and stop event ingestion on a CloudTrail Lake event data store."
+  },
+  {
+    "v": "1.29.136",
+    "t": "Add ConflictException to PutEventSelectors, add (Channel/EDS)ARNInvalidException to Tag APIs. These exceptions provide customers with more specific error messages instead of internal errors."
+  },
+  {
+    "v": "1.29.72",
+    "t": "This release adds an InsufficientEncryptionPolicyException type to the StartImport endpoint"
+  },
+  {
+    "v": "1.29.61",
+    "t": "Add new \"Channel\" APIs to enable users to manage channels used for CloudTrail Lake integrations, and \"Resource Policy\" APIs to enable users to manage the resource-based permissions policy attached to a channel."
+  },
+  {
+    "v": "1.29.29",
+    "t": "Merging mainline branch for service model into mainline release branch. There are no new APIs."
+  },
+  {
+    "v": "1.29.4",
+    "t": "This release includes support for configuring a delegated administrator to manage an AWS Organizations organization CloudTrail trails and event data stores, and AWS Key Management Service encryption of CloudTrail Lake event data stores."
+  },
+  {
+    "v": "1.27.94",
+    "t": "This release includes support for exporting CloudTrail Lake query results to an Amazon S3 bucket."
+  },
+  {
+    "v": "1.27.76",
+    "t": "This release includes support for importing existing trails into CloudTrail Lake."
+  },
+  {
+    "v": "1.27.70",
+    "t": "This release adds CloudTrail getChannel and listChannels APIs to allow customer to view the ServiceLinkedChannel configurations."
+  },
+  {
+    "v": "1.25.2",
+    "t": "Increases the retention period maximum to 2557 days. Deprecates unused fields of the ListEventDataStores API response. Updates documentation."
+  },
+  {
+    "v": "1.24.11",
+    "t": "Add bytesScanned field into responses of DescribeQuery and GetQueryResults."
+  },
+  {
+    "v": "1.23.38",
+    "t": "This release fixes a documentation bug in the description for the readOnly field selector in advanced event selectors. The description now clarifies that users omit the readOnly field selector to select both Read and Write management events."
+  },
+  {
+    "v": "1.23.29",
+    "t": "This release adds support for CloudTrail Lake, a new feature that lets you run SQL-based queries on events that you have aggregated into event data stores. New APIs have been added for creating and managing event data stores, and creating, running, and managing queries in CloudTrail Lake."
+  },
+  {
+    "v": "1.23.7",
+    "t": "CloudTrail Insights now supports ApiErrorRateInsight, which enables customers to identify unusual activity in their AWS account based on API error codes and their rate."
+  },
+  {
+    "v": "1.21.34",
+    "t": "Documentation updates for CloudTrail"
+  },
+  {
+    "v": "1.20.88",
+    "t": "AWS CloudTrail supports data events on new service resources, including Amazon DynamoDB tables and S3 Object Lambda access points."
+  },
+  {
+    "v": "1.20.4",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.19.35",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.13.8",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.12.23",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.5.29",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.5.20",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.4.77",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.4.28",
+    "t": "Update cloudtrail client to latest version"
+  },
+  {
+    "v": "1.4.17",
+    "t": "Update cloudtrail client to latest version"
+  }
+]

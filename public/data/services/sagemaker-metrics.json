@@ -1,0 +1,22 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.5",
+    "t": "SageMaker Metrics Service now supports FIPS endpoint in all US and Canada Commercial regions."
+  },
+  {
+    "v": "1.35.24",
+    "t": "This release introduces support for the SageMaker Metrics BatchGetMetrics API."
+  },
+  {
+    "v": "1.29.30",
+    "t": "Update SageMaker Metrics documentation."
+  },
+  {
+    "v": "1.29.28",
+    "t": "This release introduces support SageMaker Metrics APIs."
+  }
+]

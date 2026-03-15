@@ -1,0 +1,38 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Updated FIPS endpoints for US GovCloud regions"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.19.50",
+    "t": "Update autoscaling-plans client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update autoscaling-plans client to latest version"
+  },
+  {
+    "v": "1.12.106",
+    "t": "Update autoscaling-plans client to latest version"
+  },
+  {
+    "v": "1.12.49",
+    "t": "Update autoscaling-plans client to latest version"
+  },
+  {
+    "v": "1.10.7",
+    "t": "Update autoscaling-plans client to latest version"
+  },
+  {
+    "v": "1.8.31",
+    "t": "Update autoscaling-plans client to latest version"
+  },
+  {
+    "v": "1.8.30",
+    "t": "Update autoscaling-plans client to latest version"
+  }
+]

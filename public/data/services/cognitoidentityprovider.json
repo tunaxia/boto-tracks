@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.4.12",
+    "t": "Add support for new service, CognitoIdedentityProvider"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.21.60",
+    "t": "Adds an additional validation exception for Amazon CloudSearch configuration APIs for better error handling."
+  },
+  {
+    "v": "1.20.99",
+    "t": "This release replaces previous generation CloudSearch instances with equivalent new instances that provide better stability at the same price."
+  },
+  {
+    "v": "1.19.48",
+    "t": "Update cloudsearch client to latest version"
+  },
+  {
+    "v": "1.13.17",
+    "t": "Update cloudsearch client to latest version"
+  }
+]

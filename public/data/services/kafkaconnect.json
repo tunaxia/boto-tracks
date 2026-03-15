@@ -1,0 +1,38 @@
+[
+  {
+    "v": "1.42.47",
+    "t": "Support configurable upper limits on task count during autoscaling operations via maxAutoscalingTaskCount parameter."
+  },
+  {
+    "v": "1.42.19",
+    "t": "This change sets the KafkaConnect GovCloud FIPS and FIPS DualStack endpoints to use kafkaconnect instead of kafkaconnect-fips as the service name. This is done to match the Kafka endpoints."
+  },
+  {
+    "v": "1.42.12",
+    "t": "Support dual-stack network connectivity for connectors via NetworkType field."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.35.98",
+    "t": "Support updating connector configuration via UpdateConnector API. Release Operations API to monitor the status of the connector operation."
+  },
+  {
+    "v": "1.34.50",
+    "t": "Adds support for tagging, with new TagResource, UntagResource and ListTagsForResource APIs to manage tags and updates to existing APIs to allow tag on create. This release also adds support for the new DeleteWorkerConfiguration API."
+  },
+  {
+    "v": "1.31.39",
+    "t": "Minor model changes for Kafka Connect as well as endpoint updates."
+  },
+  {
+    "v": "1.24.10",
+    "t": "Adds operation for custom plugin deletion (DeleteCustomPlugin) and adds new StateDescription field to DescribeCustomPlugin and DescribeConnector responses to return errors from asynchronous resource creation."
+  },
+  {
+    "v": "1.21.43",
+    "t": "This is the initial SDK release for Amazon Managed Streaming for Apache Kafka Connect (MSK Connect)."
+  }
+]

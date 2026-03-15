@@ -1,0 +1,58 @@
+[
+  {
+    "v": "1.42.10",
+    "t": "Support Customer Profiles Integration for AWS Entity Resolution"
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.37",
+    "t": "Support incremental id mapping workflow for AWS Entity Resolution"
+  },
+  {
+    "v": "1.40.0",
+    "t": "Add support for creating advanced rule-based matching workflows in AWS Entity Resolution."
+  },
+  {
+    "v": "1.38.28",
+    "t": "Add support for generating match IDs in near real-time."
+  },
+  {
+    "v": "1.38.0",
+    "t": "To expand support for matching records using digital identifiers with TransUnion"
+  },
+  {
+    "v": "1.37.34",
+    "t": "This is to add new metrics to our GetIdMappingJob API and also update uniqueId naming for batchDeleteUniqueIds API to be more accurate"
+  },
+  {
+    "v": "1.35.3",
+    "t": "Increase the mapping attributes in Schema to 35."
+  },
+  {
+    "v": "1.34.147",
+    "t": "Support First Party ID Mapping"
+  },
+  {
+    "v": "1.34.91",
+    "t": "Support Batch Unique IDs Deletion."
+  },
+  {
+    "v": "1.34.85",
+    "t": "Cross Account Resource Support ."
+  },
+  {
+    "v": "1.31.64",
+    "t": "This launch expands our matching techniques to include provider-based matching to help customer match, link, and enhance records with minimal data movement. With data service providers, we have removed the need for customers to build bespoke integrations,."
+  },
+  {
+    "v": "1.31.48",
+    "t": "Changed \"ResolutionTechniques\" and \"MappedInputFields\" in workflow and schema mapping operations to be required fields."
+  },
+  {
+    "v": "1.31.12",
+    "t": "AWS Entity Resolution can effectively match a source record from a customer relationship management (CRM) system with a source record from a marketing system containing campaign information."
+  }
+]

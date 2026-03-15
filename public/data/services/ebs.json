@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.31.13",
+    "t": "SDK and documentation updates for Amazon Elastic Block Store API"
+  },
+  {
+    "v": "1.24.25",
+    "t": "Increased the maximum supported value for the Timeout parameter of the StartSnapshot API from 60 minutes to 4320 minutes.  Changed the HTTP error code for ConflictException from 503 to 409."
+  },
+  {
+    "v": "1.23.44",
+    "t": "Documentation updates for Amazon EBS Direct APIs."
+  },
+  {
+    "v": "1.21.35",
+    "t": "Documentation updates for Amazon EBS direct APIs."
+  },
+  {
+    "v": "1.21.19",
+    "t": "Documentation updates for Amazon EBS direct APIs."
+  },
+  {
+    "v": "1.17.59",
+    "t": "Update ebs client to latest version"
+  },
+  {
+    "v": "1.17.20",
+    "t": "Update ebs client to latest version"
+  },
+  {
+    "v": "1.14.12",
+    "t": "Update ebs client to latest version"
+  },
+  {
+    "v": "1.13.32",
+    "t": "Update ebs client to latest version"
+  }
+]

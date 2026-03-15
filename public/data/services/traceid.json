@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.27.42",
+    "t": "Rollback bugfix for obeying _X_AMZN_TRACE_ID env var"
+  }
+]

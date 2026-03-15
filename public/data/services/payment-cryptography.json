@@ -1,0 +1,58 @@
+[
+  {
+    "v": "1.42.12",
+    "t": "Support for AS2805 standard.  Modifications to import-key and export-key to support AS2805 variants."
+  },
+  {
+    "v": "1.40.64",
+    "t": "Allow additional characters in the CertificateSubject for GetCertificateSigningRequest API."
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.30",
+    "t": "Add support for certificates to be signed by 3rd party certificate authorities.  New API GetCertificateSigningRequest API and support for providing certificates at run-time for tr-34 import/export"
+  },
+  {
+    "v": "1.40.28",
+    "t": "AWS Payment Cryptography Service now supports Multi-Region key replication. Customers can choose to automatically distribute keys across AWS Regions."
+  },
+  {
+    "v": "1.38.40",
+    "t": "Additional support for managing HMAC keys that adheres to changes documented in X9.143-2021 and provides better interoperability for key import/export"
+  },
+  {
+    "v": "1.37.23",
+    "t": "The service adds support for transferring AES-256 and other keys between the service and other service providers and HSMs. This feature uses ECDH to derive a one-time key transport key to enable these secure key exchanges."
+  },
+  {
+    "v": "1.35.59",
+    "t": "Updated ListAliases API with KeyArn filter."
+  },
+  {
+    "v": "1.35.47",
+    "t": "Add support for ECC P-256 and P-384 Keys."
+  },
+  {
+    "v": "1.34.137",
+    "t": "Added further restrictions on logging of potentially sensitive inputs and outputs."
+  },
+  {
+    "v": "1.34.89",
+    "t": "Adding support to TR-31/TR-34 exports for optional headers, allowing customers to add additional metadata (such as key version and KSN) when exporting keys from the service."
+  },
+  {
+    "v": "1.34.20",
+    "t": "Provide an additional option for key exchange using RSA wrap/unwrap in addition to tr-34/tr-31 in ImportKey and ExportKey operations. Added new key usage (type) TR31_M1_ISO_9797_1_MAC_KEY, for use with Generate/VerifyMac dataplane operations  with ISO9797 Algorithm 1 MAC calculations."
+  },
+  {
+    "v": "1.33.9",
+    "t": "AWS Payment Cryptography IPEK feature release"
+  },
+  {
+    "v": "1.29.150",
+    "t": "Initial release of AWS Payment Cryptography Control Plane service for creating and managing cryptographic keys used during card payment processing."
+  }
+]

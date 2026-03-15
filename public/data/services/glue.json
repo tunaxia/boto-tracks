@@ -1,0 +1,706 @@
+[
+  {
+    "v": "1.42.68",
+    "t": "Add QuerySessionContext to BatchGetPartitionRequest"
+  },
+  {
+    "v": "1.42.43",
+    "t": "This release adds the capability to easily create custom AWS Glue connections to data sources with REST APIs."
+  },
+  {
+    "v": "1.42.25",
+    "t": "Adding MaterializedViews task run APIs"
+  },
+  {
+    "v": "1.41.6",
+    "t": "feature: Glue: Add support for Iceberg materialized view in Glue Data Catalog, including updated CreateTable API to support materialized views and new APIs for managing data refresh for materialized views.\nfeature: Glue: Add support for Iceberg table encryption keys and struct field defaults."
+  },
+  {
+    "v": "1.41.1",
+    "t": "Added FunctionType parameter to Glue GetuserDefinedFunctions."
+  },
+  {
+    "v": "1.40.75",
+    "t": "Amazon Glue Releasing 2 the new API ListIntegrationResourceProperties and DeleteIntegrationResourceProperty along with minor improvement on existing API(s)."
+  },
+  {
+    "v": "1.40.63",
+    "t": "This release adds the capability to enable User Background Sessions for customers running Trusted Identity Propagation enabled Interactive Sessions on AWS Glue."
+  },
+  {
+    "v": "1.40.50",
+    "t": "Addition of AuditContext in GetTable/GetTables Request"
+  },
+  {
+    "v": "1.40.46",
+    "t": "Adds labeling for DataQualityRuleResult for GetDataQualityResult and PublishDataQualityResult APIs"
+  },
+  {
+    "v": "1.40.39",
+    "t": "Update GetConnection(s) API to return KmsKeyArn & Add 63 missing connection types"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Adding support to fetch TargetDatabase field during GetDatabases with AttributesToGet"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Added support for preprocessing queries in Data Quality operations through new DataQualityGlueTable structure."
+  },
+  {
+    "v": "1.40.11",
+    "t": "AWS Glue Zero ETL now supports On-demand snapshot load"
+  },
+  {
+    "v": "1.40.10",
+    "t": "AWS Glue now supports Trusted Identity Propagation."
+  },
+  {
+    "v": "1.40.5",
+    "t": "AWS Glue Data Catalog now supports Iceberg Optimization settings at the Catalog level, and supports new options to control the optimization job run rate."
+  },
+  {
+    "v": "1.40.0",
+    "t": "Added support for Route node, S3 Iceberg sources/targets, catalog Iceberg sources, DynamoDB ELT connector, AutoDataQuality evaluation, enhanced PII detection with redaction, Kinesis fan-out support, and new R-series worker types."
+  },
+  {
+    "v": "1.39.12",
+    "t": "AWS Glue now supports dynamic session policies for job executions. This feature allows you to specify custom, fine-grained permissions for each job run without creating multiple IAM roles."
+  },
+  {
+    "v": "1.39.7",
+    "t": "AWS Glue now supports schema, partition and sort management of Apache Iceberg tables using Glue SDK"
+  },
+  {
+    "v": "1.39.0",
+    "t": "releasing source processing properties to support source properties for ODB integrations"
+  },
+  {
+    "v": "1.38.46",
+    "t": "AWS Glue now supports schema, partition and sort management of Apache Iceberg tables using Glue SDK"
+  },
+  {
+    "v": "1.38.42",
+    "t": "AWS Glue now supports sort and z-order strategy for managed automated compaction for Iceberg tables in addition to binpack."
+  },
+  {
+    "v": "1.38.41",
+    "t": "AWS Glue Data Quality now provides aggregated metrics in evaluation results when publishAggregatedMetrics with row-level results are enabled. These metrics include summary statistics showing total counts of processed, passed, and failed rows and rules in a single view."
+  },
+  {
+    "v": "1.38.22",
+    "t": "This release supports additional ConversionSpec parameter as part of IntegrationPartition Structure in CreateIntegrationTableProperty API. This parameter is referred to apply appropriate column transformation for columns that are used for timestamp based partitioning"
+  },
+  {
+    "v": "1.38.20",
+    "t": "Enhanced AWS Glue ListConnectionTypes API Model with additional metadata fields."
+  },
+  {
+    "v": "1.38.18",
+    "t": "Changes include (1) Excel as S3 Source type and XML and Tableau's Hyper as S3 Sink types, (2) targeted number of partitions parameter in S3 sinks and (3) new compression types in CSV/JSON and Parquet S3 sinks."
+  },
+  {
+    "v": "1.38.12",
+    "t": "This new release supports customizable RefreshInterval for all Saas ZETL integrations from 15 minutes to 6 days."
+  },
+  {
+    "v": "1.37.31",
+    "t": "The TableOptimizer APIs in AWS Glue now return the DpuHours field in each TableOptimizerRun, providing clients visibility to the DPU-hours used for billing in managed Apache Iceberg table compaction optimization."
+  },
+  {
+    "v": "1.37.29",
+    "t": "Add input validations for multiple Glue APIs"
+  },
+  {
+    "v": "1.37.13",
+    "t": "This release added AllowFullTableExternalDataAccess to glue catalog resource."
+  },
+  {
+    "v": "1.36.4",
+    "t": "Docs Update for timeout changes"
+  },
+  {
+    "v": "1.35.87",
+    "t": "Add IncludeRoot parameters to GetCatalogs API to return root catalog."
+  },
+  {
+    "v": "1.35.80",
+    "t": "To support customer-managed encryption in Data Quality to allow customers encrypt data with their own KMS key, we will add a DataQualityEncryption field to the SecurityConfiguration API where customers can provide their KMS keys."
+  },
+  {
+    "v": "1.35.74",
+    "t": "This release includes(1)Zero-ETL integration to ingest data from 3P SaaS and DynamoDB to Redshift/Redlake (2)new properties on Connections to enable reuse; new connection APIs for retrieve/preview metadata (3)support of CRUD operations for Multi-catalog (4)support of automatic statistics collections"
+  },
+  {
+    "v": "1.35.65",
+    "t": "AWS Glue Data Catalog now enhances managed table optimizations of Apache Iceberg tables that can be accessed only from a specific Amazon Virtual Private Cloud (VPC) environment."
+  },
+  {
+    "v": "1.35.53",
+    "t": "Add schedule support for AWS Glue column statistics"
+  },
+  {
+    "v": "1.35.25",
+    "t": "Added AthenaProperties parameter to Glue Connections, allowing Athena to store service specific properties on Glue Connections."
+  },
+  {
+    "v": "1.35.23",
+    "t": "This change is for releasing TestConnection api SDK model"
+  },
+  {
+    "v": "1.35.18",
+    "t": "AWS Glue is introducing two new optimizers for Apache Iceberg tables: snapshot retention and orphan file deletion. Customers can enable these optimizers and customize their configurations to perform daily maintenance tasks on their Iceberg tables based on their specific requirements."
+  },
+  {
+    "v": "1.35.3",
+    "t": "Add optional field JobRunQueuingEnabled to CreateJob and UpdateJob APIs."
+  },
+  {
+    "v": "1.34.160",
+    "t": "Add AttributesToGet parameter support for Glue GetTables"
+  },
+  {
+    "v": "1.34.157",
+    "t": "This release adds support to retrieve the validation status when creating or updating Glue Data Catalog Views. Also added is support for BasicCatalogTarget partition keys."
+  },
+  {
+    "v": "1.34.156",
+    "t": "Introducing AWS Glue Data Quality anomaly detection, a new functionality that uses ML-based solutions to detect data anomalies users have not explicitly defined rules for."
+  },
+  {
+    "v": "1.34.143",
+    "t": "Add recipe step support for recipe node"
+  },
+  {
+    "v": "1.34.136",
+    "t": "Added AttributesToGet parameter to Glue GetDatabases, allowing caller to limit output to include only the database name."
+  },
+  {
+    "v": "1.34.131",
+    "t": "Fix Glue paginators for Jobs, JobRuns, Triggers, Blueprints and Workflows."
+  },
+  {
+    "v": "1.34.128",
+    "t": "This release introduces a new feature, Usage profiles. Usage profiles allow the AWS Glue admin to create different profiles for various classes of users within the account, enforcing limits and defaults for jobs and sessions."
+  },
+  {
+    "v": "1.34.126",
+    "t": "This release adds support for configuration of evaluation method for composite rules in Glue Data Quality rulesets."
+  },
+  {
+    "v": "1.34.121",
+    "t": "This release adds support for creating and updating Glue Data Catalog Views."
+  },
+  {
+    "v": "1.34.120",
+    "t": "AWS Glue now supports native SaaS connectivity: Salesforce connector available now"
+  },
+  {
+    "v": "1.34.115",
+    "t": "Add optional field JobMode to CreateJob and UpdateJob APIs."
+  },
+  {
+    "v": "1.34.110",
+    "t": "Add Maintenance window to CreateJob and UpdateJob APIs and JobRun response. Add a new Job Run State for EXPIRED."
+  },
+  {
+    "v": "1.34.88",
+    "t": "Adding RowFilter in the response for GetUnfilteredTableMetadata API"
+  },
+  {
+    "v": "1.34.84",
+    "t": "Modifying request for GetUnfilteredTableMetadata for view-related fields."
+  },
+  {
+    "v": "1.34.76",
+    "t": "Adding View related fields to responses of read-only Table APIs."
+  },
+  {
+    "v": "1.34.35",
+    "t": "Introduce Catalog Encryption Role within Glue Data Catalog Settings. Introduce SASL/PLAIN as an authentication method for Glue Kafka connections"
+  },
+  {
+    "v": "1.34.32",
+    "t": "Update page size limits for GetJobRuns and GetTriggers APIs."
+  },
+  {
+    "v": "1.34.7",
+    "t": "This release adds additional configurations for Query Session Context on the following APIs: GetUnfilteredTableMetadata, GetUnfilteredPartitionMetadata, GetUnfilteredPartitionsMetadata."
+  },
+  {
+    "v": "1.33.5",
+    "t": "Adds observation and analyzer support to the GetDataQualityResult and BatchGetDataQualityResult APIs."
+  },
+  {
+    "v": "1.33.0",
+    "t": "add observations support to DQ CodeGen config model + update document for connectiontypes supported by ConnectorData entities"
+  },
+  {
+    "v": "1.32.2",
+    "t": "Introduces new column statistics APIs to support statistics generation for tables within the Glue Data Catalog."
+  },
+  {
+    "v": "1.32.0",
+    "t": "Introduces new storage optimization APIs to support automatic compaction of Apache Iceberg tables."
+  },
+  {
+    "v": "1.31.77",
+    "t": "This release introduces Google BigQuery Source and Target in AWS Glue CodeGenConfigurationNode."
+  },
+  {
+    "v": "1.31.63",
+    "t": "Extending version control support to GitLab and Bitbucket from AWSGlue"
+  },
+  {
+    "v": "1.31.34",
+    "t": "Added API attributes that help in the monitoring of sessions."
+  },
+  {
+    "v": "1.31.27",
+    "t": "AWS Glue Crawlers can now accept SerDe overrides from a custom csv classifier. The two SerDe options are LazySimpleSerDe and OpenCSVSerDe. In case, the user wants crawler to do the selection, \"None\" can be selected for this purpose."
+  },
+  {
+    "v": "1.31.18",
+    "t": "This release includes additional Glue Streaming KAKFA SASL property types."
+  },
+  {
+    "v": "1.31.12",
+    "t": "Release Glue Studio Snowflake Connector Node for SDK/CLI"
+  },
+  {
+    "v": "1.31.10",
+    "t": "Added support for Data Preparation Recipe node in Glue Studio jobs"
+  },
+  {
+    "v": "1.31.9",
+    "t": "This release adds support for AWS Glue Crawler with Apache Hudi Tables, allowing Crawlers to discover Hudi Tables in S3 and register them in Glue Data Catalog for query engines to query against."
+  },
+  {
+    "v": "1.31.4",
+    "t": "Adding new supported permission type flags to get-unfiltered endpoints that callers may pass to indicate support for enforcing Lake Formation fine-grained access control on nested column attributes."
+  },
+  {
+    "v": "1.31.1",
+    "t": "This release enables customers to create new Apache Iceberg tables and associated metadata in Amazon S3 by using native AWS Glue CreateTable operation."
+  },
+  {
+    "v": "1.29.164",
+    "t": "This release adds support for AWS Glue Crawler with Iceberg Tables, allowing Crawlers to discover Iceberg Tables in S3 and register them in Glue Data Catalog for query engines to query against."
+  },
+  {
+    "v": "1.29.161",
+    "t": "Timestamp Starting Position For Kinesis and Kafka Data Sources in a Glue Streaming Job"
+  },
+  {
+    "v": "1.29.156",
+    "t": "This release adds support for creating cross region table/database resource links"
+  },
+  {
+    "v": "1.29.143",
+    "t": "Added Runtime parameter to allow selection of Ray Runtime"
+  },
+  {
+    "v": "1.29.141",
+    "t": "Added ability to create data quality rulesets for shared, cross-account Glue Data Catalog tables. Added support for dataset comparison rules through a new parameter called AdditionalDataSources. Enhanced the data quality results with a map containing profiled metric values."
+  },
+  {
+    "v": "1.29.135",
+    "t": "Add Support for Tags for Custom Entity Types"
+  },
+  {
+    "v": "1.29.131",
+    "t": "This release adds AmazonRedshift Source and Target nodes in addition to DynamicTransform OutputSchemas"
+  },
+  {
+    "v": "1.29.130",
+    "t": "Support large worker types G.4x and G.8x for Glue Spark"
+  },
+  {
+    "v": "1.29.105",
+    "t": "Add support for database-level federation"
+  },
+  {
+    "v": "1.29.103",
+    "t": "This release adds support for AWS Glue Data Quality, which helps you evaluate and monitor the quality of your data and includes the API for creating, deleting, or updating data quality rulesets, runs and evaluations."
+  },
+  {
+    "v": "1.29.74",
+    "t": "Release of Delta Lake Data Lake Format for Glue Studio Service"
+  },
+  {
+    "v": "1.29.72",
+    "t": "Fix DirectJDBCSource not showing up in CLI code gen"
+  },
+  {
+    "v": "1.29.67",
+    "t": "DirectJDBCSource + Glue 4.0 streaming options"
+  },
+  {
+    "v": "1.29.53",
+    "t": "Release Glue Studio Hudi Data Lake Format for SDK/CLI"
+  },
+  {
+    "v": "1.29.31",
+    "t": "This release adds support for AWS Glue Crawler with native DeltaLake tables, allowing Crawlers to classify Delta Lake format tables and catalog them for query engines to query against."
+  },
+  {
+    "v": "1.29.20",
+    "t": "This release adds support for AWS Glue Data Quality, which helps you evaluate and monitor the quality of your data and includes the API for creating, deleting, or updating data quality rulesets, runs and evaluations."
+  },
+  {
+    "v": "1.29.18",
+    "t": "This release allows the creation of Custom Visual Transforms (Dynamic Transforms) to be created via AWS Glue CLI/SDK."
+  },
+  {
+    "v": "1.29.13",
+    "t": "AWSGlue Crawler - Adding support for Table and Column level Comments with database level datatypes for JDBC based crawler."
+  },
+  {
+    "v": "1.29.8",
+    "t": "Added links related to enabling job bookmarks."
+  },
+  {
+    "v": "1.28.3",
+    "t": "Added support for custom datatypes when using custom csv classifier."
+  },
+  {
+    "v": "1.27.87",
+    "t": "This SDK release adds support to sync glue jobs with source control provider. Additionally, a new parameter called SourceControlDetails will be added to Job model."
+  },
+  {
+    "v": "1.27.79",
+    "t": "Added support for S3 Event Notifications for Catalog Target Crawlers."
+  },
+  {
+    "v": "1.27.50",
+    "t": "Add support for Python 3.9 AWS Glue Python Shell jobs"
+  },
+  {
+    "v": "1.27.47",
+    "t": "Add an option to run non-urgent or non-time sensitive Glue Jobs on spare capacity"
+  },
+  {
+    "v": "1.27.33",
+    "t": "Documentation updates for AWS Glue Job Timeout and Autoscaling"
+  },
+  {
+    "v": "1.27.30",
+    "t": "This release adds an additional worker type for Glue Streaming jobs."
+  },
+  {
+    "v": "1.27.21",
+    "t": "This release adds tag as an input of CreateDatabase"
+  },
+  {
+    "v": "1.27.17",
+    "t": "This release enables the new ListCrawls API for viewing the AWS Glue Crawler run history."
+  },
+  {
+    "v": "1.26.2",
+    "t": "This release adds a new optional parameter called codeGenNodeConfiguration to CRUD job APIs that allows users to manage visual jobs via APIs. The updated CreateJob and UpdateJob will create jobs that can be viewed in Glue Studio as a visual graph. GetJob can be used to get codeGenNodeConfiguration."
+  },
+  {
+    "v": "1.25.1",
+    "t": "This release adds documentation for the APIs to create, read, delete, list, and batch read of AWS Glue custom patterns, and for Lake Formation configuration settings in the AWS Glue crawler."
+  },
+  {
+    "v": "1.24.45",
+    "t": "This release adds APIs to create, read, delete, list, and batch read of Glue custom entity types"
+  },
+  {
+    "v": "1.24.41",
+    "t": "Auto Scaling for Glue version 3.0 and later jobs to dynamically scale compute resources. This SDK change provides customers with the auto-scaled DPU usage"
+  },
+  {
+    "v": "1.24.22",
+    "t": "Added 9 new APIs for AWS Glue Interactive Sessions: ListSessions, StopSession, CreateSession, GetSession, DeleteSession, RunStatement, GetStatement, ListStatements, CancelStatement"
+  },
+  {
+    "v": "1.24.1",
+    "t": "Support for optimistic locking in UpdateTable"
+  },
+  {
+    "v": "1.23.47",
+    "t": "Launch Protobuf support for AWS Glue Schema Registry"
+  },
+  {
+    "v": "1.23.35",
+    "t": "This SDK release adds support to pass run properties when starting a workflow run"
+  },
+  {
+    "v": "1.23.29",
+    "t": "Add Delta Lake target support for Glue Crawler and 3rd Party Support for Lake Formation"
+  },
+  {
+    "v": "1.23.17",
+    "t": "Support for DataLake transactions"
+  },
+  {
+    "v": "1.21.63",
+    "t": "Enable S3 event base crawler API."
+  },
+  {
+    "v": "1.21.55",
+    "t": "This release adds tag as an input of CreateConnection"
+  },
+  {
+    "v": "1.21.27",
+    "t": "Add support for Custom Blueprints"
+  },
+  {
+    "v": "1.21.13",
+    "t": "Add ConcurrentModificationException to create-table, delete-table, create-database, update-database, delete-database"
+  },
+  {
+    "v": "1.20.112",
+    "t": "Add support for Event Driven Workflows"
+  },
+  {
+    "v": "1.20.102",
+    "t": "Add JSON Support for Glue Schema Registry"
+  },
+  {
+    "v": "1.20.89",
+    "t": "Add SampleSize variable to S3Target to enable s3-sampling feature through API."
+  },
+  {
+    "v": "1.20.58",
+    "t": "Adding Kafka Client Auth Related Parameters"
+  },
+  {
+    "v": "1.20.40",
+    "t": "Allow Dots in Registry and Schema Names for CreateRegistry, CreateSchema; Fixed issue when duplicate keys are present and not returned as part of QuerySchemaVersionMetadata."
+  },
+  {
+    "v": "1.20.14",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.19.42",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.19.41",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.19.22",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.19.6",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.19.2",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.18.12",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.18.10",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.18.2",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.17.58",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.17.39",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.17.38",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.17.29",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.17.27",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.17.18",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.17.11",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.17.2",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.16.22",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.16.11",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.15.42",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.15.40",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.15.33",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.15.10",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.14.16",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.13.24",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.244",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.232",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.209",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.204",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.197",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.195",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.173",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.162",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.146",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.130",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.122",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.112",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.101",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.82",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.64",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.25",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.12.12",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.11.4",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.11.3",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.11.1",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.10.66",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.10.55",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.10.28",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.10.4",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.9.12",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.8.38",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.8.33",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.8.28",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.7.46",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.7.35",
+    "t": "Update glue client to latest version"
+  },
+  {
+    "v": "1.6.1",
+    "t": "Update glue client to latest version"
+  }
+]

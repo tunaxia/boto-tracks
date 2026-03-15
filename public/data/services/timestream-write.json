@@ -1,0 +1,34 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.38.10",
+    "t": "Add dualstack endpoints support."
+  },
+  {
+    "v": "1.29.150",
+    "t": "This release adds the capability for customers to define how their data should be partitioned, optimizing for certain access patterns. This definition will take place as a part of the table creation."
+  },
+  {
+    "v": "1.29.80",
+    "t": "This release adds the ability to ingest batched historical data or migrate data in bulk from S3 into Timestream using CSV files."
+  },
+  {
+    "v": "1.23.13",
+    "t": "This release adds support for multi-measure records and magnetic store writes. Multi-measure records allow customers to store multiple measures in a single table row. Magnetic store writes enable customers to write late arrival data (data with timestamp in the past) directly into the magnetic store."
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update timestream-write client to latest version"
+  },
+  {
+    "v": "1.18.8",
+    "t": "Update timestream-write client to latest version"
+  }
+]

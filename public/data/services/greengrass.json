@@ -1,0 +1,78 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.59",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.27.92",
+    "t": "This change allows customers to specify FunctionRuntimeOverride in FunctionDefinitionVersion. This configuration can be used if the runtime on the device is different from the AWS Lambda runtime specified for that function."
+  },
+  {
+    "v": "1.20.36",
+    "t": "Updated the parameters to make name required for CreateGroup API."
+  },
+  {
+    "v": "1.17.63",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.12.248",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.12.233",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.12.197",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.12.125",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.12.110",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.12.52",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.12.35",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.10.65",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.9.20",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.8.4",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.7.15",
+    "t": "Update greengrass client to latest version"
+  },
+  {
+    "v": "1.5.63",
+    "t": "Update greengrass client to latest version"
+  }
+]

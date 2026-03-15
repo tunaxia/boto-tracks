@@ -1,0 +1,38 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Doc-only updates for Incident Manager Contacts August 2025"
+  },
+  {
+    "v": "1.29.101",
+    "t": "This release adds 12 new APIs as part of Oncall Schedule feature release, adds support for a new contact type: ONCALL_SCHEDULE. Check public documentation for AWS ssm-contacts for more information"
+  },
+  {
+    "v": "1.25.10",
+    "t": "Fixed an error in the DescribeEngagement example for AWS Incident Manager."
+  },
+  {
+    "v": "1.21.37",
+    "t": "Added SDK examples for SSM-Contacts."
+  },
+  {
+    "v": "1.21.12",
+    "t": "Added new attribute in AcceptCode API. AcceptCodeValidation takes in two values - ENFORCE, IGNORE. ENFORCE forces validation of accept code and IGNORE ignores it which is also the default behavior; Corrected TagKeyList length from 200 to 50"
+  },
+  {
+    "v": "1.20.108",
+    "t": "Updated description for CreateContactChannel contactId."
+  },
+  {
+    "v": "1.20.103",
+    "t": "Fixes the tag key length range to 128 chars,  tag value length to 256 chars; Adds support for UTF-8 chars for contact and channel names, Allows users to unset name in UpdateContact API; Adds throttling exception to StopEngagement API, validation exception to APIs UntagResource, ListTagsForResource"
+  },
+  {
+    "v": "1.20.71",
+    "t": "AWS Systems Manager Incident Manager enables faster resolution of critical application availability and performance issues, management of contacts and post incident analysis"
+  }
+]

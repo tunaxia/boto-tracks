@@ -1,0 +1,174 @@
+[
+  {
+    "v": "1.42.60",
+    "t": "Adding QueryGraph operation to DataZone SDK"
+  },
+  {
+    "v": "1.42.55",
+    "t": "Add workflow properties support to connections APIs"
+  },
+  {
+    "v": "1.42.34",
+    "t": "Added api for deleting data export configuration for a domain"
+  },
+  {
+    "v": "1.42.30",
+    "t": "This release adds support for numeric filtering and complex free-text searches cases for the Search and SearchListings APIs."
+  },
+  {
+    "v": "1.42.27",
+    "t": "Adds support for IAM role subscriptions to Glue table listings via CreateSubscriptionRequest API. Also adds owningIamPrincipalArn filter to List APIs and subscriptionGrantCreationMode parameter to subscription target APIs for controlling grant creation behavior."
+  },
+  {
+    "v": "1.42.1",
+    "t": "Amazon DataZone now supports exporting Catalog datasets as Amazon S3 tables, and provides automatic business glossary term suggestions for data assets."
+  },
+  {
+    "v": "1.41.0",
+    "t": "Amazon DataZone now supports business metadata (readme and metadata forms) at the individual attribute (column) level, a new rule type for glossary terms, and the ability to update the owner of the root domain unit."
+  },
+  {
+    "v": "1.40.74",
+    "t": "Adds support for granting read and write access to Amazon S3 general purpose buckets using CreateSubscriptionRequest and AcceptSubscriptionRequest APIs. Also adds search filters for SSOUser and SSOGroup to ListSubscriptions APIs and deprecates \"sortBy\" parameter for ListSubscriptions APIs."
+  },
+  {
+    "v": "1.40.70",
+    "t": "Remove trackingServerName from DataZone Connection MLflowProperties"
+  },
+  {
+    "v": "1.40.67",
+    "t": "Added support for Project Resource Tags"
+  },
+  {
+    "v": "1.40.59",
+    "t": "This release adds support for MLflow connections Creation in DataZone"
+  },
+  {
+    "v": "1.40.52",
+    "t": "Support creating scoped and trustedIdentityPropagation enabled connections."
+  },
+  {
+    "v": "1.40.42",
+    "t": "This release adds support for creation of EMR on EKS Connections in Amazon DataZone."
+  },
+  {
+    "v": "1.40.29",
+    "t": "adding IAM principal id to IAM user profile details"
+  },
+  {
+    "v": "1.40.27",
+    "t": "Adds support for custom blueprints"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Releasing the following features - Asset classification that lets users use restricted terms for classifying assets if they have the right permissions. Also adding a new enum value \"Moving\" to project status."
+  },
+  {
+    "v": "1.40.14",
+    "t": "This release supports policy grant identifier for cloud formation integration"
+  },
+  {
+    "v": "1.40.9",
+    "t": "Adds support for account pools and project profile account decoupling"
+  },
+  {
+    "v": "1.39.13",
+    "t": "This release adds support for 1) highlighting relevant text in returned results for Search and SearchListings APIs and 2) returning aggregated counts of values for specified attributes for SearchListings API."
+  },
+  {
+    "v": "1.39.5",
+    "t": "Removing restriction of environment profile identifier as required field, S3 feature release"
+  },
+  {
+    "v": "1.39.1",
+    "t": "Add support for the new optional domain-unit-id parameter in the UpdateProject API."
+  },
+  {
+    "v": "1.38.9",
+    "t": "This release adds a new authorization policy to control the usage of custom AssetType when creating an Asset. Customer can now add new grant(s) of policyType USE_ASSET_TYPE for custom AssetTypes to apply authorization policy to projects members and domain unit owners."
+  },
+  {
+    "v": "1.37.33",
+    "t": "Raise hard limit of authorized principals per SubscriptionTarget from 10 to 20."
+  },
+  {
+    "v": "1.37.22",
+    "t": "This release adds new action type of Create Listing Changeset for the Metadata Enforcement Rule feature."
+  },
+  {
+    "v": "1.37.18",
+    "t": "Add support for overriding selection of default AWS IAM Identity Center instance as part of Amazon DataZone domain APIs."
+  },
+  {
+    "v": "1.37.12",
+    "t": "This release adds support to update projects and environments"
+  },
+  {
+    "v": "1.35.74",
+    "t": "Adds support for Connections, ProjectProfiles, and JobRuns APIs. Supports the new Lineage feature at GA. Adjusts optionality of a parameter for DataSource and SubscriptionTarget APIs which may adjust types in some clients."
+  },
+  {
+    "v": "1.35.66",
+    "t": "This release supports Metadata Enforcement Rule feature for Create Subscription Request action."
+  },
+  {
+    "v": "1.35.44",
+    "t": "Adding the following project member designations: PROJECT_CATALOG_VIEWER, PROJECT_CATALOG_CONSUMER and PROJECT_CATALOG_STEWARD in the CreateProjectMembership API and PROJECT_CATALOG_STEWARD designation in the AddPolicyGrant API."
+  },
+  {
+    "v": "1.35.11",
+    "t": "Add support to let data publisher specify a subset of the data asset that a subscriber will have access to based on the asset filters provided, when accepting a subscription request."
+  },
+  {
+    "v": "1.35.10",
+    "t": "Amazon DataZone now adds new governance capabilities of Domain Units for organization within your Data Domains, and Authorization Policies for tighter controls."
+  },
+  {
+    "v": "1.35.8",
+    "t": "Update regex to include dot character to be consistent with IAM role creation in the authorized principal field for create and update subscription target."
+  },
+  {
+    "v": "1.34.154",
+    "t": "This releases Data Product feature. Data Products allow grouping data assets into cohesive, self-contained units for ease of publishing for data producers, and ease of finding and accessing for data consumers."
+  },
+  {
+    "v": "1.34.149",
+    "t": "Introduces GetEnvironmentCredentials operation to SDK"
+  },
+  {
+    "v": "1.34.147",
+    "t": "This release removes the deprecated dataProductItem field from Search API output."
+  },
+  {
+    "v": "1.34.146",
+    "t": "This release adds 1/ support of register S3 locations of assets in AWS Lake Formation hybrid access mode for DefaultDataLake blueprint. 2/ support of CRUD operations for Asset Filters."
+  },
+  {
+    "v": "1.34.142",
+    "t": "This release deprecates dataProductItem field from SearchInventoryResultItem, along with some unused DataProduct shapes"
+  },
+  {
+    "v": "1.34.135",
+    "t": "This release supports the data lineage feature of business data catalog in Amazon DataZone."
+  },
+  {
+    "v": "1.34.127",
+    "t": "This release introduces a new default service blueprint for custom environment creation."
+  },
+  {
+    "v": "1.34.77",
+    "t": "This release supports the feature of dataQuality to enrich asset with dataQualityResult in Amazon DataZone."
+  },
+  {
+    "v": "1.34.75",
+    "t": "This release supports the feature of AI recommendations for descriptions to enrich the business data catalog in Amazon DataZone."
+  },
+  {
+    "v": "1.34.31",
+    "t": "Add new skipDeletionCheck to DeleteDomain. Add new skipDeletionCheck to DeleteProject which also automatically deletes dependent objects"
+  },
+  {
+    "v": "1.31.60",
+    "t": "Initial release of Amazon DataZone"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.37.32",
+    "t": "Introduce three new APIs: CreateDataSetExportTask, GetDataSetExportTask and ListDataSetExportHistory. Add support for batch restart for Blu Age applications."
+  },
+  {
+    "v": "1.35.83",
+    "t": "This release adds support for AWS Mainframe Modernization(M2) Service to allow specifying network type(ipv4, dual) for the environment instances. For dual network type, m2 environment applications will serve both IPv4 and IPv6 requests, whereas for ipv4 it will serve only IPv4 requests."
+  },
+  {
+    "v": "1.35.46",
+    "t": "Add AuthSecretsManagerArn optional parameter to batch job APIs, expand batch parameter limits, and introduce clientToken constraints."
+  },
+  {
+    "v": "1.34.85",
+    "t": "Adding new ListBatchJobRestartPoints API and support for restart batch job."
+  },
+  {
+    "v": "1.31.75",
+    "t": "Added name filter ability for ListDataSets API, added ForceUpdate for Updating environment and BatchJob submission using S3BatchJobIdentifier"
+  },
+  {
+    "v": "1.31.5",
+    "t": "Allows UpdateEnvironment to update the environment to 0 host capacity. New GetSignedBluinsightsUrl API"
+  },
+  {
+    "v": "1.29.144",
+    "t": "Adds an optional create-only 'roleArn' property to Application resources.  Enables PS and PO data set org types."
+  },
+  {
+    "v": "1.29.57",
+    "t": "Add returnCode, batchJobIdentifier in GetBatchJobExecution response, for user to view the batch job execution result & unique identifier from engine. Also removed unused headers from REST APIs"
+  },
+  {
+    "v": "1.29.31",
+    "t": "Adds an optional create-only `KmsKeyId` property to Environment and Application resources."
+  },
+  {
+    "v": "1.27.5",
+    "t": "AWS Mainframe Modernization service is a managed mainframe service and set of tools for planning, migrating, modernizing, and running mainframe workloads on AWS"
+  }
+]

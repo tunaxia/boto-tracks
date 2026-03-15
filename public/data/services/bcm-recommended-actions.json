@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.42.9",
+    "t": "Added new freetier action types to RecommendedAction.type."
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.10",
+    "t": "Initial SDK release for AWS Billing and Cost Management Recommended Actions."
+  }
+]

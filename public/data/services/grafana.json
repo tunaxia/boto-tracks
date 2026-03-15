@@ -1,0 +1,54 @@
+[
+  {
+    "v": "1.42.51",
+    "t": "This release updates Amazon Managed Grafana's APIs to support customer managed KMS keys."
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.34.106",
+    "t": "This release adds new ServiceAccount and ServiceAccountToken APIs."
+  },
+  {
+    "v": "1.34.58",
+    "t": "Adds support for the new GrafanaToken as part of the Amazon Managed Grafana Enterprise plugins upgrade to associate your AWS account with a Grafana Labs account."
+  },
+  {
+    "v": "1.31.39",
+    "t": "Marking SAML RoleValues attribute as sensitive and updating VpcConfiguration attributes to match documentation."
+  },
+  {
+    "v": "1.31.6",
+    "t": "Amazon Managed Grafana now supports grafanaVersion update for existing workspaces with UpdateWorkspaceConfiguration API. DescribeWorkspaceConfiguration API additionally returns grafanaVersion. A new ListVersions API lists available versions or, if given a workspaceId, the versions it can upgrade to."
+  },
+  {
+    "v": "1.29.123",
+    "t": "This release adds support for the grafanaVersion parameter in CreateWorkspace."
+  },
+  {
+    "v": "1.29.78",
+    "t": "Doc-only update. Updated information on attached role policies for customer provided roles"
+  },
+  {
+    "v": "1.29.73",
+    "t": "With this release Amazon Managed Grafana now supports inbound Network Access Control that helps you to restrict user access to your Grafana workspaces"
+  },
+  {
+    "v": "1.29.16",
+    "t": "This release includes support for configuring a Grafana workspace to connect to a datasource within a VPC as well as new APIs for configuring Grafana settings."
+  },
+  {
+    "v": "1.26.0",
+    "t": "This release adds APIs for creating and deleting API keys in an Amazon Managed Grafana workspace."
+  },
+  {
+    "v": "1.24.31",
+    "t": "This release adds tagging support to the Managed Grafana service. New APIs: TagResource, UntagResource and ListTagsForResource. Updates: add optional field tags to support tagging while calling CreateWorkspace."
+  },
+  {
+    "v": "1.21.57",
+    "t": "Initial release of the SDK for Amazon Managed Grafana API."
+  }
+]

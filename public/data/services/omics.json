@@ -1,0 +1,102 @@
+[
+  {
+    "v": "1.40.64",
+    "t": "Added WDL_LENIENT engine type that enables implicit typecasting of variable values to its compatible declared types"
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Adds Amazon ECR pull through cache support to AWS HealthOmics, so you can more easily use container images from external sources."
+  },
+  {
+    "v": "1.39.13",
+    "t": "Add Git integration and README support for HealthOmics workflows"
+  },
+  {
+    "v": "1.37.36",
+    "t": "Add versioning for HealthOmics workflows"
+  },
+  {
+    "v": "1.35.68",
+    "t": "This release adds support for resource policy based cross account S3 access to sequence store read sets."
+  },
+  {
+    "v": "1.35.66",
+    "t": "Enabling call caching feature that allows customers to reuse previously computed results from a set of completed tasks in a new workflow run."
+  },
+  {
+    "v": "1.35.7",
+    "t": "Adds data provenance to import jobs from read sets and references"
+  },
+  {
+    "v": "1.34.95",
+    "t": "Add support for workflow sharing and dynamic run storage"
+  },
+  {
+    "v": "1.34.83",
+    "t": "This release adds support for retrieval of S3 direct access metadata on sequence stores and read sets, and adds support for SHA256up and SHA512up HealthOmics ETags."
+  },
+  {
+    "v": "1.34.7",
+    "t": "Provides minor corrections and an updated description of APIs."
+  },
+  {
+    "v": "1.31.83",
+    "t": "Support UBAM filetype for Omics Storage and make referenceArn optional"
+  },
+  {
+    "v": "1.31.81",
+    "t": "Adding Run UUID and Run Output URI: GetRun and StartRun API response has two new fields \"uuid\" and \"runOutputUri\"."
+  },
+  {
+    "v": "1.31.67",
+    "t": "This change enables customers to retrieve failure reasons with detailed status messages for their failed runs"
+  },
+  {
+    "v": "1.31.61",
+    "t": "Add Etag Support for Omics Storage in ListReadSets and GetReadSetMetadata API"
+  },
+  {
+    "v": "1.31.37",
+    "t": "Add RetentionMode support for Runs."
+  },
+  {
+    "v": "1.31.26",
+    "t": "This release provides support for annotation store versioning and cross account sharing for Omics Analytics"
+  },
+  {
+    "v": "1.31.24",
+    "t": "This release adds instanceType to GetRunTask & ListRunTasks responses."
+  },
+  {
+    "v": "1.31.16",
+    "t": "Add CreationType filter for ListReadSets"
+  },
+  {
+    "v": "1.31.12",
+    "t": "The service is renaming as a part of AWS Health."
+  },
+  {
+    "v": "1.29.163",
+    "t": "Add Common Workflow Language (CWL) as a supported language for Omics workflows"
+  },
+  {
+    "v": "1.29.133",
+    "t": "This release provides support for Ready2Run and GPU workflows, an improved read set filter, the direct upload of read sets into Omics Storage, and annotation parsing for analytics stores."
+  },
+  {
+    "v": "1.29.110",
+    "t": "Remove unexpected API changes."
+  },
+  {
+    "v": "1.29.81",
+    "t": "Minor model changes to accomodate batch imports feature"
+  },
+  {
+    "v": "1.29.19",
+    "t": "Amazon Omics is a new, purpose-built service that can be used by healthcare and life science organizations to store, query, and analyze omics data. The insights from that data can be used to accelerate scientific discoveries and improve healthcare."
+  }
+]

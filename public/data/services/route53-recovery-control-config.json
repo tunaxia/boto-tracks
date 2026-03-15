@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.14",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.37.18",
+    "t": "Adds dual-stack (IPv4 and IPv6) endpoint support for route53-recovery-control-config operations, opt-in dual-stack addresses for cluster endpoints, and UpdateCluster API to update the network-type of clusters between IPv4 and dual-stack."
+  },
+  {
+    "v": "1.31.65",
+    "t": "Adds permissions for GetResourcePolicy to support returning details about AWS Resource Access Manager resource policies for shared resources."
+  },
+  {
+    "v": "1.29.39",
+    "t": "Added support for Python paginators in the route53-recovery-control-config List* APIs."
+  },
+  {
+    "v": "1.23.23",
+    "t": "This release adds tagging supports to Route53 Recovery Control Configuration. New APIs: TagResource, UntagResource and ListTagsForResource. Updates: add optional field `tags` to support tagging while calling CreateCluster, CreateControlPanel and CreateSafetyRule."
+  },
+  {
+    "v": "1.21.8",
+    "t": "Amazon Route 53 Application Recovery Controller's routing control - Routing Control Configuration APIs help you create and delete clusters, control panels, routing controls and safety rules. State changes (On/Off) of routing controls are not part of configuration APIs."
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.21",
+    "t": "AWS X-Ray Features: Support Sampling Rate Boost On Anomaly"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.67",
+    "t": "AWS X-Ray introduces Transaction Search APIs, enabling span ingestion into CloudWatch Logs for high-scale trace data indexing. These APIs support span-level queries, trace graph generation, and metric correlation for deeper application insights."
+  },
+  {
+    "v": "1.31.64",
+    "t": "This releases enhances GetTraceSummaries API to support new TimeRangeType Service to query trace summaries by segment end time."
+  },
+  {
+    "v": "1.31.47",
+    "t": "Add StartTime field in GetTraceSummaries API response for each TraceSummary."
+  },
+  {
+    "v": "1.29.122",
+    "t": "Updated X-Ray documentation with Resource Policy API descriptions."
+  },
+  {
+    "v": "1.29.11",
+    "t": "This release adds new APIs - PutResourcePolicy, DeleteResourcePolicy, ListResourcePolicies for supporting resource based policies for AWS X-Ray."
+  },
+  {
+    "v": "1.29.9",
+    "t": "This release enhances GetServiceGraph API to support new type of edge to represent links between SQS and Lambda in event-driven applications."
+  },
+  {
+    "v": "1.21.37",
+    "t": "Updated references to AWS KMS keys and customer managed keys to reflect current terminology."
+  },
+  {
+    "v": "1.19.11",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.17.56",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.17.48",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.15.29",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.13.48",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.12.140",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.12.56",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.12.49",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.11.3",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.10.9",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.8.0",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.5.70",
+    "t": "Update xray client to latest version"
+  },
+  {
+    "v": "1.4.81",
+    "t": "Update xray client to latest version"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "v": "1.35.48",
+    "t": "The nimble client has been removed following the deprecation of the service."
+  },
+  {
+    "v": "1.29.34",
+    "t": "Amazon Nimble Studio now supports configuring session storage volumes and persistence, as well as backup and restore sessions through launch profiles."
+  },
+  {
+    "v": "1.27.80",
+    "t": "Amazon Nimble Studio adds support for on-demand Amazon Elastic Compute Cloud (EC2) G3 and G5 instances, allowing customers to utilize additional GPU instance types for their creative projects."
+  },
+  {
+    "v": "1.27.30",
+    "t": "Amazon Nimble Studio adds support for IAM-based access to AWS resources for Nimble Studio components and custom studio components. Studio Component scripts use these roles on Nimble Studio workstation to mount filesystems, access S3 buckets, or other configured resources in the Studio's AWS account"
+  },
+  {
+    "v": "1.23.35",
+    "t": "Amazon Nimble Studio now supports validation for Launch Profiles. Launch Profiles now report static validation results after create/update to detect errors in network or active directory configuration."
+  },
+  {
+    "v": "1.23.26",
+    "t": "Amazon Nimble Studio adds support for users to upload files during a streaming session using NICE DCV native client or browser."
+  },
+  {
+    "v": "1.22.9",
+    "t": "Amazon Nimble Studio adds support for users to stop and start streaming sessions."
+  },
+  {
+    "v": "1.21.19",
+    "t": "Add new attribute 'ownedBy' in Streaming Session APIs. 'ownedBy' represents the AWS SSO Identity Store User ID of the owner of the Streaming Session resource."
+  },
+  {
+    "v": "1.20.67",
+    "t": "Documentation Updates for Amazon Nimble Studio."
+  },
+  {
+    "v": "1.20.60",
+    "t": "Amazon Nimble Studio is a virtual studio service that empowers visual effects, animation, and interactive content teams to create content securely within a scalable, private cloud service."
+  }
+]

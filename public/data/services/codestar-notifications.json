@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.27.75",
+    "t": "This release adds tag based access control for the UntagResource API."
+  },
+  {
+    "v": "1.13.10",
+    "t": "Update codestar-notifications client to latest version"
+  }
+]

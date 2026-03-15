@@ -1,0 +1,17 @@
+[
+  {
+    "category": "s3",
+    "description": "Added support for delete marker and abort multipart upload lifecycle configuration.",
+    "type": "feature"
+  },
+  {
+    "category": "iot",
+    "description": "Added support for Amazon Elasticsearch Service and Amazon Cloudwatch actions for the AWS IoT rules engine.",
+    "type": "feature"
+  },
+  {
+    "category": "cloudhsm",
+    "description": "Added support for tagging resources.",
+    "type": "feature"
+  }
+]

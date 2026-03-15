@@ -1,0 +1,38 @@
+[
+  {
+    "v": "1.41.0",
+    "t": "CloudWatch RUM now supports mobile application monitoring for Android and iOS platforms"
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.37.14",
+    "t": "CloudWatch RUM now supports unminification of JS error stack traces."
+  },
+  {
+    "v": "1.37.5",
+    "t": "Add support for PutResourcePolicy, GetResourcePolicy and DeleteResourcePolicy to support resource based policies for AWS CloudWatch RUM"
+  },
+  {
+    "v": "1.34.49",
+    "t": "Doc-only update for new RUM metrics that were added"
+  },
+  {
+    "v": "1.29.77",
+    "t": "CloudWatch RUM now supports CloudWatch Custom Metrics"
+  },
+  {
+    "v": "1.29.12",
+    "t": "CloudWatch RUM now supports custom events. To use custom events, create an app monitor or update an app monitor with CustomEvent Status as ENABLED."
+  },
+  {
+    "v": "1.27.95",
+    "t": "CloudWatch RUM now supports Extended CloudWatch Metrics with Additional Dimensions"
+  },
+  {
+    "v": "1.23.16",
+    "t": "This is the first public release of CloudWatch RUM"
+  }
+]

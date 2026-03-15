@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.32",
+    "t": "Add clientToken attribute and implement idempotency for CreateSuiteDefinition."
+  },
+  {
+    "v": "1.29.149",
+    "t": "AWS IoT Core Device Advisor now supports new Qualification Suite test case list. With this update, customers can more easily create new qualification test suite with an empty rootGroup input."
+  },
+  {
+    "v": "1.29.122",
+    "t": "AWS IoT Core Device Advisor now supports MQTT over WebSocket. With this update, customers can run all three test suites of AWS IoT Core Device Advisor - qualification, custom, and long duration tests - using Signature Version 4 for MQTT over WebSocket."
+  },
+  {
+    "v": "1.29.36",
+    "t": "This release adds the following new features: 1) Documentation updates for IoT Device Advisor APIs. 2) Updated required request parameters for IoT Device Advisor APIs. 3) Added new service feature: ability to provide the test endpoint when customer executing the StartSuiteRun API."
+  },
+  {
+    "v": "1.27.36",
+    "t": "Added new service feature (Early access only) - Long Duration Test, where customers can test the IoT device to observe how it behaves when the device is in operation for longer period."
+  },
+  {
+    "v": "1.23.14",
+    "t": "Documentation update for Device Advisor GetEndpoint API"
+  },
+  {
+    "v": "1.23.12",
+    "t": "This release introduces a new feature for Device Advisor: ability to execute multiple test suites in parallel for given customer account. You can use GetEndpoint API to get the device-level test endpoint and call StartSuiteRun with \"parallelRun=true\" to run suites in parallel."
+  },
+  {
+    "v": "1.20.74",
+    "t": "AWS IoT Core Device Advisor is fully managed test capability for IoT devices. Device manufacturers can use Device Advisor to test their IoT devices for reliable and secure connectivity with AWS IoT."
+  },
+  {
+    "v": "1.19.37",
+    "t": "Update iotdeviceadvisor client to latest version"
+  }
+]

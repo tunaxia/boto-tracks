@@ -1,0 +1,322 @@
+[
+  {
+    "v": "1.42.58",
+    "t": "Security Hub added EXTENDED PLAN integration type to DescribeProductsV2 and added metadata.product.vendor name GroupBy support to GetFindingStatisticsV2"
+  },
+  {
+    "v": "1.42.1",
+    "t": "ITSM enhancements: DRYRUN mode for testing ticket creation, ServiceNow now uses AWS Secrets Manager for credentials, ConnectorRegistrationsV2 renamed to RegisterConnectorV2, added ServiceQuotaExceededException error, and ConnectorStatus visibility in CreateConnectorV2."
+  },
+  {
+    "v": "1.41.1",
+    "t": "Release Findings and Resources Trends APIs- GetFindingsTrendsV2 and GetResourcesTrendsV2. This supports time-series aggregated counts with composite filtering for 1-year of historical data analysis of Findings and Resources."
+  },
+  {
+    "v": "1.40.59",
+    "t": "Release 3 layer filter support in GetFindingsV2, GetFindingStatisticsV2, GetResourcesV2,GetResourcesStatisticsV2, AutomationRule V2 APIs. Update filter casing in GetResourcesV2, GetResourcesStatisticsV2 APIs. Add new filters in GetFindingsV2, GetFindingStatisticsV2, AutomationRule V2 APIs."
+  },
+  {
+    "v": "1.40.26",
+    "t": "This release adds the RESOURCE_NOT_FOUND error code as a possible value in responses to the following operations: BatchGetStandardsControlAssociations, BatchUpdateStandardsControlAssociations, and BatchGetSecurityControls."
+  },
+  {
+    "v": "1.40.1",
+    "t": "Release new resource detail type CodeRepository"
+  },
+  {
+    "v": "1.38.38",
+    "t": "Adds operations, structures, and exceptions required for public preview release of Security Hub V2."
+  },
+  {
+    "v": "1.37.30",
+    "t": "Documentation updates for AWS Security Hub."
+  },
+  {
+    "v": "1.37.10",
+    "t": "This release adds new StandardsControlsUpdatable field to the StandardsSubscription resource"
+  },
+  {
+    "v": "1.35.88",
+    "t": "Documentation updates for AWS Security Hub"
+  },
+  {
+    "v": "1.35.72",
+    "t": "Add new Multi Domain Correlation findings."
+  },
+  {
+    "v": "1.35.29",
+    "t": "Documentation updates for AWS Security Hub"
+  },
+  {
+    "v": "1.35.16",
+    "t": "Documentation update for Security Hub"
+  },
+  {
+    "v": "1.35.3",
+    "t": "Security Hub documentation and definition updates"
+  },
+  {
+    "v": "1.34.131",
+    "t": "Documentation updates for Security Hub"
+  },
+  {
+    "v": "1.34.115",
+    "t": "Add ROOT type for TargetType model"
+  },
+  {
+    "v": "1.34.106",
+    "t": "Documentation-only update for AWS Security Hub"
+  },
+  {
+    "v": "1.34.96",
+    "t": "Updated CreateMembers API request with limits."
+  },
+  {
+    "v": "1.34.76",
+    "t": "Documentation updates for AWS Security Hub"
+  },
+  {
+    "v": "1.34.69",
+    "t": "Added new resource detail object to ASFF, including resource for LastKnownExploitAt"
+  },
+  {
+    "v": "1.34.20",
+    "t": "Documentation updates for AWS Security Hub"
+  },
+  {
+    "v": "1.33.12",
+    "t": "Added new resource detail objects to ASFF, including resources for AwsDynamoDbTable, AwsEc2ClientVpnEndpoint, AwsMskCluster, AwsS3AccessPoint, AwsS3Bucket"
+  },
+  {
+    "v": "1.33.0",
+    "t": "Adds and updates APIs to support central configuration. This feature allows the Security Hub delegated administrator to configure Security Hub for their entire AWS Org across multiple regions from a home Region. With this release, findings also include account name and application metadata."
+  },
+  {
+    "v": "1.32.7",
+    "t": "Adds and updates APIs to support customizable security controls. This feature allows Security Hub customers to provide custom parameters for security controls. With this release, findings for controls that support custom parameters will include the parameters used to generate the findings."
+  },
+  {
+    "v": "1.31.61",
+    "t": "Added new resource detail objects to ASFF, including resources for AwsEventsEventbus, AwsEventsEndpoint, AwsDmsEndpoint, AwsDmsReplicationTask, AwsDmsReplicationInstance, AwsRoute53HostedZone, and AwsMskCluster"
+  },
+  {
+    "v": "1.31.43",
+    "t": "Documentation updates for AWS Security Hub"
+  },
+  {
+    "v": "1.31.30",
+    "t": "Added Inspector Lambda code Vulnerability section to ASFF, including GeneratorDetails, EpssScore, ExploitAvailable, and CodeVulnerabilities."
+  },
+  {
+    "v": "1.31.11",
+    "t": "Add support for CONTAINS and NOT_CONTAINS comparison operators for Automation Rules string filters and map filters"
+  },
+  {
+    "v": "1.30.1",
+    "t": "Documentation updates for AWS Security Hub"
+  },
+  {
+    "v": "1.29.153",
+    "t": "Add support for Security Hub Automation Rules"
+  },
+  {
+    "v": "1.29.143",
+    "t": "Added new resource detail objects to ASFF, including resources for AwsGuardDutyDetector, AwsAmazonMqBroker, AwsEventSchemasRegistry, AwsAppSyncGraphQlApi and AwsStepFunctionStateMachine."
+  },
+  {
+    "v": "1.29.127",
+    "t": "Add support for Finding History."
+  },
+  {
+    "v": "1.29.100",
+    "t": "Added new resource detail objects to ASFF, including resources for AwsEksCluster, AWSS3Bucket, AwsEc2RouteTable and AwsEC2Instance."
+  },
+  {
+    "v": "1.29.79",
+    "t": "New Security Hub APIs and updates to existing APIs that help you consolidate control findings and enable and disable controls across all supported standards"
+  },
+  {
+    "v": "1.29.76",
+    "t": "Documentation updates for AWS Security Hub"
+  },
+  {
+    "v": "1.29.61",
+    "t": "New fields have been added to the AWS Security Finding Format. Compliance.SecurityControlId is a unique identifier for a security control across standards. Compliance.AssociatedStandards contains all enabled standards in which a security control is enabled."
+  },
+  {
+    "v": "1.29.31",
+    "t": "Added new resource details objects to ASFF, including resources for AwsEc2LaunchTemplate, AwsSageMakerNotebookInstance, AwsWafv2WebAcl and AwsWafv2RuleGroup."
+  },
+  {
+    "v": "1.29.18",
+    "t": "Adding StandardsManagedBy field to DescribeStandards API response"
+  },
+  {
+    "v": "1.29.12",
+    "t": "Added SourceLayerArn and SourceLayerHash field for security findings.  Updated AwsLambdaFunction Resource detail"
+  },
+  {
+    "v": "1.29.8",
+    "t": "Documentation updates for Security Hub"
+  },
+  {
+    "v": "1.27.57",
+    "t": "Added new resource details objects to ASFF, including resources for AwsBackupBackupVault, AwsBackupBackupPlan and AwsBackupRecoveryPoint. Added FixAvailable, FixedInVersion and Remediation  to Vulnerability."
+  },
+  {
+    "v": "1.27.38",
+    "t": "Documentation updates for AWS Security Hub"
+  },
+  {
+    "v": "1.27.11",
+    "t": "Added Threats field for security findings. Added new resource details for ECS Container, ECS Task, RDS SecurityGroup, Kinesis Stream, EC2 TransitGateway, EFS AccessPoint, CloudFormation Stack, CloudWatch Alarm, VPC Peering Connection and WAF Rules"
+  },
+  {
+    "v": "1.25.9",
+    "t": "Documentation updates for Security Hub API reference"
+  },
+  {
+    "v": "1.25.0",
+    "t": "Security Hub now lets you opt-out of auto-enabling the defaults standards (CIS and FSBP) in accounts that are auto-enabled with Security Hub via Security Hub's integration with AWS Organizations."
+  },
+  {
+    "v": "1.24.34",
+    "t": "Added additional ASFF details for RdsSecurityGroup AutoScalingGroup, ElbLoadBalancer, CodeBuildProject and RedshiftCluster."
+  },
+  {
+    "v": "1.23.44",
+    "t": "Adding top level Sample boolean field"
+  },
+  {
+    "v": "1.23.25",
+    "t": "Added new resource details objects to ASFF, including resources for Firewall, and RuleGroup, FirewallPolicy Added additional details for AutoScalingGroup, LaunchConfiguration, and S3 buckets."
+  },
+  {
+    "v": "1.22.0",
+    "t": "Added support for cross-Region finding aggregation, which replicates findings from linked Regions to a single aggregation Region. Added operations to view, enable, update, and delete the finding aggregation."
+  },
+  {
+    "v": "1.21.58",
+    "t": "Added new resource details objects to ASFF, including resources for WAF rate-based rules, EC2 VPC endpoints, ECR repositories, EKS clusters, X-Ray encryption, and OpenSearch domains. Added additional details for CloudFront distributions, CodeBuild projects, ELB V2 load balancers, and S3 buckets."
+  },
+  {
+    "v": "1.21.35",
+    "t": "New ASFF Resources: AwsAutoScalingLaunchConfiguration, AwsEc2VpnConnection, AwsEcrContainerImage. Added KeyRotationStatus to AwsKmsKey. Added AccessControlList, BucketLoggingConfiguration,BucketNotificationConfiguration and BucketNotificationConfiguration to AwsS3Bucket."
+  },
+  {
+    "v": "1.21.6",
+    "t": "Added product name, company name, and Region fields for security findings. Added details objects for RDS event subscriptions and AWS ECS services. Added fields to the details for AWS Elasticsearch domains."
+  },
+  {
+    "v": "1.20.100",
+    "t": "Added new resource details for ECS clusters and ECS task definitions. Added additional information for S3 buckets, Elasticsearch domains, and API Gateway V2 stages."
+  },
+  {
+    "v": "1.20.73",
+    "t": "Updated descriptions to add notes on array lengths."
+  },
+  {
+    "v": "1.20.63",
+    "t": "Updated ASFF to add the following new resource details objects: AwsEc2NetworkAcl, AwsEc2Subnet, and AwsElasticBeanstalkEnvironment."
+  },
+  {
+    "v": "1.20.56",
+    "t": "Replaced the term \"master\" with \"administrator\". Added new actions to replace AcceptInvitation, GetMasterAccount, and DisassociateFromMasterAccount. In Member, replaced MasterId with AdministratorId."
+  },
+  {
+    "v": "1.20.31",
+    "t": "New object for separate provider and customer values. New objects track S3 Public Access Block configuration and identify sensitive data. BatchImportFinding requests are limited to 100 findings."
+  },
+  {
+    "v": "1.20.1",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.19.58",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.19.41",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.18.9",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.17.53",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.17.45",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.17.30",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.17.15",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.16.14",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.15.40",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.15.30",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.15.20",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.15.8",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.15.0",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.14.11",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.14.3",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.13.44",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.12.216",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.12.175",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.12.158",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.12.127",
+    "t": "Update securityhub client to latest version"
+  },
+  {
+    "v": "1.12.54",
+    "t": "Update securityhub client to latest version"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.4.65",
+    "t": "Add back missing fail fail states to cloudformation waiters (`#1056 <https://github.com/boto/botocore/issues/1056>`__)"
+  },
+  {
+    "v": "1.4.51",
+    "t": "Add last_response attribute to WaiterError (`#1023 <https://github.com/boto/botocore/issues/1023>`__, `#957 <https://github.com/boto/botocore/issues/957>`__)"
+  },
+  {
+    "v": "1.4.20",
+    "t": "Fix ``JMESPathTypeError`` exception being raised (`#906 <https://github.com/boto/botocore/issues/906>`__, `#907 <https://github.com/boto/botocore/issues/907>`__)"
+  }
+]

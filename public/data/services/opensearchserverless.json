@@ -1,0 +1,58 @@
+[
+  {
+    "v": "1.42.29",
+    "t": "Collection groups in Amazon OpenSearch Serverless enables to organize multiple collections and enable compute resource sharing across collections with different KMS keys. This shared compute model reduces costs by eliminating the need for separate OpenSearch Compute Units (OCUs) for each KMS key."
+  },
+  {
+    "v": "1.42.1",
+    "t": "GPU-acceleration helps you build large-scale vector databases faster and more efficiently. You can enable this feature on new OpenSearch domains and OpenSearch Serverless collections. This feature uses GPU-acceleration to reduce the time needed to index data into vector indexes."
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.24",
+    "t": "Add support for Federal Information Processing Standards (FIPS) and Federal Risk and Authorization Management Program (FedRAMP) compliance"
+  },
+  {
+    "v": "1.40.4",
+    "t": "Features: add Index APIs in OpenSearchServerless to support managed semantic enrichment"
+  },
+  {
+    "v": "1.39.16",
+    "t": "This is to support Granular access control support for SAML with IAMFedraton in AOSS"
+  },
+  {
+    "v": "1.36.19",
+    "t": "Custom OpenSearchServerless Entity ID for SAML Config."
+  },
+  {
+    "v": "1.35.52",
+    "t": "Neo Integration via IAM Identity Center (IdC)"
+  },
+  {
+    "v": "1.35.2",
+    "t": "Added FailureCode and FailureMessage to BatchGetCollectionResponse for BatchGetVPCEResponse for non-Active Collection and VPCE."
+  },
+  {
+    "v": "1.33.3",
+    "t": "Amazon OpenSearch Serverless collections support an additional attribute called standby-replicas. This allows to specify whether a collection should have redundancy enabled."
+  },
+  {
+    "v": "1.31.70",
+    "t": "This release includes the following new APIs: CreateLifecyclePolicy, UpdateLifecyclePolicy, BatchGetLifecyclePolicy, DeleteLifecyclePolicy, ListLifecyclePolicies and BatchGetEffectiveLifecyclePolicy to support the data lifecycle management feature."
+  },
+  {
+    "v": "1.31.12",
+    "t": "This release adds new collection type VectorSearch."
+  },
+  {
+    "v": "1.29.102",
+    "t": "This release includes two new exception types \"ServiceQuotaExceededException\" and \"OcuLimitExceededException\"."
+  },
+  {
+    "v": "1.29.19",
+    "t": "Publish SDK for Amazon OpenSearch Serverless"
+  }
+]

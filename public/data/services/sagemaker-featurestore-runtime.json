@@ -1,0 +1,42 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.34.22",
+    "t": "Increase BatchGetRecord limits from 10 items to 100 items"
+  },
+  {
+    "v": "1.31.57",
+    "t": "Feature Store supports read/write of records with collection type features."
+  },
+  {
+    "v": "1.31.8",
+    "t": "Cross account support for SageMaker Feature Store"
+  },
+  {
+    "v": "1.29.162",
+    "t": "Introducing TTL for online store records for feature groups."
+  },
+  {
+    "v": "1.29.104",
+    "t": "In this release, you can now chose between soft delete and hard delete when calling the DeleteRecord API, so you have more flexibility when it comes to managing online store data."
+  },
+  {
+    "v": "1.29.24",
+    "t": "For online + offline Feature Groups, added ability to target PutRecord and DeleteRecord actions to only online store, or only offline store. If target store parameter is not specified, actions will apply to both stores."
+  },
+  {
+    "v": "1.20.92",
+    "t": "Release BatchGetRecord API for AWS SageMaker Feature Store Runtime."
+  },
+  {
+    "v": "1.19.27",
+    "t": "Update sagemaker-featurestore-runtime client to latest version"
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "v": "1.42.42",
+    "t": "Added support for structured outputs to Converse and ConverseStream APIs."
+  },
+  {
+    "v": "1.42.31",
+    "t": "Added support for extended prompt caching with one hour TTL."
+  },
+  {
+    "v": "1.42.1",
+    "t": "Adds support for Audio Blocks and Streaming Image Output plus new Stop Reasons of malformed_model_output and malformed_tool_use."
+  },
+  {
+    "v": "1.41.5",
+    "t": "Bedrock Runtime Reserved Service Support"
+  },
+  {
+    "v": "1.41.2",
+    "t": "Add support to automatically enforce safeguards across accounts within an AWS Organization."
+  },
+  {
+    "v": "1.41.0",
+    "t": "This release includes support for Search Results."
+  },
+  {
+    "v": "1.40.76",
+    "t": "Amazon Bedrock Runtime Service Tier Support Launch"
+  },
+  {
+    "v": "1.40.62",
+    "t": "Add support for system tool and web citation response."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.41",
+    "t": "New stop reason for Converse and ConverseStream"
+  },
+  {
+    "v": "1.40.21",
+    "t": "Fixed stop sequence limit for converse API."
+  },
+  {
+    "v": "1.40.14",
+    "t": "Launch CountTokens API to allow token counting"
+  },
+  {
+    "v": "1.40.3",
+    "t": "This release adds support for Automated Reasoning checks output models for the Amazon Bedrock Guardrails ApplyGuardrail API."
+  },
+  {
+    "v": "1.39.7",
+    "t": "document update to support on demand custom model."
+  },
+  {
+    "v": "1.39.0",
+    "t": "Add API Key and document citations support for Bedrock Runtime APIs"
+  },
+  {
+    "v": "1.38.4",
+    "t": "This release adds native h2 support for the bedrock runtime API, the support is only limited to SDKs that support h2 requests natively."
+  },
+  {
+    "v": "1.38.3",
+    "t": "You can now reference images and documents stored in Amazon S3 when using InvokeModel and Converse APIs with Amazon Nova Lite and Nova Pro. This enables direct integration of S3-stored multimedia assets in your model requests without manual downloading or base64 encoding."
+  },
+  {
+    "v": "1.37.30",
+    "t": "This release introduces our latest bedrock runtime API, InvokeModelWithBidirectionalStream. The API supports both input and output streams and is supported by only HTTP2.0."
+  },
+  {
+    "v": "1.37.29",
+    "t": "New options for how to handle harmful content detected by Amazon Bedrock Guardrails."
+  },
+  {
+    "v": "1.37.24",
+    "t": "Add Prompt Caching support to Converse and ConverseStream APIs"
+  },
+  {
+    "v": "1.37.23",
+    "t": "Launching Multi-modality Content Filter for Amazon Bedrock Guardrails."
+  },
+  {
+    "v": "1.37.7",
+    "t": "This releases adds support for Custom Prompt Router ARN"
+  },
+  {
+    "v": "1.37.0",
+    "t": "This release adds Reasoning Content support to Converse and ConverseStream APIs"
+  },
+  {
+    "v": "1.36.2",
+    "t": "Allow hyphens in tool name for Converse and ConverseStream APIs"
+  },
+  {
+    "v": "1.35.75",
+    "t": "Added support for Intelligent Prompt Router in Invoke, InvokeStream, Converse and ConverseStream. Add support for Bedrock Guardrails image content filter. New Bedrock Marketplace feature enabling a wider range of bedrock compatible models with self-hosted capability."
+  },
+  {
+    "v": "1.35.74",
+    "t": "Added support for Async Invoke Operations Start, List and Get. Support for invocation logs with `requestMetadata` field in Converse, ConverseStream, Invoke and InvokeStream. Video content blocks in Converse/ConverseStream accept raw bytes or S3 URI."
+  },
+  {
+    "v": "1.35.73",
+    "t": "Add an API parameter that allows customers to set performance configuration for invoking a model."
+  },
+  {
+    "v": "1.35.56",
+    "t": "Add Prompt management support to Bedrock runtime APIs: Converse, ConverseStream, InvokeModel, InvokeModelWithStreamingResponse"
+  },
+  {
+    "v": "1.35.51",
+    "t": "Update Application Inference Profile"
+  },
+  {
+    "v": "1.35.46",
+    "t": "Updating invoke regex to support imported models for converse API"
+  },
+  {
+    "v": "1.35.44",
+    "t": "Added converse support for custom imported models"
+  },
+  {
+    "v": "1.35.32",
+    "t": "Added new fields to Amazon Bedrock Guardrails trace"
+  },
+  {
+    "v": "1.35.9",
+    "t": "Add support for imported-model in invokeModel and InvokeModelWithResponseStream."
+  },
+  {
+    "v": "1.35.7",
+    "t": "Amazon Bedrock SDK updates for Inference Profile."
+  },
+  {
+    "v": "1.34.149",
+    "t": "Provides ServiceUnavailableException error message"
+  },
+  {
+    "v": "1.34.143",
+    "t": "Add support for contextual grounding check and ApplyGuardrail API for Guardrails for Amazon Bedrock."
+  },
+  {
+    "v": "1.34.132",
+    "t": "Increases Converse API's document name length"
+  },
+  {
+    "v": "1.34.131",
+    "t": "This release adds document support to Converse and ConverseStream APIs"
+  },
+  {
+    "v": "1.34.129",
+    "t": "This release adds support for using Guardrails with the Converse and ConverseStream APIs."
+  },
+  {
+    "v": "1.34.116",
+    "t": "This release adds Converse and ConverseStream APIs to Bedrock Runtime"
+  },
+  {
+    "v": "1.34.90",
+    "t": "This release introduces Guardrails for Amazon Bedrock."
+  },
+  {
+    "v": "1.33.2",
+    "t": "This release adds support for minor versions/aliases for invoke model identifier."
+  },
+  {
+    "v": "1.31.58",
+    "t": "Add model timeout exception for InvokeModelWithResponseStream API and update validator for invoke model identifier."
+  },
+  {
+    "v": "1.31.57",
+    "t": "Run Inference: Added support to run the inference on models.  Includes set of APIs for running inference in streaming and non-streaming mode."
+  }
+]

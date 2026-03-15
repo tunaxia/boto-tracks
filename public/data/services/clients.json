@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "The following clients have been removed per deprecation of the services - qldb, qldb-session, robomaker, lookoutmetrics, lookoutvision, iotfleethub, apptest"
+  }
+]

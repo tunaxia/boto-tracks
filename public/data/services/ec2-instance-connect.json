@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.34.63",
+    "t": "This release includes a new exception type \"SerialConsoleSessionUnsupportedException\" for SendSerialConsoleSSHPublicKey API."
+  },
+  {
+    "v": "1.27.35",
+    "t": "This release includes a new exception type \"EC2InstanceUnavailableException\" for SendSSHPublicKey and SendSerialConsoleSSHPublicKey APIs."
+  },
+  {
+    "v": "1.23.39",
+    "t": "Adds support for ED25519 keys. PushSSHPublicKey Availability Zone parameter is now optional. Adds EC2InstanceStateInvalidException for instances that are not running. This was previously a service exception, so this may require updating your code to handle this new exception."
+  },
+  {
+    "v": "1.20.41",
+    "t": "Adding support to push SSH keys to the EC2 serial console in order to allow an SSH connection to your Amazon EC2 instance's serial port."
+  },
+  {
+    "v": "1.12.179",
+    "t": "Update ec2-instance-connect client to latest version"
+  }
+]

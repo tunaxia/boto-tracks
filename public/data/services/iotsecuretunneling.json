@@ -1,0 +1,26 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.93",
+    "t": "Adds dualstack endpoint support for IoT Secure Tunneling"
+  },
+  {
+    "v": "1.25.7",
+    "t": "This release introduces a new API RotateTunnelAccessToken that allow revoking the existing tokens and generate new tokens"
+  },
+  {
+    "v": "1.19.19",
+    "t": "Update iotsecuretunneling client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update iotsecuretunneling client to latest version"
+  }
+]

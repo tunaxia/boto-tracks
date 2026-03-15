@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.22",
+    "t": "Added Org support for notifications:  - `ListMemberAccounts` gets member accounts list, `AssociateOrganizationalUnit` links OU to notification configuration, `DisassociateOrganizationalUnit` removes OU from notification configuration, `ListOrganizationalUnits` shows OUs configured for notifications."
+  },
+  {
+    "v": "1.36.2",
+    "t": "Added support for Managed Notifications, integration with AWS Organization and added aggregation summaries for Aggregate Notifications"
+  },
+  {
+    "v": "1.35.67",
+    "t": "This release adds support for AWS User Notifications. You can now configure and view notifications from AWS services in a central location using the AWS SDK."
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.10",
+    "t": "Added pagination support for DescribeHostedConnections, DescribeVirtualInterfaces, DescribeConnections, DescribeInterconnects, DescribeLags. Added asnLong support for BGP peer operations which supports a large range."
+  },
+  {
+    "v": "1.39.15",
+    "t": "Enable MACSec support and features on Interconnects."
+  },
+  {
+    "v": "1.37.21",
+    "t": "With this release, AWS Direct Connect allows you to tag your Direct Connect gateways. Tags are metadata that you can create and use to manage your Direct Connect gateways. For more information about tagging, see AWS Tagging Strategies."
+  },
+  {
+    "v": "1.35.69",
+    "t": "Update DescribeDirectConnectGatewayAssociations API to return associated core network information if a Direct Connect gateway is attached to a Cloud WAN core network."
+  },
+  {
+    "v": "1.34.139",
+    "t": "This update includes documentation for support of new native 400 GBps ports for Direct Connect."
+  },
+  {
+    "v": "1.34.130",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.29.149",
+    "t": "This update corrects the jumbo frames mtu values from 9100 to 8500 for transit virtual interfaces."
+  },
+  {
+    "v": "1.29.135",
+    "t": "This release includes an update to the mtu value for CreateTransitVirtualInterface from 9001 mtu to 8500 mtu."
+  },
+  {
+    "v": "1.29.123",
+    "t": "This release corrects the jumbo frames MTU from 9100 to 8500."
+  },
+  {
+    "v": "1.29.91",
+    "t": "describe-direct-connect-gateway-associations includes a new status, updating, indicating that the association is currently in-process of updating."
+  },
+  {
+    "v": "1.23.18",
+    "t": "Adds SiteLink support to private and transit virtual interfaces. SiteLink is a new Direct Connect feature that allows routing between Direct Connect points of presence."
+  },
+  {
+    "v": "1.22.0",
+    "t": "This release adds 4 new APIS, which needs to be public able"
+  },
+  {
+    "v": "1.21.2",
+    "t": "Documentation updates for directconnect"
+  },
+  {
+    "v": "1.20.111",
+    "t": "This release adds a new filed named awsLogicalDeviceId that it displays the AWS Direct Connect endpoint which terminates a physical connection's BGP Sessions."
+  },
+  {
+    "v": "1.20.42",
+    "t": "This release adds MACsec support to AWS Direct Connect"
+  },
+  {
+    "v": "1.20.19",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.18.9",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.17.27",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.16.22",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.12.244",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.12.179",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.12.139",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.12.121",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.12.109",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.12.99",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.12.46",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.12.22",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.10.66",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.7.37",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.5.42",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.5.27",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.5.14",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.4.81",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.4.70",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.4.31",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.4.18",
+    "t": "Update directconnect client to latest version"
+  },
+  {
+    "v": "1.4.2",
+    "t": "Update model to latest version"
+  }
+]

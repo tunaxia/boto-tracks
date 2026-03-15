@@ -1,0 +1,17 @@
+[
+  {
+    "category": "ses",
+    "description": "Added support for white-labeling",
+    "type": "feature"
+  },
+  {
+    "category": "codedeploy",
+    "description": "Added support for BatchGetDeploymentGroups",
+    "type": "feature"
+  },
+  {
+    "category": "endpoints",
+    "description": "Updated endpoints.json to latest version",
+    "type": "feature"
+  }
+]

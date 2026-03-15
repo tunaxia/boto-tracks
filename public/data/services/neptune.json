@@ -1,0 +1,82 @@
+[
+  {
+    "v": "1.42.57",
+    "t": "Neptune global clusters now supports tags"
+  },
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.38",
+    "t": "Doc-only update to address customer use."
+  },
+  {
+    "v": "1.40.22",
+    "t": "Removed the deprecated marker from publiclyAccessible parameter from DbInstance, CreateDbInstance and ModifyDbInstance and added relevant usage information for the parameter."
+  },
+  {
+    "v": "1.38.18",
+    "t": "This release adds Global Cluster Switchover capability which enables you to change your global cluster's primary AWS Region, the region that serves writes, while preserving the replication between all regions in the global cluster."
+  },
+  {
+    "v": "1.35.24",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.33.12",
+    "t": "This release adds a new parameter configuration setting to the Neptune cluster related APIs that can be leveraged to switch between the underlying supported storage modes."
+  },
+  {
+    "v": "1.31.73",
+    "t": "Update TdeCredentialPassword type to SensitiveString"
+  },
+  {
+    "v": "1.29.95",
+    "t": "This release makes following few changes. db-cluster-identifier is now a required parameter of create-db-instance. describe-db-cluster will now return PendingModifiedValues and GlobalClusterIdentifier fields in the response."
+  },
+  {
+    "v": "1.28.2",
+    "t": "Added a new cluster-level attribute to set the capacity range for Neptune Serverless instances."
+  },
+  {
+    "v": "1.27.5",
+    "t": "This release adds support for Neptune to be configured as a global database, with a primary DB cluster in one region, and up to five secondary DB clusters in other regions."
+  },
+  {
+    "v": "1.22.8",
+    "t": "Adds support for major version upgrades to ModifyDbCluster API"
+  },
+  {
+    "v": "1.20.74",
+    "t": "Neptune support for CopyTagsToSnapshots"
+  },
+  {
+    "v": "1.19.5",
+    "t": "Update neptune client to latest version"
+  },
+  {
+    "v": "1.14.16",
+    "t": "Update neptune client to latest version"
+  },
+  {
+    "v": "1.14.5",
+    "t": "Update neptune client to latest version"
+  },
+  {
+    "v": "1.12.170",
+    "t": "Update neptune client to latest version"
+  },
+  {
+    "v": "1.12.139",
+    "t": "Update neptune client to latest version"
+  },
+  {
+    "v": "1.10.43",
+    "t": "Update neptune client to latest version"
+  },
+  {
+    "v": "1.10.30",
+    "t": "Update neptune client to latest version"
+  }
+]

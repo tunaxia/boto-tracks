@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.41.2",
+    "t": "Add support for resources in the aws-eusc partition."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.8",
+    "t": "Allow underscores in the local part of the input of the \"Email recipients rewrite\" action in rule sets."
+  },
+  {
+    "v": "1.38.6",
+    "t": "Introducing new RuleSet rule PublishToSns action, which allows customers to publish email notifications to an Amazon SNS topic. New PublishToSns action enables customers to easily integrate their email workflows via Amazon SNS, allowing them to notify other systems about important email events."
+  },
+  {
+    "v": "1.37.27",
+    "t": "Add support for Dual_Stack and PrivateLink types of IngressPoint. For configuration requests, SES Mail Manager will now accept both IPv4/IPv6 dual-stack endpoints and AWS PrivateLink VPC endpoints for email receiving."
+  },
+  {
+    "v": "1.37.17",
+    "t": "Amazon SES Mail Manager. Extended rule string and boolean expressions to support analysis in condition evaluation. Extended ingress point string expression to support analysis in condition evaluation"
+  },
+  {
+    "v": "1.36.24",
+    "t": "This release adds additional metadata fields in Mail Manager archive searches to show email source and details about emails that were archived when being sent with SES."
+  },
+  {
+    "v": "1.36.9",
+    "t": "This release includes a new feature for Amazon SES Mail Manager which allows customers to specify known addresses and domains and make use of those in traffic policies and rules actions to distinguish between known and unknown entries."
+  },
+  {
+    "v": "1.35.68",
+    "t": "Added new \"DeliverToQBusiness\" rule action to MailManager RulesSet for ingesting email data into Amazon Q Business customer applications"
+  },
+  {
+    "v": "1.35.40",
+    "t": "Mail Manager support for viewing and exporting metadata of archived messages."
+  },
+  {
+    "v": "1.35.22",
+    "t": "Introduce a new RuleSet condition evaluation, where customers can set up a StringExpression with a MimeHeader condition. This condition will perform the necessary validation based on the X-header provided by customers."
+  },
+  {
+    "v": "1.34.110",
+    "t": "This release includes a new Amazon SES feature called Mail Manager, which is a set of email gateway capabilities designed to help customers strengthen their organization's email infrastructure, simplify email workflow management, and streamline email compliance control."
+  }
+]

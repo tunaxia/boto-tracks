@@ -1,0 +1,126 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.1",
+    "t": "Amazon SNS support for Amazon SQS fair queues"
+  },
+  {
+    "v": "1.36.3",
+    "t": "This release adds support for the topic attribute FifoThroughputScope for SNS FIFO topics. For details, see the documentation history in the Amazon Simple Notification Service Developer Guide."
+  },
+  {
+    "v": "1.35.68",
+    "t": "ArchivePolicy attribute added to Archive and Replay feature"
+  },
+  {
+    "v": "1.34.121",
+    "t": "Doc-only update for SNS. These changes include customer-reported issues and TXC3 updates."
+  },
+  {
+    "v": "1.34.44",
+    "t": "This release marks phone numbers as sensitive inputs."
+  },
+  {
+    "v": "1.31.72",
+    "t": "Message Archiving and Replay is now supported in Amazon SNS for FIFO topics."
+  },
+  {
+    "v": "1.29.69",
+    "t": "This release adds support for SNS X-Ray active tracing as well as other updates."
+  },
+  {
+    "v": "1.29.62",
+    "t": "Additional attributes added for set-topic-attributes."
+  },
+  {
+    "v": "1.29.22",
+    "t": "This release adds the message payload-filtering feature to the SNS Subscribe, SetSubscriptionAttributes, and GetSubscriptionAttributes API actions"
+  },
+  {
+    "v": "1.27.68",
+    "t": "Amazon SNS introduces the Data Protection Policy APIs, which enable customers to attach a data protection policy to an SNS topic. This allows topic owners to enable the new message data protection feature to audit and block sensitive data that is exchanged through their topics."
+  },
+  {
+    "v": "1.23.53",
+    "t": "Customer requested typo fix in API documentation."
+  },
+  {
+    "v": "1.23.8",
+    "t": "Amazon SNS introduces the PublishBatch API, which enables customers to publish up to 10 messages per API request. The new API is valid for Standard and FIFO topics."
+  },
+  {
+    "v": "1.20.106",
+    "t": "Documentation updates for Amazon SNS."
+  },
+  {
+    "v": "1.20.85",
+    "t": "This release adds SMS sandbox in Amazon SNS and the ability to view all configured origination numbers. The SMS sandbox provides a safe environment for sending SMS messages, without risking your reputation as an SMS sender."
+  },
+  {
+    "v": "1.20.57",
+    "t": "Amazon SNS adds two new attributes, TemplateId and EntityId, for using sender IDs to send SMS messages to destinations in India."
+  },
+  {
+    "v": "1.19.56",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.19.19",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.19.9",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.19.3",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.18.15",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.17.36",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.17.20",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.12.137",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.12.45",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.10.31",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.4.61",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.4.53",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.4.52",
+    "t": "Update sns client to latest version"
+  },
+  {
+    "v": "1.4.33",
+    "t": "Update sns client to latest version"
+  }
+]

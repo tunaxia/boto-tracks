@@ -1,0 +1,158 @@
+[
+  {
+    "v": "1.42.63",
+    "t": "Adds support for longer email message header values, increasing the maximum length from 870 to 995 characters for RFC 5322 compliance."
+  },
+  {
+    "v": "1.42.13",
+    "t": "Amazon SES introduces Email Validation feature which checks email addresses for syntax errors, domain validity, and risky addresses to help maintain deliverability and protect sender reputation. SES also adds resource tagging and ABAC support for EmailTemplates and CustomVerificationEmailTemplates."
+  },
+  {
+    "v": "1.42.8",
+    "t": "Update GetEmailIdentity and CreateEmailIdentity response to include SigningHostedZone in DkimAttributes. Updated PutEmailIdentityDkimSigningAttributes Response to include SigningHostedZone."
+  },
+  {
+    "v": "1.42.5",
+    "t": "Update Mail Manager Archive ARN validation"
+  },
+  {
+    "v": "1.42.4",
+    "t": "Updating the desired url for `PutEmailIdentityDkimSigningAttributes` from v1 to v2"
+  },
+  {
+    "v": "1.41.2",
+    "t": "Added support for new SES regions - Asia Pacific (Malaysia) and Canada (Calgary)"
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.0",
+    "t": "This release introduces support for Multi-tenant management"
+  },
+  {
+    "v": "1.39.9",
+    "t": "Added IP Visibility support for managed dedicated pools. Enhanced GetDedicatedIp and GetDedicatedIps APIs to return managed IP addresses."
+  },
+  {
+    "v": "1.38.46",
+    "t": "Added support for new SES regions"
+  },
+  {
+    "v": "1.37.27",
+    "t": "This release enables customers to provide attachments in the SESv2 SendEmail and SendBulkEmail APIs."
+  },
+  {
+    "v": "1.37.24",
+    "t": "Add dual-stack support to global endpoints."
+  },
+  {
+    "v": "1.36.24",
+    "t": "This release adds the ability for outbound email sent with SES to preserve emails to a Mail Manager archive."
+  },
+  {
+    "v": "1.36.0",
+    "t": "This release introduces a new recommendation in Virtual Deliverability Manager Advisor, which detects elevated complaint rates for customer sending identities."
+  },
+  {
+    "v": "1.35.79",
+    "t": "Introduces support for multi-region endpoint."
+  },
+  {
+    "v": "1.35.78",
+    "t": "Introduces support for creating DEED (Deterministic Easy-DKIM) identities."
+  },
+  {
+    "v": "1.35.53",
+    "t": "This release enables customers to provide the email template content in the SESv2 SendEmail and SendBulkEmail APIs instead of the name or the ARN of a stored email template."
+  },
+  {
+    "v": "1.35.41",
+    "t": "This release adds support for email maximum delivery seconds that allows senders to control the time within which their emails are attempted for delivery."
+  },
+  {
+    "v": "1.35.29",
+    "t": "This release adds support for engagement tracking over Https using custom domains."
+  },
+  {
+    "v": "1.35.0",
+    "t": "Marking use case description field of account details as deprecated."
+  },
+  {
+    "v": "1.34.125",
+    "t": "This release adds support for Amazon EventBridge as an email sending events destination."
+  },
+  {
+    "v": "1.34.98",
+    "t": "Adds support for specifying replacement headers per BulkEmailEntry in SendBulkEmail in SESv2."
+  },
+  {
+    "v": "1.34.96",
+    "t": "Fixes ListContacts and ListImportJobs APIs to use POST instead of GET."
+  },
+  {
+    "v": "1.34.56",
+    "t": "Adds support for providing custom headers within SendEmail and SendBulkEmail for SESv2."
+  },
+  {
+    "v": "1.31.64",
+    "t": "This release provides enhanced visibility into your SES identity verification status. This will offer you more actionable insights, enabling you to promptly address any verification-related issues."
+  },
+  {
+    "v": "1.31.37",
+    "t": "Adds support for the new Export and Message Insights features: create, get, list and cancel export jobs; get message insights."
+  },
+  {
+    "v": "1.29.137",
+    "t": "This release allows customers to update scaling mode property of dedicated IP pools with PutDedicatedIpPoolScalingAttributes call."
+  },
+  {
+    "v": "1.29.88",
+    "t": "This release introduces a new recommendation in Virtual Deliverability Manager Advisor, which detects missing or misconfigured Brand Indicator for Message Identification (BIMI) DNS records for customer sending identities."
+  },
+  {
+    "v": "1.28.5",
+    "t": "This release includes support for interacting with the Virtual Deliverability Manager, allowing you to opt in/out of the feature and to retrieve recommendations and metric data."
+  },
+  {
+    "v": "1.27.93",
+    "t": "This release allows subscribers to enable Dedicated IPs (managed) to send email via a fully managed dedicated IP experience. It also adds identities' VerificationStatus in the response of GetEmailIdentity and ListEmailIdentities APIs, and ImportJobs counts in the response of ListImportJobs API."
+  },
+  {
+    "v": "1.21.51",
+    "t": "This release includes the ability to use 2048 bits RSA key pairs for DKIM in SES, either with Easy DKIM or Bring Your Own DKIM."
+  },
+  {
+    "v": "1.19.61",
+    "t": "Update sesv2 client to latest version"
+  },
+  {
+    "v": "1.19.8",
+    "t": "Update sesv2 client to latest version"
+  },
+  {
+    "v": "1.17.45",
+    "t": "Update sesv2 client to latest version"
+  },
+  {
+    "v": "1.17.32",
+    "t": "Update sesv2 client to latest version"
+  },
+  {
+    "v": "1.17.6",
+    "t": "Update sesv2 client to latest version"
+  },
+  {
+    "v": "1.13.39",
+    "t": "Update sesv2 client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update sesv2 client to latest version"
+  },
+  {
+    "v": "1.13.17",
+    "t": "Update sesv2 client to latest version"
+  }
+]

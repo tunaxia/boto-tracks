@@ -1,0 +1,90 @@
+[
+  {
+    "v": "1.42.59",
+    "t": "Updates the regex for validating availabilityZone strings used in the describe events filters."
+  },
+  {
+    "v": "1.42.33",
+    "t": "Updates the lower range for the maxResults request property for DescribeAffectedEntities, DescribeAffectedEntitiesForOrganization, DescribeEvents, and DescribeEventsForOrganization API request properties."
+  },
+  {
+    "v": "1.42.10",
+    "t": "Updating Health API endpoint generation for dualstack only regions"
+  },
+  {
+    "v": "1.41.0",
+    "t": "Adds actionability and personas properties to Health events exposed through DescribeEvents, DescribeEventsForOrganization, DescribeEventDetails, and DescribeEventTypes APIs. Adds filtering by actionabilities and personas in EventFilter, OrganizationEventFilter, EventTypeFilter."
+  },
+  {
+    "v": "1.40.64",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.35.67",
+    "t": "Adds metadata property to an AffectedEntity."
+  },
+  {
+    "v": "1.31.39",
+    "t": "Adds new API DescribeEntityAggregatesForOrganization that retrieves entity aggregates across your organization. Also adds support for resource status filtering in DescribeAffectedEntitiesForOrganization, resource status aggregates in the DescribeEntityAggregates response, and new resource statuses."
+  },
+  {
+    "v": "1.29.133",
+    "t": "Add support for regional endpoints"
+  },
+  {
+    "v": "1.23.22",
+    "t": "Documentation updates for AWS Health"
+  },
+  {
+    "v": "1.23.2",
+    "t": "Documentation updates for AWS Health."
+  },
+  {
+    "v": "1.21.2",
+    "t": "In the Health API, the maximum number of entities for the EventFilter and EntityFilter data types has changed from 100 to 99. This change is related to an internal optimization of the AWS Health service."
+  },
+  {
+    "v": "1.20.65",
+    "t": "Documentation updates for health"
+  },
+  {
+    "v": "1.20.11",
+    "t": "Update health client to latest version"
+  },
+  {
+    "v": "1.17.35",
+    "t": "Update health client to latest version"
+  },
+  {
+    "v": "1.16.13",
+    "t": "Update health client to latest version"
+  },
+  {
+    "v": "1.13.45",
+    "t": "Update health client to latest version"
+  },
+  {
+    "v": "1.12.173",
+    "t": "Update health client to latest version"
+  },
+  {
+    "v": "1.12.59",
+    "t": "Update health client to latest version"
+  },
+  {
+    "v": "1.10.71",
+    "t": "Update health client to latest version"
+  },
+  {
+    "v": "1.5.4",
+    "t": "Update health client to latest version"
+  },
+  {
+    "v": "1.4.84",
+    "t": "Add paginators for Health."
+  },
+  {
+    "v": "1.4.81",
+    "t": "Update health client to latest version"
+  }
+]

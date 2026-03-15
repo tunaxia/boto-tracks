@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.42.67",
+    "t": "Fixed missing error messages in SSO OIDC error responses by mapping OAuth2 error_description field to the standard Message field.  Issue was raised in `#2216 <https://github.com/boto/botocore/issues/2216>`__."
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.37",
+    "t": "This release includes exception definition and documentation updates."
+  },
+  {
+    "v": "1.37.22",
+    "t": "This release adds AwsAdditionalDetails in the CreateTokenWithIAM API response."
+  },
+  {
+    "v": "1.36.6",
+    "t": "Fixed typos in the descriptions."
+  },
+  {
+    "v": "1.34.103",
+    "t": "Updated request parameters for PKCE support."
+  },
+  {
+    "v": "1.32.3",
+    "t": "Adding support for `sso-oauth:CreateTokenWithIAM`."
+  },
+  {
+    "v": "1.31.52",
+    "t": "Update FIPS endpoints in aws-us-gov."
+  },
+  {
+    "v": "1.27.84",
+    "t": "Documentation updates for the IAM Identity Center OIDC CLI Reference."
+  },
+  {
+    "v": "1.27.60",
+    "t": "Updated required request parameters on IAM Identity Center's OIDC CreateToken action."
+  },
+  {
+    "v": "1.27.47",
+    "t": "Documentation updates to reflect service rename - AWS IAM Identity Center (successor to AWS Single Sign-On)"
+  },
+  {
+    "v": "1.13.13",
+    "t": "Update sso-oidc client to latest version"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.27.69",
+    "t": "Release dimension value filtering feature to allow customers to define dimension filters for including only a subset of their dataset to be used by LookoutMetrics."
+  },
+  {
+    "v": "1.27.56",
+    "t": "This release is to make GetDataQualityMetrics API publicly available."
+  },
+  {
+    "v": "1.27.9",
+    "t": "Adding filters to Alert and adding new UpdateAlert API."
+  },
+  {
+    "v": "1.27.0",
+    "t": "Adding backtest mode to detectors using the Cloudwatch data source."
+  },
+  {
+    "v": "1.26.8",
+    "t": "Adding AthenaSourceConfig for MetricSet APIs to support Athena as a data source."
+  },
+  {
+    "v": "1.26.4",
+    "t": "In this release we added SnsFormat to SNSConfiguration to support human readable alert."
+  },
+  {
+    "v": "1.24.45",
+    "t": "Added DetectMetricSetConfig API for detecting configuration required for creating metric set from provided S3 data source."
+  },
+  {
+    "v": "1.23.36",
+    "t": "This release adds a new DeactivateAnomalyDetector API operation."
+  },
+  {
+    "v": "1.23.32",
+    "t": "This release adds FailureType in the response of DescribeAnomalyDetector."
+  },
+  {
+    "v": "1.23.26",
+    "t": "This release adds support for Causal Relationships. Added new ListAnomalyGroupRelatedMetrics API operation and InterMetricImpactDetails API data type"
+  },
+  {
+    "v": "1.20.94",
+    "t": "Added \"LEARNING\" status for anomaly detector and updated description for \"Offset\" parameter in MetricSet APIs."
+  },
+  {
+    "v": "1.20.84",
+    "t": "Allowing dot(.) character in table name for RDS and Redshift as source connector."
+  },
+  {
+    "v": "1.20.69",
+    "t": "Enforcing UUID style for parameters that are already in UUID format today. Documentation specifying eventual consistency of lookoutmetrics resources."
+  },
+  {
+    "v": "1.20.38",
+    "t": "Allowing uppercase alphabets for RDS and Redshift database names."
+  },
+  {
+    "v": "1.20.37",
+    "t": "Amazon Lookout for Metrics is now generally available. You can use Lookout for Metrics to monitor your data for anomalies. For more information, see the Amazon Lookout for Metrics Developer Guide."
+  }
+]

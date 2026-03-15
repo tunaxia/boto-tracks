@@ -1,0 +1,78 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.31.75",
+    "t": "Added support for Brevity translation settings feature."
+  },
+  {
+    "v": "1.31.5",
+    "t": "Added DOCX word document support to TranslateDocument API"
+  },
+  {
+    "v": "1.29.139",
+    "t": "Added support for calling TranslateDocument API."
+  },
+  {
+    "v": "1.29.31",
+    "t": "Raised the input byte size limit of the Text field in the TranslateText API to 10000 bytes."
+  },
+  {
+    "v": "1.27.90",
+    "t": "This release enables customers to specify multiple target languages in asynchronous batch translation requests."
+  },
+  {
+    "v": "1.27.83",
+    "t": "This release enables customers to access control rights on Translate resources like Parallel Data and Custom Terminology using Tag Based Authorization."
+  },
+  {
+    "v": "1.27.20",
+    "t": "Added ListLanguages API which can be used to list the languages supported by Translate."
+  },
+  {
+    "v": "1.24.5",
+    "t": "This release enables customers to use translation settings for formality customization in their synchronous translation output."
+  },
+  {
+    "v": "1.23.13",
+    "t": "This release enables customers to use translation settings to mask profane words and phrases in their translation output."
+  },
+  {
+    "v": "1.23.4",
+    "t": "This release enables customers to import Multi-Directional Custom Terminology and use Multi-Directional Custom Terminology in both real-time translation and asynchronous batch translation."
+  },
+  {
+    "v": "1.22.12",
+    "t": "This release enable customers to use their own KMS keys to encrypt output files when they submit a batch transform job."
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update translate client to latest version"
+  },
+  {
+    "v": "1.18.4",
+    "t": "Update translate client to latest version"
+  },
+  {
+    "v": "1.13.49",
+    "t": "Update translate client to latest version"
+  },
+  {
+    "v": "1.12.53",
+    "t": "Update translate client to latest version"
+  },
+  {
+    "v": "1.9.23",
+    "t": "Update translate client to latest version"
+  },
+  {
+    "v": "1.8.4",
+    "t": "Update translate client to latest version"
+  }
+]

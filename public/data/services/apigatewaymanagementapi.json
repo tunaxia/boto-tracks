@@ -1,0 +1,22 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.12.220",
+    "t": "Update apigatewaymanagementapi client to latest version"
+  },
+  {
+    "v": "1.12.84",
+    "t": "Update apigatewaymanagementapi client to latest version"
+  },
+  {
+    "v": "1.12.68",
+    "t": "Update apigatewaymanagementapi client to latest version"
+  }
+]

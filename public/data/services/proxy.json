@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.24.35",
+    "t": "Fix failure case for IP proxy addresses using TLS-in-TLS. `boto/botocore#2652 <https://github.com/boto/botocore/pull/2652>`__"
+  },
+  {
+    "v": "1.4.7",
+    "t": "Handle case where error response from proxy is received (`issue 850 <https://github.com/boto/botocore/pull/850`__)"
+  }
+]

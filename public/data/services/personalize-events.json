@@ -1,0 +1,38 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.32.7",
+    "t": "This release enables PutActions and PutActionInteractions"
+  },
+  {
+    "v": "1.29.11",
+    "t": "This release provides support for creation and use of metric attributions in AWS Personalize"
+  },
+  {
+    "v": "1.20.91",
+    "t": "Support for unstructured text inputs in the items dataset to to automatically extract key information from product/content description as an input when creating solution versions."
+  },
+  {
+    "v": "1.20.7",
+    "t": "Update personalize-events client to latest version"
+  },
+  {
+    "v": "1.18.11",
+    "t": "Update personalize-events client to latest version"
+  },
+  {
+    "v": "1.17.37",
+    "t": "Update personalize-events client to latest version"
+  },
+  {
+    "v": "1.12.165",
+    "t": "Update personalize-events client to latest version"
+  }
+]

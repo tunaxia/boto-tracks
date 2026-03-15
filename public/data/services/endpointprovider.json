@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.29.134",
+    "t": "Fixed bug in virtual addressing for S3 Buckets `#2938 <https://github.com/boto/botocore/issues/2938>`__"
+  }
+]

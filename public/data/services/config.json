@@ -1,0 +1,378 @@
+[
+  {
+    "v": "1.42.68",
+    "t": "Fix pagination support for DescribeConformancePackCompliance, and update OrganizationConfigRule InputParameters max length to match ConfigRule."
+  },
+  {
+    "v": "1.42.32",
+    "t": "AWS Config Conformance Packs now support tag-on-create through PutConformancePack API."
+  },
+  {
+    "v": "1.42.29",
+    "t": "Add support for TCP Keep-Alive configuration via BOTOCORE_TCP_KEEPALIVE environment variable"
+  },
+  {
+    "v": "1.42.15",
+    "t": "Added supported resourceTypes for Config from July to November 2025"
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.35",
+    "t": "Add UNKNOWN state to RemediationExecutionState and add IN_PROGRESS/EXITED/UNKNOWN states to RemediationExecutionStepState."
+  },
+  {
+    "v": "1.39.14",
+    "t": "Documentation improvements have been made to the EvaluationModel and DescribeConfigurationRecorders APIs."
+  },
+  {
+    "v": "1.39.0",
+    "t": "Updated ResourceType enum with new resource types onboarded by AWS Config as of June 2025"
+  },
+  {
+    "v": "1.38.46",
+    "t": "Added important considerations to the PutConformancePack and PutOrganizationConformancPack APIs."
+  },
+  {
+    "v": "1.35.71",
+    "t": "AWS Config adds support for service-linked recorders, a new type of Config recorder managed by AWS services to record specific subsets of resource configuration data and functioning independently from customer managed AWS Config recorders."
+  },
+  {
+    "v": "1.35.42",
+    "t": "Fixed sigv4a_signing_region_set resolution when set in environment or config file."
+  },
+  {
+    "v": "1.34.159",
+    "t": "Documentation update for the OrganizationConfigRuleName regex pattern."
+  },
+  {
+    "v": "1.34.129",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.84",
+    "t": "Updates documentation for AWS Config"
+  },
+  {
+    "v": "1.34.45",
+    "t": "Documentation updates for the AWS Config CLI"
+  },
+  {
+    "v": "1.34.13",
+    "t": "Updated ResourceType enum with new resource types onboarded by AWS Config in November and December 2023."
+  },
+  {
+    "v": "1.32.7",
+    "t": "Support Periodic Recording for Configuration Recorder"
+  },
+  {
+    "v": "1.31.78",
+    "t": "Updated ResourceType enum with new resource types onboarded by AWS Config in October 2023."
+  },
+  {
+    "v": "1.31.63",
+    "t": "Add enums for resource types supported by Config"
+  },
+  {
+    "v": "1.31.25",
+    "t": "Updated ResourceType enum with new resource types onboarded by AWS Config in July 2023."
+  },
+  {
+    "v": "1.29.157",
+    "t": "Updated ResourceType enum with new resource types onboarded by AWS Config in May 2023."
+  },
+  {
+    "v": "1.29.144",
+    "t": "Resource Types Exclusion feature launch by AWS Config"
+  },
+  {
+    "v": "1.29.127",
+    "t": "Updated ResourceType enum with new resource types onboarded by AWS Config in April 2023."
+  },
+  {
+    "v": "1.29.107",
+    "t": "This release adds resourceType enums for types released in March 2023."
+  },
+  {
+    "v": "1.29.94",
+    "t": "This release adds resourceType enums for types released from October 2022 through February 2023."
+  },
+  {
+    "v": "1.29.18",
+    "t": "With this release, you can use AWS Config to evaluate your resources for compliance with Config rules before they are created or updated. Using Config rules in proactive mode enables you to test and build compliant resource templates or check resource configurations at the time they are provisioned."
+  },
+  {
+    "v": "1.27.94",
+    "t": "This release adds resourceType enums for AppConfig, AppSync, DataSync, EC2, EKS, Glue, GuardDuty, SageMaker, ServiceDiscovery, SES, Route53 types."
+  },
+  {
+    "v": "1.27.59",
+    "t": "AWS Config now supports ConformancePackTemplate documents in SSM Docs for the deployment and update of conformance packs."
+  },
+  {
+    "v": "1.27.46",
+    "t": "Add resourceType enums for Athena, GlobalAccelerator, Detective and EC2 types"
+  },
+  {
+    "v": "1.27.43",
+    "t": "Documentation update for PutConfigRule and PutOrganizationConfigRule"
+  },
+  {
+    "v": "1.27.41",
+    "t": "Obey _X_AMZN_TRACE_ID environment variable instead of _X_AMZ_TRACE_ID"
+  },
+  {
+    "v": "1.27.39",
+    "t": "This release adds ListConformancePackComplianceScores API to support the new compliance score feature, which provides a percentage of the number of compliant rule-resource combinations in a conformance pack compared to the number of total possible rule-resource combinations in the conformance pack."
+  },
+  {
+    "v": "1.27.30",
+    "t": "Update ResourceType enum with values for Route53Resolver, Batch, DMS, Workspaces, Stepfunctions, SageMaker, ElasticLoadBalancingV2, MSK types"
+  },
+  {
+    "v": "1.27.23",
+    "t": "Updating documentation service limits"
+  },
+  {
+    "v": "1.24.35",
+    "t": "Add resourceType enums for AWS::EMR::SecurityConfiguration and AWS::SageMaker::CodeRepository"
+  },
+  {
+    "v": "1.24.26",
+    "t": "Added new APIs GetCustomRulePolicy and GetOrganizationCustomRulePolicy, and updated existing APIs PutConfigRule, DescribeConfigRule, DescribeConfigRuleEvaluationStatus, PutOrganizationConfigRule, DescribeConfigRule to support a new feature for building AWS Config rules with AWS CloudFormation Guard"
+  },
+  {
+    "v": "1.24.19",
+    "t": "Add resourceType enums for AWS::ECR::PublicRepository and AWS::EC2::LaunchTemplate"
+  },
+  {
+    "v": "1.23.36",
+    "t": "Update ResourceType enum with values for CodeDeploy, EC2 and Kinesis resources"
+  },
+  {
+    "v": "1.21.61",
+    "t": "Adding Config support for AWS::OpenSearch::Domain"
+  },
+  {
+    "v": "1.21.34",
+    "t": "Documentation updates for config"
+  },
+  {
+    "v": "1.21.22",
+    "t": "Update ResourceType enum with values for Backup Plan, Selection, Vault, RecoveryPoint; ECS Cluster, Service, TaskDefinition; EFS AccessPoint, FileSystem; EKS Cluster; ECR Repository resources"
+  },
+  {
+    "v": "1.20.70",
+    "t": "Adds paginator to multiple APIs: By default, the paginator allows user to iterate over the results and allows the CLI to return up to 1000 results."
+  },
+  {
+    "v": "1.20.52",
+    "t": "Add exception for DeleteRemediationConfiguration and DescribeRemediationExecutionStatus"
+  },
+  {
+    "v": "1.20.41",
+    "t": "Adding new APIs to support ConformancePack Compliance CI in Aggregators"
+  },
+  {
+    "v": "1.20.10",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.20.8",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.19.41",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.19.39",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.18.6",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.17.27",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.15.11",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.15.10",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.13.24",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.13.21",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.227",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.223",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.189",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.185",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.143",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.117",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.115",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.114",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.35",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.12.0",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.10.62",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.10.28",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.10.21",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.10.13",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.10.0",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.9.12",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.8.46",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.8.18",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.7.35",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.7.17",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.7.0",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.5.92",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.5.76",
+    "t": "Fixes a bug resulting from copy/deepcopy not returning the same object for botocore.UNSIGNED. Fixes boto/boto3`#1144 <https://github.com/boto/botocore/issues/1144>`__"
+  },
+  {
+    "v": "1.5.67",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.5.32",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.5.30",
+    "t": "Fix a bug in loading config files from paths that contain non-ascii characters. Fixes aws/aws-cli`#2395 <https://github.com/boto/botocore/issues/2395>`__"
+  },
+  {
+    "v": "1.5.13",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.5.0",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.4.93",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.4.84",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.4.83",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.4.64",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.4.54",
+    "t": "Add `max_pool_connections` to client config (`#773 <https://github.com/boto/botocore/issues/773>`__, `#766 <https://github.com/boto/botocore/issues/766>`__, `#1026 <https://github.com/boto/botocore/issues/1026>`__)"
+  },
+  {
+    "v": "1.4.51",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.4.39",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.4.36",
+    "t": "Update config client to latest version"
+  },
+  {
+    "v": "1.4.26",
+    "t": "Add ``parameter_validation`` option in config file to disable parameter validation when making API calls (`#905 <https://github.com/boto/botocore/issues/905>`__)"
+  },
+  {
+    "v": "1.4.9",
+    "t": "Handle case where S3 config key is not a dict (`issue 858 <https://github.com/boto/botocore/pull/858>`__)"
+  },
+  {
+    "v": "1.4.2",
+    "t": "Update model to latest version"
+  }
+]

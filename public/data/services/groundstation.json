@@ -1,0 +1,74 @@
+[
+  {
+    "v": "1.42.35",
+    "t": "Adds support for AWS Ground Station Telemetry."
+  },
+  {
+    "v": "1.40.67",
+    "t": "Introduce CreateDataflowEndpointGroupV2 action"
+  },
+  {
+    "v": "1.40.61",
+    "t": "Enable use of AzEl ephemerides"
+  },
+  {
+    "v": "1.37.31",
+    "t": "Support tagging Agents and adjust input field validations"
+  },
+  {
+    "v": "1.34.159",
+    "t": "Updating documentation for OEMEphemeris to link to AWS Ground Station User Guide"
+  },
+  {
+    "v": "1.34.143",
+    "t": "Documentation update specifying OEM ephemeris units of measurement"
+  },
+  {
+    "v": "1.34.77",
+    "t": "This release adds visibilityStartTime and visibilityEndTime to DescribeContact and ListContacts responses."
+  },
+  {
+    "v": "1.31.71",
+    "t": "This release will allow KMS alias names to be used when creating Mission Profiles"
+  },
+  {
+    "v": "1.29.143",
+    "t": "Updating description of GetMinuteUsage to be clearer."
+  },
+  {
+    "v": "1.29.112",
+    "t": "AWS Ground Station Wideband DigIF GA Release"
+  },
+  {
+    "v": "1.29.61",
+    "t": "DigIF Expansion changes to the Customer APIs."
+  },
+  {
+    "v": "1.29.53",
+    "t": "Add configurable prepass and postpass times for DataflowEndpointGroup. Add Waiter to allow customers to wait for a contact that was reserved through ReserveContact"
+  },
+  {
+    "v": "1.29.6",
+    "t": "This release adds the preview of customer-provided ephemeris support for AWS Ground Station, allowing space vehicle owners to provide their own position and trajectory information for a satellite."
+  },
+  {
+    "v": "1.20.55",
+    "t": "Support new S3 Recording Config allowing customers to write downlink data directly to S3."
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update groundstation client to latest version"
+  },
+  {
+    "v": "1.17.24",
+    "t": "Update groundstation client to latest version"
+  },
+  {
+    "v": "1.14.11",
+    "t": "Update groundstation client to latest version"
+  },
+  {
+    "v": "1.12.157",
+    "t": "Update groundstation client to latest version"
+  }
+]

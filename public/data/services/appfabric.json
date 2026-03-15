@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.162",
+    "t": "Initial release of AWS AppFabric for connecting SaaS applications for better productivity and security."
+  }
+]

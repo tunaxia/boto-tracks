@@ -1,0 +1,62 @@
+[
+  {
+    "v": "1.42.62",
+    "t": "Added support for OpenSearch and Neptune Analytics to Database Savings Plans."
+  },
+  {
+    "v": "1.42.1",
+    "t": "Added support for Amazon Database Savings Plans"
+  },
+  {
+    "v": "1.40.64",
+    "t": "Add dual-stack endpoint support for Savings Plans"
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.34.67",
+    "t": "Introducing the Savings Plans Return feature enabling customers to return their Savings Plans within 7 days of purchase."
+  },
+  {
+    "v": "1.31.7",
+    "t": "Savings Plans endpoints update"
+  },
+  {
+    "v": "1.23.23",
+    "t": "Adds the ability to specify Savings Plans hourly commitments using five digits after the decimal point."
+  },
+  {
+    "v": "1.21.10",
+    "t": "Documentation update for valid Savings Plans offering ID pattern"
+  },
+  {
+    "v": "1.20.54",
+    "t": "Added support for Amazon SageMaker in Machine Learning Savings Plans"
+  },
+  {
+    "v": "1.18.5",
+    "t": "Update savingsplans client to latest version"
+  },
+  {
+    "v": "1.17.39",
+    "t": "Update savingsplans client to latest version"
+  },
+  {
+    "v": "1.15.4",
+    "t": "Update savingsplans client to latest version"
+  },
+  {
+    "v": "1.13.12",
+    "t": "Update savingsplans client to latest version"
+  },
+  {
+    "v": "1.13.11",
+    "t": "Update savingsplans client to latest version"
+  }
+]

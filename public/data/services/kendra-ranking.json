@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.35",
+    "t": "Model whitespace change - no client difference"
+  },
+  {
+    "v": "1.29.46",
+    "t": "Introducing Amazon Kendra Intelligent Ranking, a new set of Kendra APIs that leverages Kendra semantic ranking capabilities to improve the quality of search results from other search services (i.e. OpenSearch, ElasticSearch, Solr)."
+  }
+]

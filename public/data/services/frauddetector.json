@@ -1,0 +1,94 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.147",
+    "t": "Added new variable types, new DateTime data type, and new rules engine functions for interacting and working with DateTime data types."
+  },
+  {
+    "v": "1.29.144",
+    "t": "This release enables publishing event predictions from Amazon Fraud Detector (AFD) to Amazon EventBridge. For example, after getting predictions from AFD, Amazon EventBridge rules can be configured to trigger notification through an SNS topic, send a message with SES, or trigger Lambda workflows."
+  },
+  {
+    "v": "1.29.72",
+    "t": "This release introduces Lists feature which allows customers to reference a set of values in Fraud Detector's rules. With Lists, customers can dynamically manage these attributes in real time. Lists can be created/deleted and its contents can be modified using the Fraud Detector API."
+  },
+  {
+    "v": "1.29.65",
+    "t": "My AWS Service (Amazon Fraud Detector) - This release introduces Cold Start Model Training which optimizes training for small datasets and adds intelligent methods for treating unlabeled data. You can now train Online Fraud Insights or Transaction Fraud Insights models with minimal historical-data."
+  },
+  {
+    "v": "1.27.93",
+    "t": "Documentation Updates for Amazon Fraud Detector"
+  },
+  {
+    "v": "1.27.35",
+    "t": "The release introduces Account Takeover Insights (ATI) model. The ATI model detects fraud relating to account takeover. This release also adds support for new variable types: ARE_CREDENTIALS_VALID and SESSION_ID and adds new structures to Model Version APIs."
+  },
+  {
+    "v": "1.27.7",
+    "t": "Documentation updates for Amazon Fraud Detector (AWSHawksNest)"
+  },
+  {
+    "v": "1.23.44",
+    "t": "Added new APIs for viewing past predictions and obtaining prediction metadata including prediction explanations: ListEventPredictions and GetEventPredictionMetadata"
+  },
+  {
+    "v": "1.21.59",
+    "t": "New model type: Transaction Fraud Insights, which is optimized for online transaction fraud. Stored Events, which allows customers to send and store data directly within Amazon Fraud Detector. Batch Import, which allows customers to upload a CSV file of historic event data for processing and storage"
+  },
+  {
+    "v": "1.21.36",
+    "t": "Enhanced GetEventPrediction API response to include risk scores from imported SageMaker models"
+  },
+  {
+    "v": "1.21.27",
+    "t": "Updated an element of the DescribeModelVersion API response (LogitMetrics -> logOddsMetrics) for clarity. Added new exceptions to several APIs to protect against unlikely scenarios."
+  },
+  {
+    "v": "1.20.109",
+    "t": "This release adds support for ML Explainability to display model variable importance value in Amazon Fraud Detector."
+  },
+  {
+    "v": "1.20.41",
+    "t": "This release adds support for Batch Predictions in Amazon Fraud Detector."
+  },
+  {
+    "v": "1.19.54",
+    "t": "Update frauddetector client to latest version"
+  },
+  {
+    "v": "1.19.12",
+    "t": "Update frauddetector client to latest version"
+  },
+  {
+    "v": "1.18.6",
+    "t": "Update frauddetector client to latest version"
+  },
+  {
+    "v": "1.17.29",
+    "t": "Update frauddetector client to latest version"
+  },
+  {
+    "v": "1.17.28",
+    "t": "Update frauddetector client to latest version"
+  },
+  {
+    "v": "1.17.24",
+    "t": "Update frauddetector client to latest version"
+  },
+  {
+    "v": "1.15.41",
+    "t": "Update frauddetector client to latest version"
+  },
+  {
+    "v": "1.13.31",
+    "t": "Update frauddetector client to latest version"
+  }
+]

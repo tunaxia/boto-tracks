@@ -1,0 +1,26 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.12.156",
+    "t": "Update mediastore-data client to latest version"
+  },
+  {
+    "v": "1.12.35",
+    "t": "Update mediastore-data client to latest version"
+  },
+  {
+    "v": "1.8.17",
+    "t": "Update mediastore-data client to latest version"
+  },
+  {
+    "v": "1.8.2",
+    "t": "Update mediastore-data client to latest version"
+  }
+]

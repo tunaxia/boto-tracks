@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.21.41",
+    "t": "Introducing support for the `union` trait on structures in request and response objects."
+  }
+]

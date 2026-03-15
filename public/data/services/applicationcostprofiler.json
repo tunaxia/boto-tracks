@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.20.74",
+    "t": "APIs for AWS Application Cost Profiler."
+  }
+]

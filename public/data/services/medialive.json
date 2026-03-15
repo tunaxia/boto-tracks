@@ -1,0 +1,462 @@
+[
+  {
+    "v": "1.42.68",
+    "t": "Documents the VideoDescription.ScalingBehavior.SMART(underscore)CROP enum value."
+  },
+  {
+    "v": "1.42.56",
+    "t": "AWS Elemental MediaLive - Added support for Elemental Inference for Smart Cropping and Clipping features for MediaLive."
+  },
+  {
+    "v": "1.42.43",
+    "t": "Outputs using the AV1 codec in CMAF Ingest output groups in MediaLive now have the ability to specify a target bit depth of 8 or 10."
+  },
+  {
+    "v": "1.42.42",
+    "t": "AWS Elemental MediaLive now supports SRT listener mode for inputs and outputs, in addition to the existing SRT caller mode."
+  },
+  {
+    "v": "1.42.36",
+    "t": "AWS Elemental MediaLive released two new features that allows customers 1) to set Output Timecode for AV1 encoder, 2) to set a Custom Epoch for CMAF Ingest and MediaPackage V2 output groups when using Pipeline Locking or Disabled Locking modes."
+  },
+  {
+    "v": "1.42.25",
+    "t": "MediaPackage v2 output groups in MediaLive can now accept one additional destination for single pipeline channels and up to two additional destinations for standard channels. MediaPackage v2 destinations now support sending to cross region MediaPackage channels."
+  },
+  {
+    "v": "1.42.17",
+    "t": "AWS Elemental MediaLive now supports Pipeline Locking using Video Alignment as well as linked single pipeline channels to enable cross-channel and cross-region Pipeline Locking workflows."
+  },
+  {
+    "v": "1.41.0",
+    "t": "MediaLive is adding support for MediaConnect Router by supporting a new input type called MEDIACONNECT_ROUTER. This new input type will provide seamless encrypted transport between MediaConnect Router and your MediaLive channel."
+  },
+  {
+    "v": "1.40.75",
+    "t": "Adds configurations for spatial/temporal adaptive quantization in AV1 codec, and conversion to HLG output color space in H265 codec."
+  },
+  {
+    "v": "1.40.74",
+    "t": "Removed all the value constraint (min/max) for the shape definitions (e.g. integerMin0Max3600) on the C2j models to get rid of the need to request an exemption from the SDK team whenever a shape definition (e.g. integerMin0Max3600) is changed."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Add 3 API operations for fetching alerts: ListAlerts (Channels), ListClusterAlerts (MediaLive Anywhere), and ListMultiplexAlerts"
+  },
+  {
+    "v": "1.40.45",
+    "t": "AWS Elemental MediaLive enables Mediapackage V2 users to configure ID3, KLV, Nielsen ID3, and Segment Length related parameters through the Mediapackage output group."
+  },
+  {
+    "v": "1.40.35",
+    "t": "Add MinBitrate for QVBR mode under H264/H265/AV1 output codec. Add GopBReference, GopNumBFrames, SubGopLength fields under H265 output codec."
+  },
+  {
+    "v": "1.40.29",
+    "t": "AWS Elemental MediaLive adds a new feature in MediaPackage output group that enables MediaPackage V2 users to control HLS-related parameters directly in MediaLive. These parameter settings are then reflected in MediaPackage outputs, providing more streamlined control over HLS configurations."
+  },
+  {
+    "v": "1.40.16",
+    "t": "AWS Elemental MediaLive now has a field called \"SubtitleRows\" for controlling subtitle row count for DVB-Sub and Burn-In captions outputs"
+  },
+  {
+    "v": "1.40.10",
+    "t": "CMAF Ingest output groups in MediaLive can now accept one additional destination url for single pipeline channels and up to two additional destination urls for standard channels."
+  },
+  {
+    "v": "1.38.14",
+    "t": "Add support to the AV1 rate control mode"
+  },
+  {
+    "v": "1.38.11",
+    "t": "Enables Updating Anywhere Settings on a MediaLive Anywhere Channel."
+  },
+  {
+    "v": "1.37.32",
+    "t": "AWS Elemental MediaLive / Features : Add support for CMAF Ingest CaptionLanguageMappings, TimedMetadataId3 settings, and Link InputResolution."
+  },
+  {
+    "v": "1.37.29",
+    "t": "AWS Elemental MediaLive now supports SDI inputs to MediaLive Anywhere Channels in workflows that use AWS SDKs."
+  },
+  {
+    "v": "1.37.26",
+    "t": "Added support for SMPTE 2110 inputs when running a channel in a MediaLive Anywhere cluster. This feature enables ingestion of SMPTE 2110-compliant video, audio, and ancillary streams by reading SDP files that AWS Elemental MediaLive can retrieve from a network source."
+  },
+  {
+    "v": "1.37.11",
+    "t": "Add an enum option DISABLED for Output Locking Mode under Global Configuration."
+  },
+  {
+    "v": "1.37.10",
+    "t": "Adds defaultFontSize and defaultLineHeight as options in the EbuTtDDestinationSettings within the caption descriptions for an output stream."
+  },
+  {
+    "v": "1.36.23",
+    "t": "Adds support for creating CloudWatchAlarmTemplates for AWS Elemental MediaTailor Playback Configuration resources."
+  },
+  {
+    "v": "1.36.19",
+    "t": "Adds a RequestId parameter to all MediaLive Workflow Monitor create operations.  The RequestId parameter allows idempotent operations."
+  },
+  {
+    "v": "1.36.4",
+    "t": "AWS Elemental MediaLive adds a new feature, ID3 segment tagging, in CMAF Ingest output groups. It allows customers to insert ID3 tags into every output segment, controlled by a newly added channel schedule action Id3SegmentTagging."
+  },
+  {
+    "v": "1.35.85",
+    "t": "MediaLive is releasing ListVersions api"
+  },
+  {
+    "v": "1.35.82",
+    "t": "AWS Elemental MediaLive adds three new features: MediaPackage v2 endpoint support for live stream delivery, KLV metadata passthrough in CMAF Ingest output groups, and Metadata Name Modifier in CMAF Ingest output groups for customizing metadata track names in output streams."
+  },
+  {
+    "v": "1.35.77",
+    "t": "H265 outputs now support disabling the deblocking filter."
+  },
+  {
+    "v": "1.35.23",
+    "t": "Adds Bandwidth Reduction Filtering for HD AVC and HEVC encodes, multiplex container settings."
+  },
+  {
+    "v": "1.35.20",
+    "t": "Removing the ON_PREMISE enum from the input settings field."
+  },
+  {
+    "v": "1.35.17",
+    "t": "Adds AV1 Codec support, SRT ouputs, and MediaLive Anywhere support."
+  },
+  {
+    "v": "1.35.11",
+    "t": "Added MinQP as a Rate Control option for H264 and H265 encodes."
+  },
+  {
+    "v": "1.34.159",
+    "t": "AWS Elemental MediaLive now supports now supports editing the PID values for a Multiplex."
+  },
+  {
+    "v": "1.34.145",
+    "t": "AWS Elemental MediaLive now supports the SRT protocol via the new SRT Caller input type."
+  },
+  {
+    "v": "1.34.99",
+    "t": "AWS Elemental MediaLive now supports configuring how SCTE 35 passthrough triggers segment breaks in HLS and MediaPackage output groups. Previously, messages triggered breaks in all these output groups. The new option is to trigger segment breaks only in groups that have SCTE 35 passthrough enabled."
+  },
+  {
+    "v": "1.34.83",
+    "t": "AWS Elemental MediaLive introduces workflow monitor, a new feature that enables the visualization and monitoring of your media workflows. Create signal maps of your existing workflows and monitor them by creating notification and monitoring template groups."
+  },
+  {
+    "v": "1.34.77",
+    "t": "Cmaf Ingest outputs are now supported in Media Live"
+  },
+  {
+    "v": "1.34.70",
+    "t": "Exposing TileMedia H265 options"
+  },
+  {
+    "v": "1.34.47",
+    "t": "MediaLive now supports the ability to restart pipelines in a running channel."
+  },
+  {
+    "v": "1.34.6",
+    "t": "MediaLive now supports the ability to configure the audio that an AWS Elemental Link UHD device produces, when the device is configured as the source for a flow in AWS Elemental MediaConnect."
+  },
+  {
+    "v": "1.33.7",
+    "t": "Adds support for custom color correction on channels using 3D LUT files."
+  },
+  {
+    "v": "1.32.3",
+    "t": "MediaLive has now added support for per-output static image overlay."
+  },
+  {
+    "v": "1.31.45",
+    "t": "AWS Elemental Link now supports attaching a Link UHD device to a MediaConnect flow."
+  },
+  {
+    "v": "1.31.42",
+    "t": "Adds advanced Output Locking options for Epoch Locking: Custom Epoch and Jam Sync Time"
+  },
+  {
+    "v": "1.31.34",
+    "t": "MediaLive now supports passthrough of KLV data to a HLS output group with a TS container. MediaLive now supports setting an attenuation mode for AC3 audio when the coding mode is 3/2 LFE. MediaLive now supports specifying whether to include filler NAL units in RTMP output group settings."
+  },
+  {
+    "v": "1.31.17",
+    "t": "AWS Elemental Link devices now report their Availability Zone. Link devices now support the ability to change their Availability Zone."
+  },
+  {
+    "v": "1.31.1",
+    "t": "This release enables the use of Thumbnails in AWS Elemental MediaLive."
+  },
+  {
+    "v": "1.29.100",
+    "t": "AWS Elemental MediaLive now supports ID3 tag insertion for audio only HLS output groups. AWS Elemental Link devices now support tagging."
+  },
+  {
+    "v": "1.29.84",
+    "t": "AWS Elemental MediaLive adds support for Nielsen watermark timezones."
+  },
+  {
+    "v": "1.29.53",
+    "t": "AWS Elemental MediaLive adds support for SCTE 35 preRollMilliSeconds."
+  },
+  {
+    "v": "1.29.34",
+    "t": "This release adds support for two new features to AWS Elemental MediaLive. First, you can now burn-in timecodes to your MediaLive outputs. Second, we now now support the ability to decode Dolby E audio when it comes in on an input."
+  },
+  {
+    "v": "1.29.27",
+    "t": "Link devices now support buffer size (latency) configuration. A higher latency value means a longer delay in transmitting from the device to MediaLive, but improved resiliency. A lower latency value means a shorter delay, but less resiliency."
+  },
+  {
+    "v": "1.29.22",
+    "t": "Updates to Event Signaling and Management (ESAM) API and documentation."
+  },
+  {
+    "v": "1.27.90",
+    "t": "AWS Elemental MediaLive now supports forwarding SCTE-35 messages through the Event Signaling and Management (ESAM) API, and can read those SCTE-35 messages from an inactive source."
+  },
+  {
+    "v": "1.27.69",
+    "t": "This change exposes API settings which allow Dolby Atmos and Dolby Vision to be used when running a channel using Elemental Media Live"
+  },
+  {
+    "v": "1.27.36",
+    "t": "Link devices now support remote rebooting. Link devices now support maintenance windows. Maintenance windows allow a Link device to install software updates without stopping the MediaLive channel. The channel will experience a brief loss of input from the device while updates are installed."
+  },
+  {
+    "v": "1.27.20",
+    "t": "This release adds support for automatic renewal of MediaLive reservations at the end of each reservation term. Automatic renewal is optional. This release also adds support for labelling accessibility-focused audio and caption tracks in HLS outputs."
+  },
+  {
+    "v": "1.24.28",
+    "t": "This release adds support for selecting a maintenance window."
+  },
+  {
+    "v": "1.23.31",
+    "t": "This release adds support for selecting the Program Date Time (PDT) Clock source algorithm for HLS outputs."
+  },
+  {
+    "v": "1.23.10",
+    "t": "This release adds support for specifying a SCTE-35 PID on input. MediaLive now supports SCTE-35 PID selection on inputs containing one or more active SCTE-35 PIDs."
+  },
+  {
+    "v": "1.21.59",
+    "t": "This release adds support for Transport Stream files as an input type to MediaLive encoders."
+  },
+  {
+    "v": "1.21.5",
+    "t": "MediaLive now supports passing through style data on WebVTT caption outputs."
+  },
+  {
+    "v": "1.20.93",
+    "t": "AWS MediaLive now supports OCR-based conversion of DVB-Sub and SCTE-27 image-based source captions to WebVTT, and supports ingest of ad avail decorations in HLS input manifests."
+  },
+  {
+    "v": "1.20.88",
+    "t": "Add support for automatically setting the H.264 adaptive quantization and GOP B-frame fields."
+  },
+  {
+    "v": "1.20.46",
+    "t": "MediaLive VPC outputs update to include Availability Zones, Security groups, Elastic Network Interfaces, and Subnet Ids in channel response"
+  },
+  {
+    "v": "1.20.45",
+    "t": "MediaLive now support HTML5 Motion Graphics overlay"
+  },
+  {
+    "v": "1.20.37",
+    "t": "EML now supports handling HDR10 and HLG 2020 color space from a Link input."
+  },
+  {
+    "v": "1.20.26",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.20.22",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.20.8",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.20.0",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.19.63",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.19.30",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.19.22",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.19.13",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.19.9",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.18.18",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.18.16",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.18.1",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.17.62",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.17.30",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.17.26",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.17.7",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.16.14",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.15.48",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.15.35",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.15.17",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.13.41",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.228",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.196",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.150",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.142",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.130",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.124",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.110",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.108",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.99",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.90",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.86",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.70",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.61",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.49",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.41",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.12.27",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.10.84",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.10.42",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.10.34",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.10.6",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.9.12",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.9.5",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.8.39",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.8.36",
+    "t": "Update medialive client to latest version"
+  },
+  {
+    "v": "1.8.2",
+    "t": "Update medialive client to latest version"
+  }
+]

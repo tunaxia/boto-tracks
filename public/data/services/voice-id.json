@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.100",
+    "t": "Amazon Connect Voice ID now supports multiple fraudster watchlists. Every domain has a default watchlist where all existing fraudsters are placed by default. Custom watchlists may now be created, managed, and evaluated against for known fraudster detection."
+  },
+  {
+    "v": "1.27.62",
+    "t": "Amazon Connect Voice ID now detects voice spoofing.  When a prospective fraudster tries to spoof caller audio using audio playback or synthesized speech, Voice ID will return a risk score and outcome to indicate the how likely it is that the voice is spoofed."
+  },
+  {
+    "v": "1.27.2",
+    "t": "Added a new attribute ServerSideEncryptionUpdateDetails to Domain and DomainSummary."
+  },
+  {
+    "v": "1.26.8",
+    "t": "VoiceID will now automatically expire Speakers if they haven't been accessed for Enrollment, Re-enrollment or Successful Auth for three years. The Speaker APIs now return a \"LastAccessedAt\" time for Speakers, and the EvaluateSession API returns \"SPEAKER_EXPIRED\" Auth Decision for EXPIRED Speakers."
+  },
+  {
+    "v": "1.21.49",
+    "t": "Released the Amazon Voice ID SDK, for usage with the Amazon Connect Voice ID feature released for Amazon Connect."
+  }
+]

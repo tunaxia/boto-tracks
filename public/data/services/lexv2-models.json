@@ -1,0 +1,150 @@
+[
+  {
+    "v": "1.42.65",
+    "t": "This release introduces a new generative AI feature called Lex Bot Analyzer. This feature leverage AI to analyze the bot configuration against AWS Lex best practices to identify configuration issues and provides recommendations."
+  },
+  {
+    "v": "1.41.6",
+    "t": "Adds support for speech-to-speech models for human-like, adaptive, and expressive voice interactions. Also adds support for speech model preference, allowing customers to select which speech model they want to use for speech-to-text requests."
+  },
+  {
+    "v": "1.41.2",
+    "t": "Adds support for Intent Disambiguation, allowing resolution of ambiguous user inputs when multiple intents match by presenting clarifying questions to users. Also adds Speech Detection Sensitivity configuration for optimizing voice activity detection sensitivity levels in various noise environments."
+  },
+  {
+    "v": "1.40.75",
+    "t": "Adds support for LLM as Primary, allowing usage of LLMs as the default NLU system."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.35",
+    "t": "Add support for the Assisted NLU feature to improve bot performance"
+  },
+  {
+    "v": "1.37.26",
+    "t": "Release feature of errorlogging for lex bot, customer can config this feature in bot version to generate log for error exception which helps debug"
+  },
+  {
+    "v": "1.35.17",
+    "t": "Support new Polly voice engines in VoiceSettings: long-form and generative"
+  },
+  {
+    "v": "1.34.151",
+    "t": "This release adds new capabilities to the AMAZON.QnAIntent: Custom prompting, Guardrails integration and ExactResponse support for Bedrock Knowledge Base."
+  },
+  {
+    "v": "1.34.53",
+    "t": "This release makes AMAZON.QnAIntent generally available in Amazon Lex. This generative AI feature leverages large language models available through Amazon Bedrock to automate frequently asked questions (FAQ) experience for end-users."
+  },
+  {
+    "v": "1.34.37",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.32.7",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.31.81",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.31.28",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.31.8",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.31.5",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.29.148",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.29.68",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.29.4",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.27.80",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.27.70",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.27.57",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.27.54",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.27.23",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.24.17",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.23.34",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.23.23",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.23.18",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.23.9",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.21.58",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.21.46",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.21.15",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.21.8",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.20.95",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.20.77",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.20.75",
+    "t": "Update lexv2-models client to latest version"
+  },
+  {
+    "v": "1.19.59",
+    "t": "Update lexv2-models client to latest version"
+  }
+]

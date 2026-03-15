@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.42.59",
+    "t": "Added support for Change Data Capture (CDC) streams with Duration DataType."
+  },
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.8",
+    "t": "Doc only update for the Amazon Keyspaces Streams API."
+  },
+  {
+    "v": "1.38.45",
+    "t": "This release adds change data capture (CDC) streams support through the new Amazon Keyspaces Streams API."
+  }
+]

@@ -1,0 +1,166 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.26",
+    "t": "Add ComputationModelVersion support in IoT SiteWise APIs"
+  },
+  {
+    "v": "1.40.2",
+    "t": "Support Interface for IoT SiteWise Asset Modeling"
+  },
+  {
+    "v": "1.39.15",
+    "t": "Add support for native anomaly detection in IoT SiteWise using new Computation Model APIs"
+  },
+  {
+    "v": "1.37.6",
+    "t": "AWS IoT SiteWise now supports MQTT-enabled, V3 gateways. Configure data destinations for real-time ingestion into AWS IoT SiteWise or buffered ingestion using Amazon S3 storage. You can also use path filters for precise data collection from specific MQTT topics."
+  },
+  {
+    "v": "1.36.3",
+    "t": "AWS IoT SiteWise now supports ingestion and querying of Null (all data types) and NaN (double type) values of bad or uncertain data quality. New partial error handling prevents data loss during ingestion. Enabled by default for new customers; existing customers can opt-in."
+  },
+  {
+    "v": "1.35.64",
+    "t": "The release introduces a generative AI Assistant in AWS IoT SiteWise. It includes: 1) InvokeAssistant API - Invoke the Assistant to get alarm summaries and ask questions. 2) Dataset APIs - Manage knowledge base configuration for the Assistant. 3) Portal APIs enhancement - Manage AI-aware dashboards."
+  },
+  {
+    "v": "1.35.6",
+    "t": "AWS IoT SiteWise now supports versioning for asset models. It enables users to retrieve active version of their asset model and perform asset model writes with optimistic lock."
+  },
+  {
+    "v": "1.34.148",
+    "t": "Adds support for creating SiteWise Edge gateways that run on a Siemens Industrial Edge Device."
+  },
+  {
+    "v": "1.32.5",
+    "t": "Adds 1/ user-defined unique identifier for asset and model metadata, 2/ asset model components, and 3/ query API for asset metadata and telemetry data. Supports 4/ multi variate anomaly detection using Amazon Lookout for Equipment, 5/ warm storage tier, and 6/ buffered ingestion of time series data."
+  },
+  {
+    "v": "1.29.130",
+    "t": "Provide support for 20,000 max results for GetAssetPropertyValueHistory/BatchGetAssetPropertyValueHistory and 15 minute aggregate resolution for GetAssetPropertyAggregates/BatchGetAssetPropertyAggregates"
+  },
+  {
+    "v": "1.29.96",
+    "t": "Provide support for tagging of data streams and enabling tag based authorization for property alias"
+  },
+  {
+    "v": "1.29.1",
+    "t": "This release adds the ListAssetModelProperties and ListAssetProperties APIs. You can list all properties that belong to a single asset model or asset using these two new APIs."
+  },
+  {
+    "v": "1.27.68",
+    "t": "Allow specifying units in Asset Properties"
+  },
+  {
+    "v": "1.27.57",
+    "t": "Enable non-unique asset names under different hierarchies"
+  },
+  {
+    "v": "1.27.35",
+    "t": "Added asynchronous API to ingest bulk historical and current data into IoT SiteWise."
+  },
+  {
+    "v": "1.27.0",
+    "t": "This release adds the following new optional field to the IoT SiteWise asset resource: assetDescription."
+  },
+  {
+    "v": "1.24.45",
+    "t": "This release adds 3 new batch data query APIs : BatchGetAssetPropertyValue, BatchGetAssetPropertyValueHistory and BatchGetAssetPropertyAggregates"
+  },
+  {
+    "v": "1.23.16",
+    "t": "AWS IoT SiteWise now supports retention configuration for the hot tier storage."
+  },
+  {
+    "v": "1.23.13",
+    "t": "AWS IoT SiteWise now accepts data streams that aren't associated with any asset properties. You can organize data by updating data stream associations."
+  },
+  {
+    "v": "1.21.27",
+    "t": "Documentation updates for AWS IoT SiteWise"
+  },
+  {
+    "v": "1.21.22",
+    "t": "AWS IoT SiteWise added query window for the interpolation interval. AWS IoT SiteWise computes each interpolated value by using data points from the timestamp of each interval minus the window to the timestamp of each interval plus the window."
+  },
+  {
+    "v": "1.21.13",
+    "t": "My AWS Service (placeholder) - This release introduces custom Intervals and offset for tumbling window in metric for AWS IoT SiteWise."
+  },
+  {
+    "v": "1.21.10",
+    "t": "Added support for AWS IoT SiteWise Edge. You can now create an AWS IoT SiteWise gateway that runs on AWS IoT Greengrass V2. With the gateway,  you can collect local server and equipment data, process the data, and export the selected data from the edge to the AWS Cloud."
+  },
+  {
+    "v": "1.21.0",
+    "t": "Update the default endpoint for the APIs used to manage asset models, assets, gateways, tags, and account configurations. If you have firewalls with strict egress rules, configure the rules to grant you access to api.iotsitewise.[region].amazonaws.com or api.iotsitewise.[cn-region].amazonaws.com.cn."
+  },
+  {
+    "v": "1.20.107",
+    "t": "This release add storage configuration APIs for AWS IoT SiteWise."
+  },
+  {
+    "v": "1.20.83",
+    "t": "IoT SiteWise Monitor Portal API updates to add alarms feature configuration."
+  },
+  {
+    "v": "1.20.75",
+    "t": "Documentation updates for AWS IoT SiteWise."
+  },
+  {
+    "v": "1.20.60",
+    "t": "AWS IoT SiteWise interpolation API will get interpolated values for an asset property per specified time interval during a period of time."
+  },
+  {
+    "v": "1.20.4",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.20.1",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.19.35",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.19.19",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.19.13",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.18.2",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.17.48",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.17.17",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.16.16",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.16.8",
+    "t": "Update iotsitewise client to latest version"
+  },
+  {
+    "v": "1.15.49",
+    "t": "Update iotsitewise client to latest version"
+  }
+]

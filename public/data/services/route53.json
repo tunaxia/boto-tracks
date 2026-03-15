@@ -1,0 +1,278 @@
+[
+  {
+    "v": "1.42.6",
+    "t": "Amazon Route 53 now supports the EU (Germany) Region (eusc-de-east-1) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region"
+  },
+  {
+    "v": "1.41.4",
+    "t": "Adds support for new route53 feature: accelerated recovery."
+  },
+  {
+    "v": "1.41.0",
+    "t": "Add dual-stack endpoint support for Route53"
+  },
+  {
+    "v": "1.40.57",
+    "t": "Amazon Route 53 now supports the ISOB West Region for private DNS for Amazon VPCs and cloudwatch healthchecks."
+  },
+  {
+    "v": "1.40.23",
+    "t": "Amazon Route 53 now supports the Asia Pacific (New Zealand) Region (ap-southeast-6) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region."
+  },
+  {
+    "v": "1.39.3",
+    "t": "Amazon Route 53 now supports the iso-e regions for private DNS Amazon VPCs and cloudwatch healthchecks."
+  },
+  {
+    "v": "1.38.32",
+    "t": "Amazon Route 53 now supports the Asia Pacific (Taipei) Region (ap-east-2) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region."
+  },
+  {
+    "v": "1.37.27",
+    "t": "Added us-gov-east-1 and us-gov-west-1 as valid Latency Based Routing regions for change-resource-record-sets."
+  },
+  {
+    "v": "1.37.15",
+    "t": "Amazon Route 53 now supports the iso-f regions for private DNS Amazon VPCs and cloudwatch healthchecks."
+  },
+  {
+    "v": "1.35.99",
+    "t": "Amazon Route 53 now supports the Mexico (Central) Region (mx-central-1) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region"
+  },
+  {
+    "v": "1.35.95",
+    "t": "Amazon Route 53 now supports the Asia Pacific (Thailand) Region (ap-southeast-7) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region"
+  },
+  {
+    "v": "1.35.52",
+    "t": "This release adds support for TLSA, SSHFP, SVCB, and HTTPS record types."
+  },
+  {
+    "v": "1.35.4",
+    "t": "Amazon Route 53 now supports the Asia Pacific (Malaysia) Region (ap-southeast-5) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region."
+  },
+  {
+    "v": "1.34.153",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.31",
+    "t": "Update the SDKs for text changes in the APIs."
+  },
+  {
+    "v": "1.34.16",
+    "t": "Route53 now supports geoproximity routing in AWS regions"
+  },
+  {
+    "v": "1.34.5",
+    "t": "Amazon Route 53 now supports the Canada West (Calgary) Region (ca-west-1) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region."
+  },
+  {
+    "v": "1.31.79",
+    "t": "Add partitional endpoints for iso-e and iso-f."
+  },
+  {
+    "v": "1.31.61",
+    "t": "Add hostedzonetype filter to ListHostedZones API."
+  },
+  {
+    "v": "1.31.16",
+    "t": "Amazon Route 53 now supports the Israel (Tel Aviv) Region (il-central-1) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region."
+  },
+  {
+    "v": "1.31.12",
+    "t": "Update that corrects the documents for received feedback."
+  },
+  {
+    "v": "1.29.56",
+    "t": "Amazon Route 53 now supports the Asia Pacific (Melbourne) Region (ap-southeast-4) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region."
+  },
+  {
+    "v": "1.29.14",
+    "t": "Amazon Route 53 now supports the Asia Pacific (Hyderabad) Region (ap-south-2) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region."
+  },
+  {
+    "v": "1.29.10",
+    "t": "Amazon Route 53 now supports the Europe (Spain) Region (eu-south-2) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region."
+  },
+  {
+    "v": "1.29.5",
+    "t": "Amazon Route 53 now supports the Europe (Zurich) Region (eu-central-2) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region."
+  },
+  {
+    "v": "1.27.69",
+    "t": "Amazon Route 53 now supports the Middle East (UAE) Region (me-central-1) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region."
+  },
+  {
+    "v": "1.27.65",
+    "t": "Documentation updates for Amazon Route 53."
+  },
+  {
+    "v": "1.27.1",
+    "t": "Add new APIs to support Route 53 IP Based Routing"
+  },
+  {
+    "v": "1.24.7",
+    "t": "SDK doc update for Route 53 to update some parameters with new information."
+  },
+  {
+    "v": "1.23.21",
+    "t": "Add PriorRequestNotComplete exception to UpdateHostedZoneComment API"
+  },
+  {
+    "v": "1.21.24",
+    "t": "Documentation updates for route53"
+  },
+  {
+    "v": "1.21.19",
+    "t": "Documentation updates for route53"
+  },
+  {
+    "v": "1.21.8",
+    "t": "This release adds support for the RECOVERY_CONTROL health check type to be used in conjunction with Route53 Application Recovery Controller."
+  },
+  {
+    "v": "1.20.52",
+    "t": "Documentation updates for route53"
+  },
+  {
+    "v": "1.20.36",
+    "t": "Documentation updates for route53"
+  },
+  {
+    "v": "1.20.0",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.19.39",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.17.51",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.17.6",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.17.5",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.16.5",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.15.48",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.15.27",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.12.199",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.12.135",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.12.64",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.12.27",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.9.0",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.8.42",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.8.24",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.8.17",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.7.46",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.7.44",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.7.20",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.7.6",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.6.4",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.5.79",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.5.74",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.5.73",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.5.42",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.5.16",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.5.1",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.4.89",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.4.78",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.4.74",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.4.63",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.4.50",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.4.33",
+    "t": "Update route53 client to latest version"
+  },
+  {
+    "v": "1.4.9",
+    "t": "Added support for metric-based health checks and regional health checks."
+  }
+]

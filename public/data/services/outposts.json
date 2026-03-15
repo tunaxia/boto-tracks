@@ -1,0 +1,154 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.48",
+    "t": "This release adds the new StartOutpostDecommission API, which starts the decommission process to return Outposts racks or servers."
+  },
+  {
+    "v": "1.39.9",
+    "t": "Add AWS Outposts API to surface customer billing information"
+  },
+  {
+    "v": "1.39.0",
+    "t": "Make ContactName and ContactPhoneNumber required fields when creating and updating Outpost Site Addresses."
+  },
+  {
+    "v": "1.37.24",
+    "t": "Enabling Asset Level Capacity Management feature, which allows customers to create a Capacity Task for a single Asset on their active Outpost."
+  },
+  {
+    "v": "1.35.86",
+    "t": "Add CS8365C as a supported power connector for Outpost sites."
+  },
+  {
+    "v": "1.35.63",
+    "t": "You can now purchase AWS Outposts rack or server capacity for a 5-year term with one of  the following payment options: All Upfront, Partial Upfront, and No Upfront."
+  },
+  {
+    "v": "1.35.58",
+    "t": "This release updates StartCapacityTask to allow an active Outpost to be modified. It also adds a new API to list all running EC2 instances on the Outpost."
+  },
+  {
+    "v": "1.35.38",
+    "t": "Adding new \"DELIVERED\" enum value for Outposts Order status"
+  },
+  {
+    "v": "1.34.149",
+    "t": "Adding default vCPU information to GetOutpostSupportedInstanceTypes and GetOutpostInstanceTypes responses"
+  },
+  {
+    "v": "1.34.85",
+    "t": "This release adds new APIs to allow customers to configure their Outpost capacity at order-time."
+  },
+  {
+    "v": "1.34.84",
+    "t": "This release adds EXPEDITORS as a valid shipment carrier."
+  },
+  {
+    "v": "1.34.27",
+    "t": "DeviceSerialNumber parameter is now optional in StartConnection API"
+  },
+  {
+    "v": "1.31.51",
+    "t": "This release adds the InstanceFamilies field to the ListAssets response."
+  },
+  {
+    "v": "1.31.0",
+    "t": "Added paginator support to several APIs. Added the ISOLATED enum value to AssetState."
+  },
+  {
+    "v": "1.29.65",
+    "t": "Adds OrderType to Order structure. Adds PreviousOrderId and PreviousLineItemId to LineItem structure. Adds new line item status REPLACED. Increases maximum length of pagination token."
+  },
+  {
+    "v": "1.29.61",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.29.59",
+    "t": "Adding support for payment term in GetOrder, CreateOrder responses."
+  },
+  {
+    "v": "1.29.50",
+    "t": "This release adds POWER_30_KVA as an option for PowerDrawKva. PowerDrawKva is part of the RackPhysicalProperties structure in the CreateSite request."
+  },
+  {
+    "v": "1.27.87",
+    "t": "This release adds the Asset state information to the ListAssets response. The ListAssets request supports filtering on Asset state."
+  },
+  {
+    "v": "1.27.30",
+    "t": "This release adds the ShipmentInformation and AssetInformationList fields to the GetOrder API response."
+  },
+  {
+    "v": "1.27.13",
+    "t": "This release adds the AssetLocation structure to the ListAssets response. AssetLocation includes the RackElevation for an Asset."
+  },
+  {
+    "v": "1.27.8",
+    "t": "This release adds API operations AWS uses to install Outpost servers."
+  },
+  {
+    "v": "1.25.13",
+    "t": "Documentation updates for AWS Outposts."
+  },
+  {
+    "v": "1.25.5",
+    "t": "This release adds a new API called ListAssets to the Outposts SDK, which lists the hardware assets in an Outpost."
+  },
+  {
+    "v": "1.24.18",
+    "t": "This release adds address filters for listSites"
+  },
+  {
+    "v": "1.23.22",
+    "t": "This release adds the UpdateOutpost API."
+  },
+  {
+    "v": "1.23.17",
+    "t": "This release adds the SupportedHardwareType parameter to CreateOutpost."
+  },
+  {
+    "v": "1.23.14",
+    "t": "This release adds new APIs for working with Outpost sites and orders."
+  },
+  {
+    "v": "1.21.36",
+    "t": "This release adds a new API CreateOrder."
+  },
+  {
+    "v": "1.20.108",
+    "t": "Added property filters for listOutposts"
+  },
+  {
+    "v": "1.20.81",
+    "t": "Add ConflictException to DeleteOutpost, CreateOutpost"
+  },
+  {
+    "v": "1.19.41",
+    "t": "Update outposts client to latest version"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update outposts client to latest version"
+  },
+  {
+    "v": "1.19.21",
+    "t": "Update outposts client to latest version"
+  },
+  {
+    "v": "1.15.25",
+    "t": "Update outposts client to latest version"
+  },
+  {
+    "v": "1.15.7",
+    "t": "Update outposts client to latest version"
+  },
+  {
+    "v": "1.13.31",
+    "t": "Update outposts client to latest version"
+  }
+]

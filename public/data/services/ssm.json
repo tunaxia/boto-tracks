@@ -1,0 +1,614 @@
+[
+  {
+    "v": "1.42.54",
+    "t": "Add support for AssociationDispatchAssumeRole in AWS SSM State Manager."
+  },
+  {
+    "v": "1.40.68",
+    "t": "Provides NoLongerSupportedException error message"
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.37",
+    "t": "Added Dualstack support to GetDeployablePatchSnapshotForInstance"
+  },
+  {
+    "v": "1.39.9",
+    "t": "July 2025 doc-only updates for Systems Manager."
+  },
+  {
+    "v": "1.39.0",
+    "t": "Introduces AccessType, a new filter value for the DescribeSessions API."
+  },
+  {
+    "v": "1.38.5",
+    "t": "This release adds support for just-In-time node access in AWS Systems Manager. Just-in-time node access enables customers to move towards zero standing privileges by requiring operators to request access and obtain approval before remotely connecting to nodes managed by the SSM Agent."
+  },
+  {
+    "v": "1.37.19",
+    "t": "This release adds the AvailableSecurityUpdatesComplianceStatus field to patch baseline operations, as well as the AvailableSecurityUpdateCount and InstancesWithAvailableSecurityUpdates to patch state operations. Applies to Windows Server managed nodes only."
+  },
+  {
+    "v": "1.37.4",
+    "t": "Systems Manager doc-only updates for Feb. 2025."
+  },
+  {
+    "v": "1.36.6",
+    "t": "Systems Manager doc-only update for January, 2025."
+  },
+  {
+    "v": "1.35.67",
+    "t": "Added support for providing high-level overviews of managed nodes and previewing the potential impact of a runbook execution."
+  },
+  {
+    "v": "1.35.21",
+    "t": "Support for additional levels of cross-account, cross-Region organizational units in Automation. Various documentation updates."
+  },
+  {
+    "v": "1.34.158",
+    "t": "Systems Manager doc-only updates for August 2024."
+  },
+  {
+    "v": "1.34.132",
+    "t": "Add sensitive trait to SSM IPAddress property for CloudTrail redaction"
+  },
+  {
+    "v": "1.34.91",
+    "t": "Add SSM DescribeInstanceProperties API to public AWS SDK."
+  },
+  {
+    "v": "1.34.61",
+    "t": "March 2024 doc-only updates for Systems Manager."
+  },
+  {
+    "v": "1.34.47",
+    "t": "This release adds support for sharing Systems Manager parameters with other AWS accounts."
+  },
+  {
+    "v": "1.34.32",
+    "t": "This release adds an optional Duration parameter to StateManager Associations. This allows customers to specify how long an apply-only-on-cron association execution should run. Once the specified Duration is out all the ongoing cancellable commands or automations are cancelled."
+  },
+  {
+    "v": "1.32.2",
+    "t": "This release introduces the ability to filter automation execution steps which have parent steps. In addition, runbook variable information is returned by GetAutomationExecution and parent step information is returned by the DescribeAutomationStepExecutions API."
+  },
+  {
+    "v": "1.31.68",
+    "t": "This release introduces a new API: DeleteOpsItem. This allows deletion of an OpsItem."
+  },
+  {
+    "v": "1.31.54",
+    "t": "This release updates the enum values for ResourceType in SSM DescribeInstanceInformation input and ConnectionStatus in GetConnectionStatus output."
+  },
+  {
+    "v": "1.29.162",
+    "t": "Systems Manager doc-only update for June 2023."
+  },
+  {
+    "v": "1.29.97",
+    "t": "This Patch Manager release supports creating, updating, and deleting Patch Baselines for AmazonLinux2023, AlmaLinux."
+  },
+  {
+    "v": "1.29.77",
+    "t": "Document only update for Feb 2023"
+  },
+  {
+    "v": "1.29.43",
+    "t": "Adding support for QuickSetup Document Type in Systems Manager"
+  },
+  {
+    "v": "1.29.35",
+    "t": "Doc-only updates for December 2022."
+  },
+  {
+    "v": "1.29.11",
+    "t": "This release adds support for cross account access in CreateOpsItem, UpdateOpsItem and GetOpsItem. It introduces new APIs to setup resource policies for SSM resources: PutResourcePolicy, GetResourcePolicies and DeleteResourcePolicy."
+  },
+  {
+    "v": "1.29.4",
+    "t": "This release includes support for applying a CloudWatch alarm to multi account multi region Systems Manager Automation"
+  },
+  {
+    "v": "1.27.90",
+    "t": "Support of AmazonLinux2022 by Patch Manager"
+  },
+  {
+    "v": "1.27.81",
+    "t": "This release includes support for applying a CloudWatch alarm to Systems Manager capabilities like Automation, Run Command, State Manager, and Maintenance Windows."
+  },
+  {
+    "v": "1.27.80",
+    "t": "This release adds new SSM document types ConformancePackTemplate and CloudFormation"
+  },
+  {
+    "v": "1.27.69",
+    "t": "This release adds support for Systems Manager State Manager Association tagging."
+  },
+  {
+    "v": "1.27.39",
+    "t": "Adding doc updates for OpsCenter support in Service Setting actions."
+  },
+  {
+    "v": "1.25.7",
+    "t": "This release adds the TargetMaps parameter in SSM State Manager API."
+  },
+  {
+    "v": "1.25.4",
+    "t": "Update the StartChangeRequestExecution, adding TargetMaps to the Runbook parameter"
+  },
+  {
+    "v": "1.24.43",
+    "t": "Added offset support for specifying the number of days to wait after the date and time specified by a CRON expression when creating SSM association."
+  },
+  {
+    "v": "1.24.27",
+    "t": "This Patch Manager release supports creating, updating, and deleting Patch Baselines for Rocky Linux OS."
+  },
+  {
+    "v": "1.24.25",
+    "t": "Update AddTagsToResource, ListTagsForResource, and RemoveTagsFromResource APIs to reflect the support for tagging Automation resources. Includes other minor documentation updates."
+  },
+  {
+    "v": "1.24.1",
+    "t": "Assorted ticket fixes and updates for AWS Systems Manager."
+  },
+  {
+    "v": "1.23.54",
+    "t": "Documentation updates for AWS Systems Manager."
+  },
+  {
+    "v": "1.23.35",
+    "t": "AWS Systems Manager adds category support for DescribeDocument API"
+  },
+  {
+    "v": "1.23.16",
+    "t": "Added two new attributes to DescribeInstanceInformation called SourceId and SourceType along with new string filters SourceIds and SourceTypes to filter instance records."
+  },
+  {
+    "v": "1.23.11",
+    "t": "Adds new parameter to CreateActivation API . This parameter is for \"internal use only\"."
+  },
+  {
+    "v": "1.23.6",
+    "t": "Adds support for Session Reason and Max Session Duration for Systems Manager Session Manager."
+  },
+  {
+    "v": "1.23.5",
+    "t": "This Patch Manager release supports creating Patch Baselines for RaspberryPi OS (formerly Raspbian)"
+  },
+  {
+    "v": "1.21.53",
+    "t": "When \"AutoApprovable\" is true for a Change Template, then specifying --auto-approve (boolean) in Start-Change-Request-Execution will create a change request that bypasses approver review. (except for change calendar restrictions)"
+  },
+  {
+    "v": "1.21.47",
+    "t": "Added cutoff behavior support for preventing new task invocations from starting when the maintenance window cutoff time is reached."
+  },
+  {
+    "v": "1.21.28",
+    "t": "Updated Parameter Store property for logging improvements."
+  },
+  {
+    "v": "1.21.17",
+    "t": "Documentation updates for AWS Systems Manager."
+  },
+  {
+    "v": "1.20.111",
+    "t": "Changes to OpsCenter APIs to support a new feature, operational insights."
+  },
+  {
+    "v": "1.20.87",
+    "t": "Documentation updates for ssm to fix customer reported issue"
+  },
+  {
+    "v": "1.20.70",
+    "t": "This release adds new APIs to associate, disassociate and list related items in SSM OpsCenter; and this release adds DisplayName as a version-level attribute for SSM Documents and introduces two new document types: ProblemAnalysis, ProblemAnalysisTemplate."
+  },
+  {
+    "v": "1.20.68",
+    "t": "SSM feature release - ChangeCalendar integration with StateManager."
+  },
+  {
+    "v": "1.20.46",
+    "t": "Supports removing a label or labels from a parameter, enables ScheduledEndTime and ChangeDetails for StartChangeRequestExecution API, supports critical/security/other noncompliant count for patch API."
+  },
+  {
+    "v": "1.20.36",
+    "t": "This release allows SSM Explorer customers to enable OpsData sources across their organization when creating a resource data sync."
+  },
+  {
+    "v": "1.20.25",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.20.18",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.19.59",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.19.53",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.19.42",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.19.37",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.19.30",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.19.15",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.19.14",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.19.13",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.19.0",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.18.8",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.17.63",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.17.56",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.17.48",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.17.34",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.17.29",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.17.6",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.16.23",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.16.17",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.16.5",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.16.3",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.16.1",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.15.48",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.15.22",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.14.10",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.14.3",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.44",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.43",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.41",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.35",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.24",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.20",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.19",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.18",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.13.13",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.243",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.237",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.216",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.194",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.175",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.163",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.158",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.144",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.135",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.126",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.107",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.105",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.98",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.83",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.49",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.47",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.33",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.28",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.20",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.17",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.12.2",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.79",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.73",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.72",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.69",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.65",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.56",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.49",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.43",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.38",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.12",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.5",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.4",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.10.1",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.9.20",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.9.3",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.8.38",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.8.27",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.8.23",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.8.5",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.7.44",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.7.32",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.7.22",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.7.3",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.6.5",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.6.1",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.5.91",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.5.81",
+    "t": "Added a paginator for describe_parameters."
+  },
+  {
+    "v": "1.5.80",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.5.77",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.5.73",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.5.49",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.5.30",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.4.87",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.4.81",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.4.50",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.4.38",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.4.34",
+    "t": "Update ssm client to latest version"
+  },
+  {
+    "v": "1.4.19",
+    "t": "Update ssm client to latest version"
+  }
+]

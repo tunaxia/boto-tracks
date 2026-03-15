@@ -1,0 +1,74 @@
+[
+  {
+    "v": "1.42.51",
+    "t": "The iotanalytics client has been removed following the deprecation of the service."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.16",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.21.8",
+    "t": "IoT Analytics now supports creating a dataset resource with IoT SiteWise MultiLayerStorage data stores, enabling customers to query industrial data within the service. This release includes adding JOIN functionality for customers to query multiple data sources in a dataset."
+  },
+  {
+    "v": "1.20.94",
+    "t": "Adds support for data store partitions."
+  },
+  {
+    "v": "1.19.37",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.19.14",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.12.247",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.12.159",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.12.147",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.12.121",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.12.73",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.12.52",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.11.2",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.10.84",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.10.60",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.10.39",
+    "t": "Update iotanalytics client to latest version"
+  },
+  {
+    "v": "1.10.7",
+    "t": "Update iotanalytics client to latest version"
+  }
+]

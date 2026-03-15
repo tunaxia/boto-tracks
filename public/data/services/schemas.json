@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.21.57",
+    "t": "Removing unused request/response objects."
+  },
+  {
+    "v": "1.21.35",
+    "t": "This update include the support for Schema Discoverer to discover the events sent to the bus from another account. The feature will be enabled by default when discoverer is created or updated but can also be opt-in or opt-out  by specifying the value for crossAccount."
+  },
+  {
+    "v": "1.18.8",
+    "t": "Update schemas client to latest version"
+  },
+  {
+    "v": "1.16.0",
+    "t": "Update schemas client to latest version"
+  },
+  {
+    "v": "1.13.29",
+    "t": "Update schemas client to latest version"
+  }
+]

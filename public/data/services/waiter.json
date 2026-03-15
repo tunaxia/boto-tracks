@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.34.145",
+    "t": "Update waiters to handle expected boolean values when matching errors (`boto/botocore#3220 <https://github.com/boto/botocore/issues/3220>`__)"
+  },
+  {
+    "v": "1.7.0",
+    "t": "Expose configurable waiter interface"
+  },
+  {
+    "v": "1.5.10",
+    "t": "Adds several new waiters."
+  }
+]

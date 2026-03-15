@@ -1,0 +1,214 @@
+[
+  {
+    "v": "1.42.50",
+    "t": "Added support for Decrypt and ReEncrypt API's to use dry run feature without ciphertext for authorization validation"
+  },
+  {
+    "v": "1.41.2",
+    "t": "Support for on-demand rotation of AWS KMS Multi-Region keys with imported key material"
+  },
+  {
+    "v": "1.40.69",
+    "t": "Added support for new ECC_NIST_EDWARDS25519 AWS KMS key spec"
+  },
+  {
+    "v": "1.40.63",
+    "t": "Add cross account VPC endpoint service connectivity support to CustomKeyStore."
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.38",
+    "t": "Documentation only updates for KMS."
+  },
+  {
+    "v": "1.39.14",
+    "t": "Doc only update: fixed grammatical errors."
+  },
+  {
+    "v": "1.38.45",
+    "t": "This release updates AWS CLI examples for KMS APIs."
+  },
+  {
+    "v": "1.38.36",
+    "t": "AWS KMS announces the support of ML-DSA key pairs that creates post-quantum safe digital signatures."
+  },
+  {
+    "v": "1.38.32",
+    "t": "Remove unpopulated KeyMaterialId from Encrypt Response"
+  },
+  {
+    "v": "1.38.31",
+    "t": "AWS KMS announces the support for on-demand rotation of symmetric-encryption KMS keys with imported key material (EXTERNAL origin)."
+  },
+  {
+    "v": "1.34.126",
+    "t": "This feature allows customers to use their keys stored in KMS to derive a shared secret which can then be used to establish a secured channel for communication, provide proof of possession, or establish trust with other parties."
+  },
+  {
+    "v": "1.34.111",
+    "t": "This release includes feature to import customer's asymmetric (RSA, ECC and SM2) and HMAC keys into KMS in China."
+  },
+  {
+    "v": "1.34.84",
+    "t": "This feature supports the ability to specify a custom rotation period for automatic key rotations, the ability to perform on-demand key rotations, and visibility into your key material rotations."
+  },
+  {
+    "v": "1.34.65",
+    "t": "Adds the ability to use the default policy name by omitting the policyName parameter in calls to PutKeyPolicy and GetKeyPolicy"
+  },
+  {
+    "v": "1.34.14",
+    "t": "Documentation updates for AWS Key Management Service (KMS)."
+  },
+  {
+    "v": "1.34.2",
+    "t": "Documentation updates for AWS Key Management Service"
+  },
+  {
+    "v": "1.30.1",
+    "t": "Added Dry Run Feature to cryptographic and cross-account mutating KMS APIs (14 in all). This feature allows users to test their permissions and parameters before making the actual API call."
+  },
+  {
+    "v": "1.29.147",
+    "t": "This release includes feature to import customer's asymmetric (RSA and ECC) and HMAC keys into KMS.  It also includes feature to allow customers to specify number of days to schedule a KMS key deletion as a policy condition key."
+  },
+  {
+    "v": "1.29.124",
+    "t": "This release makes the NitroEnclave request parameter Recipient and the response field for CiphertextForRecipient available in AWS SDKs. It also adds the regex pattern for CloudHsmClusterId validation."
+  },
+  {
+    "v": "1.29.81",
+    "t": "AWS KMS is deprecating the RSAES_PKCS1_V1_5 wrapping algorithm option in the GetParametersForImport API that is used in the AWS KMS Import Key Material feature. AWS KMS will end support for this wrapping algorithm by October 1, 2023."
+  },
+  {
+    "v": "1.29.25",
+    "t": "Updated examples and exceptions for External Key Store (XKS)."
+  },
+  {
+    "v": "1.29.19",
+    "t": "AWS KMS introduces the External Key Store (XKS), a new feature for customers who want to protect their data with encryption keys stored in an external key management system under their control."
+  },
+  {
+    "v": "1.27.32",
+    "t": "Added support for the SM2 KeySpec in China Partition Regions"
+  },
+  {
+    "v": "1.26.2",
+    "t": "Add HMAC best practice tip, annual rotation of AWS managed keys."
+  },
+  {
+    "v": "1.24.43",
+    "t": "Adds support for KMS keys and APIs that generate and verify HMAC codes"
+  },
+  {
+    "v": "1.21.54",
+    "t": "Added SDK examples for ConnectCustomKeyStore, CreateCustomKeyStore, CreateKey, DeleteCustomKeyStore, DescribeCustomKeyStores, DisconnectCustomKeyStore, GenerateDataKeyPair, GenerateDataKeyPairWithoutPlaintext, GetPublicKey, ReplicateKey, Sign, UpdateCustomKeyStore and Verify APIs"
+  },
+  {
+    "v": "1.21.32",
+    "t": "This release has changes to KMS nomenclature to remove the word master from both the \"Customer master key\" and \"CMK\" abbreviation and replace those naming conventions with \"KMS key\"."
+  },
+  {
+    "v": "1.20.96",
+    "t": "Adds support for multi-Region keys"
+  },
+  {
+    "v": "1.19.52",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.19.39",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.16.20",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.14.14",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.14.6",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.13.35",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.12.141",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.12.52",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.10.67",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.8.41",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.8.26",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.7.40",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.5.80",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.5.50",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.5.42",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.5.12",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.4.91",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.4.61",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.4.60",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.4.57",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.4.47",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.4.45",
+    "t": "Update kms client to latest version"
+  },
+  {
+    "v": "1.4.17",
+    "t": "Update kms client to latest version"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.42.30",
+    "t": "Added ViewName to View-related responses and ServiceViewName to GetServiceView response."
+  },
+  {
+    "v": "1.40.46",
+    "t": "Add new AWS Resource Explorer APIs"
+  },
+  {
+    "v": "1.38.1",
+    "t": "Documentation-only update for CreateView option correction"
+  },
+  {
+    "v": "1.35.56",
+    "t": "Add GetManagedView, ListManagedViews APIs."
+  },
+  {
+    "v": "1.35.25",
+    "t": "AWS Resource Explorer released ListResources feature which allows customers to list all indexed AWS resources within a view."
+  },
+  {
+    "v": "1.34.41",
+    "t": "Resource Explorer now uses newly supported IPv4 'amazonaws.com' endpoints by default."
+  },
+  {
+    "v": "1.32.0",
+    "t": "Resource Explorer supports multi-account search. You can now use Resource Explorer to search and discover resources across AWS accounts within your organization or organizational unit."
+  },
+  {
+    "v": "1.29.93",
+    "t": "Documentation updates for APIs."
+  },
+  {
+    "v": "1.29.34",
+    "t": "Documentation updates for AWS Resource Explorer."
+  },
+  {
+    "v": "1.29.7",
+    "t": "Text only updates to some Resource Explorer descriptions."
+  },
+  {
+    "v": "1.29.5",
+    "t": "This is the initial SDK release for AWS Resource Explorer. AWS Resource Explorer lets your users search for and discover your AWS resources across the AWS Regions in your account."
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.34.60",
+    "t": "Added a sync configuration enum to disable publishing of deployment status to source providers (PublishDeploymentStatus). Added a sync configuration enum (TriggerStackUpdateOn) to only trigger changes."
+  },
+  {
+    "v": "1.34.10",
+    "t": "New integration with the GitLab self-managed provider type."
+  },
+  {
+    "v": "1.32.7",
+    "t": "This release adds support for the CloudFormation Git sync feature. Git sync enables updating a CloudFormation stack from a template stored in a Git repository."
+  },
+  {
+    "v": "1.32.4",
+    "t": "This release updates a few CodeStar Connections related APIs."
+  },
+  {
+    "v": "1.32.3",
+    "t": "This release adds support for the CloudFormation Git sync feature. Git sync enables updating a CloudFormation stack from a template stored in a Git repository."
+  },
+  {
+    "v": "1.31.16",
+    "t": "New integration with the Gitlab provider type."
+  },
+  {
+    "v": "1.20.52",
+    "t": "This release adds tagging support for CodeStar Connections Host resources"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update codestar-connections client to latest version"
+  },
+  {
+    "v": "1.18.1",
+    "t": "Update codestar-connections client to latest version"
+  },
+  {
+    "v": "1.17.13",
+    "t": "Update codestar-connections client to latest version"
+  },
+  {
+    "v": "1.16.4",
+    "t": "Update codestar-connections client to latest version"
+  },
+  {
+    "v": "1.13.43",
+    "t": "Update codestar-connections client to latest version"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.36.22",
+    "t": "Minor Parser updates to support the new smithy-generated protocol tests. See `boto/botocore#3247 <https://github.com/boto/botocore/pull/3247>`__ for more details."
+  },
+  {
+    "v": "1.29.162",
+    "t": "Fixes datetime parse error handling for out-of-range and negative timestamps (`#2564 <https://github.com/boto/botocore/issues/2564>`__)."
+  },
+  {
+    "v": "1.4.71",
+    "t": "ResponseMetadata will now always be populated, provided the response was able to be parsed into a dict."
+  }
+]

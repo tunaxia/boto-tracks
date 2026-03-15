@@ -1,0 +1,42 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.28",
+    "t": "This documentation update adds kms:GenerateDataKey as a required permission to StartModelPackagingJob."
+  },
+  {
+    "v": "1.27.40",
+    "t": "This release introduces support for image segmentation models and updates CPU accelerator options for models hosted on edge devices."
+  },
+  {
+    "v": "1.27.38",
+    "t": "This release introduces support for the automatic scaling of inference units used by Amazon Lookout for Vision models."
+  },
+  {
+    "v": "1.23.53",
+    "t": "This release makes CompilerOptions in Lookout for Vision's StartModelPackagingJob's Configuration object optional."
+  },
+  {
+    "v": "1.23.22",
+    "t": "This release adds new APIs for packaging an Amazon Lookout for Vision model as an AWS IoT Greengrass component."
+  },
+  {
+    "v": "1.20.10",
+    "t": "Update lookoutvision client to latest version"
+  },
+  {
+    "v": "1.20.0",
+    "t": "Update lookoutvision client to latest version"
+  },
+  {
+    "v": "1.19.27",
+    "t": "Update lookoutvision client to latest version"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "v": "1.42.23",
+    "t": "Added support for enabling disk encryption using customer managed AWS KMS keys to CreateApplication, UpdateApplication and StartJobRun APIs."
+  },
+  {
+    "v": "1.42.14",
+    "t": "Added JobLevelCostAllocationConfiguration field to enable cost allocation reporting at the job level, providing more granular visibility into EMR Serverless charges"
+  },
+  {
+    "v": "1.40.63",
+    "t": "This release adds the capability to enable User Background Sessions for customers running Trusted Identity Propagation enabled Interactive Sessions on EMR Serverless Applications."
+  },
+  {
+    "v": "1.38.40",
+    "t": "This release adds the capability to enable IAM IdentityCenter Trusted Identity Propagation for users running Interactive Sessions on EMR Serverless Applications."
+  },
+  {
+    "v": "1.38.36",
+    "t": "This release adds support for retrieval of the optional executionIamPolicy field in the GetJobRun API response."
+  },
+  {
+    "v": "1.38.29",
+    "t": "AWS EMR Serverless: Adds a new option in the CancelJobRun API in EMR 7.9.0+, to cancel a job with grace period. This feature is enabled by default with a 120-second grace period for streaming jobs and is not enabled by default for batch jobs."
+  },
+  {
+    "v": "1.38.27",
+    "t": "This release adds the capability for users to specify an optional Execution IAM policy in the StartJobRun action. The resulting permissions assumed by the job run is the intersection of the permissions in the Execution Role and the specified Execution IAM Policy."
+  },
+  {
+    "v": "1.36.3",
+    "t": "Increasing entryPoint in SparkSubmit to accept longer script paths. New limit is 4kb."
+  },
+  {
+    "v": "1.35.79",
+    "t": "This release adds support for accessing system profile logs in Lake Formation-enabled jobs."
+  },
+  {
+    "v": "1.35.25",
+    "t": "This release adds support for job concurrency and queuing configuration at Application level."
+  },
+  {
+    "v": "1.34.116",
+    "t": "The release adds support for spark structured streaming."
+  },
+  {
+    "v": "1.34.112",
+    "t": "This release adds the capability to run interactive workloads using Apache Livy Endpoint."
+  },
+  {
+    "v": "1.34.87",
+    "t": "This release adds the capability to publish detailed Spark engine metrics to Amazon Managed Service for Prometheus (AMP) for  enhanced monitoring for Spark jobs."
+  },
+  {
+    "v": "1.34.85",
+    "t": "This release adds support for shuffle optimized disks that allow larger disk sizes and higher IOPS to efficiently run shuffle heavy workloads."
+  },
+  {
+    "v": "1.31.54",
+    "t": "This release adds support for application-wide default job configurations."
+  },
+  {
+    "v": "1.31.11",
+    "t": "This release adds support for publishing application logs to CloudWatch."
+  },
+  {
+    "v": "1.29.162",
+    "t": "This release adds support to update the release label of an EMR Serverless application to upgrade it to a different version of Amazon EMR via UpdateApplication API."
+  },
+  {
+    "v": "1.29.115",
+    "t": "The GetJobRun API has been updated to include the job's billed resource utilization. This utilization shows the aggregate vCPU, memory and storage that AWS has billed for the job run. The billed resources include a 1-minute minimum usage for workers, plus additional storage over 20 GB per worker."
+  },
+  {
+    "v": "1.29.111",
+    "t": "This release extends GetJobRun API to return job run timeout (executionTimeoutMinutes) specified during StartJobRun call (or default timeout of 720 minutes if none was specified)."
+  },
+  {
+    "v": "1.29.44",
+    "t": "Adds support for customized images. You can now provide runtime images when creating or updating EMR Serverless Applications."
+  },
+  {
+    "v": "1.29.12",
+    "t": "Adds support for AWS Graviton2 based applications. You can now select CPU architecture when creating new applications or updating existing ones."
+  },
+  {
+    "v": "1.27.83",
+    "t": "This release adds API support to debug Amazon EMR Serverless jobs in real-time with live application UIs"
+  },
+  {
+    "v": "1.26.10",
+    "t": "This release adds support for Amazon EMR Serverless, a serverless runtime environment that simplifies running analytics applications using the latest open source frameworks such as Apache Spark and Apache Hive."
+  },
+  {
+    "v": "1.26.9",
+    "t": "This release adds support for Amazon EMR Serverless, a serverless runtime environment that simplifies running analytics applications using the latest open source frameworks such as Apache Spark and Apache Hive."
+  }
+]

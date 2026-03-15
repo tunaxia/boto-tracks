@@ -1,0 +1,34 @@
+[
+  {
+    "v": "1.41.1",
+    "t": "Add support for EBS volume in Recycle Bin"
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.66",
+    "t": "This release adds support for exclusion tags for Recycle Bin, which allows you to identify resources that are to be excluded, or ignored, by a Region-level retention rule."
+  },
+  {
+    "v": "1.33.6",
+    "t": "Added resource identifier in the output and updated error handling."
+  },
+  {
+    "v": "1.29.16",
+    "t": "This release adds support for Rule Lock for Recycle Bin, which allows you to lock retention rules so that they can no longer be modified or deleted."
+  },
+  {
+    "v": "1.23.48",
+    "t": "Add EC2 Image recycle bin support."
+  },
+  {
+    "v": "1.23.16",
+    "t": "This release adds support for Recycle Bin."
+  }
+]

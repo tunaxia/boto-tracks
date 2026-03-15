@@ -1,0 +1,218 @@
+[
+  {
+    "v": "1.40.53",
+    "t": "Add support for manage Lightsail Bucket CORS configuration"
+  },
+  {
+    "v": "1.40.39",
+    "t": "Attribute HTTP binding update for Get/Delete operations"
+  },
+  {
+    "v": "1.40.1",
+    "t": "This release adds support for the Asia Pacific (Jakarta) (ap-southeast-3) Region."
+  },
+  {
+    "v": "1.36.24",
+    "t": "Documentation updates for Amazon Lightsail."
+  },
+  {
+    "v": "1.34.129",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.110",
+    "t": "This release adds support for Amazon Lightsail instances to switch between dual-stack or IPv4 only and IPv6-only public IP address types."
+  },
+  {
+    "v": "1.34.75",
+    "t": "This release adds support to upgrade the TLS version of the distribution."
+  },
+  {
+    "v": "1.34.41",
+    "t": "This release adds support to upgrade the major version of a database."
+  },
+  {
+    "v": "1.34.28",
+    "t": "This release adds support for IPv6-only instance plans."
+  },
+  {
+    "v": "1.34.13",
+    "t": "This release adds support to set up an HTTPS endpoint on an instance."
+  },
+  {
+    "v": "1.29.153",
+    "t": "This release adds pagination for the Get Certificates API operation."
+  },
+  {
+    "v": "1.29.81",
+    "t": "This release adds Lightsail for Research feature support, such as GUI session access, cost estimates, stop instance on idle, and disk auto mount."
+  },
+  {
+    "v": "1.29.68",
+    "t": "Documentation updates for Lightsail"
+  },
+  {
+    "v": "1.29.44",
+    "t": "Documentation updates for Amazon Lightsail."
+  },
+  {
+    "v": "1.29.5",
+    "t": "This release adds support for Amazon Lightsail to automate the delegation of domains registered through Amazon Route 53 to Lightsail DNS management and to automate record creation for DNS validation of Lightsail SSL/TLS certificates."
+  },
+  {
+    "v": "1.27.80",
+    "t": "This release adds Instance Metadata Service (IMDS) support for Lightsail instances."
+  },
+  {
+    "v": "1.26.9",
+    "t": "Amazon Lightsail now supports the ability to configure a Lightsail Container Service to pull images from Amazon ECR private repositories in your account."
+  },
+  {
+    "v": "1.25.13",
+    "t": "This release adds support to include inactive database bundles in the response of the GetRelationalDatabaseBundles request."
+  },
+  {
+    "v": "1.25.7",
+    "t": "Documentation updates for Lightsail"
+  },
+  {
+    "v": "1.25.1",
+    "t": "This release adds support for Lightsail load balancer HTTP to HTTPS redirect and TLS policy configuration."
+  },
+  {
+    "v": "1.24.42",
+    "t": "This release adds support to describe the synchronization status of the account-level block public access feature for your Amazon Lightsail buckets."
+  },
+  {
+    "v": "1.24.7",
+    "t": "This release adds support to delete and create Lightsail default key pairs that you can use with Lightsail instances."
+  },
+  {
+    "v": "1.22.8",
+    "t": "This release adds support to enable access logging for buckets in the Lightsail object storage service."
+  },
+  {
+    "v": "1.21.16",
+    "t": "This release adds support to track when a bucket access key was last used."
+  },
+  {
+    "v": "1.20.112",
+    "t": "This release adds support for the Amazon Lightsail object storage service, which allows you to create buckets and store objects."
+  },
+  {
+    "v": "1.20.86",
+    "t": "Documentation updates for Lightsail"
+  },
+  {
+    "v": "1.20.83",
+    "t": "Documentation updates for Lightsail"
+  },
+  {
+    "v": "1.20.76",
+    "t": "Documentation updates for Amazon Lightsail."
+  },
+  {
+    "v": "1.20.51",
+    "t": "Documentation updates for Amazon Lightsail."
+  },
+  {
+    "v": "1.20.43",
+    "t": "- This release adds support for state detail for Amazon Lightsail container services."
+  },
+  {
+    "v": "1.20.16",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.20.8",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.19.61",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.19.53",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.19.17",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.17.27",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.17.0",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.16.23",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.16.5",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.15.9",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.13.46",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.12.241",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.12.119",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.12.81",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.12.55",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.12.25",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.9.9",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.8.5",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.7.44",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.7.31",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.5.74",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.5.52",
+    "t": "Update lightsail client to latest version"
+  },
+  {
+    "v": "1.4.80",
+    "t": "Update lightsail client to latest version"
+  }
+]

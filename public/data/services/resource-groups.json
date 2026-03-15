@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.37.35",
+    "t": "Resource Groups: TagSyncTasks can be created with ResourceQuery"
+  },
+  {
+    "v": "1.35.30",
+    "t": "This update includes new APIs to support application groups and to allow users to manage resource tag-sync tasks in applications."
+  },
+  {
+    "v": "1.34.79",
+    "t": "Added a new QueryErrorCode RESOURCE_TYPE_NOT_SUPPORTED that is returned by the ListGroupResources operation if the group query contains unsupported resource types."
+  },
+  {
+    "v": "1.29.50",
+    "t": "AWS Resource Groups customers can now turn on Group Lifecycle Events in their AWS account. When you turn this on, Resource Groups monitors your groups for changes to group state or membership. Those changes are sent to Amazon EventBridge as events that you can respond to using rules you create."
+  },
+  {
+    "v": "1.20.83",
+    "t": "Documentation updates for Resource Groups."
+  },
+  {
+    "v": "1.19.43",
+    "t": "Update resource-groups client to latest version"
+  },
+  {
+    "v": "1.18.2",
+    "t": "Update resource-groups client to latest version"
+  },
+  {
+    "v": "1.17.32",
+    "t": "Update resource-groups client to latest version"
+  },
+  {
+    "v": "1.17.31",
+    "t": "Update resource-groups client to latest version"
+  },
+  {
+    "v": "1.12.134",
+    "t": "Update resource-groups client to latest version"
+  },
+  {
+    "v": "1.12.103",
+    "t": "Update resource-groups client to latest version"
+  },
+  {
+    "v": "1.12.45",
+    "t": "Update resource-groups client to latest version"
+  },
+  {
+    "v": "1.12.25",
+    "t": "Update resource-groups client to latest version"
+  },
+  {
+    "v": "1.10.69",
+    "t": "Update resource-groups client to latest version"
+  },
+  {
+    "v": "1.8.5",
+    "t": "Update resource-groups client to latest version"
+  }
+]

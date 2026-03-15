@@ -1,0 +1,82 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.26",
+    "t": "Amazon MWAA now lets you choose a worker replacement strategy when updating an environment. This release adds two worker replacement strategies: FORCED (default), which stops workers immediately, and GRACEFUL, which allows workers to finish current tasks before shutting down."
+  },
+  {
+    "v": "1.35.84",
+    "t": "Added support for Apache Airflow version 2.10.3 to MWAA."
+  },
+  {
+    "v": "1.35.65",
+    "t": "Amazon MWAA now supports a new environment class, mw1.micro, ideal for workloads requiring fewer resources than mw1.small. This class supports a single instance of each Airflow component: Scheduler, Worker, and Webserver."
+  },
+  {
+    "v": "1.35.47",
+    "t": "Introducing InvokeRestApi which allows users to invoke the Apache Airflow REST API on the webserver with the specified inputs."
+  },
+  {
+    "v": "1.34.107",
+    "t": "Amazon MWAA now supports Airflow web server auto scaling to automatically handle increased demand from REST APIs, Command Line Interface (CLI), or more Airflow User Interface (UI) users. Customers can specify maximum and minimum web server instances during environment creation and update workflow."
+  },
+  {
+    "v": "1.34.57",
+    "t": "Amazon MWAA adds support for Apache Airflow v2.8.1."
+  },
+  {
+    "v": "1.34.30",
+    "t": "This release adds MAINTENANCE environment status for Amazon MWAA environments."
+  },
+  {
+    "v": "1.34.18",
+    "t": "This Amazon MWAA feature release includes new fields in CreateWebLoginToken response model. The new fields IamIdentity and AirflowIdentity will let you match identifications, as the Airflow identity length is currently hashed to 64 characters."
+  },
+  {
+    "v": "1.32.1",
+    "t": "This Amazon MWAA release adds support for customer-managed VPC endpoints. This lets you choose whether to create, and manage your environment's VPC endpoints, or to have Amazon MWAA create, and manage them for you."
+  },
+  {
+    "v": "1.31.79",
+    "t": "This release adds support for Apache Airflow version 2.7.2. This version release includes support for deferrable operators and triggers."
+  },
+  {
+    "v": "1.29.147",
+    "t": "This release adds ROLLING_BACK and CREATING_SNAPSHOT environment statuses for Amazon MWAA environments."
+  },
+  {
+    "v": "1.29.105",
+    "t": "This Amazon MWAA release adds the ability to customize the Apache Airflow environment by launching a shell script at startup. This shell script is hosted in your environment's Amazon S3 bucket. Amazon MWAA runs the script before installing requirements and initializing the Apache Airflow process."
+  },
+  {
+    "v": "1.29.44",
+    "t": "MWAA supports Apache Airflow version 2.4.3."
+  },
+  {
+    "v": "1.27.21",
+    "t": "Documentation updates for Amazon Managed Workflows for Apache Airflow."
+  },
+  {
+    "v": "1.23.30",
+    "t": "This release adds a \"Source\" field that provides the initiator of an update, such as due to an automated patch from AWS or due to modification via Console or API."
+  },
+  {
+    "v": "1.20.81",
+    "t": "Adds scheduler count selection for Environments using Airflow version 2.0.2 or later."
+  },
+  {
+    "v": "1.20.29",
+    "t": "This release adds UPDATE_FAILED and UNAVAILABLE MWAA environment states."
+  },
+  {
+    "v": "1.20.21",
+    "t": "Update mwaa client to latest version"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update mwaa client to latest version"
+  }
+]

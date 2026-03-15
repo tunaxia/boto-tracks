@@ -1,0 +1,38 @@
+[
+  {
+    "v": "1.41.0",
+    "t": "Add GroupSharingPreference, CostCategoryGroupSharingPreferenceArn, and CostCategoryGroupSharingPreferenceEffectiveDate to Bill Estimate. Add GroupSharingPreference and CostCategoryGroupSharingPreferenceArn to Bill Scenario."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.31",
+    "t": "Updating the minimum for List APIs to be 1 (instead of 0)"
+  },
+  {
+    "v": "1.38.26",
+    "t": "Add AFTER_DISCOUNTS_AND_COMMITMENTS to Workload Estimate Rate Type. Set ListWorkLoadEstimateUsage maxResults range to minimum of 0 and maximum of 300."
+  },
+  {
+    "v": "1.37.22",
+    "t": "Added standaloneAccountRateTypeSelections for GetPreferences and UpdatePreferences APIs. Added STALE enum value to status attribute in GetBillScenario and UpdateBillScenario APIs."
+  },
+  {
+    "v": "1.36.9",
+    "t": "Added ConflictException error type in DeleteBillScenario, BatchDeleteBillScenarioCommitmentModification, BatchDeleteBillScenarioUsageModification, BatchUpdateBillScenarioUsageModification, and BatchUpdateBillScenarioCommitmentModification API operations."
+  },
+  {
+    "v": "1.35.88",
+    "t": "Added ConflictException to DeleteBillEstimate."
+  },
+  {
+    "v": "1.35.78",
+    "t": "Updated condition key inference from Workload Estimate, Bill Scenario, and Bill Estimate resources. Updated documentation links."
+  },
+  {
+    "v": "1.35.68",
+    "t": "Initial release of the AWS Billing and Cost Management Pricing Calculator API."
+  }
+]

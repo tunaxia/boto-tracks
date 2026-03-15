@@ -1,0 +1,26 @@
+[
+  {
+    "v": "1.37.0",
+    "t": "The elastic-inference client has been removed following the deprecation of the service."
+  },
+  {
+    "v": "1.35.38",
+    "t": "Elastic Inference - Documentation update to add service shutdown notice."
+  },
+  {
+    "v": "1.29.106",
+    "t": "Updated public documentation for the Describe and Tagging APIs."
+  },
+  {
+    "v": "1.15.46",
+    "t": "Update elastic-inference client to latest version"
+  },
+  {
+    "v": "1.15.33",
+    "t": "Update elastic-inference client to latest version"
+  },
+  {
+    "v": "1.13.28",
+    "t": "Update elastic-inference client to latest version"
+  }
+]

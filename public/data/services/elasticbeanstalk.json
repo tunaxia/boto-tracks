@@ -1,0 +1,118 @@
+[
+  {
+    "v": "1.42.61",
+    "t": "As part of this release, Beanstalk introduce a new info type - analyze for request environment info and retrieve environment info operations. When customers request an Al analysis, Elastic Beanstalk runs a script on an instance in their environment and returns an analysis of events, health and logs."
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.34.141",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.29.59",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.19.1",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.17.23",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.16.24",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.15.37",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.12.112",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.12.68",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.10.82",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.10.48",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.10.8",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.9.12",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.9.11",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.8.9",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.7.28",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.5.93",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.5.19",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.5.16",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.4.91",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.4.86",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.4.81",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.4.62",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.4.16",
+    "t": "Update elasticbeanstalk client to latest version"
+  },
+  {
+    "v": "1.4.12",
+    "t": "Add support for automatic platform version upgrades with managed updates"
+  },
+  {
+    "v": "1.4.10",
+    "t": "Adds support for three additional elements in AWS Elasticbeanstalk's DescribeInstancesHealthResponse: Deployment, AvailabilityZone, and InstanceType. Additionally adds support for increased EnvironmentName length from 23 to 40."
+  }
+]

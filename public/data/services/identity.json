@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.27.60",
+    "t": "TokenProvider added for bearer auth support"
+  }
+]

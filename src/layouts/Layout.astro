@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Boto Tracker</title>
+		<script is:inline>
+			// Immediate theme initialization
+			(function() {
+				const savedTheme = localStorage.getItem('boto-theme');
+				const darkMode = savedTheme ? savedTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+				if (darkMode) {
+					document.documentElement.classList.add('dark');
+				} else {
+					document.documentElement.classList.remove('dark');
+				}
+			})();
+		</script>
+		<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="h-screen overflow-hidden text-slate-400">
+		<slot />
+	</body>
+</html>

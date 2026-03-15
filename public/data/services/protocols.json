@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.36.19",
+    "t": "Added support for multiple protocols within a service based on performance priority."
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.16",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.30",
+    "t": "Add examples for API operations in model."
+  },
+  {
+    "v": "1.29.60",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.21.23",
+    "t": "Documentation updates for clouddirectory"
+  },
+  {
+    "v": "1.12.37",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.10.44",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.10.36",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.10.3",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.8.9",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.5.95",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.5.88",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.5.68",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.5.57",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.5.33",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.5.23",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.5.16",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.5.10",
+    "t": "Update clouddirectory client to latest version"
+  },
+  {
+    "v": "1.5.7",
+    "t": "Update clouddirectory client to latest version"
+  }
+]

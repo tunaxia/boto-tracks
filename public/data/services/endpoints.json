@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.37.0",
+    "t": "Generate and use AWS-account-based endpoints for compatible services when the account ID is available. At launch, DynamoDB is the first and only compatible service. The new endpoint URL pattern will be ``https://<account-id>.ddb.<region>.amazonaws.com``. Additional services may be added in the future. See the documentation for details: https://docs.aws.amazon.com/sdkref/latest/guide/feature-account-endpoints.html"
+  },
+  {
+    "v": "1.29.133",
+    "t": "Include params set in provide-client-param event handlers in dynamic context params for endpoint resolution."
+  },
+  {
+    "v": "1.29.131",
+    "t": "Fix cache implementation to reduce memory consumption."
+  },
+  {
+    "v": "1.29.15",
+    "t": "Resolve endpoint with default partition when no region is set"
+  },
+  {
+    "v": "1.29.0",
+    "t": "Migrate all services to use new AWS Endpoint Resolution framework"
+  },
+  {
+    "v": "1.29.0",
+    "t": "Discontinued use of `sslCommonName` hosts as detailed in 1.27.0 (see `#2705 <https://github.com/boto/botocore/issues/2705>`__ for more info)"
+  },
+  {
+    "v": "1.28.0",
+    "t": "Implemented new endpoint ruleset system to dynamically derive endpoints and settings for services"
+  },
+  {
+    "v": "1.27.63",
+    "t": "Deprecate SSL common name"
+  },
+  {
+    "v": "1.16.8",
+    "t": "Improved endpoint resolution for clients with unknown regions"
+  },
+  {
+    "v": "1.4.21",
+    "t": "Updated endpoints.json to latest."
+  },
+  {
+    "v": "1.4.4",
+    "t": "Updated endpoints.json to latest version"
+  }
+]

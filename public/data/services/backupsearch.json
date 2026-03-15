@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.8",
+    "t": "Using recommended smithy trait to generate regional endpoints for Backup Search"
+  },
+  {
+    "v": "1.35.83",
+    "t": "Add support for searching backups"
+  }
+]

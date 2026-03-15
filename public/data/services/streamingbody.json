@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.26.4",
+    "t": "Allow StreamingBody to be used as a context manager"
+  },
+  {
+    "v": "1.12.68",
+    "t": "Support iterating lines from a streaming response body with CRLF line endings"
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "v": "1.40.68",
+    "t": "New field totalActiveErrors added to getFindingsStatistics response."
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.38",
+    "t": "We are launching a new analyzer type, internal access analyzer. The new analyzer will generate internal access findings, which help customers understand who within their AWS organization or AWS Account has access to their critical AWS resources."
+  },
+  {
+    "v": "1.37.36",
+    "t": "Added new resource types to evaluate for public access in resource policies and added support for S3 directory bucket access points."
+  },
+  {
+    "v": "1.36.20",
+    "t": "This release introduces the getFindingsStatistics API, enabling users to retrieve aggregated finding statistics for IAM Access Analyzer's external access and unused access analysis features. Updated service API and documentation."
+  },
+  {
+    "v": "1.35.61",
+    "t": "Expand analyzer configuration capabilities for unused access analyzers. Unused access analyzer configurations now support the ability to exclude accounts and resource tags from analysis providing more granular control over the scope of analysis."
+  },
+  {
+    "v": "1.35.60",
+    "t": "This release adds support for policy validation and external access findings for resource control policies (RCP). IAM Access Analyzer helps you author functional and secure RCPs and awareness that a RCP may restrict external access. Updated service API, documentation, and paginators."
+  },
+  {
+    "v": "1.34.124",
+    "t": "IAM Access Analyzer now provides policy recommendations to help resolve unused permissions for IAM roles and users. Additionally, IAM Access Analyzer now extends its custom policy checks to detect when IAM policies grant public access or access to critical resources ahead of deployments."
+  },
+  {
+    "v": "1.34.67",
+    "t": "This release adds support for policy validation and external access findings for DynamoDB tables and streams. IAM Access Analyzer helps you author functional and secure resource-based policies and identify cross-account access. Updated service API, documentation, and paginators."
+  },
+  {
+    "v": "1.34.54",
+    "t": "Fixed a typo in description field."
+  },
+  {
+    "v": "1.33.2",
+    "t": "This release adds support for external access findings for S3 directory buckets to help you easily identify cross-account access. Updated service API, documentation, and paginators."
+  },
+  {
+    "v": "1.32.7",
+    "t": "IAM Access Analyzer now continuously monitors IAM roles and users in your AWS account or organization to generate findings for unused access. Additionally, IAM Access Analyzer now provides custom policy checks to validate that IAM policies adhere to your security standards ahead of deployments."
+  },
+  {
+    "v": "1.29.61",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.29.20",
+    "t": "This release adds support for S3 cross account access points. IAM Access Analyzer will now produce public or cross account findings when it detects bucket delegation to external account access points."
+  },
+  {
+    "v": "1.28.1",
+    "t": "This release adds support for six new resource types in IAM Access Analyzer to help you easily identify public and cross-account access to your AWS resources. Updated service API, documentation, and paginators."
+  },
+  {
+    "v": "1.27.85",
+    "t": "AWS IAM Access Analyzer policy validation introduces new checks for role trust policies. As customers author a policy, IAM Access Analyzer policy validation evaluates the policy for any issues to make it easier for customers to author secure policies."
+  },
+  {
+    "v": "1.23.17",
+    "t": "AWS IAM Access Analyzer now supports policy validation for resource policies attached to S3 buckets and access points. You can run additional policy checks by specifying the S3 resource type you want to attach to your resource policy."
+  },
+  {
+    "v": "1.21.35",
+    "t": "Updates service API, documentation, and paginators to support multi-region access points from Amazon S3."
+  },
+  {
+    "v": "1.20.47",
+    "t": "IAM Access Analyzer now analyzes your CloudTrail events to identify actions and services that have been used by an IAM entity (user or role) and generates an IAM policy that is based on that activity."
+  },
+  {
+    "v": "1.20.29",
+    "t": "This release adds support for the ValidatePolicy API. IAM Access Analyzer is adding over 100 policy checks and actionable recommendations that help you validate your policies during authoring."
+  },
+  {
+    "v": "1.20.25",
+    "t": "Update accessanalyzer client to latest version"
+  },
+  {
+    "v": "1.19.61",
+    "t": "Update accessanalyzer client to latest version"
+  },
+  {
+    "v": "1.19.3",
+    "t": "Update accessanalyzer client to latest version"
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update accessanalyzer client to latest version"
+  },
+  {
+    "v": "1.15.47",
+    "t": "Update accessanalyzer client to latest version"
+  },
+  {
+    "v": "1.15.32",
+    "t": "Update accessanalyzer client to latest version"
+  },
+  {
+    "v": "1.15.10",
+    "t": "Update accessanalyzer client to latest version"
+  },
+  {
+    "v": "1.13.38",
+    "t": "Update accessanalyzer client to latest version"
+  },
+  {
+    "v": "1.13.30",
+    "t": "Update accessanalyzer client to latest version"
+  }
+]

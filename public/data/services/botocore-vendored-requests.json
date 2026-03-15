@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.13.0",
+    "t": "Removed vendored version of ``requests`` (`#1829 <https://github.com/boto/botocore/issues/1829>`__)"
+  }
+]

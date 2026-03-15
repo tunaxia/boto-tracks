@@ -1,0 +1,90 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.44",
+    "t": "Adds support to configure canaries with pre-configured blueprint code on supported runtime versions.  This behavior can be controlled via the new BlueprintTypes property exposed in the CreateCanary and UpdateCanary APIs."
+  },
+  {
+    "v": "1.40.16",
+    "t": "Added multi browser support for synthetics canaries, Increased ephemeral storage limit from 5GB to 10GB"
+  },
+  {
+    "v": "1.39.8",
+    "t": "This feature allows AWS Synthetics customers to provide code dependencies using lambda layer while creating a canary"
+  },
+  {
+    "v": "1.38.28",
+    "t": "Support for Java runtime handler pattern."
+  },
+  {
+    "v": "1.38.25",
+    "t": "Add support to change ephemeral storage. Add a new field \"TestResult\" under CanaryRunStatus."
+  },
+  {
+    "v": "1.38.13",
+    "t": "Add support to retry a canary automatically after schedule run failures. Users can enable this feature by configuring the RetryConfig field when calling the CreateCanary or UpdateCanary API. Also includes changes in GetCanary and GetCanaryRuns to support retrieving retry configurations."
+  },
+  {
+    "v": "1.38.11",
+    "t": "Add support to test a canary update by invoking a dry run of a canary. This behavior can be used via the new StartCanaryDryRun API along with new fields in UpdateCanary to apply dry run changes. Also includes changes in GetCanary and GetCanaryRuns to support retrieving dry run configurations."
+  },
+  {
+    "v": "1.35.83",
+    "t": "Add support to toggle outbound IPv6 traffic on canaries connected to dualstack subnets.  This behavior can be controlled via the new Ipv6AllowedForDualStack parameter of the VpcConfig input object in CreateCanary and UpdateCanary APIs."
+  },
+  {
+    "v": "1.35.56",
+    "t": "Add support to toggle if a canary will automatically delete provisioned canary resources such as Lambda functions and layers when a canary is deleted.  This behavior can be controlled via the new ProvisionedResourceCleanup property exposed in the CreateCanary and UpdateCanary APIs."
+  },
+  {
+    "v": "1.35.18",
+    "t": "This release introduces two features. The first is tag replication, which allows for the propagation of canary tags onto Synthetics related resources, such as Lambda functions. The second is a limit increase in canary name length, which has now been increased from 21 to 255 characters."
+  },
+  {
+    "v": "1.27.24",
+    "t": "This release introduces Group feature, which enables users to group cross-region canaries."
+  },
+  {
+    "v": "1.25.5",
+    "t": "CloudWatch Synthetics has introduced a new feature to provide customers with an option to delete the underlying resources that Synthetics canary creates when the user chooses to delete the canary."
+  },
+  {
+    "v": "1.24.13",
+    "t": "Allow custom handler function."
+  },
+  {
+    "v": "1.23.50",
+    "t": "Adding names parameters to the Describe APIs."
+  },
+  {
+    "v": "1.21.53",
+    "t": "CloudWatch Synthetics now enables customers to choose a customer managed AWS KMS key or an Amazon S3-managed key instead of an AWS managed key (default) for the encryption of artifacts that the canary stores in Amazon S3. CloudWatch Synthetics also supports artifact S3 location updation now."
+  },
+  {
+    "v": "1.21.16",
+    "t": "Documentation updates for Visual Monitoring feature and other doc ticket fixes."
+  },
+  {
+    "v": "1.21.7",
+    "t": "CloudWatch Synthetics now supports visual testing in its canaries."
+  },
+  {
+    "v": "1.19.19",
+    "t": "Update synthetics client to latest version"
+  },
+  {
+    "v": "1.18.5",
+    "t": "Update synthetics client to latest version"
+  },
+  {
+    "v": "1.16.15",
+    "t": "Update synthetics client to latest version"
+  },
+  {
+    "v": "1.15.42",
+    "t": "Update synthetics client to latest version"
+  }
+]

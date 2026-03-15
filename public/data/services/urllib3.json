@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.34.63",
+    "t": "Added support for urllib3 2.2.1+ in Python 3.10+"
+  },
+  {
+    "v": "1.23.1",
+    "t": "Fix NO_OP_TICKET import bug in older versions of urllib3"
+  },
+  {
+    "v": "1.11.0",
+    "t": "The vendored version of requests and urllib3 are no longer being used and botocore now has a direct dependency on newer versions of upstream urllib3."
+  }
+]

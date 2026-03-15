@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.4.14",
+    "t": "Fix issue where \"EnhancedMonitoring\" was not displayed when running ``aws kinesis describe-stream`` (`#1929 <https://github.com/aws/aws-cli/issues/1929>`__)"
+  }
+]

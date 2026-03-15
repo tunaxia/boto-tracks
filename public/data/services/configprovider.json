@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.31.0",
+    "t": "Fix bug when deep copying config value store where overrides were not preserved"
+  },
+  {
+    "v": "1.31.0",
+    "t": "Always use shallow copy of session config value store for clients"
+  }
+]

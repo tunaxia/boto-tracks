@@ -1,0 +1,26 @@
+[
+  {
+    "v": "1.42.44",
+    "t": "Adding support for Custom(General) Authorization in managed integrations for AWS IoT Device Management cloud connectors."
+  },
+  {
+    "v": "1.42.26",
+    "t": "This release introduces WiFi Simple Setup (WSS) enabling device provisioning via barcode scanning with automated network discovery, authentication, and credential provisioning. Additionally, it introduces 2P Device Capability Rediscovery for updating hub-managed device capabilities post-onboarding."
+  },
+  {
+    "v": "1.40.63",
+    "t": "Add a new GetManagedThingCertificate API to expose Iot ManagedIntegrations (MI) device certificate, and add  \"-\"  support for name, properties, actions and events in the CapabilityReportCapability object."
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.45",
+    "t": "Adding managed integrations APIs for IoT Device Management to onboard and control devices across different manufacturers, connectivity protocols and third party vendor clouds. APIs include managed thing operations, provisioning profile management, and cloud connector operations."
+  },
+  {
+    "v": "1.37.6",
+    "t": "Adding managed integrations APIs for IoT Device Management to setup and control devices across different manufacturers and connectivity protocols. APIs include managedthing operations, credential and provisioning profile management, notification configuration, and OTA update."
+  }
+]
