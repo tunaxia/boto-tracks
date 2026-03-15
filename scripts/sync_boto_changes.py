@@ -5,7 +5,6 @@ import shutil
 import subprocess
 from pathlib import Path
 
-# Configuration
 BOTO_REPO = "https://github.com/boto/botocore.git"
 CLONE_DIR = "botocore_repo"
 CHANGES_DIR = "botocore_repo/.changes"
@@ -14,41 +13,29 @@ VERSIONS_DIR = os.path.join(OUTPUT_DIR, "versions")
 SERVICES_DIR = os.path.join(OUTPUT_DIR, "services")
 
 def format_id(name):
-    """
-    Production-grade slugifier:
-    1. Lowercase
-    2. Replace dots, underscores, and spaces with dashes
-    3. Remove backticks
-    4. Collapse multiple dashes
-    """
+
     if not name:
         return "unknown"
     name = name.replace("`", "").lower().strip()
-    # Replace dots, underscores, and spaces with dashes
     name = re.sub(r'[\._\s]', '-', name)
-    # Remove any double dashes
     name = re.sub(r'-+', '-', name)
-    # Strip leading/trailing dashes
     name = name.strip('-')
     return name
 
 def version_key(version_str):
-    """Convert version string to tuple of ints for proper numeric sorting"""
     try:
         return tuple(map(int, version_str.split('.')))
     except ValueError:
         return (0, 0, 0)
 
 def sync():
-    # 1. Setup
+
     os.makedirs(VERSIONS_DIR, exist_ok=True)
     os.makedirs(SERVICES_DIR, exist_ok=True)
 
-    # 2. Clone or Update Repository
     if os.path.exists(CLONE_DIR):
         print(f"Updating existing repository in {CLONE_DIR}...")
         try:
-            # Try to pull latest changes
             subprocess.run(["git", "-C", CLONE_DIR, "pull"], check=True)
         except subprocess.CalledProcessError:
             print("Update failed, re-cloning...")
@@ -62,7 +49,6 @@ def sync():
         print("Error: .changes directory not found.")
         return
 
-    # 3. Load existing track data to skip processed versions
     track_path = os.path.join(OUTPUT_DIR, "track.json")
     existing_versions = []
     existing_services = set()
@@ -77,7 +63,6 @@ def sync():
 
     processed_version_ids = {v["id"] for v in existing_versions}
 
-    # 4. Get and Sort Files by Version
     all_change_files = [f for f in os.listdir(CHANGES_DIR) if f.endswith(".json")]
     new_files = [f for f in all_change_files if f.replace(".json", "") not in processed_version_ids]
     
@@ -85,12 +70,11 @@ def sync():
         print("No new versions to sync.")
         return
 
-    # Sort new files numerically (ascending to process oldest new first)
     new_files.sort(key=lambda x: version_key(x.replace(".json", "")))
     print(f"Processing {len(new_files)} new versions...")
 
     newly_processed_versions = []
-    affected_services = {} # service_id -> list of new entries
+    affected_services = {}
 
     for filename in new_files:
         version = filename.replace(".json", "")
@@ -119,23 +103,19 @@ def sync():
                 "type": change_type
             })
 
-            # Update Service History entries for this session
             if category not in affected_services:
                 affected_services[category] = []
             
-            # Note: We append here, but will prepend to the file later to maintain newest-first
             affected_services[category].append({
                 "v": version,
                 "t": description
             })
 
-        # Write Version Specific File (only if it doesn't exist)
         v_file_path = os.path.join(VERSIONS_DIR, f"{version}.json")
         if not os.path.exists(v_file_path):
             with open(v_file_path, 'w') as f:
                 json.dump(processed_changes, f, indent=2)
 
-    # 5. Update Service History Files for affected services only
     updated_count = 0
     for service, new_entries in affected_services.items():
         service_file = os.path.join(SERVICES_DIR, f"{service}.json")
@@ -147,15 +127,13 @@ def sync():
                     history = json.load(f)
                 except:
                     history = []
-        
-        # Deduplicate and Prepend new entries
+
         existing_v = {item["v"] for item in history}
         filtered_new_entries = [e for e in new_entries if e["v"] not in existing_v]
         
         if not filtered_new_entries:
             continue
 
-        # Sort filtered_new_entries descending by version before prepending
         filtered_new_entries.sort(key=lambda x: version_key(x["v"]), reverse=True)
         updated_history = filtered_new_entries + history
         
@@ -166,8 +144,6 @@ def sync():
     if updated_count > 0:
         print(f"Updated {updated_count} service history files.")
 
-    # 6. Update Track Summary
-    # Combine newly processed (descending) with existing
     newly_processed_versions.sort(key=lambda x: version_key(x["id"]), reverse=True)
     combined_versions = newly_processed_versions + existing_versions
     
