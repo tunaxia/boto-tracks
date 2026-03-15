@@ -10,14 +10,15 @@
     </div>
 
     <!-- Brand Area -->
-    <div class="h-28 flex items-center justify-center flex-shrink-0 relative z-30 bg-sidebar theme-transition">
+    <div class="h-44 flex flex-col items-center justify-center flex-shrink-0 relative z-30 bg-sidebar theme-transition border-b border-subtle">
         <button @click="location.reload()" 
-                class="w-12 h-12 bg-orange-500 rounded-2xl flex items-center justify-center text-black font-black italic shadow-lg shadow-orange-500/20 cursor-pointer hover:rotate-12 hover:scale-110 transition-all duration-300 active:scale-95 group relative">
-            <span class="text-xl italic">B</span>
-            <div class="absolute hidden lg:block left-full ml-4 px-3 py-1 bg-slate-900 text-white text-[10px] font-black rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none transition-all translate-x-[-10px] group-hover:translate-x-0 whitespace-nowrap z-50 shadow-xl uppercase tracking-widest">
-                Boto Tracker
-            </div>
+                class="w-12 h-12 bg-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-500/20 cursor-pointer hover:rotate-12 hover:scale-110 transition-all duration-300 active:scale-95 group relative mb-4">
+            <img src="/favicon.png" width="32" height="32" alt="Boto Tracker Logo" class="w-8 h-8 pointer-events-none" />
         </button>
+        <div class="hidden lg:flex flex-col items-center text-center px-4">
+            <span class="text-[10px] font-black italic uppercase tracking-tighter text-main leading-none">Boto Tracker</span>
+            <p class="text-[7px] mono text-slate-500 uppercase tracking-widest mt-1.5 leading-tight opacity-70">Botocore Change Intelligence</p>
+        </div>
     </div>
 
     <!-- Version Search -->
