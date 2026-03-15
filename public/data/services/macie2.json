@@ -1,0 +1,178 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.16",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.86",
+    "t": "This release adds support for identifying S3 general purpose buckets that exceed the Amazon Macie quota for preventative control monitoring."
+  },
+  {
+    "v": "1.34.127",
+    "t": "This release adds support for managing the status of automated sensitive data discovery for individual accounts in an organization, and determining whether individual S3 buckets are included in the scope of the analyses."
+  },
+  {
+    "v": "1.34.20",
+    "t": "This release adds support for analyzing Amazon S3 objects that are encrypted using dual-layer server-side encryption with AWS KMS keys (DSSE-KMS). It also adds support for reporting DSSE-KMS details in statistics and metadata about encryption settings for S3 buckets and objects."
+  },
+  {
+    "v": "1.32.2",
+    "t": "This release adds support for configuring Macie to assume an IAM role when retrieving sample occurrences of sensitive data reported by findings."
+  },
+  {
+    "v": "1.31.50",
+    "t": "This release changes the default managedDataIdentifierSelector setting for new classification jobs to RECOMMENDED. By default, new classification jobs now use the recommended set of managed data identifiers."
+  },
+  {
+    "v": "1.29.162",
+    "t": "This release adds support for configuring new classification jobs to use the set of managed data identifiers that we recommend for jobs. For the managed data identifier selection type (managedDataIdentifierSelector), specify RECOMMENDED."
+  },
+  {
+    "v": "1.29.84",
+    "t": "Documentation updates for Amazon Macie"
+  },
+  {
+    "v": "1.29.78",
+    "t": "This release adds support for a new finding type, Policy:IAMUser/S3BucketSharedWithCloudFront, and S3 bucket metadata that indicates if a bucket is shared with an Amazon CloudFront OAI or OAC."
+  },
+  {
+    "v": "1.29.35",
+    "t": "This release adds support for analyzing Amazon S3 objects that use the S3 Glacier Instant Retrieval (Glacier_IR) storage class."
+  },
+  {
+    "v": "1.29.18",
+    "t": "Added support for configuring Macie to continually sample objects from S3 buckets and inspect them for sensitive data. Results appear in statistics, findings, and other data that Macie provides."
+  },
+  {
+    "v": "1.27.63",
+    "t": "This release of the Amazon Macie API adds support for using allow lists to define specific text and text patterns to ignore when inspecting data sources for sensitive data."
+  },
+  {
+    "v": "1.27.38",
+    "t": "This release adds support for retrieving (revealing) sample occurrences of sensitive data that Amazon Macie detects and reports in findings."
+  },
+  {
+    "v": "1.24.44",
+    "t": "Sensitive data findings in Amazon Macie now indicate how Macie found the sensitive data that produced a finding (originType)."
+  },
+  {
+    "v": "1.23.39",
+    "t": "This release of the Amazon Macie API introduces stricter validation of requests to create custom data identifiers."
+  },
+  {
+    "v": "1.23.12",
+    "t": "Documentation updates for Amazon Macie"
+  },
+  {
+    "v": "1.22.10",
+    "t": "This release adds support for specifying the severity of findings that a custom data identifier produces, based on the number of occurrences of text that matches the detection criteria."
+  },
+  {
+    "v": "1.21.52",
+    "t": "Amazon S3 bucket metadata now indicates whether an error or a bucket's permissions settings prevented Amazon Macie from retrieving data about the bucket or the bucket's objects."
+  },
+  {
+    "v": "1.21.43",
+    "t": "This release adds support for specifying which managed data identifiers are used by a classification job, and retrieving a list of managed data identifiers that are available."
+  },
+  {
+    "v": "1.20.106",
+    "t": "Sensitive data findings in Amazon Macie now include enhanced location data for JSON and JSON Lines files"
+  },
+  {
+    "v": "1.20.90",
+    "t": "This release of the Amazon Macie API introduces stricter validation of S3 object criteria for classification jobs."
+  },
+  {
+    "v": "1.20.73",
+    "t": "This release of the Amazon Macie API adds support for defining run-time, S3 bucket criteria for classification jobs. It also adds resources for querying data about AWS resources that Macie monitors."
+  },
+  {
+    "v": "1.20.61",
+    "t": "The Amazon Macie API now provides S3 bucket metadata that indicates whether a bucket policy requires server-side encryption of objects when objects are uploaded to the bucket."
+  },
+  {
+    "v": "1.20.34",
+    "t": "This release of the Amazon Macie API adds support for publishing sensitive data findings to AWS Security Hub and specifying which categories of findings to publish to Security Hub."
+  },
+  {
+    "v": "1.20.20",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.20.7",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.20.4",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.19.63",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.19.46",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.19.23",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.19.20",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.19.14",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.19.9",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.19.4",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.17.54",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.17.42",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.17.28",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.17.23",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.17.5",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.17.0",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.16.12",
+    "t": "Update macie2 client to latest version"
+  },
+  {
+    "v": "1.16.9",
+    "t": "Update macie2 client to latest version"
+  }
+]

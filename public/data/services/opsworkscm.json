@@ -1,0 +1,82 @@
+[
+  {
+    "v": "1.40.19",
+    "t": "The opsworkscm client has been removed following the deprecation of the service."
+  },
+  {
+    "v": "1.39.4",
+    "t": "Removing content that refers to an S3 bucket that is no longer in use."
+  },
+  {
+    "v": "1.20.78",
+    "t": "New PUPPET_API_CRL attribute returned by DescribeServers API; new EngineVersion of 2019 available for Puppet Enterprise servers."
+  },
+  {
+    "v": "1.17.7",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.15.41",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.15.33",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.15.15",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.14.9",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.13.42",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.13.0",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.12.204",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.12.156",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.12.103",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.12.72",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.12.12",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.12.2",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.7.46",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.7.26",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.5.20",
+    "t": "Update opsworkscm client to latest version"
+  },
+  {
+    "v": "1.4.81",
+    "t": "Update opsworkscm client to latest version"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "v": "1.42.63",
+    "t": "AWS Deadline Cloud now supports cost scale factors for farms, enabling studios to adjust reported costs to reflect their actual rendering economics. Adjusted costs are reflected in Deadline Cloud's Usage Explorer and Budgets."
+  },
+  {
+    "v": "1.42.44",
+    "t": "Adds support for tagging jobs during job creation"
+  },
+  {
+    "v": "1.42.36",
+    "t": "AWS Deadline Cloud now supports editing job names and descriptions after submission."
+  },
+  {
+    "v": "1.42.29",
+    "t": "AWS Deadline Cloud now supports tagging Budget resources with ABAC for permissions management and selecting up to 16 filter values in the monitor and Search API."
+  },
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.7",
+    "t": "Adds support for Wait and Save feature in service-managed fleets"
+  },
+  {
+    "v": "1.39.16",
+    "t": "Adds support for tag management on monitors."
+  },
+  {
+    "v": "1.39.10",
+    "t": "Add support for VPC resource endpoints in Service Managed Fleets"
+  },
+  {
+    "v": "1.39.3",
+    "t": "Added fields for output manifest reporting and task chunking parameters"
+  },
+  {
+    "v": "1.38.45",
+    "t": "Added fields to track cumulative task retry attempts for steps and jobs"
+  },
+  {
+    "v": "1.38.24",
+    "t": "AWS Deadline Cloud service-managed fleets now support storage profiles. With storage profiles, you can map file paths between a workstation and the worker hosts running the job."
+  },
+  {
+    "v": "1.38.14",
+    "t": "AWS Deadline Cloud service-managed fleets now support configuration scripts. Configuration scripts make it easy to install additional software, like plugins and packages, onto a worker."
+  },
+  {
+    "v": "1.38.6",
+    "t": "Adds support for tag management on workers and tag inheritance from fleets to their associated workers."
+  },
+  {
+    "v": "1.37.24",
+    "t": "With this release you can use a new field to specify the search term match type. Search term match types currently support fuzzy and contains matching."
+  },
+  {
+    "v": "1.36.8",
+    "t": "feature: Deadline: Add support for limiting the concurrent usage of external resources, like floating licenses, using limits and the ability to constrain the maximum number of workers that work on a job"
+  },
+  {
+    "v": "1.35.61",
+    "t": "Adds support for select GPU accelerated instance types when creating new service-managed fleets."
+  },
+  {
+    "v": "1.35.35",
+    "t": "Add support for using the template from a previous job during job creation and listing parameter definitions for a job."
+  },
+  {
+    "v": "1.35.1",
+    "t": "This release adds additional search fields and provides sorting by multiple fields."
+  },
+  {
+    "v": "1.34.75",
+    "t": "AWS Deadline Cloud is a new fully managed service that helps customers set up, deploy, and scale rendering projects in minutes, so they can improve the efficiency of their rendering pipelines and take on more projects."
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.39",
+    "t": "Doc only updates for clarification around OAuth2GrantType for Salesforce."
+  },
+  {
+    "v": "1.31.42",
+    "t": "Adding OAuth2.0 support for servicenow connector."
+  },
+  {
+    "v": "1.31.38",
+    "t": "Add SAP source connector parallel and pagination feature"
+  },
+  {
+    "v": "1.29.162",
+    "t": "This release adds support to bypass SSO with the SAPOData connector when connecting to an SAP instance."
+  },
+  {
+    "v": "1.29.157",
+    "t": "This release adds new API to reset connector metadata cache"
+  },
+  {
+    "v": "1.29.145",
+    "t": "Added ability to select DataTransferApiType for DescribeConnector and CreateFlow requests when using Async supported connectors. Added supportedDataTransferType to DescribeConnector/DescribeConnectors/ListConnector response."
+  },
+  {
+    "v": "1.29.125",
+    "t": "This release adds new API to cancel flow executions."
+  },
+  {
+    "v": "1.29.123",
+    "t": "Adds Jwt Support for Salesforce Credentials."
+  },
+  {
+    "v": "1.29.119",
+    "t": "Increased the max length for RefreshToken and AuthCode from 2048 to 4096."
+  },
+  {
+    "v": "1.29.115",
+    "t": "This release adds a Client Token parameter to the following AppFlow APIs: Create/Update Connector Profile, Create/Update Flow, Start Flow, Register Connector, Update Connector Registration. The Client Token parameter allows idempotent operations for these APIs."
+  },
+  {
+    "v": "1.29.78",
+    "t": "This release enables the customers to choose whether to use Private Link for Metadata and Authorization call when using a private Salesforce connections"
+  },
+  {
+    "v": "1.29.53",
+    "t": "Adding support for Salesforce Pardot connector in Amazon AppFlow."
+  },
+  {
+    "v": "1.29.32",
+    "t": "This release updates the ListConnectorEntities API action so that it returns paginated responses that customers can retrieve with next tokens."
+  },
+  {
+    "v": "1.29.15",
+    "t": "Adding support for Amazon AppFlow to transfer the data to Amazon Redshift databases through Amazon Redshift Data API service. This feature will support the Redshift destination connector on both public and private accessible Amazon Redshift Clusters and Amazon Redshift Serverless."
+  },
+  {
+    "v": "1.29.13",
+    "t": "AppFlow provides a new API called UpdateConnectorRegistration to update a custom connector that customers have previously registered. With this API, customers no longer need to unregister and then register a connector to make an update."
+  },
+  {
+    "v": "1.29.12",
+    "t": "AppFlow simplifies the preparation and cataloging of SaaS data into the AWS Glue Data Catalog where your data can be discovered and accessed by AWS analytics and ML services. AppFlow now also supports data field partitioning and file size optimization to improve query performance and reduce cost."
+  },
+  {
+    "v": "1.27.90",
+    "t": "With this update, you can choose which Salesforce API is used by Amazon AppFlow to transfer data to or from your Salesforce account. You can choose the Salesforce REST API or Bulk API 2.0. You can also choose for Amazon AppFlow to pick the API automatically."
+  },
+  {
+    "v": "1.26.10",
+    "t": "Adding the following features/changes: Parquet output that preserves typing from the source connector, Failed executions threshold before deactivation for scheduled flows, increasing max size of access and refresh token from 2048 to 4096"
+  },
+  {
+    "v": "1.24.41",
+    "t": "Enables users to pass custom token URL parameters for Oauth2 authentication during create connector profile"
+  },
+  {
+    "v": "1.24.12",
+    "t": "Launching Amazon AppFlow Marketo as a destination connector SDK."
+  },
+  {
+    "v": "1.24.0",
+    "t": "Launching Amazon AppFlow SAP as a destination connector SDK."
+  },
+  {
+    "v": "1.23.47",
+    "t": "Launching Amazon AppFlow Custom Connector SDK."
+  },
+  {
+    "v": "1.22.0",
+    "t": "Feature to add support for  JSON-L format for S3 as a source."
+  },
+  {
+    "v": "1.21.25",
+    "t": "This release adds support for SAPOData connector and extends Veeva connector for document extraction."
+  },
+  {
+    "v": "1.20.92",
+    "t": "Adding MAP_ALL task type support."
+  },
+  {
+    "v": "1.20.45",
+    "t": "Added destination properties for Zendesk."
+  },
+  {
+    "v": "1.20.22",
+    "t": "Update appflow client to latest version"
+  },
+  {
+    "v": "1.20.15",
+    "t": "Update appflow client to latest version"
+  },
+  {
+    "v": "1.20.2",
+    "t": "Update appflow client to latest version"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update appflow client to latest version"
+  },
+  {
+    "v": "1.19.3",
+    "t": "Update appflow client to latest version"
+  },
+  {
+    "v": "1.17.49",
+    "t": "Update appflow client to latest version"
+  }
+]

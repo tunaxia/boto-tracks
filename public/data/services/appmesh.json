@@ -1,0 +1,90 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.32.3",
+    "t": "Change the default value of these fields from 0 to null: MaxConnections, MaxPendingRequests, MaxRequests, HealthCheckThreshold, PortNumber, and HealthCheckPolicy -> port. Users are not expected to perceive the change, except that badRequestException is thrown when required fields missing configured."
+  },
+  {
+    "v": "1.27.54",
+    "t": "AWS App Mesh release to support Multiple Listener and Access Log Format feature"
+  },
+  {
+    "v": "1.26.3",
+    "t": "This release updates the existing Create and Update APIs for meshes and virtual nodes by adding a new IP preference field. This new IP preference field can be used to control the IP versions being used with the mesh and allows for IPv6 support within App Mesh."
+  },
+  {
+    "v": "1.20.92",
+    "t": "AppMesh now supports additional routing capabilities in match and rewrites for Gateway Routes and Routes. Additionally, App Mesh also supports specifying DNS Response Types in Virtual Nodes."
+  },
+  {
+    "v": "1.20.0",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.19.23",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.19.12",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.17.20",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.17.5",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.16.14",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.15.16",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.15.10",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.13.2",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.12.225",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.12.211",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.12.209",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.12.168",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.12.123",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.12.110",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.12.75",
+    "t": "Update appmesh client to latest version"
+  },
+  {
+    "v": "1.12.55",
+    "t": "Update appmesh client to latest version"
+  }
+]

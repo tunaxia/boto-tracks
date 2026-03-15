@@ -1,0 +1,130 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.16",
+    "t": "This release adds catalogARN support for s3 tables multi-catalog catalogARNs."
+  },
+  {
+    "v": "1.37.38",
+    "t": "Documentation update regarding the number of streams you can create using the CreateDeliveryStream API."
+  },
+  {
+    "v": "1.36.8",
+    "t": "For AppendOnly streams, Firehose will automatically scale to match your throughput."
+  },
+  {
+    "v": "1.35.57",
+    "t": "Amazon Data Firehose / Features : Adds support for a new DeliveryStreamType, DatabaseAsSource. DatabaseAsSource hoses allow customers to stream CDC events from their RDS and Amazon EC2 hosted databases, running MySQL and PostgreSQL database engines, to Iceberg Table destinations."
+  },
+  {
+    "v": "1.34.145",
+    "t": "This release 1) Add configurable buffering hints for Snowflake as destination. 2) Add ReadFromTimestamp for MSK As Source. Firehose will start reading data from MSK Cluster using offset associated with this timestamp. 3) Gated public beta release to add Apache Iceberg tables as destination."
+  },
+  {
+    "v": "1.34.141",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.121",
+    "t": "Adds integration with Secrets Manager for Redshift, Splunk, HttpEndpoint, and Snowflake destinations"
+  },
+  {
+    "v": "1.34.69",
+    "t": "Updates Amazon Firehose documentation for message regarding Enforcing Tags IAM Policy."
+  },
+  {
+    "v": "1.34.46",
+    "t": "This release updates a few Firehose related APIs."
+  },
+  {
+    "v": "1.34.44",
+    "t": "This release adds support for Data Message Extraction for decompressed CloudWatch logs, and to use a custom file extension or time zone for S3 destinations."
+  },
+  {
+    "v": "1.34.22",
+    "t": "Allow support for Snowflake as a Kinesis Data Firehose delivery destination."
+  },
+  {
+    "v": "1.34.1",
+    "t": "This release, 1) adds configurable buffering hints for the Splunk destination, and 2) reduces the minimum configurable buffering interval for supported destinations"
+  },
+  {
+    "v": "1.31.56",
+    "t": "Features : Adding support for new data ingestion source to Kinesis Firehose - AWS Managed Services Kafka."
+  },
+  {
+    "v": "1.31.47",
+    "t": "DocumentIdOptions has been added for the Amazon OpenSearch destination."
+  },
+  {
+    "v": "1.29.19",
+    "t": "Allow support for the Serverless offering for Amazon OpenSearch Service as a Kinesis Data Firehose delivery destination."
+  },
+  {
+    "v": "1.21.57",
+    "t": "Allow support for Amazon Opensearch Service(successor to Amazon Elasticsearch Service) as a Kinesis Data Firehose delivery destination."
+  },
+  {
+    "v": "1.21.32",
+    "t": "This release adds the Dynamic Partitioning feature to Kinesis Data Firehose service for S3 destinations."
+  },
+  {
+    "v": "1.17.31",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.15.45",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.12.245",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.12.244",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.12.70",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.12.43",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.10.19",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.10.6",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.7.48",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.6.4",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.4.89",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.4.22",
+    "t": "Update firehose client to latest version"
+  },
+  {
+    "v": "1.4.12",
+    "t": "Update FireHose client to latest version"
+  }
+]

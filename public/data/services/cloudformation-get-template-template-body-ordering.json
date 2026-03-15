@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.8.29",
+    "t": "fixes boto/boto3`#1378 <https://github.com/boto/boto3/issues/1378>`__"
+  }
+]

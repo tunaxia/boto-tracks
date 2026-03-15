@@ -1,0 +1,114 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.21.35",
+    "t": "Lex now supports Korean (ko-KR) locale."
+  },
+  {
+    "v": "1.21.0",
+    "t": "Lex now supports the en-IN locale"
+  },
+  {
+    "v": "1.20.111",
+    "t": "Customers can now migrate bots built with Lex V1 APIs to V2 APIs. This release adds APIs to initiate and manage the migration of a bot."
+  },
+  {
+    "v": "1.20.43",
+    "t": "Lex now supports the ja-JP locale"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.19.22",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.19.17",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.18.3",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.17.57",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.17.37",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.17.1",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.15.20",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.14.12",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.13.46",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.13.43",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.13.24",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.10.84",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.8.43",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.8.40",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.8.12",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.7.6",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.7.2",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.5.82",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.5.59",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.5.48",
+    "t": "Update lex-models client to latest version"
+  },
+  {
+    "v": "1.5.41",
+    "t": "Update lex-models client to latest version"
+  }
+]

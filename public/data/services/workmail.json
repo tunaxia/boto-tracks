@@ -1,0 +1,98 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.22",
+    "t": "Make RoleArn an optional parameter for the PutEmailMonitoringConfiguration API, and add UnsupportedOperationException to RegisterToWorkMail."
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.52",
+    "t": "This release adds support for Multi-Factor Authentication (MFA) and Personal Access Tokens through integration with AWS IAM Identity Center."
+  },
+  {
+    "v": "1.31.50",
+    "t": "This release includes four new APIs UpdateUser, UpdateGroup, ListGroupsForEntity and DescribeEntity, along with RemoteUsers and some enhancements to existing APIs."
+  },
+  {
+    "v": "1.27.86",
+    "t": "This release adds support for impersonation roles in Amazon WorkMail."
+  },
+  {
+    "v": "1.27.21",
+    "t": "This release adds support for managing user availability configurations in Amazon WorkMail."
+  },
+  {
+    "v": "1.23.26",
+    "t": "This release allows customers to change their email monitoring configuration in Amazon WorkMail."
+  },
+  {
+    "v": "1.21.61",
+    "t": "This release adds APIs for adding, removing and retrieving details of mail domains"
+  },
+  {
+    "v": "1.21.55",
+    "t": "This release allows customers to change their inbound DMARC settings in Amazon WorkMail."
+  },
+  {
+    "v": "1.21.52",
+    "t": "This release adds support for mobile device access overrides management in Amazon WorkMail."
+  },
+  {
+    "v": "1.20.42",
+    "t": "This release adds support for mobile device access rules management in Amazon WorkMail."
+  },
+  {
+    "v": "1.20.1",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.19.7",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.18.3",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.16.19",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.16.8",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.14.16",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.14.10",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.12.142",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.12.122",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.10.4",
+    "t": "Update workmail client to latest version"
+  },
+  {
+    "v": "1.8.13",
+    "t": "Update workmail client to latest version"
+  }
+]

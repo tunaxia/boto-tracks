@@ -1,0 +1,114 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Adding FailoverState and TagList to GlobalCluster and SynchronizationStatus to GlobalClusterMember."
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.53",
+    "t": "Add support for NetworkType field in CreateDbCluster, ModifyDbCluster, RestoreDbClusterFromSnapshot and RestoreDbClusterToPointInTime for DocumentDB."
+  },
+  {
+    "v": "1.40.16",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.39.17",
+    "t": "Add support for setting Serverless Scaling Configuration on clusters."
+  },
+  {
+    "v": "1.35.86",
+    "t": "Support AWS Secret Manager managed password for AWS DocumentDB instance-based cluster."
+  },
+  {
+    "v": "1.34.162",
+    "t": "This release adds Global Cluster Failover capability which enables you to change your global cluster's primary AWS region, the region that serves writes, during a regional outage. Performing a failover action preserves your Global Cluster setup."
+  },
+  {
+    "v": "1.34.137",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.77",
+    "t": "This release adds Global Cluster Switchover capability which enables you to change your global cluster's primary AWS Region, the region that serves writes, while preserving the replication between all regions in the global cluster."
+  },
+  {
+    "v": "1.34.13",
+    "t": "Adding PerformanceInsightsEnabled and PerformanceInsightsKMSKeyId fields to DescribeDBInstances Response."
+  },
+  {
+    "v": "1.32.4",
+    "t": "Amazon DocumentDB updates for new cluster storage configuration: Amazon DocumentDB I/O-Optimized."
+  },
+  {
+    "v": "1.31.79",
+    "t": "Update the input of CreateDBInstance and ModifyDBInstance to support setting CA Certificates. Update the output of DescribeDBInstance and DescribeDBEngineVersions to show current and supported CA certificates."
+  },
+  {
+    "v": "1.31.4",
+    "t": "Added major version upgrade option in ModifyDBCluster API"
+  },
+  {
+    "v": "1.29.109",
+    "t": "This release adds a new parameter 'DBClusterParameterGroupName' to 'RestoreDBClusterFromSnapshot' API to associate the name of the DB cluster parameter group while performing restore."
+  },
+  {
+    "v": "1.27.57",
+    "t": "Update document for volume clone"
+  },
+  {
+    "v": "1.27.35",
+    "t": "Enable copy-on-write restore type"
+  },
+  {
+    "v": "1.24.36",
+    "t": "Added support to enable/disable performance insights when creating or modifying db instances"
+  },
+  {
+    "v": "1.20.99",
+    "t": "DocumentDB documentation-only edits"
+  },
+  {
+    "v": "1.20.86",
+    "t": "This SDK release adds support for DocDB global clusters."
+  },
+  {
+    "v": "1.20.40",
+    "t": "This release adds support for Event Subscriptions to DocumentDB."
+  },
+  {
+    "v": "1.19.0",
+    "t": "Update docdb client to latest version"
+  },
+  {
+    "v": "1.18.6",
+    "t": "Update docdb client to latest version"
+  },
+  {
+    "v": "1.17.61",
+    "t": "Update docdb client to latest version"
+  },
+  {
+    "v": "1.15.6",
+    "t": "Update docdb client to latest version"
+  },
+  {
+    "v": "1.14.14",
+    "t": "Update docdb client to latest version"
+  },
+  {
+    "v": "1.12.240",
+    "t": "Update docdb client to latest version"
+  },
+  {
+    "v": "1.12.181",
+    "t": "Update docdb client to latest version"
+  },
+  {
+    "v": "1.12.76",
+    "t": "Update docdb client to latest version"
+  }
+]

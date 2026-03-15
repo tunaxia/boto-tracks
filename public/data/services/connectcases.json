@@ -1,0 +1,94 @@
+[
+  {
+    "v": "1.42.65",
+    "t": "Added functionality for the Required and Hidden case rule types to be conditionally evaluated on up to 5 conditions."
+  },
+  {
+    "v": "1.42.55",
+    "t": "SearchCases API can now accept 25 fields in the request and response as opposed to the previous limit of 10. DeleteField's hard limit of 100 fields per domain has been lifted."
+  },
+  {
+    "v": "1.42.42",
+    "t": "Amazon Connect Cases now supports larger, multi-line text fields with up to 4,100 characters. Administrators can use the Admin UI to select the appropriate configuration (single-line or multi-line) on a per-field basis, improving case documentation capabilities."
+  },
+  {
+    "v": "1.42.35",
+    "t": "Amazon Connect now enables you to use tag-based access controls to define who can access specific cases. You can associate tags with case templates and configure security profiles to determine which users can access cases with those tags."
+  },
+  {
+    "v": "1.40.64",
+    "t": "Added two new case rule types: Parent Child Field Options (restricts child field options based on parent field value) and Hidden (controls child field visibility based on parent field value). Both enable dynamic field behavior within templates."
+  },
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.44",
+    "t": "New Search All Related Items API enables searching related items across cases"
+  },
+  {
+    "v": "1.40.42",
+    "t": "This release adds support for two new related item types: ConnectCase for linking Amazon Connect cases and Custom for user-defined related items with configurable fields."
+  },
+  {
+    "v": "1.39.2",
+    "t": "This release adds DeleteCase and DeleteRelatedItem APIs, which enable deleting cases and comments, undoing contact association, and removing service level agreements (SLAs) from cases. Contact center admins can use these APIs to delete cases when requested by customers and correct agent errors."
+  },
+  {
+    "v": "1.38.5",
+    "t": "Introduces CustomEntity as part of the UserUnion data type. This field is used to indicate the entity who is performing the API action."
+  },
+  {
+    "v": "1.37.35",
+    "t": "This feature provides capabilities to help track and meet service level agreements (SLAs) on cases programmatically. It allows configuring a new related item of type `Sla` on a case using CreateRelatedItem API and provides the ability to search for this new related item using SearchRelatedItems API."
+  },
+  {
+    "v": "1.36.15",
+    "t": "This release adds the ability to conditionally require fields on a template. Check public documentation for more information."
+  },
+  {
+    "v": "1.34.98",
+    "t": "This feature supports the release of Files related items"
+  },
+  {
+    "v": "1.34.94",
+    "t": "This feature releases DeleteField, DeletedLayout, and DeleteTemplate API's"
+  },
+  {
+    "v": "1.34.24",
+    "t": "This release adds the ability to view audit history on a case and introduces a new parameter, performedBy, for CreateCase and UpdateCase API's."
+  },
+  {
+    "v": "1.34.2",
+    "t": "Increase number of fields that can be included in CaseEventIncludedData from 50 to 200"
+  },
+  {
+    "v": "1.31.81",
+    "t": "This release adds the ability to add/view comment authors through CreateRelatedItem and SearchRelatedItems API. For more information see https://docs.aws.amazon.com/cases/latest/APIReference/Welcome.html"
+  },
+  {
+    "v": "1.31.71",
+    "t": "Increase maximum length of CommentBody to 3000, and increase maximum length of StringValue to 1500"
+  },
+  {
+    "v": "1.31.8",
+    "t": "This release adds the ability to assign a case to a queue or user."
+  },
+  {
+    "v": "1.29.137",
+    "t": "This release adds the ability to create fields with type Url through the CreateField API. For more information see https://docs.aws.amazon.com/cases/latest/APIReference/Welcome.html"
+  },
+  {
+    "v": "1.29.79",
+    "t": "This release adds the ability to delete domains through the DeleteDomain API. For more information see https://docs.aws.amazon.com/cases/latest/APIReference/Welcome.html"
+  },
+  {
+    "v": "1.29.6",
+    "t": "This release adds the ability to disable templates through the UpdateTemplate API. Disabling templates prevents customers from creating cases using the template. For more information see https://docs.aws.amazon.com/cases/latest/APIReference/Welcome.html"
+  },
+  {
+    "v": "1.27.86",
+    "t": "This release adds APIs for Amazon Connect Cases. Cases allows your agents to quickly track and manage customer issues that require multiple interactions, follow-up tasks, and teams in your contact center.  For more information, see https://docs.aws.amazon.com/cases/latest/APIReference/Welcome.html"
+  }
+]

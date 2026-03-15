@@ -1,0 +1,66 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.56",
+    "t": "Enabled FIPS us-gov-west-1 endpoints in SDK."
+  },
+  {
+    "v": "1.24.31",
+    "t": "This AWS Glue Databrew release adds feature to support ORC as an input format."
+  },
+  {
+    "v": "1.24.7",
+    "t": "This AWS Glue Databrew release adds feature to merge job outputs into a max number of files for S3 File output type."
+  },
+  {
+    "v": "1.23.32",
+    "t": "This SDK release adds support for specifying a Bucket Owner for an S3 location."
+  },
+  {
+    "v": "1.23.9",
+    "t": "This SDK release adds the following new features: 1) PII detection in profile jobs, 2) Data quality rules, enabling validation of data quality in profile jobs, 3) SQL query-based datasets for Amazon Redshift and Snowflake data sources, and 4) Connecting DataBrew datasets with Amazon AppFlow flows."
+  },
+  {
+    "v": "1.21.20",
+    "t": "This SDK release adds support for the output of a recipe job results to Tableau Hyper format."
+  },
+  {
+    "v": "1.21.5",
+    "t": "This SDK release adds two new features: 1) Output to Native JDBC destinations and 2) Adding configurations to profile jobs"
+  },
+  {
+    "v": "1.20.103",
+    "t": "Adds support for the output of job results to the AWS Glue Data Catalog."
+  },
+  {
+    "v": "1.20.41",
+    "t": "This SDK release adds two new dataset features: 1) support for specifying a database connection as a dataset input 2) support for dynamic datasets that accept configurable parameters in S3 path."
+  },
+  {
+    "v": "1.20.16",
+    "t": "Update databrew client to latest version"
+  },
+  {
+    "v": "1.20.6",
+    "t": "Update databrew client to latest version"
+  },
+  {
+    "v": "1.20.1",
+    "t": "Update databrew client to latest version"
+  },
+  {
+    "v": "1.19.62",
+    "t": "Update databrew client to latest version"
+  },
+  {
+    "v": "1.19.16",
+    "t": "Update databrew client to latest version"
+  }
+]

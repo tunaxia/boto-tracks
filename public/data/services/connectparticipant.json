@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.41.6",
+    "t": "Amazon Connect now supports message processing that intercepts and processes chat messages before they reach any participant."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Amazon Connect Participant Service: Remove unused fields from WebRTCConnection"
+  },
+  {
+    "v": "1.40.12",
+    "t": "Amazon Connect Service Feature: Add support to enable multi-user in-app, web, and video calling."
+  },
+  {
+    "v": "1.35.84",
+    "t": "This release adds support for the GetAuthenticationUrl and CancelParticipantAuthentication APIs used for customer authentication within Amazon Connect chats. There are also minor updates to the GetAttachment API."
+  },
+  {
+    "v": "1.34.44",
+    "t": "Doc only update to GetTranscript API reference guide to inform users about presence of events in the chat transcript."
+  },
+  {
+    "v": "1.34.18",
+    "t": "Introduce new Supervisor participant role"
+  },
+  {
+    "v": "1.31.39",
+    "t": "Amazon Connect Participant Service adds the ability to get a view resource using a view token, which is provided in a participant message, with the release of the DescribeView API."
+  },
+  {
+    "v": "1.29.100",
+    "t": "This release provides an update to the SendMessage API to handle interactive message response content-types."
+  },
+  {
+    "v": "1.29.61",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.29.53",
+    "t": "This release updates Amazon Connect Participant's GetTranscript api to provide transcripts of past chats on a persistent chat session."
+  },
+  {
+    "v": "1.29.37",
+    "t": "Amazon Connect Chat introduces the Message Receipts feature. This feature allows agents and customers to receive message delivered and read receipts after they send a chat message."
+  },
+  {
+    "v": "1.29.35",
+    "t": "Amazon Connect Chat now allows for JSON (application/json) message types to be sent in the SendMessage API."
+  },
+  {
+    "v": "1.22.10",
+    "t": "This release adds a new boolean attribute - Connect Participant - to the CreateParticipantConnection API, which can be used to mark the participant as connected."
+  },
+  {
+    "v": "1.22.6",
+    "t": "This release adds a new boolean attribute - Connect Participant - to the CreateParticipantConnection API, which can be used to mark the participant as connected."
+  },
+  {
+    "v": "1.19.41",
+    "t": "Update connectparticipant client to latest version"
+  },
+  {
+    "v": "1.13.24",
+    "t": "Update connectparticipant client to latest version"
+  }
+]

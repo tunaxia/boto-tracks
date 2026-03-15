@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.42.60",
+    "t": "Adds the Resold Unified Operations support plan and removes the Resold Business support plan in the CreateRelationship and UpdateRelationship APIs"
+  },
+  {
+    "v": "1.41.0",
+    "t": "Initial GA launch of Partner Central Channel"
+  }
+]

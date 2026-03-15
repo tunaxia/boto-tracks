@@ -1,0 +1,22 @@
+[
+  {
+    "v": "1.42.28",
+    "t": "This release clarifies WhatsApp template operations as a resource-authenticated operation via the parent WhatsApp Business Account. It also introduces new parameters for parameter format, CTA URL link tracking, and template body examples, and increases the phone number ID length."
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.14",
+    "t": "This release introduces new WhatsApp template management APIs that enable customers to programmatically create and submit templates for approval, monitor approval status, and manage the complete template lifecycle"
+  },
+  {
+    "v": "1.35.73",
+    "t": "Added support for passing role arn corresponding to the supported event destination"
+  },
+  {
+    "v": "1.35.38",
+    "t": "This release for AWS End User Messaging includes a public SDK, providing a suite of APIs that enable sending WhatsApp messages to end users."
+  }
+]

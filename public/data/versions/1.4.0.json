@@ -1,0 +1,17 @@
+[
+  {
+    "category": "dynamodb",
+    "description": "Add support for DescribeLimits.",
+    "type": "feature"
+  },
+  {
+    "category": "apigateway",
+    "description": "Add support for TestInvokeAuthorizer and FlushStageAuthorizersCache operations.",
+    "type": "feature"
+  },
+  {
+    "category": "cloudsearchdomain",
+    "description": "Add support for stats.",
+    "type": "feature"
+  }
+]

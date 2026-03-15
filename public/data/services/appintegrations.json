@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.42.63",
+    "t": "This release adds support for webhooks, allowing customers to create an Event Integration with a webhook source."
+  },
+  {
+    "v": "1.41.6",
+    "t": "This release adds support for MCP servers via the ApplicationType field, allowing customers to register their Bedrock AgentCore gateways as third party applications."
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.14",
+    "t": "Amazon AppIntegrations introduces new configuration capabilities to enable customers to manage iframe permissions, control application refresh behavior (per contact or per browser/cross-contact), and run background applications (service)."
+  },
+  {
+    "v": "1.34.156",
+    "t": "Updated CreateDataIntegration and CreateDataIntegrationAssociation API to support bulk data export from Amazon Connect Customer Profiles to the customer S3 bucket."
+  },
+  {
+    "v": "1.34.6",
+    "t": "The Amazon AppIntegrations service adds DeleteApplication API for deleting applications, and updates APIs to support third party applications reacting to workspace events and make data requests to Amazon Connect for agent and contact events."
+  },
+  {
+    "v": "1.31.68",
+    "t": "Updated ScheduleConfig to be an optional input to CreateDataIntegration to support event driven downloading of files from sources such as Amazon s3 using Amazon Connect AppIntegrations."
+  },
+  {
+    "v": "1.31.55",
+    "t": "The Amazon AppIntegrations service adds a set of APIs (in preview) to manage third party applications to be used in Amazon Connect agent workspace."
+  },
+  {
+    "v": "1.29.90",
+    "t": "Adds FileConfiguration to Amazon AppIntegrations CreateDataIntegration supporting scheduled downloading of third party files into Amazon Connect from sources such as Microsoft SharePoint."
+  },
+  {
+    "v": "1.21.49",
+    "t": "The Amazon AppIntegrations service enables you to configure and reuse connections to external applications."
+  },
+  {
+    "v": "1.21.1",
+    "t": "Documentation update for AppIntegrations Service"
+  },
+  {
+    "v": "1.19.27",
+    "t": "Update appintegrations client to latest version"
+  }
+]

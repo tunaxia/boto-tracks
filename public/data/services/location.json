@@ -1,0 +1,138 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Added support for mobile app restrictions in Amazon Location API keys."
+  },
+  {
+    "v": "1.39.16",
+    "t": "This release 1) adds support for multi-polygon geofences with disconnected territories, and 2) enables polygon exclusion zones within geofences for more accurate representation of real-world boundaries."
+  },
+  {
+    "v": "1.36.24",
+    "t": "Adds support for larger property maps for tracking and geofence positions changes. It increases the maximum number of items from 3 to 4, and the maximum value length from 40 to 150."
+  },
+  {
+    "v": "1.34.121",
+    "t": "Added two new APIs, VerifyDevicePosition and ForecastGeofenceEvents. Added support for putting larger geofences up to 100,000 vertices with Geobuf fields."
+  },
+  {
+    "v": "1.34.18",
+    "t": "Location SDK documentation update. Added missing fonts to the MapConfiguration data type. Updated note for the SubMunicipality property in the place data type."
+  },
+  {
+    "v": "1.34.16",
+    "t": "This release adds API support for custom layers for the maps service APIs: CreateMap, UpdateMap, DescribeMap."
+  },
+  {
+    "v": "1.34.11",
+    "t": "This release introduces a new parameter to bypasses an API key's expiry conditions and delete the key."
+  },
+  {
+    "v": "1.33.13",
+    "t": "This release 1)  adds sub-municipality field in Places API for searching and getting places information, and 2) allows optimizing route calculation based on expected arrival time."
+  },
+  {
+    "v": "1.32.3",
+    "t": "Remove default value and allow nullable for request parameters having minimum value larger than zero."
+  },
+  {
+    "v": "1.31.63",
+    "t": "This release adds endpoint updates for all AWS Location resource operations."
+  },
+  {
+    "v": "1.31.59",
+    "t": "Amazon Location Service adds support for bounding polygon queries. Additionally, the GeofenceCount field has been added to the DescribeGeofenceCollection API response."
+  },
+  {
+    "v": "1.31.0",
+    "t": "This release adds support for authenticating with Amazon Location Service's Places & Routes APIs with an API Key. Also, with this release developers can publish tracked device position updates to Amazon EventBridge."
+  },
+  {
+    "v": "1.29.154",
+    "t": "Amazon Location Service adds categories to places, including filtering on those categories in searches. Also, you can now add metadata properties to your geofences."
+  },
+  {
+    "v": "1.29.143",
+    "t": "This release adds API support for political views for the maps service APIs: CreateMap, UpdateMap, DescribeMap."
+  },
+  {
+    "v": "1.29.86",
+    "t": "Documentation update for the release of 3 additional map styles for use with Open Data Maps: Open Data Standard Dark, Open Data Visualization Light & Open Data Visualization Dark."
+  },
+  {
+    "v": "1.29.78",
+    "t": "This release adds support for using Maps APIs with an API Key in addition to AWS Cognito. This includes support for adding, listing, updating and deleting API Keys."
+  },
+  {
+    "v": "1.29.47",
+    "t": "This release adds support for two new route travel models, Bicycle and Motorcycle which can be used with Grab data source."
+  },
+  {
+    "v": "1.29.31",
+    "t": "This release adds support for a new style, \"VectorOpenDataStandardLight\" which can be used with the new data source, \"Open Data Maps (Preview)\"."
+  },
+  {
+    "v": "1.28.1",
+    "t": "Added new map styles with satellite imagery for map resources using HERE as a data provider."
+  },
+  {
+    "v": "1.27.82",
+    "t": "This release adds place IDs, which are unique identifiers of places, along with a new GetPlace operation, which can be used with place IDs to find a place again later. UnitNumber and UnitType are also added as new properties of places."
+  },
+  {
+    "v": "1.27.48",
+    "t": "Amazon Location Service now allows circular geofences in BatchPutGeofence, PutGeofence, and GetGeofence  APIs."
+  },
+  {
+    "v": "1.25.9",
+    "t": "Amazon Location Service now includes a MaxResults parameter for ListGeofences requests."
+  },
+  {
+    "v": "1.24.24",
+    "t": "Amazon Location Service now includes a MaxResults parameter for GetDevicePositionHistory requests."
+  },
+  {
+    "v": "1.24.20",
+    "t": "New HERE style \"VectorHereExplore\" and \"VectorHereExploreTruck\"."
+  },
+  {
+    "v": "1.23.38",
+    "t": "This release adds the CalculateRouteMatrix API which calculates routes for the provided departure and destination positions. The release also deprecates the use of pricing plan across all verticals."
+  },
+  {
+    "v": "1.23.25",
+    "t": "Making PricingPlan optional as part of create resource API."
+  },
+  {
+    "v": "1.23.21",
+    "t": "This release adds support for Accuracy position filtering, position metadata and autocomplete for addresses and points of interest based on partial or misspelled free-form text."
+  },
+  {
+    "v": "1.23.7",
+    "t": "This release adds the support for Relevance, Distance, Time Zone, Language and Interpolated Address for Geocoding and Reverse Geocoding."
+  },
+  {
+    "v": "1.21.55",
+    "t": "Add support for PositionFiltering."
+  },
+  {
+    "v": "1.21.2",
+    "t": "Add five new API operations: UpdateGeofenceCollection, UpdateMap, UpdatePlaceIndex, UpdateRouteCalculator, UpdateTracker."
+  },
+  {
+    "v": "1.20.84",
+    "t": "Adds support for calculation of routes, resource tagging and customer provided KMS keys."
+  },
+  {
+    "v": "1.20.40",
+    "t": "Amazon Location added support for specifying pricing plan information on resources in alignment with our cost model."
+  },
+  {
+    "v": "1.20.0",
+    "t": "Update location client to latest version"
+  },
+  {
+    "v": "1.19.38",
+    "t": "Update location client to latest version"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.37.27",
+    "t": "The event streams maximum payload size is now required to be 24Mb or less."
+  }
+]

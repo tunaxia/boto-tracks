@@ -1,0 +1,58 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.42",
+    "t": "Added support for IPv4-only and dual-stack network configurations for VoiceConnector and CreateVoiceConnector API."
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.37.27",
+    "t": "Added FOC date as an attribute of PhoneNumberOrder, added AccessDeniedException as a possible return type of ValidateE911Address"
+  },
+  {
+    "v": "1.35.72",
+    "t": "This release adds supports for enterprises to integrate Amazon Connect with other voice systems. It supports directly transferring voice calls and metadata without using the public telephone network. It also supports real-time and post-call analytics."
+  },
+  {
+    "v": "1.35.16",
+    "t": "Documentation-only update that clarifies the ValidateE911Address action of the Amazon Chime SDK Voice APIs."
+  },
+  {
+    "v": "1.34.95",
+    "t": "Due to changes made by the Amazon Alexa service, GetSipMediaApplicationAlexaSkillConfiguration and PutSipMediaApplicationAlexaSkillConfiguration APIs are no longer available for use. For more information, refer to the Alexa Smart Properties page."
+  },
+  {
+    "v": "1.31.23",
+    "t": "Updating CreatePhoneNumberOrder, UpdatePhoneNumber and BatchUpdatePhoneNumbers APIs, adding phone number name"
+  },
+  {
+    "v": "1.29.143",
+    "t": "Added optional CallLeg field to StartSpeakerSearchTask API request"
+  },
+  {
+    "v": "1.29.113",
+    "t": "This release adds tagging support for Voice Connectors and SIP Media Applications"
+  },
+  {
+    "v": "1.29.100",
+    "t": "Documentation updates for Amazon Chime SDK Voice."
+  },
+  {
+    "v": "1.29.98",
+    "t": "This release adds Amazon Chime SDK call analytics. Call analytics include voice analytics, which provides speaker search and voice tone analysis. These capabilities can be used with Amazon Transcribe and Transcribe Call Analytics to generate machine-learning-powered insights from real-time audio."
+  },
+  {
+    "v": "1.29.77",
+    "t": "This release introduces support for Voice Connector media metrics in the Amazon Chime SDK Voice namespace"
+  },
+  {
+    "v": "1.29.13",
+    "t": "Amazon Chime Voice Connector, Voice Connector Group and PSTN Audio Service APIs are now available in the Amazon Chime SDK Voice namespace. See https://docs.aws.amazon.com/chime-sdk/latest/dg/sdk-available-regions.html for more details."
+  }
+]

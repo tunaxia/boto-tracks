@@ -1,0 +1,82 @@
+[
+  {
+    "v": "1.42.12",
+    "t": "This release adds support for SPEKE V2 content key encryption in MediaPackage v2 Origin Endpoints."
+  },
+  {
+    "v": "1.41.2",
+    "t": "Adds support for excluding session key tags from HLS multivariant playlists"
+  },
+  {
+    "v": "1.40.75",
+    "t": "Add support for SCTE messages in Segment file output"
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.27",
+    "t": "Added CUE tag SCTE output to MediaPackageV2 HLS and LL-HLS manifests."
+  },
+  {
+    "v": "1.39.14",
+    "t": "This release adds support for specifying a preferred input for channels using CMAF ingest."
+  },
+  {
+    "v": "1.39.7",
+    "t": "This release adds support for CDN Authentication using Static Headers in MediaPackage v2."
+  },
+  {
+    "v": "1.39.3",
+    "t": "This release adds support for Microsoft Smooth Streaming (MSS) and allows users to exclude DRM segment Metadata in MediaPackage v2 Origin Endpoints"
+  },
+  {
+    "v": "1.38.19",
+    "t": "This release adds support for DVB-DASH, EBU-TT-D subtitle format, and non-compacted manifests for DASH in MediaPackage v2 Origin Endpoints."
+  },
+  {
+    "v": "1.37.12",
+    "t": "This release adds the ResetChannelState and ResetOriginEndpointState operation to reset MediaPackage V2 channel and origin endpoint. This release also adds a new field, UrlEncodeChildManifest, for HLS/LL-HLS to allow URL-encoding child manifest query string based on the requirements of AWS SigV4."
+  },
+  {
+    "v": "1.35.66",
+    "t": "MediaPackage v2 now supports the Media Quality Confidence Score (MQCS) published from MediaLive. Customers can control input switching based on the MQCS and publishing HTTP Headers for the MQCS via the API."
+  },
+  {
+    "v": "1.35.50",
+    "t": "MediaPackage V2 Live to VOD Harvester is a MediaPackage V2 feature, which is used to export content from an origin endpoint to a S3 bucket."
+  },
+  {
+    "v": "1.35.33",
+    "t": "Added support for ClipStartTime on the FilterConfiguration object on OriginEndpoint manifest settings objects. Added support for EXT-X-START tags on produced HLS child playlists."
+  },
+  {
+    "v": "1.34.148",
+    "t": "This release adds support for Irdeto DRM encryption in DASH manifests."
+  },
+  {
+    "v": "1.34.126",
+    "t": "This release adds support for CMAF ingest (DASH-IF live media ingest protocol interface 1)"
+  },
+  {
+    "v": "1.34.85",
+    "t": "Dash v2 is a MediaPackage V2 feature to support egressing on DASH manifest format."
+  },
+  {
+    "v": "1.34.60",
+    "t": "This release enables customers to safely update their MediaPackage v2 channel groups, channels and origin endpoints using entity tags."
+  },
+  {
+    "v": "1.31.74",
+    "t": "This feature allows customers to create a combination of manifest filtering, startover and time delay configuration that applies to all egress requests by default."
+  },
+  {
+    "v": "1.31.64",
+    "t": "This release allows customers to manage MediaPackage v2 resource using CloudFormation."
+  },
+  {
+    "v": "1.29.137",
+    "t": "Adds support for the MediaPackage Live v2 API"
+  }
+]

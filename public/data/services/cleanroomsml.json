@@ -1,0 +1,54 @@
+[
+  {
+    "v": "1.42.22",
+    "t": "AWS Clean Rooms ML now supports advanced Spark configurations to optimize SQL performance when creating an MLInputChannel or an audience generation job."
+  },
+  {
+    "v": "1.41.6",
+    "t": "AWS Clean Rooms ML now supports privacy-enhancing synthetic dataset generation for custom ML training."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.43",
+    "t": "This release introduces data access budgets to view how many times an input channel can be used for ML jobs in a collaboration."
+  },
+  {
+    "v": "1.40.23",
+    "t": "AWS Clean Rooms ML adds log sanitization for privacy-enhanced error summaries, supports new instance types for custom models providing better performance and lower costs, and deprecates P3-series instances."
+  },
+  {
+    "v": "1.39.8",
+    "t": "This release introduces Parquet result format support for ML Input Channel models in AWS Clean Rooms ML."
+  },
+  {
+    "v": "1.39.1",
+    "t": "This release introduces support for incremental training and distributed training for custom models in AWS Clean Rooms ML."
+  },
+  {
+    "v": "1.35.83",
+    "t": "Add support for SQL compute configuration for StartAudienceGenerationJob API."
+  },
+  {
+    "v": "1.35.56",
+    "t": "This release introduces support for Custom Models in AWS Clean Rooms ML."
+  },
+  {
+    "v": "1.34.147",
+    "t": "Adds SQL query as the source of seed audience for audience generation job."
+  },
+  {
+    "v": "1.34.77",
+    "t": "The release includes a public SDK for AWS Clean Rooms ML APIs, making them globally available to developers worldwide."
+  },
+  {
+    "v": "1.33.8",
+    "t": "Updated service title from cleanroomsml to CleanRoomsML."
+  },
+  {
+    "v": "1.33.3",
+    "t": "Public Preview SDK release of AWS Clean Rooms ML APIs"
+  }
+]

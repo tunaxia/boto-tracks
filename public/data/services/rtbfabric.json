@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.71",
+    "t": "Added LogSettings and LinkAttribute fields to external links"
+  },
+  {
+    "v": "1.40.63",
+    "t": "RTB Fabric documentation update."
+  },
+  {
+    "v": "1.40.59",
+    "t": "Add support for custom rate limits."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update for general availability of AWS RTB Fabric service."
+  }
+]

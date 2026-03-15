@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.42.13",
+    "t": "Blueprint Optimization (BPO) is a new Amazon Bedrock Data Automation (BDA) capability that improves blueprint inference accuracy using example content assets and ground truth data. BPO works by generating better instructions for fields in the Blueprint using provided data."
+  },
+  {
+    "v": "1.41.1",
+    "t": "Added support for Synchronous project type and PII Detection and Redaction"
+  },
+  {
+    "v": "1.40.71",
+    "t": "Added support for Language Expansion feature for BDA Audio modality."
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.40",
+    "t": "Added support for configurable Speaker Labeling and Channel Labeling features for Audio modality."
+  },
+  {
+    "v": "1.38.18",
+    "t": "Add support for VIDEO modality to BlueprintType enum."
+  },
+  {
+    "v": "1.38.8",
+    "t": "Added support for Custom output and blueprints for AUDIO data types."
+  },
+  {
+    "v": "1.38.2",
+    "t": "Added support for modality routing and modality enablement on CreateDataAutomationProject and UpdateDataAutomationProject APIs"
+  },
+  {
+    "v": "1.37.4",
+    "t": "Renamed and added new StandardConfiguration enums. Added support to update EncryptionConfiguration in UpdateBlueprint and UpdateDataAutomation APIs. Changed HttpStatus code for DeleteBlueprint and DeleteDataAutomationProject APIs to 200 from 204. Added APIs to support tagging."
+  },
+  {
+    "v": "1.35.86",
+    "t": "Documentation update for Amazon Bedrock Data Automation"
+  },
+  {
+    "v": "1.35.75",
+    "t": "Release Bedrock Data Automation SDK"
+  }
+]

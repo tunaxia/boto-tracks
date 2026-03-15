@@ -1,0 +1,38 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.79",
+    "t": "API and documentation updates for AWS MigrationHub related to adding support for listing migration task updates and associating, disassociating and listing source resources"
+  },
+  {
+    "v": "1.15.40",
+    "t": "Update mgh client to latest version"
+  },
+  {
+    "v": "1.13.48",
+    "t": "Update mgh client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update mgh client to latest version"
+  },
+  {
+    "v": "1.10.32",
+    "t": "Update mgh client to latest version"
+  },
+  {
+    "v": "1.9.6",
+    "t": "Update mgh client to latest version"
+  },
+  {
+    "v": "1.6.1",
+    "t": "Update mgh client to latest version"
+  }
+]

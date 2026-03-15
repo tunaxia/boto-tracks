@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.42.45",
+    "t": "Add the missing event type for WhatsApp"
+  },
+  {
+    "v": "1.41.6",
+    "t": "This release added support for new WhatsApp channel and Journey type outbound campaign"
+  },
+  {
+    "v": "1.41.0",
+    "t": "This release added support for ring timer configuration for campaign calls."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Updated Amazon Connect Outbound Campaigns V2 SDK to support Preview Outbound Mode"
+  },
+  {
+    "v": "1.38.36",
+    "t": "Added PutInstanceCommunicationLimits and GetInstanceCommunicationLimits APIs"
+  },
+  {
+    "v": "1.35.72",
+    "t": "Amazon Connect Outbound Campaigns V2 / Features : Adds support for Event-Triggered Campaigns."
+  },
+  {
+    "v": "1.35.63",
+    "t": "Added Amazon Connect Outbound Campaigns V2 SDK."
+  }
+]

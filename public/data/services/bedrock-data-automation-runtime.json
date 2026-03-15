@@ -1,0 +1,34 @@
+[
+  {
+    "v": "1.42.44",
+    "t": "Add OutputConfiguration to InvokeDataAutomation input and output to support S3 output"
+  },
+  {
+    "v": "1.41.2",
+    "t": "Adding new fields to GetDataAutomationStatus: jobSubmissionTime, jobCompletionTime, and jobDurationInSeconds"
+  },
+  {
+    "v": "1.41.1",
+    "t": "Bedrock Data Automation Runtime Sync API"
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.18",
+    "t": "Add AssetProcessingConfiguration for video segment to InputConfiguration"
+  },
+  {
+    "v": "1.37.4",
+    "t": "Added a mandatory parameter DataAutomationProfileArn to support for cross region inference for InvokeDataAutomationAsync API. Renamed DataAutomationArn to DataAutomationProjectArn. Added APIs to support tagging."
+  },
+  {
+    "v": "1.35.86",
+    "t": "Documentation update for Amazon Bedrock Data Automation Runtime"
+  },
+  {
+    "v": "1.35.75",
+    "t": "Release Bedrock Data Automation Runtime SDK"
+  }
+]

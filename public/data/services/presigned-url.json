@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.8.16",
+    "t": "Fixes a bug where content-type would be set on presigned requests for query services."
+  }
+]

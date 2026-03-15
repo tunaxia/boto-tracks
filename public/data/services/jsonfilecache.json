@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.23.28",
+    "t": "Add support for __delitem__ in JSONFileCache"
+  }
+]

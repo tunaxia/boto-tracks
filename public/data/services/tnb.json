@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.34.151",
+    "t": "This release adds Network Service Update, through which customers will be able to update their instantiated networks to a new network package. See the documentation for limitations. The release also enhances the Get network operation API to return parameter overrides used during the operation."
+  },
+  {
+    "v": "1.29.90",
+    "t": "This release adds tagging support to the following Network Instance APIs : Instantiate, Update, Terminate."
+  },
+  {
+    "v": "1.29.76",
+    "t": "This is the initial SDK release for AWS Telco Network Builder (TNB). AWS Telco Network Builder is a network automation service that helps you deploy and manage telecom networks."
+  }
+]

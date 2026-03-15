@@ -1,0 +1,78 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.0",
+    "t": "This release updates resource Id with alphanumeric constraint, including Asset id, Revision id, Data Set id, Job id, and Event Action id."
+  },
+  {
+    "v": "1.38.26",
+    "t": "This release adds Tag support for Event Action resource, through which customers can create event actions with Tags and retrieve event actions with Tags."
+  },
+  {
+    "v": "1.35.43",
+    "t": "This release adds Data Grant support, through which customers can programmatically create data grants to share with other AWS accounts and accept data grants from other AWS accounts."
+  },
+  {
+    "v": "1.31.85",
+    "t": "Removed Required trait for DataSet.OriginDetails.ProductId."
+  },
+  {
+    "v": "1.31.80",
+    "t": "Updated SendDataSetNotificationRequest Comment to be maximum length 4096."
+  },
+  {
+    "v": "1.31.74",
+    "t": "We added a new API action: SendDataSetNotification."
+  },
+  {
+    "v": "1.29.106",
+    "t": "This release updates the value of MaxResults."
+  },
+  {
+    "v": "1.29.91",
+    "t": "This release enables data providers to license direct access to S3 objects encrypted with Customer Managed Keys (CMK) in AWS KMS through AWS Data Exchange. Subscribers can use these keys to decrypt, then use the encrypted S3 objects shared with them, without creating or managing copies."
+  },
+  {
+    "v": "1.29.20",
+    "t": "This release enables data providers to license direct access to data in their Amazon S3 buckets or AWS Lake Formation data lakes through AWS Data Exchange. Subscribers get read-only access to the data and can use it in downstream AWS services, like Amazon Athena, without creating or managing copies."
+  },
+  {
+    "v": "1.27.68",
+    "t": "Documentation updates for AWS Data Exchange."
+  },
+  {
+    "v": "1.24.20",
+    "t": "This feature enables data providers to use the RevokeRevision operation to revoke subscriber access to a given revision. Subscribers are unable to interact with assets within a revoked revision."
+  },
+  {
+    "v": "1.23.16",
+    "t": "This release enables providers and subscribers to use Data Set, Job, and Asset operations to work with API assets from Amazon API Gateway. In addition, this release enables subscribers to use the SendApiAsset operation to invoke a provider's Amazon API Gateway API that they are entitled to."
+  },
+  {
+    "v": "1.21.65",
+    "t": "This release adds support for our public preview of AWS Data Exchange for Amazon Redshift. This enables data providers to list products including AWS Data Exchange datashares for Amazon Redshift, giving subscribers read-only access to provider data in Amazon Redshift."
+  },
+  {
+    "v": "1.21.52",
+    "t": "This release enables subscribers to set up automatic exports of newly published revisions using the new EventAction API."
+  },
+  {
+    "v": "1.20.4",
+    "t": "Update dataexchange client to latest version"
+  },
+  {
+    "v": "1.17.4",
+    "t": "Update dataexchange client to latest version"
+  },
+  {
+    "v": "1.15.47",
+    "t": "Update dataexchange client to latest version"
+  },
+  {
+    "v": "1.13.17",
+    "t": "Update dataexchange client to latest version"
+  }
+]

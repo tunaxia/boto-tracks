@@ -1,0 +1,114 @@
+[
+  {
+    "v": "1.42.45",
+    "t": "Allow cross account v5 in put data lake settings"
+  },
+  {
+    "v": "1.42.29",
+    "t": "API Changes for GTCForLocation feature. Includes a new API, GetTemporaryDataLocationCredentials and updates to the APIs RegisterResource and UpdateResource"
+  },
+  {
+    "v": "1.41.1",
+    "t": "Added ServiceIntegrations as a request parameter for CreateLakeFormationIdentityCenterConfigurationRequest and UpdateLakeFormationIdentityCenterConfigurationRequest and response parameter for DescribeLakeFormationIdentityCenterConfigurationResponse"
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.37.13",
+    "t": "This release added \"condition\" to LakeFormation OptIn APIs, also added WithPrivilegedAccess flag to RegisterResource and DescribeResource."
+  },
+  {
+    "v": "1.35.74",
+    "t": "This release added two new LakeFormation Permissions (CREATE_CATALOG, SUPER_USER) and added Id field for CatalogResource. It also added new conditon and expression field."
+  },
+  {
+    "v": "1.35.55",
+    "t": "API changes for new named tag expressions feature."
+  },
+  {
+    "v": "1.34.108",
+    "t": "Introduces a new API, GetDataLakePrincipal, that returns the identity of the invoking principal"
+  },
+  {
+    "v": "1.34.85",
+    "t": "This release adds Lake Formation managed RAM support for the 4 APIs - \"DescribeLakeFormationIdentityCenterConfiguration\", \"CreateLakeFormationIdentityCenterConfiguration\", \"DescribeLakeFormationIdentityCenterConfiguration\", and \"DeleteLakeFormationIdentityCenterConfiguration\""
+  },
+  {
+    "v": "1.34.7",
+    "t": "This release adds additional configurations on GetTemporaryGlueTableCredentials for Query Session Context."
+  },
+  {
+    "v": "1.32.7",
+    "t": "This release adds four new APIs \"DescribeLakeFormationIdentityCenterConfiguration\", \"CreateLakeFormationIdentityCenterConfiguration\", \"DescribeLakeFormationIdentityCenterConfiguration\", and \"DeleteLakeFormationIdentityCenterConfiguration\", and also updates the corresponding documentation."
+  },
+  {
+    "v": "1.31.55",
+    "t": "This release adds three new API support \"CreateLakeFormationOptIn\", \"DeleteLakeFormationOptIn\" and \"ListLakeFormationOptIns\", and also updates the corresponding documentation."
+  },
+  {
+    "v": "1.31.4",
+    "t": "Adds supports for ReadOnlyAdmins and AllowFullTableExternalDataAccess. Adds NESTED_PERMISSION and NESTED_CELL_PERMISSION to SUPPORTED_PERMISSION_TYPES enum. Adds CREATE_LF_TAG on catalog resource and ALTER, DROP, and GRANT_WITH_LF_TAG_EXPRESSION on LF Tag resource."
+  },
+  {
+    "v": "1.29.105",
+    "t": "Add support for database-level federation"
+  },
+  {
+    "v": "1.29.90",
+    "t": "This release updates the documentation regarding Get/Update DataCellsFilter"
+  },
+  {
+    "v": "1.29.87",
+    "t": "This release adds two new API support \"GetDataCellsFiler\" and \"UpdateDataCellsFilter\", and also updates the corresponding documentation."
+  },
+  {
+    "v": "1.29.67",
+    "t": "This release removes the LFTagpolicyResource expression limits."
+  },
+  {
+    "v": "1.29.9",
+    "t": "This release adds a new parameter \"Parameters\" in the DataLakeSettings."
+  },
+  {
+    "v": "1.27.54",
+    "t": "This release adds a new API support \"AssumeDecoratedRoleWithSAML\" and also release updates the corresponding documentation."
+  },
+  {
+    "v": "1.24.24",
+    "t": "The release fixes the incorrect permissions called out in the documentation - DESCRIBE_TAG, ASSOCIATE_TAG, DELETE_TAG, ALTER_TAG. This trebuchet release fixes the corresponding SDK and documentation."
+  },
+  {
+    "v": "1.23.49",
+    "t": "Add support for calling Update Table Objects without a TransactionId."
+  },
+  {
+    "v": "1.23.29",
+    "t": "Add new APIs for 3rd Party Support for Lake Formation"
+  },
+  {
+    "v": "1.23.17",
+    "t": "This release adds support for row and cell-based access control in Lake Formation. It also adds support for Lake Formation Governed Tables, which support ACID transactions and automatic storage optimizations."
+  },
+  {
+    "v": "1.20.69",
+    "t": "This release adds Tag Based Access Control to AWS Lake Formation service"
+  },
+  {
+    "v": "1.17.46",
+    "t": "Update lakeformation client to latest version"
+  },
+  {
+    "v": "1.17.18",
+    "t": "Update lakeformation client to latest version"
+  },
+  {
+    "v": "1.12.204",
+    "t": "Update lakeformation client to latest version"
+  }
+]

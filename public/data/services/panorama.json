@@ -1,0 +1,34 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.53",
+    "t": "Added AllowMajorVersionUpdate option to OTAJobConfig to make appliance software major version updates opt-in."
+  },
+  {
+    "v": "1.27.90",
+    "t": "Pause and resume camera stream processing with SignalApplicationInstanceNodeInstances. Reboot an appliance with CreateJobForDevices. More application state information in DescribeApplicationInstance response."
+  },
+  {
+    "v": "1.27.60",
+    "t": "Support sorting and filtering in ListDevices API, and add more fields to device listings and single device detail"
+  },
+  {
+    "v": "1.24.35",
+    "t": "Added Brand field to device listings."
+  },
+  {
+    "v": "1.24.8",
+    "t": "Added NTP server configuration parameter to ProvisionDevice operation. Added alternate software fields to DescribeDevice response"
+  },
+  {
+    "v": "1.22.0",
+    "t": "General availability for AWS Panorama. AWS SDK for Panorama includes APIs to manage your devices and nodes, and deploy computer vision applications to the edge. For more information, see the AWS Panorama documentation at http://docs.aws.amazon.com/panorama"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.21.35",
+    "t": "Added support for Sigv4a Signing Algorithm"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.160",
+    "t": "This release adds support for encryption via customer managed keys."
+  },
+  {
+    "v": "1.29.80",
+    "t": "This release adds the description field on ListAnomaliesForInsight and DescribeAnomaly API responses for proactive anomalies."
+  },
+  {
+    "v": "1.29.62",
+    "t": "This release adds filter support ListAnomalyForInsight API."
+  },
+  {
+    "v": "1.27.95",
+    "t": "This release adds information about the resources DevOps Guru is analyzing."
+  },
+  {
+    "v": "1.27.84",
+    "t": "This release adds filter feature on AddNotificationChannel API, enable customer to configure the SNS notification messages by Severity or MessageTypes"
+  },
+  {
+    "v": "1.27.33",
+    "t": "Added new APIs for log anomaly detection feature."
+  },
+  {
+    "v": "1.24.39",
+    "t": "This release adds new APIs DeleteInsight to deletes the insight along with the associated anomalies, events and recommendations."
+  },
+  {
+    "v": "1.24.13",
+    "t": "Amazon DevOps Guru now integrates with Amazon CodeGuru Profiler. You can view CodeGuru Profiler recommendations for your AWS Lambda function in DevOps Guru. This feature is enabled by default for new customers as of 3/4/2022. Existing customers can enable this feature with UpdateEventSourcesConfig."
+  },
+  {
+    "v": "1.23.25",
+    "t": "Adds Tags support to DescribeOrganizationResourceCollectionHealth"
+  },
+  {
+    "v": "1.23.18",
+    "t": "DevOps Guru now provides detailed, database-specific analyses of performance issues and recommends corrective actions for Amazon Aurora database instances with Performance Insights turned on. You can also use AWS tags to choose which resources to analyze and define your applications."
+  },
+  {
+    "v": "1.23.5",
+    "t": "Add support for cross account APIs."
+  },
+  {
+    "v": "1.20.108",
+    "t": "Add AnomalyReportedTimeRange field to include open and close time of anomalies."
+  },
+  {
+    "v": "1.20.65",
+    "t": "Added GetCostEstimation and StartCostEstimation to get the monthly resource usage cost and added ability to view resource health by AWS service name and to search insights be AWS service name."
+  },
+  {
+    "v": "1.20.9",
+    "t": "Update devops-guru client to latest version"
+  },
+  {
+    "v": "1.19.51",
+    "t": "Update devops-guru client to latest version"
+  },
+  {
+    "v": "1.19.36",
+    "t": "Update devops-guru client to latest version"
+  },
+  {
+    "v": "1.19.27",
+    "t": "Update devops-guru client to latest version"
+  }
+]

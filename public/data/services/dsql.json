@@ -1,0 +1,38 @@
+[
+  {
+    "v": "1.41.1",
+    "t": "Added clusterVpcEndpoint field to GetVpcEndpointServiceName API response, returning the VPC connection endpoint for the cluster"
+  },
+  {
+    "v": "1.40.70",
+    "t": "Cluster endpoint added to CreateCluster and GetCluster API responses"
+  },
+  {
+    "v": "1.40.58",
+    "t": "Add support for resource-based policies for Aurora DSQL clusters. This will enable you to implement Block Public Access (BPA) which will help restrict access to your Aurora DSQL public or VPC endpoints."
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.22",
+    "t": "Features: support for customer managed encryption keys"
+  },
+  {
+    "v": "1.38.19",
+    "t": "CreateMultiRegionCluster and DeleteMultiRegionCluster APIs removed"
+  },
+  {
+    "v": "1.38.15",
+    "t": "CreateMultiRegionClusters and DeleteMultiRegionClusters APIs marked as deprecated. Introduced new multi-Region clusters creation experience through multiRegionProperties parameter in CreateCluster API."
+  },
+  {
+    "v": "1.37.35",
+    "t": "Added GetClusterEndpointService API. The new API allows retrieving endpoint service name specific to a cluster."
+  },
+  {
+    "v": "1.35.74",
+    "t": "Add new API operations for Amazon Aurora DSQL. Amazon Aurora DSQL is a serverless, distributed SQL database with virtually unlimited scale, highest availability, and zero infrastructure management."
+  }
+]

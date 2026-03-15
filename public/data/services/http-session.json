@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.42.43",
+    "t": "Set blocksize from default 16KB to 128KB if urllib3 v2 is installed"
+  },
+  {
+    "v": "1.12.17",
+    "t": "Added the ability to enable TCP Keepalive via the shared config file's ``tcp_keepalive`` option."
+  }
+]

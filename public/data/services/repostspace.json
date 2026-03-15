@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.5",
+    "t": "This release introduces Channels functionality with CreateChannel, GetChannel, ListChannels, and UpdateChannel operations. Channels provide dedicated collaboration spaces where teams can organize discussions and knowledge by projects, business units, or areas of responsibility."
+  },
+  {
+    "v": "1.35.46",
+    "t": "Adds the BatchAddRole and BatchRemoveRole APIs."
+  },
+  {
+    "v": "1.32.7",
+    "t": "Initial release of AWS re:Post Private"
+  }
+]

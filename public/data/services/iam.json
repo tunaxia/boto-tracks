@@ -1,0 +1,278 @@
+[
+  {
+    "v": "1.42.64",
+    "t": "Added support for CloudWatch Logs long-term API keys, currently available in Preview"
+  },
+  {
+    "v": "1.42.4",
+    "t": "Adding the ExpirationTime attribute to the delegation request resource."
+  },
+  {
+    "v": "1.41.0",
+    "t": "Added the EnableOutboundWebIdentityFederation, DisableOutboundWebIdentityFederation and GetOutboundWebIdentityFederationInfo APIs for the IAM outbound federation feature."
+  },
+  {
+    "v": "1.40.76",
+    "t": "Added the AssociateDelegationRequest, GetDelegationRequest, AcceptDelegationRequest, RejectDelegatonRequest, ListDelegationRequests, UpdateDelegationRequest, SendDelegationToken and GetHumanReadableSummary APIs for the IAM temporary delegation feature."
+  },
+  {
+    "v": "1.40.70",
+    "t": "Added CreateDelegationRequest API, which is not available for general use at this time."
+  },
+  {
+    "v": "1.40.60",
+    "t": "Fixed missing SummaryMap keys in GetAccountSummary response that were being filtered out during deserialization in AWS Java SDK v2"
+  },
+  {
+    "v": "1.40.57",
+    "t": "Updated OIDC and SAML apis to reject multiple simultaneous requests to change a unique object."
+  },
+  {
+    "v": "1.39.0",
+    "t": "Updated IAM ServiceSpecificCredential support to include expiration, API Key output format instead of username and password for services that will support API keys, and the ability to list credentials for all users in the account for a given service configuration."
+  },
+  {
+    "v": "1.38.14",
+    "t": "Updating the endpoint list for the Identity and access management (IAM) service"
+  },
+  {
+    "v": "1.37.22",
+    "t": "Update IAM dual-stack endpoints for BJS, IAD and PDT partitions"
+  },
+  {
+    "v": "1.36.13",
+    "t": "This release adds support for accepting encrypted SAML assertions. Customers can now configure their identity provider to encrypt the SAML assertions it sends to IAM."
+  },
+  {
+    "v": "1.35.61",
+    "t": "This release includes support for five new APIs and changes to existing APIs that give AWS Organizations customers the ability to use temporary root credentials, targeted to member accounts in the organization."
+  },
+  {
+    "v": "1.34.162",
+    "t": "Make the LastUsedDate field in the GetAccessKeyLastUsed response optional. This may break customers who only call the API for access keys with a valid LastUsedDate. This fixes a deserialization issue for access keys without a LastUsedDate, because the field was marked as required but could be null."
+  },
+  {
+    "v": "1.34.152",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.83",
+    "t": "For CreateOpenIDConnectProvider API, the ThumbprintList parameter is no longer required."
+  },
+  {
+    "v": "1.34.8",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.31.79",
+    "t": "Add partitional endpoint for iso-e."
+  },
+  {
+    "v": "1.31.71",
+    "t": "Updates to GetAccessKeyLastUsed action to replace NoSuchEntity error with AccessDeniedException error."
+  },
+  {
+    "v": "1.31.70",
+    "t": "Add the partitional endpoint for IAM in iso-f."
+  },
+  {
+    "v": "1.31.3",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.29.161",
+    "t": "Support for a new API \"GetMFADevice\" to present MFA device metadata such as device certifications"
+  },
+  {
+    "v": "1.29.155",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.29.148",
+    "t": "This release updates the AccountAlias regex pattern with the same length restrictions enforced by the length constraint."
+  },
+  {
+    "v": "1.29.97",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.29.91",
+    "t": "Documentation only updates to correct customer-reported issues"
+  },
+  {
+    "v": "1.29.62",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.28.2",
+    "t": "Doc only update that corrects instances of CLI not using an entity."
+  },
+  {
+    "v": "1.27.90",
+    "t": "Documentation updates for the AWS Identity and Access Management API Reference."
+  },
+  {
+    "v": "1.27.59",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.27.5",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.24.2",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.21.46",
+    "t": "Added changes to OIDC API about not using port numbers in the URL."
+  },
+  {
+    "v": "1.21.4",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.20.107",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.20.86",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.20.77",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.20.76",
+    "t": "Add pagination to ListUserTags operation"
+  },
+  {
+    "v": "1.20.40",
+    "t": "AWS Identity and Access Management GetAccessKeyLastUsed API will throw a custom error if customer public key is not found for access keys."
+  },
+  {
+    "v": "1.20.35",
+    "t": "Documentation updates for IAM operations and descriptions."
+  },
+  {
+    "v": "1.20.29",
+    "t": "Documentation updates for AWS Identity and Access Management (IAM)."
+  },
+  {
+    "v": "1.20.7",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.17.10",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.16.22",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.15.37",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.14.8",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.13.21",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.12.230",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.12.188",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.12.174",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.12.161",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.12.143",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.12.137",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.12.129",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.12.62",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.12.46",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.10.57",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.9.19",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.7.13",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.5.55",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.5.41",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.5.19",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.4.93",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.4.91",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.4.48",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.4.35",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.4.31",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.4.20",
+    "t": "Add missing paginators. Fixes `#919 <https://github.com/boto/botocore/issues/919>`__."
+  },
+  {
+    "v": "1.4.18",
+    "t": "Update iam client to latest version"
+  },
+  {
+    "v": "1.4.3",
+    "t": "Update model to latest version"
+  }
+]

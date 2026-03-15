@@ -1,0 +1,54 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.12",
+    "t": "Added the lastUserId parameter to the ListDevices and GetDevice API."
+  },
+  {
+    "v": "1.38.44",
+    "t": "Remove Tags field from Get API responses"
+  },
+  {
+    "v": "1.38.33",
+    "t": "Add ConflictException to UpdateEnvironment API"
+  },
+  {
+    "v": "1.37.20",
+    "t": "Deprecate tags field in Get API responses"
+  },
+  {
+    "v": "1.36.21",
+    "t": "Update Environment and Device name field definitions"
+  },
+  {
+    "v": "1.36.4",
+    "t": "Rename WorkSpaces Web to WorkSpaces Secure Browser"
+  },
+  {
+    "v": "1.36.0",
+    "t": "Mark type in MaintenanceWindow as required."
+  },
+  {
+    "v": "1.34.145",
+    "t": "Documentation update for WorkSpaces Thin Client."
+  },
+  {
+    "v": "1.34.133",
+    "t": "This release adds the deviceCreationTags field to CreateEnvironment API input, UpdateEnvironment API input and GetEnvironment API output."
+  },
+  {
+    "v": "1.34.82",
+    "t": "Adding tags field to SoftwareSet. Removing tags fields from Summary objects. Changing the list of exceptions in tagging APIs. Fixing an issue where the SDK returns empty tags in Get APIs."
+  },
+  {
+    "v": "1.34.64",
+    "t": "Removed unused parameter kmsKeyArn from UpdateDeviceRequest"
+  },
+  {
+    "v": "1.32.7",
+    "t": "Initial release of Amazon WorkSpaces Thin Client"
+  }
+]

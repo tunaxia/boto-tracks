@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.159",
+    "t": "AppInstanceBots can be configured to be invoked or not using the Target or the CHIME.mentions attribute for ChannelMessages"
+  },
+  {
+    "v": "1.29.98",
+    "t": "AppInstanceBots can be used to add a bot powered by Amazon Lex to chat channels.  ExpirationSettings provides automatic resource deletion for AppInstanceUsers."
+  },
+  {
+    "v": "1.22.4",
+    "t": "The Amazon Chime SDK now supports push notifications through Amazon Pinpoint"
+  },
+  {
+    "v": "1.21.36",
+    "t": "Documentation updates for Chime"
+  },
+  {
+    "v": "1.21.16",
+    "t": "The Amazon Chime SDK Identity APIs allow software developers to create and manage unique instances of their messaging applications."
+  }
+]

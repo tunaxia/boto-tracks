@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.13.25",
+    "t": "Add 405 case to metadata fetching logic."
+  }
+]

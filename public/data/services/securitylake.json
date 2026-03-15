@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.35.97",
+    "t": "Doc only update for ServiceName that fixes several customer-reported issues"
+  },
+  {
+    "v": "1.35.40",
+    "t": "This release updates request validation regex for resource ARNs."
+  },
+  {
+    "v": "1.34.125",
+    "t": "This release updates request validation regex to account for non-commercial aws partitions."
+  },
+  {
+    "v": "1.34.53",
+    "t": "Add capability to update the Data Lake's MetaStoreManager Role in order to perform required data lake updates to use Iceberg table format in their data lake or update the role for any other reason."
+  },
+  {
+    "v": "1.34.41",
+    "t": "Documentation updates for Security Lake"
+  },
+  {
+    "v": "1.31.36",
+    "t": "Remove incorrect regex enforcement on pagination tokens."
+  },
+  {
+    "v": "1.31.8",
+    "t": "Adding support for Tags on Create and Resource Tagging API."
+  },
+  {
+    "v": "1.29.92",
+    "t": "Make Create/Get/ListSubscribers APIs return resource share ARN and name so they can be used to validate the RAM resource share to accept. GetDatalake can be used to track status of UpdateDatalake and DeleteDatalake requests."
+  },
+  {
+    "v": "1.29.42",
+    "t": "Allow CreateSubscriber API to take string input that allows setting more descriptive SubscriberDescription field. Make souceTypes field required in model level for UpdateSubscriberRequest as it is required for every API call on the backend. Allow ListSubscribers take any String as nextToken param."
+  },
+  {
+    "v": "1.29.19",
+    "t": "Amazon Security Lake automatically centralizes security data from cloud, on-premises, and custom sources into a purpose-built data lake stored in your account. Security Lake makes it easier to analyze security data, so you can improve the protection of your workloads, applications, and data"
+  }
+]

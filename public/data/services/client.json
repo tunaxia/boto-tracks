@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.21.18",
+    "t": "Improve client performance by caching _alias_event_name on EventAliaser"
+  }
+]

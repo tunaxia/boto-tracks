@@ -1,0 +1,134 @@
+[
+  {
+    "v": "1.41.4",
+    "t": "Network Firewall release of the Proxy feature."
+  },
+  {
+    "v": "1.41.0",
+    "t": "Partner Managed Rulegroup feature support"
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.39",
+    "t": "Network Firewall now introduces Reject and Alert action support for stateful domain list rule groups, providing customers with more granular control over their network traffic."
+  },
+  {
+    "v": "1.40.33",
+    "t": "Network Firewall now prevents TLS handshakes with the target server until after the Server Name Indication (SNI) has been seen and verified. The monitoring dashboard now provides deeper insights into PrivateLink endpoint candidates and offers filters based on IP addresses and protocol."
+  },
+  {
+    "v": "1.38.38",
+    "t": "Release of Active Threat Defense in Network Firewall"
+  },
+  {
+    "v": "1.38.37",
+    "t": "You can now create firewalls using a Transit Gateway instead of a VPC, resulting in a TGW attachment."
+  },
+  {
+    "v": "1.38.30",
+    "t": "You can now monitor flow and alert log metrics from the Network Firewall console."
+  },
+  {
+    "v": "1.38.25",
+    "t": "You can now use VPC endpoint associations to create multiple firewall endpoints for a single firewall."
+  },
+  {
+    "v": "1.37.17",
+    "t": "You can now use flow operations to either flush or capture traffic monitored in your firewall's flow table."
+  },
+  {
+    "v": "1.36.24",
+    "t": "This release introduces Network Firewall's Automated Domain List feature. New APIs include UpdateFirewallAnalysisSettings, StartAnalysisReport, GetAnalysisReportResults, and ListAnalysisReports. These allow customers to enable analysis on firewalls to identify and report frequently accessed domain."
+  },
+  {
+    "v": "1.35.88",
+    "t": "Dual-stack endpoints are now supported."
+  },
+  {
+    "v": "1.35.52",
+    "t": "AWS Network Firewall now supports configuring TCP idle timeout"
+  },
+  {
+    "v": "1.34.149",
+    "t": "You can now log events that are related to TLS inspection, in addition to the existing alert and flow logging."
+  },
+  {
+    "v": "1.31.77",
+    "t": "This release introduces the stateless rule analyzer, which enables you to analyze your stateless rules for asymmetric routing."
+  },
+  {
+    "v": "1.31.72",
+    "t": "Network Firewall now supports inspection of outbound SSL/TLS traffic."
+  },
+  {
+    "v": "1.31.38",
+    "t": "Network Firewall increasing pagination token string length"
+  },
+  {
+    "v": "1.29.127",
+    "t": "This release adds support for the Suricata REJECT option in midstream exception configurations."
+  },
+  {
+    "v": "1.29.126",
+    "t": "AWS Network Firewall now supports policy level HOME_NET variable overrides."
+  },
+  {
+    "v": "1.29.107",
+    "t": "AWS Network Firewall now supports IPv6-only subnets."
+  },
+  {
+    "v": "1.29.103",
+    "t": "AWS Network Firewall added TLS inspection configurations to allow TLS traffic inspection."
+  },
+  {
+    "v": "1.29.51",
+    "t": "Network Firewall now allows creation of dual stack endpoints, enabling inspection of IPv6 traffic."
+  },
+  {
+    "v": "1.29.46",
+    "t": "Network Firewall now supports the Suricata rule action reject, in addition to the actions pass, drop, and alert."
+  },
+  {
+    "v": "1.29.39",
+    "t": "AWS Network Firewall now provides status messages for firewalls to help you troubleshoot when your endpoint fails."
+  },
+  {
+    "v": "1.27.87",
+    "t": "StreamExceptionPolicy configures how AWS Network Firewall processes traffic when a network connection breaks midstream"
+  },
+  {
+    "v": "1.27.35",
+    "t": "Network Firewall now supports referencing dynamic IP sets from stateful rule groups, for IP sets stored in Amazon VPC prefix lists."
+  },
+  {
+    "v": "1.25.3",
+    "t": "AWS Network Firewall adds support for stateful threat signature AWS managed rule groups."
+  },
+  {
+    "v": "1.25.1",
+    "t": "AWS Network Firewall now enables customers to use a customer managed AWS KMS key for the encryption of their firewall resources."
+  },
+  {
+    "v": "1.23.23",
+    "t": "This release adds support for managed rule groups."
+  },
+  {
+    "v": "1.21.52",
+    "t": "This release adds support for strict ordering for stateful rule groups. Using strict ordering, stateful rules are evaluated in the exact order in which you provide them."
+  },
+  {
+    "v": "1.20.26",
+    "t": "Update network-firewall client to latest version"
+  },
+  {
+    "v": "1.20.22",
+    "t": "Update network-firewall client to latest version"
+  },
+  {
+    "v": "1.19.20",
+    "t": "Update network-firewall client to latest version"
+  }
+]

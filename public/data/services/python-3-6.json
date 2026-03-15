@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.4.87",
+    "t": "Adds compatibility with the new Python 3.6 HTTPConnection."
+  }
+]

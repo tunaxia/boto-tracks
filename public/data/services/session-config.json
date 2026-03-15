@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.12.39",
+    "t": "Added the default session configuration tuples back to session.session_vars_map."
+  }
+]

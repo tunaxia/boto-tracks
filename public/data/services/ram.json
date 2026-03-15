@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.42.59",
+    "t": "Resource owners can now specify ResourceShareConfiguration request parameter for CreateResourceShare API including RetainSharingOnAccountLeaveOrganization boolean parameter"
+  },
+  {
+    "v": "1.42.43",
+    "t": "Added ListSourceAssociations API. Allows RAM resource share owners to list source associations that determine which sources can access resources through service principal associations. Supports filtering by resource share ARN, source ID, source type, or status, with pagination."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.31.6",
+    "t": "This release adds support for securely sharing with AWS service principals."
+  },
+  {
+    "v": "1.29.116",
+    "t": "This release adds support for customer managed permissions. Customer managed permissions enable customers to author and manage tailored permissions for resources shared using RAM."
+  },
+  {
+    "v": "1.29.46",
+    "t": "Enabled FIPS aws-us-gov endpoints in SDK."
+  },
+  {
+    "v": "1.24.23",
+    "t": "Document improvements to the RAM API operations and parameter descriptions."
+  },
+  {
+    "v": "1.23.36",
+    "t": "This release adds the ListPermissionVersions API which lists the versions for a given permission."
+  },
+  {
+    "v": "1.23.19",
+    "t": "This release adds the ability to use the new ResourceRegionScope parameter on List operations that return lists of resources or resource types. This new parameter filters the results by letting you differentiate between global or regional resource types."
+  },
+  {
+    "v": "1.21.38",
+    "t": "A minor text-only update that fixes several customer issues."
+  },
+  {
+    "v": "1.20.92",
+    "t": "AWS Resource Access Manager (RAM) is releasing new field isResourceTypeDefault in ListPermissions and GetPermission response, and adding permissionArn parameter to GetResourceShare request to filter by permission attached"
+  },
+  {
+    "v": "1.20.48",
+    "t": "Documentation updates for AWS RAM resource sharing"
+  },
+  {
+    "v": "1.15.45",
+    "t": "Update ram client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update ram client to latest version"
+  },
+  {
+    "v": "1.12.231",
+    "t": "Update ram client to latest version"
+  },
+  {
+    "v": "1.12.46",
+    "t": "Update ram client to latest version"
+  }
+]

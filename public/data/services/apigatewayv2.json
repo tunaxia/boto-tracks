@@ -1,0 +1,86 @@
+[
+  {
+    "v": "1.41.0",
+    "t": "Support for API Gateway portals and portal products."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.36",
+    "t": "Documentation updates for Amazon API Gateway"
+  },
+  {
+    "v": "1.38.29",
+    "t": "Adds support to create routing rules and set the routing mode for a custom domain name."
+  },
+  {
+    "v": "1.37.23",
+    "t": "Adds support for setting the IP address type to allow dual-stack or IPv4 address types to invoke your APIs or domain names."
+  },
+  {
+    "v": "1.36.17",
+    "t": "Documentation updates for Amazon API Gateway"
+  },
+  {
+    "v": "1.31.10",
+    "t": "Documentation updates for Amazon API Gateway."
+  },
+  {
+    "v": "1.21.20",
+    "t": "Adding support for ACM imported or private CA certificates for mTLS enabled domain names"
+  },
+  {
+    "v": "1.19.45",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.18.0",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.17.57",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.17.47",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.15.42",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.15.27",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.15.20",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.13.33",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.12.188",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.12.177",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.12.175",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.12.105",
+    "t": "Update apigatewayv2 client to latest version"
+  },
+  {
+    "v": "1.12.68",
+    "t": "Update apigatewayv2 client to latest version"
+  }
+]

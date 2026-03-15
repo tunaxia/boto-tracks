@@ -1,0 +1,122 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.38",
+    "t": "Adds support for Exportable Public Certificates"
+  },
+  {
+    "v": "1.38.4",
+    "t": "Add support for file-based HTTP domain control validation, available through Amazon CloudFront."
+  },
+  {
+    "v": "1.34.140",
+    "t": "Documentation updates, including fixes for xml formatting, broken links, and ListCertificates description."
+  },
+  {
+    "v": "1.34.116",
+    "t": "add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.29.5",
+    "t": "Support added for requesting elliptic curve certificate key algorithm types P-256 (EC_prime256v1) and P-384 (EC_secp384r1)."
+  },
+  {
+    "v": "1.27.83",
+    "t": "This update returns additional certificate details such as certificate SANs and allows sorting in the ListCertificates API."
+  },
+  {
+    "v": "1.20.112",
+    "t": "Added support for RSA 3072 SSL certificate import"
+  },
+  {
+    "v": "1.20.20",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.17.44",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.15.25",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.12.127",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.12.115",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.10.50",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.10.12",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.10.0",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.9.21",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.9.18",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.8.37",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.8.1",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.7.37",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.5.62",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.5.4",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.4.62",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.4.47",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.4.39",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.4.28",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.4.14",
+    "t": "Update acm client to latest version"
+  },
+  {
+    "v": "1.4.13",
+    "t": "Add tagging support for ACM"
+  }
+]

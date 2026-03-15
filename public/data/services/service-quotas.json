@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.42.10",
+    "t": "Add support for SQ Dashboard Api"
+  },
+  {
+    "v": "1.40.48",
+    "t": "introduces Service Quotas Automatic Management. Users can opt-in to monitoring and managing service quotas, receive notifications when quota usage reaches thresholds, configure notification channels, subscribe to EventBridge events for automation, and view notifications in the AWS Health dashboard."
+  },
+  {
+    "v": "1.38.18",
+    "t": "This release introduces CreateSupportCase operation to SDK."
+  },
+  {
+    "v": "1.37.37",
+    "t": "Add new optional SupportCaseAllowed query parameter to the RequestServiceQuotaIncrease API"
+  },
+  {
+    "v": "1.31.36",
+    "t": "Service Quotas now supports viewing the applied quota value and requesting a quota increase for a specific resource in an AWS account."
+  },
+  {
+    "v": "1.19.41",
+    "t": "Update service-quotas client to latest version"
+  },
+  {
+    "v": "1.12.175",
+    "t": "Update service-quotas client to latest version"
+  }
+]

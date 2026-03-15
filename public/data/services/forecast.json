@@ -1,0 +1,86 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.62",
+    "t": "This release will enable customer select INCREMENTAL as ImportModel in Forecast's CreateDatasetImportJob API. Verified latest SDK containing required attribute, following https://w.amazon.com/bin/view/AWS-Seer/Launch/Trebuchet/"
+  },
+  {
+    "v": "1.27.57",
+    "t": "releasing What-If Analysis APIs and update ARN regex pattern to be more strict in accordance with security recommendation"
+  },
+  {
+    "v": "1.27.1",
+    "t": "Added Format field to Import and Export APIs in Amazon Forecast. Added TimeSeriesSelector to Create Forecast API."
+  },
+  {
+    "v": "1.26.9",
+    "t": "Introduced a new field in Auto Predictor as Time Alignment Boundary. It helps in aligning the timestamps generated during Forecast exports"
+  },
+  {
+    "v": "1.26.6",
+    "t": "New APIs for Monitor that help you understand how your predictors perform over time."
+  },
+  {
+    "v": "1.23.25",
+    "t": "Adds ForecastDimensions field to the DescribeAutoPredictorResponse"
+  },
+  {
+    "v": "1.23.9",
+    "t": "NEW CreateExplanability API that helps you understand how attributes such as price, promotion, etc. contributes to your forecasted values; NEW CreateAutoPredictor API that trains up to 40% more accurate forecasting model, saves up to 50% of retraining time, and provides model level explainability."
+  },
+  {
+    "v": "1.21.37",
+    "t": "Predictor creation now supports selecting an accuracy metric to optimize in AutoML and hyperparameter optimization. This release adds additional accuracy metrics for predictors - AverageWeightedQuantileLoss, MAPE and MASE."
+  },
+  {
+    "v": "1.20.87",
+    "t": "Added optional field AutoMLOverrideStrategy to CreatePredictor API that allows users to customize AutoML strategy. If provided in CreatePredictor request, this field is visible in DescribePredictor and GetAccuracyMetrics responses."
+  },
+  {
+    "v": "1.20.78",
+    "t": "Updated attribute statistics in DescribeDatasetImportJob response to support Long values"
+  },
+  {
+    "v": "1.20.62",
+    "t": "Added new DeleteResourceTree operation that helps in deleting all the child resources of a given resource including the given resource."
+  },
+  {
+    "v": "1.20.56",
+    "t": "This release adds EstimatedTimeRemaining minutes field to the DescribeDatasetImportJob, DescribePredictor, DescribeForecast API response which denotes the time remaining to complete the job IN_PROGRESS."
+  },
+  {
+    "v": "1.20.20",
+    "t": "Update forecast client to latest version"
+  },
+  {
+    "v": "1.19.32",
+    "t": "Update forecast client to latest version"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update forecast client to latest version"
+  },
+  {
+    "v": "1.19.16",
+    "t": "Update forecast client to latest version"
+  },
+  {
+    "v": "1.17.19",
+    "t": "Update forecast client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update forecast client to latest version"
+  },
+  {
+    "v": "1.12.213",
+    "t": "Update forecast client to latest version"
+  }
+]

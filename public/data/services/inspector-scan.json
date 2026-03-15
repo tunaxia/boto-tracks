@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.42.12",
+    "t": "Adds an additional OutputFormat"
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.32.5",
+    "t": "This release adds support for the new Amazon Inspector Scan API. The new Inspector Scan API can synchronously scan SBOMs adhering to the CycloneDX v1.5 format."
+  }
+]

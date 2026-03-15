@@ -1,0 +1,66 @@
+[
+  {
+    "v": "1.42.68",
+    "t": "Network Migration APIs are now publicly available for direct programmatic access. Customers can now call Network Migration APIs directly without going through AWS Transform (ATX), enabling automation, integration with existing tools, and self-service migration workflows."
+  },
+  {
+    "v": "1.42.64",
+    "t": "Adds support for new storeSnapshotOnLocalZone field in ReplicationConfiguration and updateReplicationConfiguration"
+  },
+  {
+    "v": "1.42.6",
+    "t": "Added parameters encryption, IPv4/IPv6 protocol configuration, and enhanced tagging support for replication operations."
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.34.80",
+    "t": "Added USE_SOURCE as default option to LaunchConfigurationTemplate bootMode parameter."
+  },
+  {
+    "v": "1.32.3",
+    "t": "Removed invalid and unnecessary default values."
+  },
+  {
+    "v": "1.31.60",
+    "t": "This release includes the following new APIs: ListConnectors, CreateConnector,  UpdateConnector, DeleteConnector and UpdateSourceServer to support the source action framework feature."
+  },
+  {
+    "v": "1.30.1",
+    "t": "This release introduces the Global view feature and new Replication state APIs."
+  },
+  {
+    "v": "1.29.96",
+    "t": "This release introduces the Import and export feature and expansion of the post-launch actions"
+  },
+  {
+    "v": "1.29.17",
+    "t": "This release adds support for Application and Wave management. We also now support custom post-launch actions."
+  },
+  {
+    "v": "1.27.16",
+    "t": "New and modified APIs for the Post-Migration Framework"
+  },
+  {
+    "v": "1.24.44",
+    "t": "Removed required annotation from input fields in Describe operations requests. Added quotaValue to ServiceQuotaExceededException"
+  },
+  {
+    "v": "1.24.10",
+    "t": "Add support for GP3 and IO2 volume types. Add bootMode to LaunchConfiguration object (and as a parameter to UpdateLaunchConfigurationRequest)."
+  },
+  {
+    "v": "1.23.14",
+    "t": "Application Migration Service now supports an additional replication method that does not require agent installation on each source server. This option is available for source servers running on VMware vCenter versions 6.7 and 7.0."
+  },
+  {
+    "v": "1.20.106",
+    "t": "Bug fix: Remove not supported EBS encryption type \"NONE\""
+  },
+  {
+    "v": "1.20.47",
+    "t": "Add new service - Application Migration Service."
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "v": "1.42.25",
+    "t": "Adds waiters to Amazon Transcribe."
+  },
+  {
+    "v": "1.40.52",
+    "t": "Move UntagResource API body member to query parameter"
+  },
+  {
+    "v": "1.40.8",
+    "t": "AWS HealthScribe now supports specifying preferred patient pronouns through the MedicalScribeContext parameter for use in the generated clinical notes."
+  },
+  {
+    "v": "1.40.6",
+    "t": "Update documentation to use key ARN only in OutputEncryptionKMSKeyId request parameter"
+  },
+  {
+    "v": "1.38.43",
+    "t": "This Feature Adds Support for the \"et-EE\" Locale for Batch Operations"
+  },
+  {
+    "v": "1.38.30",
+    "t": "AWS Healthscribe now supports new templates for the clinical note summary: BIRP, SIRP, DAP, BEHAVIORAL_SOAP, and PHYSICAL_SOAP"
+  },
+  {
+    "v": "1.37.27",
+    "t": "This Feature Adds Support for the \"zh-HK\" Locale for Batch Operations"
+  },
+  {
+    "v": "1.37.5",
+    "t": "Updating documentation for post call analytics job queueing."
+  },
+  {
+    "v": "1.36.16",
+    "t": "This release adds support for the Clinical Note Template Customization feature for the AWS HealthScribe APIs within Amazon Transcribe."
+  },
+  {
+    "v": "1.35.98",
+    "t": "This update provides tagging support for Transcribe's Call Analytics Jobs and Call Analytics Categories."
+  },
+  {
+    "v": "1.34.94",
+    "t": "This update provides error messaging for generative call summarization in Transcribe Call Analytics"
+  },
+  {
+    "v": "1.33.0",
+    "t": "This release adds support for AWS HealthScribe APIs within Amazon Transcribe"
+  },
+  {
+    "v": "1.32.7",
+    "t": "This release adds support for transcriptions from audio sources in 64 new languages and introduces generative call summarization in Transcribe Call Analytics (Post call)"
+  },
+  {
+    "v": "1.31.63",
+    "t": "This release is to enable m4a format to customers"
+  },
+  {
+    "v": "1.31.8",
+    "t": "Added API argument --toxicity-detection to startTranscriptionJob API, which allows users to view toxicity scores of submitted audio."
+  },
+  {
+    "v": "1.29.84",
+    "t": "Amazon Transcribe now supports role access for these API operations: CreateVocabulary, UpdateVocabulary, CreateVocabularyFilter, and UpdateVocabularyFilter."
+  },
+  {
+    "v": "1.29.34",
+    "t": "Enable our batch transcription jobs for Swedish and Vietnamese."
+  },
+  {
+    "v": "1.29.23",
+    "t": "Amazon Transcribe now supports creating custom language models in the following languages: Japanese (ja-JP) and German (de-DE)."
+  },
+  {
+    "v": "1.29.17",
+    "t": "This release adds support for 'inputType' for post-call and real-time (streaming) Call Analytics within Amazon Transcribe."
+  },
+  {
+    "v": "1.27.36",
+    "t": "Remove unsupported language codes for StartTranscriptionJob and update VocabularyFileUri for UpdateMedicalVocabulary"
+  },
+  {
+    "v": "1.27.0",
+    "t": "Amazon Transcribe now supports automatic language identification for multi-lingual audio in batch mode."
+  },
+  {
+    "v": "1.24.26",
+    "t": "This release adds an additional parameter for subtitling with Amazon Transcribe batch jobs: outputStartIndex."
+  },
+  {
+    "v": "1.24.17",
+    "t": "Documentation fix for API `StartMedicalTranscriptionJobRequest`, now showing min sample rate as 16khz"
+  },
+  {
+    "v": "1.23.41",
+    "t": "Add support for granular PIIEntityTypes when using Batch ContentRedaction."
+  },
+  {
+    "v": "1.23.32",
+    "t": "Documentation updates for Amazon Transcribe."
+  },
+  {
+    "v": "1.22.7",
+    "t": "Transcribe and Transcribe Call Analytics now support automatic language identification along with custom vocabulary, vocabulary filter, custom language model and PII redaction."
+  },
+  {
+    "v": "1.21.43",
+    "t": "This release adds support for subtitling with Amazon Transcribe batch jobs."
+  },
+  {
+    "v": "1.21.40",
+    "t": "This release adds an API option for startTranscriptionJob and startMedicalTranscriptionJob that allows the user to specify encryption context key value pairs for batch jobs."
+  },
+  {
+    "v": "1.21.30",
+    "t": "This release adds support for batch transcription in six new languages - Afrikaans, Danish, Mandarin Chinese (Taiwan), New Zealand English, South African English, and Thai."
+  },
+  {
+    "v": "1.21.28",
+    "t": "This release adds support for feature tagging with Amazon Transcribe batch jobs."
+  },
+  {
+    "v": "1.21.14",
+    "t": "This release adds support for call analytics (batch) within Amazon Transcribe."
+  },
+  {
+    "v": "1.20.73",
+    "t": "Transcribe Medical now supports identification of PHI entities within transcripts"
+  },
+  {
+    "v": "1.20.42",
+    "t": "Amazon Transcribe now supports creating custom language models in the following languages: British English (en-GB), Australian English (en-AU), Indian Hindi (hi-IN), and US Spanish (es-US)."
+  },
+  {
+    "v": "1.20.39",
+    "t": "Amazon Transcribe now supports tagging words that match your vocabulary filter for batch transcription."
+  },
+  {
+    "v": "1.18.5",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.17.62",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.17.36",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.16.13",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.15.49",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.15.37",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.15.8",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.13.44",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.13.43",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.13.24",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.13.16",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.235",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.222",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.215",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.157",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.149",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.134",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.121",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.120",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.70",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.46",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.22",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.12.21",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.10.68",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.10.53",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.10.0",
+    "t": "Update transcribe client to latest version"
+  },
+  {
+    "v": "1.8.33",
+    "t": "Update transcribe client to latest version"
+  }
+]

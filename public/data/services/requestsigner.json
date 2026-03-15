@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.4.31",
+    "t": "`RequestSigner.generate_presigned_url` now requires the operation name to be passed in. This does not affect using `generate_presigned_url` through a client."
+  },
+  {
+    "v": "1.4.31",
+    "t": "Allow `botocore.UNSIGNED` to be used with `generate_presigned_url` and `generate_presigned_post`."
+  }
+]

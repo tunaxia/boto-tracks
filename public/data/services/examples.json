@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.17.22",
+    "t": "Pull in latest examples from EFS."
+  },
+  {
+    "v": "1.4.9",
+    "t": "Account for empty input shape in examples (`issue 855 <https://github.com/boto/botocore/pull/855>`__)"
+  }
+]

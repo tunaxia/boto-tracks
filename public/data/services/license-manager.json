@@ -1,0 +1,74 @@
+[
+  {
+    "v": "1.41.1",
+    "t": "Added cross-account resource aggregation via license asset groups and expiry tracking for Self-Managed Licenses. Extended Org-Wide View to Self-Managed Licenses, added reporting for license asset groups, and removed Athena/Glue dependencies for cross-account resource discovery in commercial regions."
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.43",
+    "t": "AWS License Manager now supports license type conversions for AWS Marketplace products. Customers can provide Marketplace codes in the source license context or destination license context in the CreateLicenseConversionTaskForResource requests."
+  },
+  {
+    "v": "1.38.15",
+    "t": "Add Tagging feature to resources in the Managed Entitlements service. License and Grant resources can now be tagged."
+  },
+  {
+    "v": "1.29.105",
+    "t": "This release adds grant override options to the CreateGrantVersion API. These options can be used to specify grant replacement behavior during grant activation."
+  },
+  {
+    "v": "1.29.8",
+    "t": "AWS License Manager now supports onboarded Management Accounts or Delegated Admins to view granted licenses aggregated from all accounts in the organization."
+  },
+  {
+    "v": "1.21.48",
+    "t": "AWS License Manager now allows customers to get the LicenseArn in the Checkout API Response."
+  },
+  {
+    "v": "1.21.46",
+    "t": "AWS License Manager now allows customers to change their Windows Server or SQL license types from Bring-Your-Own-License (BYOL) to License Included or vice-versa (using the customer's media)."
+  },
+  {
+    "v": "1.21.22",
+    "t": "AWS License Manager now allows end users to call CheckoutLicense API using new CheckoutType PERPETUAL. Perpetual checkouts allow sellers to check out a quantity of entitlements to be drawn down for consumption."
+  },
+  {
+    "v": "1.20.99",
+    "t": "AWS License Manager now allows license administrators and end users to communicate to each other by setting custom status reasons when updating the status on a granted license."
+  },
+  {
+    "v": "1.20.75",
+    "t": "AWS License Manager now supports periodic report generation."
+  },
+  {
+    "v": "1.20.22",
+    "t": "Update license-manager client to latest version"
+  },
+  {
+    "v": "1.19.30",
+    "t": "Update license-manager client to latest version"
+  },
+  {
+    "v": "1.19.29",
+    "t": "Update license-manager client to latest version"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update license-manager client to latest version"
+  },
+  {
+    "v": "1.17.43",
+    "t": "Update license-manager client to latest version"
+  },
+  {
+    "v": "1.13.29",
+    "t": "Update license-manager client to latest version"
+  },
+  {
+    "v": "1.12.55",
+    "t": "Update license-manager client to latest version"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.32.2",
+    "t": "Introduces new APIs ListIncidentFindings and BatchGetIncidentFindings to use findings related to an incident."
+  },
+  {
+    "v": "1.29.101",
+    "t": "Increased maximum length of \"TriggerDetails.rawData\" to 10K characters and \"IncidentSummary\" to 8K characters."
+  },
+  {
+    "v": "1.29.11",
+    "t": "Add support for PagerDuty integrations on ResponsePlan, IncidentRecord, and RelatedItem APIs"
+  },
+  {
+    "v": "1.29.8",
+    "t": "RelatedItems now have an ID field which can be used for referencing them else where. Introducing event references in TimelineEvent API and increasing maximum length of \"eventData\" to 12K characters."
+  },
+  {
+    "v": "1.29.1",
+    "t": "Adds support for tagging replication-set on creation."
+  },
+  {
+    "v": "1.27.90",
+    "t": "Update RelatedItem enum to support Tasks"
+  },
+  {
+    "v": "1.27.23",
+    "t": "Adds support for tagging incident-record on creation by providing incident tags in the template within a response-plan."
+  },
+  {
+    "v": "1.25.13",
+    "t": "Adding support for dynamic SSM Runbook parameter values. Updating validation pattern for engagements. Adding ConflictException to UpdateReplicationSet API contract."
+  },
+  {
+    "v": "1.24.21",
+    "t": "Removed incorrect validation pattern for IncidentRecordSource.invokedBy"
+  },
+  {
+    "v": "1.23.50",
+    "t": "Update RelatedItem enum to support SSM Automation"
+  },
+  {
+    "v": "1.22.6",
+    "t": "Updating documentation, adding new field to ConflictException to indicate earliest retry timestamp for some operations, increase maximum length of nextToken fields"
+  },
+  {
+    "v": "1.21.14",
+    "t": "Documentation updates for Incident Manager."
+  },
+  {
+    "v": "1.20.71",
+    "t": "AWS Systems Manager Incident Manager enables faster resolution of critical application availability and performance issues, management of contacts and post-incident analysis"
+  }
+]

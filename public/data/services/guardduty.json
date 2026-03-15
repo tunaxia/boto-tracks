@@ -1,0 +1,298 @@
+[
+  {
+    "v": "1.42.62",
+    "t": "Added MALICIOUS FILE to IndicatorType enum in MDC Sequence"
+  },
+  {
+    "v": "1.42.33",
+    "t": "Adding new enum value for ScanStatusReason"
+  },
+  {
+    "v": "1.42.15",
+    "t": "Make accountIds a required field in GetRemainingFreeTrialDays API to reflect service behavior."
+  },
+  {
+    "v": "1.42.12",
+    "t": "Add support for dbiResourceId in finding."
+  },
+  {
+    "v": "1.42.6",
+    "t": "Adding support for Ec2LaunchTemplate Version field"
+  },
+  {
+    "v": "1.42.1",
+    "t": "Adding support for extended threat detection for Amazon EC2 and Amazon ECS. Adding support for wild card suppression rules."
+  },
+  {
+    "v": "1.41.0",
+    "t": "Add support for scanning and viewing scan results for backup resource types"
+  },
+  {
+    "v": "1.40.75",
+    "t": "Add S3 On-Demand Object Scanning"
+  },
+  {
+    "v": "1.40.70",
+    "t": "Include tags filed in CreatePublishingDestinationRequest and DescribePublishingDestinationResponse."
+  },
+  {
+    "v": "1.40.53",
+    "t": "Added default pagination value for ListMalwareProtectionPlans API and updated UpdateFindingsFeedback API"
+  },
+  {
+    "v": "1.40.44",
+    "t": "Updated descriptions for the Location parameter in CreateTrustedEntitySet and CreateThreatEntitySet."
+  },
+  {
+    "v": "1.40.29",
+    "t": "Updated Java SDK implementation of entity set status in GuardDuty API."
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove Pattern trait from email field"
+  },
+  {
+    "v": "1.40.10",
+    "t": "Added support for entity lists."
+  },
+  {
+    "v": "1.40.5",
+    "t": "Added support for VPC owner account ID associated with DNS request in the GuardDuty finding."
+  },
+  {
+    "v": "1.39.7",
+    "t": "Add expectedBucketOwner parameter to ThreatIntel and IPSet APIs."
+  },
+  {
+    "v": "1.38.46",
+    "t": "Update JSON target for Kubernetes workload resource type."
+  },
+  {
+    "v": "1.38.38",
+    "t": "Adding support for extended threat detection for EKS Audit Logs and EKS Runtime Monitoring."
+  },
+  {
+    "v": "1.38.12",
+    "t": "Updated description of a data structure."
+  },
+  {
+    "v": "1.36.25",
+    "t": "Reduce the minimum number of required attack sequence signals from 2 to 1"
+  },
+  {
+    "v": "1.35.80",
+    "t": "Improved descriptions for certain APIs."
+  },
+  {
+    "v": "1.35.72",
+    "t": "Add new Multi Domain Correlation findings."
+  },
+  {
+    "v": "1.35.55",
+    "t": "GuardDuty RDS Protection expands support for Amazon Aurora PostgreSQL Limitless Databases."
+  },
+  {
+    "v": "1.35.39",
+    "t": "Added a new field for network connection details."
+  },
+  {
+    "v": "1.35.22",
+    "t": "Add `launchType` and `sourceIPs` fields to GuardDuty findings."
+  },
+  {
+    "v": "1.35.17",
+    "t": "Add support for new statistic types in GetFindingsStatistics."
+  },
+  {
+    "v": "1.34.124",
+    "t": "Added API support for GuardDuty Malware Protection for S3."
+  },
+  {
+    "v": "1.34.87",
+    "t": "Added IPv6Address fields for local and remote IP addresses"
+  },
+  {
+    "v": "1.34.73",
+    "t": "Add EC2 support for GuardDuty Runtime Monitoring auto management."
+  },
+  {
+    "v": "1.34.59",
+    "t": "Add RDS Provisioned and Serverless Usage types"
+  },
+  {
+    "v": "1.34.43",
+    "t": "Marked fields IpAddressV4, PrivateIpAddress, Email as Sensitive."
+  },
+  {
+    "v": "1.34.5",
+    "t": "This release 1) introduces a new API: GetOrganizationStatistics , and 2) adds a new UsageStatisticType TOP_ACCOUNTS_BY_FEATURE for GetUsageStatistics API"
+  },
+  {
+    "v": "1.32.7",
+    "t": "Add support for Runtime Monitoring for ECS and ECS-EC2."
+  },
+  {
+    "v": "1.31.81",
+    "t": "Added API support for new GuardDuty EKS Audit Log finding types."
+  },
+  {
+    "v": "1.31.65",
+    "t": "Add domainWithSuffix finding field to dnsRequestAction"
+  },
+  {
+    "v": "1.31.53",
+    "t": "Add `EKS_CLUSTER_NAME` to filter and sort key."
+  },
+  {
+    "v": "1.31.47",
+    "t": "Add `managementType` field to ListCoverage API response."
+  },
+  {
+    "v": "1.31.23",
+    "t": "Added autoEnable ALL to UpdateOrganizationConfiguration and DescribeOrganizationConfiguration APIs."
+  },
+  {
+    "v": "1.29.161",
+    "t": "Add support for user.extra.sessionName in Kubernetes Audit Logs Findings."
+  },
+  {
+    "v": "1.29.154",
+    "t": "Updated descriptions for some APIs."
+  },
+  {
+    "v": "1.29.130",
+    "t": "Add AccessDeniedException 403 Error message code to support 3 Tagging related APIs"
+  },
+  {
+    "v": "1.29.122",
+    "t": "Added API support to initiate on-demand malware scan on specific resources."
+  },
+  {
+    "v": "1.29.117",
+    "t": "This release adds support for the new Lambda Protection feature."
+  },
+  {
+    "v": "1.29.103",
+    "t": "Added EKS Runtime Monitoring feature support to existing detector, finding APIs and introducing new Coverage APIs"
+  },
+  {
+    "v": "1.29.98",
+    "t": "Adds AutoEnableOrganizationMembers attribute to DescribeOrganizationConfiguration and UpdateOrganizationConfiguration APIs."
+  },
+  {
+    "v": "1.29.93",
+    "t": "Updated 9 APIs for feature enablement to reflect expansion of GuardDuty to features. Added new APIs and updated existing APIs to support RDS Protection GA."
+  },
+  {
+    "v": "1.29.78",
+    "t": "Updated API and data types descriptions for CreateFilter, UpdateFilter, and TriggerDetails."
+  },
+  {
+    "v": "1.29.32",
+    "t": "This release provides the valid characters for the Description and Name field."
+  },
+  {
+    "v": "1.27.90",
+    "t": "Add UnprocessedDataSources to CreateDetectorResponse which specifies the data sources that couldn't be enabled during the CreateDetector request. In addition, update documentations."
+  },
+  {
+    "v": "1.27.38",
+    "t": "Amazon GuardDuty introduces a new Malware Protection feature that triggers malware scan on selected EC2 instance resources, after the service detects a potentially malicious activity."
+  },
+  {
+    "v": "1.27.10",
+    "t": "Adds finding fields available from GuardDuty Console. Adds FreeTrial related operations. Deprecates the use of various APIs related to Master Accounts and Replace them with Administrator Accounts."
+  },
+  {
+    "v": "1.25.3",
+    "t": "Documentation update for API description."
+  },
+  {
+    "v": "1.23.43",
+    "t": "Amazon GuardDuty expands threat detection coverage to protect Amazon Elastic Kubernetes Service (EKS) workloads."
+  },
+  {
+    "v": "1.23.40",
+    "t": "Amazon GuardDuty findings now include remoteAccountDetails under AwsApiCallAction section if instance credential is exfiltrated."
+  },
+  {
+    "v": "1.19.35",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.17.55",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.17.32",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.17.31",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.16.21",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.16.18",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.16.6",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.15.43",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.15.16",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.15.15",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.13.19",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.12.205",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.12.168",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.12.163",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.12.15",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.10.14",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.10.11",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.8.41",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.8.35",
+    "t": "Update guardduty client to latest version"
+  },
+  {
+    "v": "1.8.3",
+    "t": "Update guardduty client to latest version"
+  }
+]

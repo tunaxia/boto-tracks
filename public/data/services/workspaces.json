@@ -1,0 +1,342 @@
+[
+  {
+    "v": "1.42.66",
+    "t": "Added WINDOWS SERVER 2025 OperatingSystemName."
+  },
+  {
+    "v": "1.42.43",
+    "t": "Added support for 12 new graphics-optimized compute types - Graphics.g6 (xlarge, 2xlarge, 4xlarge, 8xlarge, 16xlarge), Graphics.gr6 (4xlarge, 8xlarge), Graphics.g6f (large, xlarge, 2xlarge, 4xlarge), and Graphics.gr6f (4xlarge)."
+  },
+  {
+    "v": "1.42.24",
+    "t": "Add StateMessage and ProgressPercentage fields to DescribeCustomWorkspaceImageImport API response."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Added IPv6 address support for WorkSpaces using Dual-Stack subnets"
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.10",
+    "t": "New APIs introduced to import WorkSpaces BYOL image using a new process that leveraged EC2 Image Builder. WorkSpaces tests and fixes your image's compatibility issues and supports customized VM images."
+  },
+  {
+    "v": "1.38.45",
+    "t": "Updated modifyStreamingProperties to support PrivateLink VPC endpoints for directories"
+  },
+  {
+    "v": "1.38.17",
+    "t": "Added the new AlwaysOn running mode for WorkSpaces Pools. Customers can now choose between AlwaysOn (for instant access, with hourly usage billing regardless of connection status), or AutoStop (to optimize cost, with a brief startup delay) for their pools."
+  },
+  {
+    "v": "1.38.13",
+    "t": "Remove parameter EnableWorkDocs from WorkSpacesServiceModel due to end of support of Amazon WorkDocs service."
+  },
+  {
+    "v": "1.37.8",
+    "t": "Added a new ModifyEndpointEncryptionMode API for managing endpoint encryption settings."
+  },
+  {
+    "v": "1.37.7",
+    "t": "Added DeviceTypeWorkSpacesThinClient type to allow users to access their WorkSpaces through a WorkSpaces Thin Client."
+  },
+  {
+    "v": "1.36.0",
+    "t": "Added GeneralPurpose.4xlarge & GeneralPurpose.8xlarge ComputeTypes."
+  },
+  {
+    "v": "1.35.85",
+    "t": "Added AWS Global Accelerator (AGA) support for WorkSpaces Personal."
+  },
+  {
+    "v": "1.35.77",
+    "t": "Added text to clarify case-sensitivity"
+  },
+  {
+    "v": "1.35.68",
+    "t": "While integrating WSP-DCV rebrand, a few mentions were erroneously renamed from WSP to DCV. This release reverts those mentions back to WSP."
+  },
+  {
+    "v": "1.35.66",
+    "t": "Added support for Rocky Linux 8 on Amazon WorkSpaces Personal."
+  },
+  {
+    "v": "1.35.65",
+    "t": "Releasing new ErrorCodes for Image Validation failure during CreateWorkspaceImage process"
+  },
+  {
+    "v": "1.35.43",
+    "t": "Updated the DomainName pattern for Active Directory"
+  },
+  {
+    "v": "1.35.32",
+    "t": "WSP is being rebranded to become DCV."
+  },
+  {
+    "v": "1.35.24",
+    "t": "Releasing new ErrorCodes for SysPrep failures during ImageImport and CreateImage process"
+  },
+  {
+    "v": "1.35.8",
+    "t": "Documentation-only update that clarifies the StartWorkspaces and StopWorkspaces actions, and a few other minor edits."
+  },
+  {
+    "v": "1.35.6",
+    "t": "This release adds support for creating and managing directories that use AWS IAM Identity Center as user identity source. Such directories can be used to create non-Active Directory domain joined WorkSpaces Personal.Updated RegisterWorkspaceDirectory and DescribeWorkspaceDirectories APIs."
+  },
+  {
+    "v": "1.34.155",
+    "t": "Added support for BYOL_GRAPHICS_G4DN_WSP IngestionProcess"
+  },
+  {
+    "v": "1.34.151",
+    "t": "Removing multi-session as it isn't supported for pools"
+  },
+  {
+    "v": "1.34.139",
+    "t": "Fix create workspace bundle RootStorage/UserStorage to accept non null values"
+  },
+  {
+    "v": "1.34.136",
+    "t": "Added support for Red Hat Enterprise Linux 8 on Amazon WorkSpaces Personal."
+  },
+  {
+    "v": "1.34.135",
+    "t": "Added support for WorkSpaces Pools."
+  },
+  {
+    "v": "1.34.87",
+    "t": "Adds new APIs for managing and sharing WorkSpaces BYOL configuration across accounts."
+  },
+  {
+    "v": "1.34.58",
+    "t": "Added note for user decoupling"
+  },
+  {
+    "v": "1.34.38",
+    "t": "This release introduces User-Decoupling feature. This feature allows Workspaces Core customers to provision workspaces without providing users. CreateWorkspaces and DescribeWorkspaces APIs will now take a new optional parameter \"WorkspaceName\"."
+  },
+  {
+    "v": "1.34.35",
+    "t": "Added definitions of various WorkSpace states"
+  },
+  {
+    "v": "1.34.17",
+    "t": "Added AWS Workspaces RebootWorkspaces API - Extended Reboot documentation update"
+  },
+  {
+    "v": "1.34.1",
+    "t": "Updated note to ensure customers understand running modes."
+  },
+  {
+    "v": "1.32.7",
+    "t": "The release introduces Multi-Region Resilience one-way data replication that allows you to replicate data from your primary WorkSpace to a standby WorkSpace in another AWS Region. DescribeWorkspaces now returns the status of data replication."
+  },
+  {
+    "v": "1.31.67",
+    "t": "Documentation updates for WorkSpaces"
+  },
+  {
+    "v": "1.31.63",
+    "t": "Updated the CreateWorkspaces action documentation to clarify that the PCoIP protocol is only available for Windows bundles."
+  },
+  {
+    "v": "1.31.61",
+    "t": "This release introduces Manage applications. This feature allows users to manage their WorkSpaces applications by associating or disassociating their WorkSpaces with applications. The DescribeWorkspaces API will now additionally return OperatingSystemName in its responses."
+  },
+  {
+    "v": "1.31.44",
+    "t": "A new field \"ErrorDetails\" will be added to the output of \"DescribeWorkspaceImages\" API call. This field provides in-depth details about the error occurred during image import process. These details include the possible causes of the errors and troubleshooting information."
+  },
+  {
+    "v": "1.31.9",
+    "t": "Fixed VolumeEncryptionKey descriptions"
+  },
+  {
+    "v": "1.29.123",
+    "t": "Added Windows 11 to support Microsoft_Office_2019"
+  },
+  {
+    "v": "1.29.68",
+    "t": "Removed Windows Server 2016 BYOL and made changes based on IAM campaign."
+  },
+  {
+    "v": "1.29.12",
+    "t": "The release introduces CreateStandbyWorkspaces, an API that allows you to create standby WorkSpaces associated with a primary WorkSpace in another Region. DescribeWorkspaces now includes related WorkSpaces properties. DescribeWorkspaceBundles and CreateWorkspaceBundle now return more bundle details."
+  },
+  {
+    "v": "1.29.10",
+    "t": "This release introduces ModifyCertificateBasedAuthProperties, a new API that allows control of certificate-based auth properties associated with a WorkSpaces directory. The DescribeWorkspaceDirectories API will now additionally return certificate-based auth properties in its responses."
+  },
+  {
+    "v": "1.29.4",
+    "t": "This release adds protocols attribute to workspaces properties data type. This enables customers to migrate workspaces from PC over IP (PCoIP) to WorkSpaces Streaming Protocol (WSP) using create and modify workspaces public APIs."
+  },
+  {
+    "v": "1.28.1",
+    "t": "This release adds new enums for supporting Workspaces Core features, including creating Manual running mode workspaces, importing regular Workspaces Core images and importing g4dn Workspaces Core images."
+  },
+  {
+    "v": "1.27.83",
+    "t": "This release includes diagnostic log uploading feature. If it is enabled, the log files of WorkSpaces Windows client will be sent to Amazon WorkSpaces automatically for troubleshooting. You can use modifyClientProperty api to enable/disable this feature."
+  },
+  {
+    "v": "1.27.43",
+    "t": "This release introduces ModifySamlProperties, a new API that allows control of SAML properties associated with a WorkSpaces directory. The DescribeWorkspaceDirectories API will now additionally return SAML properties in its responses."
+  },
+  {
+    "v": "1.27.39",
+    "t": "Added CreateWorkspaceImage API to create a new WorkSpace image from an existing WorkSpace."
+  },
+  {
+    "v": "1.27.33",
+    "t": "Increased the character limit of the login message from 850 to 2000 characters."
+  },
+  {
+    "v": "1.27.10",
+    "t": "Added new field \"reason\" to OperationNotSupportedException. Receiving this exception in the DeregisterWorkspaceDirectory API will now return a reason giving more context on the failure."
+  },
+  {
+    "v": "1.25.13",
+    "t": "Increased the character limit of the login message from 600 to 850 characters."
+  },
+  {
+    "v": "1.24.38",
+    "t": "Added API support that allows customers to create GPU-enabled WorkSpaces using EC2 G4dn instances."
+  },
+  {
+    "v": "1.24.31",
+    "t": "Added APIs that allow you to customize the logo, login message, and help links in the WorkSpaces client login page. To learn more, visit https://docs.aws.amazon.com/workspaces/latest/adminguide/customize-branding.html"
+  },
+  {
+    "v": "1.23.33",
+    "t": "Introducing new APIs for Workspaces audio optimization with Amazon Connect: CreateConnectClientAddIn, DescribeConnectClientAddIns, UpdateConnectClientAddIn and DeleteConnectClientAddIn."
+  },
+  {
+    "v": "1.23.12",
+    "t": "Documentation updates for Amazon WorkSpaces"
+  },
+  {
+    "v": "1.21.52",
+    "t": "Added CreateUpdatedWorkspaceImage API to update WorkSpace images with latest software and drivers. Updated DescribeWorkspaceImages API to display if there are updates available for WorkSpace images."
+  },
+  {
+    "v": "1.20.80",
+    "t": "Adds support for Linux device types in WorkspaceAccessProperties"
+  },
+  {
+    "v": "1.20.27",
+    "t": "Adds API support for WorkSpaces bundle management operations."
+  },
+  {
+    "v": "1.19.30",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.18.17",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.17.60",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.17.56",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.17.41",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.17.27",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.14.9",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.14.0",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.13.28",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.13.19",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.249",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.233",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.180",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.179",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.136",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.134",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.133",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.124",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.87",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.47",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.12.28",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.10.11",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.8.21",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.5.47",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.4.48",
+    "t": "Update workspaces client to latest version"
+  },
+  {
+    "v": "1.4.20",
+    "t": "Update workspaces client to latest version"
+  }
+]

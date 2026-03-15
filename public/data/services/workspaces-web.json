@@ -1,0 +1,74 @@
+[
+  {
+    "v": "1.42.51",
+    "t": "Adds support for branding customization without requiring a custom wallpaper."
+  },
+  {
+    "v": "1.42.42",
+    "t": "Support for configuring and managing custom domain names for WorkSpaces Secure Browser portals."
+  },
+  {
+    "v": "1.42.14",
+    "t": "Add support for WebAuthn under user settings."
+  },
+  {
+    "v": "1.42.9",
+    "t": "Adds support for portal branding customization, enabling administrators to personalize end-user portals with custom assets."
+  },
+  {
+    "v": "1.40.73",
+    "t": "Support for managing web content filtering for defining, tracking and regulating type of content accessed with WorkSpaces Secure Browser as part of browser settings."
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.0",
+    "t": "Added ability to log session activity on a portal to an S3 bucket."
+  },
+  {
+    "v": "1.36.25",
+    "t": "Add support for toolbar configuration under user settings."
+  },
+  {
+    "v": "1.35.66",
+    "t": "Added data protection settings with support for inline data redaction."
+  },
+  {
+    "v": "1.35.23",
+    "t": "WorkSpaces Secure Browser now enables Administrators to view and manage end-user browsing sessions via Session Management APIs."
+  },
+  {
+    "v": "1.34.132",
+    "t": "Added ability to enable DeepLinking functionality on a Portal via UserSettings as well as added support for IdentityProvider resource tagging."
+  },
+  {
+    "v": "1.34.90",
+    "t": "Added InstanceType and MaxConcurrentSessions parameters on CreatePortal and UpdatePortal Operations as well as the ability to read Customer Managed Key & Additional Encryption Context parameters on supported resources (Portal, BrowserSettings, UserSettings, IPAccessSettings)"
+  },
+  {
+    "v": "1.31.36",
+    "t": "WorkSpaces Web now enables Admins to configure which cookies are synchronized from an end-user's local browser to the in-session browser. In conjunction with a browser extension, this feature enables enhanced Single-Sign On capability by reducing the number of times an end-user has to authenticate."
+  },
+  {
+    "v": "1.29.144",
+    "t": "WorkSpaces Web now allows you to control which IP addresses your WorkSpaces Web portal may be accessed from."
+  },
+  {
+    "v": "1.29.46",
+    "t": "This release adds support for a new portal authentication type: AWS IAM Identity Center (successor to AWS Single Sign-On)."
+  },
+  {
+    "v": "1.27.94",
+    "t": "WorkSpaces Web now supports user access logging for recording session start, stop, and URL navigation."
+  },
+  {
+    "v": "1.26.1",
+    "t": "Amazon WorkSpaces Web now supports Administrator timeout control"
+  },
+  {
+    "v": "1.23.17",
+    "t": "This is the initial SDK release for Amazon WorkSpaces Web. Amazon WorkSpaces Web is a low-cost, fully managed WorkSpace built to deliver secure web-based workloads and software-as-a-service (SaaS) application access to users within existing web browsers."
+  }
+]

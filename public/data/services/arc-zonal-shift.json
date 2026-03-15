@@ -1,0 +1,34 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "This release adds new API options to enable allowed windows and multiple alarms for practice runs."
+  },
+  {
+    "v": "1.39.0",
+    "t": "Added support for on-demand practice runs and balanced capacity checks in ARC autoshift practice."
+  },
+  {
+    "v": "1.37.38",
+    "t": "Updates to documentation and exception types for Zonal Autoshift"
+  },
+  {
+    "v": "1.37.21",
+    "t": "Add new shiftType field for ARC zonal shifts."
+  },
+  {
+    "v": "1.34.144",
+    "t": "Adds the option to subscribe to get notifications when a zonal autoshift occurs in a region."
+  },
+  {
+    "v": "1.33.5",
+    "t": "This release adds a new capability, zonal autoshift. You can configure zonal autoshift so that AWS shifts traffic for a resource away from an Availability Zone, on your behalf, when AWS determines that there is an issue that could potentially affect customers in the Availability Zone."
+  },
+  {
+    "v": "1.29.18",
+    "t": "Amazon Route 53 Application Recovery Controller Zonal Shift is a new service that makes it easy to shift traffic away from an Availability Zone in a Region. See the developer guide for more information: https://docs.aws.amazon.com/r53recovery/latest/dg/what-is-route53-recovery.html"
+  }
+]

@@ -1,0 +1,65 @@
+<aside :class="showMobileServices ? 'translate-x-0' : 'translate-x-full md:translate-x-0'"
+       class="fixed md:relative inset-y-0 right-0 w-80 max-w-[85vw] border-l border-subtle bg-sidebar flex flex-col z-[100] md:z-10 shadow-[-10px_0_30px_rgba(0,0,0,0.05)] dark:shadow-[-10px_0_30px_rgba(0,0,0,0.5)] transition-transform duration-500 ease-in-out theme-transition">
+    
+    <!-- Mobile Header -->
+    <div class="md:hidden flex items-center justify-between p-8 border-b border-subtle bg-card">
+        <h3 class="text-[10px] mono text-slate-500 uppercase tracking-[0.4em] font-black">Service Directory</h3>
+        <button @click="showMobileServices = false" class="p-2 text-slate-500 hover:text-orange-500 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+    </div>
+
+    <!-- Desktop Header -->
+    <div class="p-8 border-b border-subtle bg-card hidden md:block theme-transition">
+        <div class="flex items-center justify-between mb-8">
+            <h3 class="text-[10px] mono text-slate-500 uppercase tracking-[0.4em] font-black">Directory</h3>
+            <div class="flex gap-1.5">
+                <div class="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-800"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></div>
+            </div>
+        </div>
+        
+        <div class="relative group">
+            <input type="text" x-model="serviceSearch" placeholder="Filter SDK services..." 
+                   class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-2xl py-4 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner">
+            <svg class="absolute left-4 top-4 w-5 h-5 text-slate-400 dark:text-slate-600 group-focus-within:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+    </div>
+    
+    <!-- Unified Search for Mobile (Visible top) -->
+    <div class="md:hidden p-6 border-b border-subtle">
+        <div class="relative group">
+            <input type="text" x-model="serviceSearch" placeholder="Search services..." 
+                   class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-2xl py-3 pl-11 pr-4 text-sm focus:outline-none transition-all text-slate-900 dark:text-white shadow-inner">
+            <svg class="absolute left-4 top-3 w-4 h-4 text-slate-400 dark:text-slate-600 group-focus-within:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-6 space-y-3 custom-scroll bg-inherit">
+        <template x-for="service in filteredServices" :key="service">
+            <button @click="openService(service); if(window.innerWidth < 768) showMobileServices = false;" 
+                    class="w-full text-left px-5 py-4 rounded-2xl hover:bg-white dark:hover:bg-white/[0.03] group transition-all flex items-center justify-between border border-transparent hover:border-black/5 dark:hover:border-white/10 relative overflow-hidden shadow-sm hover:shadow-md">
+                
+                <div class="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/5 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                
+                <div class="flex items-center gap-4 relative z-10">
+                    <div class="w-8 h-8 rounded-xl bg-slate-200 dark:bg-white/5 flex items-center justify-center mono text-[10px] text-slate-500 group-hover:text-orange-500 group-hover:bg-orange-500/10 transition-all border border-transparent dark:border-white/5 group-hover:border-orange-500/20" x-text="service.substring(0,1).toUpperCase()"></div>
+                    <span class="mono text-xs text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white font-black tracking-tight transition-colors uppercase" x-text="service"></span>
+                </div>
+                <svg class="w-4 h-4 text-slate-300 dark:text-slate-800 group-hover:text-orange-500 transition-all -translate-x-2 group-hover:translate-x-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </template>
+    </div>
+
+    <div class="p-8 border-t border-subtle bg-card hidden md:block theme-transition">
+        <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-[9px] mono text-slate-400 dark:text-slate-600 uppercase tracking-widest mb-1">Total Indexed</span>
+                <span class="text-xl font-black text-slate-900 dark:text-white italic" x-text="allServices.length"></span>
+            </div>
+            <div class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center">
+                <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+            </div>
+        </div>
+    </div>
+</aside>

@@ -1,0 +1,438 @@
+[
+  {
+    "v": "1.42.68",
+    "t": "This update adds support for Dolby AC-4 audio output, frame rate conversion between non-Dolby Vision inputs to Dolby Vision outputs, and clear lead CMAF HLS output."
+  },
+  {
+    "v": "1.42.37",
+    "t": "This release adds a follow source mode for audio output channel count, an AES audio frame wrapping option for MXF outputs, and an option to signal DolbyVision compatibility using the SUPPLEMENTAL-CODECS tag in HLS manifests."
+  },
+  {
+    "v": "1.42.12",
+    "t": "Adds support for tile encoding in HEVC and audio for video overlays."
+  },
+  {
+    "v": "1.40.73",
+    "t": "Lowers minimum duration for black video generator. Adds support for embedding and signing C2PA content credentials in DASH and CMAF HLS outputs."
+  },
+  {
+    "v": "1.40.64",
+    "t": "Adds SlowPalPitchCorrection to audio pitch correction settings. Enables opacity for VideoOverlays. Adds REMUX_ALL option to enable multi-rendition passthrough to VideoSelector for allow listed accounts."
+  },
+  {
+    "v": "1.40.56",
+    "t": "This release adds the ability to set resolution for the black video generator and also adds the StartJobsQuery and GetJobsQueryResults APIs which allow asynchronous search of job history using new filters."
+  },
+  {
+    "v": "1.40.17",
+    "t": "This release adds support for input rendition selection for HLS input, adds new Share API to enable sharing jobs with AWS Support for support investigations, and adds INCLUDE_AS_TS to iFrameOnlyManifest setting for HLS outputs."
+  },
+  {
+    "v": "1.39.9",
+    "t": "This release adds support for TAMS server integration with MediaConvert inputs."
+  },
+  {
+    "v": "1.39.8",
+    "t": "This release expands the range of supported audio outputs to include xHE, 192khz FLAC and the deprecation of dual mono for AC3."
+  },
+  {
+    "v": "1.38.41",
+    "t": "This release adds a new SPECIFIED_OPTIMAL option for handling DDS when using DVB-Sub with high resolution video."
+  },
+  {
+    "v": "1.38.30",
+    "t": "This release includes support for embedding and signing C2PA content credentials in MP4 outputs."
+  },
+  {
+    "v": "1.38.16",
+    "t": "This update enables cropping for video overlays and adds a new STL to Teletext upconversion toggle to preserve styling."
+  },
+  {
+    "v": "1.38.9",
+    "t": "This release adds an optional sidecar per-frame video quality metrics report and an ALL_PCM option for audio selectors. It also changes the data type for Probe API response fields related to video and audio bitrate from integer to double."
+  },
+  {
+    "v": "1.37.21",
+    "t": "This release adds a configurable Quality Level setting for the top rendition of Auto ABR jobs"
+  },
+  {
+    "v": "1.37.15",
+    "t": "This release adds support for AVC passthrough, the ability to specify PTS offset without padding, and an A/V segment matching feature."
+  },
+  {
+    "v": "1.37.4",
+    "t": "The AWS MediaConvert Probe API allows you to analyze media files and retrieve detailed metadata about their content, format, and structure."
+  },
+  {
+    "v": "1.36.16",
+    "t": "This release adds support for Animated GIF output, forced chroma sample positioning metadata, and Extensible Wave Container format"
+  },
+  {
+    "v": "1.36.7",
+    "t": "This release adds support for dynamic audio configuration and the ability to disable the deblocking filter for h265 encodes."
+  },
+  {
+    "v": "1.35.91",
+    "t": "This release adds support for the AVC3 codec and fixes an alignment issue with Japanese vertical captions."
+  },
+  {
+    "v": "1.35.85",
+    "t": "This release adds support for inserting timecode tracks into MP4 container outputs."
+  },
+  {
+    "v": "1.35.66",
+    "t": "This release adds the ability to reconfigure concurrent job settings for existing queues and create queues with custom concurrent job settings."
+  },
+  {
+    "v": "1.35.60",
+    "t": "This release adds support for ARN inputs in the Kantar credentials secrets name field and the MSPR field to the manifests for PlayReady DRM protected outputs."
+  },
+  {
+    "v": "1.35.23",
+    "t": "This release provides support for additional DRM configurations per SPEKE Version 2.0."
+  },
+  {
+    "v": "1.35.18",
+    "t": "This release includes support for dynamic video overlay workflows, including picture-in-picture and squeezeback"
+  },
+  {
+    "v": "1.34.128",
+    "t": "This release includes support for creating I-frame only video segments for DASH trick play."
+  },
+  {
+    "v": "1.34.127",
+    "t": "This release adds the ability to search for historical job records within the management console using a search box and/or via the SDK/CLI with partial string matching search on input file name."
+  },
+  {
+    "v": "1.34.81",
+    "t": "This release includes support for bringing your own fonts to use for burn-in or DVB-Sub captioning workflows."
+  },
+  {
+    "v": "1.34.33",
+    "t": "This release includes support for broadcast-mixed audio description tracks."
+  },
+  {
+    "v": "1.34.12",
+    "t": "This release includes video engine updates including HEVC improvements, support for ingesting VP9 encoded video in MP4 containers, and support for user-specified 3D LUTs."
+  },
+  {
+    "v": "1.31.84",
+    "t": "This release includes the ability to specify any input source as the primary input for corresponding follow modes, and allows users to specify fit and fill behaviors without resizing content."
+  },
+  {
+    "v": "1.31.59",
+    "t": "This release adds the ability to replace video frames without modifying the audio essence."
+  },
+  {
+    "v": "1.31.53",
+    "t": "This release supports the creation of of audio-only tracks in CMAF output groups."
+  },
+  {
+    "v": "1.31.34",
+    "t": "This release includes additional audio channel tags in Quicktime outputs, support for film grain synthesis for AV1 outputs, ability to create audio-only FLAC outputs, and ability to specify Amazon S3 destination storage class."
+  },
+  {
+    "v": "1.31.12",
+    "t": "This release includes general updates to user documentation."
+  },
+  {
+    "v": "1.31.9",
+    "t": "This release includes improvements to Preserve 444 handling, compatibility of HEVC sources without frame rates, and general improvements to MP4 outputs."
+  },
+  {
+    "v": "1.29.165",
+    "t": "This release includes improved color handling of overlays and general updates to user documentation."
+  },
+  {
+    "v": "1.29.158",
+    "t": "This release introduces the bandwidth reduction filter for the HEVC encoder, increases the limits of outputs per job, and updates support for the Nagra SDK to version 1.14.7."
+  },
+  {
+    "v": "1.29.136",
+    "t": "This release introduces a new MXF Profile for XDCAM which is strictly compliant with the SMPTE RDD 9 standard and improved handling of output name modifiers."
+  },
+  {
+    "v": "1.29.119",
+    "t": "This release introduces a noise reduction pre-filter, linear interpolation deinterlace mode, video pass-through, updated default job settings, and expanded LC-AAC Stereo audio bitrate ranges."
+  },
+  {
+    "v": "1.29.110",
+    "t": "AWS Elemental MediaConvert SDK now supports conversion of 608 paint-on captions to pop-on captions for SCC sources."
+  },
+  {
+    "v": "1.29.98",
+    "t": "AWS Elemental MediaConvert SDK now supports passthrough of ID3v2 tags for audio inputs to audio-only HLS outputs."
+  },
+  {
+    "v": "1.29.84",
+    "t": "The AWS Elemental MediaConvert SDK has improved handling for different input and output color space combinations."
+  },
+  {
+    "v": "1.29.80",
+    "t": "The AWS Elemental MediaConvert SDK has added support for HDR10 to SDR tone mapping, and animated GIF video input sources."
+  },
+  {
+    "v": "1.29.65",
+    "t": "The AWS Elemental MediaConvert SDK has added improved scene change detection capabilities and a bandwidth reduction filter, along with video quality enhancements, to the AVC encoder."
+  },
+  {
+    "v": "1.29.60",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.29.49",
+    "t": "The AWS Elemental MediaConvert SDK has added support for compact DASH manifest generation, audio normalization using TruePeak measurements, and the ability to clip the sample range in the color corrector."
+  },
+  {
+    "v": "1.29.22",
+    "t": "The AWS Elemental MediaConvert SDK has added support for configurable ID3 eMSG box attributes and the ability to signal them with InbandEventStream tags in DASH and CMAF outputs."
+  },
+  {
+    "v": "1.29.4",
+    "t": "The AWS Elemental MediaConvert SDK has added support for setting the SDR reference white point for HDR conversions and conversion of HDR10 to DolbyVision without mastering metadata."
+  },
+  {
+    "v": "1.27.91",
+    "t": "MediaConvert now supports specifying the minimum percentage of the HRD buffer available at the end of each encoded video segment."
+  },
+  {
+    "v": "1.27.16",
+    "t": "AWS Elemental MediaConvert SDK has released support for automatic DolbyVision metadata generation when converting HDR10 to DolbyVision."
+  },
+  {
+    "v": "1.27.9",
+    "t": "AWS Elemental MediaConvert SDK has added support for rules that constrain Automatic-ABR rendition selection when generating ABR package ladders."
+  },
+  {
+    "v": "1.26.7",
+    "t": "AWS Elemental MediaConvert SDK has added support for rules that constrain Automatic-ABR rendition selection when generating ABR package ladders."
+  },
+  {
+    "v": "1.25.4",
+    "t": "AWS Elemental MediaConvert SDK nows supports creation of Dolby Vision profile 8.1, the ability to generate black frames of video, and introduces audio-only DASH and CMAF support."
+  },
+  {
+    "v": "1.24.37",
+    "t": "AWS Elemental MediaConvert SDK has added support for the pass-through of WebVTT styling to WebVTT outputs, pass-through of KLV metadata to supported formats, and improved filter support for processing 444/RGB content."
+  },
+  {
+    "v": "1.24.15",
+    "t": "AWS Elemental MediaConvert SDK has added support for reading timecode from AVCHD sources and now provides the ability to segment WebVTT at the same interval as the video and audio in HLS packages."
+  },
+  {
+    "v": "1.23.41",
+    "t": "AWS Elemental MediaConvert SDK has added support for 4K AV1 output resolutions & 10-bit AV1 color, the ability to ingest sidecar Dolby Vision XML metadata files, and the ability to flag WebVTT and IMSC tracks for accessibility in HLS."
+  },
+  {
+    "v": "1.23.27",
+    "t": "AWS Elemental MediaConvert SDK has added strength levels to the Sharpness Filter and now permits OGG files to be specified as sidecar audio inputs."
+  },
+  {
+    "v": "1.23.5",
+    "t": "AWS Elemental MediaConvert SDK has added automatic modes for GOP configuration and added the ability to ingest screen recordings generated by Safari on MacOS 12 Monterey."
+  },
+  {
+    "v": "1.22.0",
+    "t": "AWS Elemental MediaConvert SDK has added support for specifying caption time delta in milliseconds and the ability to apply color range legalization to source content other than AVC video."
+  },
+  {
+    "v": "1.21.58",
+    "t": "AWS Elemental MediaConvert has added the ability to set account policies which control access restrictions for HTTP, HTTPS, and S3 content sources."
+  },
+  {
+    "v": "1.21.47",
+    "t": "This release adds style and positioning support for caption or subtitle burn-in from rich text sources such as TTML. This release also introduces configurable image-based trick play track generation."
+  },
+  {
+    "v": "1.21.28",
+    "t": "AWS Elemental MediaConvert SDK has added MBAFF encoding support for AVC video and the ability to pass encryption context from the job settings to S3."
+  },
+  {
+    "v": "1.21.13",
+    "t": "AWS Elemental MediaConvert SDK has added control over the passthrough of XDS captions metadata to outputs."
+  },
+  {
+    "v": "1.20.109",
+    "t": "MediaConvert now supports color, style and position information passthrough from 608 and Teletext to SRT and WebVTT subtitles. MediaConvert now also supports Automatic QVBR quality levels for QVBR RateControlMode."
+  },
+  {
+    "v": "1.20.102",
+    "t": "MediaConvert adds support for HDR10+, ProRes 4444,  and XAVC outputs, ADM/DAMF support for Dolby Atmos ingest, and alternative audio and WebVTT caption ingest via HLS inputs. MediaConvert also now supports creating trickplay outputs for Roku devices for HLS, CMAF, and DASH output groups."
+  },
+  {
+    "v": "1.20.70",
+    "t": "AWS Elemental MediaConvert SDK has added support for Kantar SNAP File Audio Watermarking with a Kantar Watermarking account, and Display Definition Segment(DDS) segment data controls for DVB-Sub caption outputs."
+  },
+  {
+    "v": "1.20.58",
+    "t": "Documentation updates for mediaconvert"
+  },
+  {
+    "v": "1.20.43",
+    "t": "MediaConvert now supports HLS ingest, sidecar WebVTT ingest, Teletext color & style passthrough to TTML subtitles, TTML to WebVTT subtitle conversion with style, & DRC profiles in AC3 audio."
+  },
+  {
+    "v": "1.20.5",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.19.51",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.19.16",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.18.12",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.17.50",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.17.6",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.16.22",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.16.0",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.15.40",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.15.39",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.15.23",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.14.11",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.14.5",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.13.19",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.246",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.229",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.218",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.205",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.199",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.196",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.142",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.130",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.121",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.103",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.79",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.58",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.22",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.12.9",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.11.9",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.10.81",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.10.79",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.10.75",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.10.67",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.10.52",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.10.40",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.10.32",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.8.44",
+    "t": "Update mediaconvert client to latest version"
+  },
+  {
+    "v": "1.8.2",
+    "t": "Update mediaconvert client to latest version"
+  }
+]

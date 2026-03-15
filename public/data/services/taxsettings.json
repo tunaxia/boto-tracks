@@ -1,0 +1,38 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.37.34",
+    "t": "Indonesia SOR Tax Registration Launch"
+  },
+  {
+    "v": "1.37.30",
+    "t": "Uzbekistan Launch on TaxSettings Page"
+  },
+  {
+    "v": "1.37.14",
+    "t": "Adjust Vietnam PaymentVoucherNumber regex and minor API change."
+  },
+  {
+    "v": "1.37.1",
+    "t": "PutTaxRegistration API changes for Egypt, Greece, Vietnam countries"
+  },
+  {
+    "v": "1.35.65",
+    "t": "Release Tax Inheritance APIs,  Tax Exemption APIs, and functionality update for some existing Tax Registration APIs"
+  },
+  {
+    "v": "1.35.54",
+    "t": "Add support for supplemental tax registrations via these new APIs: PutSupplementalTaxRegistration, ListSupplementalTaxRegistrations, and DeleteSupplementalTaxRegistration."
+  },
+  {
+    "v": "1.34.145",
+    "t": "Set default endpoint for aws partition. Requests from all regions in aws partition will be forward to us-east-1 endpoint."
+  },
+  {
+    "v": "1.34.119",
+    "t": "Initial release of AWS Tax Settings API"
+  }
+]

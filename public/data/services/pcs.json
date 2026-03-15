@@ -1,0 +1,78 @@
+[
+  {
+    "v": "1.42.45",
+    "t": "Introduces RESUMING state for clusters, compute node groups, and queues."
+  },
+  {
+    "v": "1.42.15",
+    "t": "Change API Reference Documentation for default Mode in Accounting and SlurmRest"
+  },
+  {
+    "v": "1.40.75",
+    "t": "Added support for the managed Slurm REST API endpoint"
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.43",
+    "t": "Added the UpdateCluster API action to modify cluster configurations, and Slurm custom settings for queues."
+  },
+  {
+    "v": "1.40.33",
+    "t": "Add support for Amazon EC2 Capacity Blocks for ML"
+  },
+  {
+    "v": "1.40.25",
+    "t": "Documentation-only update to add AccountingStorageEnforce to SlurmCustomSetting."
+  },
+  {
+    "v": "1.40.10",
+    "t": "Updated the regex pattern and description of iamInstanceProfileArn in the CreateComputeNodeGroup and UpdateComputeNodeGroup API actions. Name and path requirements apply to the ARN of the IAM role associated with the instance profile and not the ARN of the instance profile."
+  },
+  {
+    "v": "1.40.1",
+    "t": "Add support for IPv6 Networking for Clusters."
+  },
+  {
+    "v": "1.39.0",
+    "t": "Fixed the validation pattern for an instance profile Amazon Resource Name (ARN) in AWS PCS."
+  },
+  {
+    "v": "1.38.36",
+    "t": "Fixed regex patterns for ARN fields."
+  },
+  {
+    "v": "1.38.28",
+    "t": "Introduces SUSPENDING and SUSPENDED states for clusters, compute node groups, and queues."
+  },
+  {
+    "v": "1.38.17",
+    "t": "This release adds support for Slurm accounting. For more information, see the Slurm accounting topic in the AWS PCS User Guide. Slurm accounting is supported for Slurm 24.11 and later. This release also adds 24.11 as a valid value for the version parameter of the Scheduler data type."
+  },
+  {
+    "v": "1.38.2",
+    "t": "Documentation-only update: added valid values for the version property of the Scheduler and SchedulerRequest data types."
+  },
+  {
+    "v": "1.37.33",
+    "t": "Changed the minimum length of clusterIdentifier, computeNodeGroupIdentifier, and queueIdentifier to 3."
+  },
+  {
+    "v": "1.37.19",
+    "t": "ClusterName/ClusterIdentifier, ComputeNodeGroupName/ComputeNodeGroupIdentifier, and QueueName/QueueIdentifier can now have 10 characters, and a minimum of 3 characters. The TagResource API action can now return ServiceQuotaExceededException."
+  },
+  {
+    "v": "1.35.48",
+    "t": "Documentation update: added the default value of the Slurm configuration parameter scaleDownIdleTimeInSeconds to its description."
+  },
+  {
+    "v": "1.35.28",
+    "t": "AWS PCS API documentation - Edited the description of the iamInstanceProfileArn parameter of the CreateComputeNodeGroup and UpdateComputeNodeGroup actions; edited the description of the SlurmCustomSetting data type to list the supported parameters for clusters and compute node groups."
+  },
+  {
+    "v": "1.35.8",
+    "t": "Introducing AWS Parallel Computing Service (AWS PCS), a new service makes it easy to setup and manage high performance computing (HPC) clusters, and build scientific and engineering models at virtually any scale on AWS."
+  }
+]

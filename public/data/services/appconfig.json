@@ -1,0 +1,86 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.7",
+    "t": "Adding waiter support for deployments and environments; documentation updates"
+  },
+  {
+    "v": "1.35.64",
+    "t": "AWS AppConfig has added a new extension action point, AT_DEPLOYMENT_TICK, to support third-party monitors to trigger an automatic rollback during a deployment."
+  },
+  {
+    "v": "1.35.48",
+    "t": "This release improves deployment safety by granting customers the ability to REVERT completed deployments, to the last known good state.In the StopDeployment API revert case the status of a COMPLETE deployment will be REVERTED. AppConfig only allows a revert within 72 hours of deployment completion."
+  },
+  {
+    "v": "1.35.8",
+    "t": "This release adds support for deletion protection, which is a safety guardrail to prevent the unintentional deletion of a recently used AWS AppConfig Configuration Profile or Environment. This also includes a change to increase the maximum length of the Name parameter in UpdateConfigurationProfile."
+  },
+  {
+    "v": "1.34.58",
+    "t": "AWS AppConfig now supports dynamic parameters, which enhance the functionality of AppConfig Extensions by allowing you to provide parameter values to your Extensions at the time you deploy your configuration."
+  },
+  {
+    "v": "1.31.68",
+    "t": "Update KmsKeyIdentifier constraints to support AWS KMS multi-Region keys."
+  },
+  {
+    "v": "1.31.60",
+    "t": "AWS AppConfig introduces KMS customer-managed key (CMK) encryption support for data saved to AppConfig's hosted configuration store."
+  },
+  {
+    "v": "1.31.52",
+    "t": "Enabling boto3 paginators for list APIs and adding documentation around ServiceQuotaExceededException errors"
+  },
+  {
+    "v": "1.29.71",
+    "t": "AWS AppConfig now offers the option to set a version label on hosted configuration versions. Version labels allow you to identify specific hosted configuration versions based on an alternate versioning scheme that you define."
+  },
+  {
+    "v": "1.29.63",
+    "t": "AWS AppConfig introduces KMS customer-managed key (CMK) encryption of configuration data, along with AWS Secrets Manager as a new configuration data source. S3 objects using SSE-KMS encryption and SSM Parameter Store SecureStrings are also now supported."
+  },
+  {
+    "v": "1.27.29",
+    "t": "Adding Create, Get, Update, Delete, and List APIs for new two new resources: Extensions and ExtensionAssociations."
+  },
+  {
+    "v": "1.23.46",
+    "t": "Documentation updates for AWS AppConfig"
+  },
+  {
+    "v": "1.23.9",
+    "t": "Add Type to support feature flag configuration profiles"
+  },
+  {
+    "v": "1.17.3",
+    "t": "Update appconfig client to latest version"
+  },
+  {
+    "v": "1.17.0",
+    "t": "Update appconfig client to latest version"
+  },
+  {
+    "v": "1.16.5",
+    "t": "Update appconfig client to latest version"
+  },
+  {
+    "v": "1.15.33",
+    "t": "Update appconfig client to latest version"
+  },
+  {
+    "v": "1.15.21",
+    "t": "Update appconfig client to latest version"
+  },
+  {
+    "v": "1.15.4",
+    "t": "Update appconfig client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update appconfig client to latest version"
+  }
+]

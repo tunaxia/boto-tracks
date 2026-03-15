@@ -1,0 +1,54 @@
+[
+  {
+    "v": "1.42.16",
+    "t": "This release adds support for the Registration Reviewer feature, which provides generative AI feedback on a phone number or sender ID registration to ensure completeness before sending to downstream (carrier) review."
+  },
+  {
+    "v": "1.40.66",
+    "t": "This release adds support for the CarrierLookup API, which returns information about a destination phone number including if the number is valid, the carrier, and more."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.14",
+    "t": "This change added InternationalSendingEnbaled as part of describe/Update/Request phone number API response, and as part of update/Request phone number API request"
+  },
+  {
+    "v": "1.38.5",
+    "t": "AWS End User Messaging has added MONITOR and FILTER functionality to SMS Protect."
+  },
+  {
+    "v": "1.35.63",
+    "t": "Use rule overrides to always allow or always block messages to specific phone numbers. Use message feedback to monitor if a customer interacts with your message."
+  },
+  {
+    "v": "1.35.57",
+    "t": "Added the RequiresAuthenticationTimestamp field to the RegistrationVersionStatusHistory data type."
+  },
+  {
+    "v": "1.35.43",
+    "t": "Added the registrations status of REQUIRES_AUTHENTICATION"
+  },
+  {
+    "v": "1.35.26",
+    "t": "AWS End User Messaging SMS-Voice V2 has added support for resource policies. Use the three new APIs to create, view, edit, and delete resource policies."
+  },
+  {
+    "v": "1.34.148",
+    "t": "Update for rebrand to AWS End User Messaging SMS and Voice."
+  },
+  {
+    "v": "1.34.95",
+    "t": "Amazon Pinpoint has added two new features Multimedia services (MMS) and protect configurations. Use the three new MMS APIs to send media messages to a mobile phone which includes image, audio, text, or video files. Use the ten new protect configurations APIs to block messages to specific countries."
+  },
+  {
+    "v": "1.32.2",
+    "t": "Amazon Pinpoint now offers additional operations as part of version 2 of the SMS and voice APIs. This release includes 26 new APIs to create and manage phone number registrations, add verified destination numbers, and request sender IDs."
+  },
+  {
+    "v": "1.24.31",
+    "t": "Amazon Pinpoint now offers a version 2.0 suite of SMS and voice APIs, providing increased control over sending and configuration. This release is a new SDK for sending SMS and voice messages called PinpointSMSVoiceV2."
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.7.32",
+    "t": "Strip out the default port and http auth info when computing the host header for sigv4 signing."
+  },
+  {
+    "v": "1.4.87",
+    "t": "Do not sign x-amzn-trace-id as it can be mutated along the way."
+  }
+]

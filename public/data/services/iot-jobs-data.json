@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.35.67",
+    "t": "General Availability (GA) release of AWS IoT Device Management - Commands, to trigger light-weight remote actions on targeted devices"
+  },
+  {
+    "v": "1.12.19",
+    "t": "Update iot-jobs-data client to latest version"
+  },
+  {
+    "v": "1.8.4",
+    "t": "Update iot-jobs-data client to latest version"
+  }
+]

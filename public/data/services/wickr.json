@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.42.55",
+    "t": "AWS Wickr now provides APIs to manage your Wickr OpenTDF integration. These APIs enable you to test and save your OpenTDF configuration allowing you to manage rooms based on Trusted Data Format attributes."
+  },
+  {
+    "v": "1.42.14",
+    "t": "AWS Wickr now provides a suite of admin APIs to allow you to programmatically manage secure communication for Wickr networks at scale. These APIs enable you to automate administrative workflows including user lifecycle management, network configuration, and security group administration."
+  }
+]

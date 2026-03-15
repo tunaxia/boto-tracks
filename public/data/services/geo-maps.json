@@ -1,0 +1,26 @@
+[
+  {
+    "v": "1.42.41",
+    "t": "Added support for optional style parameters in maps, including 3D terrain and 3D Buildings"
+  },
+  {
+    "v": "1.40.59",
+    "t": "Added support for optional AdditionalFeatures parameter in the V2 GetTile API."
+  },
+  {
+    "v": "1.40.55",
+    "t": "Added support for optional style parameters in maps, including Terrain, ContourDensity, Traffic, and TravelModes."
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.37.14",
+    "t": "Provide support for vector map styles in the GetStaticMap operation."
+  },
+  {
+    "v": "1.35.52",
+    "t": "Release of Amazon Location Maps API. Maps enables you to build digital maps that showcase your locations, visualize your data, and unlock insights to drive your business"
+  }
+]

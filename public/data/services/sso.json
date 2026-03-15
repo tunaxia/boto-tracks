@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.39.15",
+    "t": "Updates legacy token auth flow to check if cached legacy tokens are expired according to the local clock. If expired, it will raise an ``UnauthorizedSSOTokenError`` instead of sending an expired token to Identity Center's ``GetRoleCredentials`` API."
+  },
+  {
+    "v": "1.31.58",
+    "t": "Fix FIPS Endpoints in aws-us-gov."
+  },
+  {
+    "v": "1.29.75",
+    "t": "Fixes aws/aws-cli`#7496 <https://github.com/aws/aws-cli/issues/7496>`__ by using the correct profile name rather than the one set in the session."
+  },
+  {
+    "v": "1.29.10",
+    "t": "Add support for loading sso-session profiles from the aws config"
+  },
+  {
+    "v": "1.27.63",
+    "t": "Documentation updates for the AWS IAM Identity Center Portal CLI Reference."
+  },
+  {
+    "v": "1.27.52",
+    "t": "Documentation updates to reflect service rename - AWS IAM Identity Center (successor to AWS Single Sign-On)"
+  },
+  {
+    "v": "1.27.47",
+    "t": "Documentation updates to reflect service rename - AWS IAM Identity Center (successor to AWS Single Sign-On)"
+  },
+  {
+    "v": "1.19.40",
+    "t": "Fixed timestamp format for SSO credential expirations"
+  },
+  {
+    "v": "1.17.0",
+    "t": "Added support for the SSO credential provider. This allows the SDK to retrieve temporary AWS credentials from a profile configured to use SSO credentials."
+  },
+  {
+    "v": "1.13.13",
+    "t": "Update sso client to latest version"
+  }
+]

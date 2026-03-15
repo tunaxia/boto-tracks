@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.32.4",
+    "t": "Adds a config option to opt out of IMDSv1 fallback"
+  },
+  {
+    "v": "1.25.0",
+    "t": "Added resiliency mechanisms to IMDS Credential Fetcher"
+  },
+  {
+    "v": "1.19.0",
+    "t": "Updated InstanceMetadataFetcher to use custom ipv6 uri as endpoint if envvar or config set"
+  },
+  {
+    "v": "1.13.22",
+    "t": "Fix regression in IMDS credential resolution. Fixes `#1892 <https://github.com/boto/botocore/issues/1892>`__."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "category": "ec2",
+    "description": "Add support for VPC peering with security groups.",
+    "type": "feature"
+  },
+  {
+    "category": "directoryservice",
+    "description": "Add SNS event notification support",
+    "type": "feature"
+  }
+]

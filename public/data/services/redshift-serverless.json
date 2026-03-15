@@ -1,0 +1,94 @@
+[
+  {
+    "v": "1.42.28",
+    "t": "Adds support for enabling extra compute resources for automatic optimization during create and update operations in Amazon Redshift Serverless workgroups."
+  },
+  {
+    "v": "1.42.5",
+    "t": "Added GetIdentityCenterAuthToken API to retrieve encrypted authentication tokens for Identity Center integrated serverless workgroups. This API enables programmatic access to secure Identity Center tokens with proper error handling and parameter validation across supported SDK languages."
+  },
+  {
+    "v": "1.41.2",
+    "t": "Added UpdateLakehouseConfiguration API to manage Amazon Redshift Federated Permissions and AWS IAM Identity Center trusted identity propagation for namespaces."
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.0",
+    "t": "Provides new and updated API members to support the Redshift Serverless reservations feature."
+  },
+  {
+    "v": "1.37.3",
+    "t": "Add track support for Redshift Serverless workgroup."
+  },
+  {
+    "v": "1.35.74",
+    "t": "Adds support for the ListManagedWorkgroups API to get an overview of existing managed workgroups."
+  },
+  {
+    "v": "1.35.52",
+    "t": "Adds and updates API members for the Redshift Serverless AI-driven scaling and optimization feature using the price-performance target setting."
+  },
+  {
+    "v": "1.34.146",
+    "t": "Adds dualstack support for Redshift Serverless workgroup."
+  },
+  {
+    "v": "1.34.97",
+    "t": "Update Redshift Serverless List Scheduled Actions Output Response to include Namespace Name."
+  },
+  {
+    "v": "1.34.89",
+    "t": "Updates description of schedule field for scheduled actions."
+  },
+  {
+    "v": "1.34.16",
+    "t": "Updates to ConfigParameter for RSS workgroup, removal of use_fips_ssl"
+  },
+  {
+    "v": "1.34.14",
+    "t": "use_fips_ssl and require_ssl parameter support for Workgroup, UpdateWorkgroup, and CreateWorkgroup"
+  },
+  {
+    "v": "1.33.4",
+    "t": "This release adds the following support for Amazon Redshift Serverless: 1) cross-account cross-VPCs, 2) copying snapshots across Regions, 3) scheduling snapshot creation, and 4) restoring tables from a recovery point."
+  },
+  {
+    "v": "1.32.3",
+    "t": "Updated SDK for Amazon Redshift Serverless, which provides the ability to configure a connection with IAM Identity Center to manage user and group access to databases."
+  },
+  {
+    "v": "1.31.81",
+    "t": "Added a new parameter in the workgroup that helps you control your cost for compute resources. This feature provides a ceiling for RPUs that Amazon Redshift Serverless can scale up to. When automatic compute scaling is required, having a higher value for MaxRPU can enhance query throughput."
+  },
+  {
+    "v": "1.31.74",
+    "t": "Added support for custom domain names for Amazon Redshift Serverless workgroups. This feature enables customers to create a custom domain name and use ACM to generate fully secure connections to it."
+  },
+  {
+    "v": "1.31.69",
+    "t": "This release adds support for customers to see the patch version and workgroup version in Amazon Redshift Serverless."
+  },
+  {
+    "v": "1.31.64",
+    "t": "Added support for managing credentials of serverless namespace admin using AWS Secrets Manager."
+  },
+  {
+    "v": "1.29.57",
+    "t": "Added query monitoring rules as possible parameters for create and update workgroup operations."
+  },
+  {
+    "v": "1.29.22",
+    "t": "Add Table Level Restore operations for Amazon Redshift Serverless. Add multi-port support for Amazon Redshift Serverless endpoints. Add Tagging support to Snapshots and Recovery Points in Amazon Redshift Serverless."
+  },
+  {
+    "v": "1.27.27",
+    "t": "Removed prerelease language for GA launch."
+  },
+  {
+    "v": "1.27.20",
+    "t": "Add new API operations for Amazon Redshift Serverless, a new way of using Amazon Redshift without needing to manually manage provisioned clusters. The new operations let you interact with Redshift Serverless resources, such as create snapshots, list VPC endpoints, delete resource policies, and more."
+  }
+]

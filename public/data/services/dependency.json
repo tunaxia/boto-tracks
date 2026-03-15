@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.24.21",
+    "t": "Added support for jmespath 1.0"
+  },
+  {
+    "v": "1.18.0",
+    "t": "botocore has removed docutils as a required dependency"
+  },
+  {
+    "v": "1.12.192",
+    "t": "Fixed dependency issue with broken docutils aws/aws-cli`#4332 <https://github.com/boto/botocore/issues/4332>`__"
+  }
+]

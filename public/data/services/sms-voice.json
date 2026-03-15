@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.35",
+    "t": "Updated the ``sms-voice`` client to the latest version. Note: this client is maintained only for backwards compatibility and should not be used for new development. We recommend using the ``pinpoint-sms-voice`` client for full support and ongoing updates."
+  },
+  {
+    "v": "1.12.85",
+    "t": "Update sms-voice client to latest version"
+  },
+  {
+    "v": "1.12.71",
+    "t": "Update sms-voice client to latest version"
+  },
+  {
+    "v": "1.12.46",
+    "t": "Update sms-voice client to latest version"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.37.2",
+    "t": "Removes the Amazon Chime SDK APIs from the \"chime\" namespace.  Amazon Chime SDK APIs continue to be available in the AWS SDK via the dedicated Amazon Chime SDK namespaces: chime-sdk-identity, chime-sdk-mediapipelines, chime-sdk-meetings, chime-sdk-messaging, and chime-sdk-voice."
+  },
+  {
+    "v": "1.29.164",
+    "t": "The Amazon Chime SDK APIs in the Chime namespace are no longer supported.  Customers should use APIs in the dedicated Amazon Chime SDK namespaces: ChimeSDKIdentity, ChimeSDKMediaPipelines, ChimeSDKMeetings, ChimeSDKMessaging, and ChimeSDKVoice."
+  },
+  {
+    "v": "1.29.117",
+    "t": "Adds support for Hindi and Thai languages and additional Amazon Transcribe parameters to the StartMeetingTranscription API."
+  },
+  {
+    "v": "1.27.39",
+    "t": "Chime VoiceConnector will now support ValidateE911Address which will allow customers to prevalidate their addresses included in their SIP invites for emergency calling"
+  },
+  {
+    "v": "1.24.18",
+    "t": "Chime VoiceConnector Logging APIs will now support MediaMetricLogs. Also CreateMeetingDialOut now returns AccessDeniedException."
+  },
+  {
+    "v": "1.23.9",
+    "t": "Adds new Transcribe API parameters to StartMeetingTranscription, including support for content identification and redaction (PII & PHI), partial results stabilization, and custom language models."
+  },
+  {
+    "v": "1.22.2",
+    "t": "Chime VoiceConnector and VoiceConnectorGroup APIs will now return an ARN."
+  },
+  {
+    "v": "1.21.57",
+    "t": "This release enables customers to configure Chime MediaCapturePipeline via API."
+  },
+  {
+    "v": "1.21.42",
+    "t": "Adds support for SipHeaders parameter for CreateSipMediaApplicationCall."
+  },
+  {
+    "v": "1.21.18",
+    "t": "Add support for \"auto\" in Region field of StartMeetingTranscription API request."
+  },
+  {
+    "v": "1.21.10",
+    "t": "Adds support for live transcription of meetings with Amazon Transcribe and Amazon Transcribe Medical.  The new APIs, StartMeetingTranscription and StopMeetingTranscription, control the generation of user-attributed transcriptions sent to meeting clients via Amazon Chime SDK data messages."
+  },
+  {
+    "v": "1.21.1",
+    "t": "This SDK release adds Account Status as one of the attributes in Account API response"
+  },
+  {
+    "v": "1.20.107",
+    "t": "Releasing new APIs for AWS Chime MediaCapturePipeline"
+  },
+  {
+    "v": "1.20.100",
+    "t": "Adds EventIngestionUrl field to MediaPlacement"
+  },
+  {
+    "v": "1.20.97",
+    "t": "This release adds a new API UpdateSipMediaApplicationCall, to update an in-progress call for SipMediaApplication."
+  },
+  {
+    "v": "1.20.92",
+    "t": "This SDK release adds support for UpdateAccount API to allow users to update their default license on Chime account."
+  },
+  {
+    "v": "1.20.65",
+    "t": "This release adds the ability to search for and order international phone numbers for Amazon Chime SIP media applications."
+  },
+  {
+    "v": "1.20.63",
+    "t": "Added new BatchCreateChannelMembership API to support multiple membership creation for channels"
+  },
+  {
+    "v": "1.20.61",
+    "t": "Increase AppInstanceUserId length to 64 characters"
+  },
+  {
+    "v": "1.19.57",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.19.23",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.19.20",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.17.47",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.17.33",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.17.15",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.17.3",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.16.14",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.16.13",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.16.12",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.15.39",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.15.37",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.15.2",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.14.16",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.14.0",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.13.19",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.13.2",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.12.157",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.12.148",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.12.116",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.12.96",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.12.44",
+    "t": "Update chime client to latest version"
+  },
+  {
+    "v": "1.12.34",
+    "t": "Update chime client to latest version"
+  }
+]

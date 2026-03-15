@@ -1,0 +1,57 @@
+[
+  {
+    "category": "cloudformation",
+    "description": "Update client to latest version",
+    "type": "feature"
+  },
+  {
+    "category": "codedeploy",
+    "description": "Update client to latest version",
+    "type": "feature"
+  },
+  {
+    "category": "dms",
+    "description": "Update client to latest version",
+    "type": "feature"
+  },
+  {
+    "category": "elasticache",
+    "description": "Update client to latest version",
+    "type": "feature"
+  },
+  {
+    "category": "elastic-beanstalk",
+    "description": "Update client to latest version",
+    "type": "feature"
+  },
+  {
+    "category": "redshift",
+    "description": "Update client to latest version",
+    "type": "feature"
+  },
+  {
+    "category": "waf",
+    "description": "Update client to latest version",
+    "type": "feature"
+  },
+  {
+    "category": "pagintor",
+    "description": "Fix regression when providing a starting token for a paginator (`issue 849 <https://github.com/boto/botocore/pull/849>`__)",
+    "type": "bugfix"
+  },
+  {
+    "category": "response-parsing",
+    "description": "Handle case when generic HTML error response is received (`issue 850 <https://github.com/boto/botocore/pull/850>`__)",
+    "type": "bugfix"
+  },
+  {
+    "category": "request-serialization",
+    "description": "Handle case when non str values are provided for header values when using signature version 4 (`issue 852 <https://github.com/boto/botocore/pull/852>`__)",
+    "type": "bugfix"
+  },
+  {
+    "category": "retry",
+    "description": "Retry HTTP responses with status code 502 (`issue 853 <https://github.com/boto/botocore/pull/853>`__)",
+    "type": "bugfix"
+  }
+]

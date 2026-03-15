@@ -1,0 +1,434 @@
+[
+  {
+    "v": "1.42.68",
+    "t": "The change adds a new capability named ManageSharedFolders in Custom Permissions"
+  },
+  {
+    "v": "1.42.61",
+    "t": "Added several new values for Capabilities, increased visual limit per sheet from previous limit to 75, renamed Quick Suite to Quick in several places."
+  },
+  {
+    "v": "1.42.55",
+    "t": "Adds support for SEMISTRUCT to InputColumn Type"
+  },
+  {
+    "v": "1.42.39",
+    "t": "Improve SessionTag usage guidelines in the GenerateEmbedURLForAnonymousUser API documentation. Update the GetIdentityContext document with the region support context."
+  },
+  {
+    "v": "1.42.32",
+    "t": "Added documentation and model for sheet layout groups - allows sheet elements to be grouped, Added documentation and the feature enables admins to have granular control over connectors under actions, Updated API documentation for PDF Export in Snapshot Export APIs"
+  },
+  {
+    "v": "1.42.18",
+    "t": "This release adds support for quick users to be able to perform role upgrades on their own. Additionally it allows admins to make this feature admin or auto approval along with new self upgrade capability that can be restricted by Admins."
+  },
+  {
+    "v": "1.42.8",
+    "t": "This release adds new GetIdentityContext API, Dashboard customization options for tables and pivot tables, Visual styling options- borders and decals, map GeocodingPreferences, KeyPairCredentials for DataSourceCredentials. Snapshot APIs now support registered users. Parameters limit increased to 400"
+  },
+  {
+    "v": "1.41.2",
+    "t": "Amazon Quick Suite now supports QuickChat as an embedding type when calling the GenerateEmbedUrlForRegisteredUser API, enabling developers to embed conversational AI agents directly into their applications."
+  },
+  {
+    "v": "1.41.1",
+    "t": "Introducing comprehensive theme styling controls. New features include border customization (radius, width, color), flexible padding controls, background styling for cards and sheets, centralized typography management, and visual-level override support across layouts."
+  },
+  {
+    "v": "1.40.68",
+    "t": "Support for New Data Prep Experience"
+  },
+  {
+    "v": "1.40.49",
+    "t": "This release adds support for ActionConnector and Flow, which are new resources associated with Amazon Quick Suite. Additional updates include expanded Data Source options, further branding customization, and new capabilities that can be restricted by Admins."
+  },
+  {
+    "v": "1.40.46",
+    "t": "Documentation improvements for QuickSight API documentation to clarify that delete operation APIs are global."
+  },
+  {
+    "v": "1.40.42",
+    "t": "added warnings to a few CLI pages"
+  },
+  {
+    "v": "1.40.29",
+    "t": "This release adds support for Account level custom permissions, additional Dashboard Options, and Null support for Q&A."
+  },
+  {
+    "v": "1.40.7",
+    "t": "Add RowAxisDisplayOptions and ColumnAxisDisplayOptions to HeatMapConfiguration, add Actions to PluginVisual, increase limit for CalculatedFields list"
+  },
+  {
+    "v": "1.40.0",
+    "t": "Added Impala connector support"
+  },
+  {
+    "v": "1.39.5",
+    "t": "Introduced custom instructions for topics."
+  },
+  {
+    "v": "1.39.0",
+    "t": "Introduced custom permission capabilities for reporting content. Added menu option in exploration to preserve configuration data when textbox menu option is used. Added support for Athena trusted identity propagation."
+  },
+  {
+    "v": "1.37.32",
+    "t": "Add support to analysis and sheet level highlighting in QuickSight."
+  },
+  {
+    "v": "1.37.23",
+    "t": "RLS permission dataset with userAs: RLS_RULES flag, Q in QuickSight/Threshold Alerts/Schedules/Snapshots in QS embedding, toggle dataset refresh email alerts via API, transposed table with options: column width, type and index, toggle Q&A on dashboards, Oracle Service Name when creating data source."
+  },
+  {
+    "v": "1.36.3",
+    "t": "Added `DigitGroupingStyle` in ThousandsSeparator to allow grouping by `LAKH`( Indian Grouping system ) currency. Support LAKH and `CRORE` currency types in Column Formatting."
+  },
+  {
+    "v": "1.35.84",
+    "t": "Add support for PerformanceConfiguration attribute to Dataset entity. Allow PerformanceConfiguration specification in CreateDataset and UpdateDataset APIs."
+  },
+  {
+    "v": "1.35.74",
+    "t": "This release includes API needed to support for Unstructured Data in Q in QuickSight Q&A (IDC)."
+  },
+  {
+    "v": "1.35.68",
+    "t": "This release includes: Update APIs to support Image, Layer Map, font customization, and Plugin Visual. Add Identity center related information in ListNamsespace API. Update API for restrictedFolder support in topics and add API for SearchTopics, Describe/Update DashboardsQA Configration."
+  },
+  {
+    "v": "1.35.61",
+    "t": "This release adds APIs for Custom Permissions management in QuickSight, and APIs to support QuickSight Branding."
+  },
+  {
+    "v": "1.35.56",
+    "t": "Add Client Credentials based OAuth support for Snowflake and Starburst"
+  },
+  {
+    "v": "1.35.43",
+    "t": "Add StartDashboardSnapshotJobSchedule API. RestoreAnalysis now supports restoring analysis to folders."
+  },
+  {
+    "v": "1.35.33",
+    "t": "QuickSight: Add support for exporting and importing folders in AssetBundle APIs"
+  },
+  {
+    "v": "1.35.29",
+    "t": "Adding personalization in QuickSight data stories. Admins can enable or disable personalization through QuickSight settings."
+  },
+  {
+    "v": "1.35.23",
+    "t": "QuickSight: 1. Add new API - ListFoldersForResource. 2. Commit mode adds visibility configuration of Apply button on multi-select controls for authors."
+  },
+  {
+    "v": "1.35.9",
+    "t": "Increased Character Limit for Dataset Calculation Field expressions"
+  },
+  {
+    "v": "1.35.4",
+    "t": "Explicit query for authors and dashboard viewing sharing for embedded users"
+  },
+  {
+    "v": "1.35.0",
+    "t": "Amazon QuickSight launches Customer Managed Key (CMK) encryption for Data Source metadata"
+  },
+  {
+    "v": "1.34.144",
+    "t": "Vega ally control options and Support for Reviewed Answers in Topics"
+  },
+  {
+    "v": "1.34.135",
+    "t": "Adding support for Repeating Sections, Nested Filters"
+  },
+  {
+    "v": "1.34.107",
+    "t": "This release adds DescribeKeyRegistration and UpdateKeyRegistration APIs to manage QuickSight Customer Managed Keys (CMK)."
+  },
+  {
+    "v": "1.34.95",
+    "t": "New Q embedding supporting Generative Q&A"
+  },
+  {
+    "v": "1.34.87",
+    "t": "This release adds support for the Cross Sheet Filter and Control features, and support for warnings in asset imports for any permitted errors encountered during execution"
+  },
+  {
+    "v": "1.34.79",
+    "t": "Adding IAMIdentityCenterInstanceArn parameter to CreateAccountSubscription"
+  },
+  {
+    "v": "1.34.73",
+    "t": "Amazon QuickSight: Adds support for setting up VPC Endpoint restrictions for accessing QuickSight Website."
+  },
+  {
+    "v": "1.34.53",
+    "t": "TooltipTarget for Combo chart visuals; ColumnConfiguration limit increase to 2000; Documentation Update"
+  },
+  {
+    "v": "1.34.38",
+    "t": "General Interactions for Visuals; Waterfall Chart Color Configuration; Documentation Update"
+  },
+  {
+    "v": "1.34.11",
+    "t": "Add LinkEntityArn support for different partitions; Add UnsupportedUserEditionException in UpdateDashboardLinks API; Add support for New Reader Experience Topics"
+  },
+  {
+    "v": "1.34.3",
+    "t": "A docs-only release to add missing entities to the API reference."
+  },
+  {
+    "v": "1.34.1",
+    "t": "Update Dashboard Links support; SingleAxisOptions support; Scatterplot Query limit support."
+  },
+  {
+    "v": "1.32.7",
+    "t": "This release launches new APIs for trusted identity propagation setup and supports creating datasources using trusted identity propagation as authentication method for QuickSight accounts configured with IAM Identity Center."
+  },
+  {
+    "v": "1.32.2",
+    "t": "Custom permission support for QuickSight roles; Three new datasources STARBURST, TRINO, BIGQUERY; Lenient mode changes the default behavior to allow for exporting and importing with certain UI allowed errors, Support for permissions and tags export and import."
+  },
+  {
+    "v": "1.31.77",
+    "t": "This release introduces Float Decimal Type as SubType in QuickSight SPICE datasets and Custom week start and Custom timezone options in Analysis and Dashboard"
+  },
+  {
+    "v": "1.31.67",
+    "t": "This release adds the following: 1) Trino and Starburst Database Connectors 2) Custom total for tables and pivot tables 3) Enable restricted folders 4) Add rolling dates for time equality filters 5) Refine DataPathValue and introduce DataPathType 6) Add SeriesType to ReferenceLineDataConfiguration"
+  },
+  {
+    "v": "1.31.62",
+    "t": "NullOption in FilterListConfiguration; Dataset schema/table max length increased; Support total placement for pivot table visual; Lenient mode relaxes the validation to create resources with definition; Data sources can be added to folders; Redshift data sources support IAM Role-based authentication"
+  },
+  {
+    "v": "1.31.54",
+    "t": "Added ability to tag users upon creation."
+  },
+  {
+    "v": "1.31.45",
+    "t": "This release launches new updates to QuickSight KPI visuals - support for sparklines, new templated layout and new targets for conditional formatting rules."
+  },
+  {
+    "v": "1.31.34",
+    "t": "Excel support in Snapshot Export APIs. Removed Required trait for some insight Computations. Namespace-shared Folders support. Global Filters support. Table pin Column support."
+  },
+  {
+    "v": "1.31.25",
+    "t": "New Authentication method for Account subscription - IAM Identity Center. Hierarchy layout support, default column width support and related style properties for pivot table visuals. Non-additive topic field aggregations for Topic API"
+  },
+  {
+    "v": "1.31.10",
+    "t": "This release launches new Snapshot APIs for CSV and PDF exports, adds support for info icon for filters and parameters in Exploration APIs, adds modeled exception to the DeleteAccountCustomization API, and introduces AttributeAggregationFunction's ability to add UNIQUE_VALUE aggregation in tooltips."
+  },
+  {
+    "v": "1.31.0",
+    "t": "This release includes below three changes: small multiples axes improvement, field based coloring, removed required trait from Aggregation function for TopBottomFilter."
+  },
+  {
+    "v": "1.29.148",
+    "t": "QuickSight support for pivot table field collapse state, radar chart range scale and multiple scope options in conditional formatting."
+  },
+  {
+    "v": "1.29.138",
+    "t": "Add support for Asset Bundle, Geospatial Heatmaps."
+  },
+  {
+    "v": "1.29.127",
+    "t": "Add support for Topic, Dataset parameters and VPC"
+  },
+  {
+    "v": "1.29.109",
+    "t": "This release has two changes: adding the OR condition to tag-based RLS rules in CreateDataSet and UpdateDataSet; adding RefreshSchedule and Incremental RefreshProperties operations for users to programmatically configure SPICE dataset ingestions."
+  },
+  {
+    "v": "1.29.88",
+    "t": "This release has two changes: add state persistence feature for embedded dashboard and console in GenerateEmbedUrlForRegisteredUser API; add properties for hidden collapsed row dimensions in PivotTableOptions."
+  },
+  {
+    "v": "1.29.76",
+    "t": "S3 data sources now accept a custom IAM role."
+  },
+  {
+    "v": "1.29.63",
+    "t": "QuickSight support for Radar Chart and Dashboard Publish Options"
+  },
+  {
+    "v": "1.29.54",
+    "t": "This release adds support for data bars in QuickSight table and increases pivot table field well limit."
+  },
+  {
+    "v": "1.29.18",
+    "t": "This release adds new Describe APIs and updates Create and Update APIs to support the data model for Dashboards, Analyses, and Templates."
+  },
+  {
+    "v": "1.29.13",
+    "t": "This release adds the following: 1) Asset management for centralized assets governance 2) QuickSight Q now supports public embedding 3) New Termination protection flag to mitigate accidental deletes 4) Athena data sources now accept a custom IAM role 5) QuickSight supports connectivity to Databricks"
+  },
+  {
+    "v": "1.27.89",
+    "t": "Amazon QuickSight now supports SecretsManager Secret ARN in place of CredentialPair for DataSource creation and update. This release also has some minor documentation updates and removes CountryCode as a required parameter in GeoSpatialColumnGroup"
+  },
+  {
+    "v": "1.27.59",
+    "t": "Added a new optional property DashboardVisual under ExperienceConfiguration parameter of GenerateEmbedUrlForAnonymousUser and GenerateEmbedUrlForRegisteredUser API operations. This supports embedding of specific visuals in QuickSight dashboards."
+  },
+  {
+    "v": "1.27.47",
+    "t": "A series of documentation updates to the QuickSight API reference."
+  },
+  {
+    "v": "1.27.23",
+    "t": "This release allows customers to programmatically create QuickSight accounts with Enterprise and Enterprise + Q editions. It also releases allowlisting domains for embedding QuickSight dashboards at runtime through the embedding APIs."
+  },
+  {
+    "v": "1.26.3",
+    "t": "API UpdatePublicSharingSettings enables IAM admins to enable/disable account level setting for public access of dashboards. When enabled, owners/co-owners for dashboards can enable public access on their dashboards. These dashboards can only be accessed through share link or embedding."
+  },
+  {
+    "v": "1.24.23",
+    "t": "AWS QuickSight Service Features - Expand public API support for group management."
+  },
+  {
+    "v": "1.23.29",
+    "t": "Multiple Doc-only updates for Amazon QuickSight."
+  },
+  {
+    "v": "1.23.11",
+    "t": "Add support for Exasol data source, 1 click enterprise embedding and email customization."
+  },
+  {
+    "v": "1.22.2",
+    "t": "Added QSearchBar option for GenerateEmbedUrlForRegisteredUser ExperienceConfiguration to support Q search bar embedding"
+  },
+  {
+    "v": "1.21.64",
+    "t": "AWS QuickSight Service  Features    - Add IP Restriction UI and public APIs support."
+  },
+  {
+    "v": "1.21.40",
+    "t": "Add new data source type for Amazon OpenSearch (successor to Amazon ElasticSearch)."
+  },
+  {
+    "v": "1.21.35",
+    "t": "This release adds support for referencing parent datasets as sources in a child dataset."
+  },
+  {
+    "v": "1.21.21",
+    "t": "Documentation updates for QuickSight."
+  },
+  {
+    "v": "1.21.8",
+    "t": "Add support to use row-level security with tags when embedding dashboards for users not provisioned in QuickSight"
+  },
+  {
+    "v": "1.20.99",
+    "t": "Releasing new APIs for AWS QuickSight Folders"
+  },
+  {
+    "v": "1.20.79",
+    "t": "Add new parameters on RegisterUser and UpdateUser APIs to assign or update external ID associated to QuickSight users federated through web identity."
+  },
+  {
+    "v": "1.20.77",
+    "t": "Add ARN based Row Level Security support to CreateDataSet/UpdateDataSet APIs."
+  },
+  {
+    "v": "1.20.14",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.20.5",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.20.2",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.19.38",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.19.32",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.19.19",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.19.16",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.19.4",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.18.10",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.18.4",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.17.57",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.17.44",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.17.26",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.17.17",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.17.12",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.16.17",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.15.10",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.13.35",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.13.28",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.12.186",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.12.112",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.12.67",
+    "t": "Update quicksight client to latest version"
+  },
+  {
+    "v": "1.12.49",
+    "t": "Update quicksight client to latest version"
+  }
+]

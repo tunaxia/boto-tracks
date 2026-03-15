@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.35.35",
+    "t": "Documentation-only update for AWS Marketplace Reporting API."
+  },
+  {
+    "v": "1.35.33",
+    "t": "The AWS Marketplace Reporting service introduces the GetBuyerDashboard API. This API returns a dashboard that provides visibility into your organization's AWS Marketplace agreements and associated spend across the AWS accounts in your organization."
+  }
+]

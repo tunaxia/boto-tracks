@@ -1,0 +1,250 @@
+[
+  {
+    "v": "1.42.1",
+    "t": "S3 Access Points support for FSx for NetApp ONTAP"
+  },
+  {
+    "v": "1.41.0",
+    "t": "Adding File Server Resource Manager configuration to FSx Windows"
+  },
+  {
+    "v": "1.40.67",
+    "t": "Amazon FSx now enables secure management of Active Directory credentials through AWS Secrets Manager integration. Customers can use Secret ARNs instead of direct credentials when joining resources to Active Directory domains."
+  },
+  {
+    "v": "1.40.64",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.42",
+    "t": "Add Dual-Stack support for Amazon FSx for NetApp ONTAP and Windows File Server"
+  },
+  {
+    "v": "1.40.10",
+    "t": "Amazon FSx for NetApp ONTAP 2nd generation file systems now support decreasing SSD storage capacity."
+  },
+  {
+    "v": "1.40.9",
+    "t": "Add Dual-Stack support for Amazon FSx for OpenZFS file systems"
+  },
+  {
+    "v": "1.38.44",
+    "t": "Add support for the ability to create Amazon S3 Access Points for Amazon FSx for OpenZFS file systems."
+  },
+  {
+    "v": "1.38.26",
+    "t": "FSx API changes to support the public launch of new Intelligent Tiering storage class on Amazon FSx for Lustre"
+  },
+  {
+    "v": "1.36.19",
+    "t": "Support for in-place Lustre version upgrades"
+  },
+  {
+    "v": "1.35.72",
+    "t": "FSx API changes to support the public launch of the Amazon FSx Intelligent Tiering for OpenZFS storage class."
+  },
+  {
+    "v": "1.35.71",
+    "t": "This release adds EFA support to increase FSx for Lustre file systems' throughput performance to a single client instance. This can be done by specifying EfaEnabled=true at the time of creation of Persistent_2 file systems."
+  },
+  {
+    "v": "1.35.27",
+    "t": "Doc-only update to address Lustre S3 hard-coded names."
+  },
+  {
+    "v": "1.34.142",
+    "t": "Adds support for FSx for NetApp ONTAP 2nd Generation file systems, and FSx for OpenZFS Single AZ HA file systems."
+  },
+  {
+    "v": "1.34.121",
+    "t": "This release adds support to increase metadata performance on FSx for Lustre file systems beyond the default level provisioned when a file system is created. This can be done by specifying MetadataConfiguration during the creation of Persistent_2 file systems or by updating it on demand."
+  },
+  {
+    "v": "1.34.55",
+    "t": "Added support for creating FSx for NetApp ONTAP file systems with up to 12 HA pairs, delivering up to 72 GB/s of read throughput and 12 GB/s of write throughput."
+  },
+  {
+    "v": "1.34.4",
+    "t": "Added support for FSx for OpenZFS on-demand data replication across AWS accounts and/or regions.Added the IncludeShared attribute for DescribeSnapshots.Added the CopyStrategy attribute for OpenZFSVolumeConfiguration."
+  },
+  {
+    "v": "1.32.7",
+    "t": "Added support for FSx for ONTAP scale-out file systems and FlexGroup volumes. Added the HAPairs field and ThroughputCapacityPerHAPair for filesystem. Added AggregateConfiguration (containing Aggregates and ConstituentsPerAggregate) and SizeInBytes for volume."
+  },
+  {
+    "v": "1.32.2",
+    "t": "Enables customers to update their PerUnitStorageThroughput on their Lustre file systems."
+  },
+  {
+    "v": "1.31.62",
+    "t": "After performing steps to repair the Active Directory configuration of a file system, use this action to initiate the process of attempting to recover to the file system."
+  },
+  {
+    "v": "1.31.44",
+    "t": "Amazon FSx documentation fixes"
+  },
+  {
+    "v": "1.31.37",
+    "t": "Documentation updates for project quotas."
+  },
+  {
+    "v": "1.31.23",
+    "t": "For FSx for Lustre, add new data repository task type, RELEASE_DATA_FROM_FILESYSTEM, to release files that have been archived to S3. For FSx for Windows, enable support for configuring and updating SSD IOPS, and for updating storage type. For FSx for OpenZFS, add new deployment type, MULTI_AZ_1."
+  },
+  {
+    "v": "1.31.3",
+    "t": "Amazon FSx for NetApp ONTAP now supports SnapLock, an ONTAP feature that enables you to protect your files in a volume by transitioning them to a write once, read many (WORM) state."
+  },
+  {
+    "v": "1.29.160",
+    "t": "Update to Amazon FSx documentation."
+  },
+  {
+    "v": "1.29.152",
+    "t": "Amazon FSx for NetApp ONTAP now supports joining a storage virtual machine (SVM) to Active Directory after the SVM has been created."
+  },
+  {
+    "v": "1.29.109",
+    "t": "Amazon FSx for Lustre now supports creating data repository associations on Persistent_1 and Scratch_2 file systems."
+  },
+  {
+    "v": "1.29.37",
+    "t": "Fix a bug where a recent release might break certain existing SDKs."
+  },
+  {
+    "v": "1.29.18",
+    "t": "This release adds support for 4GB/s / 160K PIOPS FSx for ONTAP file systems and 10GB/s / 350K PIOPS FSx for OpenZFS file systems (Single_AZ_2). For FSx for ONTAP, this also adds support for DP volumes, snapshot policy, copy tags to backups, and Multi-AZ route table updates."
+  },
+  {
+    "v": "1.27.83",
+    "t": "This release adds support for Amazon File Cache."
+  },
+  {
+    "v": "1.27.68",
+    "t": "Documentation update for Amazon FSx."
+  },
+  {
+    "v": "1.27.62",
+    "t": "Documentation updates for Amazon FSx for NetApp ONTAP."
+  },
+  {
+    "v": "1.27.41",
+    "t": "Documentation updates for Amazon FSx"
+  },
+  {
+    "v": "1.26.8",
+    "t": "This release adds root squash support to FSx for Lustre to restrict root level access from clients by mapping root users to a less-privileged user/group with limited permissions."
+  },
+  {
+    "v": "1.24.40",
+    "t": "This release adds support for deploying FSx for ONTAP file systems in a single Availability Zone."
+  },
+  {
+    "v": "1.24.34",
+    "t": "Provide customers more visibility into file system status by adding new \"Misconfigured Unavailable\" status for Amazon FSx for Windows File Server."
+  },
+  {
+    "v": "1.24.30",
+    "t": "This release adds support for modifying throughput capacity for FSx for ONTAP file systems."
+  },
+  {
+    "v": "1.24.12",
+    "t": "This release adds support for data repository associations to use root (\"/\") as the file system path"
+  },
+  {
+    "v": "1.24.9",
+    "t": "This release adds support for the following FSx for OpenZFS features: snapshot lifecycle transition messages, force flag for deleting file systems with child resources, LZ4 data compression, custom record sizes, and unsetting volume quotas and reservations."
+  },
+  {
+    "v": "1.23.43",
+    "t": "This release adds support for growing SSD storage capacity and growing/shrinking SSD IOPS for FSx for ONTAP file systems."
+  },
+  {
+    "v": "1.23.17",
+    "t": "This release adds support for the FSx for OpenZFS file system type, FSx for Lustre file systems with the Persistent_2 deployment type, and FSx for Lustre file systems with Amazon S3 data repository associations and automatic export policies."
+  },
+  {
+    "v": "1.21.56",
+    "t": "This release adds support for Lustre 2.12 to FSx for Lustre."
+  },
+  {
+    "v": "1.21.35",
+    "t": "Announcing Amazon FSx for NetApp ONTAP, a new service that provides fully managed shared storage in the AWS Cloud with the data access and management capabilities of ONTAP."
+  },
+  {
+    "v": "1.20.90",
+    "t": "This release adds support for auditing end-user access to files, folders, and file shares using Windows event logs, enabling customers to meet their security and compliance needs."
+  },
+  {
+    "v": "1.20.83",
+    "t": "This release adds LZ4 data compression support to FSx for Lustre to reduce storage consumption of both file system storage and file system backups."
+  },
+  {
+    "v": "1.20.50",
+    "t": "Support for cross-region and cross-account backup copies"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.19.14",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.17.47",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.17.41",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.17.36",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.17.28",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.17.27",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.17.10",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.16.20",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.15.30",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.15.6",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.13.45",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.12.175",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.12.89",
+    "t": "Update fsx client to latest version"
+  },
+  {
+    "v": "1.12.54",
+    "t": "Update fsx client to latest version"
+  }
+]

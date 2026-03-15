@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.3",
+    "t": "Doc only update for the AWS Marketplace Deployment Service that fixes several customer-reported issues."
+  },
+  {
+    "v": "1.33.4",
+    "t": "AWS Marketplace Deployment is a new service that provides essential features that facilitate the deployment of software, data, and services procured through AWS Marketplace."
+  }
+]

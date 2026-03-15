@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.3.28",
+    "t": "Fixed issue where AWS_CA_BUNDLE was not being used."
+  }
+]

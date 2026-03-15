@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.41.2",
+    "t": "The manifest field is now optional for the AWS Control Tower CreateLandingZone and UpdateLandingZone APIs for Landing Zone version 4.0"
+  },
+  {
+    "v": "1.40.69",
+    "t": "Added Parent Identifier support to ListEnabledControls and GetEnabledControl API. Implemented RemediationType support for Landing Zone operations: CreateLandingZone, UpdateLandingZone and GetLandingZone APIs"
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.17",
+    "t": "Updated the descriptions for the AWS Control Tower Baseline APIs to make them more intuitive."
+  },
+  {
+    "v": "1.38.15",
+    "t": "AWS Control Tower now reports the inheritance drift status for EnabledBaselines through the GetEnabledBaseline and ListEnabledBaselines APIs. You can now filter EnabledBaselines by their enablement and drift status using the ListEnabledBaselines API to view accounts and OUs that require attention."
+  },
+  {
+    "v": "1.35.66",
+    "t": "Adds support for child enabled baselines which allow you to see the enabled baseline status for individual accounts."
+  },
+  {
+    "v": "1.35.59",
+    "t": "Added ResetEnabledControl API."
+  },
+  {
+    "v": "1.34.152",
+    "t": "Updated Control Tower service documentation for controlcatalog control ARN support with existing Control Tower public APIs"
+  },
+  {
+    "v": "1.34.134",
+    "t": "Added ListLandingZoneOperations API."
+  },
+  {
+    "v": "1.34.109",
+    "t": "Added ListControlOperations API and filtering support for ListEnabledControls API. Updates also includes added metadata for enabled controls and control operations."
+  },
+  {
+    "v": "1.34.42",
+    "t": "Adds support for new Baseline and EnabledBaseline APIs for automating multi-account governance."
+  },
+  {
+    "v": "1.34.1",
+    "t": "Documentation updates for AWS Control Tower."
+  },
+  {
+    "v": "1.33.0",
+    "t": "This release adds the following support: 1. The EnableControl API can configure controls that are configurable.  2. The GetEnabledControl API shows the configured parameters on an enabled control. 3. The new UpdateEnabledControl API can change parameters on an enabled control."
+  },
+  {
+    "v": "1.32.7",
+    "t": "Add APIs to create and manage a landing zone."
+  },
+  {
+    "v": "1.31.84",
+    "t": "AWS Control Tower supports tagging for enabled controls. This release introduces TagResource, UntagResource and ListTagsForResource APIs to manage tags in existing enabled controls. It updates EnabledControl API to tag resources at creation time."
+  },
+  {
+    "v": "1.31.63",
+    "t": "Added new EnabledControl resource details to ListEnabledControls API and added new GetEnabledControl API."
+  },
+  {
+    "v": "1.27.65",
+    "t": "This release contains the first SDK for AWS Control Tower. It introduces  a new set of APIs: EnableControl, DisableControl, GetControlOperation, and ListEnabledControls."
+  }
+]

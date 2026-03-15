@@ -1,0 +1,170 @@
+[
+  {
+    "v": "1.41.6",
+    "t": "Support audio and video content retrieval on Bedrock Knowledge Bases."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.40",
+    "t": "This release enhances the information provided through Flow Traces. New information includes source/next node tracking, execution chains for complex nodes, dependency action (operation) details, and dependency traces."
+  },
+  {
+    "v": "1.38.32",
+    "t": "This release introduces the `PromptCreationConfigurations` input parameter, which includes fields to control prompt population for `InvokeAgent` or `InvokeInlineAgent` requests."
+  },
+  {
+    "v": "1.38.21",
+    "t": "Amazon Bedrock introduces asynchronous flows (in preview), which let you run flows for longer durations and yield control so that your application can perform other tasks and you don't have to actively monitor the flow's progress."
+  },
+  {
+    "v": "1.38.15",
+    "t": "Changes for enhanced metadata in trace"
+  },
+  {
+    "v": "1.38.6",
+    "t": "Support for Custom Orchestration within InlineAgents"
+  },
+  {
+    "v": "1.37.22",
+    "t": "bedrock flow now support node action trace."
+  },
+  {
+    "v": "1.37.10",
+    "t": "Add support for computer use tools"
+  },
+  {
+    "v": "1.37.9",
+    "t": "Support Multi Agent Collaboration within Inline Agents"
+  },
+  {
+    "v": "1.37.3",
+    "t": "Introduces Sessions (preview) to enable stateful conversations in GenAI applications."
+  },
+  {
+    "v": "1.37.0",
+    "t": "Adding support for ReasoningContent fields in Pre-Processing, Post-Processing and Orchestration Trace outputs."
+  },
+  {
+    "v": "1.36.19",
+    "t": "This releases adds the additionalModelRequestFields field to the InvokeInlineAgent operation. Use additionalModelRequestFields to specify  additional inference parameters for a model beyond the base inference parameters."
+  },
+  {
+    "v": "1.36.11",
+    "t": "This change is to deprecate the existing citation field under RetrieveAndGenerateStream API response in lieu of GeneratedResponsePart and RetrievedReferences"
+  },
+  {
+    "v": "1.36.10",
+    "t": "Add a 'reason' field to InternalServerException"
+  },
+  {
+    "v": "1.36.4",
+    "t": "Adds multi-turn input support for an Agent node in an Amazon Bedrock Flow"
+  },
+  {
+    "v": "1.36.0",
+    "t": "Now supports streaming for inline agents."
+  },
+  {
+    "v": "1.35.86",
+    "t": "bedrock agents now supports long term memory and performance configs. Invokeflow supports performance configs. RetrieveAndGenerate performance configs"
+  },
+  {
+    "v": "1.35.75",
+    "t": "This release introduces the ability to generate SQL using natural language, through a new GenerateQuery API (with native integration into Knowledge Bases); ability to ingest and retrieve images through Bedrock Data Automation; and ability to create a Knowledge Base backed by Kendra GenAI Index."
+  },
+  {
+    "v": "1.35.74",
+    "t": "Releasing SDK for multi agent collaboration"
+  },
+  {
+    "v": "1.35.72",
+    "t": "This release introduces a new Rerank API to leverage reranking models (with integration into Knowledge Bases); APIs to upload documents directly into Knowledge Base; RetrieveAndGenerateStream API for streaming response; Guardrails on Retrieve API; and ability to automatically generate filters"
+  },
+  {
+    "v": "1.35.70",
+    "t": "Custom Orchestration and Streaming configurations API release for AWSBedrockAgents."
+  },
+  {
+    "v": "1.35.68",
+    "t": "InvokeInlineAgent API release to help invoke runtime agents without any dependency on preconfigured agents."
+  },
+  {
+    "v": "1.35.66",
+    "t": "Releasing new Prompt Optimization to enhance your prompts for improved performance"
+  },
+  {
+    "v": "1.35.57",
+    "t": "This release adds trace functionality to Bedrock Prompt Flows"
+  },
+  {
+    "v": "1.35.45",
+    "t": "Knowledge Bases for Amazon Bedrock now supports custom prompts and model parameters in the orchestrationConfiguration of the RetrieveAndGenerate API. The modelArn field accepts Custom Models and Imported Models ARNs."
+  },
+  {
+    "v": "1.35.32",
+    "t": "Added raw model response and usage metrics to PreProcessing and PostProcessing Trace"
+  },
+  {
+    "v": "1.35.17",
+    "t": "Amazon Bedrock Knowledge Bases now supports using inference profiles to increase throughput and improve resilience."
+  },
+  {
+    "v": "1.35.9",
+    "t": "Lifting the maximum length on Bedrock KnowledgeBase RetrievalFilter array"
+  },
+  {
+    "v": "1.35.5",
+    "t": "Releasing the support for Action User Confirmation."
+  },
+  {
+    "v": "1.34.155",
+    "t": "Introduce model invocation output traces for orchestration traces, which contain the model's raw response and usage."
+  },
+  {
+    "v": "1.34.143",
+    "t": "Introduces query decomposition, enhanced Agents integration with Knowledge bases, session summary generation, and code interpretation (preview) for Claude V3 Sonnet and Haiku models. Also introduces Prompt Flows (preview) to link prompts, foundational models, and resources for end-to-end solutions."
+  },
+  {
+    "v": "1.34.109",
+    "t": "This release adds support for using Guardrails with Bedrock Agents."
+  },
+  {
+    "v": "1.34.106",
+    "t": "Updating Bedrock Knowledge Base Metadata & Filters feature with two new filters listContains and stringContains"
+  },
+  {
+    "v": "1.34.102",
+    "t": "This release adds support to provide guardrail configuration and modify inference parameters that are then used in RetrieveAndGenerate API in Agents for Amazon Bedrock."
+  },
+  {
+    "v": "1.34.90",
+    "t": "This release introduces zero-setup file upload support for the RetrieveAndGenerate API. This allows you to chat with your data without setting up a Knowledge Base."
+  },
+  {
+    "v": "1.34.89",
+    "t": "Releasing the support for simplified configuration and return of control"
+  },
+  {
+    "v": "1.34.72",
+    "t": "This release introduces filtering support on Retrieve and RetrieveAndGenerate APIs."
+  },
+  {
+    "v": "1.34.71",
+    "t": "This release adds support to customize prompts sent through the RetrieveAndGenerate API in Agents for Amazon Bedrock."
+  },
+  {
+    "v": "1.34.59",
+    "t": "Documentation update for Bedrock Runtime Agent"
+  },
+  {
+    "v": "1.34.52",
+    "t": "This release adds support to override search strategy performed by the Retrieve and RetrieveAndGenerate APIs for Amazon Bedrock Agents"
+  },
+  {
+    "v": "1.33.2",
+    "t": "This release introduces Agents for Amazon Bedrock Runtime"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.39",
+    "t": "Documentation update: added support notices to each API action."
+  },
+  {
+    "v": "1.24.20",
+    "t": "This release deprecates ROS, Ubuntu and Gazbeo from RoboMaker Simulation Service Software Suites in favor of user-supplied containers and Relaxed Software Suites."
+  },
+  {
+    "v": "1.23.48",
+    "t": "The release deprecates the use various APIs of RoboMaker Deployment Service in favor of AWS IoT GreenGrass v2.0."
+  },
+  {
+    "v": "1.21.62",
+    "t": "Adding support to GPU simulation jobs as well as non-ROS simulation jobs."
+  },
+  {
+    "v": "1.21.43",
+    "t": "Adding support to create container based Robot and Simulation applications by introducing an environment field"
+  },
+  {
+    "v": "1.21.26",
+    "t": "Documentation updates for RoboMaker"
+  },
+  {
+    "v": "1.21.2",
+    "t": "This release allows customers to create a new version of WorldTemplates with support for Doors."
+  },
+  {
+    "v": "1.20.62",
+    "t": "Adds ROS2 Foxy as a supported Robot Software Suite Version and Gazebo 11 as a supported Simulation Software Suite Version"
+  },
+  {
+    "v": "1.20.48",
+    "t": "This release allows RoboMaker customers to specify custom tools to run with their simulation job"
+  },
+  {
+    "v": "1.19.62",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.19.17",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.17.44",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.15.36",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.15.16",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.14.13",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.13.9",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.12.251",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.12.225",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.12.210",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.12.188",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.12.170",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.12.157",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.12.121",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.12.90",
+    "t": "Update robomaker client to latest version"
+  },
+  {
+    "v": "1.12.51",
+    "t": "Update robomaker client to latest version"
+  }
+]

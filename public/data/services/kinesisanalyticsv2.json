@@ -1,0 +1,86 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.14",
+    "t": "Adds Key Management Service (KMS) support allowing customer-managed key (CMK) encryption for Flink application data."
+  },
+  {
+    "v": "1.35.13",
+    "t": "Support for Flink 1.20 in Managed Service for Apache Flink"
+  },
+  {
+    "v": "1.34.136",
+    "t": "Support for Flink 1.19 in Managed Service for Apache Flink"
+  },
+  {
+    "v": "1.34.134",
+    "t": "This release adds support for new ListApplicationOperations and DescribeApplicationOperation APIs. It adds a new configuration to enable system rollbacks, adds field ApplicationVersionCreateTimestamp for clarity and improves support for pagination for APIs."
+  },
+  {
+    "v": "1.34.64",
+    "t": "Support for Flink 1.18 in Managed Service for Apache Flink"
+  },
+  {
+    "v": "1.34.62",
+    "t": "Support new RuntimeEnvironmentUpdate parameter within UpdateApplication API allowing callers to change the Flink version upon which their application runs."
+  },
+  {
+    "v": "1.29.163",
+    "t": "Support for new runtime environment in Kinesis Data Analytics Studio: Zeppelin-0.10, Apache Flink-1.15"
+  },
+  {
+    "v": "1.29.15",
+    "t": "Support for Apache Flink 1.15 in Kinesis Data Analytics."
+  },
+  {
+    "v": "1.21.61",
+    "t": "Support for Apache Flink 1.13 in Kinesis Data Analytics. Changed the required status of some Update properties to better fit the corresponding Create properties."
+  },
+  {
+    "v": "1.20.76",
+    "t": "Kinesis Data Analytics now allows rapid iteration on Apache Flink stream processing through the Kinesis Data Analytics Studio feature."
+  },
+  {
+    "v": "1.20.70",
+    "t": "Amazon Kinesis Analytics now supports ListApplicationVersions and DescribeApplicationVersion API for Apache Flink applications"
+  },
+  {
+    "v": "1.20.67",
+    "t": "Amazon Kinesis Analytics now supports RollbackApplication for Apache Flink applications to revert the application to the previous running version"
+  },
+  {
+    "v": "1.20.58",
+    "t": "Amazon Kinesis Data Analytics now supports custom application maintenance configuration using UpdateApplicationMaintenanceConfiguration API for Apache Flink applications. Customers will have visibility when their application is under maintenance status using 'MAINTENANCE' application status."
+  },
+  {
+    "v": "1.19.22",
+    "t": "Update kinesisanalyticsv2 client to latest version"
+  },
+  {
+    "v": "1.18.13",
+    "t": "Update kinesisanalyticsv2 client to latest version"
+  },
+  {
+    "v": "1.17.58",
+    "t": "Update kinesisanalyticsv2 client to latest version"
+  },
+  {
+    "v": "1.13.41",
+    "t": "Update kinesisanalyticsv2 client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update kinesisanalyticsv2 client to latest version"
+  },
+  {
+    "v": "1.12.145",
+    "t": "Update kinesisanalyticsv2 client to latest version"
+  },
+  {
+    "v": "1.12.53",
+    "t": "Update kinesisanalyticsv2 client to latest version"
+  }
+]

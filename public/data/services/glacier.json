@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.42.30",
+    "t": "Documentation updates for Amazon Glacier's maintenance mode"
+  },
+  {
+    "v": "1.42.10",
+    "t": "Documentation updates for Amazon Glacier's maintenance mode"
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.59",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.12.186",
+    "t": "Update glacier client to latest version"
+  },
+  {
+    "v": "1.10.66",
+    "t": "Update glacier client to latest version"
+  },
+  {
+    "v": "1.10.10",
+    "t": "Update glacier client to latest version"
+  },
+  {
+    "v": "1.8.42",
+    "t": "Update glacier client to latest version"
+  },
+  {
+    "v": "1.8.4",
+    "t": "Update glacier client to latest version"
+  },
+  {
+    "v": "1.5.1",
+    "t": "Update glacier client to latest version"
+  },
+  {
+    "v": "1.4.78",
+    "t": "Update glacier client to latest version"
+  }
+]

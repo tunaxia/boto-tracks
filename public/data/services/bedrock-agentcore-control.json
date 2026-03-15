@@ -1,0 +1,82 @@
+[
+  {
+    "v": "1.42.65",
+    "t": "Adding first class support for AG-UI protocol in AgentCore Runtime."
+  },
+  {
+    "v": "1.42.63",
+    "t": "Adds support for streaming memory records in AgentCore Memory"
+  },
+  {
+    "v": "1.42.60",
+    "t": "Support for AgentCore Policy GA"
+  },
+  {
+    "v": "1.42.43",
+    "t": "Support Browser profile persistence (cookies and local storage) across sessions for AgentCore Browser."
+  },
+  {
+    "v": "1.42.40",
+    "t": "Adds tagging support for AgentCore Evaluations (evaluator and online evaluation config)"
+  },
+  {
+    "v": "1.42.25",
+    "t": "Adds optional field \"view\" to GetMemory API input to give customers control over whether CMK encrypted data such as strategy decryption or override prompts is returned or not."
+  },
+  {
+    "v": "1.42.13",
+    "t": "Feature to support header exchanges between Bedrock AgentCore Gateway Targets and client, along with propagating query parameter to the configured targets."
+  },
+  {
+    "v": "1.42.10",
+    "t": "This release updates broken links for AgentCore Policy APIs in the AWS CLI and SDK resources."
+  },
+  {
+    "v": "1.42.1",
+    "t": "Supports AgentCore Evaluations, Policy, Episodic Memory Strategy, Resource Based Policy for Runtime and Gateway APIs, API Gateway Rest API Targets and enhances JWT authorizer."
+  },
+  {
+    "v": "1.41.2",
+    "t": "Support for agentcore gateway interceptor configurations and NONE authorizer type"
+  },
+  {
+    "v": "1.40.65",
+    "t": "Adds support for direct code deploy with CreateAgentRuntime and UpdateAgentRuntime"
+  },
+  {
+    "v": "1.40.63",
+    "t": "Web-Bot-Auth support for AgentCore Browser tool to help reduce captcha challenges."
+  },
+  {
+    "v": "1.40.58",
+    "t": "Fixing the service documentation name"
+  },
+  {
+    "v": "1.40.51",
+    "t": "Updated http status code in control plane apis of agentcore runtime, tools and identity. Additional included provider types for AgentCore Identity"
+  },
+  {
+    "v": "1.40.50",
+    "t": "Bedrock AgentCore release for Gateway, and Memory including Self-Managed Strategies support for Memory."
+  },
+  {
+    "v": "1.40.48",
+    "t": "Adding support for authorizer type AWS_IAM to AgentCore Control Gateway."
+  },
+  {
+    "v": "1.40.46",
+    "t": "Add support for VM lifecycle configuration parameters and A2A protocol"
+  },
+  {
+    "v": "1.40.42",
+    "t": "Tagging support for AgentCore Gateway"
+  },
+  {
+    "v": "1.40.35",
+    "t": "Add tagging and VPC support to AgentCore Runtime, Code Interpreter, and Browser resources. Add support for configuring request headers in Runtime. Fix AgentCore Runtime shape names."
+  },
+  {
+    "v": "1.39.7",
+    "t": "Initial release of Amazon Bedrock AgentCore SDK including Runtime, Built-In Tools, Memory, Gateway and Identity."
+  }
+]

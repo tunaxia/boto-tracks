@@ -1,0 +1,74 @@
+[
+  {
+    "v": "1.42.41",
+    "t": "Adds support for Catalog API us-east-1 dualstack endpoint catalog-marketplace.us-east-1.api.aws"
+  },
+  {
+    "v": "1.41.6",
+    "t": "This release introduces offer set entity in AWS Marketplace Catalog API to enable multi-product transaction. Offer set enables sellers to group multiple private offers into a single-click purchase experience, simplifying procurement for customers purchasing multi-product solutions."
+  },
+  {
+    "v": "1.40.64",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.55",
+    "t": "The ListEntities API now supports two new CAPI filters: DeliveryOptionTypes for SaaS products and CompatibleAWSServices for Container products."
+  },
+  {
+    "v": "1.38.33",
+    "t": "The ListEntities API now supports the EntityID, LastModifiedDate, ProductTitle, and Visibility filters for machine learning products. You can also sort using all of those filters."
+  },
+  {
+    "v": "1.34.74",
+    "t": "This release enhances the ListEntities API to support ResaleAuthorizationId filter and sort for OfferEntity in the request and the addition of a ResaleAuthorizationId field in the response of OfferSummary."
+  },
+  {
+    "v": "1.34.41",
+    "t": "AWS Marketplace Catalog API now supports setting intent on requests"
+  },
+  {
+    "v": "1.34.4",
+    "t": "AWS Marketplace now supports a new API, BatchDescribeEntities, which returns metadata and content for multiple entities."
+  },
+  {
+    "v": "1.33.4",
+    "t": "This release enhances the ListEntities API to support new entity type-specific strongly typed filters in the request and entity type-specific strongly typed summaries in the response."
+  },
+  {
+    "v": "1.31.62",
+    "t": "This release adds support for Document type as an alternative for stringified JSON for StartChangeSet, DescribeChangeSet and DescribeEntity APIs"
+  },
+  {
+    "v": "1.29.122",
+    "t": "Enabled Pagination for List Entities and List Change Sets operations"
+  },
+  {
+    "v": "1.29.110",
+    "t": "Added three new APIs to support resource sharing: GetResourcePolicy, PutResourcePolicy, and DeleteResourcePolicy. Added new OwnershipType field to ListEntities request to let users filter on entities that are shared with them. Increased max page size of ListEntities response from 20 to 50 results."
+  },
+  {
+    "v": "1.29.8",
+    "t": "Added three new APIs to support tagging and tag-based authorization: TagResource, UntagResource, and ListTagsForResource. Added optional parameters to the StartChangeSet API to support tagging a resource while making a request to create it."
+  },
+  {
+    "v": "1.27.39",
+    "t": "The SDK for the StartChangeSet API will now automatically set and use an idempotency token in the ClientRequestToken request parameter if the customer does not provide it."
+  },
+  {
+    "v": "1.20.62",
+    "t": "Allows user defined names for Changes in a ChangeSet. Users can use ChangeNames to reference properties in another Change within a ChangeSet. This feature allows users to make changes to an entity when the entity identifier is not yet available while constructing the StartChangeSet request."
+  },
+  {
+    "v": "1.18.13",
+    "t": "Update marketplace-catalog client to latest version"
+  },
+  {
+    "v": "1.16.19",
+    "t": "Update marketplace-catalog client to latest version"
+  },
+  {
+    "v": "1.13.16",
+    "t": "Update marketplace-catalog client to latest version"
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.34.144",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.102",
+    "t": "This release adds support for specifying email message headers for Email Templates, Campaigns, Journeys and Send Messages."
+  },
+  {
+    "v": "1.34.81",
+    "t": "The OrchestrationSendingRoleArn has been added to the email channel and is used to send emails from campaigns or journeys."
+  },
+  {
+    "v": "1.33.12",
+    "t": "This release includes Amazon Pinpoint API documentation updates pertaining to campaign message sending rate limits."
+  },
+  {
+    "v": "1.31.73",
+    "t": "Updated documentation to describe the case insensitivity for EndpointIds."
+  },
+  {
+    "v": "1.31.55",
+    "t": "Update documentation for RemoveAttributes to more accurately reflect its behavior when attributes are deleted."
+  },
+  {
+    "v": "1.31.15",
+    "t": "Added support for sending push notifications using the FCM v1 API with json credentials. Amazon Pinpoint customers can now deliver messages to Android devices using both FCM v1 API and the legacy FCM/GCM API"
+  },
+  {
+    "v": "1.29.161",
+    "t": "Added time zone estimation support for journeys"
+  },
+  {
+    "v": "1.29.138",
+    "t": "Amazon Pinpoint is deprecating the tags parameter in the UpdateSegment, UpdateCampaign, UpdateEmailTemplate, UpdateSmsTemplate, UpdatePushTemplate, UpdateInAppTemplate and UpdateVoiceTemplate. Amazon Pinpoint will end support tags parameter by May 22, 2023."
+  },
+  {
+    "v": "1.29.120",
+    "t": "Adds support for journey runs and querying journey execution metrics based on journey runs. Adds execution metrics to campaign activities. Updates docs for Advanced Quiet Time."
+  },
+  {
+    "v": "1.27.47",
+    "t": "Adds support for Advance Quiet Time in Journeys. Adds RefreshOnSegmentUpdate and WaitForQuietTime to JourneyResponse."
+  },
+  {
+    "v": "1.23.53",
+    "t": "This SDK release adds a new paramater creation date for GetApp and GetApps Api call"
+  },
+  {
+    "v": "1.23.35",
+    "t": "Adds JourneyChannelSettings to WriteJourneyRequest"
+  },
+  {
+    "v": "1.23.14",
+    "t": "Added a One-Time Password (OTP) management feature. You can use the Amazon Pinpoint API to generate OTP codes and send them to your users as SMS messages. Your apps can then call the API to verify the OTP codes that your users input"
+  },
+  {
+    "v": "1.21.49",
+    "t": "Added support for journey with contact center activity"
+  },
+  {
+    "v": "1.21.43",
+    "t": "This SDK release adds a new feature for Pinpoint campaigns, in-app messaging."
+  },
+  {
+    "v": "1.20.41",
+    "t": "Added support for journey pause/resume, journey updatable import segment and journey quiet time wait."
+  },
+  {
+    "v": "1.20.14",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.20.8",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.19.55",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.18.9",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.16.24",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.15.45",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.15.33",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.15.14",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.15.4",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.13.44",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.13.20",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.13.8",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.12.244",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.12.195",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.12.179",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.12.103",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.12.81",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.12.46",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.12.39",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.10.72",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.10.51",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.9.10",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.9.6",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.7.35",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.7.19",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.5.92",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.5.64",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.5.27",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.4.83",
+    "t": "Update pinpoint client to latest version"
+  },
+  {
+    "v": "1.4.81",
+    "t": "Update pinpoint client to latest version"
+  }
+]

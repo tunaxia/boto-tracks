@@ -1,0 +1,74 @@
+[
+  {
+    "v": "1.42.41",
+    "t": "Added new Region management APIs to support multi-Region replication in IAM Identity Center."
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.37",
+    "t": "Add support for encryption at rest with Customer Managed KMS Key in AWS IAM Identity Center"
+  },
+  {
+    "v": "1.40.7",
+    "t": "Added support for managing user background session for applications"
+  },
+  {
+    "v": "1.38.12",
+    "t": "Update PutPermissionBoundaryToPermissionSet API's managedPolicyArn pattern to allow valid ARN only. Update ApplicationName to allow white spaces."
+  },
+  {
+    "v": "1.32.3",
+    "t": "Improves support for configuring RefreshToken and TokenExchange grants on applications."
+  },
+  {
+    "v": "1.32.2",
+    "t": "Instances bound to a single AWS account, API operations for managing instances and applications, and assignments to applications are now supported. Trusted identity propagation is also supported, with new API operations for managing trusted token issuers and application grants and scopes."
+  },
+  {
+    "v": "1.31.44",
+    "t": "Content updates to IAM Identity Center API for China Regions."
+  },
+  {
+    "v": "1.29.63",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.27.63",
+    "t": "Documentation updates for the AWS IAM Identity Center CLI Reference."
+  },
+  {
+    "v": "1.27.58",
+    "t": "Documentation updates to reflect service rename - AWS IAM Identity Center (successor to AWS Single Sign-On)"
+  },
+  {
+    "v": "1.27.47",
+    "t": "Documentation updates to reflect service rename - AWS IAM Identity Center (successor to AWS Single Sign-On)"
+  },
+  {
+    "v": "1.27.32",
+    "t": "AWS SSO now supports attaching customer managed policies and a permissions boundary to your permission sets. This release adds new API operations to manage and view the customer managed policies and the permissions boundary for a given permission set."
+  },
+  {
+    "v": "1.21.9",
+    "t": "Documentation updates for arn:aws:trebuchet:::service:v1:03a2216d-1cda-4696-9ece-1387cb6f6952"
+  },
+  {
+    "v": "1.20.17",
+    "t": "Update sso-admin client to latest version"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update sso-admin client to latest version"
+  },
+  {
+    "v": "1.18.1",
+    "t": "Update sso-admin client to latest version"
+  },
+  {
+    "v": "1.17.59",
+    "t": "Update sso-admin client to latest version"
+  }
+]

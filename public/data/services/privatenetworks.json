@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.38.20",
+    "t": "The privatenetworks client has been removed following the deprecation of the service."
+  },
+  {
+    "v": "1.29.162",
+    "t": "This release allows Private5G customers to choose different commitment plans (60-days, 1-year, 3-years) when placing new orders, enables automatic renewal option for 1-year and 3-years commitments. It also allows customers to update the commitment plan of an existing radio unit."
+  },
+  {
+    "v": "1.29.72",
+    "t": "This release introduces a new StartNetworkResourceUpdate API, which enables return/replacement of hardware from a NetworkSite."
+  },
+  {
+    "v": "1.27.50",
+    "t": "This is the initial SDK release for AWS Private 5G. AWS Private 5G is a managed service that makes it easy to deploy, operate, and scale your own private mobile network at your on-premises location."
+  }
+]

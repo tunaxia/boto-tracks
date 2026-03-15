@@ -1,0 +1,54 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.30.1",
+    "t": "Update to Amazon Comprehend Medical documentation."
+  },
+  {
+    "v": "1.29.150",
+    "t": "This release supports a new set of entities and traits."
+  },
+  {
+    "v": "1.29.11",
+    "t": "This release supports new set of entities and traits. It also adds new category (BEHAVIORAL_ENVIRONMENTAL_SOCIAL)."
+  },
+  {
+    "v": "1.23.22",
+    "t": "This release adds a new set of APIs (synchronous and batch) to support the SNOMED-CT ontology."
+  },
+  {
+    "v": "1.20.51",
+    "t": "The InferICD10CM API now returns TIME_EXPRESSION entities that refer to medical conditions."
+  },
+  {
+    "v": "1.17.14",
+    "t": "Update comprehendmedical client to latest version"
+  },
+  {
+    "v": "1.16.4",
+    "t": "Update comprehendmedical client to latest version"
+  },
+  {
+    "v": "1.15.12",
+    "t": "Update comprehendmedical client to latest version"
+  },
+  {
+    "v": "1.13.40",
+    "t": "Update comprehendmedical client to latest version"
+  },
+  {
+    "v": "1.12.235",
+    "t": "Update comprehendmedical client to latest version"
+  },
+  {
+    "v": "1.12.53",
+    "t": "Update comprehendmedical client to latest version"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.12.62",
+    "t": "Add support for duration_seconds when assuming a role in the config file (`#1600 <https://github.com/boto/botocore/issues/1600>`__)."
+  },
+  {
+    "v": "1.4.30",
+    "t": "Fix regression introduced in `#920 <https://github.com/boto/botocore/issues/920>`__ where assume role responses error out when attempting to cache a response. (`#961 <https://github.com/boto/botocore/issues/961>`__)"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.36.15",
+    "t": "The SDK no longer validates payload size for eventstreams. This is to facilitate varying payload requirements across AWS services."
+  }
+]

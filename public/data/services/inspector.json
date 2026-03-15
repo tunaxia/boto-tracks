@@ -1,0 +1,54 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.12.136",
+    "t": "Update inspector client to latest version"
+  },
+  {
+    "v": "1.12.29",
+    "t": "Update inspector client to latest version"
+  },
+  {
+    "v": "1.10.65",
+    "t": "Update inspector client to latest version"
+  },
+  {
+    "v": "1.10.46",
+    "t": "Update inspector client to latest version"
+  },
+  {
+    "v": "1.10.26",
+    "t": "Update inspector client to latest version"
+  },
+  {
+    "v": "1.8.23",
+    "t": "Update inspector client to latest version"
+  },
+  {
+    "v": "1.8.20",
+    "t": "Update inspector client to latest version"
+  },
+  {
+    "v": "1.5.91",
+    "t": "Update inspector client to latest version"
+  },
+  {
+    "v": "1.5.50",
+    "t": "Update inspector client to latest version"
+  },
+  {
+    "v": "1.4.88",
+    "t": "Update inspector client to latest version"
+  },
+  {
+    "v": "1.4.16",
+    "t": "Update inspector client to latest version"
+  }
+]

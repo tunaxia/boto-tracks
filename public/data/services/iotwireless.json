@@ -1,0 +1,138 @@
+[
+  {
+    "v": "1.40.73",
+    "t": "Integration of Device Location with Amazon Sidewalk network for Amazon Sidewalk enabled devices"
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.39.17",
+    "t": "Added TxPowerIndexMin, TxPowerIndexMax, NbTransMin and NbTransMax params to ServiceProfile."
+  },
+  {
+    "v": "1.39.7",
+    "t": "FuotaTaskId is not a valid IdentifierType for EventConfiguration and is being removed from possible IdentifierType values."
+  },
+  {
+    "v": "1.37.19",
+    "t": "Mark EutranCid under LteNmr optional."
+  },
+  {
+    "v": "1.35.61",
+    "t": "New FuotaTask resource type to enable logging for your FUOTA tasks. A ParticipatingGatewaysforMulticast parameter to choose the list of gateways to receive the multicast downlink message and the transmission interval between them. Descriptor field which will be sent to devices during FUOTA transfer."
+  },
+  {
+    "v": "1.34.126",
+    "t": "Add RoamingDeviceSNR and RoamingDeviceRSSI to Customer Metrics."
+  },
+  {
+    "v": "1.34.121",
+    "t": "Adds support for wireless device to be in Conflict FUOTA Device Status due to a FUOTA Task, so it couldn't be attached to a new one."
+  },
+  {
+    "v": "1.34.85",
+    "t": "Add PublicGateways in the GetWirelessStatistics call response, indicating the LoRaWAN public network accessed by the device."
+  },
+  {
+    "v": "1.34.74",
+    "t": "Add support for retrieving key historical and live metrics for LoRaWAN devices and gateways"
+  },
+  {
+    "v": "1.31.78",
+    "t": "Added LoRaWAN version 1.0.4 support"
+  },
+  {
+    "v": "1.29.142",
+    "t": "Add Multicast Group support in Network Analyzer Configuration."
+  },
+  {
+    "v": "1.29.115",
+    "t": "Supports the new feature of LoRaWAN roaming, allows to configure MaxEirp for LoRaWAN gateway, and allows to configure PingSlotPeriod for LoRaWAN multicast group"
+  },
+  {
+    "v": "1.29.100",
+    "t": "Introducing new APIs that enable Sidewalk devices to communicate with AWS IoT Core through Sidewalk gateways. This will empower AWS customers to connect Sidewalk devices with other AWS IoT Services, creating  possibilities for seamless integration and advanced device management."
+  },
+  {
+    "v": "1.29.78",
+    "t": "In this release, we add additional capabilities for the FUOTA which allows user to configure the fragment size, the sending interval and the redundancy ratio of the FUOTA tasks"
+  },
+  {
+    "v": "1.29.17",
+    "t": "This release includes a new feature for customers to calculate the position of their devices by adding three new APIs: UpdateResourcePosition, GetResourcePosition, and GetPositionEstimate."
+  },
+  {
+    "v": "1.27.60",
+    "t": "This release includes a new feature for the customers to enable the LoRa gateways to send out beacons for Class B devices and an option to select one or more gateways for Class C devices when sending the LoRaWAN downlink messages."
+  },
+  {
+    "v": "1.27.47",
+    "t": "AWS IoT Wireless release support for sidewalk data reliability."
+  },
+  {
+    "v": "1.27.25",
+    "t": "Adds 5 APIs: PutPositionConfiguration, GetPositionConfiguration, ListPositionConfigurations, UpdatePosition, GetPosition for the new Positioning Service feature which enables customers to configure solvers to calculate position of LoRaWAN devices, or specify position of LoRaWAN devices & gateways."
+  },
+  {
+    "v": "1.25.2",
+    "t": "Add list support for event configurations, allow to get and update event configurations by resource type, support LoRaWAN events; Make NetworkAnalyzerConfiguration as a resource, add List, Create, Delete API support; Add FCntStart attribute support for ABP WirelessDevice."
+  },
+  {
+    "v": "1.23.30",
+    "t": "Downlink Queue Management feature provides APIs for customers to manage the queued messages destined to device inside AWS IoT Core for LoRaWAN. Customer can view, delete or purge the queued message(s). It allows customer to preempt the queued messages and let more urgent messages go through."
+  },
+  {
+    "v": "1.23.12",
+    "t": "Two new APIs, GetNetworkAnalyzerConfiguration and UpdateNetworkAnalyzerConfiguration, are added for the newly released Network Analyzer feature which enables customers to view real-time frame information and logs from LoRaWAN devices and gateways."
+  },
+  {
+    "v": "1.22.11",
+    "t": "Adding APIs for the FUOTA (firmware update over the air) and multicast for LoRaWAN devices and APIs to support event notification opt-in feature for Sidewalk related events. A few existing APIs need to be modified for this new feature."
+  },
+  {
+    "v": "1.21.8",
+    "t": "Add SidewalkManufacturingSn as an identifier to allow Customer to query WirelessDevice, in the response, AmazonId is added in the case that Sidewalk device is return."
+  },
+  {
+    "v": "1.20.85",
+    "t": "Added six new public customer logging APIs to allow customers to set/get/reset log levels at resource type and resource id level. The log level set from the APIs will be used to filter log messages that can be emitted to CloudWatch in customer accounts."
+  },
+  {
+    "v": "1.20.70",
+    "t": "Add three new optional fields to support filtering and configurable sub-band in WirelessGateway APIs. The filtering is for all the RF region supported. The sub-band configuration is only applicable to LoRa gateways of US915 or AU915 RF region."
+  },
+  {
+    "v": "1.20.58",
+    "t": "Add a new optional field MessageType to support Sidewalk devices in SendDataToWirelessDevice API"
+  },
+  {
+    "v": "1.20.42",
+    "t": "Add Sidewalk support to APIs: GetWirelessDevice, ListWirelessDevices, GetWirelessDeviceStatistics. Add Gateway connection status in GetWirelessGatewayStatistics API."
+  },
+  {
+    "v": "1.20.39",
+    "t": "Support tag-on-create for WirelessDevice."
+  },
+  {
+    "v": "1.20.24",
+    "t": "Update iotwireless client to latest version"
+  },
+  {
+    "v": "1.20.19",
+    "t": "Update iotwireless client to latest version"
+  },
+  {
+    "v": "1.20.0",
+    "t": "Update iotwireless client to latest version"
+  },
+  {
+    "v": "1.19.42",
+    "t": "Update iotwireless client to latest version"
+  },
+  {
+    "v": "1.19.37",
+    "t": "Update iotwireless client to latest version"
+  }
+]

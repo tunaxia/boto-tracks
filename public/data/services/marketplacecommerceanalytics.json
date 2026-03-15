@@ -1,0 +1,58 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.16",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.31.69",
+    "t": "The StartSupportDataExport operation has been deprecated as part of the Product Support Connection deprecation. As of December 2022, Product Support Connection is no longer supported."
+  },
+  {
+    "v": "1.19.8",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  },
+  {
+    "v": "1.15.18",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  },
+  {
+    "v": "1.14.7",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  },
+  {
+    "v": "1.12.251",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  },
+  {
+    "v": "1.12.225",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  },
+  {
+    "v": "1.5.83",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  },
+  {
+    "v": "1.5.78",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  },
+  {
+    "v": "1.5.27",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  },
+  {
+    "v": "1.4.93",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  },
+  {
+    "v": "1.4.86",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  },
+  {
+    "v": "1.4.44",
+    "t": "Update marketplacecommerceanalytics client to latest version"
+  }
+]

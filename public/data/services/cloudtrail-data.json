@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.61",
+    "t": "Add CloudTrail Data Service to enable users to ingest activity events from non-AWS sources into CloudTrail Lake."
+  }
+]

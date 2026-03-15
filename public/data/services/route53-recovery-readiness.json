@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.16",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.23.42",
+    "t": "Updated documentation for Route53 Recovery Readiness APIs."
+  },
+  {
+    "v": "1.21.8",
+    "t": "Amazon Route 53 Application Recovery Controller's readiness check capability continually monitors resource quotas, capacity, and network routing policies to ensure that the recovery environment is scaled and configured to take over when needed."
+  }
+]

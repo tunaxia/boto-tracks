@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.19.21",
+    "t": "Fix bug where retries were attempted on any response with an \"Error\" key."
+  },
+  {
+    "v": "1.4.8",
+    "t": "Retry HTTP responses with status code 502 (`issue 853 <https://github.com/boto/botocore/pull/853>`__)"
+  }
+]

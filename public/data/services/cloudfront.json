@@ -1,0 +1,286 @@
+[
+  {
+    "v": "1.42.40",
+    "t": "Add OriginMTLS support to CloudFront Distribution APIs"
+  },
+  {
+    "v": "1.42.25",
+    "t": "Added EntityLimitExceeded exception handling to the following API operations AssociateDistributionWebACL, AssociateDistributionTenantWebACL, UpdateDistributionWithStagingConfig"
+  },
+  {
+    "v": "1.41.3",
+    "t": "Add TrustStore, ConnectionFunction APIs to CloudFront SDK"
+  },
+  {
+    "v": "1.41.1",
+    "t": "This release adds support for bring your own IP (BYOIP) to CloudFront's CreateAnycastIpList API through an optional IpamCidrConfigs field."
+  },
+  {
+    "v": "1.40.67",
+    "t": "This release adds new and updated API operations. You can now use the IpAddressType field to specify either ipv4 or dualstack for your Anycast static IP list. You can also enable cross-account resource sharing to share your VPC origins with other AWS accounts"
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.50",
+    "t": "Added new viewer security policy, TLSv1.2_2025, for CloudFront."
+  },
+  {
+    "v": "1.40.23",
+    "t": "Adding an optional field IpAddressType in CustomOriginConfig"
+  },
+  {
+    "v": "1.40.5",
+    "t": "Added new viewer security policy, TLSv1.3_2025, for CloudFront."
+  },
+  {
+    "v": "1.39.17",
+    "t": "This release adds new origin timeout options: 1) ResponseCompletionTimeout and 2) OriginReadTimeout (for S3 origins)"
+  },
+  {
+    "v": "1.39.10",
+    "t": "Add dualstack endpoint support"
+  },
+  {
+    "v": "1.39.8",
+    "t": "Doc only update for CloudFront that fixes some customer-reported issues"
+  },
+  {
+    "v": "1.38.12",
+    "t": "Doc-only update for CloudFront. These changes include customer-reported issues."
+  },
+  {
+    "v": "1.38.4",
+    "t": "Add distribution tenant, connection group, and multi-tenant distribution APIs to the CloudFront SDK."
+  },
+  {
+    "v": "1.37.9",
+    "t": "Documentation updates for Amazon CloudFront."
+  },
+  {
+    "v": "1.37.2",
+    "t": "Documentation update for VPC origin config."
+  },
+  {
+    "v": "1.36.17",
+    "t": "Doc-only update that adds defaults for CloudFront VpcOriginEndpointConfig values."
+  },
+  {
+    "v": "1.35.83",
+    "t": "Adds support for OriginReadTimeout and OriginKeepaliveTimeout to create CloudFront Distributions with VPC Origins."
+  },
+  {
+    "v": "1.35.67",
+    "t": "Adds support for Origin Selection between EMPv2 origins based on media quality score."
+  },
+  {
+    "v": "1.35.66",
+    "t": "Add support for gRPC, VPC origins, and Anycast IP Lists. Allow LoggingConfig IncludeCookies to be set regardless of whether the LoggingConfig is enabled."
+  },
+  {
+    "v": "1.35.58",
+    "t": "No API changes from previous release. This release migrated the model to Smithy keeping all features unchanged."
+  },
+  {
+    "v": "1.34.135",
+    "t": "Doc only update for CloudFront that fixes customer-reported issue"
+  },
+  {
+    "v": "1.34.110",
+    "t": "Model update; no change to SDK functionality."
+  },
+  {
+    "v": "1.34.83",
+    "t": "CloudFront origin access control extends support to AWS Lambda function URLs and AWS Elemental MediaPackage v2 origins."
+  },
+  {
+    "v": "1.32.5",
+    "t": "This release adds support for CloudFront KeyValueStore, a globally managed key value datastore associated with CloudFront Functions."
+  },
+  {
+    "v": "1.31.15",
+    "t": "Add a new JavaScript runtime version for CloudFront Functions."
+  },
+  {
+    "v": "1.29.77",
+    "t": "CloudFront now supports block lists in origin request policies so that you can forward all headers, cookies, or query string from viewer requests to the origin *except* for those specified in the block list."
+  },
+  {
+    "v": "1.29.67",
+    "t": "CloudFront Origin Access Control extends support to AWS Elemental MediaStore origins."
+  },
+  {
+    "v": "1.29.41",
+    "t": "Extend response headers policy to support removing headers from viewer responses"
+  },
+  {
+    "v": "1.29.32",
+    "t": "Updated documentation for CloudFront"
+  },
+  {
+    "v": "1.29.25",
+    "t": "Introducing UpdateDistributionWithStagingConfig that can be used to promote the staging configuration to the production."
+  },
+  {
+    "v": "1.29.13",
+    "t": "CloudFront API support for staging distributions and associated traffic management policies."
+  },
+  {
+    "v": "1.27.64",
+    "t": "Update API documentation for CloudFront origin access control (OAC)"
+  },
+  {
+    "v": "1.27.59",
+    "t": "Adds support for CloudFront origin access control (OAC), making it possible to restrict public access to S3 bucket origins in all AWS Regions, those with SSE-KMS, and more."
+  },
+  {
+    "v": "1.27.52",
+    "t": "Adds Http 3 support to distributions"
+  },
+  {
+    "v": "1.26.1",
+    "t": "Introduced a new error (TooLongCSPInResponseHeadersPolicy) that is returned when the value of the Content-Security-Policy header in a response headers policy exceeds the maximum allowed length."
+  },
+  {
+    "v": "1.25.1",
+    "t": "CloudFront now supports the Server-Timing header in HTTP responses sent from CloudFront. You can use this header to view metrics that help you gain insights about the behavior and performance of CloudFront. To use this header, enable it in a response headers policy."
+  },
+  {
+    "v": "1.22.9",
+    "t": "CloudFront now supports response headers policies to add HTTP headers to the responses that CloudFront sends to viewers. You can use these policies to add CORS headers, control browser caching, and more, without modifying your origin or writing any code."
+  },
+  {
+    "v": "1.20.107",
+    "t": "Amazon CloudFront now provides two new APIs, ListConflictingAliases and AssociateAlias, that help locate and move Alternate Domain Names (CNAMEs) if you encounter the CNAMEAlreadyExists error code."
+  },
+  {
+    "v": "1.20.99",
+    "t": "Amazon CloudFront adds support for a new security policy, TLSv1.2_2021."
+  },
+  {
+    "v": "1.20.81",
+    "t": "Documentation fix for CloudFront"
+  },
+  {
+    "v": "1.20.62",
+    "t": "CloudFront now supports CloudFront Functions, a native feature of CloudFront that enables you to write lightweight functions in JavaScript for high-scale, latency-sensitive CDN customizations."
+  },
+  {
+    "v": "1.19.44",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.19.2",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.19.0",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.18.0",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.17.59",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.17.52",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.17.51",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.17.32",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.17.24",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.17.18",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.17.4",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.16.24",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.14.10",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.13.42",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.12.169",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.12.49",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.12.11",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.10.77",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.10.47",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.9.22",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.7.36",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.5.62",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.5.32",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.4.85",
+    "t": "Add lambda function associations to cache behaviors."
+  },
+  {
+    "v": "1.4.64",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.4.61",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.4.53",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.4.50",
+    "t": "Update cloudfront client to latest version"
+  },
+  {
+    "v": "1.4.44",
+    "t": "Update cloudfront client to latest version"
+  }
+]

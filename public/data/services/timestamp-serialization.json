@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.10.66",
+    "t": "Support explicit timestamp serialization per timestamp shape."
+  }
+]

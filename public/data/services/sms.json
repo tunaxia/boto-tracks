@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.40.31",
+    "t": "The sms client has been removed following the deprecation of the service."
+  },
+  {
+    "v": "1.29.104",
+    "t": "Deprecating AWS Server Migration Service."
+  },
+  {
+    "v": "1.24.33",
+    "t": "Revised product update notice for SMS console deprecation."
+  },
+  {
+    "v": "1.23.23",
+    "t": "This release adds SMS discontinuation information to the API and CLI references."
+  },
+  {
+    "v": "1.17.38",
+    "t": "Update sms client to latest version"
+  },
+  {
+    "v": "1.12.52",
+    "t": "Update sms client to latest version"
+  },
+  {
+    "v": "1.4.66",
+    "t": "Update sms client to latest version"
+  }
+]

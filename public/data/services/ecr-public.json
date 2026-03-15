@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.38.6",
+    "t": "Adds dualstack support for Amazon Elastic Container Registry Public (Amazon ECR Public)."
+  },
+  {
+    "v": "1.36.10",
+    "t": "Temporarily updating dualstack endpoint support"
+  },
+  {
+    "v": "1.36.9",
+    "t": "Add support for Dualstack Endpoints"
+  },
+  {
+    "v": "1.35.90",
+    "t": "Restoring custom endpoint functionality for ECR Public"
+  },
+  {
+    "v": "1.35.87",
+    "t": "Add support for Dualstack endpoints"
+  },
+  {
+    "v": "1.29.111",
+    "t": "This release will allow using registry alias as registryId in BatchDeleteImage request."
+  },
+  {
+    "v": "1.29.46",
+    "t": "This release for Amazon ECR Public makes several change to bring the SDK into sync with the API."
+  },
+  {
+    "v": "1.20.15",
+    "t": "Update ecr-public client to latest version"
+  },
+  {
+    "v": "1.19.27",
+    "t": "Update ecr-public client to latest version"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.29.95",
+    "t": "This release adds a new API, SearchResources, which enable users to search through metadata and content of folders, documents, document versions and comments in a WorkDocs site."
+  },
+  {
+    "v": "1.29.68",
+    "t": "Doc only update for the WorkDocs APIs."
+  },
+  {
+    "v": "1.29.9",
+    "t": "Added 2 new document related operations, DeleteDocumentVersion and RestoreDocumentVersions."
+  },
+  {
+    "v": "1.15.10",
+    "t": "Update workdocs client to latest version"
+  },
+  {
+    "v": "1.12.100",
+    "t": "Update workdocs client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update workdocs client to latest version"
+  },
+  {
+    "v": "1.7.48",
+    "t": "Update workdocs client to latest version"
+  },
+  {
+    "v": "1.5.72",
+    "t": "Update workdocs client to latest version"
+  },
+  {
+    "v": "1.5.60",
+    "t": "Update workdocs client to latest version"
+  },
+  {
+    "v": "1.5.22",
+    "t": "Update workdocs client to latest version"
+  }
+]

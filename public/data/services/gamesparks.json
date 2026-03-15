@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.31.67",
+    "t": "The gamesparks client has been removed following the deprecation of the service."
+  },
+  {
+    "v": "1.28.4",
+    "t": "Add LATEST as a possible GameSDK Version on snapshot"
+  },
+  {
+    "v": "1.26.4",
+    "t": "This release adds an optional DeploymentResult field in the responses of GetStageDeploymentIntegrationTests and ListStageDeploymentIntegrationTests APIs."
+  },
+  {
+    "v": "1.24.25",
+    "t": "Released the preview of Amazon GameSparks, a fully managed AWS service that provides a multi-service backend for game developers."
+  }
+]

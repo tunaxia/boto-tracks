@@ -1,0 +1,86 @@
+[
+  {
+    "v": "1.42.10",
+    "t": "Adds support for enabling detailed metrics on Route 53 Resolver endpoints using RniEnhancedMetricsEnabled and TargetNameServerMetricsEnabled in the CreateResolverEndpoint and UpdateResolverEndpoint APIs, providing enhanced visibility into Resolver endpoint and target name server performance."
+  },
+  {
+    "v": "1.40.75",
+    "t": "Adding DICTIONARY_DGA to dns-threat-protection as a new enum type. Customers can now set rules for dictionary dga protection"
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.43",
+    "t": "Add support for iterative DNS queries through the new INBOUND_DELEGATION endpoint. Add delegation support through the Outbound Endpoints with DELEGATE rules."
+  },
+  {
+    "v": "1.35.63",
+    "t": "Route 53 Resolver DNS Firewall Advanced Rules allows you to monitor and block suspicious DNS traffic based on anomalies detected in the queries, such as DNS tunneling and Domain Generation Algorithms (DGAs)."
+  },
+  {
+    "v": "1.35.38",
+    "t": "Route 53 Resolver Forwarding Rules can now include a server name indication (SNI) in the target address for rules that use the DNS-over-HTTPS (DoH) protocol. When a DoH-enabled Outbound Resolver Endpoint forwards a request to a DoH server, it will provide the SNI in the TLS handshake."
+  },
+  {
+    "v": "1.34.141",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.102",
+    "t": "Update the DNS Firewall settings to correct a spelling issue."
+  },
+  {
+    "v": "1.34.95",
+    "t": "Release of FirewallDomainRedirectionAction parameter on the Route 53 DNS Firewall Rule.  This allows customers to configure a DNS Firewall rule to inspect all the domains in the DNS redirection chain (default) , such as CNAME, ALIAS, DNAME, etc., or just the first domain and trust the rest."
+  },
+  {
+    "v": "1.34.15",
+    "t": "This release adds support for query type configuration on firewall rules that enables customers for granular action (ALLOW, ALERT, BLOCK) by DNS query type."
+  },
+  {
+    "v": "1.34.3",
+    "t": "Add DOH protocols in resolver endpoints."
+  },
+  {
+    "v": "1.31.8",
+    "t": "This release adds support for Route 53 On Outposts, a new feature that allows customers to run Route 53 Resolver and Resolver endpoints locally on their Outposts."
+  },
+  {
+    "v": "1.29.133",
+    "t": "Update FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.29.87",
+    "t": "Add dual-stack and IPv6 support for Route 53 Resolver Endpoint,Add IPv6 target IP in Route 53 Resolver Forwarding Rule"
+  },
+  {
+    "v": "1.22.3",
+    "t": "New API for ResolverConfig, which allows autodefined rules for reverse DNS resolution to be disabled for a VPC"
+  },
+  {
+    "v": "1.21.24",
+    "t": "Documentation updates for Route 53 Resolver"
+  },
+  {
+    "v": "1.20.87",
+    "t": "Documentation updates for Route 53 Resolver"
+  },
+  {
+    "v": "1.20.43",
+    "t": "Route 53 Resolver DNS Firewall is a firewall service that allows you to filter and regulate outbound DNS traffic for your VPCs."
+  },
+  {
+    "v": "1.19.39",
+    "t": "Update route53resolver client to latest version"
+  },
+  {
+    "v": "1.17.49",
+    "t": "Update route53resolver client to latest version"
+  },
+  {
+    "v": "1.12.46",
+    "t": "Update route53resolver client to latest version"
+  }
+]

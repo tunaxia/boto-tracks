@@ -1,0 +1,74 @@
+[
+  {
+    "v": "1.42.54",
+    "t": "Added support for S3OutputPathExtension and Filename parameters to the InvokeEndpointAsync API to allow users to customize the S3 output path and file name for async inference response payloads."
+  },
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.35.15",
+    "t": "AWS SageMaker Runtime feature: Add sticky routing to support stateful inference models."
+  },
+  {
+    "v": "1.33.3",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.31.39",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.29.106",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.29.93",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.29.59",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.27.84",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.23.18",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.21.24",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.20.13",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.19.32",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.16.24",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.13.20",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.11.4",
+    "t": "Update sagemaker-runtime client to latest version"
+  },
+  {
+    "v": "1.8.13",
+    "t": "Renamed the runtime.sagemaker service to sagemaker-runtime to be more consistent with existing services. The old service name is now aliased to sagemaker-runtime to maintain backwards compatibility."
+  }
+]

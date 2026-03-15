@@ -1,0 +1,62 @@
+[
+  {
+    "v": "1.42.31",
+    "t": "Adds support for managing table pre-warming in Amazon Keyspaces (for Apache Cassandra)"
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.45",
+    "t": "This release provides change data capture (CDC) streams support through updates to the Amazon Keyspaces API."
+  },
+  {
+    "v": "1.37.20",
+    "t": "Removing replication region limitation for Amazon Keyspaces Multi-Region Replication APIs."
+  },
+  {
+    "v": "1.35.77",
+    "t": "Amazon Keyspaces: adding the list of IAM actions required by the UpdateKeyspace API."
+  },
+  {
+    "v": "1.35.65",
+    "t": "Amazon Keyspaces Multi-Region Replication: Adds support to add new regions to multi and single-region keyspaces."
+  },
+  {
+    "v": "1.35.52",
+    "t": "Adds support for interacting with user-defined types (UDTs) through the following new operations: Create-Type, Delete-Type, List-Types, Get-Type."
+  },
+  {
+    "v": "1.34.45",
+    "t": "Documentation updates for Amazon Keyspaces"
+  },
+  {
+    "v": "1.34.21",
+    "t": "This release adds support for Multi-Region Replication with provisioned tables, and Keyspaces auto scaling APIs"
+  },
+  {
+    "v": "1.29.147",
+    "t": "This release adds support for MRR GA launch, and includes multiregion support in create-keyspace, get-keyspace, and list-keyspace."
+  },
+  {
+    "v": "1.29.91",
+    "t": "Adding support for client-side timestamps"
+  },
+  {
+    "v": "1.29.63",
+    "t": "Enabled FIPS endpoints for GovCloud (US) regions in SDK."
+  },
+  {
+    "v": "1.24.20",
+    "t": "Fixing formatting issues in CLI and SDK documentation"
+  },
+  {
+    "v": "1.24.15",
+    "t": "Adding link to CloudTrail section in Amazon Keyspaces Developer Guide"
+  },
+  {
+    "v": "1.24.11",
+    "t": "This release adds support for data definition language (DDL) operations"
+  }
+]

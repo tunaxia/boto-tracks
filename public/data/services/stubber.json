@@ -1,0 +1,34 @@
+[
+  {
+    "v": "1.24.19",
+    "t": "Added support for modeled exception fields when adding errors to a client stub. Implements boto/boto3`#3178 <https://github.com/boto/botocore/issues/3178>`__."
+  },
+  {
+    "v": "1.15.22",
+    "t": "fixes `#1884 <https://github.com/boto/botocore/issues/1884>`__"
+  },
+  {
+    "v": "1.9.0",
+    "t": "Added the ability to add items to response metadata with the stubber."
+  },
+  {
+    "v": "1.8.13",
+    "t": "This change makes the error handling more verbose in the case where  a stubbed method has been called, but the Stubber is not expecting a call."
+  },
+  {
+    "v": "1.4.56",
+    "t": "Add ability to specify expected params when using `add_client_error` (`#1025 <https://github.com/boto/botocore/issues/1025>`__)"
+  },
+  {
+    "v": "1.4.28",
+    "t": "Fix regression in comparing multiple expected parameters"
+  },
+  {
+    "v": "1.4.27",
+    "t": "Allow certain paramters to be ignored by specifying stub.ANY. Resolves `#931 <https://github.com/boto/botocore/issues/931>`__"
+  },
+  {
+    "v": "1.4.25",
+    "t": "Allow adding additional keys to the service error response."
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.12.224",
+    "t": "Update kinesisanalytics client to latest version"
+  },
+  {
+    "v": "1.12.145",
+    "t": "Update kinesisanalytics client to latest version"
+  },
+  {
+    "v": "1.12.53",
+    "t": "Update kinesisanalytics client to latest version"
+  },
+  {
+    "v": "1.8.19",
+    "t": "Update kinesisanalytics client to latest version"
+  },
+  {
+    "v": "1.7.23",
+    "t": "Update kinesisanalytics client to latest version"
+  },
+  {
+    "v": "1.5.90",
+    "t": "Update kinesisanalytics client to latest version"
+  },
+  {
+    "v": "1.5.60",
+    "t": "Update kinesisanalytics client to latest version"
+  },
+  {
+    "v": "1.4.64",
+    "t": "Update kinesisanalytics client to latest version"
+  },
+  {
+    "v": "1.4.45",
+    "t": "Update kinesisanalytics client to latest version"
+  }
+]

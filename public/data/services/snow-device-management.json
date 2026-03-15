@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.21.19",
+    "t": "AWS Snow Family customers can remotely monitor and operate their connected AWS Snowcone devices."
+  }
+]

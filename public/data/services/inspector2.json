@@ -1,0 +1,114 @@
+[
+  {
+    "v": "1.42.49",
+    "t": "Added .Net 10 (dotnet10) and Node 24.x (node24.x) runtime support for lambda package scanning"
+  },
+  {
+    "v": "1.42.4",
+    "t": "This release adds a new ScanStatus called \"Unsupported Code Artifacts\". This ScanStatus will be returned when a Lambda function was not code scanned because it has unsupported code artifacts."
+  },
+  {
+    "v": "1.41.0",
+    "t": "This release introduces BLOCKED_BY_ORGANIZATION_POLICY error code and IMAGE_ARCHIVED scanStatusReason. BLOCKED_BY_ORGANIZATION_POLICY error code is returned when an operation is blocked by an AWS Organizations policy. IMAGE_ARCHIVED scanStatusReason is returned when an Image is archived in ECR."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.6",
+    "t": "Add CVSSV4 to Vulnerability Search API and update enable/disable account id list length to 5"
+  },
+  {
+    "v": "1.40.0",
+    "t": "Extend usage to include agentless hours and add CODE_REPOSITORY to aggregation resource type"
+  },
+  {
+    "v": "1.38.38",
+    "t": "Add Code Repository Scanning as part of AWS InspectorV2"
+  },
+  {
+    "v": "1.38.20",
+    "t": "This release adds GetClustersForImage API and filter updates as part of the mapping of container images to running containers feature."
+  },
+  {
+    "v": "1.37.11",
+    "t": "Adding componentArn to network reachability details"
+  },
+  {
+    "v": "1.35.68",
+    "t": "Extend inspector2 service model to include ServiceQuotaExceededException."
+  },
+  {
+    "v": "1.35.58",
+    "t": "Adds support for filePath filter."
+  },
+  {
+    "v": "1.35.4",
+    "t": "Add enums for Agentless scan statuses and EC2 enablement error states"
+  },
+  {
+    "v": "1.35.0",
+    "t": "Update the correct format of key and values for resource tags"
+  },
+  {
+    "v": "1.34.98",
+    "t": "This release adds CSV format to GetCisScanReport for Inspector v2"
+  },
+  {
+    "v": "1.34.94",
+    "t": "Update Inspector2 to include new Agentless API parameters."
+  },
+  {
+    "v": "1.34.29",
+    "t": "This release adds ECR container image scanning based on their lastRecordedPullTime."
+  },
+  {
+    "v": "1.34.26",
+    "t": "This release adds support for CIS scans on EC2 instances."
+  },
+  {
+    "v": "1.31.63",
+    "t": "Add MacOs ec2 platform support"
+  },
+  {
+    "v": "1.31.16",
+    "t": "This release adds 1 new API: BatchGetFindingDetails to retrieve enhanced vulnerability intelligence details for findings."
+  },
+  {
+    "v": "1.29.158",
+    "t": "This release adds support for Software Bill of Materials (SBOM) export and the general availability of code scanning for AWS Lambda functions."
+  },
+  {
+    "v": "1.29.148",
+    "t": "Adds new response properties and request parameters for 'last scanned at' on the ListCoverage operation. This feature allows you to search and view the date of which your resources were last scanned by Inspector."
+  },
+  {
+    "v": "1.29.129",
+    "t": "Amazon Inspector now allows customers to search its vulnerability intelligence database if any of the Inspector scanning types are activated."
+  },
+  {
+    "v": "1.29.126",
+    "t": "This feature provides deep inspection for linux based instance"
+  },
+  {
+    "v": "1.29.37",
+    "t": "Amazon Inspector adds support for scanning NodeJS 18.x and Go 1.x AWS Lambda function runtimes."
+  },
+  {
+    "v": "1.29.18",
+    "t": "This release adds support for Inspector to scan AWS Lambda."
+  },
+  {
+    "v": "1.27.68",
+    "t": "This release adds new fields like fixAvailable, fixedInVersion and remediation to the finding model. The requirement to have vulnerablePackages in the finding model has also been removed. The documentation has been updated to reflect these changes."
+  },
+  {
+    "v": "1.27.30",
+    "t": "This release adds support for Inspector V2 scan configurations through the get and update configuration APIs. Currently this allows configuring ECR automated re-scan duration to lifetime or 180 days or 30 days."
+  },
+  {
+    "v": "1.23.16",
+    "t": "This release adds support for the new Amazon Inspector API. The new Amazon Inspector can automatically discover and scan Amazon EC2 instances and Amazon ECR container images for software vulnerabilities and unintended network exposure, and report centralized findings across multiple AWS accounts."
+  }
+]

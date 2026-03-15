@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.42.62",
+    "t": "Updates to multi-party approval (MPA) service to add support for approval team baseline operations."
+  },
+  {
+    "v": "1.42.40",
+    "t": "Updates to multi-party approval (MPA) service to add support for multi-factor authentication (MFA) for voting operations."
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.38",
+    "t": "This release enables customers to create Multi-party approval teams and approval requests to protect supported operations."
+  }
+]

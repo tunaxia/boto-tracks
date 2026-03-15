@@ -1,0 +1,270 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.37.32",
+    "t": "AWS ElastiCache SDK now supports using MemcachedUpgradeConfig parameter with ModifyCacheCluster API to enable updating Memcached cache node types. Please refer to updated AWS ElastiCache public documentation for detailed information on API usage and implementation."
+  },
+  {
+    "v": "1.37.6",
+    "t": "Doc only update, listing 'valkey7' and 'valkey8' as engine options for parameter groups."
+  },
+  {
+    "v": "1.37.0",
+    "t": "Documentation update, adding clarity and rephrasing."
+  },
+  {
+    "v": "1.35.67",
+    "t": "Added support to modify the engine type for existing ElastiCache Users and User Groups. Customers can now modify the engine type from redis to valkey."
+  },
+  {
+    "v": "1.35.36",
+    "t": "AWS ElastiCache SDK now supports using APIs with newly launched Valkey engine. Please refer to updated AWS ElastiCache public documentation for detailed information on API usage."
+  },
+  {
+    "v": "1.34.151",
+    "t": "Doc only update for changes to deletion API."
+  },
+  {
+    "v": "1.34.150",
+    "t": "Renaming full service name as it appears in developer documentation."
+  },
+  {
+    "v": "1.34.135",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.117",
+    "t": "Update to attributes of TestFailover and minor revisions."
+  },
+  {
+    "v": "1.34.72",
+    "t": "Added minimum capacity to  Amazon ElastiCache Serverless. This feature allows customer to ensure minimum capacity even without current load"
+  },
+  {
+    "v": "1.34.60",
+    "t": "Revisions to API text that are now to be carried over to SDK text, changing usages of \"SFO\" in code examples to \"us-west-1\", and some other typos."
+  },
+  {
+    "v": "1.33.1",
+    "t": "Launching Amazon ElastiCache Serverless that enables you to create a cache in under a minute without any capacity management. ElastiCache Serverless monitors the cache's memory, CPU, and network usage and scales both vertically and horizontally to support your application's requirements."
+  },
+  {
+    "v": "1.31.22",
+    "t": "Added support for cluster mode in online migration and test migration API"
+  },
+  {
+    "v": "1.29.133",
+    "t": "Added support to modify the cluster mode configuration for the existing ElastiCache ReplicationGroups. Customers can now modify the configuration from cluster mode disabled to cluster mode enabled."
+  },
+  {
+    "v": "1.29.39",
+    "t": "This release allows you to modify the encryption in transit setting, for existing Redis clusters. You can now change the TLS configuration of your Redis clusters without the need to re-build or re-provision the clusters or impact application availability."
+  },
+  {
+    "v": "1.29.11",
+    "t": "for Redis now supports AWS Identity and Access Management authentication access to Redis clusters starting with redis-engine version 7.0"
+  },
+  {
+    "v": "1.29.4",
+    "t": "Added support for IPv6 and dual stack for Memcached and Redis clusters. Customers can now launch new Redis and Memcached clusters with IPv6 and dual stack networking support."
+  },
+  {
+    "v": "1.27.32",
+    "t": "Adding AutoMinorVersionUpgrade in the DescribeReplicationGroups API"
+  },
+  {
+    "v": "1.26.6",
+    "t": "Added support for encryption in transit for Memcached clusters. Customers can now launch Memcached cluster with encryption in transit enabled when using Memcached version 1.6.12 or later."
+  },
+  {
+    "v": "1.24.45",
+    "t": "Doc only update for ElastiCache"
+  },
+  {
+    "v": "1.24.25",
+    "t": "Doc only update for ElastiCache"
+  },
+  {
+    "v": "1.24.19",
+    "t": "Doc only update for ElastiCache"
+  },
+  {
+    "v": "1.24.8",
+    "t": "Doc only update for ElastiCache"
+  },
+  {
+    "v": "1.23.47",
+    "t": "Documentation update for AWS ElastiCache"
+  },
+  {
+    "v": "1.23.35",
+    "t": "AWS ElastiCache for Redis has added a new Engine Log LogType in LogDelivery feature. You can now publish the Engine Log from your Amazon ElastiCache for Redis clusters to Amazon CloudWatch Logs and Amazon Kinesis Data Firehose."
+  },
+  {
+    "v": "1.23.34",
+    "t": "Doc only update for ElastiCache"
+  },
+  {
+    "v": "1.23.13",
+    "t": "Doc only update for ElastiCache"
+  },
+  {
+    "v": "1.23.12",
+    "t": "Adding support for r6gd instances for Redis with data tiering. In a cluster with data tiering enabled, when available memory capacity is exhausted, the least recently used data is automatically tiered to solid state drives for cost-effective capacity scaling with minimal performance impact."
+  },
+  {
+    "v": "1.21.37",
+    "t": "Doc only update for ElastiCache"
+  },
+  {
+    "v": "1.21.21",
+    "t": "This release adds ReplicationGroupCreateTime field to ReplicationGroup which indicates the UTC time when ElastiCache ReplicationGroup is created"
+  },
+  {
+    "v": "1.20.74",
+    "t": "Documentation updates for elasticache"
+  },
+  {
+    "v": "1.20.56",
+    "t": "This release introduces log delivery of Redis slow log from Amazon ElastiCache."
+  },
+  {
+    "v": "1.20.47",
+    "t": "This release adds tagging support for all AWS ElastiCache resources except Global Replication Groups."
+  },
+  {
+    "v": "1.20.4",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.19.61",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.19.53",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.19.46",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.19.42",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.19.21",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.19.9",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.18.14",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.17.16",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.17.7",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.16.22",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.16.17",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.16.9",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.15.22",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.13.6",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.13.3",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.12.246",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.12.219",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.12.213",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.12.190",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.12.168",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.12.161",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.12.5",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.7.42",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.7.35",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.5.36",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.5.0",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.4.73",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.4.61",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.4.24",
+    "t": "Update elasticache client to latest version"
+  },
+  {
+    "v": "1.4.8",
+    "t": "Update client to latest version"
+  }
+]

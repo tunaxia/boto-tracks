@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.27.89",
+    "t": "Documentation update to replace broken link."
+  },
+  {
+    "v": "1.27.65",
+    "t": "Documentation updates to fix formatting issues in CLI and SDK documentation."
+  },
+  {
+    "v": "1.25.4",
+    "t": "Amazon CodeGuru Reviewer now supports suppressing recommendations from being generated on specific files and directories."
+  },
+  {
+    "v": "1.23.44",
+    "t": "Added failure state and adjusted timeout in waiter"
+  },
+  {
+    "v": "1.21.39",
+    "t": "The Amazon CodeGuru Reviewer API now includes the RuleMetadata data object and a Severity attribute on a RecommendationSummary object. A RuleMetadata object contains information about a rule that generates a recommendation. Severity indicates how severe the issue associated with a recommendation is."
+  },
+  {
+    "v": "1.21.36",
+    "t": "Added support for CodeInconsistencies detectors"
+  },
+  {
+    "v": "1.20.99",
+    "t": "Adds support for S3 based full repository analysis and changed lines scan."
+  },
+  {
+    "v": "1.20.58",
+    "t": "Include KMS Key Details in Repository Association APIs to enable usage of customer managed KMS Keys."
+  },
+  {
+    "v": "1.19.23",
+    "t": "Update codeguru-reviewer client to latest version"
+  },
+  {
+    "v": "1.17.53",
+    "t": "Update codeguru-reviewer client to latest version"
+  },
+  {
+    "v": "1.17.14",
+    "t": "Update codeguru-reviewer client to latest version"
+  },
+  {
+    "v": "1.16.7",
+    "t": "Update codeguru-reviewer client to latest version"
+  },
+  {
+    "v": "1.15.44",
+    "t": "Update codeguru-reviewer client to latest version"
+  },
+  {
+    "v": "1.15.38",
+    "t": "Update codeguru-reviewer client to latest version"
+  },
+  {
+    "v": "1.13.31",
+    "t": "Update codeguru-reviewer client to latest version"
+  }
+]

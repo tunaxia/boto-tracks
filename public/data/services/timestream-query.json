@@ -1,0 +1,54 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.38.10",
+    "t": "Add dualstack endpoints support and correct us-gov-west-1 FIPS endpoint."
+  },
+  {
+    "v": "1.35.66",
+    "t": "This release adds support for Provisioning Timestream Compute Units (TCUs), a new feature that allows provisioning dedicated compute resources for your queries, providing predictable and cost-effective query performance."
+  },
+  {
+    "v": "1.35.46",
+    "t": "This release adds support for Query Insights, a feature that provides details of query execution, enabling users to identify areas for improvement to optimize their queries, resulting in improved query performance and lower query costs."
+  },
+  {
+    "v": "1.34.145",
+    "t": "Doc-only update for TimestreamQuery. Added guidance about the accepted valid value for the QueryPricingModel parameter."
+  },
+  {
+    "v": "1.34.94",
+    "t": "This change allows users to update and describe account settings associated with their accounts."
+  },
+  {
+    "v": "1.34.65",
+    "t": "Documentation updates, March 2024"
+  },
+  {
+    "v": "1.24.19",
+    "t": "Amazon Timestream Scheduled Queries now support Timestamp datatype in a multi-measure record."
+  },
+  {
+    "v": "1.24.12",
+    "t": "Documentation only update for SDK and CLI"
+  },
+  {
+    "v": "1.23.13",
+    "t": "Releasing Amazon Timestream Scheduled Queries. It makes real-time analytics more performant and cost-effective for customers by calculating and storing frequently accessed aggregates, and other computations, typically used in operational dashboards, business reports, and other analytics applications"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update timestream-query client to latest version"
+  },
+  {
+    "v": "1.18.8",
+    "t": "Update timestream-query client to latest version"
+  }
+]

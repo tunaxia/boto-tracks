@@ -1,0 +1,134 @@
+[
+  {
+    "v": "1.41.5",
+    "t": "Compute Optimizer now identifies idle NAT Gateway resources for cost optimization based on traffic patterns and backup configuration analysis. Access recommendations via the GetIdleRecommendations API."
+  },
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.28",
+    "t": "This release enables AWS Compute Optimizer to analyze Amazon Aurora database clusters and generate Aurora I/O-Optimized recommendations."
+  },
+  {
+    "v": "1.35.96",
+    "t": "This release expands AWS Compute Optimizer rightsizing recommendation support for Amazon EC2 Auto Scaling groups to include those with scaling policies and multiple instance types."
+  },
+  {
+    "v": "1.35.66",
+    "t": "This release enables AWS Compute Optimizer to analyze and generate optimization recommendations for Amazon Aurora database instances. It also enables Compute Optimizer to identify idle Amazon EC2 instances, Amazon EBS volumes, Amazon ECS services running on Fargate, and Amazon RDS databases."
+  },
+  {
+    "v": "1.34.159",
+    "t": "Doc only update for Compute Optimizer that fixes several customer-reported issues relating to ECS finding classifications"
+  },
+  {
+    "v": "1.34.131",
+    "t": "This release enables AWS Compute Optimizer to analyze and generate optimization recommendations for Amazon RDS MySQL and RDS PostgreSQL."
+  },
+  {
+    "v": "1.34.73",
+    "t": "This release enables AWS Compute Optimizer to analyze and generate recommendations with a new customization preference, Memory Utilization."
+  },
+  {
+    "v": "1.32.7",
+    "t": "This release enables AWS Compute Optimizer to analyze and generate recommendations with customization and discounts preferences."
+  },
+  {
+    "v": "1.31.41",
+    "t": "This release adds support to provide recommendations for G4dn and P3 instances that use NVIDIA GPUs."
+  },
+  {
+    "v": "1.31.36",
+    "t": "This release enables AWS Compute Optimizer to analyze and generate licensing optimization recommendations for sql server running on EC2 instances."
+  },
+  {
+    "v": "1.29.136",
+    "t": "In this launch, we add support for showing integration status with external metric providers such as Instana, Datadog ...etc in GetEC2InstanceRecommendations and ExportEC2InstanceRecommendations apis"
+  },
+  {
+    "v": "1.29.124",
+    "t": "support for tag filtering within compute optimizer. ability to filter recommendation results by tag and tag key value pairs. ability to filter by inferred workload type added."
+  },
+  {
+    "v": "1.29.103",
+    "t": "This release adds support for HDD EBS volume types and io2 Block Express. We are also adding support for 61 new instance types and instances that have non consecutive runtime."
+  },
+  {
+    "v": "1.29.65",
+    "t": "AWS Compute optimizer can now infer if Kafka is running on an instance."
+  },
+  {
+    "v": "1.29.36",
+    "t": "This release enables AWS Compute Optimizer to analyze and generate optimization recommendations for ecs services running on Fargate."
+  },
+  {
+    "v": "1.29.18",
+    "t": "Adds support for a new recommendation preference that makes it possible for customers to optimize their EC2 recommendations by utilizing an external metrics ingestion service to provide metrics."
+  },
+  {
+    "v": "1.25.11",
+    "t": "Documentation updates for Compute Optimizer"
+  },
+  {
+    "v": "1.23.32",
+    "t": "Adds support for new Compute Optimizer capability that makes it easier for customers to optimize their EC2 instances by leveraging multiple CPU architectures."
+  },
+  {
+    "v": "1.23.16",
+    "t": "Adds support for the enhanced infrastructure metrics paid feature. Also adds support for two new sets of resource efficiency metrics, including savings opportunity metrics and performance improvement opportunity metrics."
+  },
+  {
+    "v": "1.21.33",
+    "t": "Documentation updates for Compute Optimizer"
+  },
+  {
+    "v": "1.21.30",
+    "t": "Adds support for 1) the AWS Graviton (AWS_ARM64) recommendation preference for Amazon EC2 instance and Auto Scaling group recommendations, and 2) the ability to get the enrollment statuses for all member accounts of an organization."
+  },
+  {
+    "v": "1.21.3",
+    "t": "Documentation updates for Compute Optimizer"
+  },
+  {
+    "v": "1.20.79",
+    "t": "Adds support for 1) additional instance types, 2) additional instance metrics, 3) finding reasons for instance recommendations, and 4) platform differences between a current instance and a recommended instance type."
+  },
+  {
+    "v": "1.20.75",
+    "t": "This release enables compute optimizer to support exporting  recommendations to Amazon S3 for EBS volumes and Lambda Functions."
+  },
+  {
+    "v": "1.20.19",
+    "t": "Update compute-optimizer client to latest version"
+  },
+  {
+    "v": "1.20.15",
+    "t": "Update compute-optimizer client to latest version"
+  },
+  {
+    "v": "1.20.1",
+    "t": "Update compute-optimizer client to latest version"
+  },
+  {
+    "v": "1.19.43",
+    "t": "Update compute-optimizer client to latest version"
+  },
+  {
+    "v": "1.19.29",
+    "t": "Update compute-optimizer client to latest version"
+  },
+  {
+    "v": "1.18.14",
+    "t": "Update compute-optimizer client to latest version"
+  },
+  {
+    "v": "1.17.0",
+    "t": "Update compute-optimizer client to latest version"
+  },
+  {
+    "v": "1.13.31",
+    "t": "Update compute-optimizer client to latest version"
+  }
+]

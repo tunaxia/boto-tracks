@@ -1,0 +1,178 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.18",
+    "t": "CodePipeline now supports new API ListDeployActionExecutionTargets that lists the deployment target details for deploy action executions."
+  },
+  {
+    "v": "1.38.12",
+    "t": "Add support for Secrets Manager and Plaintext environment variable types in Commands action"
+  },
+  {
+    "v": "1.36.24",
+    "t": "Add environment variables to codepipeline action declaration."
+  },
+  {
+    "v": "1.35.83",
+    "t": "AWS CodePipeline V2 type pipelines now support Managed Compute Rule."
+  },
+  {
+    "v": "1.35.68",
+    "t": "AWS CodePipeline V2 type pipelines now support ECRBuildAndPublish and InspectorScan actions."
+  },
+  {
+    "v": "1.35.40",
+    "t": "AWS CodePipeline V2 type pipelines now support automatically retrying failed stages and skipping stage for failed entry conditions."
+  },
+  {
+    "v": "1.35.37",
+    "t": "AWS CodePipeline introduces a Compute category"
+  },
+  {
+    "v": "1.35.33",
+    "t": "AWS CodePipeline introduces Commands action that enables you to easily run shell commands as part of your pipeline execution."
+  },
+  {
+    "v": "1.35.13",
+    "t": "Updates to add recent notes to APIs and to replace example S3 bucket names globally."
+  },
+  {
+    "v": "1.34.151",
+    "t": "AWS CodePipeline V2 type pipelines now support stage level conditions to enable development teams to safely release changes that meet quality and compliance requirements."
+  },
+  {
+    "v": "1.34.122",
+    "t": "CodePipeline now supports overriding S3 Source Object Key during StartPipelineExecution, as part of Source Overrides."
+  },
+  {
+    "v": "1.34.93",
+    "t": "Add ability to manually and automatically roll back a pipeline stage to a previously successful execution."
+  },
+  {
+    "v": "1.34.43",
+    "t": "Add ability to override timeout on action level."
+  },
+  {
+    "v": "1.34.38",
+    "t": "Add ability to execute pipelines with new parallel & queued execution modes and add support for triggers with filtering on branches and file paths."
+  },
+  {
+    "v": "1.32.3",
+    "t": "CodePipeline now supports overriding source revisions to achieve manual re-deploy of a past revision"
+  },
+  {
+    "v": "1.31.70",
+    "t": "Add ability to trigger pipelines from git tags, define variables at pipeline level and new pipeline type V2."
+  },
+  {
+    "v": "1.31.65",
+    "t": "Add retryMode ALL_ACTIONS to RetryStageExecution API that retries a failed stage starting from first action in the stage"
+  },
+  {
+    "v": "1.29.141",
+    "t": "Add PollingDisabledAt time information in PipelineMetadata object of GetPipeline API."
+  },
+  {
+    "v": "1.20.22",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.20.18",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.20.7",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.19.51",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.19.19",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.14.7",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.13.16",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.12.237",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.12.219",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.12.149",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.12.143",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.12.139",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.12.118",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.12.43",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.10.47",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.10.12",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.10.5",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.7.15",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.5.74",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.4.57",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.4.52",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.4.50",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.4.35",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.4.29",
+    "t": "Update codepipeline client to latest version"
+  },
+  {
+    "v": "1.4.16",
+    "t": "Update codepipeline client to latest version"
+  }
+]

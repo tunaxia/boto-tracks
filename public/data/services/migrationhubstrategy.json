@@ -1,0 +1,26 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.31.70",
+    "t": "This release introduces multi-data-source feature in Migration Hub Strategy Recommendations. This feature now supports vCenter as a data source to fetch inventory in addition to ADS and Import from file workflow that is currently supported with MHSR collector."
+  },
+  {
+    "v": "1.29.92",
+    "t": "This release adds the binary analysis that analyzes IIS application DLLs on Windows and Java applications on Linux to provide anti-pattern report without configuring access to the source code."
+  },
+  {
+    "v": "1.29.83",
+    "t": "This release updates the File Import API to allow importing servers already discovered by customers with reduced pre-requisites."
+  },
+  {
+    "v": "1.29.26",
+    "t": "This release adds known application filtering, server selection for assessments, support for potential recommendations, and indications for configuration and assessment status. For more information, see the AWS Migration Hub documentation at https://docs.aws.amazon.com/migrationhub/index.html"
+  },
+  {
+    "v": "1.23.6",
+    "t": "AWS SDK for Migration Hub Strategy Recommendations. It includes APIs to start the portfolio assessment, import portfolio data for assessment, and to retrieve recommendations. For more information, see the AWS Migration Hub documentation at https://docs.aws.amazon.com/migrationhub/index.html"
+  }
+]

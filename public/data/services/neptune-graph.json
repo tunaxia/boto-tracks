@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.42.43",
+    "t": "Minor neptune-graph documentation changes"
+  },
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.19",
+    "t": "Add StartGraph and StopGraph operations to Neptune Analytics"
+  },
+  {
+    "v": "1.37.16",
+    "t": "Update IAM Role ARN Validation to Support Role Paths"
+  },
+  {
+    "v": "1.37.9",
+    "t": "Several small updates to resolve customer requests."
+  },
+  {
+    "v": "1.36.13",
+    "t": "Added argument to `list-export` to filter by graph ID"
+  },
+  {
+    "v": "1.35.68",
+    "t": "Add 4 new APIs to support new Export features, allowing Parquet and CSV formats. Add new arguments in Import APIs to support Parquet import. Add a new query \"neptune.read\" to run algorithms without loading data into database"
+  },
+  {
+    "v": "1.35.38",
+    "t": "Support for 16 m-NCU graphs available through account allowlisting"
+  },
+  {
+    "v": "1.34.160",
+    "t": "Amazon Neptune Analytics provides a new option for customers to load data into a graph using the RDF (Resource Description Framework) NTRIPLES format. When loading NTRIPLES files, use the value `convertToIri` for the `blankNodeHandling` parameter."
+  },
+  {
+    "v": "1.34.146",
+    "t": "Amazon Neptune Analytics provides new options for customers to start with smaller graphs at a lower cost. CreateGraph, CreaateGraphImportTask, UpdateGraph and StartImportTask APIs will now allow 32 and 64 for `provisioned-memory`"
+  },
+  {
+    "v": "1.34.84",
+    "t": "Update to API documentation to resolve customer reported issues."
+  },
+  {
+    "v": "1.34.74",
+    "t": "Add the new API Start-Import-Task for Amazon Neptune Analytics."
+  },
+  {
+    "v": "1.34.73",
+    "t": "Update ImportTaskCancelled waiter to evaluate task state correctly and minor documentation changes."
+  },
+  {
+    "v": "1.34.40",
+    "t": "Adding a new option \"parameters\" for data plane api ExecuteQuery to support running parameterized query via SDK."
+  },
+  {
+    "v": "1.34.33",
+    "t": "Adding new APIs in SDK for Amazon Neptune Analytics. These APIs include operations to execute, cancel, list queries and get the graph summary."
+  },
+  {
+    "v": "1.34.6",
+    "t": "Adds Waiters for successful creation and deletion of Graph, Graph Snapshot, Import Task and Private Endpoints for Neptune Analytics"
+  },
+  {
+    "v": "1.34.1",
+    "t": "This is the initial SDK release for Amazon Neptune Analytics"
+  }
+]

@@ -1,0 +1,390 @@
+[
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.8",
+    "t": "AWS CodeBuild now supports PullRequestBuildPolicy in webhook object."
+  },
+  {
+    "v": "1.40.5",
+    "t": "AWS CodeBuild now supports comment-based pull request control."
+  },
+  {
+    "v": "1.38.17",
+    "t": "AWS CodeBuild now supports Docker Server capability"
+  },
+  {
+    "v": "1.38.2",
+    "t": "Remove redundant validation check."
+  },
+  {
+    "v": "1.38.1",
+    "t": "Add support for custom instance type for reserved capacity fleets"
+  },
+  {
+    "v": "1.37.29",
+    "t": "AWS CodeBuild now offers an enhanced debugging experience."
+  },
+  {
+    "v": "1.37.26",
+    "t": "This release adds support for environment type WINDOWS_SERVER_2022_CONTAINER in ProjectEnvironment"
+  },
+  {
+    "v": "1.37.23",
+    "t": "This release adds support for cacheNamespace in ProjectCache"
+  },
+  {
+    "v": "1.37.12",
+    "t": "AWS CodeBuild now supports webhook filtering by organization name"
+  },
+  {
+    "v": "1.37.1",
+    "t": "Adding \"reportArns\" field in output of BatchGetBuildBatches API. \"reportArns\" is an array that contains the ARNs of reports created by merging reports from builds associated with the batch build."
+  },
+  {
+    "v": "1.36.25",
+    "t": "Add webhook status and status message to AWS CodeBuild webhooks"
+  },
+  {
+    "v": "1.36.21",
+    "t": "Added test suite names to test case metadata"
+  },
+  {
+    "v": "1.36.19",
+    "t": "Add note for the RUNNER_BUILDKITE_BUILD buildType."
+  },
+  {
+    "v": "1.36.11",
+    "t": "Added support for CodeBuild self-hosted Buildkite runner builds"
+  },
+  {
+    "v": "1.35.96",
+    "t": "AWS CodeBuild Now Supports BuildBatch in Reserved Capacity and Lambda"
+  },
+  {
+    "v": "1.35.59",
+    "t": "AWS CodeBuild now supports non-containerized Linux and Windows builds on Reserved Capacity."
+  },
+  {
+    "v": "1.35.55",
+    "t": "AWS CodeBuild now adds additional compute types for reserved capacity fleet."
+  },
+  {
+    "v": "1.35.49",
+    "t": "AWS CodeBuild now supports automatically retrying failed builds"
+  },
+  {
+    "v": "1.35.41",
+    "t": "Enable proxy for reserved capacity fleet."
+  },
+  {
+    "v": "1.35.21",
+    "t": "GitLab Enhancements - Add support for Self-Hosted GitLab runners in CodeBuild. Add group webhooks"
+  },
+  {
+    "v": "1.35.5",
+    "t": "Added support for the MAC_ARM environment type for CodeBuild fleets."
+  },
+  {
+    "v": "1.35.1",
+    "t": "AWS CodeBuild now supports creating fleets with macOS platform for running builds."
+  },
+  {
+    "v": "1.34.161",
+    "t": "AWS CodeBuild now supports using Secrets Manager to store git credentials and using multiple source credentials in a single project."
+  },
+  {
+    "v": "1.34.128",
+    "t": "AWS CodeBuild now supports global and organization GitHub webhooks"
+  },
+  {
+    "v": "1.34.117",
+    "t": "AWS CodeBuild now supports Self-hosted GitHub Actions runners for Github Enterprise"
+  },
+  {
+    "v": "1.34.115",
+    "t": "AWS CodeBuild now supports manually creating GitHub webhooks"
+  },
+  {
+    "v": "1.34.108",
+    "t": "Aws CodeBuild now supports 36 hours build timeout"
+  },
+  {
+    "v": "1.34.106",
+    "t": "CodeBuild Reserved Capacity VPC Support"
+  },
+  {
+    "v": "1.34.83",
+    "t": "Support access tokens for Bitbucket sources"
+  },
+  {
+    "v": "1.34.81",
+    "t": "Add new webhook filter types for GitHub webhooks"
+  },
+  {
+    "v": "1.34.74",
+    "t": "Add new fleet status code for Reserved Capacity."
+  },
+  {
+    "v": "1.34.70",
+    "t": "Supporting GitLab and GitLab Self Managed as source types in AWS CodeBuild."
+  },
+  {
+    "v": "1.34.67",
+    "t": "This release adds support for new webhook events (RELEASED and PRERELEASED) and filter types (TAG_NAME and RELEASE_NAME)."
+  },
+  {
+    "v": "1.34.64",
+    "t": "AWS CodeBuild now supports overflow behavior on Reserved Capacity."
+  },
+  {
+    "v": "1.34.59",
+    "t": "This release adds support for a new webhook event: PULL_REQUEST_CLOSED."
+  },
+  {
+    "v": "1.34.23",
+    "t": "Release CodeBuild Reserved Capacity feature"
+  },
+  {
+    "v": "1.34.15",
+    "t": "Aws CodeBuild now supports new compute type BUILD_GENERAL1_XLARGE"
+  },
+  {
+    "v": "1.31.79",
+    "t": "AWS CodeBuild now supports AWS Lambda compute."
+  },
+  {
+    "v": "1.21.54",
+    "t": "CodeBuild now allows you to select how batch build statuses are sent to the source provider for a project."
+  },
+  {
+    "v": "1.21.32",
+    "t": "Documentation updates for CodeBuild"
+  },
+  {
+    "v": "1.21.24",
+    "t": "CodeBuild now allows you to make the build results for your build projects available to the public without requiring access to an AWS account."
+  },
+  {
+    "v": "1.21.22",
+    "t": "CodeBuild now allows you to select how batch build statuses are sent to the source provider for a project."
+  },
+  {
+    "v": "1.21.19",
+    "t": "CodeBuild now allows you to make the build results for your build projects available to the public without requiring access to an AWS account."
+  },
+  {
+    "v": "1.21.4",
+    "t": "AWS CodeBuild now allows you to set the access permissions for build artifacts, project artifacts, and log files that are uploaded to an Amazon S3 bucket that is owned by another account."
+  },
+  {
+    "v": "1.20.100",
+    "t": "BucketOwnerAccess is currently not supported"
+  },
+  {
+    "v": "1.20.50",
+    "t": "AWS CodeBuild now allows you to set the access permissions for build artifacts, project artifacts, and log files that are uploaded to an Amazon S3 bucket that is owned by another account."
+  },
+  {
+    "v": "1.20.20",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.20.11",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.20.9",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.20.1",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.19.21",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.17.57",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.17.45",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.17.32",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.17.24",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.17.15",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.16.15",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.16.5",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.14.12",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.13.48",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.13.39",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.13.21",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.13.11",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.204",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.165",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.111",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.100",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.92",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.85",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.61",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.46",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.39",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.17",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.12.5",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.11.5",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.10.72",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.10.65",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.10.57",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.10.55",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.10.27",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.10.20",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.9.15",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.8.35",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.8.19",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.8.0",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.7.20",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.7.11",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.7.2",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.5.95",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.5.63",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.5.27",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.5.5",
+    "t": "Update codebuild client to latest version"
+  },
+  {
+    "v": "1.4.81",
+    "t": "Update codebuild client to latest version"
+  }
+]

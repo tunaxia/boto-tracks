@@ -1,0 +1,2334 @@
+[
+  {
+    "v": "1.42.62",
+    "t": "Added metadata field to CapacityAllocation."
+  },
+  {
+    "v": "1.42.58",
+    "t": "Add c8id, m8id and hpc8a instance types."
+  },
+  {
+    "v": "1.42.57",
+    "t": "Add support for EC2 Capacity Blocks in Local Zones."
+  },
+  {
+    "v": "1.42.56",
+    "t": "Adds httpTokensEnforced property to ModifyInstanceMetadataDefaults API. Set per account or manage organization-wide using declarative policies to prevent IMDSv1-enabled instance launch and block attempts to enable IMDSv1 on existing IMDSv2-only instances."
+  },
+  {
+    "v": "1.42.51",
+    "t": "Add Operator field to CreatePlacementGroup and DescribePlacementGroup APIs."
+  },
+  {
+    "v": "1.42.50",
+    "t": "Documentation updates for EC2 Secondary Networks"
+  },
+  {
+    "v": "1.42.49",
+    "t": "This release adds geography information to EC2 region and availability zone APIs. DescribeRegions now includes a Geography field, while DescribeAvailabilityZones includes both Geography and SubGeography fields, enabling better geographic classification for AWS regions and zones."
+  },
+  {
+    "v": "1.42.48",
+    "t": "Launching nested virtualization. This feature allows you to run nested VMs inside virtual (non-bare metal) EC2 instances."
+  },
+  {
+    "v": "1.42.47",
+    "t": "R8i instances powered by custom Intel Xeon 6 processors available only on AWS with sustained all-core 3.9 GHz turbo frequency"
+  },
+  {
+    "v": "1.42.45",
+    "t": "Amazon Secondary Networks is a networking feature that provides high-performance, low-latency connectivity for specialized workloads."
+  },
+  {
+    "v": "1.42.38",
+    "t": "G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs with 768 GB of memory and 5th generation Intel Xeon Scalable processors. Supporting up to 192 vCPUs, 1600 Gbps networking bandwidth with EFA, up to 2 TiB of system memory, and up to 15.2 TB of local NVMe SSD storage."
+  },
+  {
+    "v": "1.42.37",
+    "t": "SearchTransitGatewayRoutes API response now includes a NextToken field, enabling pagination when retrieving large sets of transit gateway routes. Pass the returned NextToken value in subsequent requests to retrieve the next page of results."
+  },
+  {
+    "v": "1.42.36",
+    "t": "Releasing new EC2 instances. C8gb and M8gb with highest EBS performance, M8gn with 600 Gbps network bandwidth, X8aedz and M8azn with 5GHz AMD processors, X8i with Intel Xeon 6 processors and up to 6TB memory, and Mac-m4max with Apple M4 Max chip for 25 percent faster builds."
+  },
+  {
+    "v": "1.42.35",
+    "t": "DescribeInstanceTypes API response now includes an additionalFlexibleNetworkInterfaces field, the number of interfaces attachable to an instance when using flexible Elastic Network Adapter (ENA) queues in addition to the base number specified by maximumNetworkInterfaces."
+  },
+  {
+    "v": "1.42.33",
+    "t": "Add better support for fractional GPU instances in DescribeInstanceTypes API. The new fields, logicalGpuCount, gpuPartitionSize, and workload array enable better GPU resource selection and filtering for both full and fractional GPU instance types."
+  },
+  {
+    "v": "1.42.32",
+    "t": "Added support of multiple EBS cards. New EbsCardIndex parameter enables attaching volumes to specific EBS cards on supported instance types for improved storage performance."
+  },
+  {
+    "v": "1.42.29",
+    "t": "This release includes documentation updates to support up to four Elastic Volume modifications per Amazon EBS volume within a rolling 24-hour period."
+  },
+  {
+    "v": "1.42.15",
+    "t": "Adds support for linkedGroupId on the CreatePlacementGroup and DescribePlacementGroups APIs. The linkedGroupId parameter is reserved for future use."
+  },
+  {
+    "v": "1.42.13",
+    "t": "This release adds AvailabilityZoneId support for CreateFleet, ModifyFleet, DescribeFleets, RequestSpotFleet, ModifySpotFleetRequests and DescribeSpotFleetRequests APIs."
+  },
+  {
+    "v": "1.42.10",
+    "t": "EC2 Capacity Manager now supports SpotTotalCount, SpotTotalInterruptions and SpotInterruptionRate metrics for both vCPU and instance units."
+  },
+  {
+    "v": "1.42.5",
+    "t": "Amazon EC2 P6-B300 instances provide 8x NVIDIA Blackwell Ultra GPUs with 2.1 TB high bandwidth GPU memory, 6.4 Tbps EFA networking, 300 Gbps dedicated ENA throughput, and 4 TB of system memory. Amazon EC2 C8a instances are powered by 5th Gen AMD EPYC processors with a maximum frequency of 4.5 GHz."
+  },
+  {
+    "v": "1.41.4",
+    "t": "This release adds support to view Network firewall proxy appliances attached to an existing NAT Gateway via DescribeNatGateways API NatGatewayAttachedAppliance structure."
+  },
+  {
+    "v": "1.41.2",
+    "t": "This release adds a new capability to create and manage interruptible EC2 Capacity Reservations."
+  },
+  {
+    "v": "1.41.1",
+    "t": "This release adds support for multiple features including: VPC Encryption Control for the status of traffic flow; S2S VPN BGP Logging; TGW Flexible Costs; IPAM allocation of static IPs from IPAM pools to CF Anycast IP lists used on CloudFront distribution; and EBS Volume Integration with Recycle Bin"
+  },
+  {
+    "v": "1.41.0",
+    "t": "This launch adds support for two new features: Regional NAT Gateway and IPAM Policies. IPAM policies offers customers central control for public IPv4 assignments across AWS services. Regional NAT is a single NAT Gateway that automatically expands across AZs in a VPC to maintain high availability."
+  },
+  {
+    "v": "1.40.76",
+    "t": "AWS Site-to-Site VPN now supports VPN Concentrator, a new feature that enables customers to connect multiple low-bandwidth sites connections through a single attachment, simplifying multi-site connectivity for distributed enterprises."
+  },
+  {
+    "v": "1.40.75",
+    "t": "This release introduces new APIs: DescribeInstanceSqlHaStates, DescribeInstanceSqlHaHistoryStates, EnableInstanceSqlHaStandbyDetections and DisableInstanceSqlHaStandbyDetections on Amazon EC2, allowing customers to enroll and monitor SQL Server licensing fee savings for their SQL HA EC2 instances."
+  },
+  {
+    "v": "1.40.74",
+    "t": "This release adds AvailabilityZoneId support for CreateInstanceConnectEndpoint, DescribeInstanceConnectEndpoints, and DeleteInstanceConnectEndpoint APIs."
+  },
+  {
+    "v": "1.40.73",
+    "t": "Added support for new accelerator types (\"media\") and accelerator names (\"L4\", \"L40s\", \"GAUDI_HL_205\", \"INFERENTIA2\", \"TRAINIUM\", \"TRAINIUM2\", \"U30\") in Attributes Based Instance Type Selection for launched instance types."
+  },
+  {
+    "v": "1.40.72",
+    "t": "Adds complete AMI ancestry tracing from immediate parent through each preceding generation back to the root AMI"
+  },
+  {
+    "v": "1.40.71",
+    "t": "AWS Site-to-Site VPN now supports VPN connections with up to 5 Gbps bandwidth per tunnel, a 4x improvement from existing limit of 1.25 Gbps."
+  },
+  {
+    "v": "1.40.70",
+    "t": "Amazon EC2 Fleet customers can now filter instance types based on encryption-in-transit support using Attribute-Based Instance Type Selection (ABIS), eliminating the manual effort of identifying and selecting compatible instance types for security-sensitive workloads."
+  },
+  {
+    "v": "1.40.69",
+    "t": "Adds PrivateDnsPreference and PrivateDnsSpecifiedDomains to control private DNS resolution for resource and service network VPC endpoints and IpamScopeExternalAuthorityConfiguration to integrate Amazon VPC IPAM with a third-party IPAM service"
+  },
+  {
+    "v": "1.40.68",
+    "t": "Add Amazon EC2 R8a instance types"
+  },
+  {
+    "v": "1.40.67",
+    "t": "This release adds AvailabilityZoneId support for DescribeFastSnapshotRestores, DisableFastSnapshotRestores, and EnableFastSnapshotRestores APIs."
+  },
+  {
+    "v": "1.40.65",
+    "t": "Add Amazon EC2 trn2.3xlarge instance type."
+  },
+  {
+    "v": "1.40.64",
+    "t": "Amazon VPC IP Address Manager (IPAM) now supports automated prefix list management, allowing you to create rules that automatically populate customer-managed prefix lists with CIDRs from your IPAM pools or AWS resources based on tags, Regions, or other criteria."
+  },
+  {
+    "v": "1.40.61",
+    "t": "This released the DescribeCapacityReservationTopology API."
+  },
+  {
+    "v": "1.40.57",
+    "t": "This release adds AvailabilityZoneId support for CreateNetworkInterface and DescribeNetworkInterfaces APIs."
+  },
+  {
+    "v": "1.40.55",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.40.53",
+    "t": "Introducing EC2 Capacity Manager for monitoring and analyzing capacity usage across On-Demand Instances, Spot Instances, and Capacity Reservations."
+  },
+  {
+    "v": "1.40.52",
+    "t": "This release adds support for creating instant, point-in-time copies of EBS volumes within the same Availability Zone"
+  },
+  {
+    "v": "1.40.51",
+    "t": "Release Amazon EC2 c8i, c8i-flex, m8a, and r8gb"
+  },
+  {
+    "v": "1.40.40",
+    "t": "This release includes documentation updates for Amazon EBS General Purpose SSD (gp3) volumes with larger size and higher IOPS and throughput."
+  },
+  {
+    "v": "1.40.37",
+    "t": "Add Amazon EC2 R8gn instance types"
+  },
+  {
+    "v": "1.40.34",
+    "t": "Allowed AMIs adds support for four new parameters - marketplaceProductCodes, deprecationTimeCondition, creationDateCondition and imageNames"
+  },
+  {
+    "v": "1.40.33",
+    "t": "Add mac-m4.metal and mac-m4pro.metal instance types."
+  },
+  {
+    "v": "1.40.24",
+    "t": "Add m8i, m8i-flex and i8ge instance types."
+  },
+  {
+    "v": "1.40.22",
+    "t": "MaximumEbsAttachments and AttachmentLimitType fields added to DescribeInstanceTypesResponse. G6f, Gr6f, R8i, R8i-flex and p5.4xlarge instance types added to InstanceTypes enum."
+  },
+  {
+    "v": "1.40.21",
+    "t": "Release shows new route types such as filtered and advertisement."
+  },
+  {
+    "v": "1.40.20",
+    "t": "This release adds support for copying Amazon EBS snapshot and AMIs to and from Local Zones."
+  },
+  {
+    "v": "1.40.18",
+    "t": "Add new APIs for viewing how your shared AMIs are used by other accounts, and identify resources in your account that are dependent on particular AMIs"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Added IPv6 support for AWS Client VPN."
+  },
+  {
+    "v": "1.40.13",
+    "t": "Add support for \"warning\" volume status."
+  },
+  {
+    "v": "1.40.10",
+    "t": "This release adds ModifyInstanceConnectEndpoint API to update configurations on existing EC2 Instance Connect Endpoints and improves IPv6 support through dualstack DNS names for EC2 Instance Connect Endpoints."
+  },
+  {
+    "v": "1.40.8",
+    "t": "Release to allow route table association with a PublicIpv4Pool."
+  },
+  {
+    "v": "1.40.7",
+    "t": "This release adds AvailabilityZoneId support for CreateVolume, DescribeVolume, LaunchTemplates, RunInstances, DescribeInstances, CreateDefaultSubnet, SpotInstances, and CreateDefaultSubnet APIs."
+  },
+  {
+    "v": "1.40.4",
+    "t": "Mark Elastic Inference Accelerators and Elastic Graphics Processor parameters as deprecated on the RunInstances and LaunchTemplate APIs."
+  },
+  {
+    "v": "1.40.0",
+    "t": "Added support for the force option for the EC2 instance terminate command. This feature enables customers to recover resources associated with an instance stuck in the shutting-down state as a result of rare issues caused by a frozen operating system or an underlying hardware problem."
+  },
+  {
+    "v": "1.39.17",
+    "t": "Release to show the next hop IP address for routes propagated by VPC Route Server into VPC route tables."
+  },
+  {
+    "v": "1.39.14",
+    "t": "Transit Gateway native integration with AWS Network Firewall. Adding new enum value for the new Transit Gateway Attachment type."
+  },
+  {
+    "v": "1.39.12",
+    "t": "Added support for skip-os-shutdown option for the EC2 instance stop and terminate operations. This feature enables customers to bypass the graceful OS shutdown, supporting faster state transitions when instance data preservation isn't critical."
+  },
+  {
+    "v": "1.39.10",
+    "t": "This release adds support for C8gn, F2 and P6e-GB200 Instance types"
+  },
+  {
+    "v": "1.39.8",
+    "t": "AWS Free Tier Version2 Support"
+  },
+  {
+    "v": "1.39.5",
+    "t": "This release adds support for volume initialization status, which enables you to monitor when the initialization process for an EBS volume is completed. This release also adds IPv6 support to EC2 Instance Connect Endpoints, allowing you to connect to your EC2 Instance via a private IPv6 address."
+  },
+  {
+    "v": "1.39.4",
+    "t": "Adds support to Capacity Blocks for ML for purchasing EC2 P6e-GB200 UltraServers. Customers can now purchase u-p6e-gb200x72 and u-p6e-gb200x36 UltraServers. Adds new DescribeCapacityBlocks andDescribeCapacityBlockStatus APIs. Adds support for CapacityBlockId to DescribeInstanceTopology."
+  },
+  {
+    "v": "1.39.3",
+    "t": "This release adds GroupOwnerId as a response member to the DescribeSecurityGroupVpcAssociations API and also adds waiters for SecurityGroupVpcAssociations (SecurityGroupVpcAssociationAssociated and SecurityGroupVpcAssociationDisassociated)."
+  },
+  {
+    "v": "1.39.2",
+    "t": "AWS Site-to-Site VPN now supports IPv6 addresses on outer tunnel IPs, making it easier for customers to build or transition to IPv6-only networks."
+  },
+  {
+    "v": "1.39.1",
+    "t": "Add Context to GetInstanceTypesFromInstanceRequirements API"
+  },
+  {
+    "v": "1.38.45",
+    "t": "This release adds support for OdbNetworkArn as a target in VPC Route Tables"
+  },
+  {
+    "v": "1.38.43",
+    "t": "This release allows you to create and register AMIs while maintaining their underlying EBS snapshots within Local Zones."
+  },
+  {
+    "v": "1.38.33",
+    "t": "Release to support Elastic VMware Service (Amazon EVS) Subnet and Amazon EVS Network Interface Types."
+  },
+  {
+    "v": "1.38.25",
+    "t": "Enable the option to automatically delete underlying Amazon EBS snapshots when deregistering Amazon Machine Images (AMIs)"
+  },
+  {
+    "v": "1.38.24",
+    "t": "This release adds three features - option to store AWS Site-to-Site VPN pre-shared keys in AWS Secrets Manager, GetActiveVpnTunnelStatus API to check the in-use VPN algorithms, and SampleType option in GetVpnConnectionDeviceSampleConfiguration API to get recommended sample configs for VPN devices."
+  },
+  {
+    "v": "1.38.23",
+    "t": "This release adds support for the C7i-flex, M7i-flex, I7i, I7ie, I8g, P6-b200, Trn2, C8gd, M8gd and R8gd instances"
+  },
+  {
+    "v": "1.38.21",
+    "t": "Release of Dualstack and Ipv6-only EC2 Public DNS hostnames"
+  },
+  {
+    "v": "1.38.20",
+    "t": "This release expands the ModifyInstanceMaintenanceOptions API to enable or disable instance migration during customer-initiated reboots for EC2 Scheduled Reboot Events."
+  },
+  {
+    "v": "1.38.19",
+    "t": "This release includes new APIs for System Integrity Protection (SIP) configuration and automated root volume ownership delegation for EC2 Mac instances."
+  },
+  {
+    "v": "1.38.14",
+    "t": "EC2 - Adding support for AvailabilityZoneId"
+  },
+  {
+    "v": "1.38.12",
+    "t": "Launching the feature to support ENA queues offering flexibility to support multiple queues per Enhanced Network Interface (ENI)"
+  },
+  {
+    "v": "1.38.11",
+    "t": "This release adds API support for Path Component Exclusion (Filter Out ARN) for Reachability Analyzer"
+  },
+  {
+    "v": "1.38.10",
+    "t": "This release adds support for Amazon EBS Provisioned Rate for Volume Initialization, which lets you specify a volume initialization rate to ensure that your EBS volumes are initialized in a predictable amount of time."
+  },
+  {
+    "v": "1.38.9",
+    "t": "This update introduces API operations to manage and create local gateway VIF and VIF groups. It also includes API operations to describe Outpost LAGs and service link VIFs."
+  },
+  {
+    "v": "1.38.6",
+    "t": "Launch of cost distribution feature for IPAM owners to distribute costs to internal teams."
+  },
+  {
+    "v": "1.38.0",
+    "t": "Added support for  ClientRouteEnforcementOptions flag in CreateClientVpnEndpoint and ModifyClientVpnEndpoint requests and DescribeClientVpnEndpoints responses"
+  },
+  {
+    "v": "1.37.28",
+    "t": "Doc-only updates for Amazon EC2"
+  },
+  {
+    "v": "1.37.24",
+    "t": "Release VPC Route Server, a new feature allowing dynamic routing in VPCs."
+  },
+  {
+    "v": "1.37.16",
+    "t": "Doc-only updates for EC2 for March 2025."
+  },
+  {
+    "v": "1.37.12",
+    "t": "This release changes the CreateLaunchTemplate, CreateLaunchTemplateVersion, ModifyLaunchTemplate CLI and SDKs such that if you do not specify a client token, a randomly generated token is used for the request to ensure idempotency."
+  },
+  {
+    "v": "1.37.11",
+    "t": "This release adds the GroupLongName field to the response of the DescribeAvailabilityZones API."
+  },
+  {
+    "v": "1.37.9",
+    "t": "Add serviceManaged field to DescribeAddresses API response."
+  },
+  {
+    "v": "1.37.5",
+    "t": "Update the DescribeVpcs response"
+  },
+  {
+    "v": "1.37.2",
+    "t": "Amazon EC2 Fleet customers can now override the Block Device Mapping specified in the Launch Template when creating a new Fleet request, saving the effort of creating and associating new Launch Templates to customize the Block Device Mapping."
+  },
+  {
+    "v": "1.37.1",
+    "t": "Adds support for time-based EBS-backed AMI copy operations. Time-based copy ensures that EBS-backed AMIs are copied within and across Regions in a specified timeframe."
+  },
+  {
+    "v": "1.36.18",
+    "t": "Adding support for the new fullSnapshotSizeInBytes field in the response of the EC2 EBS DescribeSnapshots API. This field represents the size of all the blocks that were written to the source volume at the time the snapshot was created."
+  },
+  {
+    "v": "1.36.8",
+    "t": "This release changes the CreateFleet CLI and SDK's such that if you do not specify a client token, a randomly generated token is used for the request to ensure idempotency."
+  },
+  {
+    "v": "1.36.5",
+    "t": "Added \"future\" allocation type for future dated capacity reservation"
+  },
+  {
+    "v": "1.36.2",
+    "t": "Release u7i-6tb.112xlarge, u7i-8tb.112xlarge, u7inh-32tb.480xlarge, p5e.48xlarge, p5en.48xlarge, f2.12xlarge, f2.48xlarge, trn2.48xlarge instance types."
+  },
+  {
+    "v": "1.35.98",
+    "t": "Add support for DisconnectOnSessionTimeout flag in CreateClientVpnEndpoint and ModifyClientVpnEndpoint requests and DescribeClientVpnEndpoints responses"
+  },
+  {
+    "v": "1.35.82",
+    "t": "This release adds support for EBS local snapshots in AWS Dedicated Local Zones, which allows you to store snapshots of EBS volumes locally in Dedicated Local Zones."
+  },
+  {
+    "v": "1.35.81",
+    "t": "This release adds GroupId to the response for DeleteSecurityGroup."
+  },
+  {
+    "v": "1.35.77",
+    "t": "This release includes a new API for modifying instance network-performance-options after launch."
+  },
+  {
+    "v": "1.35.72",
+    "t": "Adds support for declarative policies that allow you to enforce desired configuration across an AWS organization through configuring account attributes. Adds support for Allowed AMIs that allows you to limit the use of AMIs in AWS accounts. Adds support for connectivity over non-HTTP protocols."
+  },
+  {
+    "v": "1.35.70",
+    "t": "Adds support for Time-based Copy for EBS Snapshots and Cross Region PrivateLink. Time-based Copy ensures that EBS Snapshots are copied within and across AWS Regions in a specified timeframe. Cross Region PrivateLink enables customers to connect to VPC endpoint services hosted in other AWS Regions."
+  },
+  {
+    "v": "1.35.67",
+    "t": "Adds support for requesting future-dated Capacity Reservations with a minimum commitment duration, enabling IPAM for organizational units within AWS Organizations, reserving EC2 Capacity Blocks that start in 30 minutes, and extending the end date of existing Capacity Blocks."
+  },
+  {
+    "v": "1.35.66",
+    "t": "With this release, customers can express their desire to launch instances only in an ODCR or ODCR group rather than OnDemand capacity. Customers can express their baseline instances' CPU-performance in attribute-based Instance Requirements configuration by referencing an instance family."
+  },
+  {
+    "v": "1.35.65",
+    "t": "This release adds VPC Block Public Access (VPC BPA), a new declarative control which blocks resources in VPCs and subnets that you own in a Region from reaching or being reached from the internet through internet gateways and egress-only internet gateways."
+  },
+  {
+    "v": "1.35.64",
+    "t": "Adding request and response elements for managed resources."
+  },
+  {
+    "v": "1.35.63",
+    "t": "Remove non-functional enum variants for FleetCapacityReservationUsageStrategy"
+  },
+  {
+    "v": "1.35.60",
+    "t": "This release adds the source AMI details in DescribeImages API"
+  },
+  {
+    "v": "1.35.52",
+    "t": "This release adds two new capabilities to VPC Security Groups: Security Group VPC Associations and Shared Security Groups."
+  },
+  {
+    "v": "1.35.48",
+    "t": "This release includes a new API to describe some details of the Amazon Machine Images (AMIs) that were used to launch EC2 instances, even if those AMIs are no longer available for use."
+  },
+  {
+    "v": "1.35.47",
+    "t": "Amazon EC2 X8g, C8g and M8g instances are powered by AWS Graviton4 processors. X8g provide the lowest cost per GiB of memory among Graviton4 instances. C8g provide the best price performance for compute-intensive workloads. M8g provide the best price performance in for general purpose workloads."
+  },
+  {
+    "v": "1.35.45",
+    "t": "Amazon EC2 now allows you to create network interfaces with just the EFA driver and no ENA driver by specifying the network interface type as efa-only."
+  },
+  {
+    "v": "1.35.44",
+    "t": "RequestSpotInstances and RequestSpotFleet feature release."
+  },
+  {
+    "v": "1.35.38",
+    "t": "This release adds support for assigning the billing of shared Amazon EC2 On-Demand Capacity Reservations."
+  },
+  {
+    "v": "1.35.34",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.35.33",
+    "t": "This release includes a new API for modifying instance cpu-options after launch."
+  },
+  {
+    "v": "1.35.27",
+    "t": "Updates to documentation for the transit gateway security group referencing feature."
+  },
+  {
+    "v": "1.35.25",
+    "t": "Amazon EC2 G6e instances powered by NVIDIA L40S Tensor Core GPUs are the most cost-efficient GPU instances for deploying generative AI models and the highest performance GPU instances for spatial computing workloads."
+  },
+  {
+    "v": "1.35.8",
+    "t": "Amazon VPC IP Address Manager (IPAM) now allows customers to provision IPv4 CIDR blocks and allocate Elastic IP Addresses directly from IPAM pools with public IPv4 space"
+  },
+  {
+    "v": "1.35.3",
+    "t": "DescribeInstanceStatus now returns health information on EBS volumes attached to Nitro instances"
+  },
+  {
+    "v": "1.34.159",
+    "t": "This release adds new capabilities to manage On-Demand Capacity Reservations including the ability to split your reservation, move capacity between reservations, and modify the instance eligibility of your reservation."
+  },
+  {
+    "v": "1.34.157",
+    "t": "Launch of private IPv6 addressing for VPCs and Subnets. VPC IPAM supports the planning and monitoring of private IPv6 usage."
+  },
+  {
+    "v": "1.34.149",
+    "t": "EC2 Fleet now supports using custom identifiers to reference Amazon Machine Images (AMI) in launch requests that are configured to choose from a diversified list of instance types."
+  },
+  {
+    "v": "1.34.145",
+    "t": "Amazon VPC IP Address Manager (IPAM) now supports Bring-Your-Own-IP (BYOIP) for IP addresses registered with any Internet Registry. This feature uses DNS TXT records to validate ownership of a public IP address range."
+  },
+  {
+    "v": "1.34.143",
+    "t": "Add parameters to enable provisioning IPAM BYOIPv4 space at a Local Zone Network Border Group level"
+  },
+  {
+    "v": "1.34.138",
+    "t": "Documentation updates for Elastic Compute Cloud (EC2)."
+  },
+  {
+    "v": "1.34.133",
+    "t": "This release is for the launch of the new u7ib-12tb.224xlarge, R8g, c7gn.metal and mac2-m1ultra.metal instance types"
+  },
+  {
+    "v": "1.34.132",
+    "t": "Fix EC2 multi-protocol info in models."
+  },
+  {
+    "v": "1.34.127",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.34.125",
+    "t": "Tagging support for Traffic Mirroring FilterRule resource"
+  },
+  {
+    "v": "1.34.119",
+    "t": "U7i instances with up to 32 TiB of DDR5 memory and 896 vCPUs are now available. C7i-flex instances are launched and are lower-priced variants of the Amazon EC2 C7i instances that offer a baseline level of CPU performance with the ability to scale up to the full compute performance 95% of the time."
+  },
+  {
+    "v": "1.34.114",
+    "t": "Providing support to accept BgpAsnExtended attribute"
+  },
+  {
+    "v": "1.34.101",
+    "t": "Adding Precision Hardware Clock (PHC) to public API DescribeInstanceTypes"
+  },
+  {
+    "v": "1.34.97",
+    "t": "This release includes a new API for retrieving the public endorsement key of the EC2 instance's Nitro Trusted Platform Module (NitroTPM)."
+  },
+  {
+    "v": "1.34.96",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.34.91",
+    "t": "Launching capability for customers to enable or disable automatic assignment of public IPv4 addresses to their network interface"
+  },
+  {
+    "v": "1.34.90",
+    "t": "This release introduces EC2 AMI Deregistration Protection, a new AMI property that can be enabled by customers to protect an AMI against an unintended deregistration. This release also enables the AMI owners to view the AMI 'LastLaunchedTime' in DescribeImages API."
+  },
+  {
+    "v": "1.34.86",
+    "t": "Documentation updates for Elastic Compute Cloud (EC2)."
+  },
+  {
+    "v": "1.34.78",
+    "t": "Amazon EC2 G6 instances powered by NVIDIA L4 Tensor Core GPUs can be used for a wide range of graphics-intensive and machine learning use cases. Gr6 instances also feature NVIDIA L4 GPUs and can be used for graphics workloads with higher memory requirements."
+  },
+  {
+    "v": "1.34.73",
+    "t": "Amazon EC2 C7gd, M7gd and R7gd metal instances with up to 3.8 TB of local NVMe-based SSD block-level storage have up to 45% improved real-time NVMe storage performance than comparable Graviton2-based instances."
+  },
+  {
+    "v": "1.34.71",
+    "t": "Documentation updates for Elastic Compute Cloud (EC2)."
+  },
+  {
+    "v": "1.34.70",
+    "t": "Added support for ModifyInstanceMetadataDefaults and GetInstanceMetadataDefaults to set Instance Metadata Service account defaults"
+  },
+  {
+    "v": "1.34.66",
+    "t": "This release adds the new DescribeMacHosts API operation for getting information about EC2 Mac Dedicated Hosts. Users can now see the latest macOS versions that their underlying Apple Mac can support without needing to be updated."
+  },
+  {
+    "v": "1.34.64",
+    "t": "Add media accelerator and neuron device information on the describe instance types API."
+  },
+  {
+    "v": "1.34.61",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.34.58",
+    "t": "This release adds an optional parameter to RegisterImage and CopyImage APIs to support tagging AMIs at the time of creation."
+  },
+  {
+    "v": "1.34.54",
+    "t": "With this release, Amazon EC2 Auto Scaling groups, EC2 Fleet, and Spot Fleet improve the default price protection behavior of attribute-based instance type selection of Spot Instances, to consistently select from a wide range of instance types."
+  },
+  {
+    "v": "1.34.52",
+    "t": "This release increases the range of MaxResults for GetNetworkInsightsAccessScopeAnalysisFindings to 1,000."
+  },
+  {
+    "v": "1.34.30",
+    "t": "EC2 Fleet customers who use attribute based instance-type selection can now intuitively define their Spot instances price protection limit as a percentage of the lowest priced On-Demand instance type."
+  },
+  {
+    "v": "1.34.27",
+    "t": "Introduced a new clientToken request parameter on CreateNetworkAcl and CreateRouteTable APIs. The clientToken parameter allows idempotent operations on the APIs."
+  },
+  {
+    "v": "1.34.24",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.34.17",
+    "t": "This release adds support for adding an ElasticBlockStorage volume configurations in ECS RunTask/StartTask/CreateService/UpdateService APIs. The configuration allows for attaching EBS volumes to ECS Tasks."
+  },
+  {
+    "v": "1.34.15",
+    "t": "Amazon EC2 R7iz bare metal instances are powered by custom 4th generation Intel Xeon Scalable processors."
+  },
+  {
+    "v": "1.34.4",
+    "t": "Provision BYOIPv4 address ranges and advertise them by specifying the network border groups option in Los Angeles, Phoenix and Dallas AWS Local Zones."
+  },
+  {
+    "v": "1.33.11",
+    "t": "M2 Mac instances are built on Apple M2 Mac mini computers. I4i instances are powered by 3rd generation Intel Xeon Scalable processors. C7i compute optimized, M7i general purpose and R7i memory optimized instances are powered by custom 4th Generation Intel Xeon Scalable processors."
+  },
+  {
+    "v": "1.33.9",
+    "t": "Releasing the new cpuManufacturer attribute within the DescribeInstanceTypes API response which notifies our customers with information on who the Manufacturer is for the processor attached to the instance, for example: Intel."
+  },
+  {
+    "v": "1.33.8",
+    "t": "Adds A10G, T4G, and H100 as accelerator name options and Habana as an accelerator manufacturer option for attribute based selection"
+  },
+  {
+    "v": "1.32.5",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.32.4",
+    "t": "This release adds support for Security group referencing over Transit gateways, enabling you to simplify Security group management and control of instance-to-instance traffic across VPCs that are connected by Transit gateway."
+  },
+  {
+    "v": "1.32.3",
+    "t": "This release adds new features for Amazon VPC IP Address Manager (IPAM) Allowing a choice between Free and Advanced Tiers, viewing public IP address insights across regions and in Amazon Cloudwatch, use IPAM to plan your subnet IPs within a VPC and bring your own autonomous system number to IPAM."
+  },
+  {
+    "v": "1.32.2",
+    "t": "Enable use of tenant-specific PublicSigningKeyUrl from device trust providers and onboard jumpcloud as a new device trust provider."
+  },
+  {
+    "v": "1.32.1",
+    "t": "AWS EBS now supports Snapshot Lock, giving users the ability to lock an EBS Snapshot to prohibit deletion of the snapshot. This release introduces the LockSnapshot, UnlockSnapshot & DescribeLockedSnapshots APIs to manage lock configuration for snapshots. The release also includes the dl2q_24xlarge."
+  },
+  {
+    "v": "1.31.85",
+    "t": "Adds the new EC2 DescribeInstanceTopology API, which you can use to retrieve the network topology of your running instances on select platform types to determine their relative proximity to each other."
+  },
+  {
+    "v": "1.31.84",
+    "t": "EC2 adds API updates to enable ENA Express at instance launch time."
+  },
+  {
+    "v": "1.31.83",
+    "t": "AWS EBS now supports Block Public Access for EBS Snapshots. This release introduces the EnableSnapshotBlockPublicAccess, DisableSnapshotBlockPublicAccess and GetSnapshotBlockPublicAccessState APIs to manage account-level public access settings for EBS Snapshots in an AWS Region."
+  },
+  {
+    "v": "1.31.75",
+    "t": "Capacity Blocks for ML are a new EC2 purchasing option for reserving GPU instances on a future date to support short duration machine learning (ML) workloads. Capacity Blocks automatically place instances close together inside Amazon EC2 UltraClusters for low-latency, high-throughput networking."
+  },
+  {
+    "v": "1.31.72",
+    "t": "Launching GetSecurityGroupsForVpc API. This API gets security groups that can be associated by the AWS account making the request with network interfaces in the specified VPC."
+  },
+  {
+    "v": "1.31.70",
+    "t": "This release updates the documentation for InstanceInterruptionBehavior and HibernationOptionsRequest to more accurately describe the behavior of these two parameters when using Spot hibernation."
+  },
+  {
+    "v": "1.31.67",
+    "t": "Amazon EC2 C7a instances, powered by 4th generation AMD EPYC processors, are ideal for high performance, compute-intensive workloads such as high performance computing. Amazon EC2 R7i instances are next-generation memory optimized and powered by custom 4th Generation Intel Xeon Scalable processors."
+  },
+  {
+    "v": "1.31.63",
+    "t": "This release adds Ubuntu Pro as a supported platform for On-Demand Capacity Reservations and adds support for setting an Amazon Machine Image (AMI) to disabled state. Disabling the AMI makes it private if it was previously shared, and prevents new EC2 instance launches from it."
+  },
+  {
+    "v": "1.31.62",
+    "t": "Documentation updates for Elastic Compute Cloud (EC2)."
+  },
+  {
+    "v": "1.31.58",
+    "t": "Introducing Amazon EC2 R7iz instances with 3.9 GHz sustained all-core turbo frequency and deliver up to 20% better performance than previous generation z1d instances."
+  },
+  {
+    "v": "1.31.57",
+    "t": "Adds support for Customer Managed Key encryption for Amazon Verified Access resources"
+  },
+  {
+    "v": "1.31.55",
+    "t": "The release includes AWS verified access to support FIPs compliance in North America regions"
+  },
+  {
+    "v": "1.31.53",
+    "t": "EC2 M2 Pro Mac instances are powered by Apple M2 Pro Mac Mini computers featuring 12 core CPU, 19 core GPU, 32 GiB of memory, and 16 core Apple Neural Engine and uniquely enabled by the AWS Nitro System through high-speed Thunderbolt connections."
+  },
+  {
+    "v": "1.31.51",
+    "t": "This release adds support for C7i, and R7a instance types."
+  },
+  {
+    "v": "1.31.46",
+    "t": "This release adds support for restricting public sharing of AMIs through AMI Block Public Access"
+  },
+  {
+    "v": "1.31.42",
+    "t": "This release adds 'outpost' location type to the DescribeInstanceTypeOfferings API, allowing customers that have been allowlisted for outpost to query their offerings in the API."
+  },
+  {
+    "v": "1.31.41",
+    "t": "Introducing Amazon EC2 C7gd, M7gd, and R7gd Instances with up to 3.8 TB of local NVMe-based SSD block-level storage. These instances are powered by AWS Graviton3 processors, delivering up to 25% better performance over Graviton2-based instances."
+  },
+  {
+    "v": "1.31.34",
+    "t": "Amazon EC2 M7a instances, powered by 4th generation AMD EPYC processors, deliver up to 50% higher performance compared to M6a instances. Amazon EC2 Hpc7a instances, powered by 4th Gen AMD EPYC processors, deliver up to 2.5x better performance compared to Amazon EC2 Hpc6a instances."
+  },
+  {
+    "v": "1.31.33",
+    "t": "Marking fields as sensitive on BundleTask and GetPasswordData"
+  },
+  {
+    "v": "1.31.31",
+    "t": "The DeleteKeyPair API has been updated to return the keyPairId when an existing key pair is deleted."
+  },
+  {
+    "v": "1.31.29",
+    "t": "Adds support for SubnetConfigurations to allow users to select their own IPv4 and IPv6 addresses for Interface VPC endpoints"
+  },
+  {
+    "v": "1.31.27",
+    "t": "Documentation updates for Elastic Compute Cloud (EC2)."
+  },
+  {
+    "v": "1.31.25",
+    "t": "Amazon EC2 P5 instances, powered by the latest NVIDIA H100 Tensor Core GPUs, deliver the highest performance in EC2 for deep learning (DL) and HPC applications. M7i-flex and M7i instances are next-generation general purpose instances powered by custom 4th Generation Intel Xeon Scalable processors."
+  },
+  {
+    "v": "1.31.19",
+    "t": "This release adds new parameter isPrimaryIPv6 to  allow assigning an IPv6 address as a primary IPv6 address to a network interface which cannot be changed to give equivalent functionality available for network interfaces with primary IPv4 address."
+  },
+  {
+    "v": "1.31.13",
+    "t": "SDK and documentation updates for Amazon Elastic Block Store APIs"
+  },
+  {
+    "v": "1.31.11",
+    "t": "This release adds an instance's peak and baseline network bandwidth as well as the memory sizes of an instance's inference accelerators to DescribeInstanceTypes."
+  },
+  {
+    "v": "1.31.10",
+    "t": "Add \"disabled\" enum value to SpotInstanceState."
+  },
+  {
+    "v": "1.31.6",
+    "t": "Amazon EC2 documentation updates."
+  },
+  {
+    "v": "1.31.4",
+    "t": "Add Nitro TPM support on DescribeInstanceTypes"
+  },
+  {
+    "v": "1.31.3",
+    "t": "This release adds support for the C7gn and Hpc7g instances. C7gn instances are powered by AWS Graviton3 processors and the fifth-generation AWS Nitro Cards. Hpc7g instances are powered by AWS Graviton 3E processors and provide up to 200 Gbps network bandwidth."
+  },
+  {
+    "v": "1.31.0",
+    "t": "Add Nitro Enclaves support on DescribeInstanceTypes"
+  },
+  {
+    "v": "1.29.157",
+    "t": "Adds support for targeting Dedicated Host allocations by assetIds in AWS Outposts"
+  },
+  {
+    "v": "1.29.156",
+    "t": "API changes to AWS Verified Access to include data from trust providers in logs"
+  },
+  {
+    "v": "1.29.153",
+    "t": "This release introduces a new feature, EC2 Instance Connect Endpoint, that enables you to connect to a resource over TCP, without requiring the resource to have a public IPv4 address."
+  },
+  {
+    "v": "1.29.147",
+    "t": "Making InstanceTagAttribute as the required parameter for the DeregisterInstanceEventNotificationAttributes and RegisterInstanceEventNotificationAttributes APIs."
+  },
+  {
+    "v": "1.29.136",
+    "t": "Add support for i4g.large, i4g.xlarge, i4g.2xlarge, i4g.4xlarge, i4g.8xlarge and i4g.16xlarge instances powered by AWS Graviton2 processors that deliver up to 15% better compute performance than our other storage-optimized instances."
+  },
+  {
+    "v": "1.29.129",
+    "t": "This release adds support the inf2 and trn1n instances. inf2 instances are purpose built for deep learning inference while trn1n instances are powered by AWS Trainium accelerators and they build on the capabilities of Trainium-powered trn1 instances."
+  },
+  {
+    "v": "1.29.126",
+    "t": "Adds an SDK paginator for GetNetworkInsightsAccessScopeAnalysisFindings"
+  },
+  {
+    "v": "1.29.122",
+    "t": "This release adds support for AMD SEV-SNP on EC2 instances."
+  },
+  {
+    "v": "1.29.119",
+    "t": "API changes to AWS Verified Access related to identity providers' information."
+  },
+  {
+    "v": "1.29.106",
+    "t": "C6in, M6in, M6idn, R6in and R6idn bare metal instances are powered by 3rd Generation Intel Xeon Scalable processors and offer up to 200 Gbps of network bandwidth."
+  },
+  {
+    "v": "1.29.104",
+    "t": "Documentation updates for EC2 On Demand Capacity Reservations"
+  },
+  {
+    "v": "1.29.103",
+    "t": "This release adds support for Tunnel Endpoint Lifecycle control, a new feature that provides Site-to-Site VPN customers with better visibility and control of their VPN tunnel maintenance updates."
+  },
+  {
+    "v": "1.29.96",
+    "t": "This release adds support for AWS Network Firewall, AWS PrivateLink, and Gateway Load Balancers to Amazon VPC Reachability Analyzer, and it makes the path destination optional as long as a destination address in the filter at source is provided."
+  },
+  {
+    "v": "1.29.91",
+    "t": "This release adds a new DnsOptions key (PrivateDnsOnlyForInboundResolverEndpoint) to CreateVpcEndpoint and ModifyVpcEndpoint APIs."
+  },
+  {
+    "v": "1.29.87",
+    "t": "Introducing Amazon EC2 C7g, M7g and R7g instances, powered by the latest generation AWS Graviton3 processors and deliver up to 25% better performance over Graviton2-based instances."
+  },
+  {
+    "v": "1.29.84",
+    "t": "This release adds support for a new boot mode for EC2 instances called 'UEFI Preferred'."
+  },
+  {
+    "v": "1.29.81",
+    "t": "This release allows IMDS support to be set to v2-only on an existing AMI, so that all future instances launched from that AMI will use IMDSv2 by default."
+  },
+  {
+    "v": "1.29.71",
+    "t": "With this release customers can turn host maintenance on or off when allocating or modifying a supported dedicated host. Host maintenance is turned on by default for supported hosts."
+  },
+  {
+    "v": "1.29.69",
+    "t": "Adds support for waiters that automatically poll for an imported snapshot until it reaches the completed state."
+  },
+  {
+    "v": "1.29.63",
+    "t": "Documentation updates for EC2."
+  },
+  {
+    "v": "1.29.61",
+    "t": "This launch allows customers to associate up to 8 IP addresses to their NAT Gateways to increase the limit on concurrent connections to a single destination by eight times from 55K to 440K."
+  },
+  {
+    "v": "1.29.60",
+    "t": "We add Prefix Lists as a new route destination option for LocalGatewayRoutes. This will allow customers to create routes to Prefix Lists. Prefix List routes will allow customers to group individual CIDR routes with the same target into a single route."
+  },
+  {
+    "v": "1.29.57",
+    "t": "This release adds new functionality that allows customers to provision IPv6 CIDR blocks through Amazon VPC IP Address Manager (IPAM) as well as allowing customers to utilize IPAM Resource Discovery APIs."
+  },
+  {
+    "v": "1.29.54",
+    "t": "C6in, M6in, M6idn, R6in and R6idn instances are powered by 3rd Generation Intel Xeon Scalable processors (code named Ice Lake) with an all-core turbo frequency of 3.5 GHz."
+  },
+  {
+    "v": "1.29.53",
+    "t": "Adds SSM Parameter Resource Aliasing support to EC2 Launch Templates. Launch Templates can now store parameter aliases in place of AMI Resource IDs. CreateLaunchTemplateVersion and DescribeLaunchTemplateVersions now support a convenience flag, ResolveAlias, to return the resolved parameter value."
+  },
+  {
+    "v": "1.29.50",
+    "t": "Documentation updates for EC2."
+  },
+  {
+    "v": "1.29.34",
+    "t": "Adds support for pagination in the EC2 DescribeImages API."
+  },
+  {
+    "v": "1.29.28",
+    "t": "This release updates DescribeFpgaImages to show supported instance types of AFIs in its response."
+  },
+  {
+    "v": "1.29.23",
+    "t": "Documentation updates for EC2."
+  },
+  {
+    "v": "1.29.19",
+    "t": "This release adds support for AWS Verified Access and the Hpc6id Amazon EC2 compute optimized instance type, which features 3rd generation Intel Xeon Scalable processors."
+  },
+  {
+    "v": "1.29.18",
+    "t": "Introduces ENA Express, which uses AWS SRD and dynamic routing to increase throughput and minimize latency, adds support for trust relationships between Reachability Analyzer and AWS Organizations to enable cross-account analysis, and adds support for Infrastructure Performance metric subscriptions."
+  },
+  {
+    "v": "1.29.13",
+    "t": "This release adds support for copying an Amazon Machine Image's tags when copying an AMI."
+  },
+  {
+    "v": "1.29.12",
+    "t": "This release adds a new optional parameter \"privateIpAddress\" for the CreateNatGateway API. PrivateIPAddress will allow customers to select a custom Private IPv4 address instead of having it be auto-assigned."
+  },
+  {
+    "v": "1.29.7",
+    "t": "This release adds a new price capacity optimized allocation strategy for Spot Instances to help customers optimize provisioning of Spot Instances via EC2 Auto Scaling, EC2 Fleet, and Spot Fleet. It allocates Spot Instances based on both spare capacity availability and Spot Instance price."
+  },
+  {
+    "v": "1.29.6",
+    "t": "Amazon EC2 Trn1 instances, powered by AWS Trainium chips, are purpose built for high-performance deep learning training. u-24tb1.112xlarge and u-18tb1.112xlarge High Memory instances are purpose-built to run large in-memory databases."
+  },
+  {
+    "v": "1.29.5",
+    "t": "This release enables sharing of EC2 Placement Groups across accounts and within AWS Organizations using Resource Access Manager"
+  },
+  {
+    "v": "1.29.4",
+    "t": "This release adds support for two new attributes for attribute-based instance type selection - NetworkBandwidthGbps and AllowedInstanceTypes."
+  },
+  {
+    "v": "1.29.3",
+    "t": "This release adds API support for the recipient of an AMI account share to remove shared AMI launch permissions."
+  },
+  {
+    "v": "1.28.5",
+    "t": "Elastic IP transfer is a new Amazon VPC feature that allows you to transfer your Elastic IP addresses from one AWS Account to another."
+  },
+  {
+    "v": "1.28.3",
+    "t": "Feature supports the replacement of instance root volume using an updated AMI without requiring customers to stop their instance."
+  },
+  {
+    "v": "1.27.86",
+    "t": "Added EnableNetworkAddressUsageMetrics flag for ModifyVpcAttribute, DescribeVpcAttribute APIs."
+  },
+  {
+    "v": "1.27.85",
+    "t": "Adding an imdsSupport attribute to EC2 AMIs"
+  },
+  {
+    "v": "1.27.83",
+    "t": "u-3tb1 instances are powered by Intel Xeon Platinum 8176M (Skylake) processors and are purpose-built to run large in-memory databases."
+  },
+  {
+    "v": "1.27.80",
+    "t": "Letting external AWS customers provide ImageId as a Launch Template override in FleetLaunchTemplateOverridesRequest"
+  },
+  {
+    "v": "1.27.79",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.27.77",
+    "t": "This release adds support for blocked paths to Amazon VPC Reachability Analyzer."
+  },
+  {
+    "v": "1.27.76",
+    "t": "This release adds CapacityAllocations field to DescribeCapacityReservations"
+  },
+  {
+    "v": "1.27.74",
+    "t": "This feature allows customers to create tags for vpc-endpoint-connections and vpc-endpoint-service-permissions."
+  },
+  {
+    "v": "1.27.73",
+    "t": "This update introduces API operations to manage and create local gateway route tables, CoIP pools, and VIF group associations."
+  },
+  {
+    "v": "1.27.72",
+    "t": "Two new features for local gateway route tables: support for static routes targeting Elastic Network Interfaces and direct VPC routing."
+  },
+  {
+    "v": "1.27.69",
+    "t": "This release adds support to send VPC Flow Logs to kinesis-data-firehose as new destination type"
+  },
+  {
+    "v": "1.27.68",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.27.57",
+    "t": "R6a instances are powered by 3rd generation AMD EPYC (Milan) processors delivering all-core turbo frequency of 3.6 GHz. C6id, M6id, and R6id instances are powered by 3rd generation Intel Xeon Scalable processor (Ice Lake) delivering all-core turbo frequency of 3.5 GHz."
+  },
+  {
+    "v": "1.27.55",
+    "t": "This release adds support for VPN log options , a new feature allowing S2S VPN connections to send IKE activity logs to CloudWatch Logs"
+  },
+  {
+    "v": "1.27.49",
+    "t": "This release adds support for excluding specific data (non-root) volumes from multi-volume snapshot sets created from instances."
+  },
+  {
+    "v": "1.27.41",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.27.40",
+    "t": "Documentation updates for VM Import/Export."
+  },
+  {
+    "v": "1.27.36",
+    "t": "Added support for EC2 M1 Mac instances. For more information, please visit aws.amazon.com/mac."
+  },
+  {
+    "v": "1.27.32",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.27.30",
+    "t": "This release adds flow logs for Transit Gateway to  allow customers to gain deeper visibility and insights into network traffic through their Transit Gateways."
+  },
+  {
+    "v": "1.27.27",
+    "t": "Build, manage, and monitor a unified global network that connects resources running across your cloud and on-premises environments using the AWS Cloud WAN APIs."
+  },
+  {
+    "v": "1.27.19",
+    "t": "This release adds a new spread placement group to EC2 Placement Groups: host level spread, which spread instances between physical hosts, available to Outpost customers only. CreatePlacementGroup and DescribePlacementGroups APIs were updated with a new parameter: SpreadLevel to support this feature."
+  },
+  {
+    "v": "1.27.14",
+    "t": "This release adds support for Private IP VPNs, a new feature allowing S2S VPN connections to use private ip addresses as the tunnel outside ip address over Direct Connect as transport."
+  },
+  {
+    "v": "1.26.9",
+    "t": "C7g instances, powered by the latest generation AWS Graviton3 processors, provide the best price performance in Amazon EC2 for compute-intensive workloads."
+  },
+  {
+    "v": "1.26.7",
+    "t": "Stop Protection feature enables customers to protect their instances from accidental stop actions."
+  },
+  {
+    "v": "1.25.13",
+    "t": "This release introduces a target type Gateway Load Balancer Endpoint for mirrored traffic. Customers can now specify GatewayLoadBalancerEndpoint option during the creation of a traffic mirror target."
+  },
+  {
+    "v": "1.25.12",
+    "t": "This release updates AWS PrivateLink APIs to support IPv6 for PrivateLink Services and Endpoints of type 'Interface'."
+  },
+  {
+    "v": "1.25.11",
+    "t": "Added support for using NitroTPM and UEFI Secure Boot on EC2 instances."
+  },
+  {
+    "v": "1.25.9",
+    "t": "Add new state values for IPAMs, IPAM Scopes, and IPAM Pools."
+  },
+  {
+    "v": "1.25.8",
+    "t": "Amazon EC2 I4i instances are powered by 3rd generation Intel Xeon Scalable processors and feature up to 30 TB of local AWS Nitro SSD storage"
+  },
+  {
+    "v": "1.25.6",
+    "t": "Adds support for allocating Dedicated Hosts on AWS  Outposts. The AllocateHosts API now accepts an OutpostArn request  parameter, and the DescribeHosts API now includes an OutpostArn response parameter."
+  },
+  {
+    "v": "1.25.3",
+    "t": "This release adds support to query the public key and creation date of EC2 Key Pairs. Additionally, the format (pem or ppk) of a key pair can be specified when creating a new key pair."
+  },
+  {
+    "v": "1.24.46",
+    "t": "Adds support for waiters that automatically poll for a deleted NAT Gateway until it reaches the deleted state."
+  },
+  {
+    "v": "1.24.41",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.24.39",
+    "t": "X2idn and X2iedn instances are powered by 3rd generation Intel Xeon Scalable processors with an all-core turbo frequency up to 3.5 GHzAmazon EC2. C6a instances are powered by 3rd generation AMD EPYC processors."
+  },
+  {
+    "v": "1.24.30",
+    "t": "This release simplifies the auto-recovery configuration process enabling customers to set the recovery behavior to disabled or default"
+  },
+  {
+    "v": "1.24.27",
+    "t": "This is release adds support for Amazon VPC Reachability Analyzer to analyze path through a Transit Gateway."
+  },
+  {
+    "v": "1.24.20",
+    "t": "Adds the Cascade parameter to the DeleteIpam API. Customers can use this parameter to automatically delete their IPAM, including non-default scopes, pools, cidrs, and allocations. There mustn't be any pools provisioned in the default public scope to use this parameter."
+  },
+  {
+    "v": "1.24.13",
+    "t": "Documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.24.9",
+    "t": "This release adds support for new AMI property 'lastLaunchedTime'"
+  },
+  {
+    "v": "1.24.1",
+    "t": "Documentation updates for EC2."
+  },
+  {
+    "v": "1.23.48",
+    "t": "adds support for AMIs in Recycle Bin"
+  },
+  {
+    "v": "1.23.45",
+    "t": "X2ezn instances are powered by Intel Cascade Lake CPUs that deliver turbo all core frequency of up to 4.5 GHz and up to 100 Gbps of networking bandwidth"
+  },
+  {
+    "v": "1.23.40",
+    "t": "C6i, M6i and R6i instances are powered by a third-generation Intel Xeon Scalable processor (Ice Lake) delivering all-core turbo frequency of 3.5 GHz"
+  },
+  {
+    "v": "1.23.38",
+    "t": "Add support for AWS Client VPN client login banner and session timeout."
+  },
+  {
+    "v": "1.23.34",
+    "t": "Hpc6a instances are powered by a third-generation AMD EPYC processors (Milan) delivering all-core turbo frequency of 3.4 GHz"
+  },
+  {
+    "v": "1.23.33",
+    "t": "EC2 Capacity Reservations now supports RHEL instance platforms (RHEL with SQL Server Standard, RHEL with SQL Server Enterprise, RHEL with SQL Server Web, RHEL with HA, RHEL with HA and SQL Server Standard, RHEL with HA and SQL Server Enterprise)"
+  },
+  {
+    "v": "1.23.32",
+    "t": "New feature: Updated EC2 API to support faster launching for Windows images. Optimized images are pre-provisioned, using snapshots to launch instances up to 65% faster."
+  },
+  {
+    "v": "1.23.30",
+    "t": "This release introduces On-Demand Capacity Reservation support for Cluster Placement Groups, adds Tags on instance Metadata, and includes documentation updates for Amazon EC2."
+  },
+  {
+    "v": "1.23.29",
+    "t": "This release adds a new API called ModifyVpcEndpointServicePayerResponsibility which allows VPC endpoint service owners to take payer responsibility of their VPC Endpoint connections."
+  },
+  {
+    "v": "1.23.23",
+    "t": "Adds waiters support for internet gateways."
+  },
+  {
+    "v": "1.23.18",
+    "t": "This release adds support for Amazon VPC IP Address Manager (IPAM), which enables you to plan, track, and monitor IP addresses for your workloads. This release also adds support for VPC Network Access Analyzer, which enables you to analyze network access to resources in your Virtual Private Clouds."
+  },
+  {
+    "v": "1.23.17",
+    "t": "This release adds support for Is4gen and Im4gn instances. This release also adds a new subnet attribute, enableLniAtDeviceIndex, to support local network interfaces, which are logical networking components that connect an EC2 instance to your on-premises network."
+  },
+  {
+    "v": "1.23.16",
+    "t": "This release adds support for G5g and M6a instances. This release also adds support for Amazon EBS Snapshots Archive, a feature that enables you to archive your EBS snapshots; and Recycle Bin, a feature that enables you to protect your EBS snapshots against accidental deletion."
+  },
+  {
+    "v": "1.23.14",
+    "t": "Documentation updates for EC2."
+  },
+  {
+    "v": "1.23.12",
+    "t": "This release adds a new parameter ipv6Native to the allow creation of IPv6-only subnets using the CreateSubnet operation, and the operation ModifySubnetAttribute includes new parameters to modify subnet attributes to use resource-based naming and enable DNS resolutions for Private DNS name."
+  },
+  {
+    "v": "1.23.6",
+    "t": "Adds a new VPC Subnet attribute \"EnableDns64.\" When enabled on IPv6 Subnets, the Amazon-Provided DNS Resolver returns synthetic IPv6 addresses for IPv4-only destinations."
+  },
+  {
+    "v": "1.23.5",
+    "t": "C6i instances are powered by a third-generation Intel Xeon Scalable processor (Ice Lake) delivering all-core turbo frequency of 3.5 GHz. G5 instances feature up to 8 NVIDIA A10G Tensor Core GPUs and second generation AMD EPYC processors."
+  },
+  {
+    "v": "1.23.4",
+    "t": "This release provides an additional route target for the VPC route table."
+  },
+  {
+    "v": "1.23.0",
+    "t": "This release adds internal validation on the GatewayAssociationState field"
+  },
+  {
+    "v": "1.22.12",
+    "t": "DescribeInstances now returns customer-owned IP addresses for instances running on an AWS Outpost."
+  },
+  {
+    "v": "1.22.11",
+    "t": "This release adds a new instance replacement strategy for EC2 Fleet, Spot Fleet. Now you can select an action to perform when your instance gets a rebalance notification. EC2 Fleet, Spot Fleet can launch a replacement then terminate the instance that received notification after a termination delay"
+  },
+  {
+    "v": "1.22.7",
+    "t": "Support added for AMI sharing with organizations and organizational units in ModifyImageAttribute API"
+  },
+  {
+    "v": "1.22.6",
+    "t": "Added new read-only DenyAllIGWTraffic network interface attribute. Added support for DL1 24xlarge instances powered by Habana Gaudi Accelerators for deep learning model training workloads"
+  },
+  {
+    "v": "1.22.5",
+    "t": "This release adds: attribute-based instance type selection for EC2 Fleet, Spot Fleet, a feature that lets customers express instance requirements as attributes like vCPU, memory, and storage; and Spot placement score, a feature that helps customers identify an optimal location to run Spot workloads."
+  },
+  {
+    "v": "1.22.3",
+    "t": "This release adds support to create a VPN Connection that is not attached to a Gateway at the time of creation. Use this to create VPNs associated with Core Networks, or modify your VPN and attach a gateway using the modify API after creation."
+  },
+  {
+    "v": "1.21.61",
+    "t": "This release adds support for additional VPC Flow Logs delivery options to S3, such as Apache Parquet formatted files, Hourly partitions and Hive-compatible S3 prefixes"
+  },
+  {
+    "v": "1.21.60",
+    "t": "EncryptionSupport for InstanceStorageInfo added to DescribeInstanceTypes API"
+  },
+  {
+    "v": "1.21.59",
+    "t": "Documentation update for Amazon EC2."
+  },
+  {
+    "v": "1.21.58",
+    "t": "This release removes a requirement for filters on SearchLocalGatewayRoutes operations."
+  },
+  {
+    "v": "1.21.55",
+    "t": "Released Capacity Reservation Fleet, a feature of Amazon EC2 Capacity Reservations, which provides a way to manage reserved capacity across instance types. For more information: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-fleets.html"
+  },
+  {
+    "v": "1.21.48",
+    "t": "DescribeInstances now returns Platform Details, Usage Operation, and Usage Operation Update Time."
+  },
+  {
+    "v": "1.21.45",
+    "t": "This update adds support for downloading configuration templates using new APIs (GetVpnConnectionDeviceTypes and GetVpnConnectionDeviceSampleConfiguration) and Internet Key Exchange version 2 (IKEv2) parameters for many popular CGW devices."
+  },
+  {
+    "v": "1.21.42",
+    "t": "This release adds support for vt1 3xlarge, 6xlarge and 24xlarge instances powered by Xilinx Alveo U30 Media Accelerators for video transcoding workloads"
+  },
+  {
+    "v": "1.21.41",
+    "t": "Adds support for T3 instances on Amazon EC2 Dedicated Hosts."
+  },
+  {
+    "v": "1.21.34",
+    "t": "Added LaunchTemplate support for the IMDS IPv6 endpoint"
+  },
+  {
+    "v": "1.21.31",
+    "t": "This release adds the BootMode flag to the ImportImage API and showing the detected BootMode of an ImportImage task."
+  },
+  {
+    "v": "1.21.30",
+    "t": "Support added for resizing VPC prefix lists"
+  },
+  {
+    "v": "1.21.29",
+    "t": "Support added for IMDS IPv6 endpoint"
+  },
+  {
+    "v": "1.21.26",
+    "t": "encryptionInTransitSupported added to DescribeInstanceTypes API"
+  },
+  {
+    "v": "1.21.25",
+    "t": "The ImportImage API now supports the ability to create AMIs with AWS-managed licenses for Microsoft SQL Server for both Windows and Linux."
+  },
+  {
+    "v": "1.21.23",
+    "t": "This release adds support for EC2 ED25519 key pairs for authentication"
+  },
+  {
+    "v": "1.21.10",
+    "t": "This release adds support for G4ad xlarge and 2xlarge instances powered by AMD Radeon Pro V520 GPUs and AMD 2nd Generation EPYC processors"
+  },
+  {
+    "v": "1.21.5",
+    "t": "This release allows customers to assign prefixes to their elastic network interface and to reserve IP blocks in their subnet CIDRs. These reserved blocks can be used to assign prefixes to elastic network interfaces or be excluded from auto-assignment."
+  },
+  {
+    "v": "1.21.3",
+    "t": "Added idempotency to the CreateVolume API using the ClientToken request parameter"
+  },
+  {
+    "v": "1.21.0",
+    "t": "This feature enables customers  to specify weekly recurring time window(s) for scheduled events that reboot, stop or terminate EC2 instances."
+  },
+  {
+    "v": "1.20.107",
+    "t": "This release adds resource ids and tagging support for VPC security group rules."
+  },
+  {
+    "v": "1.20.105",
+    "t": "This release removes network-insights-boundary"
+  },
+  {
+    "v": "1.20.104",
+    "t": "Adding a new reserved field to support future infrastructure improvements for Amazon EC2 Fleet."
+  },
+  {
+    "v": "1.20.99",
+    "t": "This release adds support for provisioning your own IP (BYOIP) range in multiple regions. This feature is in limited Preview for this release. Contact your account manager if you are interested in this feature."
+  },
+  {
+    "v": "1.20.96",
+    "t": "This release adds support for VLAN-tagged network traffic over an Elastic Network Interface (ENI). This feature is in limited Preview for this release. Contact your account manager if you are interested in this feature."
+  },
+  {
+    "v": "1.20.95",
+    "t": "EC2 M5n, M5dn, R5n, R5dn metal instances with 100 Gbps network performance and Elastic Fabric Adapter (EFA) for ultra low latency"
+  },
+  {
+    "v": "1.20.93",
+    "t": "Amazon EC2 adds new AMI property to flag outdated AMIs"
+  },
+  {
+    "v": "1.20.92",
+    "t": "This release adds a new optional parameter connectivityType (public, private) for the CreateNatGateway API. Private NatGateway does not require customers to attach an InternetGateway to the VPC and can be used for communication with other VPCs and on-premise networks."
+  },
+  {
+    "v": "1.20.85",
+    "t": "Added idempotency to CreateNetworkInterface using the ClientToken parameter."
+  },
+  {
+    "v": "1.20.82",
+    "t": "This release removes resource ids and tagging support for VPC security group rules."
+  },
+  {
+    "v": "1.20.81",
+    "t": "This release adds resource ids and tagging support for VPC security group rules."
+  },
+  {
+    "v": "1.20.79",
+    "t": "This release adds support for creating and managing EC2 On-Demand Capacity Reservations on Outposts."
+  },
+  {
+    "v": "1.20.72",
+    "t": "High Memory virtual instances are powered by Intel Sky Lake CPUs and offer up to 12TB of memory."
+  },
+  {
+    "v": "1.20.58",
+    "t": "Adding support for Red Hat Enterprise Linux with HA for Reserved Instances."
+  },
+  {
+    "v": "1.20.49",
+    "t": "Add paginator support to DescribeStoreImageTasks and update documentation."
+  },
+  {
+    "v": "1.20.46",
+    "t": "This release adds support for storing EBS-backed AMIs in S3 and restoring them from S3 to enable cross-partition copying of AMIs"
+  },
+  {
+    "v": "1.20.43",
+    "t": "VPC Flow Logs Service adds a new API, GetFlowLogsIntegrationTemplate, which generates CloudFormation templates for Athena. For more info, see https://docs.aws.amazon.com/console/vpc/flow-logs/athena"
+  },
+  {
+    "v": "1.20.41",
+    "t": "ReplaceRootVolume feature enables customers to replace the EBS root volume of a running instance to a previously known state. Add support to grant account-level access to the EC2 serial console"
+  },
+  {
+    "v": "1.20.36",
+    "t": "maximumEfaInterfaces added to DescribeInstanceTypes API"
+  },
+  {
+    "v": "1.20.34",
+    "t": "This release adds support for UEFI boot on selected AMD- and Intel-based EC2 instances."
+  },
+  {
+    "v": "1.20.33",
+    "t": "X2gd instances are the next generation of memory-optimized instances powered by AWS-designed, Arm-based AWS Graviton2 processors."
+  },
+  {
+    "v": "1.20.22",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.20.10",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.20.2",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.20.1",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.59",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.41",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.40",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.39",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.36",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.34",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.33",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.30",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.27",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.26",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.24",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.21",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.15",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.13",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.12",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.11",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.10",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.8",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.7",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.19.2",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.18.15",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.18.13",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.18.8",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.18.6",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.62",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.61",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.54",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.52",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.50",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.48",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.43",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.42",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.41",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.40",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.39",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.37",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.32",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.31",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.30",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.29",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.24",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.23",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.19",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.18",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.14",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.13",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.11",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.8",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.7",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.5",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.17.0",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.16.23",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.16.17",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.16.15",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.16.13",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.16.12",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.16.10",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.16.7",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.16.5",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.16.3",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.16.2",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.40",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.39",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.20",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.18",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.17",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.16",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.15",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.13",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.8",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.1",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.15.0",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.16",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.15",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.12",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.11",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.10",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.7",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.6",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.4",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.3",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.2",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.1",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.14.0",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.47",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.44",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.43",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.42",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.41",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.40",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.37",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.31",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.29",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.27",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.24",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.21",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.19",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.9",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.13.2",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.247",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.242",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.233",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.228",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.227",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.225",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.215",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.209",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.208",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.201",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.197",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.195",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.183",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.181",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.180",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.176",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.171",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.169",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.168",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.164",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.161",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.160",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.158",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.155",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.154",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.149",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.148",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.140",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.138",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.135",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.132",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.127",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.123",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.116",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.115",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.109",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.106",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.95",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.89",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.88",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.82",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.77",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.69",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.68",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.62",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.55",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.53",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.52",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.45",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.40",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.39",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.32",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.30",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.22",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.14",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.11",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.8",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.5",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.12.3",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.82",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.79",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.72",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.65",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.64",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.55",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.50",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.32",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.23",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.17",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.16",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.12",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.10.5",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.9.3",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.8.48",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.8.41",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.8.40",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.8.31",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.8.20",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.8.19",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.8.6",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.8.5",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.8.3",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.46",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.43",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.42",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.40",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.36",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.33",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.29",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.26",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.22",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.16",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.14",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.13",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.10",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.9",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.6",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.2",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.7.0",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.6.2",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.6.0",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.90",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.89",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.87",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.83",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.82",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.69",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.41",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.31",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.19",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.17",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.15",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.11",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.9",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.7",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.5.3",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.83",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.81",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.58",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.54",
+    "t": "Add `NetworkAclExists` waiter (`#1019 <https://github.com/boto/botocore/issues/1019>`__)"
+  },
+  {
+    "v": "1.4.54",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.52",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.48",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.41",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.33",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.31",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.29",
+    "t": "Replace chars in the EC2 console output we can't decode with replacement chars.  We were previously returning either the decoded content or the original base64 encoded content.  We now will consistently return decoded output, any any chars we can't decode are substituted with a replacement char. (`#953 <https://github.com/boto/botocore/issues/953>`__)"
+  },
+  {
+    "v": "1.4.25",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.23",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.22",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.19",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.14",
+    "t": "Update ec2 client to latest version"
+  },
+  {
+    "v": "1.4.12",
+    "t": "Add support for two new EBS volume types"
+  },
+  {
+    "v": "1.4.11",
+    "t": "Fix issues with checking an incorrect error code in waiters."
+  },
+  {
+    "v": "1.4.1",
+    "t": "Add support for VPC peering with security groups."
+  }
+]

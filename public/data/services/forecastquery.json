@@ -1,0 +1,22 @@
+[
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.27.57",
+    "t": "releasing What-If Analysis APIs"
+  },
+  {
+    "v": "1.14.11",
+    "t": "Update forecastquery client to latest version"
+  },
+  {
+    "v": "1.12.213",
+    "t": "Update forecastquery client to latest version"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.6",
+    "t": "Adding DeleteConnection API to IoT Data Plane"
+  },
+  {
+    "v": "1.35.34",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.29.148",
+    "t": "Update thing shadow name regex to allow '$' character"
+  },
+  {
+    "v": "1.29.111",
+    "t": "This release adds support for MQTT5 user properties when calling the AWS IoT GetRetainedMessage API"
+  },
+  {
+    "v": "1.29.101",
+    "t": "Add endpoint ruleset support for cn-north-1."
+  },
+  {
+    "v": "1.29.17",
+    "t": "This release adds support for MQTT5 properties to AWS IoT HTTP Publish API."
+  },
+  {
+    "v": "1.24.30",
+    "t": "Update the default AWS IoT Core Data Plane endpoint from VeriSign signed to ATS signed. If you have firewalls with strict egress rules, configure the rules to grant you access to data-ats.iot.[region].amazonaws.com or data-ats.iot.[region].amazonaws.com.cn."
+  },
+  {
+    "v": "1.21.28",
+    "t": "Updated Publish with support for new Retain flag and added two new API operations: GetRetainedMessage, ListRetainedMessages."
+  },
+  {
+    "v": "1.17.1",
+    "t": "Update iot-data client to latest version"
+  }
+]

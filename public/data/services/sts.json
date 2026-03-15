@@ -1,0 +1,158 @@
+[
+  {
+    "v": "1.41.0",
+    "t": "IAM now supports outbound identity federation via the STS GetWebIdentityToken API, enabling AWS workloads to securely authenticate with external services using short-lived JSON Web Tokens."
+  },
+  {
+    "v": "1.40.70",
+    "t": "Added GetDelegatedAccessToken API, which is not available for general use at this time."
+  },
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.0",
+    "t": "Updated the default sts service endpoint from ``legacy`` to ``regional``. This behavior can be overridden using the ``sts_regional_endpoints`` setting in the shared AWS config file or the ``AWS_STS_REGIONAL_ENDPOINTS`` environment variable."
+  },
+  {
+    "v": "1.38.38",
+    "t": "The AWS Security Token Service APIs AssumeRoleWithSAML and AssumeRoleWithWebIdentity can now be invoked without pre-configured AWS credentials in the SDK configuration."
+  },
+  {
+    "v": "1.35.97",
+    "t": "Fixed typos in the descriptions."
+  },
+  {
+    "v": "1.35.61",
+    "t": "This release introduces the new API 'AssumeRoot', which returns short-term credentials that you can use to perform privileged tasks."
+  },
+  {
+    "v": "1.33.3",
+    "t": "Documentation updates for AWS Security Token Service."
+  },
+  {
+    "v": "1.32.3",
+    "t": "API updates for the AWS Security Token Service"
+  },
+  {
+    "v": "1.31.58",
+    "t": "STS API updates for assumeRole"
+  },
+  {
+    "v": "1.31.11",
+    "t": "API updates for the AWS Security Token Service"
+  },
+  {
+    "v": "1.29.136",
+    "t": "API updates for the AWS Security Token Service"
+  },
+  {
+    "v": "1.29.130",
+    "t": "Documentation updates for AWS Security Token Service."
+  },
+  {
+    "v": "1.29.57",
+    "t": "Doc only change to update wording in a key topic"
+  },
+  {
+    "v": "1.29.12",
+    "t": "Documentation updates for AWS Security Token Service."
+  },
+  {
+    "v": "1.26.1",
+    "t": "Documentation updates for AWS Security Token Service."
+  },
+  {
+    "v": "1.24.13",
+    "t": "Documentation updates for AWS Security Token Service."
+  },
+  {
+    "v": "1.23.12",
+    "t": "Documentation updates for AWS Security Token Service."
+  },
+  {
+    "v": "1.20.107",
+    "t": "Documentation updates for AWS Security Token Service."
+  },
+  {
+    "v": "1.20.53",
+    "t": "STS now supports assume role with Web Identity using JWT token length upto 20000 characters"
+  },
+  {
+    "v": "1.20.51",
+    "t": "This release adds the SourceIdentity parameter that can be set when assuming a role."
+  },
+  {
+    "v": "1.18.6",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.16.11",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.13.26",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.13.2",
+    "t": "Add support for configuring the use of regional STS endpoints."
+  },
+  {
+    "v": "1.12.200",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.12.195",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.12.157",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.12.146",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.12.143",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.9.19",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.9.0",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.5.55",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.4.86",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.4.83",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.4.41",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.4.17",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.4.14",
+    "t": "Update sts client to latest version"
+  },
+  {
+    "v": "1.4.9",
+    "t": "Added support for GetCallerIdentity, which returns details about the credentials used to make the API call. The details include name and account, as well as the type of entity making the call, such as an IAM user vs. federated user."
+  }
+]

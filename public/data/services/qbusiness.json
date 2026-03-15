@@ -1,0 +1,106 @@
+[
+  {
+    "v": "1.42.14",
+    "t": "It is a internal bug fix for region expansion"
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "The Amazon Q Business GetDocumentContent operation now supports retrieval of the extracted text content in JSON format."
+  },
+  {
+    "v": "1.40.4",
+    "t": "Amazon Q Business now supports the GetDocumentContent() API that enables customers to securely access the source documents through clickable citation links at query time"
+  },
+  {
+    "v": "1.39.1",
+    "t": "New ChatResponseConfiguration to Customize Q Business chat responses for specific use cases and communication needs. Updated Boosting capability allowing admins to provide preference on date attributes for recency and/or provide a preferred data source."
+  },
+  {
+    "v": "1.38.45",
+    "t": "Added support for App level authentication for QBusiness DataAccessor using AWS IAM Identity center Trusted Token issuer"
+  },
+  {
+    "v": "1.38.5",
+    "t": "Add support for anonymous user access for Q Business applications"
+  },
+  {
+    "v": "1.37.38",
+    "t": "The CheckDocumentAccess API for Amazon Q Business is a self-service debugging API that allows administrators to verify document access permissions and review Access Control List (ACL) configurations."
+  },
+  {
+    "v": "1.37.32",
+    "t": "Adds functionality to enable/disable a new Q Business Hallucination Reduction feature. If enabled, Q Business will detect and attempt to remove Hallucinations from certain Chat requests."
+  },
+  {
+    "v": "1.37.5",
+    "t": "Adds support for the ingestion of audio and video files by Q Business, which can be configured with the mediaExtractionConfiguration parameter."
+  },
+  {
+    "v": "1.37.3",
+    "t": "This release supports deleting attachments from conversations."
+  },
+  {
+    "v": "1.36.13",
+    "t": "Adds functionality to enable/disable a new Q Business Chat orchestration feature. If enabled, Q Business can orchestrate over datasources and plugins without the need for customers to select specific chat modes."
+  },
+  {
+    "v": "1.36.10",
+    "t": "Added APIs to manage QBusiness user subscriptions"
+  },
+  {
+    "v": "1.35.76",
+    "t": "This release removes the deprecated UserId and UserGroups fields from SearchRelevantContent api's request parameters."
+  },
+  {
+    "v": "1.35.74",
+    "t": "Amazon Q Business now supports customization options for your web experience, 11 new Plugins, and QuickSight support. Amazon Q index allows software providers to enrich their native generative AI experiences with their customer's enterprise knowledge and user context spanning multiple applications."
+  },
+  {
+    "v": "1.35.72",
+    "t": "Amazon Q Business now supports capabilities to extract insights and answer questions from visual elements embedded within documents, a browser extension for Google Chrome, Mozilla Firefox, and Microsoft Edge, and attachments across conversations."
+  },
+  {
+    "v": "1.35.57",
+    "t": "Adds S3 path option to pass group member list for PutGroup API."
+  },
+  {
+    "v": "1.35.48",
+    "t": "Add a new field in chat response. This field can be used to support nested schemas in array fields"
+  },
+  {
+    "v": "1.35.41",
+    "t": "Amazon Q Business now supports embedding the Amazon Q Business web experience on third-party websites."
+  },
+  {
+    "v": "1.35.5",
+    "t": "Amazon QBusiness: Enable support for SAML and OIDC federation through AWS IAM Identity Provider integration."
+  },
+  {
+    "v": "1.34.140",
+    "t": "Add personalization to Q Applications. Customers can enable or disable personalization when creating or updating a Q application with the personalization configuration."
+  },
+  {
+    "v": "1.34.132",
+    "t": "Allow enable/disable Q Apps when creating/updating a Q application; Return the Q Apps enablement information when getting a Q application."
+  },
+  {
+    "v": "1.34.95",
+    "t": "This is a general availability (GA) release of Amazon Q Business. Q Business enables employees in an enterprise to get comprehensive answers to complex questions and take actions through a unified, intuitive web-based chat experience - using an enterprise's existing content, data, and systems."
+  },
+  {
+    "v": "1.34.86",
+    "t": "This release adds support for IAM Identity Center (IDC) as the identity gateway for Q Business. It also allows users to provide an explicit intent for Q Business to identify how the Chat request should be handled."
+  },
+  {
+    "v": "1.34.42",
+    "t": "This release adds the metadata-boosting feature, which allows customers to easily fine-tune the underlying ranking of retrieved RAG passages in order to optimize Q&A answer relevance. It also adds new feedback reasons for the PutFeedback API."
+  },
+  {
+    "v": "1.33.2",
+    "t": "Amazon Q - a generative AI powered application that your employees can use to ask questions and get answers from knowledge spread across disparate content repositories, summarize reports, write articles, take actions, and much more - all within their company's connected content repositories."
+  }
+]

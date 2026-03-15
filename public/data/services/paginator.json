@@ -1,0 +1,62 @@
+[
+  {
+    "v": "1.12.170",
+    "t": "Fixes a bug where pagination tokens with three consecutive underscores would result in a parsing failure. Resolves boto/boto3`#1984 <https://github.com/boto/boto3/issues/1984>`__."
+  },
+  {
+    "v": "1.12.98",
+    "t": "Add additional paginators for CloudFormation"
+  },
+  {
+    "v": "1.12.72",
+    "t": "Added over 400 new paginators."
+  },
+  {
+    "v": "1.8.35",
+    "t": "Added paginators for a number of services where the result key is unambiguous."
+  },
+  {
+    "v": "1.8.19",
+    "t": "Added paginator support for lambda list aliases operation."
+  },
+  {
+    "v": "1.7.28",
+    "t": "Fixes an issue when `build_full_result` is used repeatedly that results in the same token being returned multiple times."
+  },
+  {
+    "v": "1.6.5",
+    "t": "Fix Athena GetQueryResults paginator"
+  },
+  {
+    "v": "1.5.93",
+    "t": "Ensure that the page size type matches the type expected by the service. Fixes `#1063 <https://github.com/boto/botocore/issues/1063>`__."
+  },
+  {
+    "v": "1.5.84",
+    "t": "Fixed a bug causing running `build_full_results` multiple times to incorrectly generate the `NextToken` value."
+  },
+  {
+    "v": "1.5.45",
+    "t": "Fixes bug where pagination would fail if the pagination token contained bytes."
+  },
+  {
+    "v": "1.5.8",
+    "t": "Added paginators for multiple services"
+  },
+  {
+    "v": "1.4.92",
+    "t": "Fix a paginator bug involving optional tokens (`#1057 <https://github.com/boto/botocore/issues/1057>`__)"
+  },
+  {
+    "v": "1.4.72",
+    "t": "Add paginators for AWS WAF"
+  },
+  {
+    "v": "1.4.54",
+    "t": "Add paginators for Application Auto Scaling service (`#1029 <https://github.com/boto/botocore/issues/1029>`__)"
+  },
+  {
+    "v": "1.4.10",
+    "t": "Allow non-specified input tokens in old starting token format."
+  }
+]

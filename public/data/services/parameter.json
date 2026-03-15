@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.4.81",
+    "t": "Automatically inject an idempotency token into parameters marked with the idempotencyToken trait"
+  }
+]

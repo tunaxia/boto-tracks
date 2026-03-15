@@ -1,0 +1,34 @@
+[
+  {
+    "v": "1.40.69",
+    "t": "Amazon VPC Lattice now supports custom domain name for resource configurations"
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.41",
+    "t": "Adds support for specifying the number of IPv4 addresses in each ENI for the resource gateway for VPC Lattice."
+  },
+  {
+    "v": "1.35.72",
+    "t": "Lattice APIs that allow sharing and access of VPC resources across accounts."
+  },
+  {
+    "v": "1.34.104",
+    "t": "This release adds TLS Passthrough support. It also increases max number of target group per rule to 10."
+  },
+  {
+    "v": "1.31.41",
+    "t": "This release adds Lambda event structure version config support for LAMBDA target groups. It also adds newline support for auth policies."
+  },
+  {
+    "v": "1.29.107",
+    "t": "This release removes the entities in the API doc model package for auth policies."
+  },
+  {
+    "v": "1.29.103",
+    "t": "General Availability (GA) release of Amazon VPC Lattice"
+  }
+]

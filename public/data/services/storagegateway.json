@@ -1,0 +1,218 @@
+[
+  {
+    "v": "1.40.76",
+    "t": "Adds support for European Sovereign Cloud ARNs in Storage Gateway API parameters."
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.44",
+    "t": "This release adds IPv6 support to the Storage Gateway APIs. APIs that previously only accept or return IPv4 address will now accept or return both IPv4 and IPv6 addresses."
+  },
+  {
+    "v": "1.37.30",
+    "t": "Added new ActiveDirectoryStatus value, ListCacheReports paginator, and support for longer pagination tokens."
+  },
+  {
+    "v": "1.37.3",
+    "t": "This release adds support to invoke a process that cleans the specified file share's cache of file entries that are failing upload to Amazon S3."
+  },
+  {
+    "v": "1.36.20",
+    "t": "This release adds support for generating cache reports on S3 File Gateways for files that fail to upload."
+  },
+  {
+    "v": "1.35.50",
+    "t": "Documentation update: Amazon FSx File Gateway will no longer be available to new customers."
+  },
+  {
+    "v": "1.35.18",
+    "t": "The S3 File Gateway now supports DSSE-KMS encryption. A new parameter EncryptionType is added to these APIs: CreateSmbFileShare, CreateNfsFileShare, UpdateSmbFileShare, UpdateNfsFileShare, DescribeSmbFileShares, DescribeNfsFileShares. Also, in favor of EncryptionType, KmsEncrypted is deprecated."
+  },
+  {
+    "v": "1.34.121",
+    "t": "Adds SoftwareUpdatePreferences to DescribeMaintenanceStartTime and UpdateMaintenanceStartTime, a structure which contains AutomaticUpdatePolicy."
+  },
+  {
+    "v": "1.34.110",
+    "t": "Added new SMBSecurityStrategy enum named MandatoryEncryptionNoAes128, new mode enforces encryption and disables AES 128-bit algorithums."
+  },
+  {
+    "v": "1.34.27",
+    "t": "Add DeprecationDate and SoftwareVersion to response of ListGateways."
+  },
+  {
+    "v": "1.31.61",
+    "t": "Add SoftwareVersion to response of DescribeGatewayInformation."
+  },
+  {
+    "v": "1.24.45",
+    "t": "This release adds support for minimum of 5 character length virtual tape barcodes."
+  },
+  {
+    "v": "1.23.38",
+    "t": "Documentation update for adding bandwidth throttling support for S3 File Gateways."
+  },
+  {
+    "v": "1.23.17",
+    "t": "Added gateway type VTL_SNOW. Added new SNOWBALL HostEnvironment for gateways running on a Snowball device. Added new field HostEnvironmentId to serve as an identifier for the HostEnvironment on which the gateway is running."
+  },
+  {
+    "v": "1.21.61",
+    "t": "Adding support for Audit Logs on NFS shares and Force Closing Files on SMB shares."
+  },
+  {
+    "v": "1.20.107",
+    "t": "Adding support for oplocks for SMB file shares,  S3 Access Point and S3 Private Link for all file shares and IP address support for file system associations"
+  },
+  {
+    "v": "1.20.47",
+    "t": "File Gateway APIs now support FSx for Windows as a cloud storage."
+  },
+  {
+    "v": "1.19.14",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.19.8",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.17.46",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.17.33",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.17.18",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.17.2",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.16.0",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.15.45",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.15.33",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.14.10",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.13.23",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.226",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.209",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.161",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.157",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.148",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.144",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.135",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.131",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.123",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.108",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.79",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.58",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.12.17",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.10.68",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.10.48",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.10.36",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.9.3",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.8.0",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.6.1",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.5.55",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.5.32",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.5.10",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.4.89",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.4.18",
+    "t": "Update storagegateway client to latest version"
+  },
+  {
+    "v": "1.4.7",
+    "t": "Update client to latest version"
+  }
+]

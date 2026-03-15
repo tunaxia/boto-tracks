@@ -1,0 +1,186 @@
+[
+  {
+    "v": "1.42.55",
+    "t": "Updated endpoint rule set for dualstack endpoints. Added a new opt-in option to log raw ad decision server requests for Playback Configurations."
+  },
+  {
+    "v": "1.42.10",
+    "t": "Added support for Ad Decision Server Configuration enabling HTTP POST requests with custom bodies, headers, GZIP compression, and dynamic variables. No changes required for existing GET request configurations."
+  },
+  {
+    "v": "1.40.58",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.42",
+    "t": "Adding TPS Traffic Shaping to Prefetch Schedules"
+  },
+  {
+    "v": "1.38.14",
+    "t": "Documenting that EnabledLoggingStrategies is always present in responses of PlaybackConfiguration read operations."
+  },
+  {
+    "v": "1.37.38",
+    "t": "Added support for Recurring Prefetch and Traffic Shaping on both Single and Recurring Prefetch. ListPrefetchSchedules now return single prefetchs by default and can be provided scheduleType of SINGLE, RECURRING, AND ALL."
+  },
+  {
+    "v": "1.37.21",
+    "t": "Add support for log filtering which allow customers to filter out selected event types from logs."
+  },
+  {
+    "v": "1.36.12",
+    "t": "Add support for CloudWatch Vended Logs which allows for delivery of customer logs to CloudWatch Logs, S3, or Firehose."
+  },
+  {
+    "v": "1.36.10",
+    "t": "Adds options for configuring how MediaTailor conditions ads before inserting them into the content stream. Based on the new settings, MediaTailor will either transcode ads to match the content stream as it has in the past, or it will insert ads without first transcoding them."
+  },
+  {
+    "v": "1.34.84",
+    "t": "Added InsertionMode to PlaybackConfigurations. This setting controls whether players can use stitched or guided ad insertion. The default for players that do not specify an insertion mode is stitched."
+  },
+  {
+    "v": "1.34.65",
+    "t": "This release adds support to allow customers to show different content within a channel depending on metadata associated with the viewer."
+  },
+  {
+    "v": "1.34.45",
+    "t": "MediaTailor: marking #AdBreak.OffsetMillis as required."
+  },
+  {
+    "v": "1.34.5",
+    "t": "Adds the ability to configure time shifting on MediaTailor channels using the TimeShiftConfiguration field"
+  },
+  {
+    "v": "1.32.0",
+    "t": "Removed unnecessary default values."
+  },
+  {
+    "v": "1.31.60",
+    "t": "Updates DescribeVodSource to include a list of ad break opportunities in the response"
+  },
+  {
+    "v": "1.31.34",
+    "t": "Adds new source location AUTODETECT_SIGV4 access type."
+  },
+  {
+    "v": "1.31.3",
+    "t": "Adds categories to MediaTailor channel assembly alerts"
+  },
+  {
+    "v": "1.31.1",
+    "t": "The AWS Elemental MediaTailor SDK for Channel Assembly has added support for EXT-X-CUE-OUT and EXT-X-CUE-IN tags to specify ad breaks in HLS outputs, including support for EXT-OATCLS, EXT-X-ASSET, and EXT-X-CUE-OUT-CONT accessory tags."
+  },
+  {
+    "v": "1.29.129",
+    "t": "This release adds support for AFTER_LIVE_EDGE mode configuration for avail suppression, and adding a fill-policy setting that sets the avail suppression to PARTIAL_AVAIL or FULL_AVAIL_ONLY when AFTER_LIVE_EDGE is enabled."
+  },
+  {
+    "v": "1.29.62",
+    "t": "The AWS Elemental MediaTailor SDK for Channel Assembly has added support for program updates, and the ability to clip the end of VOD sources in programs."
+  },
+  {
+    "v": "1.29.59",
+    "t": "This release introduces the As Run logging type, along with API and documentation updates."
+  },
+  {
+    "v": "1.28.4",
+    "t": "This release introduces support for SCTE-35 segmentation descriptor messages which can be sent within time signal messages."
+  },
+  {
+    "v": "1.28.1",
+    "t": "This release is a documentation update"
+  },
+  {
+    "v": "1.24.45",
+    "t": "This release introduces tiered channels and adds support for live sources. Customers using a STANDARD channel can now create programs using live sources."
+  },
+  {
+    "v": "1.23.40",
+    "t": "This release adds support for multiple Segment Delivery Configurations. Users can provide a list of names and URLs when creating or editing a source location. When retrieving content, users can send a header to choose which URL should be used to serve content."
+  },
+  {
+    "v": "1.23.30",
+    "t": "This release adds support for filler slate when updating MediaTailor channels that use the linear playback mode."
+  },
+  {
+    "v": "1.21.60",
+    "t": "MediaTailor now supports ad prefetching."
+  },
+  {
+    "v": "1.21.46",
+    "t": "This release adds support to configure logs for playback configuration."
+  },
+  {
+    "v": "1.21.34",
+    "t": "This release adds support for wall clock programs in LINEAR channels."
+  },
+  {
+    "v": "1.20.108",
+    "t": "Add ListAlerts for Channel, Program, Source Location, and VOD Source to return alerts for resources."
+  },
+  {
+    "v": "1.20.99",
+    "t": "Update GetChannelSchedule to return information on ad breaks."
+  },
+  {
+    "v": "1.20.96",
+    "t": "Adds AWS Secrets Manager Access Token Authentication for Source Locations"
+  },
+  {
+    "v": "1.20.29",
+    "t": "MediaTailor channel assembly is a new manifest-only service that allows you to assemble linear streams using your existing VOD content."
+  },
+  {
+    "v": "1.20.27",
+    "t": "MediaTailor channel assembly is a new manifest-only service that allows you to assemble linear streams using your existing VOD content."
+  },
+  {
+    "v": "1.20.8",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.19.4",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.17.9",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.15.40",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.15.0",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.13.28",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.12.135",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.12.94",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.12.60",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.12.45",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.10.35",
+    "t": "Update mediatailor client to latest version"
+  },
+  {
+    "v": "1.10.31",
+    "t": "Update mediatailor client to latest version"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "v": "1.42.20",
+    "t": "This change introduces \"Roles\" attribute for User entities supported by AWS Identity Store SDK."
+  },
+  {
+    "v": "1.42.5",
+    "t": "Updating AWS Identity Store APIs to support Attribute Extensions capability, with the first release adding Enterprise Attributes. This launch aligns Identity Store APIs with SCIM for enterprise attributes, reducing cases when customers are forced to use SCIM due to lack of SigV4 API support."
+  },
+  {
+    "v": "1.40.68",
+    "t": "IdentityStore API: added new KMSExceptionReason fields to the Exception object; added multiple new fields to the User APIs - UserStatus, Birthdate, Website and Photos; added multiple new metadata fields for User, Groups and Membership APIs - CreatedAt, CreatedBy, UpdatedAt and UpdatedBy."
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.18",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.31.40",
+    "t": "New Identity Store content for China Region launch"
+  },
+  {
+    "v": "1.29.107",
+    "t": "Documentation updates for Identity Store CLI command reference."
+  },
+  {
+    "v": "1.27.79",
+    "t": "Documentation updates for the Identity Store CLI Reference."
+  },
+  {
+    "v": "1.27.67",
+    "t": "Documentation updates for the Identity Store CLI Reference."
+  },
+  {
+    "v": "1.27.64",
+    "t": "Expand IdentityStore API to support Create, Read, Update, Delete and Get operations for User, Group and GroupMembership resources."
+  },
+  {
+    "v": "1.27.63",
+    "t": "Documentation updates for the Identity Store CLI Reference."
+  },
+  {
+    "v": "1.27.52",
+    "t": "Documentation updates to reflect service rename - AWS IAM Identity Center (successor to AWS Single Sign-On)"
+  },
+  {
+    "v": "1.27.47",
+    "t": "Documentation updates to reflect service rename - AWS IAM Identity Center (successor to AWS Single Sign-On)"
+  },
+  {
+    "v": "1.21.7",
+    "t": "Documentation updates for SSO API Ref."
+  },
+  {
+    "v": "1.17.45",
+    "t": "Update identitystore client to latest version"
+  }
+]

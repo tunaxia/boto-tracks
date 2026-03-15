@@ -1,0 +1,34 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.15",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.31.74",
+    "t": "Updated ListOutpostsWithS3 API response to include S3OutpostArn for use with AWS RAM."
+  },
+  {
+    "v": "1.29.95",
+    "t": "S3 On Outposts added support for endpoint status, and a failed endpoint reason, if any"
+  },
+  {
+    "v": "1.29.82",
+    "t": "S3 on Outposts introduces a new API ListOutpostsWithS3, with this API you can list all your Outposts with S3 capacity."
+  },
+  {
+    "v": "1.24.21",
+    "t": "S3 on Outposts is releasing a new API, ListSharedEndpoints, that lists all endpoints associated with S3 on Outpost, that has been shared by Resource Access Manager (RAM)."
+  },
+  {
+    "v": "1.21.6",
+    "t": "Add on-premise access type support for endpoints"
+  },
+  {
+    "v": "1.18.9",
+    "t": "Update s3outposts client to latest version"
+  }
+]

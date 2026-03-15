@@ -1,0 +1,14 @@
+[
+  {
+    "v": "1.42.31",
+    "t": "Added billing configuration support for WorkSpaces Instances with monthly and hourly billing modes, including new filtering capabilities for instance type searches."
+  },
+  {
+    "v": "1.40.61",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.42",
+    "t": "Added support for Amazon WorkSpaces Instances API"
+  }
+]

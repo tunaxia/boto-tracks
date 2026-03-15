@@ -1,0 +1,46 @@
+[
+  {
+    "v": "1.42.46",
+    "t": "Added AgentCore browser proxy configuration support, allowing routing of browser traffic through HTTP and HTTPS proxy servers with authentication and bypass rules."
+  },
+  {
+    "v": "1.42.43",
+    "t": "Support Browser profile persistence (cookies and local storage) across sessions for AgentCore Browser."
+  },
+  {
+    "v": "1.42.32",
+    "t": "Supports custom browser extensions for AgentCore Browser and increased message payloads up to 100KB per message in an Event for AgentCore Memory"
+  },
+  {
+    "v": "1.42.1",
+    "t": "Support for AgentCore Evaluations and Episodic memory strategy for AgentCore Memory."
+  },
+  {
+    "v": "1.41.1",
+    "t": "Bedrock AgentCore Memory release for redriving memory extraction jobs (StartMemoryExtractionJob and ListMemoryExtractionJob)"
+  },
+  {
+    "v": "1.40.58",
+    "t": "Fixing the service documentation name"
+  },
+  {
+    "v": "1.40.51",
+    "t": "Updated InvokeAgentRuntime API to accept account id optionally and added CompleteResourceTokenAuth API."
+  },
+  {
+    "v": "1.40.50",
+    "t": "Bedrock AgentCore release for Runtime, and Memory."
+  },
+  {
+    "v": "1.40.46",
+    "t": "Add support for batch memory management, agent card retrieval and session termination"
+  },
+  {
+    "v": "1.40.2",
+    "t": "Remove superfluous field from API"
+  },
+  {
+    "v": "1.39.7",
+    "t": "Initial release of Amazon Bedrock AgentCore SDK including Runtime, Built-In Tools, Memory, Gateway and Identity."
+  }
+]

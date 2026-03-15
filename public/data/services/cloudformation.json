@@ -1,0 +1,326 @@
+[
+  {
+    "v": "1.41.2",
+    "t": "Adds the DependsOn field to the AutoDeployment configuration parameter for CreateStackSet, UpdateStackSet, and DescribeStackSet APIs, allowing users to set and read auto-deployment dependencies between StackSets"
+  },
+  {
+    "v": "1.40.76",
+    "t": "New CloudFormation DescribeEvents API with operation ID tracking and failure filtering capabilities to quickly identify root causes of deployment failures. Also, a DeploymentMode parameter for the CreateChangeSet API that enables creation of drift-aware change sets for safe drift management."
+  },
+  {
+    "v": "1.40.73",
+    "t": "CloudFormation now supports GetHookResult API with annotations to retrieve structured compliance check results and remediation guidance for each evaluated resource, replacing the previous single-message limitation with detailed validation outcomes."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.44",
+    "t": "Add new warning type 'EXCLUDED_RESOURCES'"
+  },
+  {
+    "v": "1.40.24",
+    "t": "ListHookResults API now supports retrieving invocation results for all CloudFormation Hooks (previously limited to create change set and Cloud Control operations) with new optional parameters for filtering by Hook status and ARN."
+  },
+  {
+    "v": "1.39.0",
+    "t": "Added support for UNKNOWN drift status."
+  },
+  {
+    "v": "1.38.31",
+    "t": "Add new warning type 'EXCLUDED_PROPERTIES'"
+  },
+  {
+    "v": "1.37.22",
+    "t": "Adding support for the new parameter \"ScanFilters\" in the CloudFormation StartResourceScan API. When this parameter is included, the StartResourceScan API will initiate a scan limited to the resource types specified by the parameter."
+  },
+  {
+    "v": "1.36.15",
+    "t": "We added 5 new stack refactoring APIs: CreateStackRefactor, ExecuteStackRefactor, ListStackRefactors, DescribeStackRefactor, ListStackRefactorActions."
+  },
+  {
+    "v": "1.35.64",
+    "t": "This release adds a new API, ListHookResults, that allows retrieving CloudFormation Hooks invocation results for hooks invoked during a create change set operation or Cloud Control API operation"
+  },
+  {
+    "v": "1.35.41",
+    "t": "Documentation update for AWS CloudFormation API Reference."
+  },
+  {
+    "v": "1.34.111",
+    "t": "Added DeletionMode FORCE_DELETE_STACK for deleting a stack that is stuck in DELETE_FAILED state due to resource deletion failure."
+  },
+  {
+    "v": "1.34.84",
+    "t": "Adding support for the new parameter \"IncludePropertyValues\" in the CloudFormation DescribeChangeSet API. When this parameter is included, the DescribeChangeSet response will include more detailed information such as before and after values for the resource properties that will change."
+  },
+  {
+    "v": "1.34.77",
+    "t": "This release would return a new field - PolicyAction in cloudformation's existed DescribeChangeSetResponse, showing actions we are going to apply on the physical resource (e.g., Delete, Retain) according to the user's template"
+  },
+  {
+    "v": "1.34.66",
+    "t": "Documentation update, March 2024. Corrects some formatting."
+  },
+  {
+    "v": "1.34.65",
+    "t": "This release supports for a new API ListStackSetAutoDeploymentTargets, which provider auto-deployment configuration as a describable resource. Customers can now view the specific combinations of regions and OUs that are being auto-deployed."
+  },
+  {
+    "v": "1.34.61",
+    "t": "CloudFormation documentation update for March, 2024"
+  },
+  {
+    "v": "1.34.55",
+    "t": "Add DetailedStatus field to DescribeStackEvents and DescribeStacks APIs"
+  },
+  {
+    "v": "1.34.32",
+    "t": "CloudFormation IaC generator allows you to scan existing resources in your account and select resources to generate a template for a new or existing CloudFormation stack."
+  },
+  {
+    "v": "1.33.8",
+    "t": "Documentation update, December 2023"
+  },
+  {
+    "v": "1.33.7",
+    "t": "Including UPDATE_* states as a success status for CreateStack waiter."
+  },
+  {
+    "v": "1.32.3",
+    "t": "This release adds a new flag ImportExistingResources to CreateChangeSet. Specify this parameter on a CREATE- or UPDATE-type change set to import existing resources with custom names instead of recreating them."
+  },
+  {
+    "v": "1.31.83",
+    "t": "Added new ConcurrencyMode feature for AWS CloudFormation StackSets for faster deployments to target accounts."
+  },
+  {
+    "v": "1.31.64",
+    "t": "SDK and documentation updates for UpdateReplacePolicy"
+  },
+  {
+    "v": "1.31.48",
+    "t": "Documentation updates for AWS CloudFormation"
+  },
+  {
+    "v": "1.31.15",
+    "t": "This SDK release is for the feature launch of AWS CloudFormation RetainExceptOnCreate. It adds a new parameter retainExceptOnCreate in the following APIs: CreateStack, UpdateStack, RollbackStack, ExecuteChangeSet."
+  },
+  {
+    "v": "1.31.10",
+    "t": "This release supports filtering by DRIFT_STATUS for existing API ListStackInstances and adds support for a new API ListStackInstanceResourceDrifts. Customers can now view resource drift information from their StackSet management accounts."
+  },
+  {
+    "v": "1.31.6",
+    "t": "SDK and documentation updates for GetTemplateSummary API (unrecognized resources)"
+  },
+  {
+    "v": "1.29.156",
+    "t": "Specify desired CloudFormation behavior in the event of ChangeSet execution failure using the CreateChangeSet OnStackFailure parameter"
+  },
+  {
+    "v": "1.29.149",
+    "t": "AWS CloudFormation StackSets is updating the deployment experience for all stackset operations to skip suspended AWS accounts during deployments. StackSets will skip target AWS accounts that are suspended and set the Detailed Status of the corresponding stack instances as SKIPPED_SUSPENDED_ACCOUNT"
+  },
+  {
+    "v": "1.29.147",
+    "t": "AWS CloudFormation StackSets provides customers with three new APIs to activate, deactivate, and describe AWS Organizations trusted access which is needed to get started with service-managed StackSets."
+  },
+  {
+    "v": "1.29.108",
+    "t": "Including UPDATE_COMPLETE as a failed status for DeleteStack waiter."
+  },
+  {
+    "v": "1.29.60",
+    "t": "This feature provides a method of obtaining which regions a stackset has stack instances deployed in."
+  },
+  {
+    "v": "1.29.57",
+    "t": "Enabled FIPS aws-us-gov endpoints in SDK."
+  },
+  {
+    "v": "1.29.11",
+    "t": "Added UnsupportedTarget HandlerErrorCode for use with CFN Resource Hooks"
+  },
+  {
+    "v": "1.28.4",
+    "t": "This release adds more fields to improves visibility of AWS CloudFormation StackSets information in following APIs: ListStackInstances, DescribeStackInstance, ListStackSetOperationResults, ListStackSetOperations, DescribeStackSetOperation."
+  },
+  {
+    "v": "1.27.24",
+    "t": "My AWS Service (placeholder) - Add a new feature Account-level Targeting for StackSet operation"
+  },
+  {
+    "v": "1.26.8",
+    "t": "Add a new parameter statusReason to DescribeStackSetOperation output for additional details"
+  },
+  {
+    "v": "1.23.53",
+    "t": "This SDK release adds AWS CloudFormation Hooks HandlerErrorCodes"
+  },
+  {
+    "v": "1.23.52",
+    "t": "This SDK release is for the feature launch of AWS CloudFormation Hooks."
+  },
+  {
+    "v": "1.23.11",
+    "t": "This release include SDK changes for the feature launch of Stack Import to Service Managed StackSet."
+  },
+  {
+    "v": "1.23.10",
+    "t": "The StackSets ManagedExecution feature will allow concurrency for non-conflicting StackSet operations and queuing the StackSet operations that conflict at a given time for later execution."
+  },
+  {
+    "v": "1.21.40",
+    "t": "Doc only update for CloudFormation that fixes several customer-reported issues."
+  },
+  {
+    "v": "1.21.32",
+    "t": "AWS CloudFormation allows you to iteratively develop your applications when failures are encountered without rolling back successfully provisioned resources. By specifying stack failure options, you can troubleshoot resources in a CREATE_FAILED or UPDATE_FAILED status."
+  },
+  {
+    "v": "1.21.9",
+    "t": "SDK update to support Importing existing Stacks to new/existing Self Managed StackSet - Stack Import feature."
+  },
+  {
+    "v": "1.20.98",
+    "t": "CloudFormation registry service now supports 3rd party public type sharing"
+  },
+  {
+    "v": "1.20.60",
+    "t": "Add CallAs parameter to GetTemplateSummary to enable use with StackSets delegated administrator integration"
+  },
+  {
+    "v": "1.20.55",
+    "t": "Added support for creating and updating stack sets with self-managed permissions from templates that reference macros."
+  },
+  {
+    "v": "1.20.42",
+    "t": "1. Added a new parameter RegionConcurrencyType in OperationPreferences. 2. Changed the name of AccountUrl to AccountsUrl in DeploymentTargets parameter."
+  },
+  {
+    "v": "1.20.11",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.19.25",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.19.21",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.17.12",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.17.2",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.16.11",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.15.39",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.14.15",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.13.21",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.13.20",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.13.15",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.12.135",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.12.66",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.12.48",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.12.43",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.10.25",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.9.20",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.8.0",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.7.18",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.6.8",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.5.88",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.5.45",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.5.32",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.4.88",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.4.78",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.4.71",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.4.68",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.4.57",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.4.39",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.4.19",
+    "t": "Update cloudformation client to latest version"
+  },
+  {
+    "v": "1.4.8",
+    "t": "Update client to latest version"
+  }
+]

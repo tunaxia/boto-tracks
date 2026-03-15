@@ -1,0 +1,10 @@
+[
+  {
+    "v": "1.40.6",
+    "t": "Fixes a bug which causes the stubber to begin failing for DynamoDB when SSO or AssumeRole credentials fail to load"
+  },
+  {
+    "v": "1.4.68",
+    "t": "Made ANY usable for nested parameters"
+  }
+]

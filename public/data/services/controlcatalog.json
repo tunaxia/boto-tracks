@@ -1,0 +1,42 @@
+[
+  {
+    "v": "1.42.55",
+    "t": "Updated ExemptedPrincipalArns parameter documentation for improved accuracy"
+  },
+  {
+    "v": "1.40.73",
+    "t": "Added support for related control mappings with new RELATED_CONTROL mapping type in ListControlMappings API."
+  },
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.35",
+    "t": "Introduced ListControlMappings API that retrieves control mappings. Added control aliases and governed resources fields in GetControl and ListControls APIs. New filtering capability in ListControls API, with implementation identifiers and implementation types."
+  },
+  {
+    "v": "1.37.31",
+    "t": "The GetControl API now surfaces a control's Severity, CreateTime, and Identifier for a control's Implementation. The ListControls API now surfaces a control's Behavior, Severity, CreateTime, and Identifier for a control's Implementation."
+  },
+  {
+    "v": "1.37.17",
+    "t": "Add ExemptAssumeRoot parameter to adapt for new AWS AssumeRoot capability."
+  },
+  {
+    "v": "1.35.79",
+    "t": "Minor documentation updates to the content of ImplementationDetails object part of the Control Catalog GetControl API"
+  },
+  {
+    "v": "1.35.57",
+    "t": "AWS Control Catalog GetControl public API returns additional data in output, including Implementation and Parameters"
+  },
+  {
+    "v": "1.34.152",
+    "t": "AWS Control Tower provides two new public APIs controlcatalog:ListControls and controlcatalog:GetControl under controlcatalog service namespace, which enable customers to programmatically retrieve control metadata of available controls."
+  },
+  {
+    "v": "1.34.80",
+    "t": "This is the initial SDK release for AWS Control Catalog, a central catalog for AWS managed controls. This release includes 3 new APIs - ListDomains, ListObjectives, and ListCommonControls - that vend high-level data to categorize controls across the AWS platform."
+  }
+]

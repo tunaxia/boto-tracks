@@ -1,0 +1,70 @@
+[
+  {
+    "v": "1.41.1",
+    "t": "Increasing the length limit of Statement Name from 500 to 2048."
+  },
+  {
+    "v": "1.40.57",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.37.8",
+    "t": "This release adds support for ListStatements API to filter statements by ClusterIdentifier, WorkgroupName, and Database."
+  },
+  {
+    "v": "1.35.51",
+    "t": "Adding a new API GetStatementResultV2 that supports CSV formatted results from ExecuteStatement and BatchExecuteStatement calls."
+  },
+  {
+    "v": "1.35.10",
+    "t": "The release include the new Redshift DataAPI feature for session use, customer execute query with --session-keep-alive-seconds parameter and can submit follow-up queries to same sessions with returned`session-id`"
+  },
+  {
+    "v": "1.29.109",
+    "t": "Update documentation of API descriptions as needed in support of temporary credentials with IAM identity."
+  },
+  {
+    "v": "1.29.88",
+    "t": "Added support for Redshift Serverless workgroup-arn wherever the WorkgroupName parameter is available."
+  },
+  {
+    "v": "1.29.30",
+    "t": "This release adds a new --client-token field to ExecuteStatement and BatchExecuteStatement operations. Customers can now run queries with the additional client token parameter to ensures idempotency."
+  },
+  {
+    "v": "1.27.11",
+    "t": "This release adds a new --workgroup-name field to operations that connect to an endpoint. Customers can now execute queries against their serverless workgroups."
+  },
+  {
+    "v": "1.23.17",
+    "t": "Data API now supports serverless queries."
+  },
+  {
+    "v": "1.23.9",
+    "t": "Rolling back Data API serverless features until dependencies are live."
+  },
+  {
+    "v": "1.23.8",
+    "t": "Data API now supports serverless requests."
+  },
+  {
+    "v": "1.21.8",
+    "t": "Added structures to support new Data API operation BatchExecuteStatement, used to execute multiple SQL statements within a single transaction."
+  },
+  {
+    "v": "1.20.95",
+    "t": "Redshift Data API service now supports SQL parameterization."
+  },
+  {
+    "v": "1.20.14",
+    "t": "Update redshift-data client to latest version"
+  },
+  {
+    "v": "1.20.8",
+    "t": "Update redshift-data client to latest version"
+  },
+  {
+    "v": "1.17.58",
+    "t": "Update redshift-data client to latest version"
+  }
+]

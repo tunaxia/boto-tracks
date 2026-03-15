@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.42.26",
+    "t": "Cost Categories filtering support to BillingView data filter expressions through the new costCategories parameter, enabling users to filter billing views by AWS Cost Categories for more granular cost management and allocation."
+  },
+  {
+    "v": "1.41.0",
+    "t": "Added name filtering support to ListBillingViews API through the new names parameter to efficiently filter billing views by name."
+  },
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.40",
+    "t": "Add ability to combine custom billing views to create new consolidated views."
+  },
+  {
+    "v": "1.40.14",
+    "t": "Clarify IPv4 and IPv6 endpoints"
+  },
+  {
+    "v": "1.35.86",
+    "t": "Added new API's for defining and fetching Billing Views."
+  },
+  {
+    "v": "1.35.60",
+    "t": "Today, AWS announces the general availability of ListBillingViews API in the AWS SDKs, to enable AWS Billing Conductor (ABC) users to create proforma Cost and Usage Reports (CUR) programmatically."
+  }
+]

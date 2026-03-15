@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.24.0",
+    "t": "Adding support for parsing int/long types in rest-json response headers."
+  }
+]

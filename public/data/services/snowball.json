@@ -1,0 +1,106 @@
+[
+  {
+    "v": "1.40.64",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.17",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.34.129",
+    "t": "Add v2 smoke tests and smithy smokeTests trait for SDK testing."
+  },
+  {
+    "v": "1.34.58",
+    "t": "Doc-only update for change to EKS-Anywhere ordering."
+  },
+  {
+    "v": "1.34.30",
+    "t": "Modified description of createaddress to include direction to add path when providing a JSON file."
+  },
+  {
+    "v": "1.31.5",
+    "t": "Adds support for RACK_5U_C. This is the first AWS Snow Family device designed to meet U.S. Military Ruggedization Standards (MIL-STD-810H) with 208 vCPU device in a portable, compact 5U, half-rack width form-factor."
+  },
+  {
+    "v": "1.29.117",
+    "t": "Adds support for Amazon S3 compatible storage. AWS Snow Family customers can now use Amazon S3 compatible storage on Snowball Edge devices. Also adds support for V3_5S. This is a refreshed AWS Snowball Edge Storage Optimized device type with 210TB SSD (customer usable)."
+  },
+  {
+    "v": "1.29.70",
+    "t": "Adds support for EKS Anywhere on Snowball. AWS Snow Family customers can now install EKS Anywhere service on Snowball Edge Compute Optimized devices."
+  },
+  {
+    "v": "1.27.85",
+    "t": "Adds support for V3_5C. This is a refreshed AWS Snowball Edge Compute Optimized device type with 28TB SSD, 104 vCPU and 416GB memory (customer usable)."
+  },
+  {
+    "v": "1.23.29",
+    "t": "Updating validation rules for interfaces used in the Snowball API to tighten security of service."
+  },
+  {
+    "v": "1.23.17",
+    "t": "Tapeball is to integrate tape gateway onto snowball, it enables customer to transfer local data on the tape to snowball,and then ingest the data into tape gateway on the cloud."
+  },
+  {
+    "v": "1.20.101",
+    "t": "AWS Snow Family customers can remotely monitor and operate their connected AWS Snowcone devices. AWS Snowball Edge Storage Optimized customers can now import and export their data using NFS."
+  },
+  {
+    "v": "1.20.68",
+    "t": "AWS Snow Family adds APIs for ordering and managing Snow jobs with long term pricing"
+  },
+  {
+    "v": "1.18.16",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.17.5",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.15.40",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.15.6",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.12.244",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.12.51",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.10.83",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.10.59",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.8.23",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.5.45",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.4.80",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.4.58",
+    "t": "Update snowball client to latest version"
+  },
+  {
+    "v": "1.4.45",
+    "t": "Update snowball client to latest version"
+  }
+]

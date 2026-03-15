@@ -1,0 +1,22 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.34.24",
+    "t": "Fix FIPS Endpoints in aws-us-gov."
+  },
+  {
+    "v": "1.29.70",
+    "t": "AWS AppConfig now offers the option to set a version label on hosted configuration versions. If a labeled hosted configuration version is deployed, its version label is available in the GetLatestConfiguration response."
+  },
+  {
+    "v": "1.23.46",
+    "t": "Documentation updates for AWS AppConfig Data."
+  },
+  {
+    "v": "1.23.8",
+    "t": "AWS AppConfig Data is a new service that allows you to retrieve configuration deployed by AWS AppConfig. See the AppConfig user guide for more details on getting started. https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html"
+  }
+]

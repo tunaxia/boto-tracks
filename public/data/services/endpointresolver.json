@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.23.0",
+    "t": "Adding support for resolving modeled FIPS and Dualstack endpoints."
+  }
+]

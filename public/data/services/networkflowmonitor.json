@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.41.0",
+    "t": "Added new enum value (AWS::EKS::Cluster) for type field under MonitorLocalResource"
+  },
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.28",
+    "t": "Added new enum value (AWS::Region) for type field under MonitorLocalResource and MonitorRemoteResource. Workload Insights and Monitor top contributors queries now support a new DestinationCategory (INTER_REGION)."
+  },
+  {
+    "v": "1.39.7",
+    "t": "Introducing 2 new scope status types - DEACTIVATING and DEACTIVATED."
+  },
+  {
+    "v": "1.39.0",
+    "t": "Add ConflictExceptions to UpdateScope and DeleteScope operations for scopes being mutated."
+  },
+  {
+    "v": "1.37.8",
+    "t": "This release contains 2 changes. 1: DeleteScope/GetScope/UpdateScope operations now return 404 instead of 500 when the resource does not exist. 2: Expected string format for clientToken fields of CreateMonitorInput/CreateScopeInput/UpdateMonitorInput have been updated to be an UUID based string."
+  },
+  {
+    "v": "1.35.72",
+    "t": "This release adds documentation for a new feature in Amazon CloudWatch called Network Flow Monitor. You can use Network Flow Monitor to get near real-time metrics, including retransmissions and data transferred, for your actual workloads."
+  }
+]

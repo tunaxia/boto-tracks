@@ -1,0 +1,118 @@
+[
+  {
+    "v": "1.40.54",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.38.30",
+    "t": "Update documentation for cacheConfig in CreateApp API"
+  },
+  {
+    "v": "1.38.26",
+    "t": "Add support for customizable build instance sizes. CreateApp and UpdateApp operations now accept a new JobConfig parameter composed of BuildComputeType."
+  },
+  {
+    "v": "1.37.17",
+    "t": "Added appId field to Webhook responses"
+  },
+  {
+    "v": "1.37.12",
+    "t": "Introduced support for Skew Protection. Added enableSkewProtection field to createBranch and updateBranch API."
+  },
+  {
+    "v": "1.36.22",
+    "t": "Add ComputeRoleArn to CreateApp, UpdateApp, CreateBranch, and UpdateBranch, allowing caller to specify a role to be assumed by Amplify Hosting for server-side rendered applications."
+  },
+  {
+    "v": "1.35.84",
+    "t": "Added WAF Configuration to Amplify Apps"
+  },
+  {
+    "v": "1.35.41",
+    "t": "Added sourceUrlType field to StartDeployment request"
+  },
+  {
+    "v": "1.35.19",
+    "t": "Doc only update to Amplify to explain platform setting for Next.js 14 SSG only applications"
+  },
+  {
+    "v": "1.34.160",
+    "t": "Add a new field \"cacheConfig\" that enables users to configure the CDN cache settings for an App"
+  },
+  {
+    "v": "1.34.118",
+    "t": "This doc-only update identifies fields that are specific to Gen 1 and Gen 2 applications."
+  },
+  {
+    "v": "1.34.94",
+    "t": "Updating max results limit for listing any resources (Job, Artifacts, Branch, BackendResources, DomainAssociation) to 50 with the exception of list apps that where max results can be up to 100."
+  },
+  {
+    "v": "1.34.63",
+    "t": "Documentation updates for Amplify. Identifies the APIs available only to apps created using Amplify Gen 1."
+  },
+  {
+    "v": "1.34.45",
+    "t": "This release contains API changes that enable users to configure their Amplify domains with their own custom SSL/TLS certificate."
+  },
+  {
+    "v": "1.31.75",
+    "t": "Add backend field to CreateBranch and UpdateBranch requests. Add pagination support for ListApps, ListDomainAssociations, ListBranches, and ListJobs"
+  },
+  {
+    "v": "1.29.12",
+    "t": "Adds a new value (WEB_COMPUTE) to the Platform enum that allows customers to create Amplify Apps with Server-Side Rendering support."
+  },
+  {
+    "v": "1.25.2",
+    "t": "Documentation only update to support the Amplify GitHub App feature launch"
+  },
+  {
+    "v": "1.24.9",
+    "t": "Add repositoryCloneMethod field for hosting an Amplify app. This field shows what authorization method is used to clone the repo: SSH, TOKEN, or SIGV4."
+  },
+  {
+    "v": "1.23.45",
+    "t": "Doc only update to the description of basicauthcredentials to describe the required encoding and format."
+  },
+  {
+    "v": "1.19.16",
+    "t": "Update amplify client to latest version"
+  },
+  {
+    "v": "1.18.16",
+    "t": "Update amplify client to latest version"
+  },
+  {
+    "v": "1.18.5",
+    "t": "Update amplify client to latest version"
+  },
+  {
+    "v": "1.17.20",
+    "t": "Update amplify client to latest version"
+  },
+  {
+    "v": "1.17.10",
+    "t": "Update amplify client to latest version"
+  },
+  {
+    "v": "1.13.24",
+    "t": "Update amplify client to latest version"
+  },
+  {
+    "v": "1.13.7",
+    "t": "Update amplify client to latest version"
+  },
+  {
+    "v": "1.12.238",
+    "t": "Update amplify client to latest version"
+  },
+  {
+    "v": "1.12.185",
+    "t": "Update amplify client to latest version"
+  },
+  {
+    "v": "1.12.51",
+    "t": "Update amplify client to latest version"
+  }
+]

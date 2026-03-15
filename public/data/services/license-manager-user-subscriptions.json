@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.40.55",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.48",
+    "t": "Released support for IPv6 and dual-stack active directories"
+  },
+  {
+    "v": "1.40.35",
+    "t": "Added support for cross-account Active Directories."
+  },
+  {
+    "v": "1.36.25",
+    "t": "Updates entity to include Microsoft RDS SAL as a valid type of user subscription."
+  },
+  {
+    "v": "1.35.61",
+    "t": "New and updated API operations to support License Included User-based Subscription of Microsoft Remote Desktop Services (RDS)."
+  },
+  {
+    "v": "1.29.18",
+    "t": "AWS now offers fully-compliant, Amazon-provided licenses for Microsoft Office Professional Plus 2021 Amazon Machine Images (AMIs) on Amazon EC2. These AMIs are now available on the Amazon EC2 console and on AWS Marketplace to launch instances on-demand without any long-term licensing commitments."
+  },
+  {
+    "v": "1.27.44",
+    "t": "This release supports user based subscription for Microsoft Visual Studio Professional and Enterprise on EC2."
+  }
+]

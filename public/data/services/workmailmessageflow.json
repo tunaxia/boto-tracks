@@ -1,0 +1,18 @@
+[
+  {
+    "v": "1.40.60",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.20",
+    "t": "Remove incorrect endpoint tests"
+  },
+  {
+    "v": "1.20.8",
+    "t": "Update workmailmessageflow client to latest version"
+  },
+  {
+    "v": "1.12.228",
+    "t": "Update workmailmessageflow client to latest version"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.15.18",
+    "t": "Improved timezone parsing for Windows with new fallback method (#1939)"
+  }
+]

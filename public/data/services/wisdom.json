@@ -1,0 +1,50 @@
+[
+  {
+    "v": "1.40.59",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.34.16",
+    "t": "QueryAssistant and GetRecommendations will be discontinued starting June 1, 2024. To receive generative responses after March 1, 2024 you will need to create a new Assistant in the Connect console and integrate the Amazon Q in Connect JavaScript library (amazon-q-connectjs) into your applications."
+  },
+  {
+    "v": "1.32.3",
+    "t": "This release adds QuickResponse as a new Wisdom resource and Wisdom APIs for import, create, read, search, update and delete QuickResponse resources."
+  },
+  {
+    "v": "1.31.74",
+    "t": "This release added necessary API documents on creating a Wisdom knowledge base to integrate with S3."
+  },
+  {
+    "v": "1.31.66",
+    "t": "This release adds an max limit of 25 recommendation ids for NotifyRecommendationsReceived API."
+  },
+  {
+    "v": "1.31.11",
+    "t": "This release added two new data types: AssistantIntegrationConfiguration, and SessionIntegrationConfiguration to support Wisdom integration with Amazon Connect Chat"
+  },
+  {
+    "v": "1.29.90",
+    "t": "This release extends Wisdom CreateKnowledgeBase API to support SharePoint connector type by removing the @required trait for objectField"
+  },
+  {
+    "v": "1.29.40",
+    "t": "This release extends Wisdom CreateContent and StartContentUpload APIs to support PDF and MicrosoftWord docx document uploading."
+  },
+  {
+    "v": "1.27.90",
+    "t": "This release updates the GetRecommendations API to include a trigger event list for classifying and grouping recommendations."
+  },
+  {
+    "v": "1.27.52",
+    "t": "This release introduces a new API PutFeedback that allows submitting feedback to Wisdom on content relevance."
+  },
+  {
+    "v": "1.24.45",
+    "t": "This release updates the GetRecommendations API to include a trigger event list for classifying and grouping recommendations."
+  },
+  {
+    "v": "1.21.49",
+    "t": "Released Amazon Connect Wisdom, a feature of Amazon Connect, which provides real-time recommendations and search functionality in general availability (GA).  For more information, see https://docs.aws.amazon.com/wisdom/latest/APIReference/Welcome.html."
+  }
+]

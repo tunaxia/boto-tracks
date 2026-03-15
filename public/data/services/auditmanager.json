@@ -1,0 +1,110 @@
+[
+  {
+    "v": "1.40.63",
+    "t": "Update endpoint ruleset parameters casing"
+  },
+  {
+    "v": "1.40.1",
+    "t": "Added a note to Framework APIs (CreateAssessmentFramework, GetAssessmentFramework, UpdateAssessmentFramework) clarifying that the Controls object returns a partial response when called through Framework APIs. Added documentation that the Framework's controlSources parameter is no longer supported."
+  },
+  {
+    "v": "1.39.9",
+    "t": "Updated error handling for RegisterOrganizationAdminAccount API to properly translate TooManyExceptions to HTTP 429 status code. This enhancement improves error handling consistency and provides clearer feedback when request limits are exceeded."
+  },
+  {
+    "v": "1.38.22",
+    "t": "With this release, the AssessmentControl description field has been deprecated, as of May 19, 2025. Additionally, the UpdateAssessment API can now return a ServiceQuotaExceededException when applicable service quotas are exceeded."
+  },
+  {
+    "v": "1.34.122",
+    "t": "New feature: common controls. When creating custom controls, you can now use pre-grouped AWS data sources based on common compliance themes. Also, the awsServices parameter is deprecated because we now manage services in scope for you. If used, the input is ignored and an empty list is returned."
+  },
+  {
+    "v": "1.31.63",
+    "t": "This release introduces a new limit to the awsAccounts parameter. When you create or update an assessment, there is now a limit of 200 AWS accounts that can be specified in the assessment scope."
+  },
+  {
+    "v": "1.31.38",
+    "t": "This release marks some assessment metadata as sensitive. We added a sensitive trait to the following attributes: assessmentName, emailAddress, scope, createdBy, lastUpdatedBy, and userName."
+  },
+  {
+    "v": "1.29.154",
+    "t": "This release introduces 2 Audit Manager features: CSV exports and new manual evidence options. You can now export your evidence finder results in CSV format. In addition, you can now add manual evidence to a control by entering free-form text or uploading a file from your browser."
+  },
+  {
+    "v": "1.29.75",
+    "t": "This release introduces a ServiceQuotaExceededException to the UpdateAssessmentFrameworkShare API operation."
+  },
+  {
+    "v": "1.29.45",
+    "t": "This release introduces a new data retention option in your Audit Manager settings. You can now use the DeregistrationPolicy parameter to specify if you want to delete your data when you deregister Audit Manager."
+  },
+  {
+    "v": "1.29.13",
+    "t": "This release introduces a new feature for Audit Manager: Evidence finder. You can now use evidence finder to quickly query your evidence, and add the matching evidence results to an assessment report."
+  },
+  {
+    "v": "1.27.39",
+    "t": "This release adds an exceeded quota exception to several APIs. We added a ServiceQuotaExceededException for the following operations: CreateAssessment, CreateControl, CreateAssessmentFramework, and UpdateAssessmentStatus."
+  },
+  {
+    "v": "1.27.4",
+    "t": "This release introduces 2 updates to the Audit Manager API. The roleType and roleArn attributes are now required when you use the CreateAssessment or UpdateAssessment operation. We also added a throttling exception to the RegisterAccount API operation."
+  },
+  {
+    "v": "1.25.3",
+    "t": "This release adds documentation updates for Audit Manager. We provided examples of how to use the Custom_ prefix for the keywordValue attribute. We also provided more details about the DeleteAssessmentReport operation."
+  },
+  {
+    "v": "1.24.31",
+    "t": "This release adds documentation updates for Audit Manager. The updates provide data deletion guidance when a customer deregisters Audit Manager or deregisters a delegated administrator."
+  },
+  {
+    "v": "1.24.25",
+    "t": "This release updates 1 API parameter, the SnsArn attribute. The character length and regex pattern for the SnsArn attribute have been updated, which enables you to deselect an SNS topic when using the UpdateSettings operation."
+  },
+  {
+    "v": "1.23.50",
+    "t": "This release updates 3 API parameters. UpdateAssessmentFrameworkControlSet now requires the controls attribute, and CreateAssessmentFrameworkControl requires the id attribute. Additionally, UpdateAssessmentFramework now has a minimum length constraint for the controlSets attribute."
+  },
+  {
+    "v": "1.23.9",
+    "t": "This release introduces a new feature for Audit Manager: Dashboard views. You can now view insights data for your active assessments, and quickly identify non-compliant evidence that needs to be remediated."
+  },
+  {
+    "v": "1.22.3",
+    "t": "This release introduces a new feature for Audit Manager: Custom framework sharing. You can now share your custom frameworks with another AWS account, or replicate them into another AWS Region under your own account."
+  },
+  {
+    "v": "1.22.2",
+    "t": "This release introduces character restrictions for ControlSet names. We updated regex patterns for the following attributes: ControlSet, CreateAssessmentFrameworkControlSet, and UpdateAssessmentFrameworkControlSet."
+  },
+  {
+    "v": "1.21.1",
+    "t": "This release relaxes the S3 URL character restrictions in AWS Audit Manager. Regex patterns have been updated for the following attributes: s3RelativePath, destination, and s3ResourcePath. 'AWS' terms have also been replaced with entities to align with China Rebrand documentation efforts."
+  },
+  {
+    "v": "1.20.67",
+    "t": "This release updates the CreateAssessmentFrameworkControlSet and UpdateAssessmentFrameworkControlSet API data types. For both of these data types, the control set name is now a required attribute."
+  },
+  {
+    "v": "1.20.59",
+    "t": "This release restricts using backslashes in control, assessment, and framework names. The controlSetName field of the UpdateAssessmentFrameworkControlSet API now allows strings without backslashes."
+  },
+  {
+    "v": "1.20.45",
+    "t": "AWS Audit Manager has updated the GetAssessment API operation to include a new response field called userRole. The userRole field indicates the role information and IAM ARN of the API caller."
+  },
+  {
+    "v": "1.20.1",
+    "t": "Update auditmanager client to latest version"
+  },
+  {
+    "v": "1.19.53",
+    "t": "Update auditmanager client to latest version"
+  },
+  {
+    "v": "1.19.32",
+    "t": "Update auditmanager client to latest version"
+  }
+]

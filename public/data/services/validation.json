@@ -1,0 +1,6 @@
+[
+  {
+    "v": "1.42.42",
+    "t": "Updated list validation to add fast-path for list members that only require basic type checking."
+  }
+]
