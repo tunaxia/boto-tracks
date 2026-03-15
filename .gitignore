@@ -142,3 +142,8 @@ botocore_repo/
 .astro/
 
 .DS_Store
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
