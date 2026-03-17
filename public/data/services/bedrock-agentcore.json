@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.69",
+    "t": "Provide support to perform deterministic operations on agent runtime through shell command executions via the new InvokeAgentRuntimeCommand API"
+  },
+  {
     "v": "1.42.46",
     "t": "Added AgentCore browser proxy configuration support, allowing routing of browser traffic through HTTP and HTTPS proxy servers with authentication and bypass rules."
   },

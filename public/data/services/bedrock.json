@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.69",
+    "t": "You can now generate policy scenarios on demand using the new GENERATE POLICY SCENARIOS build workflow type. Scenarios will no longer be automatically generated during INGEST CONTENT, REFINE POLICY, and IMPORT POLICY workflows, resulting in faster completion times for these operations."
+  },
+  {
     "v": "1.42.63",
     "t": "Amazon Bedrock Guardrails account-level enforcement APIs now support lists for model inclusion and exclusion from guardrail enforcement."
   },

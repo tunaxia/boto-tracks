@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.69",
+    "t": "Supporting hosting of public ECR Container Images in AgentCore Runtime"
+  },
+  {
     "v": "1.42.65",
     "t": "Adding first class support for AG-UI protocol in AgentCore Runtime."
   },
