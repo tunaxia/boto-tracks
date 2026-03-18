@@ -11,23 +11,26 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>Boto Tracker | AWS SDK for Python (Botocore) Changelog</title>
-		<meta name="description" content="A modern, fast, and searchable interface for tracking changes, fixes, and features in the AWS SDK for Python (Botocore). Stay updated with every Boto3/Botocore release." />
-		<meta name="keywords" content="boto3, botocore, aws, python, sdk, tracker, changelog, cloud, amazon web services, updates, release notes" />
-		<meta name="author" content="Boto Tracker" />
+		<title>{title} | AWS Boto Tracks by Tunaxia</title>
+		<meta name="description" content="Boto Tracks by Tunaxia: The ultimate AWS SDK for Python (Botocore) changelog tracker. Search and filter every update, fix, and feature in Boto3/Botocore." />
+		<meta name="keywords" content="boto tracks, botocore changelog, boto3 updates, aws sdk python tracker, Tunaxia, AWS SDK updates, python aws development" />
+		<meta name="author" content="Tunaxia" />
 		
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Boto Tracker | AWS SDK for Python (Botocore) Changelog" />
-		<meta property="og:description" content="Track every change, fix, and feature in the AWS SDK for Python (Botocore) with a modern searchable interface." />
-		<meta property="og:image" content="/favicon.png" />
+		<meta property="og:title" content="Boto Tracks | AWS Botocore Changelog Tracker by Tunaxia" />
+		<meta property="og:description" content="The most modern way to track AWS Botocore and Boto3 changes. Developed by Tunaxia for the Python community." />
+		<meta property="og:url" content="https://boto-tracks.tunaxia.com/" />
+		<meta property="og:site_name" content="Boto Tracks" />
+		<meta property="og:image" content="https://boto-tracks.tunaxia.com/favicon.png" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:title" content="Boto Tracker | AWS SDK for Python (Botocore) Changelog" />
-		<meta property="twitter:description" content="Track every change, fix, and feature in the AWS SDK for Python (Botocore) with a modern searchable interface." />
-		<meta property="twitter:image" content="/favicon.png" />
+		<meta property="twitter:title" content="Boto Tracks | AWS Botocore Changelog Tracker by Tunaxia" />
+		<meta property="twitter:description" content="Track every change in AWS Botocore with ease. Built by Tunaxia." />
+		<meta property="twitter:image" content="https://boto-tracks.tunaxia.com/favicon.png" />
 
+		<link rel="canonical" href="https://boto-tracks.tunaxia.com/" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
@@ -45,8 +48,62 @@ const { title } = Astro.props;
 		</script>
 		<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+		
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@graph": [
+			{
+			  "@type": "WebSite",
+			  "@id": "https://boto-tracks.tunaxia.com/#website",
+			  "url": "https://boto-tracks.tunaxia.com/",
+			  "name": "Boto Tracks",
+			  "publisher": { "@id": "https://tunaxia.com/#organization" },
+			  "description": "Modern AWS Botocore & Boto3 changelog tracker."
+			},
+			{
+			  "@type": "Organization",
+			  "@id": "https://tunaxia.com/#organization",
+			  "name": "Tunaxia",
+			  "url": "https://tunaxia.com/",
+			  "logo": "https://boto-tracks.tunaxia.com/favicon.png",
+			  "sameAs": [
+				"https://github.com/tunaxia"
+			  ]
+			},
+			{
+			  "@type": "SoftwareApplication",
+			  "@id": "https://boto-tracks.tunaxia.com/#software",
+			  "name": "Boto Tracks",
+			  "applicationCategory": "DeveloperApplication",
+			  "operatingSystem": "Web",
+			  "author": { "@id": "https://tunaxia.com/#organization" },
+			  "description": "A modern interface for tracking AWS Botocore changelogs, developed by Tunaxia."
+			}
+		  ]
+		}
+		</script>
 	</head>
 	<body class="h-screen overflow-hidden text-slate-400">
 		<slot />
+
+		<!-- Static SEO Content (Hidden from users, visible to Search Engines) -->
+		<footer class="sr-only" aria-hidden="true">
+			<section>
+				<h2>About Boto Tracks</h2>
+				<p>
+					Boto Tracks is the tool for tracking AWS Botocore and Boto3 changelogs. 
+					Developed by <strong>Tunaxia</strong>, it provides a searchable, filterable timeline 
+					of every AWS SDK for Python release.
+				</p>
+				<h3>Why use Boto Tracks by Tunaxia?</h3>
+				<ul>
+					<li>Instant search across all AWS service updates.</li>
+					<li>Historical tracking of Boto3 features and fixes.</li>
+					<li>Mobile-friendly interface for AWS developers.</li>
+				</ul>
+				<p>Visit <a href="https://tunaxia.com">Tunaxia</a> for more cloud developer tools.</p>
+			</section>
+		</footer>
 	</body>
 </html>

@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://boto-tracks.tunaxia.com/sitemap-index.xml
