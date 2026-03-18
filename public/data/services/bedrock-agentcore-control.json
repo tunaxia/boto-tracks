@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.70",
+    "t": "Deprecating namespaces field and adding namespaceTemplates."
+  },
+  {
     "v": "1.42.69",
     "t": "Supporting hosting of public ECR Container Images in AgentCore Runtime"
   },

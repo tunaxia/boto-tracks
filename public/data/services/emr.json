@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.70",
+    "t": "Add S3LoggingConfiguration to Control LogUploads"
+  },
+  {
     "v": "1.41.1",
     "t": "Add support for configuring S3 destination for step logs on a per-step basis."
   },
