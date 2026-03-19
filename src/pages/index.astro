@@ -167,7 +167,6 @@ import ServiceNav from '../components/ServiceNav.astro';
                         await this.selectVersion(this.versions[0].id);
                     }
                 } catch (e) {
-                    console.error("Init failed:", e);
                     this.error = e.message;
                 } finally {
                     this.loading = false;
@@ -199,7 +198,6 @@ import ServiceNav from '../components/ServiceNav.astro';
                         });
                     });
                 } catch (e) { 
-                    console.error(e);
                     this.error = `Could not load version ${id}.`;
                 }
             },
@@ -214,7 +212,6 @@ import ServiceNav from '../components/ServiceNav.astro';
                     if (!res.ok) throw new Error(`Service file for ${serviceId} not found`);
                     this.serviceHistory = await res.json();
                 } catch (e) { 
-                    console.error(e);
                     this.serviceHistory = []; 
                 }
             },
