@@ -150,19 +150,10 @@ import ServiceNav from '../components/ServiceNav.astro';
             serviceHistorySearch: '',
             showMobileServices: false,
             showMobileVersions: false,
-            darkMode: true,
             error: null,
             loading: true,
 
             async init() {
-                const savedTheme = localStorage.getItem('boto-theme');
-                if (savedTheme) {
-                    this.darkMode = savedTheme === 'dark';
-                } else {
-                    this.darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                }
-                this.applyTheme();
-
                 try {
                     const res = await fetch('/data/track.json');
                     if (!res.ok) throw new Error('Failed to load track data');
@@ -255,20 +246,6 @@ import ServiceNav from '../components/ServiceNav.astro';
                     item.description.toLowerCase().includes(s) ||
                     item.type.toLowerCase().includes(s)
                 );
-            },
-
-            toggleTheme() {
-                this.darkMode = !this.darkMode;
-                this.applyTheme();
-            },
-
-            applyTheme() {
-                localStorage.setItem('boto-theme', this.darkMode ? 'dark' : 'light');
-                if (this.darkMode) {
-                    document.documentElement.classList.add('dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                }
             }
         }));
     });

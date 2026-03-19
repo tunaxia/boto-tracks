@@ -44,15 +44,21 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
 		<script is:inline>
-			// Immediate theme initialization
+			// Purely automatic theme initialization based on system preference
 			(function() {
-				const savedTheme = localStorage.getItem('boto-theme');
-				const darkMode = savedTheme ? savedTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-				if (darkMode) {
-					document.documentElement.classList.add('dark');
-				} else {
-					document.documentElement.classList.remove('dark');
-				}
+				const setTheme = () => {
+					const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+					if (darkMode) {
+						document.documentElement.classList.add('dark');
+					} else {
+						document.documentElement.classList.remove('dark');
+					}
+				};
+				
+				setTheme();
+				
+				// Listen for system theme changes
+				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setTheme);
 			})();
 		</script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
