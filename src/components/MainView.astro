@@ -3,7 +3,7 @@
         
         <div class="flex items-center gap-2 md:gap-8">
             <!-- Mobile Versions Toggle -->
-            <button @click="showMobileVersions = true" class="lg:hidden p-2 text-slate-400 hover:text-orange-500 transition-colors">
+            <button @click="showMobileVersions = true" aria-label="Open versions sidebar" class="lg:hidden p-2 text-slate-400 hover:text-orange-500 transition-colors">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
             </button>
 
@@ -29,7 +29,7 @@
         
         <div class="flex items-center gap-3">
             <!-- Theme Toggle -->
-            <button @click="toggleTheme()" class="p-2 rounded-xl bg-slate-100 dark:bg-white/5 text-slate-500 dark:text-slate-400 hover:text-orange-500 transition-all border border-transparent dark:border-white/5 active:scale-95">
+            <button @click="toggleTheme()" aria-label="Toggle color theme" class="p-2 rounded-xl bg-slate-100 dark:bg-white/5 text-slate-500 dark:text-slate-400 hover:text-orange-500 transition-all border border-transparent dark:border-white/5 active:scale-95">
                 <template x-if="!darkMode">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
                 </template>
@@ -39,7 +39,7 @@
             </button>
 
             <!-- Mobile Services Toggle -->
-            <button @click="showMobileServices = true" class="md:hidden p-2 text-slate-400 hover:text-orange-500 transition-colors">
+            <button @click="showMobileServices = true" aria-label="Open services sidebar" class="md:hidden p-2 text-slate-400 hover:text-orange-500 transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </div>
