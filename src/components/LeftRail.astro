@@ -24,7 +24,7 @@
 
     <div class="px-4 pb-4 border-b border-subtle bg-sidebar theme-transition">
         <div class="relative group">
-            <input type="text" id="versionRailSearch" name="versionRailSearch" x-model.debounce.200ms="versionRailSearch" 
+            <input type="text" id="versionRailSearch" name="versionRailSearch" aria-label="Search versions" x-model.debounce.200ms="versionRailSearch" 
                    @input="railLimit = 50"
                    placeholder="Jump to..." 
                    class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-xl py-2 pl-8 pr-3 text-[10px] focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner">
