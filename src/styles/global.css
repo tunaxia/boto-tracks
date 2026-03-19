@@ -43,6 +43,12 @@ h1, h2, h3, h4, button {
     display: none !important; 
 }
 
+/* High-visibility focus states */
+:focus-visible {
+    outline: 2px solid #f97316;
+    outline-offset: 2px;
+}
+
 /* Custom thin scrollbar */
 .custom-scroll::-webkit-scrollbar { 
     width: 4px; 

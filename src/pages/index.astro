@@ -8,7 +8,6 @@ import ServiceNav from '../components/ServiceNav.astro';
 <Layout title="Boto Tracker">
     <div class="flex h-screen w-full overflow-hidden bg-main text-[var(--text-secondary)] theme-transition" 
          x-data="botoCore" 
-         x-cloak
          @keydown.window.escape="showMobileServices = false; showMobileVersions = false; activeService = null">
         
         <!-- Backdrops for Mobile -->
@@ -32,7 +31,7 @@ import ServiceNav from '../components/ServiceNav.astro';
              class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] md:hidden" 
              @click="showMobileServices = false"></div>
 
-        <div x-show="error" x-transition.opacity class="fixed inset-0 z-[60] flex items-center justify-center p-6 bg-black/90 backdrop-blur-md">
+        <div x-show="error" x-cloak x-transition.opacity class="fixed inset-0 z-[70] flex items-center justify-center p-6 bg-black/90 backdrop-blur-md">
             <div class="bg-red-950/40 border border-red-500/30 text-red-200 p-8 rounded-3xl max-w-lg w-full text-center shadow-[0_0_50px_rgba(239,68,68,0.15)]">
                 <div class="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                     <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
@@ -43,18 +42,16 @@ import ServiceNav from '../components/ServiceNav.astro';
             </div>
         </div>
 
-        <div x-show="loading" x-transition.opacity class="flex-1 flex flex-col items-center justify-center bg-main theme-transition">
+        <div x-show="loading" x-cloak x-transition.opacity class="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-main theme-transition">
             <div class="w-12 h-12 border-4 border-orange-500/20 border-t-orange-500 rounded-full animate-spin mb-4"></div>
             <p class="mono text-slate-500 text-sm animate-pulse uppercase tracking-widest">Initialising Core...</p>
         </div>
 
-        <template x-if="!error && !loading">
-            <div class="flex h-full w-full" x-transition.opacity.duration.500ms>
-                <LeftRail />
-                <MainView />
-                <ServiceNav />
-            </div>
-        </template>
+        <div class="flex h-full w-full">
+            <LeftRail />
+            <MainView />
+            <ServiceNav />
+        </div>
 
         <!-- Service History Drawer -->
         <div x-show="activeService" class="fixed inset-0 z-50 flex justify-end overflow-hidden" x-cloak>
@@ -82,7 +79,7 @@ import ServiceNav from '../components/ServiceNav.astro';
                 <div class="px-8 py-10 border-b border-subtle bg-card theme-transition">
                     <div class="flex items-center justify-between mb-4">
                         <span class="text-[10px] mono text-orange-500 font-black uppercase tracking-[0.3em]">Service</span>
-                        <button @click="activeService = null" class="text-slate-400 dark:text-slate-500 hover:text-orange-500 transition-colors">
+                        <button @click="activeService = null" aria-label="Close service history" class="text-slate-400 dark:text-slate-500 hover:text-orange-500 transition-colors">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </div>
@@ -90,7 +87,7 @@ import ServiceNav from '../components/ServiceNav.astro';
                     
                     <!-- Dossier Search -->
                     <div class="relative group">
-                        <input type="text" id="serviceHistorySearch" name="serviceHistorySearch" x-model="serviceHistorySearch" placeholder="Filter history..." 
+                        <input type="text" id="serviceHistorySearch" name="serviceHistorySearch" aria-label="Search service history" x-model.debounce.200ms="serviceHistorySearch" placeholder="Filter history..." 
                                class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-xl py-3 pl-11 pr-4 text-xs focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner">
                         <svg class="absolute left-4 top-3.5 w-4 h-4 text-slate-400 dark:text-slate-600 group-focus-within:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </div>
@@ -135,7 +132,7 @@ import ServiceNav from '../components/ServiceNav.astro';
     </div>
 </Layout>
 
-<script is:inline>
+<script>
     document.addEventListener('alpine:init', () => {
         Alpine.data('botoCore', () => ({
             selectedVersion: '',
@@ -145,24 +142,20 @@ import ServiceNav from '../components/ServiceNav.astro';
             serviceSearch: '',
             versionSearch: '',
             versionRailSearch: '',
+            railLimit: 50,
             activeService: null,
             serviceHistory: [],
             serviceHistorySearch: '',
             showMobileServices: false,
             showMobileVersions: false,
-            darkMode: true,
             error: null,
             loading: true,
 
-            async init() {
-                const savedTheme = localStorage.getItem('boto-theme');
-                if (savedTheme) {
-                    this.darkMode = savedTheme === 'dark';
-                } else {
-                    this.darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                }
-                this.applyTheme();
+            isMobile(breakpoint = 768) {
+                return window.matchMedia(`(max-width: ${breakpoint-1}px)`).matches;
+            },
 
+            async init() {
                 try {
                     const res = await fetch('/data/track.json');
                     if (!res.ok) throw new Error('Failed to load track data');
@@ -174,7 +167,6 @@ import ServiceNav from '../components/ServiceNav.astro';
                         await this.selectVersion(this.versions[0].id);
                     }
                 } catch (e) {
-                    console.error("Init failed:", e);
                     this.error = e.message;
                 } finally {
                     this.loading = false;
@@ -184,21 +176,28 @@ import ServiceNav from '../components/ServiceNav.astro';
             async selectVersion(id) {
                 this.selectedVersion = id;
                 this.versionSearch = '';
+                this.currentVersionData = []; 
+
+                // Reset scroll position
+                const mainContainer = document.querySelector('main.flex-1');
+                if (mainContainer) mainContainer.scrollTo({ top: 0, behavior: 'instant' });
+
                 try {
                     const res = await fetch(`/data/versions/${id}.json`);
                     if (!res.ok) throw new Error(`Version ${id} not found`);
                     this.currentVersionData = await res.json();
                     
-                    // Update Glow Position
-                    setTimeout(() => {
-                        const rail = document.querySelector('.group\\/rail');
-                        const activeBtn = rail?.querySelector(`button[data-version="${id}"]`);
-                        if (rail && activeBtn) {
-                            rail.style.setProperty('--glow-top', activeBtn.offsetTop + 'px');
-                        }
-                    }, 50);
+                    // Sync rail indicator
+                    requestAnimationFrame(() => {
+                        this.$nextTick(() => {
+                            const rail = document.querySelector('.group\\/rail');
+                            const activeBtn = rail?.querySelector(`button[data-version="${id}"]`);
+                            if (rail && activeBtn) {
+                                rail.style.setProperty('--glow-top', activeBtn.offsetTop + 'px');
+                            }
+                        });
+                    });
                 } catch (e) { 
-                    console.error(e);
                     this.error = `Could not load version ${id}.`;
                 }
             },
@@ -213,7 +212,6 @@ import ServiceNav from '../components/ServiceNav.astro';
                     if (!res.ok) throw new Error(`Service file for ${serviceId} not found`);
                     this.serviceHistory = await res.json();
                 } catch (e) { 
-                    console.error(e);
                     this.serviceHistory = []; 
                 }
             },
@@ -234,8 +232,23 @@ import ServiceNav from '../components/ServiceNav.astro';
             },
 
             get filteredRailVersions() {
-                if (!this.versionRailSearch) return this.versions;
-                return this.versions.filter(v => v.id.includes(this.versionRailSearch));
+                const search = this.versionRailSearch.toLowerCase();
+                const base = search 
+                    ? this.versions.filter(v => v.id.toLowerCase().includes(search))
+                    : this.versions;
+                return base.slice(0, this.railLimit);
+            },
+
+            get hasMoreVersions() {
+                const search = this.versionRailSearch.toLowerCase();
+                const total = search 
+                    ? this.versions.filter(v => v.id.toLowerCase().includes(search)).length
+                    : this.versions.length;
+                return this.railLimit < total;
+            },
+
+            loadMoreVersions() {
+                this.railLimit += 50;
             },
 
             get filteredServiceHistory() {
@@ -255,20 +268,6 @@ import ServiceNav from '../components/ServiceNav.astro';
                     item.description.toLowerCase().includes(s) ||
                     item.type.toLowerCase().includes(s)
                 );
-            },
-
-            toggleTheme() {
-                this.darkMode = !this.darkMode;
-                this.applyTheme();
-            },
-
-            applyTheme() {
-                localStorage.setItem('boto-theme', this.darkMode ? 'dark' : 'light');
-                if (this.darkMode) {
-                    document.documentElement.classList.add('dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                }
             }
         }));
     });
