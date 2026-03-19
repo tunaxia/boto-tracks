@@ -1,4 +1,4 @@
-name: Daily Boto Sync
+name: Daily Boto Changelogs Sync
 
 on:
   schedule:
