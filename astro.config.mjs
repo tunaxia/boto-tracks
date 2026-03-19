@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
+import alpinejs from '@astrojs/alpinejs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,5 +16,5 @@ export default defineConfig({
   },
 
   adapter: cloudflare(),
-  integrations: [sitemap()]
+  integrations: [sitemap(), alpinejs()]
 });
