@@ -18,7 +18,7 @@
         </button>
         <div class="hidden lg:flex flex-col items-center text-center px-4">
             <h1 class="text-[10px] font-black italic uppercase tracking-tighter text-main leading-none">Boto Tracks</h1>
-            <p class="text-[7px] mono text-slate-500 uppercase tracking-widest mt-1.5 leading-tight opacity-70">AWS Botocore & Boto3 Changelog Intelligence</p>
+            <p class="text-[7px] mono text-slate-500 dark:text-slate-400 uppercase tracking-widest mt-2 leading-tight opacity-80">AWS Botocore & Boto3 Changelog Intelligence</p>
         </div>
     </div>
 
@@ -56,7 +56,7 @@
                 <!-- Load More -->
                 <template x-if="hasMoreVersions">
                     <button @click="loadMoreVersions()" 
-                            class="w-full max-w-[110px] py-3 rounded-xl border border-dashed border-subtle hover:border-orange-500/50 hover:bg-orange-500/5 text-[9px] mono font-bold text-slate-400 hover:text-orange-500 transition-all uppercase tracking-widest active:scale-95">
+                            class="w-full max-w-[110px] py-2.5 rounded-xl border border-subtle bg-slate-50/50 dark:bg-white/5 hover:bg-orange-500/5 hover:border-orange-500/30 text-[9px] mono font-bold text-slate-400 hover:text-orange-500 transition-all uppercase tracking-widest active:scale-95 shadow-sm">
                         Load More
                     </button>
                 </template>

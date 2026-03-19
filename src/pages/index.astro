@@ -31,7 +31,7 @@ import ServiceNav from '../components/ServiceNav.astro';
              class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] md:hidden" 
              @click="showMobileServices = false"></div>
 
-        <div x-show="error" x-transition.opacity class="fixed inset-0 z-[60] flex items-center justify-center p-6 bg-black/90 backdrop-blur-md">
+        <div x-show="error" x-cloak x-transition.opacity class="fixed inset-0 z-[70] flex items-center justify-center p-6 bg-black/90 backdrop-blur-md">
             <div class="bg-red-950/40 border border-red-500/30 text-red-200 p-8 rounded-3xl max-w-lg w-full text-center shadow-[0_0_50px_rgba(239,68,68,0.15)]">
                 <div class="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                     <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
@@ -42,7 +42,7 @@ import ServiceNav from '../components/ServiceNav.astro';
             </div>
         </div>
 
-        <div x-show="loading" x-transition.opacity class="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-main/80 backdrop-blur-sm theme-transition">
+        <div x-show="loading" x-cloak x-transition.opacity class="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-main theme-transition">
             <div class="w-12 h-12 border-4 border-orange-500/20 border-t-orange-500 rounded-full animate-spin mb-4"></div>
             <p class="mono text-slate-500 text-sm animate-pulse uppercase tracking-widest">Initialising Core...</p>
         </div>
