@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.71",
+    "t": "The DescribeInstanceTypes API now returns default connection tracking timeout values for TCP, UDP, and UDP stream via the new connectionTrackingConfiguration field on NetworkInfo."
+  },
+  {
     "v": "1.42.62",
     "t": "Added metadata field to CapacityAllocation."
   },
