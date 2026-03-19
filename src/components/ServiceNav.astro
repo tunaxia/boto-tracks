@@ -37,7 +37,7 @@
 
     <div class="flex-1 overflow-y-auto p-6 space-y-3 custom-scroll bg-inherit">
         <template x-for="service in filteredServices" :key="service">
-            <button @click="openService(service); if(window.innerWidth < 768) showMobileServices = false;" 
+            <button @click="openService(service); if(isMobile(768)) showMobileServices = false;" 
                     class="w-full text-left px-5 py-4 rounded-2xl hover:bg-white dark:hover:bg-white/[0.03] group transition-all flex items-center justify-between border border-transparent hover:border-black/5 dark:hover:border-white/10 relative overflow-hidden shadow-sm hover:shadow-md">
                 
                 <div class="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/5 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>

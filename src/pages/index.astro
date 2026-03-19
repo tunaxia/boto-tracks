@@ -8,7 +8,6 @@ import ServiceNav from '../components/ServiceNav.astro';
 <Layout title="Boto Tracker">
     <div class="flex h-screen w-full overflow-hidden bg-main text-[var(--text-secondary)] theme-transition" 
          x-data="botoCore" 
-         x-cloak
          @keydown.window.escape="showMobileServices = false; showMobileVersions = false; activeService = null">
         
         <!-- Backdrops for Mobile -->
@@ -43,18 +42,16 @@ import ServiceNav from '../components/ServiceNav.astro';
             </div>
         </div>
 
-        <div x-show="loading" x-transition.opacity class="flex-1 flex flex-col items-center justify-center bg-main theme-transition">
+        <div x-show="loading" x-transition.opacity class="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-main/80 backdrop-blur-sm theme-transition">
             <div class="w-12 h-12 border-4 border-orange-500/20 border-t-orange-500 rounded-full animate-spin mb-4"></div>
             <p class="mono text-slate-500 text-sm animate-pulse uppercase tracking-widest">Initialising Core...</p>
         </div>
 
-        <template x-if="!error && !loading">
-            <div class="flex h-full w-full" x-transition.opacity.duration.500ms>
-                <LeftRail />
-                <MainView />
-                <ServiceNav />
-            </div>
-        </template>
+        <div class="flex h-full w-full">
+            <LeftRail />
+            <MainView />
+            <ServiceNav />
+        </div>
 
         <!-- Service History Drawer -->
         <div x-show="activeService" class="fixed inset-0 z-50 flex justify-end overflow-hidden" x-cloak>
@@ -135,7 +132,7 @@ import ServiceNav from '../components/ServiceNav.astro';
     </div>
 </Layout>
 
-<script is:inline>
+<script>
     document.addEventListener('alpine:init', () => {
         Alpine.data('botoCore', () => ({
             selectedVersion: '',
@@ -145,6 +142,7 @@ import ServiceNav from '../components/ServiceNav.astro';
             serviceSearch: '',
             versionSearch: '',
             versionRailSearch: '',
+            railLimit: 50,
             activeService: null,
             serviceHistory: [],
             serviceHistorySearch: '',
@@ -152,6 +150,10 @@ import ServiceNav from '../components/ServiceNav.astro';
             showMobileVersions: false,
             error: null,
             loading: true,
+
+            isMobile(breakpoint = 768) {
+                return window.matchMedia(`(max-width: ${breakpoint-1}px)`).matches;
+            },
 
             async init() {
                 try {
@@ -175,19 +177,22 @@ import ServiceNav from '../components/ServiceNav.astro';
             async selectVersion(id) {
                 this.selectedVersion = id;
                 this.versionSearch = '';
+                this.currentVersionData = []; // Clear current data to trigger skeleton
                 try {
                     const res = await fetch(`/data/versions/${id}.json`);
                     if (!res.ok) throw new Error(`Version ${id} not found`);
                     this.currentVersionData = await res.json();
                     
                     // Update Glow Position
-                    setTimeout(() => {
-                        const rail = document.querySelector('.group\\/rail');
-                        const activeBtn = rail?.querySelector(`button[data-version="${id}"]`);
-                        if (rail && activeBtn) {
-                            rail.style.setProperty('--glow-top', activeBtn.offsetTop + 'px');
-                        }
-                    }, 50);
+                    requestAnimationFrame(() => {
+                        this.$nextTick(() => {
+                            const rail = document.querySelector('.group\\/rail');
+                            const activeBtn = rail?.querySelector(`button[data-version="${id}"]`);
+                            if (rail && activeBtn) {
+                                rail.style.setProperty('--glow-top', activeBtn.offsetTop + 'px');
+                            }
+                        });
+                    });
                 } catch (e) { 
                     console.error(e);
                     this.error = `Could not load version ${id}.`;
@@ -225,8 +230,23 @@ import ServiceNav from '../components/ServiceNav.astro';
             },
 
             get filteredRailVersions() {
-                if (!this.versionRailSearch) return this.versions;
-                return this.versions.filter(v => v.id.includes(this.versionRailSearch));
+                const search = this.versionRailSearch.toLowerCase();
+                const base = search 
+                    ? this.versions.filter(v => v.id.toLowerCase().includes(search))
+                    : this.versions;
+                return base.slice(0, this.railLimit);
+            },
+
+            get hasMoreVersions() {
+                const search = this.versionRailSearch.toLowerCase();
+                const total = search 
+                    ? this.versions.filter(v => v.id.toLowerCase().includes(search)).length
+                    : this.versions.length;
+                return this.railLimit < total;
+            },
+
+            loadMoreVersions() {
+                this.railLimit += 50;
             },
 
             get filteredServiceHistory() {

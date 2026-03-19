@@ -12,7 +12,18 @@ export default defineConfig({
   site: 'https://boto-tracks.tunaxia.com/',
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
+          }
+        }
+      }
+    }
   },
 
   adapter: cloudflare(),
