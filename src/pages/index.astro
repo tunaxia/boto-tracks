@@ -177,9 +177,9 @@ import ServiceNav from '../components/ServiceNav.astro';
             async selectVersion(id) {
                 this.selectedVersion = id;
                 this.versionSearch = '';
-                this.currentVersionData = []; // Clear current data to trigger skeleton
+                this.currentVersionData = []; 
 
-                // Senior Dev: Ensure view resets to top on version change
+                // Reset scroll position
                 const mainContainer = document.querySelector('main.flex-1');
                 if (mainContainer) mainContainer.scrollTo({ top: 0, behavior: 'instant' });
 
@@ -188,7 +188,7 @@ import ServiceNav from '../components/ServiceNav.astro';
                     if (!res.ok) throw new Error(`Version ${id} not found`);
                     this.currentVersionData = await res.json();
                     
-                    // Update Glow Position
+                    // Sync rail indicator
                     requestAnimationFrame(() => {
                         this.$nextTick(() => {
                             const rail = document.querySelector('.group\\/rail');

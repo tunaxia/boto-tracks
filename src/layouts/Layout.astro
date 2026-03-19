@@ -45,7 +45,7 @@ const { title } = Astro.props;
 		<link rel="preload" href="/data/track.json" as="fetch" crossorigin="anonymous">
 
 		<script is:inline>
-			// Purely automatic theme initialization based on system preference
+			// System theme sync
 			(function() {
 				const setTheme = () => {
 					const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -112,7 +112,7 @@ const { title } = Astro.props;
 	<body class="h-screen overflow-hidden text-slate-400">
 		<slot />
 
-		<!-- Static SEO Content (Hidden from users, visible to Search Engines) -->
+		<!-- SEO Fallback -->
 		<footer class="sr-only">
 			<section>
 				<h2>About Boto Tracks</h2>

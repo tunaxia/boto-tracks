@@ -43,7 +43,7 @@ h1, h2, h3, h4, button {
     display: none !important; 
 }
 
-/* Senior Dev: Clear, consistent focus states for accessibility */
+/* High-visibility focus states */
 :focus-visible {
     outline: 2px solid #f97316;
     outline-offset: 2px;
