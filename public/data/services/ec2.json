@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.72",
+    "t": "Amazon EC2 Fleet instant mode now supports launching instances into Interruptible Capacity Reservations, enabling customers to use spare capacity shared by Capacity Reservation owners within their AWS Organization."
+  },
+  {
     "v": "1.42.71",
     "t": "The DescribeInstanceTypes API now returns default connection tracking timeout values for TCP, UDP, and UDP stream via the new connectionTrackingConfiguration field on NetworkInfo."
   },

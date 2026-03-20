@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.72",
+    "t": "Adding a new field in the CreateCentralizationRuleForOrganization, UpdateCentralizationRuleForOrganization API and updating the GetCentralizationRuleForOrganization API response to include the new field"
+  },
+  {
     "v": "1.42.56",
     "t": "Adding a new field in the CreateCentralizationRuleForOrganization, UpdateCentralizationRuleForOrganization API and updating the GetCentralizationRuleForOrganization API response to include the new field"
   },
