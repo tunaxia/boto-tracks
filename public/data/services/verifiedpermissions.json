@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.73",
+    "t": "Adds support for Policy Store Aliases, Policy Names, and Policy Template Names. These are customizable identifiers that can be used in place of Policy Store ids, Policy ids, and Policy Template ids respectively in Amazon Verified Permissions APIs."
+  },
+  {
     "v": "1.42.33",
     "t": "Adding documentation to user guide and API documentation for how customers can create new encrypted policy stores by passing in their customer managed key during policy store creation."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.73",
+    "t": "Adding ReplicaArn to ReplicaDescription of a global table replica"
+  },
+  {
     "v": "1.42.55",
     "t": "This change supports the creation of multi-account global tables. It adds one new arguments to UpdateTable, GlobalTableSettingsReplicationMode."
   },

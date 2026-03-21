@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.73",
+    "t": "Added support for Amazon Managed Service for Prometheus (AMP) as a connected data source in OpenSearch UI. Now users can analyze Prometheus metrics in OpenSearch UI without data copy."
+  },
+  {
     "v": "1.42.64",
     "t": "This change enables cross-account and cross-region access for DataSources. Customers can now define access policies on their datasources to allow other AWS accounts to access and query their data."
   },
