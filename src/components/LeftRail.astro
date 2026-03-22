@@ -1,87 +1,92 @@
 <aside :class="showMobileVersions ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'"
-       class="fixed lg:relative inset-y-0 left-0 w-36 md:w-48 flex-shrink-0 border-r border-subtle flex flex-col bg-sidebar z-[100] lg:z-20 transition-all duration-500 ease-in-out theme-transition">
+       class="fixed lg:relative inset-y-0 left-0 w-40 md:w-52 flex-shrink-0 border-r border-slate-200 dark:border-white/5 flex flex-col bg-sidebar z-[100] lg:z-20 transition-all duration-500 ease-in-out theme-transition">
     
     <!-- Mobile Header -->
-    <div class="lg:hidden flex items-center justify-between p-6 border-b border-subtle bg-card">
-        <span class="text-orange-500 font-black italic tracking-tighter uppercase text-[10px]">Releases</span>
+    <div class="lg:hidden flex items-center justify-between px-6 py-5 border-b border-subtle bg-card backdrop-blur-md">
+        <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></span>
+            <span class="text-slate-900 dark:text-white font-black italic tracking-tighter uppercase text-[11px]">Releases</span>
+        </div>
         <button @click="showMobileVersions = false" aria-label="Close versions sidebar" class="p-2 text-slate-400 hover:text-orange-500 transition-colors">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
         </button>
     </div>
 
     <!-- Brand Area -->
-    <div class="hidden lg:flex h-44 flex-col items-center justify-center flex-shrink-0 relative z-30 bg-sidebar theme-transition border-b border-subtle">
+    <div class="hidden lg:flex h-40 flex-col items-center justify-center flex-shrink-0 relative z-30 border-b border-slate-200 dark:border-white/5 group/brand bg-sidebar">
         <button @click="location.reload()" 
                 aria-label="Reload page"
-                class="w-14 h-14 bg-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-500/20 cursor-pointer hover:rotate-12 hover:scale-110 transition-all duration-300 active:scale-95 group relative mb-5">
-            <img src="/favicon.png" width="36" height="36" alt="Boto Tracks by Tunaxia" class="w-9 h-9 pointer-events-none" />
+                class="w-14 h-14 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[22px] flex items-center justify-center shadow-sm cursor-pointer group-hover:rotate-[10deg] group-hover:scale-105 transition-all duration-500 active:scale-95 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover/brand:opacity-100 transition-opacity"></div>
+            <img src="/favicon.png" width="32" height="32" alt="Boto Tracks" class="w-8 h-8 pointer-events-none relative z-10" />
         </button>
-        <div class="flex flex-col items-center text-center px-4">
-            <h1 class="text-[11px] font-black italic uppercase tracking-tighter text-main leading-none">Boto Tracks</h1>
-            <p class="text-[7px] mono text-slate-500 dark:text-slate-400 uppercase tracking-widest mt-2.5 leading-tight opacity-80">AWS Botocore & Boto3 Changelog Intelligence</p>
+        <div class="flex flex-col items-center text-center mt-4 px-4">
+            <h1 class="text-[12px] font-black italic uppercase tracking-tighter text-slate-900 dark:text-white leading-none">Boto Tracks</h1>
+            <div class="h-[1px] w-4 bg-orange-500/30 my-2"></div>
+            <p class="text-[7px] mono text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] leading-tight font-bold">Intelligence Core</p>
         </div>
     </div>
 
     <!-- Search Section -->
-    <div class="p-5 lg:pb-5 border-b border-subtle bg-sidebar theme-transition">
-        <div class="relative group">
+    <div class="p-5 border-b border-slate-200 dark:border-white/5 bg-sidebar">
+        <div class="relative group/search">
             <input type="text" id="versionRailSearch" name="versionRailSearch" aria-label="Search versions" x-model.debounce.200ms="versionRailSearch" 
                    @input="railLimit = 50"
-                   placeholder="Jump to..." 
-                   class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-xl py-3 lg:py-2.5 pl-10 pr-3 text-[11px] lg:text-[10px] focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner">
-            <svg class="absolute left-3.5 top-3.5 lg:top-3 lg:left-3 w-3.5 h-3.5 lg:w-3 lg:h-3 text-slate-400 dark:text-slate-600 group-focus-within:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                   placeholder="Jump to release..." 
+                   class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-2xl py-2.5 pl-10 pr-3 text-[11px] lg:text-[10px] focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner font-medium">
+            <svg class="absolute left-3.5 top-[11px] lg:top-[9px] lg:left-3.5 w-3.5 h-3.5 lg:w-3 lg:h-3 text-slate-400 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
         </div>
     </div>
     
     <!-- Version Rail -->
-    <div class="flex-1 w-full relative group/rail overflow-hidden flex flex-col">
-        <div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[1px] bg-black/10 dark:bg-white/10 z-0"></div>
-        <div class="absolute left-1/2 -translate-x-1/2 w-[2px] bg-orange-500 shadow-[0_0_15px_rgba(249,115,22,0.6)] z-10 transition-all duration-500"
-             style="height: 48px; transform: translateY(var(--glow-top, 0px));"
-             x-show="selectedVersion && !versionRailSearch"></div>
+    <div class="flex-1 w-full relative group/rail overflow-hidden flex flex-col bg-sidebar">
+        <div class="flex-1 overflow-y-auto hide-scrollbar relative z-20 px-4 py-6">
+            <div class="flex flex-col gap-2 relative">
+                <!-- Glow Indicator -->
+                <div class="absolute -left-4 w-[3px] bg-orange-500 shadow-[0_0_15px_rgba(249,115,22,0.8)] z-40 transition-all duration-500 rounded-r-full"
+                     style="height: 32px; transform: translateY(calc(var(--glow-top, 0px) + 6px));"
+                     x-show="selectedVersion && !versionRailSearch"></div>
 
-        <div class="flex-1 overflow-y-auto hide-scrollbar relative z-20 px-6 lg:px-5">
-            <div class="flex flex-col items-center gap-6 lg:gap-5 py-10 lg:py-8 pb-24 relative">
                 <template x-for="v in filteredRailVersions" :key="v.id">
                     <button @click="selectVersion(v.id); if(isMobile(1024)) showMobileVersions = false;" 
                             :data-version="v.id"
-                            :class="selectedVersion === v.id ? 'border-orange-500 bg-white dark:bg-[#0a0a0a] scale-105 shadow-xl opacity-100' : 'border-transparent bg-sidebar dark:bg-[#0a0a0a] opacity-70 hover:opacity-100 hover:scale-105'"
-                            class="relative w-full max-w-[140px] lg:max-w-[130px] h-14 lg:h-12 border-2 rounded-2xl lg:rounded-xl flex items-center justify-center transition-all duration-500 group flex-shrink-0 z-30 shadow-sm overflow-hidden">
-                        <div class="absolute inset-0 bg-inherit z-0"></div>
-                        <span class="text-[12px] lg:text-[11px] mono font-black tracking-tight relative z-10" 
-                              :class="selectedVersion === v.id ? 'text-orange-500' : 'text-slate-800 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-white'" 
-                              x-text="v.id"></span>
+                            :class="selectedVersion === v.id ? 'bg-white dark:bg-white/10 text-orange-500 shadow-md ring-1 ring-black/5 dark:ring-white/10' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-white/50 dark:hover:bg-white/5'"
+                            class="relative w-full h-12 lg:h-11 px-4 rounded-xl flex items-center justify-between transition-all duration-300 group/item flex-shrink-0 z-30">
+                        <span class="text-[12px] lg:text-[11px] mono font-black tracking-tight" x-text="v.id"></span>
+                        <svg x-show="selectedVersion === v.id" class="w-3 h-3 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
                     </button>
                 </template>
 
                 <!-- Load More -->
                 <template x-if="hasMoreVersions">
                     <button @click="loadMoreVersions()" 
-                            class="w-full max-w-[130px] py-3 rounded-xl border border-subtle bg-slate-50/50 dark:bg-white/5 hover:bg-orange-500/5 hover:border-orange-500/30 text-[9px] mono font-bold text-slate-400 hover:text-orange-500 transition-all uppercase tracking-widest active:scale-95 shadow-sm">
+                            class="mt-4 w-full py-3 rounded-xl border border-slate-200 dark:border-white/5 bg-white/50 dark:bg-white/5 hover:bg-orange-500/5 hover:border-orange-500/30 text-[9px] mono font-black text-slate-400 hover:text-orange-500 transition-all uppercase tracking-[0.2em] active:scale-95 shadow-sm">
                         Load More
                     </button>
                 </template>
             </div>
         </div>
-        <div class="absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-sidebar to-transparent z-40 pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-sidebar to-transparent z-40 pointer-events-none"></div>
+        
+        <!-- Edge Fades -->
+        <div class="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-sidebar to-transparent z-40 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-sidebar to-transparent z-40 pointer-events-none"></div>
     </div>
 
     <!-- Sidebar Footer Actions -->
-    <div class="p-6 border-t border-subtle bg-card hidden md:block theme-transition relative overflow-hidden group">
-        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-        <div class="flex items-center justify-between relative z-10">
-            <div class="flex flex-col">
-                <div class="flex items-center gap-1.5 mb-1">
-                    <span class="w-1 h-1 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span class="text-[9px] mono text-slate-400 dark:text-slate-600 uppercase tracking-widest">Live Tracks</span>
+    <div class="p-4 border-t border-slate-200 dark:border-white/5 bg-card hidden md:block theme-transition relative overflow-hidden group/status">
+        <div class="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl p-4 shadow-sm hover:border-orange-500/20 transition-all">
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="text-[9px] mono text-slate-400 dark:text-slate-600 uppercase tracking-widest font-black">Live</span>
                 </div>
-                <span class="text-2xl font-black text-slate-900 dark:text-white italic tracking-tighter" x-text="versions.length"></span>
+                <svg class="w-3 h-3 text-slate-300 dark:text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </div>
-            <div class="w-10 h-10 rounded-xl bg-orange-500/5 border border-orange-500/10 flex items-center justify-center group-hover:border-orange-500/30 transition-all group-hover:scale-110 shadow-sm">
-                <svg class="w-5 h-5 text-orange-500/80 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
+            <div class="flex flex-col">
+                <span class="text-2xl font-black text-slate-900 dark:text-white italic tracking-tighter leading-none" x-text="versions.length"></span>
+                <span class="text-[8px] mono text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-1.5">Total Tracks</span>
             </div>
         </div>
     </div>

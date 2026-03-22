@@ -8,9 +8,11 @@
             </button>
 
             <!-- Mobile Brand Title -->
-            <div class="md:hidden flex items-center mr-2">
-                <span class="text-[10px] font-black italic uppercase tracking-tighter text-orange-500">Boto Tracks</span>
-            </div>
+            <button @click="location.reload()" 
+                    aria-label="Refresh page"
+                    class="md:hidden flex items-center mr-2 active:scale-95 transition-transform cursor-pointer group/mobile-brand">
+                <span class="text-[10px] font-black italic uppercase tracking-tighter text-orange-500 group-hover/mobile-brand:text-orange-400 transition-colors">Boto Tracks</span>
+            </button>
 
             <div class="flex items-center">
                 <span class="hidden sm:inline text-slate-500 dark:text-slate-400 font-medium mr-3 text-[10px] uppercase tracking-widest">Release</span>
