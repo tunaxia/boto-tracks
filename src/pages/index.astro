@@ -110,8 +110,20 @@ import ServiceNav from '../components/ServiceNav.astro';
                         <div class="absolute left-[19px] top-0 bottom-0 w-[1px] bg-slate-200 dark:bg-white/10"></div>
                         
                         <div class="space-y-6">
+                            <!-- Loading State -->
+                            <template x-if="serviceHistoryLoading">
+                                <div class="space-y-6 animate-pulse">
+                                    <template x-for="i in 5">
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-[14px] top-2 w-2.5 h-2.5 rounded-full bg-slate-200 dark:bg-white/10"></div>
+                                            <div class="h-24 bg-slate-50 dark:bg-white/[0.03] rounded-[20px] border border-slate-200 dark:border-white/5"></div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+
                             <template x-for="log in filteredServiceHistory" :key="log.v + log.t">
-                                <div class="relative pl-12 group/history">
+                                <div x-show="!serviceHistoryLoading" class="relative pl-12 group/history">
                                     <div class="absolute left-[14px] top-2 w-2.5 h-2.5 rounded-full bg-white dark:bg-black border-2 border-slate-300 dark:border-white/20 shadow-sm z-10 transition-colors group-hover/history:border-orange-500"></div>
                                     
                                     <div class="flex flex-col gap-2.5 p-5 bg-slate-50/50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 rounded-[20px] hover:bg-white dark:hover:bg-white/[0.06] hover:border-orange-500/20 transition-all duration-300 overflow-hidden shadow-sm hover:shadow-md">
@@ -157,6 +169,7 @@ import ServiceNav from '../components/ServiceNav.astro';
             activeService: null,
             serviceHistory: [],
             serviceHistorySearch: '',
+            serviceHistoryLoading: false,
             showMobileServices: false,
             showMobileVersions: false,
             error: null,
@@ -199,13 +212,10 @@ import ServiceNav from '../components/ServiceNav.astro';
                     return;
                 }
 
-                // If not in cache, update header/rail but keep content for a moment (seamless)
-                // or clear it if we want a skeleton. Let's try clearing to show the skeleton
-                // to avoid showing stale data with new version header.
                 this.selectedVersion = id;
                 this.currentVersionData = []; 
                 document.title = `Release ${id} | Boto Tracks`;
-                this.syncIndicator(id, false); // Move rail glow but don't scroll yet
+                this.syncIndicator(id, false); 
 
                 try {
                     const res = await fetch(`/data/versions/${id}.json`);
@@ -215,7 +225,7 @@ import ServiceNav from '../components/ServiceNav.astro';
                     
                     if (this.selectedVersion === id) {
                         this.currentVersionData = data;
-                        this.syncIndicator(id, true); // Now scroll to top
+                        this.syncIndicator(id, true);
                     }
                 } catch (e) { 
                     this.error = `Connection lost: ${id}`;
@@ -228,8 +238,8 @@ import ServiceNav from '../components/ServiceNav.astro';
 
             syncIndicator(id, scroll = true) {
                 if (scroll) {
-                    const main = document.querySelector('main.flex-1');
-                    if (main) main.scrollTo({ top: 0, behavior: 'instant' });
+                    const scrollContainer = document.querySelector('.overflow-y-auto.custom-scroll');
+                    if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'instant' });
                 }
 
                 requestAnimationFrame(() => {
@@ -245,7 +255,8 @@ import ServiceNav from '../components/ServiceNav.astro';
 
             async openService(svc) {
                 this.activeService = svc;
-                // Don't clear history immediately to avoid flicker if it's already there
+                this.serviceHistory = [];
+                this.serviceHistoryLoading = true;
                 this.serviceHistorySearch = '';
                 const serviceId = svc.toLowerCase().trim().replace(/[\._\s]+/g, '-').replace(/-+/g, '-');
                 
@@ -258,6 +269,8 @@ import ServiceNav from '../components/ServiceNav.astro';
                     }
                 } catch (e) { 
                     if (this.activeService === svc) this.serviceHistory = []; 
+                } finally {
+                    if (this.activeService === svc) this.serviceHistoryLoading = false;
                 }
             },
 

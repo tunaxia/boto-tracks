@@ -88,13 +88,13 @@
                                     </button>
                                     
                                     <div :class="{
-                                        'text-amber-600 dark:text-amber-400 border-amber-500/20 bg-amber-500/5': change.type.toLowerCase().includes('fix'),
+                                        'text-rose-600 dark:text-rose-400 border-rose-500/20 bg-rose-500/5': change.type.toLowerCase().includes('fix'),
                                         'text-blue-600 dark:text-blue-400 border-blue-500/20 bg-blue-500/5': change.type.toLowerCase().includes('enhan'),
                                         'text-emerald-600 dark:text-emerald-400 border-emerald-500/20 bg-emerald-500/5': change.type.toLowerCase().includes('feature') || change.type.toLowerCase().includes('api'),
                                         'text-slate-600 dark:text-slate-400 border-slate-500/20 bg-slate-500/5': !['fix', 'enhan', 'feature', 'api'].some(t => change.type.toLowerCase().includes(t))
                                     }" class="flex-shrink-0 flex items-center gap-1.5 px-2 py-0.5 rounded-md border text-[8px] mono font-bold uppercase tracking-[0.1em] transition-all group-hover:scale-105 shadow-sm opacity-80 group-hover:opacity-100">
                                         <div :class="{
-                                            'bg-amber-500 shadow-[0_0_6px_rgba(245,158,11,0.3)]': change.type.toLowerCase().includes('fix'),
+                                            'bg-rose-500 shadow-[0_0_6px_rgba(244,63,94,0.3)]': change.type.toLowerCase().includes('fix'),
                                             'bg-blue-500 shadow-[0_0_6px_rgba(59,130,246,0.3)]': change.type.toLowerCase().includes('enhan'),
                                             'bg-emerald-500 shadow-[0_0_6px_rgba(16,185,129,0.3)]': change.type.toLowerCase().includes('feature') || change.type.toLowerCase().includes('api'),
                                             'bg-slate-500': !['fix', 'enhan', 'feature', 'api'].some(t => change.type.toLowerCase().includes(t))
