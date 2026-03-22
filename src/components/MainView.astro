@@ -71,9 +71,8 @@
                     </template>
 
                     <!-- Changelog Feed -->
-                    <template x-for="change in filteredVersionData" :key="selectedVersion + change.category + change.description">
-                        <div class="group flex items-start gap-4 md:gap-6 py-6 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-all duration-500 -mx-4 px-4 rounded-2xl relative animate-slide-up"
-                             x-show="true">
+                    <template x-for="change in filteredVersionData" :key="change.category + '-' + change.type + '-' + change.description">
+                        <div class="group flex items-start gap-4 md:gap-6 py-6 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-all duration-500 -mx-4 px-4 rounded-2xl relative animate-slide-up">
                             <div class="absolute inset-0 bg-gradient-to-r from-orange-500/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
                             
                             <div class="w-9 h-9 rounded-xl bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-orange-500/30 transition-all shadow-sm relative z-10">
@@ -87,10 +86,13 @@
                                             x-text="change.category"></button>
                                     
                                     <span :class="{
-                                        'text-emerald-600 dark:text-emerald-400': change.type.includes('change') || change.type.includes('api'),
-                                        'text-amber-600 dark:text-amber-400': change.type.includes('fix'),
-                                        'text-blue-600 dark:text-blue-400': !change.type.includes('change') && !change.type.includes('fix') && !change.type.includes('api')
-                                    }" class="flex-shrink-0 whitespace-nowrap text-[9px] font-black uppercase tracking-[0.2em] opacity-90" x-text="change.type.includes('api') ? 'api change' : change.type"></span>
+                                        'text-amber-600 dark:text-amber-400': change.type.toLowerCase().includes('fix'),
+                                        'text-blue-600 dark:text-blue-400': change.type.toLowerCase().includes('enhan'),
+                                        'text-emerald-600 dark:text-emerald-400': change.type.toLowerCase().includes('feature') || change.type.toLowerCase().includes('api'),
+                                        'text-slate-600 dark:text-slate-400': !['fix', 'enhan', 'feature', 'api'].some(t => change.type.toLowerCase().includes(t))
+                                    }" 
+                                          class="flex-shrink-0 whitespace-nowrap text-[9px] font-black uppercase tracking-[0.2em] opacity-90" 
+                                          x-text="change.type.includes('api') ? 'api change' : change.type"></span>
                                 </div>
                                 <p class="text-slate-700 dark:text-slate-200 leading-[1.6] text-[13px] md:text-[14px] font-medium tracking-tight group-hover:text-slate-900 dark:group-hover:text-white transition-colors break-words" x-text="change.description"></p>
                             </div>
@@ -99,7 +101,7 @@
                 </div>
                 
                 <!-- Zero State -->
-                <template x-if="filteredVersionData.length === 0">
+                <template x-if="currentVersionData.length > 0 && filteredVersionData.length === 0">
                     <div class="flex flex-col items-center justify-center py-24 text-center animate-slide-up">
                         <div class="w-16 h-16 bg-slate-100 dark:bg-white/10 border border-subtle dark:border-white/10 rounded-2xl flex items-center justify-center mb-6 shadow-inner opacity-50">
                             <svg class="w-8 h-8 text-slate-400 dark:text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>

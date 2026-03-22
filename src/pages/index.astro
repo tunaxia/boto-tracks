@@ -189,33 +189,48 @@ import ServiceNav from '../components/ServiceNav.astro';
                 if (this.selectedVersion === id && this.currentVersionData.length > 0) return;
                 
                 const prevVersion = this.selectedVersion;
-                this.selectedVersion = id;
-                document.title = `Release ${id} | Boto Tracks`;
                 
                 // If in cache, swap immediately
                 if (this.versionCache[id]) {
+                    this.selectedVersion = id;
                     this.currentVersionData = this.versionCache[id];
+                    document.title = `Release ${id} | Boto Tracks`;
                     this.syncIndicator(id);
                     return;
                 }
 
-                // Seamless background fetch (no loading = true)
+                // If not in cache, update header/rail but keep content for a moment (seamless)
+                // or clear it if we want a skeleton. Let's try clearing to show the skeleton
+                // to avoid showing stale data with new version header.
+                this.selectedVersion = id;
+                this.currentVersionData = []; 
+                document.title = `Release ${id} | Boto Tracks`;
+                this.syncIndicator(id, false); // Move rail glow but don't scroll yet
+
                 try {
                     const res = await fetch(`/data/versions/${id}.json`);
                     if (!res.ok) throw new Error(`Release dossier ${id} missing`);
                     const data = await res.json();
                     this.versionCache[id] = data;
-                    this.currentVersionData = data;
-                    this.syncIndicator(id);
+                    
+                    if (this.selectedVersion === id) {
+                        this.currentVersionData = data;
+                        this.syncIndicator(id, true); // Now scroll to top
+                    }
                 } catch (e) { 
                     this.error = `Connection lost: ${id}`;
                     this.selectedVersion = prevVersion;
+                    if (prevVersion && this.versionCache[prevVersion]) {
+                        this.currentVersionData = this.versionCache[prevVersion];
+                    }
                 }
             },
 
-            syncIndicator(id) {
-                const main = document.querySelector('main.flex-1');
-                if (main) main.scrollTo({ top: 0, behavior: 'instant' });
+            syncIndicator(id, scroll = true) {
+                if (scroll) {
+                    const main = document.querySelector('main.flex-1');
+                    if (main) main.scrollTo({ top: 0, behavior: 'instant' });
+                }
 
                 requestAnimationFrame(() => {
                     this.$nextTick(() => {
@@ -230,16 +245,19 @@ import ServiceNav from '../components/ServiceNav.astro';
 
             async openService(svc) {
                 this.activeService = svc;
-                this.serviceHistory = [];
+                // Don't clear history immediately to avoid flicker if it's already there
                 this.serviceHistorySearch = '';
                 const serviceId = svc.toLowerCase().trim().replace(/[\._\s]+/g, '-').replace(/-+/g, '-');
                 
                 try {
                     const res = await fetch(`/data/services/${serviceId}.json`);
                     if (!res.ok) throw new Error('Service data unavailable');
-                    this.serviceHistory = await res.json();
+                    const data = await res.json();
+                    if (this.activeService === svc) {
+                        this.serviceHistory = data;
+                    }
                 } catch (e) { 
-                    this.serviceHistory = []; 
+                    if (this.activeService === svc) this.serviceHistory = []; 
                 }
             },
 
@@ -274,7 +292,7 @@ import ServiceNav from '../components/ServiceNav.astro';
             get filteredVersionData() {
                 let data = this.currentVersionData;
                 if (this.activeFilter === 'feature') {
-                    data = data.filter(i => i.type.includes('feature') || i.type.includes('api') || i.type.includes('change'));
+                    data = data.filter(i => !i.type.includes('fix'));
                 } else if (this.activeFilter === 'fix') {
                     data = data.filter(i => i.type.includes('fix'));
                 }
