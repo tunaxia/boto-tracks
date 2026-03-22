@@ -86,8 +86,8 @@
                             <div class="flex-1 min-w-0 relative z-10">
                                 <div class="flex items-center gap-3 mb-3">
                                     <button @click="openService(change.category)" 
-                                            class="flex-shrink-0 flex items-center gap-2 px-3 py-1 bg-orange-500/5 dark:bg-orange-500/10 border border-orange-500/20 dark:border-orange-500/30 rounded-lg text-[9px] mono font-black text-orange-600 dark:text-orange-400 transition-all duration-300 uppercase tracking-[0.12em] shadow-sm outline-none group-hover:scale-105 group-hover:bg-orange-500/20 group-hover:border-orange-500/50 hover:!bg-orange-500 hover:!text-white hover:!border-orange-600 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] active:scale-90">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.4)] animate-pulse-slow group-hover:animate-pulse hover:!bg-white hover:!shadow-[0_0_12px_white]"></div>
+                                            class="group/link flex-shrink-0 flex items-center gap-2 px-3 py-1 bg-orange-500/5 dark:bg-orange-500/10 border border-orange-500/20 dark:border-orange-500/30 rounded-lg text-[9px] mono font-black text-orange-600 dark:text-orange-400 transition-all duration-300 uppercase tracking-[0.12em] shadow-sm outline-none group-hover:scale-105 group-hover:bg-orange-500/20 group-hover:border-orange-500/50 hover:!bg-orange-500 hover:!text-white hover:!border-orange-600 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] active:scale-90">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.4)] animate-pulse-slow group-hover:animate-pulse group-hover/link:bg-white group-hover/link:shadow-[0_0_12px_white] transition-all"></div>
                                         <span x-text="change.category"></span>
                                     </button>
                                     
