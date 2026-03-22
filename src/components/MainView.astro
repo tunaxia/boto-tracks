@@ -1,18 +1,17 @@
 <main class="flex-1 flex flex-col min-w-0 bg-inherit relative theme-transition">
     
-    <header class="h-16 border-b border-subtle flex items-center justify-between px-4 md:px-12 bg-white/80 dark:bg-header backdrop-blur-xl sticky top-0 z-50">
+    <header class="h-16 border-b border-subtle flex items-center justify-between px-4 md:px-12 bg-white/80 dark:bg-[#0a0a0a]/90 backdrop-blur-xl sticky top-0 z-50">
         <div class="flex items-center gap-6">
-            <!-- Mobile Releases Toggle -->
+            <!-- Mobile Navigation -->
             <button @click="showMobileVersions = true" 
                     aria-label="Releases" 
-                    class="lg:hidden p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-all active:scale-90 focus-visible:ring-2 focus-visible:ring-orange-500/50 outline-none">
+                    class="lg:hidden p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-all active:scale-90 outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
             </button>
 
-            <!-- Mobile Reload -->
             <button @click="location.reload()" 
                     aria-label="Refresh"
-                    class="md:hidden flex items-center mr-2 active:scale-95 transition-transform cursor-pointer">
+                    class="md:hidden flex items-center mr-2 active:scale-95 transition-transform">
                 <span class="text-[11px] font-black italic uppercase tracking-tighter text-orange-500">Boto Tracks</span>
             </button>
 
@@ -23,24 +22,21 @@
                 </div>
             </div>
             
-            <!-- Global Search -->
             <div class="hidden md:block relative w-48 lg:w-64 group/search">
-                <label for="versionSearch" class="sr-only">Filter logs</label>
-                <input type="text" id="versionSearch" name="versionSearch" x-model.debounce.200ms="versionSearch" placeholder="Filter release logs..." 
+                <label for="versionSearch" class="sr-only">Filter</label>
+                <input type="text" id="versionSearch" name="versionSearch" x-model.debounce.200ms="versionSearch" placeholder="Filter logs..." 
                        class="w-full bg-slate-100 dark:bg-white/[0.05] border border-transparent focus:border-orange-500/20 rounded-full py-1.5 pl-9 pr-4 text-[11px] focus:outline-none transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-inner font-medium">
                 <svg class="absolute left-3 top-2 w-3.5 h-3.5 text-slate-400 dark:text-slate-500 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
             </div>
         </div>
         
         <div class="flex items-center gap-3">
-            <!-- Category Filters -->
             <nav class="hidden lg:flex items-center gap-1 p-1 bg-slate-100 dark:bg-white/5 rounded-full border border-subtle" aria-label="Filters">
-                <button @click="activeFilter = 'all'" :aria-pressed="activeFilter === 'all'" :class="activeFilter === 'all' ? 'bg-white dark:bg-white/10 text-orange-500 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95 outline-none">All</button>
-                <button @click="activeFilter = 'feature'" :aria-pressed="activeFilter === 'feature'" :class="activeFilter === 'feature' ? 'bg-white dark:bg-white/10 text-emerald-500 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95 outline-none">Features</button>
-                <button @click="activeFilter = 'fix'" :aria-pressed="activeFilter === 'fix'" :class="activeFilter === 'fix' ? 'bg-white dark:bg-white/10 text-amber-500 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95 outline-none">Fixes</button>
+                <button @click="activeFilter = 'all'" :aria-pressed="activeFilter === 'all'" :class="activeFilter === 'all' ? 'bg-white dark:bg-white/10 text-orange-500 shadow-sm' : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95 outline-none">All</button>
+                <button @click="activeFilter = 'feature'" :aria-pressed="activeFilter === 'feature'" :class="activeFilter === 'feature' ? 'bg-white dark:bg-white/10 text-emerald-500 shadow-sm' : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95 outline-none">Features</button>
+                <button @click="activeFilter = 'fix'" :aria-pressed="activeFilter === 'fix'" :class="activeFilter === 'fix' ? 'bg-white dark:bg-white/10 text-amber-500 shadow-sm' : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95 outline-none">Fixes</button>
             </nav>
 
-            <!-- Mobile Directory Toggle -->
             <button @click="showMobileServices = true" 
                     aria-label="Directory" 
                     class="md:hidden p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-all active:scale-90 outline-none">
@@ -52,15 +48,14 @@
     <div class="flex-1 overflow-y-auto p-6 md:p-12 custom-scroll bg-transparent">
         <div class="max-w-4xl mx-auto min-h-[calc(100vh-140px)] flex flex-col">
             <div class="flex-1">
-                <!-- Mobile Global Filter -->
+                <!-- Mobile Search -->
                 <div class="sm:hidden mb-8">
-                    <label for="versionSearchMobile" class="sr-only">Search</label>
-                    <input type="text" id="versionSearchMobile" name="versionSearchMobile" x-model.debounce.200ms="versionSearch" placeholder="Search version logs..." 
+                    <input type="text" id="versionSearchMobile" x-model.debounce.200ms="versionSearch" placeholder="Search logs..." 
                            class="w-full bg-slate-100 dark:bg-white/[0.05] border border-subtle dark:border-white/10 rounded-2xl py-3.5 px-6 text-sm focus:outline-none transition-all text-slate-900 dark:text-white shadow-inner font-medium">
                 </div>
 
                 <div class="divide-y divide-slate-200/50 dark:divide-white/10">
-                    <!-- Initial Loader -->
+                    <!-- Loading Sequence -->
                     <template x-if="currentVersionData.length === 0">
                         <div class="space-y-8 animate-pulse pt-4">
                             <template x-for="i in 5">
@@ -75,16 +70,12 @@
                         </div>
                     </template>
 
+                    <!-- Changelog Feed -->
                     <template x-for="change in filteredVersionData" :key="selectedVersion + change.category + change.description">
-                        <div class="group flex items-start gap-4 md:gap-6 py-6 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-all duration-500 -mx-4 px-4 rounded-2xl relative"
-                             x-show="true"
-                             x-transition:enter="transition ease-out duration-200"
-                             x-transition:enter-start="opacity-0 translate-y-1"
-                             x-transition:enter-end="opacity-100 translate-y-0">
-                            
+                        <div class="group flex items-start gap-4 md:gap-6 py-6 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-all duration-500 -mx-4 px-4 rounded-2xl relative animate-slide-up"
+                             x-show="true">
                             <div class="absolute inset-0 bg-gradient-to-r from-orange-500/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
                             
-                            <!-- Service Icon -->
                             <div class="w-9 h-9 rounded-xl bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-orange-500/30 transition-all shadow-sm relative z-10">
                                 <span class="text-orange-500 font-black mono text-[10px]" x-text="change.category.substring(0,2).toUpperCase()"></span>
                             </div>
@@ -107,6 +98,7 @@
                     </template>
                 </div>
                 
+                <!-- Zero State -->
                 <template x-if="filteredVersionData.length === 0">
                     <div class="flex flex-col items-center justify-center py-24 text-center animate-slide-up">
                         <div class="w-16 h-16 bg-slate-100 dark:bg-white/10 border border-subtle dark:border-white/10 rounded-2xl flex items-center justify-center mb-6 shadow-inner opacity-50">
@@ -119,6 +111,7 @@
                 </template>
             </div>
 
+            <!-- Dashboard Footer -->
             <footer x-cloak class="mt-32 pt-16 pb-24 border-t border-subtle relative opacity-90 hover:opacity-100 transition-opacity duration-700">
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-orange-500/20 to-transparent"></div>
                 

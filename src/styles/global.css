@@ -16,7 +16,6 @@
     --border-subtle: rgba(0, 0, 0, 0.04);
     --accent-orange: #f97316;
     --accent-emerald: #10b981;
-    --accent-amber: #f59e0b;
 }
 
 .dark {
@@ -32,7 +31,7 @@
     --border-subtle: rgba(255, 255, 255, 0.08);
 }
 
-/* Background Texture */
+/* Subtle texture for deep dark mode */
 .dark::before {
     content: "";
     position: fixed;
@@ -45,7 +44,6 @@
     z-index: 9999;
 }
 
-/* Global Reset */
 body { 
     font-family: 'Outfit', sans-serif; 
     background-color: var(--bg-main);
@@ -55,50 +53,36 @@ body {
     overflow: hidden;
 }
 
-.mono { 
-    font-family: 'JetBrains Mono', monospace; 
-}
+.mono { font-family: 'JetBrains Mono', monospace; }
 
-/* Interaction States */
+/* Interactive Highlights */
 :focus-visible {
     outline: 2px solid var(--accent-orange);
     outline-offset: 4px;
 }
 
-/* Global Scrollbar */
-.custom-scroll::-webkit-scrollbar { 
-    width: 3px; 
-}
-
-.custom-scroll::-webkit-scrollbar-track {
-    background: transparent;
-}
-
+/* Custom Production Scrollbar */
+.custom-scroll::-webkit-scrollbar { width: 3px; }
+.custom-scroll::-webkit-scrollbar-track { background: transparent; }
 .custom-scroll::-webkit-scrollbar-thumb { 
-    background: rgba(148, 163, 184, 0.1); 
+    background: rgba(148, 163, 184, 0.15); 
     border-radius: 20px; 
 }
+.dark .custom-scroll::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); }
+.custom-scroll::-webkit-scrollbar-thumb:hover { background: var(--accent-orange); }
 
-.dark .custom-scroll::-webkit-scrollbar-thumb { 
-    background: rgba(255, 255, 255, 0.05); 
-}
-
-.custom-scroll::-webkit-scrollbar-thumb:hover { 
-    background: var(--accent-orange);
-    opacity: 0.5;
-}
-
-/* Layout Utilities */
+/* Utility Mapping */
 .bg-main { background-color: var(--bg-main); }
 .bg-sidebar { background-color: var(--bg-sidebar); }
 .bg-card { background-color: var(--bg-card); }
+.bg-header { background-color: var(--bg-header); }
 .text-main { color: var(--text-primary); }
 .border-subtle { border-color: var(--border-subtle); }
 
 [x-cloak] { display: none !important; }
 
 @keyframes slideUp {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(8px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
