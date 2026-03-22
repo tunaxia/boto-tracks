@@ -1,5 +1,5 @@
 <aside :class="showMobileServices ? 'translate-x-0' : 'translate-x-full md:translate-x-0'"
-       class="fixed md:relative inset-y-0 right-0 w-80 max-w-[85vw] border-l border-slate-200 dark:border-white/5 bg-sidebar flex flex-col z-[100] md:z-10 shadow-[-10px_0_30px_rgba(0,0,0,0.05)] dark:shadow-[-10px_0_30px_rgba(0,0,0,0.5)] transition-transform duration-500 ease-in-out theme-transition">
+       class="fixed md:relative inset-y-0 right-0 w-72 lg:w-80 max-w-[85vw] border-l border-slate-200 dark:border-white/5 bg-sidebar flex flex-col z-[100] md:z-10 shadow-[-10px_0_30px_rgba(0,0,0,0.05)] dark:shadow-[-10px_0_30px_rgba(0,0,0,0.5)] transition-all duration-500 ease-in-out theme-transition">
     
     <!-- Mobile Header -->
     <div class="md:hidden flex items-center justify-between px-8 py-5 border-b border-subtle bg-card backdrop-blur-md">
@@ -13,7 +13,8 @@
     </div>
 
     <!-- Desktop Header -->
-    <div class="p-8 border-b border-slate-200 dark:border-white/5 bg-sidebar hidden md:block theme-transition">
+    <div class="p-8 border-b border-slate-200 dark:border-white/5 bg-sidebar hidden md:block theme-transition"
+         @keydown.window.prevent.slash="$refs.serviceSearch.focus()">
         <div class="flex items-center justify-between mb-8">
             <h3 class="text-[10px] mono text-slate-500 dark:text-slate-400 uppercase tracking-[0.4em] font-black">Directory</h3>
             <div class="flex gap-1.5">
@@ -23,9 +24,14 @@
         </div>
         
         <div class="relative group/search">
-            <input type="text" id="serviceSearch" name="serviceSearch" aria-label="Search services" x-model.debounce.200ms="serviceSearch" placeholder="Filter SDK services..." 
-                   class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-2xl py-4 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner">
+            <input type="text" id="serviceSearch" name="serviceSearch" aria-label="Search services" x-model.debounce.200ms="serviceSearch" 
+                   x-ref="serviceSearch"
+                   placeholder="Filter SDK services..." 
+                   class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-2xl py-4 pl-12 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner">
             <svg class="absolute left-4 top-4 w-5 h-5 text-slate-400 dark:text-slate-600 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            <div class="absolute right-4 top-4 hidden lg:flex items-center opacity-20 group-focus-within/search:opacity-0 transition-opacity pointer-events-none">
+                <span class="text-[10px] mono border border-slate-400 rounded px-1.5">/</span>
+            </div>
         </div>
     </div>
     
@@ -38,18 +44,23 @@
         </div>
     </div>
 
-    <div class="flex-1 overflow-y-auto p-6 space-y-3 custom-scroll bg-sidebar">
+    <div class="flex-1 overflow-y-auto p-6 space-y-2 custom-scroll bg-sidebar">
         <template x-for="service in filteredServices" :key="service">
             <button @click="openService(service); if(isMobile(768)) showMobileServices = false;" 
-                    class="w-full text-left px-5 py-4 rounded-2xl hover:bg-white dark:hover:bg-white/[0.03] group transition-all flex items-center justify-between border border-transparent hover:border-black/5 dark:hover:border-white/10 relative overflow-hidden shadow-sm hover:shadow-md">
+                    class="w-full text-left px-4 py-3 rounded-xl hover:bg-white dark:hover:bg-white/[0.03] group transition-all flex items-center justify-between border border-transparent hover:border-slate-200 dark:hover:border-white/10 relative overflow-hidden shadow-sm hover:shadow-md">
                 
                 <div class="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/5 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 
                 <div class="flex items-center gap-4 relative z-10">
-                    <div class="w-8 h-8 rounded-xl bg-slate-200 dark:bg-white/5 flex items-center justify-center mono text-[10px] text-slate-500 group-hover:text-orange-500 group-hover:bg-orange-500/10 transition-all border border-transparent dark:border-white/5 group-hover:border-orange-500/20" x-text="service.substring(0,1).toUpperCase()"></div>
-                    <span class="mono text-xs text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white font-black tracking-tight transition-colors uppercase" x-text="service"></span>
+                    <div class="w-8 h-8 rounded-lg bg-slate-200 dark:bg-white/5 flex items-center justify-center mono text-[10px] text-slate-500 group-hover:text-orange-500 group-hover:bg-orange-500/10 transition-all border border-transparent dark:border-white/5 group-hover:border-orange-500/20" x-text="service.substring(0,1).toUpperCase()"></div>
+                    <div class="flex flex-col">
+                        <span class="mono text-[11px] text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white font-black tracking-tight transition-colors uppercase" x-text="service"></span>
+                        <template x-if="['s3', 'ec2', 'iam', 'lambda', 'dynamodb', 'sqs', 'sns', 'sts', 'cloudwatch', 'rds'].includes(service.toLowerCase())">
+                            <span class="text-[7px] mono font-bold text-orange-500 uppercase tracking-widest mt-0.5 opacity-60 group-hover:opacity-100 transition-opacity">Core Service</span>
+                        </template>
+                    </div>
                 </div>
-                <svg class="w-4 h-4 text-slate-300 dark:text-slate-800 group-hover:text-orange-500 transition-all -translate-x-2 group-hover:translate-x-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <svg class="w-4 h-4 text-slate-300 dark:text-slate-800 group-hover:text-orange-500 transition-all -translate-x-1 group-hover:translate-x-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
         </template>
     </div>
@@ -58,7 +69,7 @@
         <div class="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl p-4 shadow-sm hover:border-orange-500/20 transition-all">
             <div class="flex items-center justify-between mb-3">
                 <div class="flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                     <span class="text-[9px] mono text-slate-400 dark:text-slate-600 uppercase tracking-widest font-black">Active</span>
                 </div>
                 <svg class="w-3 h-3 text-slate-300 dark:text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
