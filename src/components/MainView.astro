@@ -80,19 +80,27 @@
                             </div>
 
                             <div class="flex-1 min-w-0 relative z-10">
-                                <div class="flex items-center gap-3 mb-2.5 overflow-hidden">
+                                <div class="flex items-center gap-2.5 mb-3">
                                     <button @click="openService(change.category)" 
-                                            class="flex-shrink-0 whitespace-nowrap px-2.5 py-1 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-lg text-[10px] mono font-black text-slate-600 dark:text-slate-300 hover:text-orange-500 hover:border-orange-500/30 transition-all uppercase tracking-widest shadow-sm active:scale-95 outline-none" 
-                                            x-text="change.category"></button>
+                                            class="flex-shrink-0 flex items-center gap-2 px-2.5 py-1 bg-orange-500/[0.04] dark:bg-orange-500/[0.08] border border-orange-500/10 dark:border-orange-500/20 rounded-lg text-[9px] mono font-black text-orange-600/80 dark:text-orange-400/90 hover:text-orange-500 hover:border-orange-500/40 hover:bg-orange-500/10 transition-all uppercase tracking-[0.15em] shadow-sm active:scale-95 hover:scale-105 outline-none group/cat">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.4)] animate-pulse-slow transition-all group-hover/cat:shadow-[0_0_12px_rgba(249,115,22,0.8)]"></span>
+                                        <span x-text="change.category"></span>
+                                    </button>
                                     
-                                    <span :class="{
-                                        'text-amber-600 dark:text-amber-400': change.type.toLowerCase().includes('fix'),
-                                        'text-blue-600 dark:text-blue-400': change.type.toLowerCase().includes('enhan'),
-                                        'text-emerald-600 dark:text-emerald-400': change.type.toLowerCase().includes('feature') || change.type.toLowerCase().includes('api'),
-                                        'text-slate-600 dark:text-slate-400': !['fix', 'enhan', 'feature', 'api'].some(t => change.type.toLowerCase().includes(t))
-                                    }" 
-                                          class="flex-shrink-0 whitespace-nowrap text-[9px] font-black uppercase tracking-[0.2em] opacity-90" 
-                                          x-text="change.type.includes('api') ? 'api change' : change.type"></span>
+                                    <div :class="{
+                                        'text-amber-600 dark:text-amber-400 border-amber-500/20 bg-amber-500/5': change.type.toLowerCase().includes('fix'),
+                                        'text-blue-600 dark:text-blue-400 border-blue-500/20 bg-blue-500/5': change.type.toLowerCase().includes('enhan'),
+                                        'text-emerald-600 dark:text-emerald-400 border-emerald-500/20 bg-emerald-500/5': change.type.toLowerCase().includes('feature') || change.type.toLowerCase().includes('api'),
+                                        'text-slate-600 dark:text-slate-400 border-slate-500/20 bg-slate-500/5': !['fix', 'enhan', 'feature', 'api'].some(t => change.type.toLowerCase().includes(t))
+                                    }" class="flex-shrink-0 flex items-center gap-1.5 px-2 py-0.5 rounded-md border text-[8px] mono font-bold uppercase tracking-[0.1em] transition-all group-hover:scale-105 shadow-sm opacity-80 group-hover:opacity-100">
+                                        <div :class="{
+                                            'bg-amber-500 shadow-[0_0_6px_rgba(245,158,11,0.3)]': change.type.toLowerCase().includes('fix'),
+                                            'bg-blue-500 shadow-[0_0_6px_rgba(59,130,246,0.3)]': change.type.toLowerCase().includes('enhan'),
+                                            'bg-emerald-500 shadow-[0_0_6px_rgba(16,185,129,0.3)]': change.type.toLowerCase().includes('feature') || change.type.toLowerCase().includes('api'),
+                                            'bg-slate-500': !['fix', 'enhan', 'feature', 'api'].some(t => change.type.toLowerCase().includes(t))
+                                        }" class="w-1 h-1 rounded-full animate-pulse-slow"></div>
+                                        <span x-text="change.type.includes('api') ? 'api change' : change.type"></span>
+                                    </div>
                                 </div>
                                 <p class="text-slate-700 dark:text-slate-200 leading-[1.6] text-[13px] md:text-[14px] font-medium tracking-tight group-hover:text-slate-900 dark:group-hover:text-white transition-colors break-words" x-text="change.description"></p>
                             </div>
