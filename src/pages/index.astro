@@ -6,11 +6,11 @@ import ServiceNav from '../components/ServiceNav.astro';
 ---
 
 <Layout title="Boto Tracker">
-    <div class="flex h-screen w-full overflow-hidden bg-main text-[var(--text-secondary)] theme-transition" 
+    <div class="flex h-screen w-full overflow-hidden bg-main text-[var(--text-secondary)] transition-all" 
          x-data="botoCore" 
          @keydown.window.escape="showMobileServices = false; showMobileVersions = false; activeService = null">
         
-        <!-- Backdrops for Mobile -->
+        <!-- Mobile Sidebar Overlays -->
         <div x-show="showMobileVersions" 
              x-transition:enter="transition-opacity ease-out duration-300"
              x-transition:enter-start="opacity-0"
@@ -31,6 +31,7 @@ import ServiceNav from '../components/ServiceNav.astro';
              class="fixed inset-0 bg-[#050505]/60 backdrop-blur-sm z-[90] md:hidden" 
              @click="showMobileServices = false"></div>
 
+        <!-- Global Error State -->
         <div x-show="error" x-cloak x-transition.opacity class="fixed inset-0 z-[150] flex items-center justify-center p-6 bg-[#050505]/90 backdrop-blur-xl">
             <div class="bg-white dark:bg-white/5 border border-red-500/20 text-slate-900 dark:text-white p-10 rounded-[32px] max-w-lg w-full text-center shadow-2xl relative overflow-hidden">
                 <div class="absolute inset-0 bg-gradient-to-b from-red-500/5 to-transparent pointer-events-none"></div>
@@ -43,6 +44,7 @@ import ServiceNav from '../components/ServiceNav.astro';
             </div>
         </div>
 
+        <!-- Initial Boot Loader -->
         <div x-show="loading" x-cloak x-transition.opacity class="fixed inset-0 z-[140] flex flex-col items-center justify-center bg-white dark:bg-[#050505] transition-colors duration-700">
             <div class="relative w-20 h-20 mb-8">
                 <div class="absolute inset-0 border-4 border-orange-500/10 rounded-[24px]"></div>
@@ -52,82 +54,84 @@ import ServiceNav from '../components/ServiceNav.astro';
             <p class="mono text-slate-400 dark:text-slate-600 text-[10px] uppercase tracking-[0.4em] font-black animate-pulse">Synchronising Intel</p>
         </div>
 
+        <!-- Layout Shell -->
         <div class="flex h-full w-full">
             <LeftRail />
             <MainView />
             <ServiceNav />
         </div>
 
-        <!-- Service History Drawer -->
+        <!-- Service History Sidebar -->
         <div x-show="activeService" class="fixed inset-0 z-[120] flex justify-end overflow-hidden" x-cloak>
-            <!-- Overlay -->
+            <!-- Background Overlay -->
             <div x-show="activeService" 
-                 x-transition:enter="ease-in-out duration-500" 
+                 x-transition:enter="ease-out duration-500" 
                  x-transition:enter-start="opacity-0" 
                  x-transition:enter-end="opacity-100" 
-                 x-transition:leave="ease-in-out duration-500" 
+                 x-transition:leave="ease-in duration-500" 
                  x-transition:leave-start="opacity-100" 
                  x-transition:leave-end="opacity-0" 
                  class="absolute inset-0 bg-[#050505]/60 backdrop-blur-sm transition-opacity" 
                  @click="activeService = null"></div>
 
-            <!-- Drawer Panel -->
+            <!-- Drawer Container -->
             <div x-show="activeService" 
-                 x-transition:enter="transform transition ease-in-out duration-500" 
+                 x-transition:enter="transform transition ease-out duration-500" 
                  x-transition:enter-start="translate-x-full" 
                  x-transition:enter-end="translate-x-0" 
-                 x-transition:leave="transform transition ease-in-out duration-500" 
+                 x-transition:leave="transform transition ease-in duration-500" 
                  x-transition:leave-start="translate-x-0" 
                  x-transition:leave-end="translate-x-full" 
                  class="relative w-screen max-w-lg bg-white dark:bg-[#0a0a0a] border-l border-slate-200 dark:border-white/5 shadow-2xl flex flex-col h-full theme-transition">
                 
+                <!-- Drawer Header -->
                 <div class="px-6 py-6 border-b border-subtle bg-slate-50/50 dark:bg-white/[0.02] backdrop-blur-md">
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center gap-2">
                             <span class="w-1 h-1 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></span>
                             <span class="text-[10px] mono text-slate-500 dark:text-slate-400 font-black uppercase tracking-[0.2em]">Service History</span>
                         </div>
-                        <button @click="activeService = null" aria-label="Close service history" class="p-1.5 bg-slate-100 dark:bg-white/5 rounded-lg text-slate-400 hover:text-orange-500 transition-colors">
+                        <button @click="activeService = null" aria-label="Close" class="p-1.5 bg-slate-100 dark:bg-white/5 rounded-lg text-slate-400 hover:text-orange-500 transition-all active:scale-90">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </div>
                     <h2 class="text-xl font-black text-slate-900 dark:text-white italic uppercase tracking-tighter leading-none mb-6" x-text="activeService"></h2>
                     
-                    <!-- Dossier Search -->
                     <div class="relative group/search">
-                        <input type="text" id="serviceHistorySearch" name="serviceHistorySearch" aria-label="Search service history" x-model.debounce.200ms="serviceHistorySearch" placeholder="Filter history..." 
-                               class="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl py-2.5 pl-10 pr-4 text-xs focus:outline-none focus:ring-2 focus:ring-orange-500/5 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-sm font-medium">
+                        <input type="text" id="serviceHistorySearch" x-model.debounce.200ms="serviceHistorySearch" placeholder="Filter history..." 
+                               class="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl py-2.5 pl-10 pr-4 text-xs focus:outline-none focus:ring-4 focus:ring-orange-500/5 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-sm font-medium">
                         <svg class="absolute left-3.5 top-2.5 w-4 h-4 text-slate-400 dark:text-slate-600 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </div>
                 </div>
 
+                <!-- History List -->
                 <div class="flex-1 overflow-y-auto p-6 md:p-8 custom-scroll bg-inherit">
                     <div class="relative">
-                        <div class="absolute left-[19px] top-0 bottom-0 w-[1px] bg-slate-200 dark:bg-white/5"></div>
+                        <div class="absolute left-[19px] top-0 bottom-0 w-[1px] bg-slate-200 dark:divide-white/5"></div>
                         
                         <div class="space-y-6">
                             <template x-for="log in filteredServiceHistory" :key="log.v + log.t">
-                                <div class="relative pl-12">
-                                    <div class="absolute left-[14px] top-2 w-2.5 h-2.5 rounded-full bg-white dark:bg-black border-2 border-slate-300 dark:border-white/10 shadow-sm z-10"></div>
+                                <div class="relative pl-12 group/log">
+                                    <div class="absolute left-[14px] top-2 w-2.5 h-2.5 rounded-full bg-white dark:bg-black border-2 border-slate-300 dark:border-white/10 shadow-sm z-10 transition-colors group-hover/log:border-orange-500"></div>
                                     
-                                    <div class="group flex flex-col gap-2 p-5 bg-slate-50/50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-[20px] hover:bg-white dark:hover:bg-white/[0.04] hover:border-orange-500/20 transition-all duration-300 overflow-hidden">
+                                    <div class="group flex flex-col gap-2.5 p-5 bg-slate-50/50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-[20px] hover:bg-white dark:hover:bg-white/[0.04] hover:border-orange-500/20 transition-all duration-300 overflow-hidden">
                                         <div class="flex items-center">
                                             <button @click="selectVersion(log.v); activeService = null" 
-                                                    class="px-2.5 py-0.5 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-md mono text-[9px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95" 
+                                                    class="flex-shrink-0 whitespace-nowrap px-2.5 py-1 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-md mono text-[9px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95 shadow-sm" 
                                                     x-text="log.v"></button>
                                         </div>
-                                        <p class="text-slate-600 dark:text-slate-400 text-[12px] md:text-[13px] font-medium leading-relaxed tracking-tight group-hover:text-slate-900 dark:group-hover:text-white transition-colors break-words" x-text="log.t"></p>
+                                        <p class="text-slate-600 dark:text-slate-300 text-[13px] md:text-[14px] leading-[1.6] font-medium tracking-tight group-hover:text-slate-900 dark:group-hover:text-slate-100 transition-colors break-words" x-text="log.t"></p>
                                     </div>
                                 </div>
                             </template>
 
-                            <!-- Empty History Search -->
+                            <!-- Empty Results State -->
                             <template x-if="filteredServiceHistory.length === 0">
                                 <div class="py-32 text-center">
                                     <div class="w-16 h-16 bg-slate-100 dark:bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6 opacity-40">
                                         <svg class="w-8 h-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                                     </div>
-                                    <p class="text-xs mono uppercase tracking-[0.2em] text-slate-500 font-black">Zero Matching Records</p>
+                                    <p class="text-xs mono uppercase tracking-[0.2em] text-slate-500 font-black">No Records Match</p>
                                 </div>
                             </template>
                         </div>
@@ -157,6 +161,7 @@ import ServiceNav from '../components/ServiceNav.astro';
             showMobileVersions: false,
             error: null,
             loading: true,
+            versionCache: {},
 
             isMobile(breakpoint = 768) {
                 return window.matchMedia(`(max-width: ${breakpoint-1}px)`).matches;
@@ -165,7 +170,7 @@ import ServiceNav from '../components/ServiceNav.astro';
             async init() {
                 try {
                     const res = await fetch('/data/track.json');
-                    if (!res.ok) throw new Error('Failed to load track data');
+                    if (!res.ok) throw new Error('Primary track data missing');
                     const data = await res.json();
                     this.versions = data.versions;
                     this.allServices = data.allServices;
@@ -181,55 +186,60 @@ import ServiceNav from '../components/ServiceNav.astro';
             },
 
             async selectVersion(id) {
+                if (this.selectedVersion === id && this.currentVersionData.length > 0) return;
+                
+                const prevVersion = this.selectedVersion;
                 this.selectedVersion = id;
-                this.versionSearch = '';
-                this.currentVersionData = []; 
+                
+                // If in cache, swap immediately
+                if (this.versionCache[id]) {
+                    this.currentVersionData = this.versionCache[id];
+                    this.syncIndicator(id);
+                    return;
+                }
 
-                // Reset scroll position
-                const mainContainer = document.querySelector('main.flex-1');
-                if (mainContainer) mainContainer.scrollTo({ top: 0, behavior: 'instant' });
-
+                // Seamless background fetch (no loading = true)
                 try {
                     const res = await fetch(`/data/versions/${id}.json`);
-                    if (!res.ok) throw new Error(`Version ${id} not found`);
-                    this.currentVersionData = await res.json();
-                    
-                    // Sync rail indicator
-                    requestAnimationFrame(() => {
-                        this.$nextTick(() => {
-                            const rail = document.querySelector('.group\\/rail');
-                            const activeBtn = rail?.querySelector(`button[data-version="${id}"]`);
-                            if (rail && activeBtn) {
-                                rail.style.setProperty('--glow-top', activeBtn.offsetTop + 'px');
-                            }
-                        });
-                    });
+                    if (!res.ok) throw new Error(`Release dossier ${id} missing`);
+                    const data = await res.json();
+                    this.versionCache[id] = data;
+                    this.currentVersionData = data;
+                    this.syncIndicator(id);
                 } catch (e) { 
-                    this.error = `Could not load version ${id}.`;
+                    this.error = `Connection lost: ${id}`;
+                    this.selectedVersion = prevVersion;
                 }
             },
 
+            syncIndicator(id) {
+                const main = document.querySelector('main.flex-1');
+                if (main) main.scrollTo({ top: 0, behavior: 'instant' });
+
+                requestAnimationFrame(() => {
+                    this.$nextTick(() => {
+                        const rail = document.querySelector('.group\\/rail');
+                        const active = rail?.querySelector(`button[data-version="${id}"]`);
+                        if (rail && active) {
+                            rail.style.setProperty('--glow-top', active.offsetTop + 'px');
+                        }
+                    });
+                });
+            },
+
             async openService(svc) {
-                const serviceId = this.slugify(svc);
                 this.activeService = svc;
                 this.serviceHistory = [];
                 this.serviceHistorySearch = '';
+                const serviceId = svc.toLowerCase().trim().replace(/[\._\s]+/g, '-').replace(/-+/g, '-');
+                
                 try {
                     const res = await fetch(`/data/services/${serviceId}.json`);
-                    if (!res.ok) throw new Error(`Service file for ${serviceId} not found`);
+                    if (!res.ok) throw new Error('Service data unavailable');
                     this.serviceHistory = await res.json();
                 } catch (e) { 
                     this.serviceHistory = []; 
                 }
-            },
-
-            slugify(text) {
-                if (!text) return 'unknown';
-                return text.toString().toLowerCase().trim()
-                    .replace(/[`]/g, '')
-                    .replace(/[\._\s]+/g, '-')
-                    .replace(/-+/g, '-')
-                    .replace(/^-+|-+$/g, '');
             },
 
             get filteredServices() {
@@ -239,18 +249,14 @@ import ServiceNav from '../components/ServiceNav.astro';
             },
 
             get filteredRailVersions() {
-                const search = this.versionRailSearch.toLowerCase();
-                const base = search 
-                    ? this.versions.filter(v => v.id.toLowerCase().includes(search))
-                    : this.versions;
+                const s = this.versionRailSearch.toLowerCase();
+                const base = s ? this.versions.filter(v => v.id.includes(s)) : this.versions;
                 return base.slice(0, this.railLimit);
             },
 
             get hasMoreVersions() {
-                const search = this.versionRailSearch.toLowerCase();
-                const total = search 
-                    ? this.versions.filter(v => v.id.toLowerCase().includes(search)).length
-                    : this.versions.length;
+                const s = this.versionRailSearch.toLowerCase();
+                const total = s ? this.versions.filter(v => v.id.includes(s)).length : this.versions.length;
                 return this.railLimit < total;
             },
 
@@ -261,34 +267,20 @@ import ServiceNav from '../components/ServiceNav.astro';
             get filteredServiceHistory() {
                 if (!this.serviceHistorySearch) return this.serviceHistory;
                 const s = this.serviceHistorySearch.toLowerCase();
-                return this.serviceHistory.filter(log => 
-                    log.v.toLowerCase().includes(s) || 
-                    log.t.toLowerCase().includes(s)
-                );
+                return this.serviceHistory.filter(log => log.v.includes(s) || log.t.toLowerCase().includes(s));
             },
 
             get filteredVersionData() {
                 let data = this.currentVersionData;
-
-                // 1. Apply Header Filter (All / Features / Fixes)
                 if (this.activeFilter === 'feature') {
-                    data = data.filter(item => 
-                        item.type.toLowerCase().includes('feature') || 
-                        item.type.toLowerCase().includes('api') ||
-                        item.type.toLowerCase().includes('change')
-                    );
+                    data = data.filter(i => i.type.includes('feature') || i.type.includes('api') || i.type.includes('change'));
                 } else if (this.activeFilter === 'fix') {
-                    data = data.filter(item => item.type.toLowerCase().includes('fix'));
+                    data = data.filter(i => i.type.includes('fix'));
                 }
 
-                // 2. Apply Text Search (Search bar)
                 if (!this.versionSearch) return data;
                 const s = this.versionSearch.toLowerCase();
-                return data.filter(item => 
-                    item.category.toLowerCase().includes(s) || 
-                    item.description.toLowerCase().includes(s) ||
-                    item.type.toLowerCase().includes(s)
-                );
+                return data.filter(i => i.category.includes(s) || i.description.toLowerCase().includes(s));
             }
         }));
     });

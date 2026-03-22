@@ -1,18 +1,22 @@
 @import "tailwindcss";
 
-/* Tailwind 4 Dark Mode Configuration */
 @variant dark (&:where(.dark, .dark *));
 
+/* Design Tokens */
 :root {
     --bg-main: #ffffff;
     --bg-sidebar: #fcfcfd;
     --bg-card: #ffffff;
     --bg-header: rgba(255, 255, 255, 0.85);
+    
     --text-primary: #0f172a;
     --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    
     --border-subtle: rgba(0, 0, 0, 0.04);
     --accent-orange: #f97316;
     --accent-emerald: #10b981;
+    --accent-amber: #f59e0b;
 }
 
 .dark {
@@ -20,12 +24,15 @@
     --bg-sidebar: #121212;
     --bg-card: #181818;
     --bg-header: rgba(10, 10, 10, 0.9);
-    --text-primary: #ffffff;
+    
+    --text-primary: #f8fafc;
     --text-secondary: #cbd5e1;
+    --text-muted: #64748b;
+    
     --border-subtle: rgba(255, 255, 255, 0.08);
 }
 
-/* Subtle noise texture for dark mode depth */
+/* Background Texture */
 .dark::before {
     content: "";
     position: fixed;
@@ -38,6 +45,7 @@
     z-index: 9999;
 }
 
+/* Global Reset */
 body { 
     font-family: 'Outfit', sans-serif; 
     background-color: var(--bg-main);
@@ -51,13 +59,13 @@ body {
     font-family: 'JetBrains Mono', monospace; 
 }
 
-/* Sophisticated focus state */
+/* Interaction States */
 :focus-visible {
     outline: 2px solid var(--accent-orange);
     outline-offset: 4px;
 }
 
-/* Custom refined scrollbar */
+/* Global Scrollbar */
 .custom-scroll::-webkit-scrollbar { 
     width: 3px; 
 }
@@ -80,7 +88,15 @@ body {
     opacity: 0.5;
 }
 
-/* Animation Utilities */
+/* Layout Utilities */
+.bg-main { background-color: var(--bg-main); }
+.bg-sidebar { background-color: var(--bg-sidebar); }
+.bg-card { background-color: var(--bg-card); }
+.text-main { color: var(--text-primary); }
+.border-subtle { border-color: var(--border-subtle); }
+
+[x-cloak] { display: none !important; }
+
 @keyframes slideUp {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
@@ -89,11 +105,3 @@ body {
 .animate-slide-up {
     animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-
-[x-cloak] { display: none !important; }
-
-.bg-main { background-color: var(--bg-main); }
-.bg-sidebar { background-color: var(--bg-sidebar); }
-.bg-card { background-color: var(--bg-card); }
-.text-main { color: var(--text-primary); }
-.border-subtle { border-color: var(--border-subtle); }
