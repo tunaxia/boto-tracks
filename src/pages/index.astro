@@ -18,7 +18,7 @@ import ServiceNav from '../components/ServiceNav.astro';
              x-transition:leave="transition-opacity ease-in duration-200"
              x-transition:leave-start="opacity-100"
              x-transition:leave-end="opacity-0"
-             class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] lg:hidden" 
+             class="fixed inset-0 bg-[#050505]/60 backdrop-blur-sm z-[90] lg:hidden" 
              @click="showMobileVersions = false"></div>
 
         <div x-show="showMobileServices" 
@@ -28,23 +28,28 @@ import ServiceNav from '../components/ServiceNav.astro';
              x-transition:leave="transition-opacity ease-in duration-200"
              x-transition:leave-start="opacity-100"
              x-transition:leave-end="opacity-0"
-             class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] md:hidden" 
+             class="fixed inset-0 bg-[#050505]/60 backdrop-blur-sm z-[90] md:hidden" 
              @click="showMobileServices = false"></div>
 
-        <div x-show="error" x-cloak x-transition.opacity class="fixed inset-0 z-[70] flex items-center justify-center p-6 bg-black/90 backdrop-blur-md">
-            <div class="bg-red-950/40 border border-red-500/30 text-red-200 p-8 rounded-3xl max-w-lg w-full text-center shadow-[0_0_50px_rgba(239,68,68,0.15)]">
-                <div class="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+        <div x-show="error" x-cloak x-transition.opacity class="fixed inset-0 z-[150] flex items-center justify-center p-6 bg-[#050505]/90 backdrop-blur-xl">
+            <div class="bg-white dark:bg-white/5 border border-red-500/20 text-slate-900 dark:text-white p-10 rounded-[32px] max-w-lg w-full text-center shadow-2xl relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-b from-red-500/5 to-transparent pointer-events-none"></div>
+                <div class="w-20 h-20 bg-red-500/10 rounded-[24px] flex items-center justify-center mx-auto mb-8 border border-red-500/20">
+                    <svg class="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                 </div>
-                <h2 class="text-3xl font-bold text-white mb-2 uppercase tracking-tighter italic">Critical Error</h2>
-                <p class="text-slate-400 mb-8 leading-relaxed" x-text="error"></p>
-                <button @click="location.reload()" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-all active:scale-95">Retry Session</button>
+                <h2 class="text-3xl font-black italic uppercase tracking-tighter mb-3">System Override</h2>
+                <p class="text-slate-500 dark:text-slate-400 mb-10 leading-relaxed text-sm mono" x-text="error"></p>
+                <button @click="location.reload()" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-black py-4 px-8 rounded-2xl transition-all active:scale-95 shadow-lg shadow-orange-500/20 uppercase tracking-widest text-xs">Reboot Core</button>
             </div>
         </div>
 
-        <div x-show="loading" x-cloak x-transition.opacity class="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-main theme-transition">
-            <div class="w-12 h-12 border-4 border-orange-500/20 border-t-orange-500 rounded-full animate-spin mb-4"></div>
-            <p class="mono text-slate-500 text-sm animate-pulse uppercase tracking-widest">Initialising Core...</p>
+        <div x-show="loading" x-cloak x-transition.opacity class="fixed inset-0 z-[140] flex flex-col items-center justify-center bg-white dark:bg-[#050505] transition-colors duration-700">
+            <div class="relative w-20 h-20 mb-8">
+                <div class="absolute inset-0 border-4 border-orange-500/10 rounded-[24px]"></div>
+                <div class="absolute inset-0 border-4 border-t-orange-500 rounded-[24px] animate-spin"></div>
+                <img src="/favicon.png" class="absolute inset-0 m-auto w-8 h-8 opacity-50 animate-pulse" alt="Loading" />
+            </div>
+            <p class="mono text-slate-400 dark:text-slate-600 text-[10px] uppercase tracking-[0.4em] font-black animate-pulse">Synchronising Intel</p>
         </div>
 
         <div class="flex h-full w-full">
@@ -54,7 +59,7 @@ import ServiceNav from '../components/ServiceNav.astro';
         </div>
 
         <!-- Service History Drawer -->
-        <div x-show="activeService" class="fixed inset-0 z-50 flex justify-end overflow-hidden" x-cloak>
+        <div x-show="activeService" class="fixed inset-0 z-[120] flex justify-end overflow-hidden" x-cloak>
             <!-- Overlay -->
             <div x-show="activeService" 
                  x-transition:enter="ease-in-out duration-500" 
@@ -63,69 +68,75 @@ import ServiceNav from '../components/ServiceNav.astro';
                  x-transition:leave="ease-in-out duration-500" 
                  x-transition:leave-start="opacity-100" 
                  x-transition:leave-end="opacity-0" 
-                 class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" 
+                 class="absolute inset-0 bg-[#050505]/60 backdrop-blur-sm transition-opacity" 
                  @click="activeService = null"></div>
 
             <!-- Drawer Panel -->
             <div x-show="activeService" 
-                 x-transition:enter="transform transition ease-in-out duration-500 sm:duration-700" 
+                 x-transition:enter="transform transition ease-in-out duration-500" 
                  x-transition:enter-start="translate-x-full" 
                  x-transition:enter-end="translate-x-0" 
-                 x-transition:leave="transform transition ease-in-out duration-500 sm:duration-700" 
+                 x-transition:leave="transform transition ease-in-out duration-500" 
                  x-transition:leave-start="translate-x-0" 
                  x-transition:leave-end="translate-x-full" 
-                 class="relative w-screen max-w-2xl bg-sidebar border-l border-subtle shadow-2xl flex flex-col h-full theme-transition">
+                 class="relative w-screen max-w-2xl bg-white dark:bg-[#0a0a0a] border-l border-slate-200 dark:border-white/5 shadow-2xl flex flex-col h-full theme-transition">
                 
-                <div class="px-8 py-10 border-b border-subtle bg-card theme-transition">
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="text-[10px] mono text-orange-500 font-black uppercase tracking-[0.3em]">Service</span>
-                        <button @click="activeService = null" aria-label="Close service history" class="text-slate-400 dark:text-slate-500 hover:text-orange-500 transition-colors">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                <div class="px-8 py-10 border-b border-subtle bg-slate-50/50 dark:bg-white/[0.02] backdrop-blur-md">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></span>
+                            <span class="text-[10px] mono text-slate-500 dark:text-slate-400 font-black uppercase tracking-[0.3em]">Service Dossier</span>
+                        </div>
+                        <button @click="activeService = null" aria-label="Close service history" class="p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </div>
-                    <h2 class="text-3xl font-black text-main italic uppercase tracking-tighter leading-none mb-8" x-text="activeService"></h2>
+                    <h2 class="text-4xl font-black text-slate-900 dark:text-white italic uppercase tracking-tighter leading-none mb-10" x-text="activeService"></h2>
                     
                     <!-- Dossier Search -->
-                    <div class="relative group">
-                        <input type="text" id="serviceHistorySearch" name="serviceHistorySearch" aria-label="Search service history" x-model.debounce.200ms="serviceHistorySearch" placeholder="Filter history..." 
-                               class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-xl py-3 pl-11 pr-4 text-xs focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner">
-                        <svg class="absolute left-4 top-3.5 w-4 h-4 text-slate-400 dark:text-slate-600 group-focus-within:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <div class="relative group/search">
+                        <input type="text" id="serviceHistorySearch" name="serviceHistorySearch" aria-label="Search service history" x-model.debounce.200ms="serviceHistorySearch" placeholder="Search service history..." 
+                               class="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl py-4 pl-12 pr-4 text-sm focus:outline-none focus:ring-4 focus:ring-orange-500/5 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-sm font-medium">
+                        <svg class="absolute left-4 top-4 w-5 h-5 text-slate-400 dark:text-slate-600 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </div>
                 </div>
 
-                <div class="flex-1 overflow-y-auto p-12 custom-scroll space-y-12 bg-inherit">
+                <div class="flex-1 overflow-y-auto p-8 md:p-12 custom-scroll bg-inherit">
                     <div class="relative">
-                        <div class="absolute left-0 top-0 bottom-0 w-[1px] bg-gradient-to-b from-orange-500/50 via-slate-200 dark:via-white/5 to-transparent"></div>
+                        <div class="absolute left-[19px] top-0 bottom-0 w-[1px] bg-slate-200 dark:bg-white/5"></div>
                         
-                        <div class="space-y-16">
+                        <div class="space-y-12">
                             <template x-for="log in filteredServiceHistory" :key="log.v + log.t">
-                                <div class="relative pl-12 group">
-                                    <div class="absolute -left-[4.5px] top-1.5 w-2.5 h-2.5 rounded-full bg-white dark:bg-black border-2 border-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.5)] group-hover:scale-150 transition-transform"></div>
+                                <div class="relative pl-12 group/log">
+                                    <div class="absolute left-[14px] top-2 w-2.5 h-2.5 rounded-full bg-white dark:bg-black border-2 border-slate-300 dark:border-white/10 group-hover/log:border-orange-500 transition-colors shadow-sm z-10"></div>
                                     
-                                    <div class="flex items-center gap-3 mb-3">
-                                        <button @click="selectVersion(log.v); activeService = null" 
-                                                title="Jump to this version"
-                                                class="px-3 py-1 bg-slate-100 dark:bg-white/5 border border-subtle rounded-full mono text-[10px] font-bold text-slate-500 dark:text-slate-400 hover:text-orange-500 hover:border-orange-500/30 hover:bg-orange-500/5 transition-all active:scale-95" 
-                                                x-text="log.v"></button>
-                                        <div class="h-[1px] flex-1 bg-black/5 dark:bg-white/5"></div>
+                                    <div class="flex flex-col gap-3 p-6 bg-slate-50/50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-[24px] hover:border-orange-500/20 transition-all duration-300">
+                                        <div class="flex items-center justify-between">
+                                            <button @click="selectVersion(log.v); activeService = null" 
+                                                    class="px-3 py-1 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg mono text-[10px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95" 
+                                                    x-text="log.v"></button>
+                                            <span class="text-[8px] mono text-slate-400 uppercase font-black tracking-widest">Entry Verified</span>
+                                        </div>
+                                        <p class="text-slate-700 dark:text-slate-300 text-[14px] font-medium leading-relaxed tracking-tight group-hover/log:text-slate-900 dark:group-hover:text-white transition-colors" x-text="log.t"></p>
                                     </div>
-                                    
-                                    <p class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-relaxed tracking-tight group-hover:text-slate-900 dark:group-hover:text-white transition-colors" x-text="log.t"></p>
                                 </div>
                             </template>
 
                             <!-- Empty History Search -->
                             <template x-if="filteredServiceHistory.length === 0">
-                                <div class="py-20 text-center opacity-40">
-                                    <p class="text-xs mono uppercase tracking-widest">No logs match your filter</p>
+                                <div class="py-32 text-center">
+                                    <div class="w-16 h-16 bg-slate-100 dark:bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6 opacity-40">
+                                        <svg class="w-8 h-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                                    </div>
+                                    <p class="text-xs mono uppercase tracking-[0.2em] text-slate-500 font-black">Zero Matching Records</p>
                                 </div>
                             </template>
                         </div>
                     </div>
                 </div>
 
-                <div class="p-8 border-t border-subtle bg-card text-center theme-transition">
-                    <p class="text-[10px] mono text-slate-400 dark:text-slate-600 uppercase tracking-widest">End of History Record</p>
+                <div class="p-8 border-t border-slate-200 dark:border-white/5 bg-slate-50/50 dark:bg-black/20 text-center backdrop-blur-md">
+                    <p class="text-[9px] mono text-slate-400 dark:text-slate-600 uppercase tracking-[0.4em] font-black">End of Dossier</p>
                 </div>
             </div>
         </div>
