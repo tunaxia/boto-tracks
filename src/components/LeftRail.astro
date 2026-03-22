@@ -3,11 +3,11 @@
     
     <!-- Mobile Header -->
     <div class="lg:hidden flex items-center justify-between px-6 py-5 border-b border-subtle bg-card backdrop-blur-md">
-        <div class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></span>
+        <div class="flex items-center gap-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.5)]"></span>
             <span class="text-slate-900 dark:text-white font-black italic tracking-tighter uppercase text-[11px]">Releases</span>
         </div>
-        <button @click="showMobileVersions = false" aria-label="Close versions sidebar" class="p-2 text-slate-400 hover:text-orange-500 transition-colors">
+        <button @click="showMobileVersions = false" aria-label="Close versions sidebar" class="p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-all active:scale-90">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
         </button>
     </div>
@@ -16,14 +16,12 @@
     <div class="hidden lg:flex h-40 flex-col items-center justify-center flex-shrink-0 relative z-30 border-b border-slate-200 dark:border-white/5 group/brand bg-sidebar">
         <button @click="location.reload()" 
                 aria-label="Reload page"
-                class="w-14 h-14 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[22px] flex items-center justify-center shadow-sm cursor-pointer group-hover:rotate-[10deg] group-hover:scale-105 transition-all duration-500 active:scale-95 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover/brand:opacity-100 transition-opacity"></div>
+                class="w-14 h-14 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[22px] flex items-center justify-center shadow-sm cursor-pointer hover:rotate-[10deg] hover:scale-105 transition-all duration-500 active:scale-95 relative overflow-hidden group">
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <img src="/favicon.png" width="32" height="32" alt="Boto Tracks" class="w-8 h-8 pointer-events-none relative z-10" />
         </button>
         <div class="flex flex-col items-center text-center mt-4 px-4">
             <h1 class="text-[12px] font-black italic uppercase tracking-tighter text-slate-900 dark:text-white leading-none">Boto Tracks</h1>
-            <div class="h-[1px] w-4 bg-orange-500/30 my-2"></div>
-            <p class="text-[7px] mono text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] leading-tight font-bold">Intelligence Core</p>
         </div>
     </div>
 
@@ -35,7 +33,7 @@
             <input type="text" id="versionRailSearch" name="versionRailSearch" aria-label="Search versions" x-model.debounce.200ms="versionRailSearch" 
                    x-ref="railSearch"
                    @input="railLimit = 50"
-                   placeholder="Jump to release..." 
+                   placeholder="Jump to..." 
                    class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-2xl py-2.5 pl-10 pr-10 text-[11px] lg:text-[10px] focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner font-medium">
             <svg class="absolute left-3.5 top-[11px] lg:top-[9px] lg:left-3.5 w-3.5 h-3.5 lg:w-3 lg:h-3 text-slate-400 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
             <div class="absolute right-3 top-[10px] lg:top-[8px] hidden lg:flex items-center gap-1 opacity-20 group-focus-within/search:opacity-0 transition-opacity pointer-events-none">
@@ -57,16 +55,16 @@
                 <template x-for="(v, index) in filteredRailVersions" :key="v.id">
                     <button @click="selectVersion(v.id); if(isMobile(1024)) showMobileVersions = false;" 
                             :data-version="v.id"
-                            :class="selectedVersion === v.id ? 'bg-white dark:bg-white/10 text-orange-500 shadow-md ring-1 ring-black/5 dark:ring-white/10' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-white/50 dark:hover:bg-white/5'"
-                            class="relative w-full h-12 lg:h-11 px-4 rounded-xl flex items-center justify-between transition-all duration-300 group/item flex-shrink-0 z-30">
+                            :class="selectedVersion === v.id ? 'bg-white dark:bg-orange-500/10 text-orange-500 shadow-md ring-1 ring-black/5 dark:ring-orange-500/30' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-white/50 dark:hover:bg-white/10'"
+                            class="relative w-full h-12 lg:h-11 px-4 rounded-xl flex items-center justify-between transition-all duration-300 group/item flex-shrink-0 z-30 active:scale-95">
                         <div class="flex items-center gap-2">
                             <span class="text-[12px] lg:text-[11px] mono font-black tracking-tight" x-text="v.id"></span>
                             <template x-if="index === 0 && !versionRailSearch">
-                                <span class="px-1.5 py-0.5 bg-orange-500 text-white text-[7px] font-black rounded uppercase tracking-widest">Latest</span>
+                                <span class="px-1.5 py-0.5 bg-orange-500 text-white text-[7px] font-black rounded uppercase tracking-widest shadow-sm">Latest</span>
                             </template>
                         </div>
-                        <svg x-show="selectedVersion === v.id" class="w-3 h-3 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        <svg x-show="selectedVersion === v.id" class="w-3.5 h-3.5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
                         </svg>
                     </button>
                 </template>
@@ -74,7 +72,7 @@
                 <!-- Load More -->
                 <template x-if="hasMoreVersions">
                     <button @click="loadMoreVersions()" 
-                            class="mt-4 w-full py-3 rounded-xl border border-slate-200 dark:border-white/5 bg-white/50 dark:bg-white/5 hover:bg-orange-500/5 hover:border-orange-500/30 text-[9px] mono font-black text-slate-400 hover:text-orange-500 transition-all uppercase tracking-[0.2em] active:scale-95 shadow-sm">
+                            class="mt-4 w-full py-3 rounded-xl border border-slate-200 dark:border-white/5 bg-white/50 dark:bg-white/5 hover:border-orange-500/30 text-[9px] mono font-black text-slate-400 hover:text-orange-500 transition-all uppercase tracking-[0.2em] active:scale-95 shadow-sm">
                         Load More
                     </button>
                 </template>
@@ -88,17 +86,17 @@
 
     <!-- Sidebar Footer Actions -->
     <div class="p-3 border-t border-slate-200 dark:border-white/5 bg-card hidden md:block theme-transition relative overflow-hidden group/status">
-        <div class="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl p-3 shadow-sm hover:border-orange-500/20 transition-all">
+        <div class="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl p-3 shadow-sm hover:border-emerald-500/20 transition-all group">
             <div class="flex items-center justify-between mb-2">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1.5">
                     <span class="w-1 h-1 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span class="text-[8px] mono text-slate-400 dark:text-slate-600 uppercase tracking-widest font-black">Live</span>
+                    <span class="text-[8px] mono text-slate-400 dark:text-slate-600 uppercase tracking-widest font-black">Live Pulse</span>
                 </div>
-                <svg class="w-2.5 h-2.5 text-slate-300 dark:text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <svg class="w-3 h-3 text-slate-300 dark:text-slate-700 group-hover:text-emerald-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </div>
             <div class="flex flex-col">
                 <span class="text-xl font-black text-slate-900 dark:text-white italic tracking-tighter leading-none" x-text="versions.length"></span>
-                <span class="text-[7px] mono text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-1">Total Tracks</span>
+                <span class="text-[7px] mono text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-1.5">Synchronized Tracks</span>
             </div>
         </div>
     </div>

@@ -107,16 +107,16 @@ import ServiceNav from '../components/ServiceNav.astro';
                         
                         <div class="space-y-6">
                             <template x-for="log in filteredServiceHistory" :key="log.v + log.t">
-                                <div class="relative pl-12 group/log">
-                                    <div class="absolute left-[14px] top-2 w-2.5 h-2.5 rounded-full bg-white dark:bg-black border-2 border-slate-300 dark:border-white/10 group-hover/log:border-orange-500 transition-colors shadow-sm z-10"></div>
+                                <div class="relative pl-12">
+                                    <div class="absolute left-[14px] top-2 w-2.5 h-2.5 rounded-full bg-white dark:bg-black border-2 border-slate-300 dark:border-white/10 shadow-sm z-10"></div>
                                     
-                                    <div class="flex flex-col gap-2 p-5 bg-slate-50/50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-[20px] hover:border-orange-500/20 transition-all duration-300 overflow-hidden">
+                                    <div class="group flex flex-col gap-2 p-5 bg-slate-50/50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-[20px] hover:bg-white dark:hover:bg-white/[0.04] hover:border-orange-500/20 transition-all duration-300 overflow-hidden">
                                         <div class="flex items-center">
                                             <button @click="selectVersion(log.v); activeService = null" 
-                                                    class="px-2.5 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-md mono text-[9px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95" 
+                                                    class="px-2.5 py-0.5 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-md mono text-[9px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95" 
                                                     x-text="log.v"></button>
                                         </div>
-                                        <p class="text-slate-700 dark:text-slate-300 text-[13px] md:text-[14px] font-medium leading-relaxed tracking-tight group-hover/log:text-slate-900 dark:group-hover:text-white transition-colors break-words" x-text="log.t"></p>
+                                        <p class="text-slate-600 dark:text-slate-400 text-[12px] md:text-[13px] font-medium leading-relaxed tracking-tight group-hover:text-slate-900 dark:group-hover:text-white transition-colors break-words" x-text="log.t"></p>
                                     </div>
                                 </div>
                             </template>

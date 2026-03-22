@@ -1,10 +1,10 @@
 <main class="flex-1 flex flex-col min-w-0 bg-inherit relative theme-transition">
     
-    <header class="h-16 border-b border-subtle flex items-center justify-between px-4 md:px-12 bg-white/80 dark:bg-[#050505]/80 backdrop-blur-md sticky top-0 z-50">
+    <header class="h-16 border-b border-subtle flex items-center justify-between px-4 md:px-12 bg-white/80 dark:bg-[#0a0a0a]/80 backdrop-blur-md sticky top-0 z-50">
         <div class="flex items-center gap-6">
             <!-- Mobile Versions Toggle -->
-            <button @click="showMobileVersions = true" aria-label="Open versions sidebar" class="lg:hidden p-2 text-slate-400 hover:text-orange-500 transition-colors">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+            <button @click="showMobileVersions = true" aria-label="Open versions sidebar" class="lg:hidden p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-all active:scale-90">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
             </button>
 
             <!-- Mobile Brand Title -->
@@ -15,53 +15,53 @@
             </button>
 
             <div class="flex items-center gap-4">
-                <span class="hidden sm:inline text-[10px] mono text-slate-400 uppercase tracking-widest font-bold">Release</span>
-                <div class="px-3 py-1 bg-orange-500/5 border border-orange-500/20 rounded-lg">
+                <span class="hidden sm:inline text-[10px] mono text-slate-500 dark:text-slate-300 uppercase tracking-widest font-black">Release</span>
+                <div class="px-3 py-1 bg-orange-500/5 border border-orange-500/20 rounded-lg shadow-sm">
                     <span class="text-xs md:text-sm mono font-black text-orange-600 dark:text-orange-400" x-text="selectedVersion || '...'"></span>
                 </div>
             </div>
             
             <!-- Local Search -->
-            <div class="hidden md:block relative w-48 lg:w-64 group">
+            <div class="hidden md:block relative w-48 lg:w-64 group/search">
                 <input type="text" id="versionSearch" name="versionSearch" aria-label="Search logs" x-model.debounce.200ms="versionSearch" placeholder="Search logs..." 
-                       class="w-full bg-slate-100 dark:bg-white/5 border border-transparent focus:border-orange-500/20 rounded-full py-1.5 pl-9 pr-4 text-[11px] focus:outline-none transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600">
-                <svg class="absolute left-3 top-2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                       class="w-full bg-slate-100 dark:bg-white/[0.05] border border-transparent focus:border-orange-500/20 rounded-full py-1.5 pl-9 pr-4 text-[11px] focus:outline-none transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-inner font-medium">
+                <svg class="absolute left-3 top-2 w-3.5 h-3.5 text-slate-400 dark:text-slate-500 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
             </div>
         </div>
         
         <div class="flex items-center gap-3">
-            <!-- Filter Pills (Unified with state) -->
+            <!-- Filter Pills -->
             <div class="hidden lg:flex items-center gap-1 p-1 bg-slate-100 dark:bg-white/5 rounded-full border border-subtle">
-                <button @click="activeFilter = 'all'" :class="activeFilter === 'all' ? 'bg-white dark:bg-white/10 text-orange-500 shadow-sm' : 'text-slate-500'" class="px-3 py-1 rounded-full text-[9px] mono font-bold uppercase transition-all">All</button>
-                <button @click="activeFilter = 'feature'" :class="activeFilter === 'feature' ? 'bg-white dark:bg-white/10 text-emerald-500 shadow-sm' : 'text-slate-500'" class="px-3 py-1 rounded-full text-[9px] mono font-bold uppercase transition-all">Features</button>
-                <button @click="activeFilter = 'fix'" :class="activeFilter === 'fix' ? 'bg-white dark:bg-white/10 text-amber-500 shadow-sm' : 'text-slate-500'" class="px-3 py-1 rounded-full text-[9px] mono font-bold uppercase transition-all">Fixes</button>
+                <button @click="activeFilter = 'all'" :class="activeFilter === 'all' ? 'bg-white dark:bg-white/10 text-orange-500 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95">All</button>
+                <button @click="activeFilter = 'feature'" :class="activeFilter === 'feature' ? 'bg-white dark:bg-white/10 text-emerald-500 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95">Features</button>
+                <button @click="activeFilter = 'fix'" :class="activeFilter === 'fix' ? 'bg-white dark:bg-white/10 text-amber-500 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95">Fixes</button>
             </div>
 
             <!-- Mobile Services Toggle -->
-            <button @click="showMobileServices = true" aria-label="Open services sidebar" class="md:hidden p-2 text-slate-400 hover:text-orange-500 transition-colors">
+            <button @click="showMobileServices = true" aria-label="Open services sidebar" class="md:hidden p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-all active:scale-90">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </div>
     </header>
 
-    <div class="flex-1 overflow-y-auto p-6 md:p-12 custom-scroll">
+    <div class="flex-1 overflow-y-auto p-6 md:p-12 custom-scroll bg-transparent">
         <div class="max-w-4xl mx-auto min-h-[calc(100vh-140px)] flex flex-col">
             <div class="flex-1">
                 <!-- Mobile Search -->
                 <div class="sm:hidden mb-8">
-                    <input type="text" id="versionSearchMobile" name="versionSearchMobile" aria-label="Search version logs on mobile" x-model.debounce.200ms="versionSearch" placeholder="Search version logs..." 
-                           class="w-full bg-slate-100 dark:bg-white/5 border border-subtle rounded-xl py-3 px-5 text-sm focus:outline-none transition-all text-slate-900 dark:text-white shadow-inner">
+                    <input type="text" id="versionSearchMobile" name="versionSearchMobile" aria-label="Search version logs on mobile" x-model.debounce.200ms="versionSearch" placeholder="Search logs..." 
+                           class="w-full bg-slate-100 dark:bg-white/[0.05] border border-subtle dark:border-white/10 rounded-2xl py-3.5 px-6 text-sm focus:outline-none transition-all text-slate-900 dark:text-white shadow-inner font-medium">
                 </div>
 
-                <div class="divide-y divide-slate-200/50 dark:divide-white/5">
+                <div class="divide-y divide-slate-200/50 dark:divide-white/10">
                     <!-- Skeleton Loader -->
                     <template x-if="loading || currentVersionData.length === 0">
                         <div class="space-y-8 animate-pulse pt-4">
                             <template x-for="i in 5">
                                 <div class="flex items-start gap-6 py-6">
-                                    <div class="w-8 h-8 rounded-lg bg-slate-200 dark:bg-white/5"></div>
+                                    <div class="w-8 h-8 rounded-lg bg-slate-200 dark:bg-white/10"></div>
                                     <div class="flex-1 space-y-3">
-                                        <div class="h-4 w-1/4 bg-slate-200 dark:bg-white/5 rounded"></div>
+                                        <div class="h-4 w-1/4 bg-slate-200 dark:bg-white/10 rounded"></div>
                                         <div class="h-4 w-full bg-slate-100 dark:bg-white/5 rounded"></div>
                                     </div>
                                 </div>
@@ -69,28 +69,33 @@
                         </div>
                     </template>
 
-                    <template x-for="(change, index) in filteredVersionData" :key="index">
-                        <div class="group flex items-start gap-4 md:gap-6 py-6 hover:bg-slate-50/50 dark:hover:bg-white/[0.01] transition-all duration-500 -mx-4 px-4 rounded-2xl relative">
-                            <div class="absolute inset-0 bg-gradient-to-r from-orange-500/[0.01] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
+                    <template x-for="(change, index) in filteredVersionData" :key="change.category + change.description">
+                        <div class="group flex items-start gap-4 md:gap-6 py-6 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-all duration-300 -mx-4 px-4 rounded-2xl relative"
+                             x-show="true"
+                             x-transition:enter="transition ease-out duration-200" 
+                             x-transition:enter-start="opacity-0 scale-[0.98]"
+                             x-transition:enter-end="opacity-100 scale-100">
+
+                            <div class="absolute inset-0 bg-gradient-to-r from-orange-500/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
                             
-                            <!-- Service Icon (Refined) -->
-                            <div class="w-9 h-9 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/5 flex items-center justify-center flex-shrink-0 group-hover:border-orange-500/20 transition-all shadow-sm relative z-10">
+                            <!-- Service Icon -->
+                            <div class="w-9 h-9 rounded-xl bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-orange-500/30 transition-all shadow-sm relative z-10">
                                 <span class="text-orange-500 font-black mono text-[10px]" x-text="change.category.substring(0,2).toUpperCase()"></span>
                             </div>
 
                             <div class="flex-1 min-w-0 relative z-10">
-                                <div class="flex items-center gap-3 mb-3">
+                                <div class="flex items-center gap-3 mb-2.5">
                                     <button @click="openService(change.category)" 
-                                            class="px-2.5 py-1 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg text-[10px] mono font-black text-slate-600 dark:text-slate-400 hover:text-orange-500 hover:border-orange-500/30 transition-all uppercase tracking-widest shadow-sm" 
+                                            class="px-2.5 py-1 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-lg text-[10px] mono font-black text-slate-600 dark:text-slate-300 hover:text-orange-500 hover:border-orange-500/30 transition-all uppercase tracking-widest shadow-sm active:scale-95" 
                                             x-text="change.category"></button>
                                     
                                     <span :class="{
                                         'text-emerald-600 dark:text-emerald-400': change.type.includes('change') || change.type.includes('api'),
                                         'text-amber-600 dark:text-amber-400': change.type.includes('fix'),
                                         'text-blue-600 dark:text-blue-400': !change.type.includes('change') && !change.type.includes('fix') && !change.type.includes('api')
-                                    }" class="text-[9px] font-black uppercase tracking-[0.2em] opacity-80" x-text="change.type.includes('api') ? 'api change' : change.type"></span>
+                                    }" class="text-[9px] font-black uppercase tracking-[0.2em] opacity-90" x-text="change.type.includes('api') ? 'api change' : change.type"></span>
                                 </div>
-                                <p class="text-slate-700 dark:text-slate-300 leading-[1.6] text-[14px] md:text-[15px] font-medium tracking-tight group-hover:text-slate-900 dark:group-hover:text-white transition-colors break-words" x-text="change.description"></p>
+                                <p class="text-slate-600 dark:text-slate-300 leading-[1.6] text-[13px] md:text-[14px] font-medium tracking-tight group-hover:text-slate-900 dark:group-hover:text-slate-100 transition-colors break-words" x-text="change.description"></p>
                             </div>
                         </div>
                     </template>
@@ -98,10 +103,13 @@
                 
                 <!-- Empty State -->
                 <template x-if="filteredVersionData.length === 0">
-                    <div class="flex flex-col items-center justify-center py-24 text-center">
-                        <h3 class="text-slate-900 dark:text-white text-lg font-bold mb-2 uppercase italic tracking-tighter">No logs found</h3>
-                        <p class="text-slate-500 mono text-[9px] uppercase tracking-widest">Adjust filters for release <span x-text="selectedVersion"></span></p>
-                        <button @click="versionSearch = ''; activeFilter = 'all'" class="mt-8 px-6 py-2 border border-orange-500/30 text-orange-500 text-[10px] font-black rounded-full hover:bg-orange-500 hover:text-white transition-all uppercase tracking-widest">Clear Search</button>
+                    <div class="flex flex-col items-center justify-center py-24 text-center animate-slide-up">
+                        <div class="w-16 h-16 bg-slate-100 dark:bg-white/10 border border-subtle dark:border-white/10 rounded-2xl flex items-center justify-center mb-6 shadow-inner opacity-50">
+                            <svg class="w-8 h-8 text-slate-400 dark:text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
+                        <h3 class="text-slate-900 dark:text-white text-lg font-black mb-2 uppercase italic tracking-tighter">Zero Intel Matches</h3>
+                        <p class="text-slate-500 dark:text-slate-400 mono text-[9px] uppercase tracking-widest">Adjust filters for release <span x-text="selectedVersion" class="text-orange-500"></span></p>
+                        <button @click="versionSearch = ''; activeFilter = 'all'" class="mt-8 px-6 py-2 border border-orange-500/30 text-orange-500 text-[10px] font-black rounded-full hover:bg-orange-500 hover:text-white transition-all active:scale-95 shadow-lg shadow-orange-500/10">Reset Filters</button>
                     </div>
                 </template>
             </div>
@@ -120,35 +128,35 @@
                             </div>
                             <span class="text-[11px] mono font-black uppercase tracking-[0.4em] text-slate-800 dark:text-white">Boto Tracks</span>
                         </div>
-                        <p class="text-[10px] leading-relaxed text-slate-500 dark:text-slate-400 uppercase tracking-widest font-bold max-w-[240px]">
+                        <p class="text-[10px] leading-relaxed text-slate-500 dark:text-slate-300 uppercase tracking-widest font-black max-w-[240px]">
                             Modern intelligence for the AWS SDK ecosystem. Tracking every pulse of Botocore.
                         </p>
                         
                         <!-- System Status -->
                         <div class="flex items-center gap-2 px-3 py-1 bg-emerald-500/5 border border-emerald-500/10 rounded-full">
                             <span class="w-1 h-1 rounded-full bg-emerald-500 animate-pulse"></span>
-                            <span class="text-[8px] mono font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">System Nominal</span>
+                            <span class="text-[8px] mono font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-300">System Nominal</span>
                         </div>
                     </div>
 
                     <!-- Action Section -->
                     <div class="flex flex-col items-center md:items-end gap-8">
                         <div class="flex flex-col items-center md:items-end gap-3">
-                            <span class="text-[9px] mono font-bold text-slate-400 dark:text-slate-600 uppercase tracking-[0.2em]">Support the project</span>
+                            <span class="text-[9px] mono font-bold text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em]">Support the project</span>
                             <a href="https://github.com/tunaxia/boto-tracks" target="_blank" 
-                               class="inline-flex items-center gap-3 px-6 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl hover:border-orange-500/40 hover:bg-orange-500/5 transition-all group shadow-sm active:scale-95">
-                                <svg class="w-4 h-4 text-slate-400 group-hover:text-amber-500 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                               class="inline-flex items-center gap-3 px-6 py-3 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-2xl hover:border-orange-500/40 hover:bg-orange-500/5 transition-all group shadow-sm active:scale-95">
+                                <svg class="w-4 h-4 text-slate-400 dark:text-slate-300 group-hover:text-amber-500 transition-colors" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 .587l3.668 7.431 8.332 1.21-6.001 5.85 1.416 8.297-7.415-3.897-7.415 3.897 1.416-8.297-6.001-5.85 8.332-1.21z"/>
                                 </svg>
-                                <span class="text-[10px] mono font-black uppercase tracking-widest text-slate-700 dark:text-slate-200 group-hover:text-orange-500 transition-colors">Star on GitHub</span>
+                                <span class="text-[10px] mono font-black uppercase tracking-widest text-slate-700 dark:text-slate-100 group-hover:text-orange-500 transition-colors">Star on GitHub</span>
                             </a>
                         </div>
                         
                         <div class="flex flex-col items-center md:items-end gap-1.5">
-                            <p class="text-[10px] mono font-black uppercase tracking-widest text-slate-500 dark:text-slate-300">
+                            <p class="text-[10px] mono font-black uppercase tracking-widest text-slate-500 dark:text-slate-200">
                                 &copy; {new Date().getFullYear()} Boto Tracks
                             </p>
-                            <p class="text-[9px] mono uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
+                            <p class="text-[9px] mono uppercase tracking-[0.2em] text-slate-400 dark:text-slate-400">
                                 Crafted by <a href="https://tunaxia.com" target="_blank" class="text-orange-500 hover:text-orange-400 transition-colors font-black">Tunaxia</a>
                             </p>
                         </div>
