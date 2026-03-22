@@ -79,45 +79,44 @@ import ServiceNav from '../components/ServiceNav.astro';
                  x-transition:leave="transform transition ease-in-out duration-500" 
                  x-transition:leave-start="translate-x-0" 
                  x-transition:leave-end="translate-x-full" 
-                 class="relative w-screen max-w-2xl bg-white dark:bg-[#0a0a0a] border-l border-slate-200 dark:border-white/5 shadow-2xl flex flex-col h-full theme-transition">
+                 class="relative w-screen max-w-lg bg-white dark:bg-[#0a0a0a] border-l border-slate-200 dark:border-white/5 shadow-2xl flex flex-col h-full theme-transition">
                 
-                <div class="px-8 py-10 border-b border-subtle bg-slate-50/50 dark:bg-white/[0.02] backdrop-blur-md">
-                    <div class="flex items-center justify-between mb-6">
+                <div class="px-6 py-6 border-b border-subtle bg-slate-50/50 dark:bg-white/[0.02] backdrop-blur-md">
+                    <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></span>
-                            <span class="text-[10px] mono text-slate-500 dark:text-slate-400 font-black uppercase tracking-[0.3em]">Service Dossier</span>
+                            <span class="w-1 h-1 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></span>
+                            <span class="text-[10px] mono text-slate-500 dark:text-slate-400 font-black uppercase tracking-[0.2em]">Service History</span>
                         </div>
-                        <button @click="activeService = null" aria-label="Close service history" class="p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-colors">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        <button @click="activeService = null" aria-label="Close service history" class="p-1.5 bg-slate-100 dark:bg-white/5 rounded-lg text-slate-400 hover:text-orange-500 transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </div>
-                    <h2 class="text-4xl font-black text-slate-900 dark:text-white italic uppercase tracking-tighter leading-none mb-10" x-text="activeService"></h2>
+                    <h2 class="text-xl font-black text-slate-900 dark:text-white italic uppercase tracking-tighter leading-none mb-6" x-text="activeService"></h2>
                     
                     <!-- Dossier Search -->
                     <div class="relative group/search">
-                        <input type="text" id="serviceHistorySearch" name="serviceHistorySearch" aria-label="Search service history" x-model.debounce.200ms="serviceHistorySearch" placeholder="Search service history..." 
-                               class="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl py-4 pl-12 pr-4 text-sm focus:outline-none focus:ring-4 focus:ring-orange-500/5 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-sm font-medium">
-                        <svg class="absolute left-4 top-4 w-5 h-5 text-slate-400 dark:text-slate-600 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        <input type="text" id="serviceHistorySearch" name="serviceHistorySearch" aria-label="Search service history" x-model.debounce.200ms="serviceHistorySearch" placeholder="Filter history..." 
+                               class="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl py-2.5 pl-10 pr-4 text-xs focus:outline-none focus:ring-2 focus:ring-orange-500/5 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-sm font-medium">
+                        <svg class="absolute left-3.5 top-2.5 w-4 h-4 text-slate-400 dark:text-slate-600 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </div>
                 </div>
 
-                <div class="flex-1 overflow-y-auto p-8 md:p-12 custom-scroll bg-inherit">
+                <div class="flex-1 overflow-y-auto p-6 md:p-8 custom-scroll bg-inherit">
                     <div class="relative">
                         <div class="absolute left-[19px] top-0 bottom-0 w-[1px] bg-slate-200 dark:bg-white/5"></div>
                         
-                        <div class="space-y-12">
+                        <div class="space-y-6">
                             <template x-for="log in filteredServiceHistory" :key="log.v + log.t">
                                 <div class="relative pl-12 group/log">
                                     <div class="absolute left-[14px] top-2 w-2.5 h-2.5 rounded-full bg-white dark:bg-black border-2 border-slate-300 dark:border-white/10 group-hover/log:border-orange-500 transition-colors shadow-sm z-10"></div>
                                     
-                                    <div class="flex flex-col gap-3 p-6 bg-slate-50/50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-[24px] hover:border-orange-500/20 transition-all duration-300">
-                                        <div class="flex items-center justify-between">
+                                    <div class="flex flex-col gap-2 p-5 bg-slate-50/50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-[20px] hover:border-orange-500/20 transition-all duration-300 overflow-hidden">
+                                        <div class="flex items-center">
                                             <button @click="selectVersion(log.v); activeService = null" 
-                                                    class="px-3 py-1 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg mono text-[10px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95" 
+                                                    class="px-2.5 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-md mono text-[9px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95" 
                                                     x-text="log.v"></button>
-                                            <span class="text-[8px] mono text-slate-400 uppercase font-black tracking-widest">Entry Verified</span>
                                         </div>
-                                        <p class="text-slate-700 dark:text-slate-300 text-[14px] font-medium leading-relaxed tracking-tight group-hover/log:text-slate-900 dark:group-hover:text-white transition-colors" x-text="log.t"></p>
+                                        <p class="text-slate-700 dark:text-slate-300 text-[13px] md:text-[14px] font-medium leading-relaxed tracking-tight group-hover/log:text-slate-900 dark:group-hover:text-white transition-colors break-words" x-text="log.t"></p>
                                     </div>
                                 </div>
                             </template>
@@ -133,10 +132,6 @@ import ServiceNav from '../components/ServiceNav.astro';
                             </template>
                         </div>
                     </div>
-                </div>
-
-                <div class="p-8 border-t border-slate-200 dark:border-white/5 bg-slate-50/50 dark:bg-black/20 text-center backdrop-blur-md">
-                    <p class="text-[9px] mono text-slate-400 dark:text-slate-600 uppercase tracking-[0.4em] font-black">End of Dossier</p>
                 </div>
             </div>
         </div>
