@@ -190,6 +190,7 @@ import ServiceNav from '../components/ServiceNav.astro';
                 
                 const prevVersion = this.selectedVersion;
                 this.selectedVersion = id;
+                document.title = `Release ${id} | Boto Tracks`;
                 
                 // If in cache, swap immediately
                 if (this.versionCache[id]) {

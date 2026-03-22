@@ -21,18 +21,28 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>{title} | AWS Boto Tracks by Tunaxia</title>
 		<meta name="description" content="Boto Tracks: The definitive AWS SDK for Python (Botocore) changelog intelligence platform. Search and filter every update, fix, and feature in the Boto ecosystem." />
+		<meta name="keywords" content="boto tracks, botocore changelog, boto3 updates, aws sdk python tracker, Tunaxia, AWS SDK updates, python aws development" />
+		<meta name="author" content="Tunaxia" />
+		
 		<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
 		<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
 		<meta name="mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		
-		<!-- Open Graph -->
+		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Boto Tracks | AWS Botocore Intelligence" />
 		<meta property="og:description" content="Modern, high-performance AWS Botocore & Boto3 changelog tracker. Built for developers by Tunaxia." />
 		<meta property="og:url" content="https://boto-tracks.tunaxia.com/" />
 		<meta property="og:image" content="https://boto-tracks.tunaxia.com/favicon.png" />
 
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:title" content="Boto Tracks | AWS Botocore Intelligence" />
+		<meta property="twitter:description" content="Track every change in AWS Botocore with ease. Built by Tunaxia." />
+		<meta property="twitter:image" content="https://boto-tracks.tunaxia.com/favicon.png" />
+
+		<link rel="canonical" href="https://boto-tracks.tunaxia.com/" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<link rel="apple-touch-icon" href="/favicon.png" />
 		<link rel="preload" href="/data/track.json" as="fetch" crossorigin="anonymous">
@@ -51,8 +61,91 @@ const { title } = Astro.props;
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+		
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@graph": [
+			{
+			  "@type": "WebSite",
+			  "@id": "https://boto-tracks.tunaxia.com/#website",
+			  "url": "https://boto-tracks.tunaxia.com/",
+			  "name": "Boto Tracks",
+			  "publisher": { "@id": "https://tunaxia.com/#organization" },
+			  "description": "Modern AWS Botocore & Boto3 changelog tracker."
+			},
+			{
+			  "@type": "Organization",
+			  "@id": "https://tunaxia.com/#organization",
+			  "name": "Tunaxia",
+			  "url": "https://tunaxia.com/",
+			  "logo": "https://boto-tracks.tunaxia.com/favicon.png",
+			  "sameAs": [
+				"https://github.com/tunaxia"
+			  ]
+			},
+			{
+			  "@type": "SoftwareApplication",
+			  "@id": "https://boto-tracks.tunaxia.com/#software",
+			  "name": "Boto Tracks",
+			  "applicationCategory": "DeveloperApplication",
+			  "operatingSystem": "Web",
+			  "author": { "@id": "https://tunaxia.com/#organization" },
+			  "description": "A modern interface for tracking AWS Botocore changelogs, developed by Tunaxia."
+			},
+			{
+			  "@type": "FAQPage",
+			  "mainEntity": [
+				{
+				  "@type": "Question",
+				  "name": "What is Boto Tracks?",
+				  "acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Boto Tracks is a specialized intelligence tool for tracking and searching changes in the AWS SDK for Python (Botocore and Boto3). It provides a high-performance interface to filter features, fixes, and API updates."
+				  }
+				},
+				{
+				  "@type": "Question",
+				  "name": "How do I track AWS SDK updates?",
+				  "acceptedAnswer": {
+					"@type": "Answer",
+					"text": "You can use Boto Tracks to view a live timeline of AWS SDK updates. It categorizes changes by service name, such as S3, EC2, and Lambda, and by update type like API changes or bug fixes."
+				  }
+				}
+			  ]
+			}
+		  ]
+		}
+		</script>
 	</head>
 	<body class="h-screen w-full overflow-hidden bg-main transition-colors duration-500">
 		<slot />
+
+		<!-- Hidden SEO Content for better indexing -->
+		<footer class="sr-only">
+			<section>
+				<h2>AWS SDK for Python (Boto3/Botocore) Changelog Tracker</h2>
+				<p>
+					Boto Tracks is the definitive intelligence platform for tracking <strong>AWS Botocore</strong> and <strong>Boto3</strong> changelogs. 
+					Developed by <strong>Tunaxia</strong>, it provides a searchable, filterable timeline 
+					of every AWS SDK for Python release.
+				</p>
+				<h3>Comprehensive AWS Update Intelligence</h3>
+				<p>
+					Stay ahead of cloud infrastructure changes with instant alerts and historical data for every <strong>AWS Service</strong> update. 
+					Whether you are looking for <strong>S3 API changes</strong>, <strong>EC2 bug fixes</strong>, or <strong>Lambda feature releases</strong>, 
+					Boto Tracks provides the most efficient developer interface.
+				</p>
+				<h3>Key Features of Boto Tracks by Tunaxia</h3>
+				<ul>
+					<li><strong>Instant Search:</strong> Query thousands of AWS service updates in milliseconds.</li>
+					<li><strong>Feature Filtering:</strong> Quickly isolate new capabilities and API enhancements.</li>
+					<li><strong>Fix Tracking:</strong> Identify critical patches and security updates in Botocore.</li>
+					<li><strong>Service History:</strong> Deep-dive into the evolution of specific AWS SDK components.</li>
+					<li><strong>Mobile Pro Interface:</strong> Access high-grade changelog intel on the go.</li>
+				</ul>
+				<p>Optimize your AWS development workflow with the ultimate <strong>Boto3 release tracker</strong>. Built by developers at <a href="https://tunaxia.com">Tunaxia</a>.</p>
+			</section>
+		</footer>
 	</body>
 </html>
