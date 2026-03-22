@@ -142,6 +142,7 @@ import ServiceNav from '../components/ServiceNav.astro';
             serviceSearch: '',
             versionSearch: '',
             versionRailSearch: '',
+            activeFilter: 'all',
             railLimit: 50,
             activeService: null,
             serviceHistory: [],
@@ -261,9 +262,23 @@ import ServiceNav from '../components/ServiceNav.astro';
             },
 
             get filteredVersionData() {
-                if (!this.versionSearch) return this.currentVersionData;
+                let data = this.currentVersionData;
+
+                // 1. Apply Header Filter (All / Features / Fixes)
+                if (this.activeFilter === 'feature') {
+                    data = data.filter(item => 
+                        item.type.toLowerCase().includes('feature') || 
+                        item.type.toLowerCase().includes('api') ||
+                        item.type.toLowerCase().includes('change')
+                    );
+                } else if (this.activeFilter === 'fix') {
+                    data = data.filter(item => item.type.toLowerCase().includes('fix'));
+                }
+
+                // 2. Apply Text Search (Search bar)
+                if (!this.versionSearch) return data;
                 const s = this.versionSearch.toLowerCase();
-                return this.currentVersionData.filter(item => 
+                return data.filter(item => 
                     item.category.toLowerCase().includes(s) || 
                     item.description.toLowerCase().includes(s) ||
                     item.type.toLowerCase().includes(s)
