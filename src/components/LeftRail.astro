@@ -28,13 +28,20 @@
     </div>
 
     <!-- Search Section -->
-    <div class="p-5 border-b border-slate-200 dark:border-white/5 bg-sidebar">
+    <div class="p-5 border-b border-slate-200 dark:border-white/5 bg-sidebar" 
+         @keydown.window.prevent.ctrl.k="$refs.railSearch.focus()"
+         @keydown.window.prevent.cmd.k="$refs.railSearch.focus()">
         <div class="relative group/search">
             <input type="text" id="versionRailSearch" name="versionRailSearch" aria-label="Search versions" x-model.debounce.200ms="versionRailSearch" 
+                   x-ref="railSearch"
                    @input="railLimit = 50"
                    placeholder="Jump to release..." 
-                   class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-2xl py-2.5 pl-10 pr-3 text-[11px] lg:text-[10px] focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner font-medium">
+                   class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-2xl py-2.5 pl-10 pr-10 text-[11px] lg:text-[10px] focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner font-medium">
             <svg class="absolute left-3.5 top-[11px] lg:top-[9px] lg:left-3.5 w-3.5 h-3.5 lg:w-3 lg:h-3 text-slate-400 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            <div class="absolute right-3 top-[10px] lg:top-[8px] hidden lg:flex items-center gap-1 opacity-20 group-focus-within/search:opacity-0 transition-opacity pointer-events-none">
+                <span class="text-[8px] mono border border-slate-400 rounded px-1">⌘</span>
+                <span class="text-[8px] mono border border-slate-400 rounded px-1">K</span>
+            </div>
         </div>
     </div>
     
@@ -47,12 +54,17 @@
                      style="height: 32px; transform: translateY(calc(var(--glow-top, 0px) + 6px));"
                      x-show="selectedVersion && !versionRailSearch"></div>
 
-                <template x-for="v in filteredRailVersions" :key="v.id">
+                <template x-for="(v, index) in filteredRailVersions" :key="v.id">
                     <button @click="selectVersion(v.id); if(isMobile(1024)) showMobileVersions = false;" 
                             :data-version="v.id"
                             :class="selectedVersion === v.id ? 'bg-white dark:bg-white/10 text-orange-500 shadow-md ring-1 ring-black/5 dark:ring-white/10' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-white/50 dark:hover:bg-white/5'"
                             class="relative w-full h-12 lg:h-11 px-4 rounded-xl flex items-center justify-between transition-all duration-300 group/item flex-shrink-0 z-30">
-                        <span class="text-[12px] lg:text-[11px] mono font-black tracking-tight" x-text="v.id"></span>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[12px] lg:text-[11px] mono font-black tracking-tight" x-text="v.id"></span>
+                            <template x-if="index === 0 && !versionRailSearch">
+                                <span class="px-1.5 py-0.5 bg-orange-500 text-white text-[7px] font-black rounded uppercase tracking-widest">Latest</span>
+                            </template>
+                        </div>
                         <svg x-show="selectedVersion === v.id" class="w-3 h-3 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                         </svg>
