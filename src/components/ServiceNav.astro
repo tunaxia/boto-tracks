@@ -5,7 +5,7 @@
     <div class="md:hidden flex items-center justify-between px-8 py-5 border-b border-subtle bg-card backdrop-blur-md">
         <div class="flex items-center gap-2.5">
             <span class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.5)]"></span>
-            <h3 class="text-[11px] mono text-slate-900 dark:text-white uppercase tracking-[0.4em] font-black italic">Directory</h3>
+            <h2 class="text-[11px] mono text-slate-900 dark:text-white uppercase tracking-[0.4em] font-black italic">Directory</h2>
         </div>
         <button @click="showMobileServices = false" aria-label="Close services sidebar" class="p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-all active:scale-90">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -16,7 +16,7 @@
     <div class="p-5 border-b border-slate-200 dark:border-white/5 bg-sidebar hidden md:block theme-transition"
          @keydown.window.prevent.slash="$refs.serviceSearch.focus()">
         <div class="flex items-center justify-between mb-5">
-            <h3 class="text-[10px] mono text-slate-500 dark:text-slate-400 uppercase tracking-[0.4em] font-black">Directory</h3>
+            <h2 class="text-[10px] mono text-slate-500 dark:text-slate-400 uppercase tracking-[0.4em] font-black">Directory</h2>
             <div class="flex gap-1.5">
                 <div class="w-1 h-1 rounded-full bg-slate-200 dark:bg-slate-800"></div>
                 <div class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.5)]"></div>
