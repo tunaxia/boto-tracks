@@ -3,11 +3,39 @@ import Layout from '../layouts/Layout.astro';
 import LeftRail from '../components/LeftRail.astro';
 import MainView from '../components/MainView.astro';
 import ServiceNav from '../components/ServiceNav.astro';
+
+// SEO Strategy: Fetch latest version data at BUILD TIME
+// This ensures Googlebot sees content immediately without JS execution.
+import trackData from '../../public/data/track.json';
+const latestVersionId = trackData.versions[0].id;
+
+// We need to fetch the local JSON file content
+const latestVersionResponse = await fetch(`https://boto-tracks.tunaxia.com/data/versions/${latestVersionId}.json`).catch(() => null);
+let initialData = [];
+if (latestVersionResponse?.ok) {
+    initialData = await latestVersionResponse.json();
+} else {
+    // Fallback: Read from filesystem if fetch fails during build (SSR context)
+    try {
+        const fs = await import('node:fs/promises');
+        const path = await import('node:path');
+        const filePath = path.join(process.cwd(), 'public', 'data', 'versions', `${latestVersionId}.json`);
+        const content = await fs.readFile(filePath, 'utf-8');
+        initialData = JSON.parse(content);
+    } catch (e) {
+        initialData = [];
+    }
+}
 ---
 
-<Layout title="Boto Tracker">
+<Layout title={`Boto Tracks | AWS Botocore & Boto3 Release ${latestVersionId} | Tunaxia`}>
     <div class="flex h-screen w-full overflow-hidden bg-main text-[var(--text-secondary)] transition-all" 
-         x-data="botoCore" 
+         x-data={`botoCore({ 
+            initialVersion: '${latestVersionId}', 
+            initialData: ${JSON.stringify(initialData.slice(0, 20))}, 
+            allVersions: ${JSON.stringify(trackData.versions)}, 
+            allServices: ${JSON.stringify(trackData.allServices)} 
+         })`} 
          @keydown.window.escape="showMobileServices = false; showMobileVersions = false; activeService = null">
         
         <!-- Mobile Sidebar Overlays -->
@@ -56,7 +84,19 @@ import ServiceNav from '../components/ServiceNav.astro';
         <!-- Layout Shell -->
         <div class="flex h-full w-full">
             <LeftRail />
-            <MainView />
+            <MainView>
+                <div slot="initial-content">
+                    {initialData.slice(0, 20).map((change: any) => (
+                        <article class="py-6 border-b border-slate-200 dark:border-white/10">
+                            <header class="flex items-center gap-3 mb-2">
+                                <span class="text-[10px] mono font-black text-orange-600 dark:text-orange-400 uppercase tracking-widest">{change.category}</span>
+                                <span class="px-2 py-0.5 rounded border border-slate-200 dark:border-white/10 text-[8px] mono font-bold uppercase">{change.type}</span>
+                            </header>
+                            <p class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed">{change.description}</p>
+                        </article>
+                    ))}
+                </div>
+            </MainView>
             <ServiceNav />
         </div>
 
@@ -155,11 +195,11 @@ import ServiceNav from '../components/ServiceNav.astro';
 
 <script>
     document.addEventListener('alpine:init', () => {
-        Alpine.data('botoCore', () => ({
-            selectedVersion: '',
-            versions: [],
-            allServices: [],
-            currentVersionData: [],
+        Alpine.data('botoCore', ({ initialVersion, initialData, allVersions, allServices }) => ({
+            selectedVersion: initialVersion || '',
+            versions: allVersions || [],
+            allServices: allServices || [],
+            currentVersionData: initialData || [],
             serviceSearch: '',
             versionSearch: '',
             versionRailSearch: '',
@@ -172,28 +212,46 @@ import ServiceNav from '../components/ServiceNav.astro';
             showMobileServices: false,
             showMobileVersions: false,
             error: null,
-            loading: true,
-            versionCache: {},
+            loading: !initialData, // If we have initial data, don't show loader
+            versionCache: { [initialVersion]: initialData },
 
             isMobile(breakpoint = 768) {
                 return window.matchMedia(`(max-width: ${breakpoint-1}px)`).matches;
             },
 
             async init() {
-                try {
-                    const res = await fetch('/data/track.json');
-                    if (!res.ok) throw new Error('Primary track data missing');
-                    const data = await res.json();
-                    this.versions = data.versions;
-                    this.allServices = data.allServices;
+                // If we don't have initial data, fetch everything
+                if (!this.versions.length) {
+                    try {
+                        const res = await fetch('/data/track.json');
+                        if (!res.ok) throw new Error('Primary track data missing');
+                        const data = await res.json();
+                        this.versions = data.versions;
+                        this.allServices = data.allServices;
 
-                    if (this.versions.length > 0) {
-                        await this.selectVersion(this.versions[0].id);
+                        if (this.versions.length > 0 && !this.selectedVersion) {
+                            await this.selectVersion(this.versions[0].id);
+                        }
+                    } catch (e) {
+                        this.error = e.message;
+                    } finally {
+                        this.loading = false;
                     }
-                } catch (e) {
-                    this.error = e.message;
-                } finally {
-                    this.loading = false;
+                } else {
+                    // We already have initial data from SSR, but we might want to fetch full version data if we sliced it
+                    this.syncIndicator(this.selectedVersion, false);
+                    
+                    // Trigger a background fetch to get full version data if initialData was sliced
+                    if (this.currentVersionData.length === 20) {
+                        fetch(`/data/versions/${this.selectedVersion}.json`)
+                            .then(res => res.json())
+                            .then(data => {
+                                this.versionCache[this.selectedVersion] = data;
+                                if (this.selectedVersion === initialVersion) {
+                                    this.currentVersionData = data;
+                                }
+                            });
+                    }
                 }
             },
 
@@ -206,14 +264,14 @@ import ServiceNav from '../components/ServiceNav.astro';
                 if (this.versionCache[id]) {
                     this.selectedVersion = id;
                     this.currentVersionData = this.versionCache[id];
-                    document.title = `Release ${id} | Boto Tracks`;
+                    document.title = `Boto Tracks | Release ${id}`;
                     this.syncIndicator(id);
                     return;
                 }
 
                 this.selectedVersion = id;
                 this.currentVersionData = []; 
-                document.title = `Release ${id} | Boto Tracks`;
+                document.title = `Boto Tracks | Release ${id}`;
                 this.syncIndicator(id, false); 
 
                 try {

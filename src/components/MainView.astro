@@ -16,9 +16,10 @@
             </button>
 
             <div class="flex items-center gap-4">
-                <span class="hidden sm:inline text-[10px] mono text-slate-500 dark:text-slate-400 uppercase tracking-widest font-black">Release</span>
-                <div class="px-3 py-1 bg-orange-500/5 border border-orange-500/20 rounded-lg shadow-sm">
-                    <span class="text-xs md:text-sm mono font-black text-orange-600 dark:text-orange-400" x-text="selectedVersion || '...'"></span>
+                <span class="hidden sm:inline text-[10px] mono text-slate-500 dark:text-slate-400 uppercase tracking-widest font-black">Selected Version</span>
+                <div class="flex items-center gap-2 px-2.5 py-1 bg-orange-500/5 border border-orange-500/20 rounded-lg shadow-sm">
+                    <span class="text-[10px] mono text-orange-600 dark:text-orange-400 font-black uppercase tracking-widest" x-text="selectedVersion || '...'"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse shadow-[0_0_8px_rgba(249,115,22,0.4)]"></span>
                 </div>
             </div>
             
@@ -59,8 +60,15 @@
                 </div>
 
                 <div class="divide-y divide-slate-200/50 dark:divide-white/10">
+                    <!-- SSR/Initial Data for Search Engines -->
+                    <template x-if="false">
+                        <div class="hidden">
+                            <slot name="initial-content" />
+                        </div>
+                    </template>
+
                     <!-- Loading Sequence -->
-                    <template x-if="currentVersionData.length === 0">
+                    <template x-if="!currentVersionData || currentVersionData.length === 0">
                         <div class="space-y-8 animate-pulse pt-4">
                             <template x-for="i in 5">
                                 <div class="flex items-start gap-6 py-6">
@@ -75,8 +83,9 @@
                     </template>
 
                     <!-- Changelog Feed -->
-                    <template x-for="change in filteredVersionData" :key="change.category + '-' + change.type + '-' + change.description">
-                        <div class="group flex items-start gap-4 md:gap-6 py-6 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-all duration-500 -mx-4 px-4 rounded-2xl relative animate-slide-up">
+                    <template x-if="currentVersionData && currentVersionData.length > 0">
+                        <template x-for="change in filteredVersionData" :key="change.category + '-' + change.type + '-' + change.description">
+                            <div class="group flex items-start gap-4 md:gap-6 py-6 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-all duration-500 -mx-4 px-4 rounded-2xl relative animate-slide-up">
                             <div class="absolute inset-0 bg-gradient-to-r from-orange-500/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
                             
                             <div class="w-9 h-9 rounded-xl bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-orange-500/30 transition-all shadow-sm relative z-10">
@@ -110,10 +119,11 @@
                             </div>
                         </div>
                     </template>
+                </template>
                 </div>
                 
                 <!-- Zero State -->
-                <template x-if="currentVersionData.length > 0 && filteredVersionData.length === 0">
+                <template x-if="currentVersionData && currentVersionData.length > 0 && filteredVersionData.length === 0">
                     <div class="flex flex-col items-center justify-center py-24 text-center animate-slide-up">
                         <div class="w-16 h-16 bg-slate-100 dark:bg-white/10 border border-subtle dark:border-white/10 rounded-2xl flex items-center justify-center mb-6 shadow-inner opacity-50">
                             <svg class="w-8 h-8 text-slate-400 dark:text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
