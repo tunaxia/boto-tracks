@@ -12,7 +12,6 @@ import ServiceNav from '../components/ServiceNav.astro';
          x-data="botoCore" 
          @keydown.window.escape="showMobileServices = false; showMobileVersions = false; activeService = null">
         
-        <!-- Mobile Sidebar Overlays -->
         <div x-show="showMobileVersions" 
              x-transition:enter="transition-opacity ease-out duration-300"
              x-transition:enter-start="opacity-0"
