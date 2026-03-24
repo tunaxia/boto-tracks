@@ -13,6 +13,7 @@ import ServiceNav from '../components/ServiceNav.astro';
          @keydown.window.escape="showMobileServices = false; showMobileVersions = false; activeService = null">
         
         <div x-show="showMobileVersions" 
+             x-cloak
              x-transition:enter="transition-opacity ease-out duration-300"
              x-transition:enter-start="opacity-0"
              x-transition:enter-end="opacity-100"
@@ -23,6 +24,7 @@ import ServiceNav from '../components/ServiceNav.astro';
              @click="showMobileVersions = false"></div>
 
         <div x-show="showMobileServices" 
+             x-cloak
              x-transition:enter="transition-opacity ease-out duration-300"
              x-transition:enter-start="opacity-0"
              x-transition:enter-end="opacity-100"
