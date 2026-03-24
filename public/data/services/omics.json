@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.74",
+    "t": "Adds support for batch workflow runs in Amazon Omics, enabling users to submit, manage, and monitor multiple runs as a single batch. Includes APIs to create, cancel, and delete batches, track submission statuses and counts, list runs within a batch, and configure default settings."
+  },
+  {
     "v": "1.40.64",
     "t": "Added WDL_LENIENT engine type that enables implicit typecasting of variable values to its compatible declared types"
   },

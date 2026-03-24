@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.74",
+    "t": "AWS Batch AMI Visibility feature support. Adds read-only batchImageStatus to Ec2Configuration to provide visibility on the status of Batch-vended AMIs used by Compute Environments."
+  },
+  {
     "v": "1.42.72",
     "t": "AWS Batch now supports quota management, enabling administrators to allocate shared compute resources across teams and projects through quota shares with capacity limits, resource-sharing strategies, and priority-based preemption - currently available for SageMaker Training job queues."
   },

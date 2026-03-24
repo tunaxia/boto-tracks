@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.74",
+    "t": "Add support for tagging of ContactMethod resource type"
+  },
+  {
     "v": "1.40.53",
     "t": "Add support for manage Lightsail Bucket CORS configuration"
   },

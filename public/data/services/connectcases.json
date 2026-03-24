@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.74",
+    "t": "You can now use the UpdateRelatedItem API to update the content of comments and custom related items associated with a case."
+  },
+  {
     "v": "1.42.65",
     "t": "Added functionality for the Required and Hidden case rule types to be conditionally evaluated on up to 5 conditions."
   },
