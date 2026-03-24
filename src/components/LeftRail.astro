@@ -1,5 +1,5 @@
-<aside :class="showMobileVersions ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'"
-       class="fixed lg:relative inset-y-0 left-0 -translate-x-full lg:translate-x-0 w-40 md:w-52 flex-shrink-0 border-r border-slate-200 dark:border-white/5 flex flex-col bg-sidebar z-[100] lg:z-20 transition-all duration-500 ease-in-out theme-transition">
+<aside :class="{ 'translate-x-0': showMobileVersions, '-translate-x-full': !showMobileVersions }"
+       class="fixed lg:relative inset-y-0 left-0 lg:translate-x-0 w-40 md:w-52 flex-shrink-0 border-r border-slate-200 dark:border-white/5 flex flex-col bg-sidebar z-[100] lg:z-20 transition-all duration-500 ease-in-out theme-transition">
     
     <!-- Mobile Header -->
     <div class="lg:hidden flex items-center justify-between px-6 py-5 border-b border-subtle bg-card backdrop-blur-md">
