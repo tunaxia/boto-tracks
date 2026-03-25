@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.75",
+    "t": "Reduces the minimum allowed value for startOverWindowSeconds from 60 to 0, allowing customers to effectively disable the start-over window."
+  },
+  {
     "v": "1.42.12",
     "t": "This release adds support for SPEKE V2 content key encryption in MediaPackage v2 Origin Endpoints."
   },

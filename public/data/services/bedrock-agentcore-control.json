@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.75",
+    "t": "Adds SDK support for 1) Persist session state in AgentCore Runtime via filesystemConfigurations in CreateAgentRuntime, UpdateAgentRuntime, and GetAgentRuntime APIs, 2) Optional name-based filtering on AgentCore ListBrowserProfiles API."
+  },
+  {
     "v": "1.42.72",
     "t": "Adds support for the following new features. 1. Enterprise Policies support for AgentCore Browser Tool. 2. Root CA Configuration support for AgentCore Browser Tool and Code Interpreter."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.75",
+    "t": "Adds support in Aurora PostgreSQL serverless databases for express configuration based creation through WithExpressConfiguration in CreateDbCluster API, and for restoring clusters using RestoreDBClusterToPointInTime and RestoreDBClusterFromSnapshot APIs."
+  },
+  {
     "v": "1.42.51",
     "t": "Adds support for the StorageEncryptionType field to specify encryption type for DB clusters, DB instances, snapshots, automated backups, and global clusters."
   },
