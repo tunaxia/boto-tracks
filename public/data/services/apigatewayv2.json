@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.76",
+    "t": "Added DISABLE IN PROGRESS and DISABLE FAILED Portal statuses."
+  },
+  {
     "v": "1.41.0",
     "t": "Support for API Gateway portals and portal products."
   },

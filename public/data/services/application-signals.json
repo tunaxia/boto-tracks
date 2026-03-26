@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.76",
+    "t": "This release adds support for creating SLOs on RUM appMonitors, Synthetics canaries and services."
+  },
+  {
     "v": "1.41.1",
     "t": "Amazon CloudWatch Application Signals now supports un-instrumented services discovery, cross-account views, and change history, helping SRE and DevOps teams monitor and troubleshoot their large-scale distributed applications."
   },

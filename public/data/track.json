@@ -1,6 +1,9 @@
 {
   "versions": [
     {
+      "id": "1.42.76"
+    },
+    {
       "id": "1.42.75"
     },
     {
@@ -7174,6 +7177,7 @@
     "urllib3",
     "user-agent",
     "useragent",
+    "uxc",
     "validation",
     "validator",
     "verifiedpermissions",
