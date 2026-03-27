@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.77",
+    "t": "Timestream for InfluxDB adds support for customer defined maintenance windows. This allows customers to define maintenance schedule during resource creation and updates"
+  },
+  {
     "v": "1.42.11",
     "t": "This release adds support for rebooting InfluxDB DbInstances and DbClusters"
   },

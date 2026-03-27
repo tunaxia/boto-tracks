@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.77",
+    "t": "Release support for ml.r5d.16xlarge instance types for SageMaker HyperPod"
+  },
+  {
     "v": "1.42.66",
     "t": "SageMaker training plans allow you to extend your existing training plans to avoid workload interruptions without workload reconfiguration. When a training plan is approaching expiration, you can extend it directly through the SageMaker AI console or programmatically using the API or AWS CLI."
   },

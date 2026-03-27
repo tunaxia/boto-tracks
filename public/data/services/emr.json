@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.77",
+    "t": "Add StepExecutionRoleArn to RunJobFlow API"
+  },
+  {
     "v": "1.42.70",
     "t": "Add S3LoggingConfiguration to Control LogUploads"
   },
