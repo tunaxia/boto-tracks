@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.78",
+    "t": "Minor formatting changes to remove unnecessary symbols."
+  },
+  {
     "v": "1.42.45",
     "t": "Added edgeOnlyLoad boolean parameter to Neptune bulk load request. When TRUE, files are loaded in order without scanning. When FALSE (default), the loader scans files first, then loads vertex files before edge files automatically."
   },
