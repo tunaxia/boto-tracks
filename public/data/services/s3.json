@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.79",
+    "t": "Added support for opting out of Amazon S3 Express session authentication via the new ``disable_s3_express_session_auth`` S3 client configuration setting, or the new ``AWS_S3_DISABLE_EXPRESS_SESSION_AUTH`` environment variable, or the ``s3_disable_express_session_auth`` shared configuration setting."
+  },
+  {
     "v": "1.42.73",
     "t": "Fix aws-chunked requests with non-seekable streams sending both ``Content-Length`` and ``Transfer-Encoding: chunked``, which violated HTTP/1.1 (RFC 7230) and caused ``SignatureDoesNotMatch`` errors."
   },

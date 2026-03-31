@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.79",
+    "t": "Adds Ground Truth support for AgentCore Evaluations (Evaluate)"
+  },
+  {
     "v": "1.42.78",
     "t": "Adding AgentCore Code Interpreter Node.js Runtime Support with an optional runtime field"
   },

@@ -1,6 +1,9 @@
 {
   "versions": [
     {
+      "id": "1.42.79"
+    },
+    {
       "id": "1.42.78"
     },
     {
@@ -6801,6 +6804,7 @@
     "dependency",
     "detective",
     "devicefarm",
+    "devops-agent",
     "devops-guru",
     "directconnect",
     "directoryservice",

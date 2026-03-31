@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.79",
+    "t": "Add setSourceIdentity to DataLakeSettings Parameters"
+  },
+  {
     "v": "1.42.45",
     "t": "Allow cross account v5 in put data lake settings"
   },

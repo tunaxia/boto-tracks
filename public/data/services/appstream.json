@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.79",
+    "t": "Add support for URL Redirection"
+  },
+  {
     "v": "1.42.54",
     "t": "Adding new attribute to disable IMDS v1 APIs for fleet, Image Builder and AppBlockBuilder instances."
   },
