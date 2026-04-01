@@ -93,14 +93,14 @@ import ServiceNav from '../components/ServiceNav.astro';
                             <span class="w-1 h-1 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)] animate-pulse-slow"></span>
                             <span class="text-[10px] mono text-slate-500 dark:text-slate-400 font-black uppercase tracking-[0.2em]">Service History</span>
                         </div>
-                        <button @click="activeService = null" aria-label="Close" class="p-1.5 bg-slate-100 dark:bg-white/10 rounded-lg text-slate-400 hover:text-orange-500 transition-all active:scale-90">
+                        <button @click="activeService = null" aria-label="Close service history drawer" class="p-1.5 bg-slate-100 dark:bg-white/10 rounded-lg text-slate-400 hover:text-orange-500 transition-all active:scale-90">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </div>
                     <h2 class="text-xl font-black text-slate-900 dark:text-white italic uppercase tracking-tighter leading-none mb-6" x-text="activeService"></h2>
                     
                     <div class="relative group/search">
-                        <input type="text" id="serviceHistorySearch" x-model.debounce.200ms="serviceHistorySearch" placeholder="Filter history..." 
+                        <input type="text" id="serviceHistorySearch" x-model.debounce.200ms="serviceHistorySearch" aria-label="Search service history" placeholder="Filter history..." 
                                class="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl py-2.5 pl-10 pr-4 text-xs focus:outline-none focus:ring-4 focus:ring-orange-500/5 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-sm font-medium">
                         <svg class="absolute left-3.5 top-2.5 w-4 h-4 text-slate-400 dark:text-slate-600 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </div>
@@ -177,9 +177,50 @@ import ServiceNav from '../components/ServiceNav.astro';
             error: null,
             loading: true,
             versionCache: {},
+            copyStatus: false,
 
             isMobile(breakpoint = 768) {
                 return window.matchMedia(`(max-width: ${breakpoint-1}px)`).matches;
+            },
+
+            highlight(text, search) {
+                if (!search || !text) return text;
+                const s = search.trim();
+                if (!s) return text;
+                const regex = new RegExp(`(${s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+                return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+            },
+
+            async copyToClipboard(text) {
+                try {
+                    await navigator.clipboard.writeText(text);
+                    this.copyStatus = true;
+                    setTimeout(() => this.copyStatus = false, 2000);
+                } catch (err) {
+                    console.error('Failed to copy: ', err);
+                }
+            },
+
+            async prefetchVersion(id) {
+                if (this.versionCache[id] || this.selectedVersion === id) return;
+                try {
+                    const res = await fetch(`/data/versions/${id}.json`);
+                    if (res.ok) {
+                        this.versionCache[id] = await res.json();
+                    }
+                } catch (e) {}
+            },
+
+            async prefetchService(svc) {
+                const serviceId = svc.toLowerCase().trim().replace(/[\._\s]+/g, '-').replace(/-+/g, '-');
+                const cacheKey = `svc_${serviceId}`;
+                if (this.versionCache[cacheKey]) return;
+                try {
+                    const res = await fetch(`/data/services/${serviceId}.json`);
+                    if (res.ok) {
+                        this.versionCache[cacheKey] = await res.json();
+                    }
+                } catch (e) {}
             },
 
             async init() {
@@ -261,11 +302,19 @@ import ServiceNav from '../components/ServiceNav.astro';
                 this.serviceHistoryLoading = true;
                 this.serviceHistorySearch = '';
                 const serviceId = svc.toLowerCase().trim().replace(/[\._\s]+/g, '-').replace(/-+/g, '-');
+                const cacheKey = `svc_${serviceId}`;
+
+                if (this.versionCache[cacheKey]) {
+                    this.serviceHistory = this.versionCache[cacheKey];
+                    this.serviceHistoryLoading = false;
+                    return;
+                }
                 
                 try {
                     const res = await fetch(`/data/services/${serviceId}.json`);
                     if (!res.ok) throw new Error('Service data unavailable');
                     const data = await res.json();
+                    this.versionCache[cacheKey] = data;
                     if (this.activeService === svc) {
                         this.serviceHistory = data;
                     }
