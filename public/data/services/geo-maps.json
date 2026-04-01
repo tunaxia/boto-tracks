@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.80",
+    "t": "This release expands map customization options with adjustable contour line density, dark mode support for Hybrid and Satellite views, enhanced traffic information across multiple map styles, and transit and truck travel modes for Monochrome and Hybrid map styles."
+  },
+  {
     "v": "1.42.41",
     "t": "Added support for optional style parameters in maps, including 3D terrain and 3D Buildings"
   },

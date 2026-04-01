@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.80",
+    "t": "This release updates the examples in the documentation for DescribeRegions and DescribeAvailabilityZones."
+  },
+  {
     "v": "1.42.72",
     "t": "Amazon EC2 Fleet instant mode now supports launching instances into Interruptible Capacity Reservations, enabling customers to use spare capacity shared by Capacity Reservation owners within their AWS Organization."
   },

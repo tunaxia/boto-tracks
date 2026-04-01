@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.80",
+    "t": "S3 Tables now supports nested types when creating tables. Users can define complex column schemas using struct, list, and map types. These types can be composed together to model complex, hierarchical data structures within table schemas."
+  },
+  {
     "v": "1.42.47",
     "t": "S3 Tables now supports setting partition specifications and sort orders on tables. Partition specs allow users to define how data is organized using transform functions. Sort order configurations enable users to specify sort directions and null ordering preferences for optimized data layout."
   },

@@ -1,6 +1,9 @@
 {
   "versions": [
     {
+      "id": "1.42.80"
+    },
+    {
       "id": "1.42.79"
     },
     {
@@ -7116,6 +7119,7 @@
     "schemas",
     "secretsmanager",
     "security-ir",
+    "securityagent",
     "securityhub",
     "securitylake",
     "serialization",
@@ -7167,6 +7171,7 @@
     "supplychain",
     "support",
     "support-app",
+    "sustainability",
     "swf",
     "synthetics",
     "tagged-unions",

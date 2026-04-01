@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.80",
+    "t": "Added Path field to Account and OrganizationalUnit objects in AWS Organizations API responses."
+  },
+  {
     "v": "1.42.41",
     "t": "Updated the CloseAccount description."
   },

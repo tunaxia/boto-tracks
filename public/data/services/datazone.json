@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.80",
+    "t": "Adds environmentConfigurationName field to CreateEnvironmentInput and UpdateEnvironmentInput, so that Domain Owners can now recover orphaned environments by recreating deleted configurations with the same name, and will auto-recover orphaned environments"
+  },
+  {
     "v": "1.42.60",
     "t": "Adding QueryGraph operation to DataZone SDK"
   },

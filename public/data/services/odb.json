@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.80",
+    "t": "Adds support for EC2 Placement Group integration with ODB Network. The GetOdbNetwork and ListOdbNetworks API responses now include the ec2PlacementGroupIds field."
+  },
+  {
     "v": "1.42.59",
     "t": "ODB Networking Route Management is a feature improvement which allows for implicit creation and deletion of EC2 Routes in the Peer Network Route Table designated by the customer via new optional input. This feature release is combined with Multiple App-VPC functionality for ODB Network Peering(s)."
   },

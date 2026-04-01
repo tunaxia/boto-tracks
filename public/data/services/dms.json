@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.80",
+    "t": "To successfully connect to the IBM DB2 LUW database server, you may need to specify additional security parameters that are passed to the JDBC driver. These parameters are EncryptionAlgorithm and SecurityMechanism. Both parameters accept integer values."
+  },
+  {
     "v": "1.42.65",
     "t": "Not need to include to any release notes. The only change is to correct LoadTimeout unit from milliseconds to seconds in RedshiftSettings"
   },

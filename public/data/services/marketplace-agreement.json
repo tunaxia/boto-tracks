@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.80",
+    "t": "This release adds 8 new APIs for AWS Marketplace sellers. 4 APIs for Cancellations (Send, List, Get, Cancel action on AgreementCancellationRequest), 3 APIs for Billing Adjustments (BatchCreate, List, Get action on BillingAdjustmentRequest), and 1 API to List Invoices (ListAgreementInvoiceLineItems)"
+  },
+  {
     "v": "1.42.76",
     "t": "The Variable Payments APIs enable AWS Marketplace Sellers to perform manage their payment requests (send, get, list, cancel)."
   },
