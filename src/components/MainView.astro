@@ -22,10 +22,10 @@
                         :aria-label="'Copy release version ' + (selectedVersion || '...')">
                     <span class="text-[10px] mono text-orange-600 dark:text-orange-400 font-black uppercase tracking-widest" x-text="selectedVersion || '...'"></span>
                     <span x-show="!copyStatus" class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse shadow-[0_0_8px_rgba(249,115,22,0.4)]"></span>
-                    <svg x-show="copyStatus" class="w-3 h-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                    <svg x-show="copyStatus" x-cloak class="w-3 h-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                     
                     <!-- Copy Tooltip -->
-                    <div x-show="copyStatus" x-transition class="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-slate-900 text-white text-[8px] mono font-bold rounded uppercase tracking-tighter whitespace-nowrap z-[60]">Copied!</div>
+                    <div x-show="copyStatus" x-cloak x-transition class="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-slate-900 text-white text-[8px] mono font-bold rounded uppercase tracking-tighter whitespace-nowrap z-[60]">Copied!</div>
                 </button>
             </div>
             
