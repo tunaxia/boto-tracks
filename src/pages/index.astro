@@ -131,10 +131,11 @@ import ServiceNav from '../components/ServiceNav.astro';
                                     <div class="flex flex-col gap-2.5 p-5 bg-slate-50/50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 rounded-[20px] hover:bg-white dark:hover:bg-white/[0.06] hover:border-orange-500/20 transition-all duration-300 overflow-hidden shadow-sm hover:shadow-md">
                                         <div class="flex items-center">
                                             <button @click="selectVersion(log.v); activeService = null" 
+                                                    :aria-label="'Select release version ' + log.v"
                                                     class="px-2.5 py-1 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-md mono text-[9px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95 shadow-sm" 
-                                                    x-text="log.v"></button>
+                                                    x-html="highlight(log.v, serviceHistorySearch)"></button>
                                         </div>
-                                        <p class="text-slate-600 dark:text-slate-300 text-[13px] md:text-[14px] leading-[1.6] font-medium tracking-tight group-hover/history:text-slate-900 dark:group-hover/history:text-white transition-colors break-words" x-text="log.t"></p>
+                                        <p class="text-slate-600 dark:text-slate-300 text-[13px] md:text-[14px] leading-[1.6] font-medium tracking-tight group-hover/history:text-slate-900 dark:group-hover/history:text-white transition-colors break-words" x-html="highlight(log.t, serviceHistorySearch)"></p>
                                     </div>
                                 </div>
                             </template>
