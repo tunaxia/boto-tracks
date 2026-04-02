@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.81",
+    "t": "Adding Policy-Min-TLS-1-2-RFC9151-FIPS-2024-08 as TLS Policy in Supported Regions"
+  },
+  {
     "v": "1.42.61",
     "t": "Adds support for DeploymentStrategyOptions."
   },

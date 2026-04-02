@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.81",
+    "t": "This release makes RoutingBoundary optional in CalculateRouteMatrix, set StopDuration with a maximum value of 49999 for CalculateRoutes, set TrailerCount with a maximum value of 4, and introduces region restrictions for Grab Maps users."
+  },
+  {
     "v": "1.40.54",
     "t": "Update endpoint ruleset parameters casing"
   },

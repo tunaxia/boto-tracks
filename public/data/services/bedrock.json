@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.81",
+    "t": "Adds support for Bedrock Batch Inference Job Progress Monitoring"
+  },
+  {
     "v": "1.42.69",
     "t": "You can now generate policy scenarios on demand using the new GENERATE POLICY SCENARIOS build workflow type. Scenarios will no longer be automatically generated during INGEST CONTENT, REFINE POLICY, and IMPORT POLICY workflows, resulting in faster completion times for these operations."
   },

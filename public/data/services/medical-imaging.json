@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.81",
+    "t": "Added new boolean flag to persist metadata updates to all primary image sets in the same study as the requested image set."
+  },
+  {
     "v": "1.40.71",
     "t": "Added new fields in existing APIs."
   },
