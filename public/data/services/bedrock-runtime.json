@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.82",
+    "t": "Relax ToolUseId pattern to allow dots and colons"
+  },
+  {
     "v": "1.42.42",
     "t": "Added support for structured outputs to Converse and ConverseStream APIs."
   },

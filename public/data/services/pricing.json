@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.82",
+    "t": "This release increases the MaxResults parameter of the GetAttributeValues API from 100 to 10000."
+  },
+  {
     "v": "1.40.54",
     "t": "Update endpoint ruleset parameters casing"
   },

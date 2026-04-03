@@ -3,6 +3,7 @@ import json
 import re
 import shutil
 import subprocess
+import requests
 from pathlib import Path
 
 BOTO_REPO = "https://github.com/boto/botocore.git"
@@ -13,7 +14,6 @@ VERSIONS_DIR = os.path.join(OUTPUT_DIR, "versions")
 SERVICES_DIR = os.path.join(OUTPUT_DIR, "services")
 
 def format_id(name):
-
     if not name:
         return "unknown"
     name = name.replace("`", "").lower().strip()
@@ -28,10 +28,31 @@ def version_key(version_str):
     except ValueError:
         return (0, 0, 0)
 
-def sync():
+def get_pypi_release_dates():
+    """Fetch all release dates for botocore from PyPI."""
+    print("Fetching release dates from PyPI...")
+    try:
+        response = requests.get("https://pypi.org/pypi/botocore/json", timeout=15)
+        response.raise_for_status()
+        data = response.json()
+        dates = {}
+        for version, releases in data.get("releases", {}).items():
+            if releases:
+                # Use the upload time of the first artifact as the release date
+                upload_time = releases[0].get("upload_time")
+                if upload_time:
+                    dates[version] = upload_time.split("T")[0]
+        return dates
+    except Exception as e:
+        print(f"Warning: Could not fetch release dates from PyPI: {e}")
+        return {}
 
+def sync():
     os.makedirs(VERSIONS_DIR, exist_ok=True)
     os.makedirs(SERVICES_DIR, exist_ok=True)
+
+    # Fetch release dates
+    pypi_dates = get_pypi_release_dates()
 
     if os.path.exists(CLONE_DIR):
         print(f"Updating existing repository in {CLONE_DIR}...")
@@ -61,13 +82,25 @@ def sync():
             except Exception as e:
                 print(f"Warning: Could not parse track.json: {e}")
 
+    # Update existing versions with dates if they are missing
+    for v in existing_versions:
+        if "date" not in v:
+            v["date"] = pypi_dates.get(v["id"])
+
     processed_version_ids = {v["id"] for v in existing_versions}
 
     all_change_files = [f for f in os.listdir(CHANGES_DIR) if f.endswith(".json")]
     new_files = [f for f in all_change_files if f.replace(".json", "") not in processed_version_ids]
     
     if not new_files:
-        print("No new versions to sync.")
+        print("No new versions to sync, but updated existing dates if necessary.")
+        # Even if no new versions, save if we added dates to existing ones
+        track_data = {
+            "versions": existing_versions,
+            "allServices": sorted(list(existing_services))
+        }
+        with open(track_path, 'w') as f:
+            json.dump(track_data, f, indent=2)
         return
 
     new_files.sort(key=lambda x: version_key(x.replace(".json", "")))
@@ -87,7 +120,10 @@ def sync():
             print(f"Skipping {filename}: {e}")
             continue
 
-        newly_processed_versions.append({"id": version})
+        newly_processed_versions.append({
+            "id": version,
+            "date": pypi_dates.get(version)
+        })
         processed_changes = []
 
         for change in data:

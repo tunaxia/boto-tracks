@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.82",
+    "t": "This release updates API reference documentation for Amazon Location Service Places APIs to reflect regional restrictions for Grab Maps users in ReverseGeocode, Suggest, SearchText, and GetPlace operations"
+  },
+  {
     "v": "1.42.16",
     "t": "Adds support for InferredSecondaryAddress place type, Designator in SecondaryAddressComponent and Heading in ReverseGeocode."
   },

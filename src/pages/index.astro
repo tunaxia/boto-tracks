@@ -129,11 +129,12 @@ import ServiceNav from '../components/ServiceNav.astro';
                                     <div class="absolute left-[14px] top-2 w-2.5 h-2.5 rounded-full bg-white dark:bg-black border-2 border-slate-300 dark:border-white/20 shadow-sm z-10 transition-colors group-hover/history:border-orange-500"></div>
                                     
                                     <div class="flex flex-col gap-2.5 p-5 bg-slate-50/50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 rounded-[20px] hover:bg-white dark:hover:bg-white/[0.06] hover:border-orange-500/20 transition-all duration-300 overflow-hidden shadow-sm hover:shadow-md">
-                                        <div class="flex items-center">
+                                        <div class="flex items-center justify-between">
                                             <button @click="selectVersion(log.v); activeService = null" 
                                                     :aria-label="'Select release version ' + log.v"
                                                     class="px-2.5 py-1 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-md mono text-[9px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95 shadow-sm" 
                                                     x-html="highlight(log.v, serviceHistorySearch)"></button>
+                                            <span x-show="getVersionDate(log.v)" x-text="getVersionDate(log.v)" x-cloak class="text-[8px] mono text-slate-400 dark:text-slate-600 uppercase tracking-widest font-bold"></span>
                                         </div>
                                         <p class="text-slate-600 dark:text-slate-300 text-[13px] md:text-[14px] leading-[1.6] font-medium tracking-tight group-hover/history:text-slate-900 dark:group-hover/history:text-white transition-colors break-words" x-html="highlight(log.t, serviceHistorySearch)"></p>
                                     </div>
@@ -190,6 +191,16 @@ import ServiceNav from '../components/ServiceNav.astro';
                 if (!s) return text;
                 const regex = new RegExp(`(${s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
                 return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+            },
+
+            get selectedDate() {
+                const v = this.versions.find(v => v.id === this.selectedVersion);
+                return v ? v.date : '';
+            },
+
+            getVersionDate(id) {
+                const v = this.versions.find(v => v.id === id);
+                return v ? v.date : '';
             },
 
             async copyToClipboard(text) {
