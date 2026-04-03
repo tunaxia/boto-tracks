@@ -116,8 +116,9 @@
                         <div class="group flex items-start gap-4 md:gap-6 py-6 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-all duration-500 -mx-4 px-4 rounded-2xl relative animate-slide-up">
                             <div class="absolute inset-0 bg-gradient-to-r from-orange-500/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
                             
-                            <div class="w-9 h-9 rounded-xl bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-orange-500/30 transition-all shadow-sm relative z-10">
-                                <span class="text-orange-500 font-black mono text-[10px]" x-text="change.category.substring(0,2).toUpperCase()"></span>
+                            <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 transition-all shadow-sm relative z-10 border group-hover:scale-105"
+                                 :class="getServiceColorClass(change.category)">
+                                <span class="font-black mono text-[10px]" x-text="change.category.substring(0,2).toUpperCase()"></span>
                             </div>
 
                             <div class="flex-1 min-w-0 relative z-10">
