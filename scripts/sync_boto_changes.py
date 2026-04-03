@@ -1,160 +1,171 @@
-import os
 import json
+import logging
 import re
 import shutil
 import subprocess
 from pathlib import Path
+from typing import Any, Dict, List, Optional, Set
 
-BOTO_REPO = "https://github.com/boto/botocore.git"
-CLONE_DIR = "botocore_repo"
-CHANGES_DIR = "botocore_repo/.changes"
-OUTPUT_DIR = "public/data"
-VERSIONS_DIR = os.path.join(OUTPUT_DIR, "versions")
-SERVICES_DIR = os.path.join(OUTPUT_DIR, "services")
+import requests
 
-def format_id(name):
+CONFIG = {
+    "BOTO_REPO": "https://github.com/boto/botocore.git",
+    "CLONE_DIR": Path("botocore_repo"),
+    "CHANGES_DIR": Path("botocore_repo/.changes"),
+    "OUTPUT_DIR": Path("public/data"),
+}
 
-    if not name:
-        return "unknown"
-    name = name.replace("`", "").lower().strip()
-    name = re.sub(r'[\._\s]', '-', name)
-    name = re.sub(r'-+', '-', name)
-    name = name.strip('-')
-    return name
+VERSIONS_DIR = CONFIG["OUTPUT_DIR"] / "versions"
+SERVICES_DIR = CONFIG["OUTPUT_DIR"] / "services"
+TRACK_JSON = CONFIG["OUTPUT_DIR"] / "track.json"
 
-def version_key(version_str):
-    try:
-        return tuple(map(int, version_str.split('.')))
-    except ValueError:
-        return (0, 0, 0)
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+logger = logging.getLogger(__name__)
 
-def sync():
+class BotoSync:
+    def __init__(self):
+        self.session = requests.Session()
+        self.pypi_dates: Dict[str, str] = {}
+        self.existing_services: Set[str] = set()
+        self.existing_versions: List[Dict[str, Any]] = []
 
-    os.makedirs(VERSIONS_DIR, exist_ok=True)
-    os.makedirs(SERVICES_DIR, exist_ok=True)
+    @staticmethod
+    def format_id(name: str) -> str:
+        if not name:
+            return "unknown"
+        name = name.replace("`", "").lower().strip()
+        name = re.sub(r"[\._\s]", "-", name)
+        name = re.sub(r"-+", "-", name)
+        return name.strip("-")
 
-    if os.path.exists(CLONE_DIR):
-        print(f"Updating existing repository in {CLONE_DIR}...")
+    @staticmethod
+    def version_key(version_str: str) -> tuple:
         try:
-            subprocess.run(["git", "-C", CLONE_DIR, "pull"], check=True)
-        except subprocess.CalledProcessError:
-            print("Update failed, re-cloning...")
-            shutil.rmtree(CLONE_DIR)
-            subprocess.run(["git", "clone", "--depth", "1", BOTO_REPO, CLONE_DIR], check=True)
-    else:
-        print(f"Cloning {BOTO_REPO}...")
-        subprocess.run(["git", "clone", "--depth", "1", BOTO_REPO, CLONE_DIR], check=True)
+            return tuple(map(int, version_str.split(".")))
+        except (ValueError, AttributeError):
+            return (0, 0, 0)
 
-    if not os.path.exists(CHANGES_DIR):
-        print("Error: .changes directory not found.")
-        return
-
-    track_path = os.path.join(OUTPUT_DIR, "track.json")
-    existing_versions = []
-    existing_services = set()
-    if os.path.exists(track_path):
-        with open(track_path, 'r') as f:
-            try:
-                track_data = json.load(f)
-                existing_versions = track_data.get("versions", [])
-                existing_services = set(track_data.get("allServices", []))
-            except Exception as e:
-                print(f"Warning: Could not parse track.json: {e}")
-
-    processed_version_ids = {v["id"] for v in existing_versions}
-
-    all_change_files = [f for f in os.listdir(CHANGES_DIR) if f.endswith(".json")]
-    new_files = [f for f in all_change_files if f.replace(".json", "") not in processed_version_ids]
-    
-    if not new_files:
-        print("No new versions to sync.")
-        return
-
-    new_files.sort(key=lambda x: version_key(x.replace(".json", "")))
-    print(f"Processing {len(new_files)} new versions...")
-
-    newly_processed_versions = []
-    affected_services = {}
-
-    for filename in new_files:
-        version = filename.replace(".json", "")
-        file_path = os.path.join(CHANGES_DIR, filename)
-        
+    def load_json(self, path: Path, default: Any = None) -> Any:
+        if not path.exists():
+            return default if default is not None else {}
         try:
-            with open(file_path, 'r') as f:
-                data = json.load(f)
+            with path.open("r", encoding="utf-8") as f:
+                return json.load(f)
         except Exception as e:
-            print(f"Skipping {filename}: {e}")
-            continue
+            logger.error(f"Failed to load {path}: {e}")
+            return default if default is not None else {}
 
-        newly_processed_versions.append({"id": version})
-        processed_changes = []
+    def save_json(self, path: Path, data: Any):
+        try:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            with path.open("w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2)
+        except Exception as e:
+            logger.error(f"Failed to save {path}: {e}")
 
-        for change in data:
-            category = format_id(change.get("category", "unknown"))
-            description = change.get("description", "")
-            change_type = change.get("type", "api-change")
+    def fetch_pypi_dates(self):
+        logger.info("Fetching release dates from PyPI...")
+        try:
+            r = self.session.get("https://pypi.org/pypi/botocore/json", timeout=15)
+            r.raise_for_status()
+            data = r.json()
+            for version, releases in data.get("releases", {}).items():
+                if releases and (upload_time := releases[0].get("upload_time")):
+                    self.pypi_dates[version] = upload_time.split("T")[0]
+        except Exception as e:
+            logger.warning(f"Could not fetch PyPI dates: {e}")
 
-            existing_services.add(category)
+    def ensure_repository(self):
+        if CONFIG["CLONE_DIR"].exists():
+            logger.info("Updating existing repository...")
+            try:
+                subprocess.run(["git", "-C", str(CONFIG["CLONE_DIR"]), "pull"], check=True, capture_output=True)
+            except subprocess.CalledProcessError:
+                logger.warning("Update failed, re-cloning...")
+                shutil.rmtree(CONFIG["CLONE_DIR"])
+                self._clone_repo()
+        else:
+            self._clone_repo()
+
+    def _clone_repo(self):
+        logger.info(f"Cloning {CONFIG['BOTO_REPO']}...")
+        subprocess.run(["git", "clone", "--depth", "1", CONFIG["BOTO_REPO"], str(CONFIG["CLONE_DIR"])], check=True)
+
+    def process_new_versions(self) -> List[Dict[str, Any]]:
+        processed_ids = {v["id"] for v in self.existing_versions}
+        
+        all_files = list(CONFIG["CHANGES_DIR"].glob("*.json"))
+        new_files = [f for f in all_files if f.stem not in processed_ids]
+        
+        if not new_files:
+            return []
+
+        new_files.sort(key=lambda x: self.version_key(x.stem))
+        logger.info(f"Processing {len(new_files)} new versions...")
+
+        new_entries = []
+        affected_services: Dict[str, List[Dict]] = {}
+
+        for file_path in new_files:
+            version = file_path.stem
+            data = self.load_json(file_path, default=[])
             
-            processed_changes.append({
-                "category": category,
-                "description": description,
-                "type": change_type
-            })
+            processed_changes = []
+            for change in data:
+                category = self.format_id(change.get("category", "unknown"))
+                desc = change.get("description", "")
+                ctype = change.get("type", "api-change")
 
-            if category not in affected_services:
-                affected_services[category] = []
+                self.existing_services.add(category)
+                processed_changes.append({"category": category, "description": desc, "type": ctype})
+
+                affected_services.setdefault(category, []).append({"v": version, "t": desc})
+
+            self.save_json(VERSIONS_DIR / f"{version}.json", processed_changes)
+            new_entries.append({"id": version, "date": self.pypi_dates.get(version)})
+
+        self._update_service_files(affected_services)
+        return new_entries
+
+    def _update_service_files(self, affected_services: Dict[str, List[Dict]]):
+        for service, new_logs in affected_services.items():
+            service_path = SERVICES_DIR / f"{service}.json"
+            history = self.load_json(service_path, default=[])
             
-            affected_services[category].append({
-                "v": version,
-                "t": description
-            })
+            existing_v = {item["v"] for item in history}
+            filtered_new = [e for e in new_logs if e["v"] not in existing_v]
+            
+            if filtered_new:
+                updated = filtered_new + history
+                updated.sort(key=lambda x: self.version_key(x["v"]), reverse=True)
+                self.save_json(service_path, updated)
 
-        v_file_path = os.path.join(VERSIONS_DIR, f"{version}.json")
-        if not os.path.exists(v_file_path):
-            with open(v_file_path, 'w') as f:
-                json.dump(processed_changes, f, indent=2)
+    def run(self):
+        VERSIONS_DIR.mkdir(parents=True, exist_ok=True)
+        SERVICES_DIR.mkdir(parents=True, exist_ok=True)
 
-    updated_count = 0
-    for service, new_entries in affected_services.items():
-        service_file = os.path.join(SERVICES_DIR, f"{service}.json")
+        self.fetch_pypi_dates()
+        self.ensure_repository()
+
+        track_data = self.load_json(TRACK_JSON)
+        self.existing_versions = track_data.get("versions", [])
+        self.existing_services = set(track_data.get("allServices", []))
+
+        for v in self.existing_versions:
+            if not v.get("date"):
+                v["date"] = self.pypi_dates.get(v["id"])
+
+        new_versions = self.process_new_versions()
         
-        history = []
-        if os.path.exists(service_file):
-            with open(service_file, 'r') as f:
-                try:
-                    history = json.load(f)
-                except:
-                    history = []
+        combined = new_versions + self.existing_versions
+        combined.sort(key=lambda x: self.version_key(x["id"]), reverse=True)
 
-        existing_v = {item["v"] for item in history}
-        filtered_new_entries = [e for e in new_entries if e["v"] not in existing_v]
-        
-        if not filtered_new_entries:
-            continue
+        self.save_json(TRACK_JSON, {
+            "versions": combined,
+            "allServices": sorted(list(self.existing_services))
+        })
 
-        filtered_new_entries.sort(key=lambda x: version_key(x["v"]), reverse=True)
-        updated_history = filtered_new_entries + history
-        
-        with open(service_file, 'w') as f:
-            json.dump(updated_history, f, indent=2)
-        updated_count += 1
-    
-    if updated_count > 0:
-        print(f"Updated {updated_count} service history files.")
-
-    newly_processed_versions.sort(key=lambda x: version_key(x["id"]), reverse=True)
-    combined_versions = newly_processed_versions + existing_versions
-    
-    track_data = {
-        "versions": combined_versions,
-        "allServices": sorted(list(existing_services))
-    }
-    with open(track_path, 'w') as f:
-        json.dump(track_data, f, indent=2)
-
-    print(f"Sync complete. Added {len(new_files)} versions.")
+        logger.info(f"Sync complete. Added {len(new_versions)} versions.")
 
 if __name__ == "__main__":
-    sync()
+    BotoSync().run()

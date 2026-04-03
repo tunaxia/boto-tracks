@@ -21,6 +21,9 @@ jobs:
         with:
           python-version: "3.14"
 
+      - name: Install Dependencies
+        run: python -m pip install --upgrade pip requests
+
       - name: Run Sync Script
         run: python scripts/sync_boto_changes.py
 

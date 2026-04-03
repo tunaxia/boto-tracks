@@ -74,7 +74,7 @@ import ServiceNav from '../components/ServiceNav.astro';
                  x-transition:leave-start="opacity-100" 
                  x-transition:leave-end="opacity-0" 
                  class="absolute inset-0 bg-[#050505]/60 backdrop-blur-sm transition-opacity" 
-                 @click="activeService = null"></div>
+                 @click="activeService = null; updateUrl()"></div>
 
             <!-- Drawer Container -->
             <div x-show="activeService" 
@@ -93,11 +93,18 @@ import ServiceNav from '../components/ServiceNav.astro';
                             <span class="w-1 h-1 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)] animate-pulse-slow"></span>
                             <span class="text-[10px] mono text-slate-500 dark:text-slate-400 font-black uppercase tracking-[0.2em]">Service History</span>
                         </div>
-                        <button @click="activeService = null" aria-label="Close service history drawer" class="p-1.5 bg-slate-100 dark:bg-white/10 rounded-lg text-slate-400 hover:text-orange-500 transition-all active:scale-90">
+                        <button @click="activeService = null; updateUrl()" aria-label="Close service history drawer" class="p-1.5 bg-slate-100 dark:bg-white/10 rounded-lg text-slate-400 hover:text-orange-500 transition-all active:scale-90">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </div>
-                    <h2 class="text-xl font-black text-slate-900 dark:text-white italic uppercase tracking-tighter leading-none mb-6" x-text="activeService"></h2>
+                    <div class="flex flex-col gap-1 mb-6">
+                        <h2 class="text-xl font-black text-slate-900 dark:text-white italic uppercase tracking-tighter leading-none" x-text="activeService"></h2>
+                        <template x-if="serviceHistory.length > 0">
+                            <span class="text-[9px] mono text-slate-400 dark:text-slate-500 uppercase font-bold tracking-widest">
+                                Last updated: <span class="text-orange-500" x-text="getVersionDate(serviceHistory[0].v)"></span>
+                            </span>
+                        </template>
+                    </div>
                     
                     <div class="relative group/search">
                         <input type="text" id="serviceHistorySearch" x-model.debounce.200ms="serviceHistorySearch" aria-label="Search service history" placeholder="Filter history..." 
@@ -129,11 +136,12 @@ import ServiceNav from '../components/ServiceNav.astro';
                                     <div class="absolute left-[14px] top-2 w-2.5 h-2.5 rounded-full bg-white dark:bg-black border-2 border-slate-300 dark:border-white/20 shadow-sm z-10 transition-colors group-hover/history:border-orange-500"></div>
                                     
                                     <div class="flex flex-col gap-2.5 p-5 bg-slate-50/50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 rounded-[20px] hover:bg-white dark:hover:bg-white/[0.06] hover:border-orange-500/20 transition-all duration-300 overflow-hidden shadow-sm hover:shadow-md">
-                                        <div class="flex items-center">
-                                            <button @click="selectVersion(log.v); activeService = null" 
+                                        <div class="flex items-center justify-between">
+                                            <button @click="selectVersion(log.v); activeService = null; updateUrl()" 
                                                     :aria-label="'Select release version ' + log.v"
                                                     class="px-2.5 py-1 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-md mono text-[9px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95 shadow-sm" 
                                                     x-html="highlight(log.v, serviceHistorySearch)"></button>
+                                            <span x-show="getVersionDate(log.v)" x-text="getVersionDate(log.v)" x-cloak class="text-[8px] mono text-slate-400 dark:text-slate-600 uppercase tracking-widest font-bold"></span>
                                         </div>
                                         <p class="text-slate-600 dark:text-slate-300 text-[13px] md:text-[14px] leading-[1.6] font-medium tracking-tight group-hover/history:text-slate-900 dark:group-hover/history:text-white transition-colors break-words" x-html="highlight(log.t, serviceHistorySearch)"></p>
                                     </div>
@@ -179,6 +187,10 @@ import ServiceNav from '../components/ServiceNav.astro';
             loading: true,
             versionCache: {},
             copyStatus: false,
+            stats: {
+                avgReleasesPerWeek: 0,
+                recentChangesCount: 0
+            },
 
             isMobile(breakpoint = 768) {
                 return window.matchMedia(`(max-width: ${breakpoint-1}px)`).matches;
@@ -190,6 +202,56 @@ import ServiceNav from '../components/ServiceNav.astro';
                 if (!s) return text;
                 const regex = new RegExp(`(${s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
                 return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+            },
+
+            get selectedDate() {
+                const v = this.versions.find(v => v.id === this.selectedVersion);
+                return v ? v.date : '';
+            },
+
+            getVersionDate(id) {
+                const v = this.versions.find(v => v.id === id);
+                return v ? v.date : '';
+            },
+
+            getRelativeDate(dateStr) {
+                if (!dateStr) return '';
+                const date = new Date(dateStr);
+                const now = new Date();
+                const diffTime = Math.abs(now - date);
+                const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+                
+                if (diffDays === 0) return 'Today';
+                if (diffDays === 1) return 'Yesterday';
+                if (diffDays < 7) return `${diffDays}d ago`;
+                if (diffDays < 30) return `${Math.floor(diffDays / 7)}w ago`;
+                if (diffDays < 365) return `${Math.floor(diffDays / 30)}mo ago`;
+                return `${Math.floor(diffDays / 365)}y ago`;
+            },
+
+            getMonthYear(dateStr) {
+                if (!dateStr) return 'Unknown Date';
+                const date = new Date(dateStr);
+                return date.toLocaleString('default', { month: 'long', year: 'numeric' });
+            },
+
+            getServiceColorClass(serviceName) {
+                if (!serviceName) return 'bg-slate-500/10 text-slate-500 border-slate-500/20';
+                const classes = [
+                    'bg-rose-500/10 text-rose-500 border-rose-500/20',
+                    'bg-blue-500/10 text-blue-500 border-blue-500/20',
+                    'bg-emerald-500/10 text-emerald-500 border-emerald-500/20',
+                    'bg-amber-500/10 text-amber-500 border-amber-500/20',
+                    'bg-purple-500/10 text-purple-500 border-purple-500/20',
+                    'bg-cyan-500/10 text-cyan-500 border-cyan-500/20',
+                    'bg-indigo-500/10 text-indigo-500 border-indigo-500/20',
+                    'bg-fuchsia-500/10 text-fuchsia-500 border-fuchsia-500/20'
+                ];
+                let hash = 0;
+                for (let i = 0; i < serviceName.length; i++) {
+                    hash = serviceName.charCodeAt(i) + ((hash << 5) - hash);
+                }
+                return classes[Math.abs(hash) % classes.length];
             },
 
             async copyToClipboard(text) {
@@ -232,8 +294,20 @@ import ServiceNav from '../components/ServiceNav.astro';
                     this.versions = data.versions;
                     this.allServices = data.allServices;
 
-                    if (this.versions.length > 0) {
+                    this.calculateStats();
+
+                    const params = new URLSearchParams(window.location.search);
+                    const vParam = params.get('v');
+                    const sParam = params.get('s');
+
+                    if (vParam && this.versions.find(v => v.id === vParam)) {
+                        await this.selectVersion(vParam);
+                    } else if (this.versions.length > 0) {
                         await this.selectVersion(this.versions[0].id);
+                    }
+
+                    if (sParam && this.allServices.includes(sParam)) {
+                        this.openService(sParam);
                     }
                 } catch (e) {
                     this.error = e.message;
@@ -242,21 +316,48 @@ import ServiceNav from '../components/ServiceNav.astro';
                 }
             },
 
+            calculateStats() {
+                if (!this.versions.length) return;
+                
+                const now = new Date();
+                const threeMonthsAgo = new Date();
+                threeMonthsAgo.setDate(now.getDate() - 90);
+                
+                const recentVersions = this.versions.filter(v => new Date(v.date) >= threeMonthsAgo);
+                const weeks = 90 / 7;
+                this.stats.avgReleasesPerWeek = (recentVersions.length / weeks).toFixed(1);
+
+                const thirtyDaysAgo = new Date();
+                thirtyDaysAgo.setDate(now.getDate() - 30);
+                this.stats.recentChangesCount = this.versions.filter(v => new Date(v.date) >= thirtyDaysAgo).length;
+            },
+
+            updateUrl() {
+                const params = new URLSearchParams();
+                if (this.selectedVersion && this.versions[0] && this.selectedVersion !== this.versions[0].id) {
+                    params.set('v', this.selectedVersion);
+                }
+                if (this.activeService) {
+                    params.set('s', this.activeService);
+                }
+                const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
+                window.history.replaceState({}, '', newUrl);
+            },
+
             async selectVersion(id) {
                 if (this.selectedVersion === id && this.currentVersionData.length > 0) return;
                 
                 const prevVersion = this.selectedVersion;
-                
-                // If in cache, swap immediately
+                this.selectedVersion = id;
+                this.updateUrl();
+
                 if (this.versionCache[id]) {
-                    this.selectedVersion = id;
                     this.currentVersionData = this.versionCache[id];
                     document.title = `Boto Tracks | Release ${id} | AWS Boto3 & Botocore Intelligence`;
                     this.syncIndicator(id);
                     return;
                 }
 
-                this.selectedVersion = id;
                 this.currentVersionData = []; 
                 document.title = `Boto Tracks | Release ${id} | AWS Boto3 & Botocore Intelligence`;
                 this.syncIndicator(id, false); 
@@ -277,21 +378,25 @@ import ServiceNav from '../components/ServiceNav.astro';
                     if (prevVersion && this.versionCache[prevVersion]) {
                         this.currentVersionData = this.versionCache[prevVersion];
                     }
+                    this.updateUrl();
                 }
             },
 
             syncIndicator(id, scroll = true) {
                 if (scroll) {
-                    const scrollContainer = document.querySelector('.overflow-y-auto.custom-scroll');
-                    if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'instant' });
+                    // Scroll main content back to top
+                    const mainContent = document.querySelector('.custom-scroll');
+                    if (mainContent) mainContent.scrollTo({ top: 0, behavior: 'instant' });
                 }
 
                 requestAnimationFrame(() => {
                     this.$nextTick(() => {
-                        const rail = document.querySelector('.group\\/rail');
-                        const active = rail?.querySelector(`button[data-version="${id}"]`);
-                        if (rail && active) {
-                            rail.style.setProperty('--glow-top', active.offsetTop + 'px');
+                        const active = document.querySelector(`button[data-version="${id}"]`);
+                        const indicatorContainer = document.querySelector('.glow-container');
+                        
+                        if (active && indicatorContainer) {
+                            indicatorContainer.style.setProperty('--glow-top', active.offsetTop + 'px');
+                            indicatorContainer.style.setProperty('--glow-height', active.offsetHeight + 'px');
                         }
                     });
                 });
@@ -299,6 +404,7 @@ import ServiceNav from '../components/ServiceNav.astro';
 
             async openService(svc) {
                 this.activeService = svc;
+                this.updateUrl();
                 this.serviceHistory = [];
                 this.serviceHistoryLoading = true;
                 this.serviceHistorySearch = '';
@@ -334,13 +440,36 @@ import ServiceNav from '../components/ServiceNav.astro';
 
             get filteredRailVersions() {
                 const s = this.versionRailSearch.toLowerCase();
-                const base = s ? this.versions.filter(v => v.id.includes(s)) : this.versions;
+                const base = s ? this.versions.filter(v => {
+                    const monthYear = this.getMonthYear(v.date).toLowerCase();
+                    return v.id.includes(s) || monthYear.includes(s);
+                }) : this.versions;
                 return base.slice(0, this.railLimit);
+            },
+
+            get groupedRailVersions() {
+                const groups = [];
+                const versions = this.filteredRailVersions;
+                
+                versions.forEach(v => {
+                    const label = this.getMonthYear(v.date);
+                    let group = groups.find(g => g.label === label);
+                    if (!group) {
+                        group = { label, versions: [] };
+                        groups.push(group);
+                    }
+                    group.versions.push(v);
+                });
+                
+                return groups;
             },
 
             get hasMoreVersions() {
                 const s = this.versionRailSearch.toLowerCase();
-                const total = s ? this.versions.filter(v => v.id.includes(s)).length : this.versions.length;
+                const total = s ? this.versions.filter(v => {
+                    const monthYear = this.getMonthYear(v.date).toLowerCase();
+                    return v.id.includes(s) || monthYear.includes(s);
+                }).length : this.versions.length;
                 return this.railLimit < total;
             },
 
@@ -368,4 +497,4 @@ import ServiceNav from '../components/ServiceNav.astro';
             }
         }));
     });
-</script>/script>
+</script>
