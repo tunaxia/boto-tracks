@@ -180,6 +180,10 @@ import ServiceNav from '../components/ServiceNav.astro';
             loading: true,
             versionCache: {},
             copyStatus: false,
+            stats: {
+                avgReleasesPerWeek: 0,
+                recentChangesCount: 0
+            },
 
             isMobile(breakpoint = 768) {
                 return window.matchMedia(`(max-width: ${breakpoint-1}px)`).matches;
@@ -201,6 +205,27 @@ import ServiceNav from '../components/ServiceNav.astro';
             getVersionDate(id) {
                 const v = this.versions.find(v => v.id === id);
                 return v ? v.date : '';
+            },
+
+            getRelativeDate(dateStr) {
+                if (!dateStr) return '';
+                const date = new Date(dateStr);
+                const now = new Date();
+                const diffTime = Math.abs(now - date);
+                const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+                
+                if (diffDays === 0) return 'Today';
+                if (diffDays === 1) return 'Yesterday';
+                if (diffDays < 7) return `${diffDays}d ago`;
+                if (diffDays < 30) return `${Math.floor(diffDays / 7)}w ago`;
+                if (diffDays < 365) return `${Math.floor(diffDays / 30)}mo ago`;
+                return `${Math.floor(diffDays / 365)}y ago`;
+            },
+
+            getMonthYear(dateStr) {
+                if (!dateStr) return 'Unknown Date';
+                const date = new Date(dateStr);
+                return date.toLocaleString('default', { month: 'long', year: 'numeric' });
             },
 
             async copyToClipboard(text) {
@@ -243,6 +268,8 @@ import ServiceNav from '../components/ServiceNav.astro';
                     this.versions = data.versions;
                     this.allServices = data.allServices;
 
+                    this.calculateStats();
+
                     if (this.versions.length > 0) {
                         await this.selectVersion(this.versions[0].id);
                     }
@@ -253,12 +280,27 @@ import ServiceNav from '../components/ServiceNav.astro';
                 }
             },
 
+            calculateStats() {
+                if (!this.versions.length) return;
+                
+                const now = new Date();
+                const threeMonthsAgo = new Date();
+                threeMonthsAgo.setDate(now.getDate() - 90);
+                
+                const recentVersions = this.versions.filter(v => new Date(v.date) >= threeMonthsAgo);
+                const weeks = 90 / 7;
+                this.stats.avgReleasesPerWeek = (recentVersions.length / weeks).toFixed(1);
+
+                const thirtyDaysAgo = new Date();
+                thirtyDaysAgo.setDate(now.getDate() - 30);
+                this.stats.recentChangesCount = this.versions.filter(v => new Date(v.date) >= thirtyDaysAgo).length;
+            },
+
             async selectVersion(id) {
                 if (this.selectedVersion === id && this.currentVersionData.length > 0) return;
                 
                 const prevVersion = this.selectedVersion;
                 
-                // If in cache, swap immediately
                 if (this.versionCache[id]) {
                     this.selectedVersion = id;
                     this.currentVersionData = this.versionCache[id];
@@ -293,16 +335,19 @@ import ServiceNav from '../components/ServiceNav.astro';
 
             syncIndicator(id, scroll = true) {
                 if (scroll) {
-                    const scrollContainer = document.querySelector('.overflow-y-auto.custom-scroll');
-                    if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'instant' });
+                    // Scroll main content back to top
+                    const mainContent = document.querySelector('.custom-scroll');
+                    if (mainContent) mainContent.scrollTo({ top: 0, behavior: 'instant' });
                 }
 
                 requestAnimationFrame(() => {
                     this.$nextTick(() => {
-                        const rail = document.querySelector('.group\\/rail');
-                        const active = rail?.querySelector(`button[data-version="${id}"]`);
-                        if (rail && active) {
-                            rail.style.setProperty('--glow-top', active.offsetTop + 'px');
+                        const active = document.querySelector(`button[data-version="${id}"]`);
+                        const indicatorContainer = document.querySelector('.glow-container');
+                        
+                        if (active && indicatorContainer) {
+                            indicatorContainer.style.setProperty('--glow-top', active.offsetTop + 'px');
+                            indicatorContainer.style.setProperty('--glow-height', active.offsetHeight + 'px');
                         }
                     });
                 });
@@ -345,13 +390,36 @@ import ServiceNav from '../components/ServiceNav.astro';
 
             get filteredRailVersions() {
                 const s = this.versionRailSearch.toLowerCase();
-                const base = s ? this.versions.filter(v => v.id.includes(s)) : this.versions;
+                const base = s ? this.versions.filter(v => {
+                    const monthYear = this.getMonthYear(v.date).toLowerCase();
+                    return v.id.includes(s) || monthYear.includes(s);
+                }) : this.versions;
                 return base.slice(0, this.railLimit);
+            },
+
+            get groupedRailVersions() {
+                const groups = [];
+                const versions = this.filteredRailVersions;
+                
+                versions.forEach(v => {
+                    const label = this.getMonthYear(v.date);
+                    let group = groups.find(g => g.label === label);
+                    if (!group) {
+                        group = { label, versions: [] };
+                        groups.push(group);
+                    }
+                    group.versions.push(v);
+                });
+                
+                return groups;
             },
 
             get hasMoreVersions() {
                 const s = this.versionRailSearch.toLowerCase();
-                const total = s ? this.versions.filter(v => v.id.includes(s)).length : this.versions.length;
+                const total = s ? this.versions.filter(v => {
+                    const monthYear = this.getMonthYear(v.date).toLowerCase();
+                    return v.id.includes(s) || monthYear.includes(s);
+                }).length : this.versions.length;
                 return this.railLimit < total;
             },
 
@@ -379,4 +447,4 @@ import ServiceNav from '../components/ServiceNav.astro';
             }
         }));
     });
-</script>/script>
+</script>
