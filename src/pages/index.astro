@@ -74,7 +74,7 @@ import ServiceNav from '../components/ServiceNav.astro';
                  x-transition:leave-start="opacity-100" 
                  x-transition:leave-end="opacity-0" 
                  class="absolute inset-0 bg-[#050505]/60 backdrop-blur-sm transition-opacity" 
-                 @click="activeService = null"></div>
+                 @click="activeService = null; updateUrl()"></div>
 
             <!-- Drawer Container -->
             <div x-show="activeService" 
@@ -93,11 +93,18 @@ import ServiceNav from '../components/ServiceNav.astro';
                             <span class="w-1 h-1 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)] animate-pulse-slow"></span>
                             <span class="text-[10px] mono text-slate-500 dark:text-slate-400 font-black uppercase tracking-[0.2em]">Service History</span>
                         </div>
-                        <button @click="activeService = null" aria-label="Close service history drawer" class="p-1.5 bg-slate-100 dark:bg-white/10 rounded-lg text-slate-400 hover:text-orange-500 transition-all active:scale-90">
+                        <button @click="activeService = null; updateUrl()" aria-label="Close service history drawer" class="p-1.5 bg-slate-100 dark:bg-white/10 rounded-lg text-slate-400 hover:text-orange-500 transition-all active:scale-90">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </div>
-                    <h2 class="text-xl font-black text-slate-900 dark:text-white italic uppercase tracking-tighter leading-none mb-6" x-text="activeService"></h2>
+                    <div class="flex flex-col gap-1 mb-6">
+                        <h2 class="text-xl font-black text-slate-900 dark:text-white italic uppercase tracking-tighter leading-none" x-text="activeService"></h2>
+                        <template x-if="serviceHistory.length > 0">
+                            <span class="text-[9px] mono text-slate-400 dark:text-slate-500 uppercase font-bold tracking-widest">
+                                Last updated: <span class="text-orange-500" x-text="getVersionDate(serviceHistory[0].v)"></span>
+                            </span>
+                        </template>
+                    </div>
                     
                     <div class="relative group/search">
                         <input type="text" id="serviceHistorySearch" x-model.debounce.200ms="serviceHistorySearch" aria-label="Search service history" placeholder="Filter history..." 
@@ -130,7 +137,7 @@ import ServiceNav from '../components/ServiceNav.astro';
                                     
                                     <div class="flex flex-col gap-2.5 p-5 bg-slate-50/50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 rounded-[20px] hover:bg-white dark:hover:bg-white/[0.06] hover:border-orange-500/20 transition-all duration-300 overflow-hidden shadow-sm hover:shadow-md">
                                         <div class="flex items-center justify-between">
-                                            <button @click="selectVersion(log.v); activeService = null" 
+                                            <button @click="selectVersion(log.v); activeService = null; updateUrl()" 
                                                     :aria-label="'Select release version ' + log.v"
                                                     class="px-2.5 py-1 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-md mono text-[9px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95 shadow-sm" 
                                                     x-html="highlight(log.v, serviceHistorySearch)"></button>
@@ -270,8 +277,18 @@ import ServiceNav from '../components/ServiceNav.astro';
 
                     this.calculateStats();
 
-                    if (this.versions.length > 0) {
+                    const params = new URLSearchParams(window.location.search);
+                    const vParam = params.get('v');
+                    const sParam = params.get('s');
+
+                    if (vParam && this.versions.find(v => v.id === vParam)) {
+                        await this.selectVersion(vParam);
+                    } else if (this.versions.length > 0) {
                         await this.selectVersion(this.versions[0].id);
+                    }
+
+                    if (sParam && this.allServices.includes(sParam)) {
+                        this.openService(sParam);
                     }
                 } catch (e) {
                     this.error = e.message;
@@ -296,20 +313,32 @@ import ServiceNav from '../components/ServiceNav.astro';
                 this.stats.recentChangesCount = this.versions.filter(v => new Date(v.date) >= thirtyDaysAgo).length;
             },
 
+            updateUrl() {
+                const params = new URLSearchParams();
+                if (this.selectedVersion && this.versions[0] && this.selectedVersion !== this.versions[0].id) {
+                    params.set('v', this.selectedVersion);
+                }
+                if (this.activeService) {
+                    params.set('s', this.activeService);
+                }
+                const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
+                window.history.replaceState({}, '', newUrl);
+            },
+
             async selectVersion(id) {
                 if (this.selectedVersion === id && this.currentVersionData.length > 0) return;
                 
                 const prevVersion = this.selectedVersion;
-                
+                this.selectedVersion = id;
+                this.updateUrl();
+
                 if (this.versionCache[id]) {
-                    this.selectedVersion = id;
                     this.currentVersionData = this.versionCache[id];
                     document.title = `Boto Tracks | Release ${id} | AWS Boto3 & Botocore Intelligence`;
                     this.syncIndicator(id);
                     return;
                 }
 
-                this.selectedVersion = id;
                 this.currentVersionData = []; 
                 document.title = `Boto Tracks | Release ${id} | AWS Boto3 & Botocore Intelligence`;
                 this.syncIndicator(id, false); 
@@ -330,6 +359,7 @@ import ServiceNav from '../components/ServiceNav.astro';
                     if (prevVersion && this.versionCache[prevVersion]) {
                         this.currentVersionData = this.versionCache[prevVersion];
                     }
+                    this.updateUrl();
                 }
             },
 
@@ -355,6 +385,7 @@ import ServiceNav from '../components/ServiceNav.astro';
 
             async openService(svc) {
                 this.activeService = svc;
+                this.updateUrl();
                 this.serviceHistory = [];
                 this.serviceHistoryLoading = true;
                 this.serviceHistorySearch = '';

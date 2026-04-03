@@ -14,8 +14,8 @@
 
     <!-- Brand Area -->
     <div class="hidden lg:flex h-40 flex-col items-center justify-center flex-shrink-0 relative z-30 border-b border-slate-200 dark:border-white/5 group/brand bg-sidebar">
-        <button @click="location.reload()" 
-                aria-label="Reload Boto Tracks"
+        <button @click="window.location.href = '/'" 
+                aria-label="Go to latest release"
                 class="w-14 h-14 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[22px] flex items-center justify-center shadow-sm cursor-pointer hover:rotate-[10deg] hover:scale-105 transition-all duration-500 active:scale-95 relative overflow-hidden group">
             <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <img src="/favicon.png" width="32" height="32" alt="Boto Tracks - AWS Boto3 & Botocore Changelog Tracker" class="w-8 h-8 pointer-events-none relative z-10" />
