@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.82",
+    "t": "We are pleased to announce that our logs transformation csv processor now has a destination field, allowing you to specify under which parent node parsed columns be placed under."
+  },
+  {
     "v": "1.42.79",
     "t": "Adds Lookup Tables to CloudWatch Logs for log enrichment using CSV key-value data with KMS encryption support."
   },

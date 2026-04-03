@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.82",
+    "t": "Include CUSTOMER to evaluation target and participant role. Support Korean, Japanese and Simplified Chinese in evaluation forms."
+  },
+  {
     "v": "1.42.68",
     "t": "Deprecating PredefinedNotificationID field"
   },
