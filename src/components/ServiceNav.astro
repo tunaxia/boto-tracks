@@ -1,5 +1,5 @@
 <aside :class="{ 'translate-x-0': showMobileServices, 'translate-x-full': !showMobileServices }"
-       class="fixed md:relative inset-y-0 right-0 md:translate-x-0 w-72 lg:w-80 max-w-[85vw] border-l border-slate-200 dark:border-white/5 bg-sidebar flex flex-col z-[100] md:z-10 shadow-[-10px_0_30px_rgba(0,0,0,0.05)] dark:shadow-[-10px_0_30px_rgba(0,0,0,0.5)] transition-all duration-500 ease-in-out theme-transition">
+       class="fixed md:relative inset-y-0 right-0 translate-x-full md:translate-x-0 w-72 lg:w-80 max-w-[85vw] border-l border-slate-200 dark:border-white/5 bg-sidebar flex flex-col z-[100] md:z-10 shadow-[-10px_0_30px_rgba(0,0,0,0.05)] dark:shadow-[-10px_0_30px_rgba(0,0,0,0.5)] transition-all duration-500 ease-in-out theme-transition">
     
     <!-- Mobile Header -->
     <div class="md:hidden flex items-center justify-between px-8 py-5 border-b border-subtle bg-card backdrop-blur-md">
@@ -47,6 +47,8 @@
     <div class="flex-1 overflow-y-auto p-6 space-y-2 custom-scroll bg-sidebar">
         <template x-for="service in filteredServices" :key="service">
             <button @click="openService(service); if(isMobile(768)) showMobileServices = false;" 
+                    @mouseenter="prefetchService(service)"
+                    :aria-label="'View release history for ' + service"
                     class="w-full text-left px-4 py-3 rounded-xl hover:bg-white dark:hover:bg-white/10 group transition-all flex items-center justify-between border border-transparent hover:border-slate-200 dark:hover:border-white/20 relative overflow-hidden shadow-sm hover:shadow-md active:scale-95">
                 
                 <div class="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/[0.05] to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -56,7 +58,7 @@
                     <div class="flex flex-col">
                         <div class="flex items-center gap-2">
                             <span class="w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-600 group-hover:bg-orange-500 animate-pulse-slow group-hover:shadow-[0_0_8px_rgba(249,115,22,0.6)] transition-all"></span>
-                            <span class="mono text-[11px] text-slate-600 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-white font-black tracking-tight transition-colors uppercase" x-text="service"></span>
+                            <span class="mono text-[11px] text-slate-600 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-white font-black tracking-tight transition-colors uppercase" x-html="highlight(service, serviceSearch)"></span>
                         </div>
                     </div>
                 </div>

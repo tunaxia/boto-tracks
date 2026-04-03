@@ -97,6 +97,19 @@ body {
 
 [x-cloak] { display: none !important; }
 
+.search-highlight {
+    background: rgba(249, 115, 22, 0.15);
+    color: var(--accent-orange);
+    border-radius: 4px;
+    padding: 0 2px;
+    font-weight: 600;
+}
+
+.dark .search-highlight {
+    background: rgba(249, 115, 22, 0.25);
+    color: #fb923c;
+}
+
 @keyframes slideUp {
     from { opacity: 0; transform: translateY(8px); }
     to { opacity: 1; transform: translateY(0); }

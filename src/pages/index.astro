@@ -48,7 +48,7 @@ import ServiceNav from '../components/ServiceNav.astro';
         </div>
 
         <!-- Initial Boot Loader -->
-        <div x-show="loading" x-cloak x-transition.opacity class="fixed inset-0 z-[140] flex flex-col items-center justify-center bg-white dark:bg-[#050505] transition-colors duration-700">
+        <div x-show="loading" x-transition.opacity class="fixed inset-0 z-[140] flex flex-col items-center justify-center bg-white dark:bg-[#050505] transition-colors duration-700">
             <div class="relative w-20 h-20 mb-8">
                 <div class="absolute inset-0 border-4 border-orange-500/10 rounded-[24px]"></div>
                 <div class="absolute inset-0 border-4 border-t-orange-500 rounded-[24px] animate-spin"></div>
@@ -57,7 +57,7 @@ import ServiceNav from '../components/ServiceNav.astro';
         </div>
 
         <!-- Layout Shell -->
-        <div class="flex h-full w-full">
+        <div class="flex h-full w-full" x-show="!loading" x-cloak x-transition:enter="transition ease-out duration-700" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
             <LeftRail />
             <MainView />
             <ServiceNav />
@@ -93,14 +93,14 @@ import ServiceNav from '../components/ServiceNav.astro';
                             <span class="w-1 h-1 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)] animate-pulse-slow"></span>
                             <span class="text-[10px] mono text-slate-500 dark:text-slate-400 font-black uppercase tracking-[0.2em]">Service History</span>
                         </div>
-                        <button @click="activeService = null" aria-label="Close" class="p-1.5 bg-slate-100 dark:bg-white/10 rounded-lg text-slate-400 hover:text-orange-500 transition-all active:scale-90">
+                        <button @click="activeService = null" aria-label="Close service history drawer" class="p-1.5 bg-slate-100 dark:bg-white/10 rounded-lg text-slate-400 hover:text-orange-500 transition-all active:scale-90">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </div>
                     <h2 class="text-xl font-black text-slate-900 dark:text-white italic uppercase tracking-tighter leading-none mb-6" x-text="activeService"></h2>
                     
                     <div class="relative group/search">
-                        <input type="text" id="serviceHistorySearch" x-model.debounce.200ms="serviceHistorySearch" placeholder="Filter history..." 
+                        <input type="text" id="serviceHistorySearch" x-model.debounce.200ms="serviceHistorySearch" aria-label="Search service history" placeholder="Filter history..." 
                                class="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl py-2.5 pl-10 pr-4 text-xs focus:outline-none focus:ring-4 focus:ring-orange-500/5 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-sm font-medium">
                         <svg class="absolute left-3.5 top-2.5 w-4 h-4 text-slate-400 dark:text-slate-600 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </div>
@@ -131,10 +131,11 @@ import ServiceNav from '../components/ServiceNav.astro';
                                     <div class="flex flex-col gap-2.5 p-5 bg-slate-50/50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 rounded-[20px] hover:bg-white dark:hover:bg-white/[0.06] hover:border-orange-500/20 transition-all duration-300 overflow-hidden shadow-sm hover:shadow-md">
                                         <div class="flex items-center">
                                             <button @click="selectVersion(log.v); activeService = null" 
+                                                    :aria-label="'Select release version ' + log.v"
                                                     class="px-2.5 py-1 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-md mono text-[9px] font-black text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-95 shadow-sm" 
-                                                    x-text="log.v"></button>
+                                                    x-html="highlight(log.v, serviceHistorySearch)"></button>
                                         </div>
-                                        <p class="text-slate-600 dark:text-slate-300 text-[13px] md:text-[14px] leading-[1.6] font-medium tracking-tight group-hover/history:text-slate-900 dark:group-hover/history:text-white transition-colors break-words" x-text="log.t"></p>
+                                        <p class="text-slate-600 dark:text-slate-300 text-[13px] md:text-[14px] leading-[1.6] font-medium tracking-tight group-hover/history:text-slate-900 dark:group-hover/history:text-white transition-colors break-words" x-html="highlight(log.t, serviceHistorySearch)"></p>
                                     </div>
                                 </div>
                             </template>
@@ -177,9 +178,50 @@ import ServiceNav from '../components/ServiceNav.astro';
             error: null,
             loading: true,
             versionCache: {},
+            copyStatus: false,
 
             isMobile(breakpoint = 768) {
                 return window.matchMedia(`(max-width: ${breakpoint-1}px)`).matches;
+            },
+
+            highlight(text, search) {
+                if (!search || !text) return text;
+                const s = search.trim();
+                if (!s) return text;
+                const regex = new RegExp(`(${s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+                return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+            },
+
+            async copyToClipboard(text) {
+                try {
+                    await navigator.clipboard.writeText(text);
+                    this.copyStatus = true;
+                    setTimeout(() => this.copyStatus = false, 2000);
+                } catch (err) {
+                    console.error('Failed to copy: ', err);
+                }
+            },
+
+            async prefetchVersion(id) {
+                if (this.versionCache[id] || this.selectedVersion === id) return;
+                try {
+                    const res = await fetch(`/data/versions/${id}.json`);
+                    if (res.ok) {
+                        this.versionCache[id] = await res.json();
+                    }
+                } catch (e) {}
+            },
+
+            async prefetchService(svc) {
+                const serviceId = svc.toLowerCase().trim().replace(/[\._\s]+/g, '-').replace(/-+/g, '-');
+                const cacheKey = `svc_${serviceId}`;
+                if (this.versionCache[cacheKey]) return;
+                try {
+                    const res = await fetch(`/data/services/${serviceId}.json`);
+                    if (res.ok) {
+                        this.versionCache[cacheKey] = await res.json();
+                    }
+                } catch (e) {}
             },
 
             async init() {
@@ -261,11 +303,19 @@ import ServiceNav from '../components/ServiceNav.astro';
                 this.serviceHistoryLoading = true;
                 this.serviceHistorySearch = '';
                 const serviceId = svc.toLowerCase().trim().replace(/[\._\s]+/g, '-').replace(/-+/g, '-');
+                const cacheKey = `svc_${serviceId}`;
+
+                if (this.versionCache[cacheKey]) {
+                    this.serviceHistory = this.versionCache[cacheKey];
+                    this.serviceHistoryLoading = false;
+                    return;
+                }
                 
                 try {
                     const res = await fetch(`/data/services/${serviceId}.json`);
                     if (!res.ok) throw new Error('Service data unavailable');
                     const data = await res.json();
+                    this.versionCache[cacheKey] = data;
                     if (this.activeService === svc) {
                         this.serviceHistory = data;
                     }
