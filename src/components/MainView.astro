@@ -1,7 +1,7 @@
 <main class="flex-1 flex flex-col min-w-0 bg-inherit relative theme-transition">
     
-    <header class="h-16 border-b border-subtle flex items-center justify-between px-3 md:px-12 bg-white/80 dark:bg-[#0a0a0a]/90 backdrop-blur-xl sticky top-0 z-50">
-        <div class="flex items-center gap-2 md:gap-6">
+    <header class="h-14 md:h-16 border-b border-subtle flex items-center justify-between px-2 md:px-12 bg-white/80 dark:bg-[#0a0a0a]/90 backdrop-blur-xl sticky top-0 z-50">
+        <div class="flex items-center gap-1.5 md:gap-6">
             <!-- Mobile Navigation -->
             <button @click="showMobileVersions = true" 
                     aria-label="Open releases sidebar" 
@@ -9,16 +9,18 @@
                 <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
             </button>
 
+            <!-- Logo / Home -->
             <button @click="window.location.href = '/'" 
                     aria-label="Go to latest release"
-                    class="hidden sm:flex md:hidden flex items-center mr-2 active:scale-95 transition-transform">
-                <span class="text-[11px] font-black italic uppercase tracking-tighter text-orange-500">Boto Tracks</span>
+                    class="md:hidden flex items-center p-1.5 active:scale-95 transition-transform">
+                <img src="/favicon.png" width="18" height="18" alt="Boto Tracks" class="w-[18px] h-[18px] sm:hidden" />
+                <span class="hidden sm:inline text-[11px] font-black italic uppercase tracking-tighter text-orange-500">Boto Tracks</span>
             </button>
 
             <div class="flex items-center">
                 <div class="flex items-center gap-1.5 md:gap-2 bg-slate-100/50 dark:bg-white/5 border border-subtle dark:border-white/10 px-2 md:px-3 py-1 rounded-full shadow-sm">
                     <div class="flex items-center gap-1">
-                        <span class="text-[8px] mono text-slate-400 dark:text-slate-500 font-black uppercase tracking-widest hidden md:inline">v</span>
+                        <span class="text-[8px] mono text-slate-400 dark:text-slate-500 font-black uppercase tracking-widest hidden lg:inline">v</span>
                         <button @click="copyToClipboard(selectedVersion)" 
                                 class="group/copy flex items-center gap-1 transition-all active:scale-95 relative"
                                 :aria-label="'Copy release version ' + (selectedVersion || '...')">
@@ -49,7 +51,7 @@
             </div>
         </div>
         
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-2 md:gap-3">
             <nav class="hidden lg:flex items-center gap-1 p-1 bg-slate-100 dark:bg-white/5 rounded-full border border-subtle" aria-label="Filter types">
                 <button @click="activeFilter = 'all'" :aria-pressed="activeFilter === 'all'" :class="activeFilter === 'all' ? 'bg-white dark:bg-white/10 text-orange-500 shadow-sm' : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95 outline-none">All</button>
                 <button @click="activeFilter = 'feature'" :aria-pressed="activeFilter === 'feature'" :class="activeFilter === 'feature' ? 'bg-white dark:bg-white/10 text-emerald-500 shadow-sm' : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-200'" class="px-3 py-1 rounded-full text-[9px] mono font-black uppercase transition-all active:scale-95 outline-none">Features</button>
@@ -59,7 +61,7 @@
             <button @click="showMobileServices = true" 
                     aria-label="Open service directory" 
                     class="md:hidden p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-all active:scale-90 outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </div>
     </header>
@@ -208,5 +210,4 @@
             </footer>
         </div>
     </div>
-</main>
 </main>
