@@ -54,13 +54,22 @@
 
     <div class="flex-1 relative overflow-hidden flex flex-col">
         <!-- Main content H1 for SEO -->
-        <h1 class="sr-only">Boto Tracks | AWS Botocore & Boto3 Changelog Intelligence Platform</h1>
+        <h1 class="sr-only">Boto Tracks | The Definitive AWS Boto3 & Botocore Changelog Tracker</h1>
         
-        <!-- Vertical Edge Fade -->
+        <!-- Edge masks -->
         <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-white dark:from-[#0a0a0a] via-transparent to-white dark:to-[#0a0a0a] opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
 
         <div class="flex-1 overflow-y-auto p-6 md:p-12 custom-scroll bg-transparent scroll-mask">
             <div class="max-w-4xl mx-auto min-h-[calc(100vh-140px)] flex flex-col">
+                <!-- SEO Intro Section (Hidden from users, visible to Search Engines) -->
+                <div class="sr-only">
+                    <h2 class="text-[10px] mono text-orange-500 font-black uppercase tracking-[0.3em] mb-4">Intelligence Brief</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed max-w-2xl font-medium">
+                        Welcome to <strong class="text-slate-900 dark:text-white">Boto Tracks</strong>, the high-performance dashboard for tracking <strong class="text-slate-900 dark:text-white">AWS Boto3</strong> and <strong class="text-slate-900 dark:text-white">Botocore</strong> changes. 
+                        Wondering <span class="text-orange-500/80">how to track boto changes</span> effectively? Use our real-time filters to monitor <strong class="text-slate-900 dark:text-white">AWS Boto Tracks</strong> across every service, feature, and fix.
+                    </p>
+                </div>
+
                 <div class="flex-1 pb-32">
                 <!-- Mobile Search -->
                 <div class="sm:hidden mb-8">
@@ -186,4 +195,5 @@
             </footer>
         </div>
     </div>
+</main>
 </main>

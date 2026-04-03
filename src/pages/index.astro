@@ -7,7 +7,7 @@ import MainView from '../components/MainView.astro';
 import ServiceNav from '../components/ServiceNav.astro';
 ---
 
-<Layout title="Boto Tracks | AWS Botocore & Boto3 Changelog Intelligence">
+<Layout title="Boto Tracks | The Ultimate AWS Boto3 & Botocore Changelog Tracker">
     <div class="flex h-screen w-full overflow-hidden bg-main text-[var(--text-secondary)] transition-all" 
          x-data="botoCore" 
          @keydown.window.escape="showMobileServices = false; showMobileVersions = false; activeService = null">
@@ -63,7 +63,7 @@ import ServiceNav from '../components/ServiceNav.astro';
             <ServiceNav />
         </div>
 
-        <!-- Service History Sidebar -->
+        <!-- Service history -->
         <div x-show="activeService" class="fixed inset-0 z-[120] flex justify-end overflow-hidden" x-cloak>
             <!-- Background Overlay -->
             <div x-show="activeService" 
@@ -251,14 +251,14 @@ import ServiceNav from '../components/ServiceNav.astro';
                 if (this.versionCache[id]) {
                     this.selectedVersion = id;
                     this.currentVersionData = this.versionCache[id];
-                    document.title = `Boto Tracks | Release ${id}`;
+                    document.title = `Boto Tracks | Release ${id} | AWS Boto3 & Botocore Intelligence`;
                     this.syncIndicator(id);
                     return;
                 }
 
                 this.selectedVersion = id;
                 this.currentVersionData = []; 
-                document.title = `Boto Tracks | Release ${id}`;
+                document.title = `Boto Tracks | Release ${id} | AWS Boto3 & Botocore Intelligence`;
                 this.syncIndicator(id, false); 
 
                 try {
@@ -368,4 +368,4 @@ import ServiceNav from '../components/ServiceNav.astro';
             }
         }));
     });
-</script>
+</script>/script>
