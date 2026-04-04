@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.83",
+    "t": "Add support for tagging of Alarm resource type"
+  },
+  {
     "v": "1.42.74",
     "t": "Add support for tagging of ContactMethod resource type"
   },

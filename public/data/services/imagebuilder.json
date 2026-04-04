@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.83",
+    "t": "Updated pagination token validation for ListContainerRecipes API to support maximum size of 65K characters"
+  },
+  {
     "v": "1.42.45",
     "t": "EC2 Image Builder now supports wildcard patterns in lifecycle policies with recipes and enhances the experience of tag-scoped policies."
   },

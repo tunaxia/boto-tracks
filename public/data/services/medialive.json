@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.83",
+    "t": "AWS Elemental MediaLive released a new features that allows customers to use HLG 2020 as a color space for AV1 video codec."
+  },
+  {
     "v": "1.42.68",
     "t": "Documents the VideoDescription.ScalingBehavior.SMART(underscore)CROP enum value."
   },
