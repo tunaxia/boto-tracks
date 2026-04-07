@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.84",
+    "t": "Added optional originRequestId parameter to SendMessageRequest and ListSpans response in Amazon Q in Connect to support request tracing across service boundaries."
+  },
+  {
     "v": "1.42.50",
     "t": "Update MessageType enum to include missing types."
   },

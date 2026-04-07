@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.84",
+    "t": "Added 8 batch APIs (BatchGetJob, BatchGetStep, BatchGetTask, BatchGetSession, BatchGetSessionAction, BatchGetWorker, BatchUpdateJob, BatchUpdateTask) for bulk operations. Monitors can now use an Identity Center instance in a different region via the identityCenterRegion parameter."
+  },
+  {
     "v": "1.42.82",
     "t": "AWS Deadline Cloud now supports configurable scheduling on each queue. The scheduling configuration controls how workers are distributed across jobs."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.84",
+    "t": "This change adds support for Tagging the resource types Programs and Prefetch Schedules"
+  },
+  {
     "v": "1.42.55",
     "t": "Updated endpoint rule set for dualstack endpoints. Added a new opt-in option to log raw ad decision server requests for Playback Configurations."
   },

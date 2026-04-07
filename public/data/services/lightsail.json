@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.84",
+    "t": "This release adds support for the Asia Pacific (Malaysia) (ap-southeast-5) Region."
+  },
+  {
     "v": "1.42.83",
     "t": "Add support for tagging of Alarm resource type"
   },

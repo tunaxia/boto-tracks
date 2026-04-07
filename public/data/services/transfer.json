@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.84",
+    "t": "AWS Transfer Family Connectors now support IPv6 connectivity, enabling outbound connections to remote SFTP or AS2 servers using IPv4-only or dual-stack (IPv4 and IPv6) configurations based on network requirements."
+  },
+  {
     "v": "1.42.45",
     "t": "This release adds a documentation update for MdnResponse of type \"ASYNC\""
   },

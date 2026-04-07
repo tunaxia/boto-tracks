@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.84",
+    "t": "Migrated to Smithy. No functional changes"
+  },
+  {
     "v": "1.42.62",
     "t": "Added MALICIOUS FILE to IndicatorType enum in MDC Sequence"
   },
