@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.85",
+    "t": "This change allows listAssets to surface pending and non-compute asset information. Adds the INSTALLING asset state enum and the STORAGE, POWERSHELF, SWITCH, and NETWORKING AssetTypes."
+  },
+  {
     "v": "1.40.60",
     "t": "Update endpoint ruleset parameters casing"
   },

@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.42.85",
+      "date": "2026-04-07"
+    },
+    {
       "id": "1.42.84",
       "date": "2026-04-06"
     },
@@ -9341,6 +9345,7 @@
     "s3",
     "s3-redirect",
     "s3control",
+    "s3files",
     "s3outposts",
     "s3tables",
     "s3vectors",

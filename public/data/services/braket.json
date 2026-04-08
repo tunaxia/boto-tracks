@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.85",
+    "t": "Added support for t3, g6, and g6e instance types for Hybrid Jobs."
+  },
+  {
     "v": "1.41.1",
     "t": "Add support for Braket spending limits."
   },

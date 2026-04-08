@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.85",
+    "t": "This release includes support for 1) InvokeBrowser API, enabling OS-level control of AgentCore Browser Tool sessions through mouse actions, keyboard input, and screenshots. 2) Added documentation noting that empty sessions are automatically deleted after one day in the ListSessions API."
+  },
+  {
     "v": "1.42.81",
     "t": "Added the ability to filter out empty sessions when listing sessions. Customers can now retrieve only sessions that still contain events, eliminating the need to check each session individually. No changes required for existing integrations."
   },

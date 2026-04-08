@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.85",
+    "t": "The voice enhancement mode used by the agent can now be viewed on the contact record via the DescribeContact api."
+  },
+  {
     "v": "1.42.82",
     "t": "Include CUSTOMER to evaluation target and participant role. Support Korean, Japanese and Simplified Chinese in evaluation forms."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.85",
+    "t": "Launching Lambda integration with S3 Files as a new file system configuration."
+  },
+  {
     "v": "1.42.37",
     "t": "We are launching ESM Metrics and logging for Kafka ESM to allow customers to monitor Kafka event processing using CloudWatch Metrics and Logs."
   },

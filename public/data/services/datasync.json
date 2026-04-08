@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.85",
+    "t": "Allow IAM role ARNs with IAM Paths for \"SecretAccessRoleArn\" field in \"CustomSecretConfig\""
+  },
+  {
     "v": "1.42.67",
     "t": "DataSync's 3 location types, Hadoop Distributed File System (HDFS), FSx for Windows File Server (FSx Windows), and FSx for NetApp ONTAP (FSx ONTAP) now have credentials managed via Secrets Manager, which may be encrypted with service keys or be configured to use customer-managed keys or secret."
   },

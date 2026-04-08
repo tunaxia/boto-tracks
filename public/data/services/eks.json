@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.85",
+    "t": "EKS MNG WarmPool feature to support ASG WarmPool feature."
+  },
+  {
     "v": "1.42.66",
     "t": "Adds support for a new tier in controlPlaneScalingConfig on EKS Clusters."
   },
