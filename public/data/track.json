@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.42.86",
+      "date": "2026-04-09"
+    },
+    {
       "id": "1.42.85",
       "date": "2026-04-07"
     },
@@ -9212,6 +9216,7 @@
     "marketplace-agreement",
     "marketplace-catalog",
     "marketplace-deployment",
+    "marketplace-discovery",
     "marketplace-entitlement",
     "marketplace-reporting",
     "marketplacecommerceanalytics",

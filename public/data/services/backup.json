@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.86",
+    "t": "Adding EKS specific backup vault notification types for AWS Backup."
+  },
+  {
     "v": "1.42.73",
     "t": "Fix Typo for S3Backup Options ( S3BackupACLs to BackupACLs)"
   },

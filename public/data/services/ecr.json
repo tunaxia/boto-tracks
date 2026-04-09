@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.86",
+    "t": "Add UnableToListUpstreamImageReferrersException in ListImageReferrers"
+  },
+  {
     "v": "1.42.67",
     "t": "Add Chainguard to PTC upstreamRegistry enum"
   },

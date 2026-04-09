@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.86",
+    "t": "This changes adds support for modifying the replication configuration to support data replication using IPv6."
+  },
+  {
     "v": "1.40.58",
     "t": "Update endpoint ruleset parameters casing"
   },

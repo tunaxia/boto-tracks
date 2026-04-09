@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.86",
+    "t": "Add AWS Outposts APIs to view renewal pricing options and submit renewal requests for Outpost contracts"
+  },
+  {
     "v": "1.42.85",
     "t": "This change allows listAssets to surface pending and non-compute asset information. Adds the INSTALLING asset state enum and the STORAGE, POWERSHELF, SWITCH, and NETWORKING AssetTypes."
   },

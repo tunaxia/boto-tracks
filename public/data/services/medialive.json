@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.86",
+    "t": "MediaLive is adding support for MediaConnect Router by supporting a new output type called MEDIACONNECT ROUTER. This new output type will provide seamless encrypted transport between your MediaLive channel and MediaConnect Router."
+  },
+  {
     "v": "1.42.83",
     "t": "AWS Elemental MediaLive released a new features that allows customers to use HLG 2020 as a color space for AV1 video codec."
   },
