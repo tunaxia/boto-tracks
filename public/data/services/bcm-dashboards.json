@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.87",
+    "t": "Scheduled email reports of Billing and Cost Management Dashboards"
+  },
+  {
     "v": "1.42.53",
     "t": "The Billing and Cost Management GetDashboard API now returns identifier for each widget, enabling users to uniquely identify widgets within their dashboards."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.87",
+    "t": "The BatchExecuteStatement API now supports named SQL parameters, enabling secure batch queries with parameterized values. This enhancement helps prevent SQL injection vulnerabilities and improves query reusability."
+  },
+  {
     "v": "1.41.1",
     "t": "Increasing the length limit of Statement Name from 500 to 2048."
   },

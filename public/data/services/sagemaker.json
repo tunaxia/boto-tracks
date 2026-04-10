@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.87",
+    "t": "Release support for g7e instance types for SageMaker HyperPod"
+  },
+  {
     "v": "1.42.79",
     "t": "Added support for placement strategy and consolidation for SageMaker inference component endpoints. Customers can now configure how inference component copies are distributed across instances and availability zones (AZs), and enable automatic consolidation to optimizes resource utilization."
   },
