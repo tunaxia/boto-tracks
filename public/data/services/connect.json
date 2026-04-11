@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.88",
+    "t": "Conversational Analytics for Email"
+  },
+  {
     "v": "1.42.85",
     "t": "The voice enhancement mode used by the agent can now be viewed on the contact record via the DescribeContact api."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.88",
+    "t": "Image pipelines can now automatically apply tags to images they create. Set the imageTags property when creating or updating your pipelines to get started."
+  },
+  {
     "v": "1.42.83",
     "t": "Updated pagination token validation for ListContainerRecipes API to support maximum size of 65K characters"
   },

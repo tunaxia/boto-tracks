@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.88",
+    "t": "Devops Agent now supports associate Splunk, Datadog and custom MCP server to an Agent Space."
+  },
+  {
     "v": "1.42.80",
     "t": "AWS DevOps Agent service General Availability release."
   },

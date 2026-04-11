@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.88",
+    "t": "Adds support for MV-HEVC video output and clear lead for AV1 DRM output."
+  },
+  {
     "v": "1.42.71",
     "t": "This update adds additional bitrate options for Dolby AC-4 audio outputs."
   },

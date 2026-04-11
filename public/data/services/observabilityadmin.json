@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.88",
+    "t": "CloudWatch Observability Admin adds support for multi-region telemetry evaluation and telemetry enablement rules."
+  },
+  {
     "v": "1.42.80",
     "t": "This release adds the Bedrock and Security Hub resource types for Omnia Enablement launch for March 31."
   },

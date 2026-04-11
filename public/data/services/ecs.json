@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.88",
+    "t": "Minor updates to exceptions for completeness"
+  },
+  {
     "v": "1.42.85",
     "t": "This release provides the functionality of mounting Amazon S3 Files to Amazon ECS tasks by adding support for the new S3FilesVolumeConfiguration parameter in ECS RegisterTaskDefinition API."
   },
