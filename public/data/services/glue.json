@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.89",
+    "t": "AWS Glue now defaults to Glue version 5.1 for newly created jobs if the Glue version is not specified in the request, and UpdateJob now preserves the existing Glue version of a job when the Glue version is not specified in the update request."
+  },
+  {
     "v": "1.42.70",
     "t": "Provide approval to overwrite existing Lake Formation permissions on all child resources with the default permissions specified in 'CreateTableDefaultPermissions' and 'CreateDatabaseDefaultPermissions' when updating catalog. Allowed values are [\"Accept\",\"Deny\"] ."
   },

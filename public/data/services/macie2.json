@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.89",
+    "t": "This release adds an optional expectedBucketOwner field to the Macie S3 export configuration, allowing customers to verify bucket ownership before Macie writes results to the destination bucket."
+  },
+  {
     "v": "1.40.58",
     "t": "Update endpoint ruleset parameters casing"
   },

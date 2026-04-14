@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.89",
+    "t": "This release introduces changes to SegmentDefinition APIs to support sorting by attributes."
+  },
+  {
     "v": "1.42.66",
     "t": "Today, Amazon Connect is announcing the ability to filter (include or exclude) recommendations based on properties of items and interactions."
   },
