@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.90",
+    "t": "Adds a new DescribeServerlessV2PlatformVersions API to describe platform version properties for Aurora Serverless v2. Also introduces a new valid maintenance action value for serverless platform version updates."
+  },
+  {
     "v": "1.42.75",
     "t": "Adds support in Aurora PostgreSQL serverless databases for express configuration based creation through WithExpressConfiguration in CreateDbCluster API, and for restoring clusters using RestoreDBClusterToPointInTime and RestoreDBClusterFromSnapshot APIs."
   },

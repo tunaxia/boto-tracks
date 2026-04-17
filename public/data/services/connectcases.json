@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.90",
+    "t": "Added error handling for service quota limits"
+  },
+  {
     "v": "1.42.74",
     "t": "You can now use the UpdateRelatedItem API to update the content of comments and custom related items associated with a case."
   },

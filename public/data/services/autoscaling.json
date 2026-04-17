@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.90",
+    "t": "This release adds support for specifying Availability Zone IDs as an alternative to Availability Zone names when creating or updating Auto Scaling groups."
+  },
+  {
     "v": "1.42.79",
     "t": "Adds support for new instance lifecycle states introduced by the instance lifecycle policy and replace root volume features."
   },

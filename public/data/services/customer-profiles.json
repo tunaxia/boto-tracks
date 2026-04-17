@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.90",
+    "t": "Amazon Connect Customer Profiles adds RecommenderSchema CRUD APIs for custom ML training columns. CreateRecommender and CreateRecommenderFilter now accept optional RecommenderSchemaName."
+  },
+  {
     "v": "1.42.89",
     "t": "This release introduces changes to SegmentDefinition APIs to support sorting by attributes."
   },
