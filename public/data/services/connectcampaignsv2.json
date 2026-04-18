@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.91",
+    "t": "This release adds support for campaign entry limits configuration and hourly refresh frequency in Amazon Connect Outbound Campaigns."
+  },
+  {
     "v": "1.42.45",
     "t": "Add the missing event type for WhatsApp"
   },

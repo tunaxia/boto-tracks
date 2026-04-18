@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.91",
+    "t": "This release adds support for configurable spark properties for Cleanrooms PySpark workloads."
+  },
+  {
     "v": "1.42.52",
     "t": "This release adds support for federated catalogs in Athena-sourced configured tables."
   },

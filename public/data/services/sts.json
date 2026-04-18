@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.91",
+    "t": "The STS client now supports configuring SigV4a through the auth scheme preference setting. SigV4a uses asymmetric cryptography, enabling customers using long-term IAM credentials to continue making STS API calls even when a region is isolated from the partition leader."
+  },
+  {
     "v": "1.41.0",
     "t": "IAM now supports outbound identity federation via the STS GetWebIdentityToken API, enabling AWS workloads to securely authenticate with external services using short-lived JSON Web Tokens."
   },
