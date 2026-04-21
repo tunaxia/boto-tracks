@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.92",
+    "t": "This release adds support for new Job APIs for bulk workloads. The initial job type supported is Address Validation. The new APIs added are StartJob, CancelJob, ListJobs, and GetJob."
+  },
+  {
     "v": "1.40.59",
     "t": "Added support for mobile app restrictions in Amazon Location API keys."
   },

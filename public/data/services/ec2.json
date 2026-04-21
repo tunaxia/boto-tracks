@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.92",
+    "t": "Added Transit Gateway Integration into AWS Client VPN."
+  },
+  {
     "v": "1.42.85",
     "t": "EC2 Capacity Manager adds new dimensions for grouping and filtering capacity metrics, including tag-based dimensions and Account Name."
   },

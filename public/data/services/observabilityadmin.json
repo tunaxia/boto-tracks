@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.92",
+    "t": "Enablement for Security Hub v2 via Observability Admin Telemetry Rule for account and organization level."
+  },
+  {
     "v": "1.42.88",
     "t": "CloudWatch Observability Admin adds support for multi-region telemetry evaluation and telemetry enablement rules."
   },

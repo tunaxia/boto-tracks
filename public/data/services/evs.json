@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.92",
+    "t": "Amazon EVS now allows you to create connectors to your vCenter appliances and create Windows Server entitlements for virtual machines running in your EVS environments"
+  },
+  {
     "v": "1.42.29",
     "t": "A new GetVersions API has been added to retrieve VCF, ESX versions, and EC2 instances provided by Amazon EVS. The CreateEnvironment API now allows you to select a VCF version and the CreateEnvironmentHost API introduces a optional esxVersion parameter."
   },

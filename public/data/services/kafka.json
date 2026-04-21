@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.92",
+    "t": "Amazon MSK Replicator now supports data migration from external Apache Kafka clusters to Amazon MSK Express brokers. This release adds SaslScram authentication with TLS encryption, enhanced consumer offset synchronization, and customer log forwarding for troubleshooting."
+  },
+  {
     "v": "1.42.65",
     "t": "Add dual stack endpoint to SDK"
   },

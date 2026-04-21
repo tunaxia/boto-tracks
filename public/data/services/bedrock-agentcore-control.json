@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.92",
+    "t": "Supporting listingMode for AgentCore Gateway MCP server targets"
+  },
+  {
     "v": "1.42.87",
     "t": "Initial release for CRUDL in AgentCore Registry Service"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.92",
+    "t": "Expanded support for new suppression rule fields."
+  },
+  {
     "v": "1.42.84",
     "t": "Migrated to Smithy. No functional changes"
   },
