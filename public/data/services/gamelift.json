@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.93",
+    "t": "This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol."
+  },
+  {
     "v": "1.42.82",
     "t": "Amazon GameLift Servers now includes a ComputeName field in game session API responses, making it easier to identify which compute is hosting a game session without cross-referencing IP addresses."
   },
