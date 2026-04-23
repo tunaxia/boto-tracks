@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.94",
+    "t": "Adds support for Amazon Bedrock AgentCore Harness data plane APIs, enabling customers to invoke managed agent loops and execute commands on live agent sessions with streaming responses."
+  },
+  {
     "v": "1.42.90",
     "t": "Introducing NamespacePath in AgentCore Memory to support hierarchical prefix based memory record retrieval."
   },

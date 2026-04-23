@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.94",
+    "t": "This release adds support for Spark connect sessions starting with release label emr-7.13.0."
+  },
+  {
     "v": "1.42.23",
     "t": "Added support for enabling disk encryption using customer managed AWS KMS keys to CreateApplication, UpdateApplication and StartJobRun APIs."
   },

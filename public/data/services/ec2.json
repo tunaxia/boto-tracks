@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.94",
+    "t": "Managed resource visibility settings control whether resources that AWS services provision on your behalf within your AWS account appear in your Amazon console views and API list operations."
+  },
+  {
     "v": "1.42.92",
     "t": "Added Transit Gateway Integration into AWS Client VPN."
   },

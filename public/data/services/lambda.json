@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.94",
+    "t": "Add Ruby 4.0 (ruby4.0) support to AWS Lambda."
+  },
+  {
     "v": "1.42.85",
     "t": "Launching Lambda integration with S3 Files as a new file system configuration."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.94",
+    "t": "This release adds support for five additional checksum algorithms for data integrity checking in Amazon S3 - MD5, SHA-512, XXHash3, XXHash64, and XXHash128."
+  },
+  {
     "v": "1.42.80",
     "t": "Adding an optional auditContext parameter to S3 Access Grants credential vending API GetDataAccess to enable job-level audit correlation in S3 CloudTrail logs"
   },

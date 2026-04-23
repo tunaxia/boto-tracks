@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.94",
+    "t": "Update the pipeline configuration body character limit for the CreatePipeline API call."
+  },
+  {
     "v": "1.40.54",
     "t": "Update endpoint ruleset parameters casing"
   },

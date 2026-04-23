@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.94",
+    "t": "Support of S3Files volume type, container start and stop timeouts."
+  },
+  {
     "v": "1.42.76",
     "t": "Documentation-only update for AWS Batch."
   },
