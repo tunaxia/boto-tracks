@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.95",
+    "t": "Alias ``get_o_tel_enrichment``, ``start_o_tel_enrichment``, and ``stop_o_tel_enrichment`` botocore methods to use ``otel`` instead of ``o_tel``."
+  },
+  {
     "v": "1.42.90",
     "t": "Update documentation of alarm mute rules start and end date fields"
   },
