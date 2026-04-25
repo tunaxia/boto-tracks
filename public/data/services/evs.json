@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.96",
+    "t": "EVS now supports i7i.metal-24xl EC2 bare metal instance type, delivering high random IOPS performance with real-time latency, ideal for IO intensive and latency-sensitive workloads such as transactional databases, real-time analytics, and AI ML pre-processing."
+  },
+  {
     "v": "1.42.92",
     "t": "Amazon EVS now allows you to create connectors to your vCenter appliances and create Windows Server entitlements for virtual machines running in your EVS environments"
   },

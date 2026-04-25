@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.96",
+    "t": "Added support for configuring identity providers and inbound authorizers within a private VPC for AWS Bedrock AgentCore, enabling secure network connection without public internet access"
+  },
+  {
     "v": "1.42.94",
     "t": "Adds support for Amazon Bedrock AgentCore Harness control plane APIs, enabling customers to create, manage, and configure managed agent loops with customizable models, tools, memory, and isolated execution environments."
   },

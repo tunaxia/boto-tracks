@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.96",
+    "t": "Adding nextToken and maxItems to the GetQueryResults API."
+  },
+  {
     "v": "1.42.90",
     "t": "Endpoint update for CloudWatch Logs Streaming APIs."
   },

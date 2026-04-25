@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.96",
+    "t": "Corrected CreateWebAppConfiguration documentation. Adding slash as an allowed character for the Ambient documentation agent to allow pronoun specifications."
+  },
+  {
     "v": "1.42.62",
     "t": "Connect-Health SDK is AWS's unified SDK for the Amazon Connect Health offering. It allows healthcare developers to integrate purpose-built agents - such as patient insights, ambient documentation, and medical coding - into their existing applications, including EHRs, telehealth, and revenue cycle."
   }
