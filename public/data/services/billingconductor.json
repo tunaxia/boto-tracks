@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.97",
+    "t": "Add support for Passthrough pricing plan"
+  },
+  {
     "v": "1.42.7",
     "t": "Launch itemized custom line item and service line item filter"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.97",
+    "t": "Adds Proton 10.0-4 to the list of runtime environment options available when creating an Amazon GameLift Streams application"
+  },
+  {
     "v": "1.42.68",
     "t": "Feature launch that enables customers to connect streaming sessions to their own VPCs running in AWS."
   },

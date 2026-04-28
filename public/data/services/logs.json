@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.97",
+    "t": "Adds support for selecting all logs sources and types in a single association."
+  },
+  {
     "v": "1.42.96",
     "t": "Adding nextToken and maxItems to the GetQueryResults API."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.97",
+    "t": "Adds tags parameter to the CreateAdConfiguration operation"
+  },
+  {
     "v": "1.42.94",
     "t": "Adds support for Amazon IVS server-side ad insertion"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.97",
+    "t": "KMS GetKeyLastUsage API provides information on the last successful cryptographic operation performed on KMS keys. This new API provides KMS customers with the last timestamp, CloudTrail eventId, and the cryptographic operation that was performed on the key."
+  },
+  {
     "v": "1.42.50",
     "t": "Added support for Decrypt and ReEncrypt API's to use dry run feature without ciphertext for authorization validation"
   },

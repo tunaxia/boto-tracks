@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.42.97",
+    "t": "Added support for Protocol as modified resource and added update failure as modification state"
+  },
+  {
     "v": "1.42.66",
     "t": "Added WINDOWS SERVER 2025 OperatingSystemName."
   },
