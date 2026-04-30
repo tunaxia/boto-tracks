@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.0",
+    "t": "Adds AccountState in the response for the GetAccountInformation API. Each state represents a specific phase in the account lifecycle. Use this information to manage account access, automate workflows, or trigger actions based on account state changes."
+  },
+  {
     "v": "1.42.6",
     "t": "This release adds a new API (GetGovCloudAccountInformation) used to retrieve information about a linked GovCloud account from the standard AWS partition."
   },

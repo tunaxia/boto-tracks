@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.0",
+    "t": "End of support for Python 3.9"
+  },
+  {
     "v": "1.39.9",
     "t": "Added provisional support for the upcoming Python 3.14 release"
   },

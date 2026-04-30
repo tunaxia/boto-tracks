@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.0",
+    "t": "Adds support for rtx-pro-server-6000 GPU accelerator for service-managed fleets."
+  },
+  {
     "v": "1.42.89",
     "t": "Adds GetMonitorSettings and UpdateMonitorSettings APIs to Deadline Cloud. Enables reading and writing monitor settings as key-value pairs (up to 64 keys per monitor). UpdateMonitorSettings supports upsert and delete (via empty value) semantics and is idempotent."
   },

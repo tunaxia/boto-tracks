@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.0",
+    "t": "Removes support for registry policy V1"
+  },
+  {
     "v": "1.42.86",
     "t": "Add UnableToListUpstreamImageReferrersException in ListImageReferrers"
   },

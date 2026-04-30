@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.0",
+    "t": "Adds configuration bundles for versioned, immutable agent configuration snapshots with branch-based lineage"
+  },
+  {
     "v": "1.42.96",
     "t": "Added support for configuring identity providers and inbound authorizers within a private VPC for AWS Bedrock AgentCore, enabling secure network connection without public internet access"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.0",
+    "t": "Allow admins to configure IPv6 ranges on IP Access Settings."
+  },
+  {
     "v": "1.42.51",
     "t": "Adds support for branding customization without requiring a custom wallpaper."
   },
