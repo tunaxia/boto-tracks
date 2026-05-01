@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.1",
+    "t": "Adds support for regions in the UpdateGlobalResolver input."
+  },
+  {
     "v": "1.42.64",
     "t": "Adds support for dual stack Global Resolvers and Dictionary-based Domain Generation Firewall Advanced Protection."
   },

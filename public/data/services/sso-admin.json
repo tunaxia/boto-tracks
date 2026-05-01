@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.1",
+    "t": "Add InstanceArn and IdentityStoreArn in the response of CreateApplication API and IdentityStoreArn in the response of DescribeApplication API"
+  },
+  {
     "v": "1.42.41",
     "t": "Added new Region management APIs to support multi-Region replication in IAM Identity Center."
   },

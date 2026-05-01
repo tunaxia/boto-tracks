@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.1",
+    "t": "Vended logs update param for capability vended logs feature"
+  },
+  {
     "v": "1.42.85",
     "t": "EKS MNG WarmPool feature to support ASG WarmPool feature."
   },

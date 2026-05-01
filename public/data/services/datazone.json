@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.1",
+    "t": "Adds support for asynchronous notebook runs"
+  },
+  {
     "v": "1.42.95",
     "t": "Releasing For LakehouseProperties attributes in the Connections API's"
   },

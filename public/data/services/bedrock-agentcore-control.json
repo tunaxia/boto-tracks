@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.1",
+    "t": "AgentCore Identity now supports on-behalf-of token exchange OAuth2. AgentCore Memory now supports metadata for LongTerm Memory Records."
+  },
+  {
     "v": "1.43.0",
     "t": "Adds configuration bundles for versioned, immutable agent configuration snapshots with branch-based lineage"
   },
