@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.2",
+    "t": "Adds support for filtering log groups by tags in the ListLogGroups API via the new logGroupTags parameter."
+  },
+  {
     "v": "1.42.97",
     "t": "Adds support for selecting all logs sources and types in a single association."
   },

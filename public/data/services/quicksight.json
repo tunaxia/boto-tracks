@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.2",
+    "t": "Add IdentityProviderCACertificatesBundleS3Uri for private CA certs with OAuth datasources. 256-char limit for FontFamily in themes. ControlTitleFormatText on all 13 filters. ControlTitleFontConfiguration. ContextRegion for cross-region identity context. Story,scenario in CreateCustomCapability API."
+  },
+  {
     "v": "1.42.91",
     "t": "Public release of dashboard customization summary, S3 Tables data source type, Athena cross-account connector, custom sorting for controls, and AI-powered analysis generation."
   },

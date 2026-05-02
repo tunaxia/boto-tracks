@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.2",
+    "t": "Added reasoning details, statusDescription, and timeToFirstTokenMs fields to the ListSpans response in Amazon Q in Connect to provide visibility into model thinking, error diagnostics, and inference latency metrics."
+  },
+  {
     "v": "1.42.84",
     "t": "Added optional originRequestId parameter to SendMessageRequest and ListSpans response in Amazon Q in Connect to support request tracing across service boundaries."
   },

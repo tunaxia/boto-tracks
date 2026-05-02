@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.2",
+    "t": "Added guidance for CreateOpenIDConnectProvider to include multiple thumbprints when OIDC discovery and JWKS endpoints use different hosts or certificates"
+  },
+  {
     "v": "1.42.64",
     "t": "Added support for CloudWatch Logs long-term API keys, currently available in Preview"
   },

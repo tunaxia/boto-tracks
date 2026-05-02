@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.2",
+    "t": "Amazon WorkSpaces Applications now enables AI agents to securely operate desktop applications. Administrators configure stacks to provide agents access to WorkSpaces. Agents can click, type, and take screenshots. Agents authenticate with AWS IAM credentials with activity logged in AWS CloudTrail."
+  },
+  {
     "v": "1.42.90",
     "t": "Add content redirection to Update Stack"
   },
