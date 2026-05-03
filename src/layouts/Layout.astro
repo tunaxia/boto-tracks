@@ -9,9 +9,11 @@ const { title } = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="preload" href="/data/track.json" as="fetch" crossorigin="anonymous" />
+		
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-L9MXJPQ4BW"></script>
-		<script is:inline>
+		<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-L9MXJPQ4BW"></script>
+		<script type="text/partytown">
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
@@ -42,7 +44,7 @@ const { title } = Astro.props;
 		<meta property="twitter:description" content="Search and filter every update in the Boto ecosystem. Track AWS SDK changes with ease." />
 		<meta property="twitter:image" content="https://boto-tracks.tunaxia.com/favicon.png" />
 
-		<link rel="canonical" href="https://boto-tracks.tunaxia.com/" />
+		<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<link rel="apple-touch-icon" href="/favicon.png" />
 
@@ -59,7 +61,8 @@ const { title } = Astro.props;
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap">
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
 		
 		<script type="application/ld+json">
 		{
@@ -126,32 +129,15 @@ const { title } = Astro.props;
 		</script>
 	</head>
 	<body class="h-screen w-full overflow-hidden bg-main transition-colors duration-500">
+		<noscript>
+			<div style="padding: 2rem; background: #fff; color: #000; font-family: sans-serif;">
+				<h1>Boto Tracks | AWS Boto3 & Botocore Changelog Tracker</h1>
+				<p>
+					<strong>Boto Tracks</strong> is a dedicated tool for tracking the <strong>botocore</strong> and <strong>boto3</strong> changes. 
+					Monitor updates, bug fixes, and new feature releases across the entire AWS SDK ecosystem efficiently.
+				</p>
+			</div>
+		</noscript>
 		<slot />
-
-		<!-- SEO hidden hooks -->
-		<footer class="sr-only">
-			<section>
-				<h2>Boto Tracks | AWS Boto3 & Botocore Changelog Tracker</h2>
-				<p>
-					Boto Tracks is the definitive intelligence platform for tracking <strong>AWS Boto Tracks</strong>, <strong>AWS Botocore</strong>, and <strong>Boto3</strong> changelogs. 
-					Developed by <strong>Tunaxia</strong>, it provides a searchable, filterable timeline 
-					of every AWS SDK for Python release.
-				</p>
-				<h3>How to track Boto changes effectively?</h3>
-				<p>
-					Stay ahead of cloud infrastructure changes with <strong>Boto Tracks</strong>. 
-					Whether you are looking for <strong>S3 API changes</strong>, <strong>EC2 bug fixes</strong>, or <strong>Lambda feature releases</strong>, 
-					Boto Tracks provides the most efficient developer interface to track AWS SDK updates.
-				</p>
-				<h3>Key Features of Boto Tracks</h3>
-				<ul>
-					<li><strong>AWS Boto Tracks Search:</strong> Query thousands of AWS service updates in milliseconds.</li>
-					<li><strong>Boto-Tracks Intelligence:</strong> Quickly isolate new capabilities and API enhancements.</li>
-					<li><strong>Fix Tracking:</strong> Identify critical patches and security updates in Boto3 and Botocore.</li>
-					<li><strong>Service History:</strong> Deep-dive into the evolution of specific AWS SDK components.</li>
-				</ul>
-				<p>Optimize your AWS development workflow with the ultimate <strong>Boto3 release tracker</strong>. Built by developers at <a href="https://tunaxia.com" aria-label="Visit Tunaxia's official website">Tunaxia</a>.</p>
-			</section>
-		</footer>
 	</body>
 </html>

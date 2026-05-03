@@ -1,10 +1,10 @@
 <aside :class="{ 'translate-x-0': showMobileServices, 'translate-x-full': !showMobileServices }"
-       class="fixed md:relative inset-y-0 right-0 translate-x-full md:translate-x-0 w-72 lg:w-80 max-w-[85vw] border-l border-slate-200 dark:border-white/5 bg-sidebar flex flex-col z-[100] md:z-10 shadow-[-10px_0_30px_rgba(0,0,0,0.05)] dark:shadow-[-10px_0_30px_rgba(0,0,0,0.5)] transition-all duration-500 ease-in-out theme-transition">
+       class="fixed md:relative inset-y-0 right-0 translate-x-full md:translate-x-0 w-72 lg:w-80 max-w-[85vw] border-l border-slate-200 dark:border-white/5 bg-sidebar flex flex-col z-[100] md:z-10 transition-all duration-500 ease-in-out theme-transition">
     
     <!-- Mobile Header -->
-    <div class="md:hidden flex items-center justify-between px-8 py-5 border-b border-subtle bg-card backdrop-blur-md">
+    <div class="md:hidden flex items-center justify-between px-8 py-5 border-b border-subtle bg-card">
         <div class="flex items-center gap-2.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.5)]"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
             <h2 class="text-[11px] mono text-slate-900 dark:text-white uppercase tracking-[0.4em] font-black italic">Directory</h2>
         </div>
         <button @click="showMobileServices = false" aria-label="Close services sidebar" class="p-2 bg-slate-100 dark:bg-white/5 rounded-xl text-slate-400 hover:text-orange-500 transition-all active:scale-90">
@@ -19,7 +19,7 @@
             <h2 class="text-[10px] mono text-slate-500 dark:text-slate-400 uppercase tracking-[0.4em] font-black">Directory</h2>
             <div class="flex gap-1.5">
                 <div class="w-1 h-1 rounded-full bg-slate-200 dark:bg-slate-800"></div>
-                <div class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.5)]"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div>
             </div>
         </div>
         
@@ -27,7 +27,7 @@
             <input type="text" id="serviceSearch" name="serviceSearch" aria-label="Search services" x-model.debounce.200ms="serviceSearch" 
                    x-ref="serviceSearch"
                    placeholder="Filter services..." 
-                   class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-2xl py-2.5 pl-10 pr-10 text-[11px] focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner font-medium">
+                   class="w-full bg-slate-50 dark:bg-white/[0.03] border border-slate-200/50 dark:border-white/10 rounded-2xl py-2.5 pl-10 pr-10 text-[11px] focus:outline-none focus:ring-1 focus:ring-orange-500/30 focus:border-orange-500/30 transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 font-medium">
             <svg class="absolute left-3.5 top-[11px] w-3.5 h-3.5 text-slate-400 dark:text-slate-600 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
             <div class="absolute right-3.5 top-[11px] hidden lg:flex items-center opacity-20 group-focus-within/search:opacity-0 transition-opacity pointer-events-none">
                 <span class="text-[10px] mono border border-slate-400 rounded px-1.5">/</span>
@@ -39,7 +39,7 @@
     <div class="md:hidden p-6 border-b border-subtle bg-sidebar">
         <div class="relative group/search">
             <input type="text" id="serviceSearchMobile" name="serviceSearchMobile" aria-label="Search services on mobile" x-model.debounce.200ms="serviceSearch" placeholder="Filter services..." 
-                   class="w-full bg-slate-100 dark:bg-white/[0.03] border border-transparent dark:border-white/10 rounded-2xl py-3.5 pl-11 pr-4 text-sm focus:outline-none transition-all text-slate-900 dark:text-white shadow-inner">
+                   class="w-full bg-slate-50 dark:bg-white/[0.03] border border-slate-200/50 dark:border-white/10 rounded-2xl py-3.5 pl-11 pr-4 text-sm focus:outline-none transition-all text-slate-900 dark:text-white">
             <svg class="absolute left-4 top-3.5 w-4 h-4 text-slate-400 dark:text-slate-600 group-focus-within/search:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
         </div>
     </div>
@@ -49,18 +49,15 @@
             <button @click="openService(service); if(isMobile(768)) showMobileServices = false;" 
                     @mouseenter="prefetchService(service)"
                     :aria-label="'View release history for ' + service"
-                    class="w-full text-left px-4 py-3 rounded-xl hover:bg-white dark:hover:bg-white/10 group transition-all flex items-center justify-between border border-transparent hover:border-slate-200 dark:hover:border-white/20 relative overflow-hidden shadow-sm hover:shadow-md active:scale-95">
-                
-                <div class="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/[0.05] to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    class="w-full text-left px-4 py-3 rounded-xl bg-white dark:bg-white/[0.02] border border-slate-200/60 dark:border-white/5 shadow-sm hover:border-orange-500/30 dark:hover:border-orange-500/30 hover:shadow-md group transition-all flex items-center justify-between relative overflow-hidden active:scale-95 mb-2">
                 
                 <div class="flex items-center gap-4 relative z-10">
-                    <div class="w-8 h-8 rounded-lg flex items-center justify-center mono text-[10px] font-black transition-all border shadow-sm group-hover:scale-110 group-hover:shadow-md" 
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center mono text-[10px] font-black transition-all border group-hover:scale-105" 
                          :class="getServiceColorClass(service)"
                          x-text="service.substring(0,2).toUpperCase()"></div>
                     <div class="flex flex-col">
                         <div class="flex items-center gap-2">
-                            <span class="w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-600 group-hover:bg-orange-500 animate-pulse-slow group-hover:shadow-[0_0_8px_rgba(249,115,22,0.6)] transition-all"></span>
-                            <span class="mono text-[11px] text-slate-600 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-white font-black tracking-tight transition-colors uppercase" x-html="highlight(service, serviceSearch)"></span>
+                            <span class="mono text-[11px] text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white font-bold tracking-tight transition-colors uppercase" x-html="highlight(service, serviceSearch)"></span>
                         </div>
                     </div>
                 </div>
@@ -70,17 +67,16 @@
     </div>
 
     <div class="p-3 border-t border-slate-200 dark:border-white/5 bg-card hidden md:block theme-transition relative overflow-hidden group/status">
-        <div class="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl p-3 shadow-sm hover:border-emerald-500/20 transition-all group">
+        <div class="bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl p-3 hover:border-slate-300 transition-all group">
             <div class="flex items-center justify-between mb-2">
                 <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span class="text-[8px] mono text-slate-400 dark:text-slate-600 uppercase tracking-widest font-black">Active Node</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    <span class="text-[8px] mono text-slate-500 dark:text-slate-400 uppercase tracking-widest font-bold">Active Node</span>
                 </div>
-                <svg class="w-3 h-3 text-slate-300 dark:text-slate-700 group-hover:text-emerald-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
             </div>
             <div class="flex flex-col">
-                <span class="text-xl font-black text-slate-900 dark:text-white italic tracking-tighter leading-none" x-text="allServices.length"></span>
-                <span class="text-[7px] mono text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-1.5">Indexed Services</span>
+                <span class="text-xl font-black text-slate-900 dark:text-white tracking-tighter leading-none" x-text="allServices.length"></span>
+                <span class="text-[8px] mono text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-1">Indexed Services</span>
             </div>
         </div>
     </div>

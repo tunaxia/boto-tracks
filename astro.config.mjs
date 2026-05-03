@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
 import alpinejs from '@astrojs/alpinejs';
+import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
@@ -29,5 +30,11 @@ export default defineConfig({
   },
 
   adapter: cloudflare(),
-  integrations: [sitemap(), alpinejs()]
+  integrations: [
+    sitemap(), 
+    alpinejs(),
+    partytown({
+      config: { forward: ['dataLayer.push'] }
+    })
+  ]
 });

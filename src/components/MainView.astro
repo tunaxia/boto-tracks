@@ -67,22 +67,11 @@
     </header>
 
     <div class="flex-1 relative overflow-hidden flex flex-col">
-        <!-- Main content H1 for SEO -->
-        <h1 class="sr-only">Boto Tracks | The Definitive AWS Boto3 & Botocore Changelog Tracker</h1>
-        
         <!-- Edge masks -->
         <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-white dark:from-[#0a0a0a] via-transparent to-white dark:to-[#0a0a0a] opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
 
         <div class="flex-1 overflow-y-auto p-6 md:p-12 custom-scroll bg-transparent scroll-mask">
             <div class="max-w-4xl mx-auto min-h-[calc(100vh-140px)] flex flex-col">
-                <!-- SEO Intro Section (Hidden from users, visible to Search Engines) -->
-                <div class="sr-only">
-                    <h2 class="text-[10px] mono text-orange-500 font-black uppercase tracking-[0.3em] mb-4">Intelligence Brief</h2>
-                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed max-w-2xl font-medium">
-                        Welcome to <strong class="text-slate-900 dark:text-white">Boto Tracks</strong>, the high-performance dashboard for tracking <strong class="text-slate-900 dark:text-white">AWS Boto3</strong> and <strong class="text-slate-900 dark:text-white">Botocore</strong> changes. 
-                        Wondering <span class="text-orange-500/80">how to track boto changes</span> effectively? Use our real-time filters to monitor <strong class="text-slate-900 dark:text-white">AWS Boto Tracks</strong> across every service, feature, and fix.
-                    </p>
-                </div>
 
                 <div class="flex-1 pb-32">
                 <!-- Mobile Search -->
@@ -167,42 +156,45 @@
                 </template>
             </div>
 
-            <!-- Dashboard Footer -->
-            <footer x-cloak class="mt-32 pt-16 pb-24 border-t border-subtle relative opacity-90 hover:opacity-100 transition-opacity duration-700">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-orange-500/20 to-transparent"></div>
-                
-                <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-12 text-center md:text-left">
-                    <div class="flex flex-col items-center md:items-start gap-5">
-                        <div class="flex items-center gap-2.5">
-                            <div class="w-6 h-6 bg-orange-500/10 border border-orange-500/20 rounded-lg flex items-center justify-center shadow-sm">
-                                <img src="/favicon.png" width="14" height="14" alt="Boto Tracks Intelligence logo" class="w-[14px] h-[14px] aspect-square opacity-90" />
+            <!-- Elegant SEO Footer & About Section -->
+            <footer x-cloak class="mt-24 pt-16 pb-20 border-t border-slate-200/50 dark:border-white/5 relative">
+                <div class="flex flex-col lg:flex-row justify-between gap-16">
+                    <!-- Brand & SEO Content -->
+                    <div class="flex-1 max-w-2xl">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-8 h-8 bg-orange-500/10 border border-orange-500/20 rounded-xl flex items-center justify-center shadow-sm">
+                                <img src="/favicon.png" width="16" height="16" alt="Boto Tracks Intelligence logo" class="w-4 h-4 opacity-90" />
                             </div>
-                            <span class="text-[11px] mono font-black uppercase tracking-[0.4em] text-slate-800 dark:text-white">Boto Tracks</span>
+                            <h1 class="text-sm font-black uppercase tracking-[0.2em] text-slate-900 dark:text-white">Boto Tracks | AWS Boto3 & Botocore Changelog Tracker</h1>
                         </div>
-                        <p class="text-[10px] leading-relaxed text-slate-500 dark:text-slate-300 uppercase tracking-widest font-black max-w-[240px]">
-                            A fast, searchable interface for tracking fixes and features across AWS SDKs (Boto3 & Botocore).
-                        </p>        
+                        
+                        <div class="space-y-4 text-[13px] leading-relaxed text-slate-500 dark:text-slate-400 font-medium">
+                            <p>
+                                <strong>Boto Tracks</strong> is a dedicated tool for tracking the <strong>botocore</strong> and <strong>boto3</strong> changes. 
+                                Monitor updates, bug fixes, and new feature releases across the entire AWS SDK ecosystem efficiently.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="flex flex-col items-center md:items-end gap-8">
-                        <div class="flex flex-col items-center md:items-end gap-3">
-                            <span class="text-[9px] mono font-bold text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em]">Support the project</span>
+                    <!-- Links & Credits -->
+                    <div class="flex flex-col lg:items-end gap-8 min-w-[200px]">
+                        <div class="flex flex-col lg:items-end gap-3">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Open Source</span>
                             <a href="https://github.com/tunaxia/boto-tracks" target="_blank" rel="noopener noreferrer" 
-                               aria-label="Star Boto Tracks on GitHub"
-                               class="inline-flex items-center gap-3 px-6 py-3 bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 rounded-2xl hover:border-orange-500/40 hover:bg-orange-500/5 transition-all group shadow-sm active:scale-95 focus-visible:ring-2 focus-visible:ring-orange-500/50 outline-none">
-                                <svg class="w-4 h-4 text-slate-400 dark:text-slate-300 group-hover:text-amber-500 transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                               class="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl hover:border-orange-500/30 hover:bg-orange-50/50 transition-all shadow-sm active:scale-95 group">
+                                <svg class="w-4 h-4 text-slate-400 group-hover:text-orange-500 transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M12 .587l3.668 7.431 8.332 1.21-6.001 5.85 1.416 8.297-7.415-3.897-7.415 3.897 1.416-8.297-6.001-5.85 8.332-1.21z"/>
                                 </svg>
-                                <span class="text-[10px] mono font-black uppercase tracking-widest text-slate-700 dark:text-slate-100 group-hover:text-orange-500 transition-colors">Star on GitHub</span>
+                                <span class="text-[11px] font-black uppercase tracking-widest text-slate-700 dark:text-slate-200 group-hover:text-orange-600 dark:group-hover:text-orange-400">Star on GitHub</span>
                             </a>
                         </div>
                         
-                        <div class="flex flex-col items-center md:items-end gap-1.5">
-                            <p class="text-[10px] mono font-black uppercase tracking-widest text-slate-500 dark:text-slate-200">
+                        <div class="flex flex-col lg:items-end gap-1.5 mt-auto">
+                            <p class="text-[11px] font-black uppercase tracking-widest text-slate-400">
                                 &copy; {new Date().getFullYear()} Boto Tracks
                             </p>
-                            <p class="text-[9px] mono uppercase tracking-[0.2em] text-slate-400 dark:text-slate-400">
-                                Crafted by <a href="https://tunaxia.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Tunaxia's official website" class="text-orange-500 hover:text-orange-400 transition-colors font-black">Tunaxia</a>
+                            <p class="text-[10px] uppercase tracking-[0.1em] text-slate-400 font-medium">
+                                Crafted by <a href="https://tunaxia.com" target="_blank" rel="noopener noreferrer" class="text-orange-500 hover:text-orange-600 transition-colors font-bold">Tunaxia</a>
                             </p>
                         </div>
                     </div>
