@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.3",
+    "t": "Lex V1 is deprecated, use Lex V2 instead"
+  },
+  {
     "v": "1.40.54",
     "t": "Update endpoint ruleset parameters casing"
   },

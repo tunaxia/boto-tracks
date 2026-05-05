@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.3",
+    "t": "Amazon VPC Lattice now supports privately resolvable DNS resources"
+  },
+  {
     "v": "1.40.69",
     "t": "Amazon VPC Lattice now supports custom domain name for resource configurations"
   },

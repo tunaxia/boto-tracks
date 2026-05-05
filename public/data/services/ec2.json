@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.3",
+    "t": "This feature allows customers to change the tunnel bandwidth on existing VPN connections using the ModifyVpnConnectionOptions API"
+  },
+  {
     "v": "1.42.94",
     "t": "Managed resource visibility settings control whether resources that AWS services provision on your behalf within your AWS account appear in your Amazon console views and API list operations."
   },

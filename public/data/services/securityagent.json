@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.3",
+    "t": "AWS Security Agent is adding a new target domain verification method for private VPC penetration testing. Additionally, the target domain resource will now have a verification status reason field to surface additional details about domain verification"
+  },
+  {
     "v": "1.42.80",
     "t": "AWS Security Agent is a service that proactively secures applications throughout the development lifecycle with automated security reviews and on-demand penetration testing."
   }

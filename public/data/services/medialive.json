@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.3",
+    "t": "Updates the type of the MediaLiveRouterOutputConnectionMap."
+  },
+  {
     "v": "1.42.86",
     "t": "MediaLive is adding support for MediaConnect Router by supporting a new output type called MEDIACONNECT ROUTER. This new output type will provide seamless encrypted transport between your MediaLive channel and MediaConnect Router."
   },
