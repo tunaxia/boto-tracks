@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.4",
+    "t": "This release adds the TLDInMaintenance exception."
+  },
+  {
     "v": "1.40.59",
     "t": "Update endpoint ruleset parameters casing"
   },

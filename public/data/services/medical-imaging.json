@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.4",
+    "t": "Add support for DICOM Json Metadata Override features in startDICOMImportJob API"
+  },
+  {
     "v": "1.42.81",
     "t": "Added new boolean flag to persist metadata updates to all primary image sets in the same study as the requested image set."
   },

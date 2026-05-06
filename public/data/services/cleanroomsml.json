@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.4",
+    "t": "Increase max configurable output limits in the Clean Rooms ML configured model algorithm association resource."
+  },
+  {
     "v": "1.42.22",
     "t": "AWS Clean Rooms ML now supports advanced Spark configurations to optimize SQL performance when creating an MLInputChannel or an audience generation job."
   },

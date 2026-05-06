@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.4",
+    "t": "Added support for Monetization Functions. Monetization Functions let you enrich ad requests with external data and transform session parameters using JSONata expressions, without deploying custom infrastructure."
+  },
+  {
     "v": "1.42.84",
     "t": "This change adds support for Tagging the resource types Programs and Prefetch Schedules"
   },
