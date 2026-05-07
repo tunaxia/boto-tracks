@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.5",
+    "t": "Release GenerateRecommendedPolicyV2 and GetRecommendedPolicyV2 APIs. This supports generating and retrieving policy recommendations to remediate unused permissions findings that are now being supported on Security Hub."
+  },
+  {
     "v": "1.42.89",
     "t": "Provide organizational unit scoping capability for GetFindingsV2, GetFindingStatisticsV2, GetResourcesV2, GetResourcesStatisticsV2 APIs."
   },

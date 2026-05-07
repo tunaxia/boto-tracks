@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.5",
+    "t": "The ImportDiskImage API now enforces a maximum character limit of 128 characters on the image name field."
+  },
+  {
     "v": "1.42.91",
     "t": "ImportDiskImage API adds registerImageOptions for Secure Boot control and custom UEFI data. It adds windowsConfiguration for selecting a specific edition from multi-image .wim files during ISO import."
   },
