@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.6",
+    "t": "DescribeInstanceTypes now accepts an IncludeUnsupportedInRegion parameter. When set, the response also lists instance types that are not available in the current Region. Each instance type includes a SupportedInRegion field indicating its regional availability."
+  },
+  {
     "v": "1.43.3",
     "t": "This feature allows customers to change the tunnel bandwidth on existing VPN connections using the ModifyVpnConnectionOptions API"
   },

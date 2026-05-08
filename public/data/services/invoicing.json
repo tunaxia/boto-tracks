@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.6",
+    "t": "Updated ListInvoiceSummaries API to add new ReceiverRole filter in Request and Response"
+  },
+  {
     "v": "1.41.2",
     "t": "Added the CreateProcurementPortalPreference, GetProcurementPortalPreference, PutProcurementPortalPreference, UpdateProcurementPortalPreferenceStatus, ListProcurementPortalPreferences and DeleteProcurementPortalPreference APIs for procurement portal preference management."
   },

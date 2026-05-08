@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.6",
+    "t": "This is a documentation update"
+  },
+  {
     "v": "1.42.92",
     "t": "Expanded support for new suppression rule fields."
   },

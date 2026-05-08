@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.6",
+    "t": "With this release, customers can configure their data exports to generate additional integration artifacts for Athena and Redshift."
+  },
+  {
     "v": "1.42.77",
     "t": "With this release we are providing an option to accounts to have their export delivered to an S3 bucket that is not owned by the account."
   },
