@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Adds support for enabling and disabling Lambda event source mappings in Region switch plans."
+  },
+  {
     "v": "1.42.59",
     "t": "Post-Recovery Workflows enable customers to maintain comprehensive disaster recovery automation. This allows customer SREs and leadership to have complete recovery orchestration from failover through post-recovery preparation, ensuring Regions remain ready for subsequent recovery events."
   },

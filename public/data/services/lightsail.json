@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Added OriginIpAddressTypeEnum (ipv4, ipv6, dualstack) and ipAddressType field to Origin and InputOrigin structures for Lightsail CDN distributions. Allows customers to specify how the distribution connects to origins, using IPv4, IPv6, or dualstack networking"
+  },
+  {
     "v": "1.42.84",
     "t": "This release adds support for the Asia Pacific (Malaysia) (ap-southeast-5) Region."
   },

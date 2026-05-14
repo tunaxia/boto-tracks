@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Add support for code reviews, a new resource type that enables automated security-focused static analysis of source code repositories."
+  },
+  {
     "v": "1.43.3",
     "t": "AWS Security Agent is adding a new target domain verification method for private VPC penetration testing. Additionally, the target domain resource will now have a verification status reason field to surface additional details about domain verification"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Added ServiceQuotaExceededExceptions for Profile operations"
+  },
+  {
     "v": "1.42.79",
     "t": "KYB Supplemental Form enables partners who fail business verification to submit additional details and supporting documentation through a self-service form, triggering an automated re-verification without requiring manual intervention from support teams."
   },

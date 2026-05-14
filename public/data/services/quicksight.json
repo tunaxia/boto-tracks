@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Adds five new custom permission option for Quick Apps so that these capabilities can be controlled by public SDK and CLI."
+  },
+  {
     "v": "1.43.2",
     "t": "Add IdentityProviderCACertificatesBundleS3Uri for private CA certs with OAuth datasources. 256-char limit for FontFamily in themes. ControlTitleFormatText on all 13 filters. ControlTitleFontConfiguration. ContextRegion for cross-region identity context. Story,scenario in CreateCustomCapability API."
   },

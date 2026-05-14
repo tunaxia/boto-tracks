@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "This change added three new EventSourceName for schedule notification feature"
+  },
+  {
     "v": "1.42.96",
     "t": "Amazon Connect is expanding attachment capabilities to give customers greater flexibility and control. Currently limited to predefined file types, the new feature will allow contact center administrators to customize which file extensions and sizes are supported across chat, email, tasks, and cases."
   },

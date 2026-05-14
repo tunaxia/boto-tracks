@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Added rg.xlarge and rg.4xlarge to valid NodeType values and updated documentation for CreateCluster, ModifyCluster, ResizeCluster, and RestoreFromClusterSnapshot APIs to reflect RG node type support."
+  },
+  {
     "v": "1.42.42",
     "t": "We have increased the maximum duration for a deferred maintenance window from 45 days to 60 days for Amazon Redshift provisioned clusters. This enhancement provides customers with greater flexibility in scheduling patching and maintenance activities while also maintaining security compliance."
   },

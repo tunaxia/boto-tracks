@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "This release added support for Outbound Campaign timezone detection using all available contact methods"
+  },
+  {
     "v": "1.42.91",
     "t": "This release adds support for campaign entry limits configuration and hourly refresh frequency in Amazon Connect Outbound Campaigns."
   },

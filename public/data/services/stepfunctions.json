@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Updated default SDK endpoints for AWS Step Functions in AWS GovCloud (US) regions. The default Dual-Stack endpoints now resolve to \"states-fips\" prefixed hostnames. There are no changes to service behavior. No customer action is required."
+  },
+  {
     "v": "1.41.0",
     "t": "Adds support to TestState for mocked results and exceptions, along with additional inspection data."
   },

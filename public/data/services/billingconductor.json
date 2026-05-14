@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Add ConflictException to UpdateCustomLineItem operation."
+  },
+  {
     "v": "1.42.97",
     "t": "Add support for Passthrough pricing plan"
   },

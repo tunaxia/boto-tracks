@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Added support for Amazon Aurora DSQL change data capture (CDC) streams that deliver row-level database changes to Amazon Kinesis in JSON format. Includes CreateStream, GetStream, ListStreams, and DeleteStream operations."
+  },
+  {
     "v": "1.41.1",
     "t": "Added clusterVpcEndpoint field to GetVpcEndpointServiceName API response, returning the VPC connection endpoint for the cluster"
   },

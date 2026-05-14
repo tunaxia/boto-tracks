@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Include length limits in the SDK and documentation for text fields in Image (AMI) APIs such as the image name and description"
+  },
+  {
     "v": "1.43.6",
     "t": "DescribeInstanceTypes now accepts an IncludeUnsupportedInRegion parameter. When set, the response also lists instance types that are not available in the current Region. Each instance type includes a SupportedInRegion field indicating its regional availability."
   },

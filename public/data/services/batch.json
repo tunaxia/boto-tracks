@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.7",
+    "t": "Adds a billing callout to docs regarding using the CE Scale Down Delay feature"
+  },
+  {
     "v": "1.42.94",
     "t": "Support of S3Files volume type, container start and stop timeouts."
   },
