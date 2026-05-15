@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.8",
+    "t": "Adds support for SageMaker Unified Studio notebook operations, including notebook import and export"
+  },
+  {
     "v": "1.43.1",
     "t": "Adds support for asynchronous notebook runs"
   },

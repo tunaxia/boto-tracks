@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.8",
+    "t": "Adding a new boolean for OCSP Revocations in Viewer mTLS Create and Update APIs, and adding a new 'Passthrough' option for TrustStore modes"
+  },
+  {
     "v": "1.43.4",
     "t": "Adds support for tagging CloudFront Functions and KeyValueStores resources."
   },

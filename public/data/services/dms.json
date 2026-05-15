@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.8",
+    "t": "Add 9 SDK waiters for DMS Schema Conversion async operations. Eliminates manual polling for import, assessment, conversion, export, and creation jobs."
+  },
+  {
     "v": "1.42.80",
     "t": "To successfully connect to the IBM DB2 LUW database server, you may need to specify additional security parameters that are passed to the JDBC driver. These parameters are EncryptionAlgorithm and SecurityMechanism. Both parameters accept integer values."
   },

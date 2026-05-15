@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.8",
+    "t": "Introducing new option for security groups mapping - with MAP-DHCP the service translates security rules from your source environment with DHCP compatibility."
+  },
+  {
     "v": "1.42.97",
     "t": "Added network modernization support, enabling customers to edit, resize, merge, and split VPCs and subnets during migration while retaining functional, non-conflicting IP addresses."
   },
