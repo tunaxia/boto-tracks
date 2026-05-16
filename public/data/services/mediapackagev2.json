@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.9",
+    "t": "This release adds support for AvailabilityStartTimeConfiguration in MediaPackageV2 DASH manifests"
+  },
+  {
     "v": "1.43.0",
     "t": "This feature adds configuration for specifying SCTE marker handling and allow greater control over generated manifest and segment URIs"
   },

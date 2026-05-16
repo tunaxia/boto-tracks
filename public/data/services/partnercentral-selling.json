@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.9",
+    "t": "Enable TCV intake on Opportunity to improve Opportunities Hygiene and downstream revenue attribution."
+  },
+  {
     "v": "1.42.80",
     "t": "Adding EURO Currency for MRR Amount"
   },
