@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.10",
+    "t": "Support for dataset enrichment and geo spatial in new data preparation experience"
+  },
+  {
     "v": "1.43.7",
     "t": "Adds five new custom permission option for Quick Apps so that these capabilities can be controlled by public SDK and CLI."
   },

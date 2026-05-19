@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.10",
+    "t": "Amazon EVS now supports up to 32 hosts per EVS environment, increasing the previous host limit to allow a larger scale of VMware workload deployments and reduce operational overhead."
+  },
+  {
     "v": "1.42.96",
     "t": "EVS now supports i7i.metal-24xl EC2 bare metal instance type, delivering high random IOPS performance with real-time latency, ideal for IO intensive and latency-sensitive workloads such as transactional databases, real-time analytics, and AI ML pre-processing."
   },

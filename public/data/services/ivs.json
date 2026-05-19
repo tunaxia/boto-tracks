@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.10",
+    "t": "Adds support for up to 3 mediaTailorPlaybackConfiguration objects in an ad configuration resource"
+  },
+  {
     "v": "1.42.97",
     "t": "Adds tags parameter to the CreateAdConfiguration operation"
   },

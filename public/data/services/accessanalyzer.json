@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.10",
+    "t": "Services manage service-linked analyzers through dedicated APIs - CreateServiceLinkedAnalyzer and DeleteServiceLinkedAnalyzer that separate service-linked specific operations from customer-managed operations. It also shows up in ListAnalyzers and GetAnalyzer responses."
+  },
+  {
     "v": "1.42.85",
     "t": "Revert previous additions of API changes."
   },
