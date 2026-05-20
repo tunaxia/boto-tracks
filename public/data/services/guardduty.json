@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.11",
+    "t": "Adding support for exposure and vulnerability context from AWS Security Hub in GuardDuty Extended Threat Detection attack sequence findings."
+  },
+  {
     "v": "1.43.6",
     "t": "This is a documentation update"
   },
