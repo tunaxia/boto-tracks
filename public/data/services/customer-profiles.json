@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.12",
+    "t": "Amazon Connect Customer Profiles adds support for item catalog columns in RecommenderSchema, ExcludedColumns in Create and Update Recommender to specify columns to exclude from training, and the ability to disable automatic retraining by setting TrainingFrequency to 0."
+  },
+  {
     "v": "1.42.90",
     "t": "Amazon Connect Customer Profiles adds RecommenderSchema CRUD APIs for custom ML training columns. CreateRecommender and CreateRecommenderFilter now accept optional RecommenderSchemaName."
   },

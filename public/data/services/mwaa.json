@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.12",
+    "t": "Updated API documentation to describe the PublicAndPrivate webserver access mode."
+  },
+  {
     "v": "1.43.5",
     "t": "Amazon MWAA now supports a PublicAndPrivate webserver access mode. The Airflow web server is accessible over both public and private endpoints, enabling workers in VPCs without internet access to reach the Task API privately while retaining public access to the Airflow UI."
   },
