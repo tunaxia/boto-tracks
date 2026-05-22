@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.13",
+    "t": "Collaboration creators can update payment configurations without recreating the collaboration. When multiple payer candidates are configured for a cost type, analysis runners can specify the actual payer at submission time, providing granular control over billing."
+  },
+  {
     "v": "1.43.4",
     "t": "Increase max configurable output limits in the Clean Rooms ML configured model algorithm association resource."
   },

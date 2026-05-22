@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.13",
+    "t": "Adds support for controlling the timecode source of NDI flow outputs."
+  },
+  {
     "v": "1.42.87",
     "t": "Adds support for MediaLive Channel-type Router Inputs."
   },

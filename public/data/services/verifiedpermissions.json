@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.13",
+    "t": "Support hard deleting policy store aliases. Users can now delete an alias and immediately reassign it to a different policy store without waiting for the soft-delete retention period."
+  },
+  {
     "v": "1.42.73",
     "t": "Adds support for Policy Store Aliases, Policy Names, and Policy Template Names. These are customizable identifiers that can be used in place of Policy Store ids, Policy ids, and Policy Template ids respectively in Amazon Verified Permissions APIs."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.13",
+    "t": "Adds dataset management APIs for creating, versioning, and managing evaluation datasets."
+  },
+  {
     "v": "1.43.7",
     "t": "Adds support for read-only summary APIs for Policy Engine, Policy, and Policy Generation resources, enabling metadata retrieval without KMS decryption for AWS Config integration."
   },
