@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.14",
+    "t": "Improve caching of S3 endpoints, which should improve performance when working with multiple keys in the same bucket"
+  },
+  {
     "v": "1.43.5",
     "t": "Validate outpost access point resource name"
   },

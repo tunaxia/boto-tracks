@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.14",
+    "t": "Added ListPerformanceAnalysisReportRecommendations API to retrieve recommendations for a performance analysis report. Added analysis configuration support to CreatePerformanceAnalysisReport for enhanced analysis types such as vacuum analysis."
+  },
+  {
     "v": "1.40.55",
     "t": "Update endpoint ruleset parameters casing"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.14",
+    "t": "The ModifyInstanceAttribute API now supports modification of EnclaveOptions for the instance as a typed parameter."
+  },
+  {
     "v": "1.43.10",
     "t": "Amazon VPC IP Address Manager (IPAM) now supports tags on IPAM pool allocations, enabling all standard tagging features for allocations including tag-on-create."
   },

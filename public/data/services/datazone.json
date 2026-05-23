@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.14",
+    "t": "Add support for VPC connection"
+  },
+  {
     "v": "1.43.8",
     "t": "Adds support for SageMaker Unified Studio notebook operations, including notebook import and export"
   },

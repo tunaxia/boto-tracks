@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.14",
+    "t": "Added new Gen6 stream classes based on the EC2 G6e instance family. These classes are designed for streaming high-fidelity, graphically demanding games and applications that benefit from additional GPU memory and performance."
+  },
+  {
     "v": "1.42.97",
     "t": "Adds Proton 10.0-4 to the list of runtime environment options available when creating an Amazon GameLift Streams application"
   },
