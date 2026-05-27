@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.15",
+    "t": "AWS Budget Name Validation Documentation Updates."
+  },
+  {
     "v": "1.42.33",
     "t": "Add Budget FilterExpression and Metrics fields to DescribeBudgetPerformanceHistory to support more granular filtering options."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.15",
+    "t": "Add malware scan support for Continuous Backups, also known as Point-In-Time Recovery Points (PITR)."
+  },
+  {
     "v": "1.43.11",
     "t": "Adding support for exposure and vulnerability context from AWS Security Hub in GuardDuty Extended Threat Detection attack sequence findings."
   },

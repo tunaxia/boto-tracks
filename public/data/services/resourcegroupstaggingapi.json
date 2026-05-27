@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.15",
+    "t": "The GetResources API now returns MissingTagKeys in ComplianceDetails, listing tag keys defined as required in the ReportRequiredTagBlock block of the effective tag policy that are absent from the resource."
+  },
+  {
     "v": "1.40.76",
     "t": "Add support for new ListRequiredTags API used to retrieve the required tags specified in a customer's effective tag policy."
   },
