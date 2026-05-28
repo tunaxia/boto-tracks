@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.16",
+    "t": "OpenSearch will now support multi-segment paths in JWKS URLs."
+  },
+  {
     "v": "1.43.7",
     "t": "Adds support for AutomatedSnapshotPauseOptions."
   },

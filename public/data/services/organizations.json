@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.16",
+    "t": "AWS Organizations now emits CloudTrail events (AccountJoinedOrganization, AccountDepartedOrganization) to the management account for membership changes, including join and departure method and timestamp."
+  },
+  {
     "v": "1.42.83",
     "t": "Updates close Account quota for member accounts in an Organization."
   },

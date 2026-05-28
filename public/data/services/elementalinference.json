@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.16",
+    "t": "Added support for smart subtitles in Elemental Inference, enabling automatic generation of subtitles for media content. Available in English, Spanish, French, German, Italian, and Portuguese."
+  },
+  {
     "v": "1.42.56",
     "t": "Initial GA launch for AWS Elemental Inference including capabilities of Smart Crop and Live Event Clipping"
   }
