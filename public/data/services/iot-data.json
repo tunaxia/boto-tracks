@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.17",
+    "t": "Adding GetConnection, ListSubscriptions, and SendDirectMessage APIs to IoT Data Plane"
+  },
+  {
     "v": "1.40.55",
     "t": "Update endpoint ruleset parameters casing"
   },

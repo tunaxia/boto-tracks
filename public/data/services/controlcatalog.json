@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.17",
+    "t": "AWS Control Catalog - Added GovernedProviders response field and inclusion filter to GetControl and ListControls APIs to identify and filter by cloud provider. Added ParameterRequirementSummary response field indicating parameter requirements."
+  },
+  {
     "v": "1.42.55",
     "t": "Updated ExemptedPrincipalArns parameter documentation for improved accuracy"
   },

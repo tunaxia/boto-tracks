@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.17",
+    "t": "Add support for ModelPackageArn in Bedrock's CreateCustomModel API"
+  },
+  {
     "v": "1.43.8",
     "t": "Advanced Prompt Optimization (AdvPO) allows you to optimize and migrate your prompts for any model on Bedrock by automatically evaluating responses and rewriting prompts to improve performance. This release provides a programmatic way to create, get, list, stop, and delete AdvPO jobs."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.17",
+    "t": "BatchPutProfileObject API adds multiple profile objects to a domain of a given ObjectType in a single API call."
+  },
+  {
     "v": "1.43.12",
     "t": "Amazon Connect Customer Profiles adds support for item catalog columns in RecommenderSchema, ExcludedColumns in Create and Update Recommender to specify columns to exclude from training, and the ability to disable automatic retraining by setting TrainingFrequency to 0."
   },

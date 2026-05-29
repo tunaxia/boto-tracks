@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.17",
+    "t": "Support system role in message"
+  },
+  {
     "v": "1.43.12",
     "t": "Supporting Request Metadata for Invoke Model and Invoke Model with Response Stream"
   },

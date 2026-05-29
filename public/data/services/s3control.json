@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.17",
+    "t": "Update the minimum value of MinStorageBytesPercentage in StorageLensPrefixLevel.SelectionCriteria from 0.1 to 1, aligning the model with the documented contract."
+  },
+  {
     "v": "1.42.94",
     "t": "This release adds support for five additional checksum algorithms for data integrity checking in Amazon S3 - MD5, SHA-512, XXHash3, XXHash64, and XXHash128."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.17",
+    "t": "Adds support for deletion protection on collections, ability to create NEXTGEN collection groups and autoscaling visibility for NEXTGEN collection groups"
+  },
+  {
     "v": "1.42.75",
     "t": "Adds support for updating the vector options field for existing collections."
   },

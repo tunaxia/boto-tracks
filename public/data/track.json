@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.17",
+      "date": "2026-05-28"
+    },
+    {
       "id": "1.43.16",
       "date": "2026-05-27"
     },
@@ -9439,6 +9443,7 @@
     "request-serialization",
     "requestsigner",
     "resiliencehub",
+    "resiliencehubv2",
     "resource-explorer-2",
     "resource-groups",
     "resourcegroupstaggingapi",

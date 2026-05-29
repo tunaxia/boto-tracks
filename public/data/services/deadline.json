@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.17",
+    "t": "Added support for persistent storage on Service-Managed Fleets, allowing customers to configure persistent storage that preserves data across worker sessions which reduces job startup times for workloads with large software installations or asset caches."
+  },
+  {
     "v": "1.43.0",
     "t": "Adds support for rtx-pro-server-6000 GPU accelerator for service-managed fleets."
   },

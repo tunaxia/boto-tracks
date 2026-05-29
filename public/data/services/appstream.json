@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.17",
+    "t": "Amazon WorkSpaces Applications now supports BYOL (Bring Your Own License). This enables customers to import their own WorkSpaces images and use them in WorkSpaces Applications."
+  },
+  {
     "v": "1.43.2",
     "t": "Amazon WorkSpaces Applications now enables AI agents to securely operate desktop applications. Administrators configure stacks to provide agents access to WorkSpaces. Agents can click, type, and take screenshots. Agents authenticate with AWS IAM credentials with activity logged in AWS CloudTrail."
   },

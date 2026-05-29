@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.17",
+    "t": "Adds new connectivity-related fields to Fleet Indexing API requests and responses."
+  },
+  {
     "v": "1.43.2",
     "t": "AWS IoT HTTP rule actions now support cross-topic batching, combining messages from different MQTT topics into single HTTP requests."
   },
