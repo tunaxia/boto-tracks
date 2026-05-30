@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.18",
+    "t": "Adds support for Alpha-5 satellite number encoding in the Two-Line Element ephemeris format."
+  },
+  {
     "v": "1.42.91",
     "t": "Adds support for updating contacts, listing antennas, and listing ground station reservations. New API operations - UpdateContact, ListContactVersions, DescribeContactVersion, ListAntennas, and ListGroundStationReservations."
   },

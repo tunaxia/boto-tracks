@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.18",
+    "t": "Automated Reasoning checks - Added two build workflows for policies. Iterative Refine Policy uses AI to update policy definitions based on test results and feedback. Resolve Policy Ambiguities consolidates ambiguous variables in Automated Reasoning policies, a common source of ambiguous validation."
+  },
+  {
     "v": "1.43.17",
     "t": "Add support for ModelPackageArn in Bedrock's CreateCustomModel API"
   },

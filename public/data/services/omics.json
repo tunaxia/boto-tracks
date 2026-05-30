@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.18",
+    "t": "Add engineSettings to StartRun and GetRun. Add profiles and profileParameterTemplates to GetWorkflow and GetWorkflowVersion."
+  },
+  {
     "v": "1.42.97",
     "t": "Enable Public Internet or VPC configuration to BatchRun"
   },

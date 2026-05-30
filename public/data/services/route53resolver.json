@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.18",
+    "t": "Added BatchCreateFirewallRule, BatchUpdateFirewallRule, BatchDeleteFirewallRule, and ListFirewallRuleTypes APIs. Added FirewallRuleType support to Firewall Rule APIs."
+  },
+  {
     "v": "1.43.6",
     "t": "Adds supports for DNS64 on inbound endpoints and IPv6 forwarding through the internet gateway (IGW) on outbound endpoints, making it easier to manage hybrid DNS across IPv4 and IPv6 networks."
   },

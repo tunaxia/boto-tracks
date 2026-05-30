@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.18",
+    "t": "Reference your own AWS Secrets Manager secrets when configuring credential providers, giving you control over encryption, rotation, and access policies instead of using service-managed secrets."
+  },
+  {
     "v": "1.43.17",
     "t": "Added Harness support for LiteLLM model configuration for third-party model providers. Added S3 and Git skill source types. Added Responses API format for OpenAI and Bedrock models. Added runtimeUserId parameter to InvokeHarness for end-user identification."
   },
