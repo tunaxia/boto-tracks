@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.20",
+    "t": "Added Transit and Intermodal travel modes to CalculateRoutes. Plan routes using public transit (bus, subway, train, ferry) or combine transit with driving, taxi, and rental car segments in a single multi-modal route."
+  },
+  {
     "v": "1.43.3",
     "t": "Added support for TravelTimeExceedsDriverWorkHours, ViolatedBlockedRoad, and ViolatedVehicleRestriction notice codes to the CalculateRoutes API response."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.20",
+    "t": "Release new Language locales including am-ET, es-MX, fa-AF, ht-HT, jv-ID, km-KH, my-MM, sq-AL, ne-NP. The commit shows past locales that have already been release which include cy-gb, ga-ie, gd-gb."
+  },
+  {
     "v": "1.42.25",
     "t": "Adds waiters to Amazon Transcribe."
   },

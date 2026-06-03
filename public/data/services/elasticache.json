@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.20",
+    "t": "Amazon ElastiCache for Valkey now supports durability. This new capability is enabled through a Multi-AZ transactional log, enabling fast recovery and restart during failures."
+  },
+  {
     "v": "1.42.81",
     "t": "Updated SnapshotRetentionLimit documentation for ServerlessCache to correctly describe the parameter as number of days (max 35) instead of number of snapshots."
   },

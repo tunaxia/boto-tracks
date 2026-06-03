@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.20",
+      "date": "2026-06-02"
+    },
+    {
       "id": "1.43.19",
       "date": "2026-06-01"
     },
@@ -9487,6 +9491,7 @@
     "sagemaker-geospatial",
     "sagemaker-metrics",
     "sagemaker-runtime",
+    "sagemakerjobruntime",
     "savingsplans",
     "scheduler",
     "schemas",

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.20",
+    "t": "Amazon EC2 now supports self-service cancellation of future-dated Capacity Reservations. A cancellation charge applies based on remaining commitment. Customers can generate a cancellation quote to review charges before confirming."
+  },
+  {
     "v": "1.43.14",
     "t": "The ModifyInstanceAttribute API now supports modification of EnclaveOptions for the instance as a typed parameter."
   },

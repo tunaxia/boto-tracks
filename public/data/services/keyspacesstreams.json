@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.20",
+    "t": "Added iterator description to the GetRecords API response for Amazon Keyspaces Change Data Capture (CDC) streams, enabling consumers to track their current position within the stream."
+  },
+  {
     "v": "1.42.59",
     "t": "Added support for Change Data Capture (CDC) streams with Duration DataType."
   },
