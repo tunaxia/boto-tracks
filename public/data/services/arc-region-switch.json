@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.22",
+    "t": "ARC Region Switch now supports three new execution blocks for multi-Region database workloads-Amazon Aurora Serverless scaling, Amazon Aurora Provisioned scaling, and Amazon Neptune Global Database failover."
+  },
+  {
     "v": "1.43.7",
     "t": "Adds support for enabling and disabling Lambda event source mappings in Region switch plans."
   },
