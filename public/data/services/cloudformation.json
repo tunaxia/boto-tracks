@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.23",
+    "t": "Adding new BDD representation of endpoint ruleset"
+  },
+  {
     "v": "1.41.2",
     "t": "Adds the DependsOn field to the AutoDeployment configuration parameter for CreateStackSet, UpdateStackSet, and DescribeStackSet APIs, allowing users to set and read auto-deployment dependencies between StackSets"
   },

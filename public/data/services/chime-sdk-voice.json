@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.23",
+    "t": "Adding new BDD representation of endpoint ruleset"
+  },
+  {
     "v": "1.40.58",
     "t": "Update endpoint ruleset parameters casing"
   },

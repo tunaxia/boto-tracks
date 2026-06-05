@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.23",
+    "t": "Adding new BDD representation of endpoint ruleset"
+  },
+  {
     "v": "1.42.63",
     "t": "This release adds support for webhooks, allowing customers to create an Event Integration with a webhook source."
   },

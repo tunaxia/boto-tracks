@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.23",
+    "t": "Adding new BDD representation of endpoint ruleset"
+  },
+  {
     "v": "1.41.6",
     "t": "Amazon Connect now supports message processing that intercepts and processes chat messages before they reach any participant."
   },

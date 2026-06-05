@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.23",
+    "t": "adds UpdateAdConfiguration operation to AWS IVS low-latency APIs"
+  },
+  {
     "v": "1.43.10",
     "t": "Adds support for up to 3 mediaTailorPlaybackConfiguration objects in an ad configuration resource"
   },

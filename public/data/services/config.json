@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.23",
+    "t": "AWS Config now supports internal service-linked rules, allowing AWS service partners to deploy Config rules for customers and use the evaluation results to build enhanced features."
+  },
+  {
     "v": "1.42.68",
     "t": "Fix pagination support for DescribeConformancePackCompliance, and update OrganizationConfigRule InputParameters max length to match ConfigRule."
   },
