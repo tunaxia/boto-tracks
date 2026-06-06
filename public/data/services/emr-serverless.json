@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.24",
+    "t": "Adds support for updating max capacity and custom fields while application is started"
+  },
+  {
     "v": "1.42.94",
     "t": "This release adds support for Spark connect sessions starting with release label emr-7.13.0."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.24",
+    "t": "Adds support for configurable number of Clear Lead segments at the beginning of encrypted output. Adds support for multiple trickplay variants."
+  },
+  {
     "v": "1.42.90",
     "t": "Adds support for Elemental Inference powered smart crop feature, enabling video verticalization"
   },
