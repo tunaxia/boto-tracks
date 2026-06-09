@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.25",
+    "t": "Adds new Idle Recommendation Resource types in the AWS Compute Optimizer API"
+  },
+  {
     "v": "1.43.22",
     "t": "This release lets customers extend the lookback period for Amazon EBS volume and Amazon ECS rightsizing recommendations to 32 days."
   },

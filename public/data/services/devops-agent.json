@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.25",
+    "t": "Add Asset APIs for managing versioned assets and asset files in AWS DevOps Agent agent spaces."
+  },
+  {
     "v": "1.43.11",
     "t": "Added a new serviceType mcpserversigv4 service and association. This provides feature to register MCP sigv4 authorization based MCPs"
   },

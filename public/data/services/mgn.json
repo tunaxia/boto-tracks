@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.25",
+    "t": "AWS Transform discovery tool now supported as network migration input source. You can now use the AWS Transform Discovery tool as a source for network migration alongside modelizeIT, enabling hybrid network migrations for environments running both VMware and non-VMware workloads."
+  },
+  {
     "v": "1.43.8",
     "t": "Introducing new option for security groups mapping - with MAP-DHCP the service translates security rules from your source environment with DHCP compatibility."
   },

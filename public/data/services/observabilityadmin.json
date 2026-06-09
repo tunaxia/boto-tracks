@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.25",
+    "t": "CloudWatch Observability Admin extends CentralizationRuleForOrganization APIs to support metrics, enabling centralization of metrics across accounts and Regions alongside logs."
+  },
+  {
     "v": "1.43.1",
     "t": "Observability Admin enablement launch for AWS Kafka, Bedrock Agent Core Workload Identity and OTel metric enablement."
   },

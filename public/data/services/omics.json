@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.25",
+    "t": "StartRunBatch API - Add EngineSettings"
+  },
+  {
     "v": "1.43.18",
     "t": "Add engineSettings to StartRun and GetRun. Add profiles and profileParameterTemplates to GetWorkflow and GetWorkflowVersion."
   },

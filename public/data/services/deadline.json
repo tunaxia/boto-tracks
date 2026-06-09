@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.25",
+    "t": "Added optional identityCenterRegion parameter to AssociateMember APIs to allow managing memberships for users and groups in other regions."
+  },
+  {
     "v": "1.43.17",
     "t": "Added support for persistent storage on Service-Managed Fleets, allowing customers to configure persistent storage that preserves data across worker sessions which reduces job startup times for workloads with large software installations or asset caches."
   },

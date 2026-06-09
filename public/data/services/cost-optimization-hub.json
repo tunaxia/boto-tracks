@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.25",
+    "t": "Adds new Idle Recommendation types in the Cost Optimization Hub API"
+  },
+  {
     "v": "1.41.5",
     "t": "This release enables AWS Cost Optimization Hub to show cost optimization recommendations for NAT Gateway."
   },
