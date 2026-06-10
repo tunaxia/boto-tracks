@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.26",
+    "t": "Added TagFieldSpecifications to CreateFlowLogs and DescribeFlowLogs APIs. Customers can now specify tag keys in their Flow Logs subscriptions to capture associated EC2 resource tag values in their logs, enabling tag-based visibility."
+  },
+  {
     "v": "1.43.20",
     "t": "Amazon EC2 now supports self-service cancellation of future-dated Capacity Reservations. A cancellation charge applies based on remaining commitment. Customers can generate a cancellation quote to review charges before confirming."
   },

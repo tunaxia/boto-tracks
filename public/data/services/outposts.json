@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.26",
+    "t": "Added AWS Outposts APIs for self-service Outposts quoting and ordering. New operations include CreateQuote, GetQuote, UpdateQuote, DeleteQuote, ListQuotes, and ListOrderableInstanceTypes."
+  },
+  {
     "v": "1.42.86",
     "t": "Add AWS Outposts APIs to view renewal pricing options and submit renewal requests for Outpost contracts"
   },

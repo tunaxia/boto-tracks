@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.26",
+    "t": "Adds support for the Amazon Bedrock account-level data retention APIs PutAccountDataRetention and GetAccountDataRetention."
+  },
+  {
     "v": "1.43.18",
     "t": "Automated Reasoning checks - Added two build workflows for policies. Iterative Refine Policy uses AI to update policy definitions based on test results and feedback. Resolve Policy Ambiguities consolidates ambiguous variables in Automated Reasoning policies, a common source of ambiguous validation."
   },
