@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.27",
+    "t": "Add support for MedicalScribeBinaryAudioEvent in the Medical Scribe streaming input. This new event type lets you send audio as a raw binary payload instead of a base64-encoded value"
+  },
+  {
     "v": "1.42.96",
     "t": "Corrected CreateWebAppConfiguration documentation. Adding slash as an allowed character for the Ambient documentation agent to allow pronoun specifications."
   },

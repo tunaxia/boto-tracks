@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.27",
+    "t": "Adds supports for out-of-order sample ingestion (default 1-minute window) and a configurable rule query offset to reduce data loss and improve alerting accuracy."
+  },
+  {
     "v": "1.40.72",
     "t": "Add VPC source configuration support enabling Amazon Managed Service for Prometheus Collector to collect metrics from MSK clusters."
   },
