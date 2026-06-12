@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.28",
+    "t": "Adding new BDD representation of endpoint ruleset"
+  },
+  {
     "v": "1.40.17",
     "t": "Remove incorrect endpoint tests"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.28",
+    "t": "Adds support to perform cross account data plane actions on an AgentCore Memory resource"
+  },
+  {
     "v": "1.43.26",
     "t": "Add RetryableConflictException (HTTP 409) to InvokeAgentRuntimeCommand and GetAgentCard to prevent orphaned VMs during concurrent session access. The SDK automatically retries this exception with backoff. Enforcement is not yet active and will be enabled in a future service update."
   },

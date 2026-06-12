@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.28",
+    "t": "Introduce new CreateCluster parameters for Amazon EKS local clusters on AWS Outposts. Added etcdInstanceType for configuring the EC2 instance type for dedicated etcd instances, and spreadLevel for configuring the placement group spread level for Kubernetes control plane and etcd instances."
+  },
+  {
     "v": "1.43.1",
     "t": "Vended logs update param for capability vended logs feature"
   },

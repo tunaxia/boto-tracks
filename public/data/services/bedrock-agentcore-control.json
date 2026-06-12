@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.28",
+    "t": "Supports deterministic metadata for AgentCore Memory"
+  },
+  {
     "v": "1.43.18",
     "t": "Reference your own AWS Secrets Manager secrets when configuring credential providers, giving you control over encryption, rotation, and access policies instead of using service-managed secrets."
   },
