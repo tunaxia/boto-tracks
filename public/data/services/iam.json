@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.29",
+    "t": "Updating documentation for select service-specific credential APIs"
+  },
+  {
     "v": "1.43.2",
     "t": "Added guidance for CreateOpenIDConnectProvider to include multiple thumbprints when OIDC discovery and JWKS endpoints use different hosts or certificates"
   },

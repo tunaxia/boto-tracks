@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.29",
+    "t": "Added tagging and CMK support across optimization, an explanation field in recommendation output, and an insights feature to identify failure patterns, extract user intents, and summarize execution behavior"
+  },
+  {
     "v": "1.43.28",
     "t": "Adds support to perform cross account data plane actions on an AgentCore Memory resource"
   },

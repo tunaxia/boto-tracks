@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.29",
+    "t": "Update KeyARN in DeliveryStreamEncryptionConfigurationInput to accept KMS key ARNs only (not alias ARNs), matching service behavior."
+  },
+  {
     "v": "1.40.63",
     "t": "Update endpoint ruleset parameters casing"
   },
