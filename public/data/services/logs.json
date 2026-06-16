@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.30",
+    "t": "Added endTimeOffset parameter to Scheduled Queries APIs (Create, Update, Get) enabling bounded time window configuration. Introduced scheduleType filter (CUSTOMER MANAGED, AWS MANAGED) for ListScheduledQueries and exposed it in Get and Update responses."
+  },
+  {
     "v": "1.43.9",
     "t": "Updating the max limit for start query api parameter."
   },

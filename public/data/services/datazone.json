@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.30",
+    "t": "Adds support for deleting lineage events in Amazon DataZone."
+  },
+  {
     "v": "1.43.15",
     "t": "Added resourceConfigurations and allowUserProvidedConfigurations fields to environment blueprint configuration APIs, enabling customers who migrated from V1 to V2 domains to update resource configurations (such as lineage schedules) programmatically via the SDK."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.30",
+    "t": "Added a validation for null check for ImageIds in DescribeWorkspaceImages API request parameters."
+  },
+  {
     "v": "1.43.23",
     "t": "Adding new BDD representation of endpoint ruleset"
   },
