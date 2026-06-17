@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.31",
+    "t": "Adds support for creating an order from quotes."
+  },
+  {
     "v": "1.43.26",
     "t": "Added AWS Outposts APIs for self-service Outposts quoting and ordering. New operations include CreateQuote, GetQuote, UpdateQuote, DeleteQuote, ListQuotes, and ListOrderableInstanceTypes."
   },

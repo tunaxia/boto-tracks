@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.31",
+    "t": "Added support for annotations. You can now attach up to 1000 annotations (up to 1 MB each) directly to objects and create, retrieve, list, and delete them using new annotation APIs. Also added support for configuring an annotation table in S3 Metadata."
+  },
+  {
     "v": "1.43.14",
     "t": "Improve caching of S3 endpoints, which should improve performance when working with multiple keys in the same bucket"
   },

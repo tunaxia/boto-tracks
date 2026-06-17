@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.31",
+    "t": "Add EnableDetailedObservability to Endpoint MetricsConfig. Publishes GPU, host, and framework-native inference metrics to CloudWatch with per-inference-component, availability-zone, and instance dimensions. Adds Inference Component provisioning lifecycle and multi-AZ placement metrics."
+  },
+  {
     "v": "1.43.27",
     "t": "Add support for G6e instances (ml.g6e.xlarge through ml.g6e.48xlarge) on Amazon SageMaker Notebook Instances."
   },

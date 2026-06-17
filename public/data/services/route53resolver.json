@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.31",
+    "t": "Adds supports for PartnerManagedRules"
+  },
+  {
     "v": "1.43.18",
     "t": "Added BatchCreateFirewallRule, BatchUpdateFirewallRule, BatchDeleteFirewallRule, and ListFirewallRuleTypes APIs. Added FirewallRuleType support to Firewall Rule APIs."
   },
