@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.32",
+    "t": "Adds new AgenticRetrieveStream API for managed knowledge bases to use conversation history and autonomously plan for multi-hop multi-KB reasoning with built-in evaluation and access-control. Updates Retrieve API for access-control-based filtering for managed knowledge bases."
+  },
+  {
     "v": "1.41.6",
     "t": "Support audio and video content retrieval on Bedrock Knowledge Bases."
   },

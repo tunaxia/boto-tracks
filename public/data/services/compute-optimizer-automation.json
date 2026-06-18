@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.32",
+    "t": "This launch adds IfExists comparison operators to Compute Optimizer Automation rule criteria, so a rule can include recommended actions whose specified attribute isn't present."
+  },
+  {
     "v": "1.42.93",
     "t": "This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol."
   },

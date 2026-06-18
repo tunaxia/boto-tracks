@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.32",
+    "t": "Adds support for Remote A2A (Agent-to-Agent) agent registration and management. Adds new Release Readiness Review and Release Testing capabilities. Adds support for Git managed skills in AWS DevOps Agent."
+  },
+  {
     "v": "1.43.29",
     "t": "Adds support for Trigger CRUD APIs (CreateTrigger, GetTrigger, UpdateTrigger, DeleteTrigger, ListTriggers) for managing schedule-based automation triggers in DevOps Agent agent spaces."
   },

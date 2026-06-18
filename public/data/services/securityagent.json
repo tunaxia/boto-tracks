@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.32",
+    "t": "Updated AWS Security Agent SDK model with new APIs for threat modeling, code review, security requirements, and additional integration providers."
+  },
+  {
     "v": "1.43.14",
     "t": "Adds support for verification scripts on penetration test findings. Customers can now download executable scripts to independently reproduce confirmed vulnerabilities, with instructions and required environment variables provided for each finding."
   },
