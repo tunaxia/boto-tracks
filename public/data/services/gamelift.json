@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.33",
+    "t": "Amazon GameLift Servers has launched support for customizing Linux capabilities in container fleets. You can now specify additional Linux capabilities for containers in a container group definition, giving you finer control over the default Docker capabilities available to your containers."
+  },
+  {
     "v": "1.43.0",
     "t": "Amazon GameLift Servers adds a new DescribeContainerGroupPortMappings API for container fleets, making it easy to discover which connection ports map to your container ports without needing to remotely access the compute."
   },

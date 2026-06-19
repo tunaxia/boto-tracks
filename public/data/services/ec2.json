@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.33",
+    "t": "Documentation updates clarifying CancelCapacityReservation cancellable states"
+  },
+  {
     "v": "1.43.27",
     "t": "This release adds support for AMI Watermark which a structured identifier that helps in tracking AMI provenance"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.33",
+    "t": "Adding New Configurations to the FHIR Create Datastore. The new configurations include NLP Configuration, AnalyticsConfiguration, ProfileConfiguration"
+  },
+  {
     "v": "1.43.28",
     "t": "Adds the UpdateFHIRDatastore API and adds analytics, NLP, and profile configuration support to CreateFHIRDatastore and DescribeFHIRDatastore."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.33",
+    "t": "Converging and fixing existing documentation gaps in Lambda SDK"
+  },
+  {
     "v": "1.43.20",
     "t": "Adds configuration for tag propagation to Lambda-managed resources."
   },

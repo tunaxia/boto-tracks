@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.33",
+    "t": "Amazon ECS services now support high resolution (20 second) CloudWatch metrics for CPUUtilization and MemoryUtilization. Use these metrics for faster service auto scaling."
+  },
+  {
     "v": "1.43.32",
     "t": "Releasing the ability to bring-your-own task-definition for CreateExpressGatewayService and UpdateGatewayExpressService"
   },

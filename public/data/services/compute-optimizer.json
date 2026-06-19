@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.33",
+    "t": "This release surfaces two new metrics Volume IOPS Exceeded and Volume Throughput Exceeded into EBS volume rightsizing recommendations."
+  },
+  {
     "v": "1.43.25",
     "t": "Adds new Idle Recommendation Resource types in the AWS Compute Optimizer API"
   },
