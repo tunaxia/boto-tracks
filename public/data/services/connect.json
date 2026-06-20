@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.34",
+    "t": "This is the release for point based scoring system and the evaluation form validation project"
+  },
+  {
     "v": "1.43.22",
     "t": "SearchContacts Connect API now supports filtering contacts by the AI Agents involved in handling them"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.34",
+    "t": "Add support for metadata-only retrieval on GetFlow, GetFlowVersion, and GetPrompt APIs."
+  },
+  {
     "v": "1.43.32",
     "t": "Launching Bedrock Managed Knowledge Bases. Added support for resource-based policies on Knowledge Base resources, enabling cross-account access for Managed Knowledge Bases."
   },
