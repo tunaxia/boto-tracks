@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.35",
+    "t": "Updated the Amazon Quick Spaces API to remove unsupported SPACE and ARTIFACT values from the SpaceQuickSightResourceType enum."
+  },
+  {
     "v": "1.43.24",
     "t": "Adds support for Knowledge Base APIs and Index Capacity API"
   },

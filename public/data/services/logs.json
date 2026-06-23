@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.35",
+    "t": "CloudWatch Logs Updates - New APIs introduced to support syslog ingestion to a log group. For more information, see CloudWatch Logs API documentation."
+  },
+  {
     "v": "1.43.33",
     "t": "Added optional startFromHead parameter to FilterLogEvents enabling descending timestamp order (newest first) when set to false. Default true preserves existing ascending order. Reverse sorting requires a startTime on or after Jan 1, 2024."
   },

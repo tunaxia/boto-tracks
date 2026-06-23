@@ -1,6 +1,14 @@
 {
   "versions": [
     {
+      "id": "1.43.36",
+      "date": "2026-06-23"
+    },
+    {
+      "id": "1.43.35",
+      "date": "2026-06-22"
+    },
+    {
       "id": "1.43.34",
       "date": "2026-06-19"
     },
@@ -9374,6 +9382,8 @@
     "kms",
     "lakeformation",
     "lambda",
+    "lambda-core",
+    "lambda-microvms",
     "lambda-request-header",
     "launch-wizard",
     "lex-models",

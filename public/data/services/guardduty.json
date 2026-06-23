@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.35",
+    "t": "Added AI-powered investigations that automatically analyze security findings, correlate related activity, and produce structured summaries with risk assessment, confidence scoring, MITRE technique classification, and actionable next steps."
+  },
+  {
     "v": "1.43.23",
     "t": "Remove unsupported RDS field for filter"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.35",
+    "t": "Add support for tagging Network Connector resources in AWS Lambda."
+  },
+  {
     "v": "1.43.33",
     "t": "Converging and fixing existing documentation gaps in Lambda SDK"
   },
