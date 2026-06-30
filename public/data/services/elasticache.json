@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "Updated documentation for the ApplyImmediately parameter in ModifyCacheCluster and ModifyReplicationGroup to clarify modification behavior."
+  },
+  {
     "v": "1.43.20",
     "t": "Amazon ElastiCache for Valkey now supports durability. This new capability is enabled through a Multi-AZ transactional log, enabling fast recovery and restart during failures."
   },

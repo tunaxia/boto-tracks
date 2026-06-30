@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "Amazon EVS introduces a VMware Cloud Foundation (VCF) self-deployed mode, along with new connectors to VCF components such as the Operations and SDDC managers to monitor coverage and usage."
+  },
+  {
     "v": "1.43.13",
     "t": "A new GetDepotUrl API has been added to retrieve a URL for accessing Amazon EVS custom addon packages. Customers can use this URL to configure vSphere Lifecycle Manager (vLCM) as an online depot source, enabling upgrades of addon components across ESXi hosts."
   },

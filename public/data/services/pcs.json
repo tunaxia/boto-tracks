@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "Add support for in-place Slurm version upgrades on existing clusters by accepting scheduler.version in UpdateCluster."
+  },
+  {
     "v": "1.43.17",
     "t": "This release adds support for configuring scaleDownIdleTimeInSeconds at the compute node group level, allowing customers to set different idle timeouts per node group. Previously this setting was only available at the cluster level."
   },

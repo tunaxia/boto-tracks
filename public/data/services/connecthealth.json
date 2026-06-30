@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "Expand input validation to support Unicode characters and markdown table syntax."
+  },
+  {
     "v": "1.43.27",
     "t": "Add support for MedicalScribeBinaryAudioEvent in the Medical Scribe streaming input. This new event type lets you send audio as a raw binary payload instead of a base64-encoded value"
   },

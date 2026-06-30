@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "Amazon VPC Lattice now supports mutable idle timeout configuration on VPC Lattice Services"
+  },
+  {
     "v": "1.43.3",
     "t": "Amazon VPC Lattice now supports privately resolvable DNS resources"
   },

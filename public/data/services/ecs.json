@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "Amazon ECS now supports customizable deployment circuit breaker configurations. Customers can now define the failure threshold or control the failure counting mechanism."
+  },
+  {
     "v": "1.43.33",
     "t": "Amazon ECS services now support high resolution (20 second) CloudWatch metrics for CPUUtilization and MemoryUtilization. Use these metrics for faster service auto scaling."
   },

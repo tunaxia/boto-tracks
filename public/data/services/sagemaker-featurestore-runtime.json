@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "Add support for ListRecords and BatchWriteRecord APIs to Feature Store."
+  },
+  {
     "v": "1.40.61",
     "t": "Update endpoint ruleset parameters casing"
   },

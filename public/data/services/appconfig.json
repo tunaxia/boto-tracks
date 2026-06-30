@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "AWS AppConfig introduces Experimentation tools - enhanced capabilities within AWS AppConfig that enable you to run AB tests, multivariate tests, and gradual feature rollouts across your application stack."
+  },
+  {
     "v": "1.40.63",
     "t": "Update endpoint ruleset parameters casing"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "Adding new attributes to PutProfileOutboundRequest API that will create an outbound request call for the customer's Web Notification outbound campaign."
+  },
+  {
     "v": "1.43.7",
     "t": "This release added support for Outbound Campaign timezone detection using all available contact methods"
   },

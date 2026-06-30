@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "This release adds the API (PutLogAlarm) to manage a new CloudWatch resource, Log Based Alarms. Log Based Alarms allows customers to alarm directly on CloudWatch Logs query results."
+  },
+  {
     "v": "1.43.26",
     "t": "This release adds the APIs (AssociateDatasetKmsKey, DisassociateDatasetKmsKey, GetDataset) to manage encryption at rest for OpenTelemetry metrics in CloudWatch using AWS KMS customer managed keys."
   },

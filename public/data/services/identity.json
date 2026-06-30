@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.37",
+    "t": "Add public methods to insert, remove, and retrieve providers in the token provider chain."
+  },
+  {
     "v": "1.27.60",
     "t": "TokenProvider added for bearer auth support"
   }
