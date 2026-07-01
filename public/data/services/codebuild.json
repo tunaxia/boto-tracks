@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.38",
+    "t": "Adds support for host kernel selection for on-demand builds."
+  },
+  {
     "v": "1.40.58",
     "t": "Update endpoint ruleset parameters casing"
   },

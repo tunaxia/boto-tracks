@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.38",
+    "t": "Updated threshold configuration documentation."
+  },
+  {
     "v": "1.43.37",
     "t": "Amazon ECS now supports customizable deployment circuit breaker configurations. Customers can now define the failure threshold or control the failure counting mechanism."
   },

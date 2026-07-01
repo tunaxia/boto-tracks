@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.38",
+    "t": "Amazon Connect - Added CreateAttachedFile and StartContactConversationalAnalyticsJob APIs to import call recordings and run conversational analytics."
+  },
+  {
     "v": "1.43.34",
     "t": "This is the release for point based scoring system and the evaluation form validation project"
   },

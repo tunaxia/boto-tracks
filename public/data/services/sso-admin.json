@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.38",
+    "t": "AWS IAM Identity Center now returns PrimaryRegion and Regions in the ListInstances response, providing information about replicated instances."
+  },
+  {
     "v": "1.43.1",
     "t": "Add InstanceArn and IdentityStoreArn in the response of CreateApplication API and IdentityStoreArn in the response of DescribeApplication API"
   },

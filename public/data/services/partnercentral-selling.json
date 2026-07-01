@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.38",
+    "t": "This release adds AwsMarketplaceSolutions and AwsMarketplaceProducts entity types to the Associate and Disassociate APIs, returns them in GetOpportunity, and adds AwsMarketplaceSolutionArn to ListSolutions ,letting partners link Marketplace listings directly to opportunities."
+  },
+  {
     "v": "1.43.32",
     "t": "Cosell Resonate AND Prospecing API Launch with ARN correction"
   },

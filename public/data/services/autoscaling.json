@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.38",
+    "t": "This release adds support for a new reservations-then-balanced capacity distribution strategy, which first attempts to launch instances into your Capacity Reservations and then balances remaining capacity across healthy Availability Zones."
+  },
+  {
     "v": "1.42.90",
     "t": "This release adds support for specifying Availability Zone IDs as an alternative to Availability Zone names when creating or updating Auto Scaling groups."
   },

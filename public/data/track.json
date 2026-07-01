@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.38",
+      "date": "2026-06-30"
+    },
+    {
       "id": "1.43.37",
       "date": "2026-06-29"
     },
@@ -9619,6 +9623,7 @@
     "supplychain",
     "support",
     "support-app",
+    "supportauthz",
     "sustainability",
     "swf",
     "synthetics",
