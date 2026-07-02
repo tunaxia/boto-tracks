@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.39",
+    "t": "Add support for Assurance Assistant APIs for managing compliance inquiries along with tagging features."
+  },
+  {
     "v": "1.42.13",
     "t": "Add support for ListReportVersions API  for the calling AWS account."
   },

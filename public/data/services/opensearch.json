@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.39",
+    "t": "To create a Mustang domain via the AWS CLI, you must pass EngineMode OPTIMIZED (along with UseCase OBSERVABILITY or MIXED)  without it, the domain defaults to a regular (GENERAL) domain. Also this release includes Insights Feedback API which user can use to provide feedback for Insight API."
+  },
+  {
     "v": "1.43.34",
     "t": "This release introduces data source attachment APIs, enabling users to attach and detach Amazon OpenSearch Service domains and Amazon OpenSearch Serverless collections to an OpenSearch application."
   },

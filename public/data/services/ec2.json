@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.39",
+    "t": "Use declarative policies to enable VPC Encryption Controls across your organization or select accounts. Added AMD SEV-SNP support for EC2 Dedicated Hosts. Managed resource visibility settings control whether AWS-provisioned resources in your account appear in console views and API list operations."
+  },
+  {
     "v": "1.43.38",
     "t": "Adds ModifyVpcEndpointPayerResponsibility API, which enables VPC endpoint service owners to modify the billing account for VPC endpoint usage charges at the individual endpoint level"
   },

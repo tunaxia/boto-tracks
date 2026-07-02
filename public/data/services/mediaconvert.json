@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.39",
+    "t": "Adds support for integer-second duration normalization and the option to disable explicit weighted prediction."
+  },
+  {
     "v": "1.43.24",
     "t": "Adds support for configurable number of Clear Lead segments at the beginning of encrypted output. Adds support for multiple trickplay variants."
   },
