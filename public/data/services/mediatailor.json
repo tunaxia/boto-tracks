@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.40",
+    "t": "Added dual-stack (IPv4 and IPv6) endpoint fields to SSAI and Channel Assembly API responses."
+  },
+  {
     "v": "1.43.4",
     "t": "Added support for Monetization Functions. Monetization Functions let you enrich ad requests with external data and transform session parameters using JSONata expressions, without deploying custom infrastructure."
   },

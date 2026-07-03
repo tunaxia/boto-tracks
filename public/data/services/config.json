@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.40",
+    "t": "AWS Config now supports tag-on-create for organization-managed Config rules and conformance packs through the PutOrganizationConfigRule and PutOrganizationConformancePack APIs."
+  },
+  {
     "v": "1.43.23",
     "t": "AWS Config now supports internal service-linked rules, allowing AWS service partners to deploy Config rules for customers and use the evaluation results to build enhanced features."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.40",
+    "t": "Tighten Outpost site ContactPhoneNumber regex to perform phone number validation."
+  },
+  {
     "v": "1.43.31",
     "t": "Adds support for creating an order from quotes."
   },
