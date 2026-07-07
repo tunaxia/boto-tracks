@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.41",
+    "t": "Adds support for managing AWS account credits and billing preferences, including retrieving credit details, viewing per-month credit allocation history, redeeming promotional codes, and configuring credit sharing and billing preferences."
+  },
+  {
     "v": "1.42.26",
     "t": "Cost Categories filtering support to BillingView data filter expressions through the new costCategories parameter, enabling users to filter billing views by AWS Cost Categories for more granular cost management and allocation."
   },
