@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.42",
+    "t": "This launch surfaces the public SSM parameter associated with public AMIs in the AMI metadata."
+  },
+  {
     "v": "1.43.39",
     "t": "Use declarative policies to enable VPC Encryption Controls across your organization or select accounts. Added AMD SEV-SNP support for EC2 Dedicated Hosts. Managed resource visibility settings control whether AWS-provisioned resources in your account appear in console views and API list operations."
   },

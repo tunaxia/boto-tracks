@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.42",
+    "t": "Update endpoint-rules client to latest version"
+  },
+  {
     "v": "1.43.38",
     "t": "Update endpoint-rules client to latest version"
   },

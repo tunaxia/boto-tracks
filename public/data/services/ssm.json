@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.42",
+    "t": "Adding SSM Cloud Connector to support Azure Virtual Machines onboarding to AWS Systems Manager"
+  },
+  {
     "v": "1.42.54",
     "t": "Add support for AssociationDispatchAssumeRole in AWS SSM State Manager."
   },

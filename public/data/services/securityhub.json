@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.42",
+    "t": "release SecurityHub MultiCloud integration with Azure"
+  },
+  {
     "v": "1.43.5",
     "t": "Release GenerateRecommendedPolicyV2 and GetRecommendedPolicyV2 APIs. This supports generating and retrieving policy recommendations to remediate unused permissions findings that are now being supported on Security Hub."
   },

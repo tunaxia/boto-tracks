@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.42",
+    "t": "Adds ListSharedDNSViews operation to list all DNS Views shared with caller using AWS Resource Access Manager. Also updates ListHostedZoneAssociations operation so that resource ARN param is optional, allowing caller to list all HostedZoneAssociations in account."
+  },
+  {
     "v": "1.43.1",
     "t": "Adds support for regions in the UpdateGlobalResolver input."
   },

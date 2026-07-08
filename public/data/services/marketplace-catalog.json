@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.42",
+    "t": "This release enhances the ListEntities API to support ResellerRole filter for ResaleAuthorization entity."
+  },
+  {
     "v": "1.42.41",
     "t": "Adds support for Catalog API us-east-1 dualstack endpoint catalog-marketplace.us-east-1.api.aws"
   },

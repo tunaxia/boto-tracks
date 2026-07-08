@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.42",
+      "date": "2026-07-07"
+    },
+    {
       "id": "1.43.41",
       "date": "2026-07-06"
     },
@@ -9493,6 +9497,7 @@
     "partnercentral-account",
     "partnercentral-benefits",
     "partnercentral-channel",
+    "partnercentral-revenue-measurement",
     "partnercentral-selling",
     "payment-cryptography",
     "payment-cryptography-data",

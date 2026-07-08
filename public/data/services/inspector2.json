@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.42",
+    "t": "This release extends vulnerability management to Azure VM, container registries and function apps. Adds support for per-member-account scan configuration settings."
+  },
+  {
     "v": "1.43.22",
     "t": "Inspector support for enhanced scanning"
   },

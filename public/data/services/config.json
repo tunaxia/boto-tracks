@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.42",
+    "t": "Added support for connecting AWS Config to third-party cloud service providers. New APIs include PutConnector, GetConnector, DeleteConnector, and ListConnectors for managing connectors, and PutThirdPartyServiceLinkedConfigurationRecorder for creating third-party service-linked recorders."
+  },
+  {
     "v": "1.43.40",
     "t": "AWS Config now supports tag-on-create for organization-managed Config rules and conformance packs through the PutOrganizationConfigRule and PutOrganizationConformancePack APIs."
   },
