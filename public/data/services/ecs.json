@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.43",
+    "t": "Amazon ECS now automatically detects the correct CPU architecture for Express Mode services."
+  },
+  {
     "v": "1.43.38",
     "t": "Updated threshold configuration documentation."
   },

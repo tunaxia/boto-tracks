@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.43",
+    "t": "Default session downlink transmission parameters have been added to the existing Multicast Group APIs. Explicit transmission parameters are no longer required when starting a multicast session during the FUOTA procedure."
+  },
+  {
     "v": "1.42.94",
     "t": "Enable customers to optionally specify a desired confidence level for Cellular and WiFi position estimates. Customers can use this to trade off confidence level and radius of uncertainty based on their needs."
   },

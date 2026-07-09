@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.43",
+    "t": "Update ExperimentRun APIs to support ConflictExceptions."
+  },
+  {
     "v": "1.43.37",
     "t": "AWS AppConfig introduces Experimentation tools - enhanced capabilities within AWS AppConfig that enable you to run AB tests, multivariate tests, and gradual feature rollouts across your application stack."
   },
