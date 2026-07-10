@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.45",
+    "t": "adds support for AWS IVS ad configuration APIs to allow for a postRollConfiguration object on the ad configuration resource"
+  },
+  {
     "v": "1.43.23",
     "t": "adds UpdateAdConfiguration operation to AWS IVS low-latency APIs"
   },

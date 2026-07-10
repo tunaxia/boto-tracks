@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.45",
+    "t": "CloudWatch Synthetics adds support for customer managed KMS keys for canary environment variables. Customers can now encrypt their canary's Lambda function environment variables at rest using their own AWS KMS key, providing additional control over data protection."
+  },
+  {
     "v": "1.43.33",
     "t": "CloudWatch Synthetics adds support for multi-location canaries. Customers can now monitor their endpoints from multiple locations with centralized management from a primary location. The SDK includes new parameters for configuring multiple locations and tracking their state."
   },

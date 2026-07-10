@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.45",
+    "t": "Amazon Connect - Added DeleteContactData API to support PII deletion of customer endpoint, additional email recipients and email subject."
+  },
+  {
     "v": "1.43.42",
     "t": "Adds support for CreateAuthCode and DeleteSession APIs."
   },
