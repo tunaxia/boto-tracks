@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.46",
+    "t": "Added the ResetUsage field to the CreateLicenseVersion API. When set to true, the entitlement usage counts for the license are reset to 0. If it is false or not specified, entitlement usage is left unchanged."
+  },
+  {
     "v": "1.41.1",
     "t": "Added cross-account resource aggregation via license asset groups and expiry tracking for Self-Managed Licenses. Extended Org-Wide View to Self-Managed Licenses, added reporting for license asset groups, and removed Athena/Glue dependencies for cross-account resource discovery in commercial regions."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.46",
+    "t": "Support for 3 day and 7 day ECR re-scan durations"
+  },
+  {
     "v": "1.43.42",
     "t": "This release extends vulnerability management to Azure VM, container registries and function apps. Adds support for per-member-account scan configuration settings."
   },
