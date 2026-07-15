@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.48",
+    "t": "Update AWS Systems Manager Automation Targets to be correct max value."
+  },
+  {
     "v": "1.43.42",
     "t": "Adding SSM Cloud Connector to support Azure Virtual Machines onboarding to AWS Systems Manager"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.48",
+    "t": "This release adds SearchRules API which can be used to search for rules within an Amazon Connect instance."
+  },
+  {
     "v": "1.43.45",
     "t": "Amazon Connect - Added DeleteContactData API to support PII deletion of customer endpoint, additional email recipients and email subject."
   },

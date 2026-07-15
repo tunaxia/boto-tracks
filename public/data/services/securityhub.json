@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.48",
+    "t": "AWS Security Hub now provides an AI inventory, giving central security teams a continuously updated, organization-wide view of AI assets and their security posture"
+  },
+  {
     "v": "1.43.42",
     "t": "release SecurityHub MultiCloud integration with Azure"
   },

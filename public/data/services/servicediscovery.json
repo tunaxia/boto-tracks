@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.48",
+    "t": "Fixed Cloud Map endpoint resolution to correctly route to the dualstack endpoint when dualstack is enabled."
+  },
+  {
     "v": "1.40.59",
     "t": "Update endpoint ruleset parameters casing"
   },

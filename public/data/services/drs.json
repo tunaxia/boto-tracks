@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.48",
+    "t": "Fast recovery of EC2 based drs workloads by skipping the conversion step"
+  },
+  {
     "v": "1.42.90",
     "t": "Updating regex for identification of AWS Regions."
   },
