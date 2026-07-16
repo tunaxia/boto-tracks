@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.49",
+    "t": "Fix HarnessEndpointArn pattern to match the actual service-emitted ARN format ('harness-endpoint' instead of 'endpoint'). Add additionalParams to Gemini model configuration for passing provider-specific parameters through to the model unchanged."
+  },
+  {
     "v": "1.43.43",
     "t": "AgentCore Gateway now supports mapping allowed scopes to separate advertised scopes on the inbound authorizer."
   },

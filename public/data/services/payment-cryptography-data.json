@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.49",
+    "t": "Adds support for UnionPay session key derivation to the GenerateAuthRequestCryptogram, VerifyAuthRequestCryptogram, GenerateMac, and VerifyMac APIs."
+  },
+  {
     "v": "1.43.12",
     "t": "GenerateAuthRequestCryptogram API launch."
   },

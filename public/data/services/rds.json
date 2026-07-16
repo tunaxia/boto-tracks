@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.49",
+    "t": "Adds support for modifying EngineLifecycleSupport on DB instances and DB clusters through ModifyDBInstance and ModifyDBCluster."
+  },
+  {
     "v": "1.43.30",
     "t": "Adding support for RDS SQL Server BYOM and DB2 Community Edition"
   },

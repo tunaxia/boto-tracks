@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.49",
+    "t": "This release adds support for the IpAddressType field on SourceIpConfig, enabling Network Load Balancer listener rules to match traffic based on whether the source IP is IPv4 or IPv6."
+  },
+  {
     "v": "1.41.2",
     "t": "This release adds the health check log feature in ALB, allowing customers to send detailed target health check log data directly to their designated Amazon S3 bucket."
   },
