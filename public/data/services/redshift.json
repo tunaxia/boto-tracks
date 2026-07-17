@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.50",
+    "t": "Amazon Redshift - Added support for rg.large and rg.12xlarge node types in CreateCluster, ModifyCluster, and ResizeCluster API operations."
+  },
+  {
     "v": "1.43.7",
     "t": "Added rg.xlarge and rg.4xlarge to valid NodeType values and updated documentation for CreateCluster, ModifyCluster, ResizeCluster, and RestoreFromClusterSnapshot APIs to reflect RG node type support."
   },

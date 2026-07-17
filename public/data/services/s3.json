@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.50",
+    "t": "Documentation update for removing the 30 day minimum restriction for transition to Standard-IA or OneZone-IA storage classes"
+  },
+  {
     "v": "1.43.31",
     "t": "Added support for annotations. You can now attach up to 1000 annotations (up to 1 MB each) directly to objects and create, retrieve, list, and delete them using new annotation APIs. Also added support for configuring an annotation table in S3 Metadata."
   },

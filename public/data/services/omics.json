@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.50",
+    "t": "Adds support for returning the task UUID (universally unique identifier) in GetRunTask and ListRunTasks responses"
+  },
+  {
     "v": "1.43.35",
     "t": "Adds support for scratch ephemeral storage mounted at tmp"
   },
