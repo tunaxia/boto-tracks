@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.51",
+    "t": "Adds the AssociatedRoles parameter to CreateDBCluster, RestoreDBClusterFromSnapshot, RestoreDBClusterToPointInTime, and RestoreDBClusterFromS3, letting customers associate IAM roles with an Aurora DB cluster at create or restore time instead of calling AddRoleToDBCluster afterward."
+  },
+  {
     "v": "1.43.49",
     "t": "Adds support for modifying EngineLifecycleSupport on DB instances and DB clusters through ModifyDBInstance and ModifyDBCluster."
   },

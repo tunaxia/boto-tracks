@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.51",
+    "t": "Update awscrt version to 0.36.0"
+  },
+  {
     "v": "1.43.0",
     "t": "Update awscrt version to 0.32.2"
   },
