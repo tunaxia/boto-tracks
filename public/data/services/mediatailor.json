@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.52",
+    "t": "This change adds api support for configuring ad decision server timeouts and concurrency fields on MediaTailor playback configurations"
+  },
+  {
     "v": "1.43.40",
     "t": "Added dual-stack (IPv4 and IPv6) endpoint fields to SSAI and Channel Assembly API responses."
   },

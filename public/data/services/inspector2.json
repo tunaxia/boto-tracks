@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.52",
+    "t": "Adds Windows path support for deep inspection. Fixes tag propagation for connector CloudFormation stack operations."
+  },
+  {
     "v": "1.43.46",
     "t": "Support for 3 day and 7 day ECR re-scan durations"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.52",
+    "t": "Updated InvalidInputException error documentation to clarify that the service validates free-text field values against common cross-site scripting (XSS) patterns."
+  },
+  {
     "v": "1.43.16",
     "t": "AWS Organizations now emits CloudTrail events (AccountJoinedOrganization, AccountDepartedOrganization) to the management account for membership changes, including join and departure method and timestamp."
   },

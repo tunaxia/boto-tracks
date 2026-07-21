@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.52",
+    "t": "Adds support for custom permissions for Triggers, allowing administrators to control user access to Schedule, Inbound Email and Quick Event triggers."
+  },
+  {
     "v": "1.43.46",
     "t": "Provides CreateKnowledgeBase and UpdateKnowledgeBase APIs"
   },
