@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.53",
+    "t": "GA date - July 21st 2026, remove Tags field from ListCodeSecurityIntegration and ListCodeSecurityScanConfiguration."
+  },
+  {
     "v": "1.43.52",
     "t": "Adds Windows path support for deep inspection. Fixes tag propagation for connector CloudFormation stack operations."
   },

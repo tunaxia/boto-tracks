@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.53",
+    "t": "update the workgroupArn to include EUSC partition, tests in THF Gamma and Prod no issue"
+  },
+  {
     "v": "1.42.87",
     "t": "The BatchExecuteStatement API now supports named SQL parameters, enabling secure batch queries with parameterized values. This enhancement helps prevent SQL injection vulnerabilities and improves query reusability."
   },

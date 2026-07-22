@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.53",
+    "t": "Added a WarningMessage field to Automation along with corresponding public documentation."
+  },
+  {
     "v": "1.43.48",
     "t": "Update AWS Systems Manager Automation Targets to be correct max value."
   },
