@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.54",
+    "t": "Raise a configuration error when the CA bundle value (ca_bundle, AWS_CA_BUNDLE, REQUESTS_CA_BUNDLE, or the client verify parameter) resolves to an empty or whitespace-only string."
+  },
+  {
     "v": "1.12.20",
     "t": "Added support for configuring a client certificate and key when establishing TLS connections."
   }

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.54",
+    "t": "Enablement for ALB and Bedrock Knowledge Base logs via Observability Admin Telemetry Rule for account and organization level"
+  },
+  {
     "v": "1.43.38",
     "t": "Organization and account level telemetry rule via Observability Admin and CloudWatch pipelines for metrics"
   },

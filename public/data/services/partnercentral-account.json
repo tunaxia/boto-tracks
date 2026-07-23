@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.54",
+    "t": "Adds Qualifications Association APIs that enable partners to associate a subsidiary account's qualifications with a primary account. Once associated, qualifications are shared across all connected accounts and scorecards are consolidated. Partners can start and track association and disassociation."
+  },
+  {
     "v": "1.43.7",
     "t": "Added ServiceQuotaExceededExceptions for Profile operations"
   },

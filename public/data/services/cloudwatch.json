@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.54",
+    "t": "Adds documented value constraints for CloudWatch Log Alarm scheduled query configuration fields, and makes LogGroupIdentifiers optional for log alarms."
+  },
+  {
     "v": "1.43.46",
     "t": "CloudWatch now assigns a unique identifier to each anomaly detector. PutAnomalyDetector and DescribeAnomalyDetectors return this AnomalyDetectorId, which you can use to describe or delete a specific anomaly detector directly."
   },

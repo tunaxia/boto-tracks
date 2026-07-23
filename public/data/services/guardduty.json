@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.54",
+    "t": "Amazon GuardDuty now returns filter lifecycle metadata in GetFilter responses. The response includes createdAt and updatedAt timestamps and a version number that increments on each update, giving you visibility into when a filter was created and last modified."
+  },
+  {
     "v": "1.43.47",
     "t": "GuardDuty AI Protection is now publicly available. Findings include Bedrock guardrail details, model details, observation numbers, and continuous scan details. GuardrailArn and GuardrailVersion are deprecated in favor of the guardrails list."
   },

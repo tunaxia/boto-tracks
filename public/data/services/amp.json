@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.54",
+    "t": "Add CloudWatch dataset destinations for Amazon Managed Service for Prometheus collectors."
+  },
+  {
     "v": "1.43.27",
     "t": "Adds supports for out-of-order sample ingestion (default 1-minute window) and a configurable rule query offset to reduce data loss and improve alerting accuracy."
   },
