@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.55",
+    "t": "Release support for c6a, m6a, m6g, m7g, m8g instance types for SageMaker HyperPod"
+  },
+  {
     "v": "1.43.50",
     "t": "Release support for g7 instance type for SageMaker inference endpoints."
   },

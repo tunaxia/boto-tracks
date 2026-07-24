@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.55",
+    "t": "GameLift Streams now supports configuring a custom aspect ratio per stream session to accommodate different player devices. Supported aspect ratios include landscape, portrait, and square - delivering a full-screen experience without letterboxing or cropping."
+  },
+  {
     "v": "1.43.51",
     "t": "Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables."
   },

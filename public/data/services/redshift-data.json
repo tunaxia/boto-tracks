@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.55",
+    "t": "This release include long polling provids a new parameter wait-time-seconds to 5 API operations, new API ListSessions, and a new parameter execution-mode to BatchExecuteStatement"
+  },
+  {
     "v": "1.43.53",
     "t": "update the workgroupArn to include EUSC partition, tests in THF Gamma and Prod no issue"
   },

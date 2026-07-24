@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.55",
+    "t": "Adds support for the Bring Your Own Storage(BYOS) feature in AgentCore Browser and Code Interpreter. Enables mounting S3Files and EFS File Systems via Access points."
+  },
+  {
     "v": "1.43.52",
     "t": "This release adds support for specifying a connector version on Gateway targets to pin the connector's tool schema. It also introduces web-search connector version 1.2.0, which adds agent-side domain filtering, published date range filtering, and admin-side domain allowlisting."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.55",
+    "t": "This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol."
+  },
+  {
     "v": "1.42.31",
     "t": "Added billing configuration support for WorkSpaces Instances with monthly and hourly billing modes, including new filtering capabilities for instance type searches."
   },

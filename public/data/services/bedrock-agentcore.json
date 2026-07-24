@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.55",
+    "t": "Adds support for the Bring Your Own Storage(BYOS) feature in AgentCore Browser and Code Interpreter. Enables mounting S3Files and EFS File Systems via Access points."
+  },
+  {
     "v": "1.43.52",
     "t": "Add W3C trace context headers (traceparent, tracestate, baggage) and X-Amzn-Trace-Id to InvokeHarness request for end-to-end observability propagation. Add toolResultMetadata to the streaming content block delta for MCP tool result meta delivery without oversized SSE frames."
   },
