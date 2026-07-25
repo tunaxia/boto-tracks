@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.56",
+    "t": "Update validations for Tag Keys and KMS Key ARNs."
+  },
+  {
     "v": "1.42.43",
     "t": "Minor neptune-graph documentation changes"
   },

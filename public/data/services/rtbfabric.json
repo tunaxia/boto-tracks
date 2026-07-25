@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.56",
+    "t": "The deprecated inboundLinksCount field has been removed from the GetResponderGateway API response. Customers who previously relied on this field should use linksRequestedCount instead."
+  },
+  {
     "v": "1.43.11",
     "t": "This release is to deprecate 'inboundLinksCount' field in GetResponderGateway response and introduce the new field 'linksRequestedCount' to replace it."
   },

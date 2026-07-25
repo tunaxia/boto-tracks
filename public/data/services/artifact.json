@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.56",
+    "t": "Added the PutComplianceInquiryFeedback API, enabling customers to submit feedback on compliance inquiry responses. Customers can rate responses as helpful or not helpful and provide optional reason codes and comments."
+  },
+  {
     "v": "1.43.39",
     "t": "Add support for Assurance Assistant APIs for managing compliance inquiries along with tagging features."
   },
