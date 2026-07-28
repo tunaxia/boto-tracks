@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.57",
+    "t": "AWS Security Agent adds a new task hours field that reflects the active work done for a task."
+  },
+  {
     "v": "1.43.32",
     "t": "Updated AWS Security Agent SDK model with new APIs for threat modeling, code review, security requirements, and additional integration providers."
   },

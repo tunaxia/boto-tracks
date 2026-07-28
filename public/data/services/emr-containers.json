@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.57",
+    "t": "With this launch, you can now set concurrent job limits on a virtual cluster, giving you fine-grained control over how many job runs execute at once and how many can wait in queue."
+  },
+  {
     "v": "1.43.53",
     "t": "Added support for the DeleteSecurityConfiguration API, which allows customers to delete security configurations in Amazon EMR on EKS. Also added authenticationConfiguration in securityConfigurationdata structure."
   },

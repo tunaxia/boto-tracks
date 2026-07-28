@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.57",
+    "t": "This release adds support for the CR.8X worker type for SQL (32 vCPU)"
+  },
+  {
     "v": "1.43.13",
     "t": "Collaboration creators can update payment configurations without recreating the collaboration. When multiple payer candidates are configured for a cost type, analysis runners can specify the actual payer at submission time, providing granular control over billing."
   },

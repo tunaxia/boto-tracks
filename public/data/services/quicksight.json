@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.57",
+    "t": "Added new Governance fields to Custom Permissions API to support Deny By Default functionality."
+  },
+  {
     "v": "1.43.55",
     "t": "Added new capabilities to custom permissions profiles to control access to Amazon Quick through the browser extension and Microsoft Word, Outlook, Excel, and PowerPoint add-ins."
   },

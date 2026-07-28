@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.57",
+    "t": "This release adds support for the CR.8X worker type for SQL (32 vCPU)"
+  },
+  {
     "v": "1.43.38",
     "t": "Adds support for intermediate tables in AWS Clean Rooms collaborations."
   },
