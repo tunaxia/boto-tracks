@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.58",
+    "t": "Documentation updates for SearchRules, AssociateRoutingProfileQueues, CreateRoutingProfile, AssociateContactWithUser CreateTaskTemplate, and UpdateTaskTemplate"
+  },
+  {
     "v": "1.43.48",
     "t": "This release adds SearchRules API which can be used to search for rules within an Amazon Connect instance."
   },

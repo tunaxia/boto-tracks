@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.58",
+    "t": "Adds ListRecommendationsForResource API and four CheckSummary fields (resourceArnQueryable, awsResourceTypes, checkGranularity, recommendationId) to retrieve recommendations for a given resource ARN."
+  },
+  {
     "v": "1.42.54",
     "t": "Adding a new enum attribute(statusReason) to TrustedAdvisorAPI response. This attribute explains reasoning behind check status for certain specific scenarios."
   },

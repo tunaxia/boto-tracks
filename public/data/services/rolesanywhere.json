@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.58",
+    "t": "Increases certificate string length for trust anchor source data to support new adjustable trust anchor limits."
+  },
+  {
     "v": "1.42.5",
     "t": "Increases certificate string length for trust anchor source data to support ML-DSA certificates."
   },
