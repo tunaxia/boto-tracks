@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.59",
+    "t": "We have released a new set of APIs in support of a major new feature within AWS IoT SiteWise called Scenario Discover. Please see user guide about the feature and the API guide in public documentation for new APIs."
+  },
+  {
     "v": "1.40.57",
     "t": "Update endpoint ruleset parameters casing"
   },

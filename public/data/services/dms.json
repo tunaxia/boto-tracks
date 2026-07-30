@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.59",
+    "t": "Updated documentation for various DMS Schema Conversion operations"
+  },
+  {
     "v": "1.43.8",
     "t": "Add 9 SDK waiters for DMS Schema Conversion async operations. Eliminates manual polling for import, assessment, conversion, export, and creation jobs."
   },
