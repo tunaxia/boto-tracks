@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.60",
+      "date": "2026-07-30"
+    },
+    {
       "id": "1.43.59",
       "date": "2026-07-29"
     },
@@ -9586,6 +9590,7 @@
     "presigned-url",
     "presigner",
     "pricing",
+    "pricing-plan-manager",
     "privatenetworks",
     "profile",
     "protocol",

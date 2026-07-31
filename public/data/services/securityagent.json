@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.60",
+    "t": "Adds support for providing a branch override when configured integrated repositories"
+  },
+  {
     "v": "1.43.57",
     "t": "AWS Security Agent adds a new task hours field that reflects the active work done for a task."
   },

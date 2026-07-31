@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.60",
+    "t": "Adds support for configuring models through the OpenResponses API for custom evaluators. CreateEvaluator and UpdateEvaluator now accept an OpenResponses model configuration for LLM-as-a-Judge evaluations."
+  },
+  {
     "v": "1.43.58",
     "t": "AgentCore Identity now supports Private Key JWT client authentication for OAuth 2.0 credential providers. Agents can authenticate to identity provider token endpoints with a JWT client assertion signed by a customer-managed AWS KMS asymmetric key, eliminating the need for client secrets."
   },
