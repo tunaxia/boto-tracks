@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.62",
+    "t": "Amazon Managed Service for Prometheus adds support for an Amazon OpenSearch Service exporter for managed collectors."
+  },
+  {
     "v": "1.43.54",
     "t": "Add CloudWatch dataset destinations for Amazon Managed Service for Prometheus collectors."
   },

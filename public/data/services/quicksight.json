@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.62",
+    "t": "Adding TopicV2 management APIs, adding possibility to use Topics in Analysis"
+  },
+  {
     "v": "1.43.57",
     "t": "Added new Governance fields to Custom Permissions API to support Deny By Default functionality."
   },

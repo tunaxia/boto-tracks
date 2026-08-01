@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.62",
+    "t": "Adding support for enhanced Git experience in Sagemaker Unified Studio."
+  },
+  {
     "v": "1.43.55",
     "t": "Adds support for notebook sync with S3 ipynb files"
   },

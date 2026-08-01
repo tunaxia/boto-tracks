@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.62",
+    "t": "Launching feature for abandonment rate pacing control for outbound campaigns."
+  },
+  {
     "v": "1.43.37",
     "t": "Adding new attributes to PutProfileOutboundRequest API that will create an outbound request call for the customer's Web Notification outbound campaign."
   },

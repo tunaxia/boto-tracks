@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.62",
+    "t": "Adds the \"EKS\" value to the AWSServiceName enum and marks the Address field as sensitive."
+  },
+  {
     "v": "1.43.40",
     "t": "Tighten Outpost site ContactPhoneNumber regex to perform phone number validation."
   },

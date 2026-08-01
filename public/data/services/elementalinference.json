@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.62",
+    "t": "AWS Elemental Inference now supports graphic composition on cropped video outputs, enabling branded graphics and other visual elements to be overlaid as part of the inference workflow."
+  },
+  {
     "v": "1.43.16",
     "t": "Added support for smart subtitles in Elemental Inference, enabling automatic generation of subtitles for media content. Available in English, Spanish, French, German, Italian, and Portuguese."
   },
