@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.63",
+    "t": "Launch CMK support for Telemetry Enablement Organization and Account Rules."
+  },
+  {
     "v": "1.43.54",
     "t": "Enablement for ALB and Bedrock Knowledge Base logs via Observability Admin Telemetry Rule for account and organization level"
   },

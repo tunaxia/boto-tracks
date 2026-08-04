@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.63",
+    "t": "Added eksNodeName, instanceId, and zone optional parameters to the AssumeRoleForPodIdentity API."
+  },
+  {
     "v": "1.40.63",
     "t": "Update endpoint ruleset parameters casing"
   },

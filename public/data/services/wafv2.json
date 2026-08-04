@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.63",
+    "t": "Updated descriptions for number of PreParseTextTransformations allowed per rule statement"
+  },
+  {
     "v": "1.43.59",
     "t": "AWS WAF now supports pre-parse text transformations, letting you normalize raw query strings before parsing, available on rule statements that use SingleQueryArgument or AllQueryArguments as the FieldToMatch. AWS WAF also added 10 new text transformations, including ModSecurity v3 parity options."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.63",
+    "t": "Updates Kantar server URL validation to accept Fifty5Blue domain. Adds support for output to S3 Glacier Instant Retrieval."
+  },
+  {
     "v": "1.43.39",
     "t": "Adds support for integer-second duration normalization and the option to disable explicit weighted prediction."
   },
