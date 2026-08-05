@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.64",
+    "t": "Updating endpoint generation logic"
+  },
+  {
     "v": "1.43.60",
     "t": "Improved IAM Policy Simulator accuracy. Simulator now evaluates SCP conditions and resource scoping, returns explicitDeny for explicit SCP denials, and reports accurate cross-account decisions."
   },

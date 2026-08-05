@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.64",
+    "t": "UpdateCluster now checks the RemovePeerCluster permission on the specific cluster being removed, not a wildcard and docs now clarify how to set kmsEncryptionKey so the cluster uses the AWS-owned key."
+  },
+  {
     "v": "1.43.7",
     "t": "Added support for Amazon Aurora DSQL change data capture (CDC) streams that deliver row-level database changes to Amazon Kinesis in JSON format. Includes CreateStream, GetStream, ListStreams, and DeleteStream operations."
   },

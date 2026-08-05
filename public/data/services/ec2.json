@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.64",
+    "t": "Amazon EC2 now supports Application Status Checks, a new status check that monitors your application's health through configurable HTTP(S) paths and ports, so you can detect and automatically respond to application-level impairments."
+  },
+  {
     "v": "1.43.59",
     "t": "This release adds support for policy-based routing on AWS Transit Gateway, enabling you to route traffic based on 5-tuple matching (source IP, destination IP, source port, destination port, and protocol) using new policy table entry APIs that direct matching traffic to a target route table."
   },

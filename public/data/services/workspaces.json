@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.64",
+    "t": "Added ClientExperiencePolicy to ClientProperties object for ModifyClientProperties and DescribeClientProperties APIs."
+  },
+  {
     "v": "1.43.30",
     "t": "Added a validation for null check for ImageIds in DescribeWorkspaceImages API request parameters."
   },

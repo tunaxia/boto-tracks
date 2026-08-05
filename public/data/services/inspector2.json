@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.64",
+    "t": "Adding Azure SBOM export capability."
+  },
+  {
     "v": "1.43.53",
     "t": "GA date - July 21st 2026, remove Tags field from ListCodeSecurityIntegration and ListCodeSecurityScanConfiguration."
   },
