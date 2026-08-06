@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.65",
+    "t": "Adding support for fine-grained access control for AgentCore Memory through managed AgentCore Gateway HTTP Connectors."
+  },
+  {
     "v": "1.43.60",
     "t": "Adds support for configuring models through the OpenResponses API for custom evaluators. CreateEvaluator and UpdateEvaluator now accept an OpenResponses model configuration for LLM-as-a-Judge evaluations."
   },

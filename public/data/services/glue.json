@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.65",
+    "t": "Added the PutDataCatalogExportConfiguration to export Glue Data Catalog metadata to systems tables stored in S3 Tables."
+  },
+  {
     "v": "1.43.59",
     "t": "Adding filtering, partitioning, and VPC support to AWS Glue REST API connector"
   },

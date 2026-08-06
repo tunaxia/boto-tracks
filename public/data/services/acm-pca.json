@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.65",
+    "t": "Private Certificate Authority service now supports RSASSA-PSS signing algorithm."
+  },
+  {
     "v": "1.40.70",
     "t": "Private Certificate Authority service now supports ML-DSA key algorithms."
   },

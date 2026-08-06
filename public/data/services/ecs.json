@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.65",
+    "t": "New enum values added for Agent Connectivity issues"
+  },
+  {
     "v": "1.43.43",
     "t": "Amazon ECS now automatically detects the correct CPU architecture for Express Mode services."
   },
