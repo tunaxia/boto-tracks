@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.66",
+    "t": "Adds support for service generated insights across runs, jobs, and tests."
+  },
+  {
     "v": "1.41.1",
     "t": "Add support for environment variables and an IAM execution role."
   },

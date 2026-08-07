@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.66",
+    "t": "Include the resolved max attempts in the ``amz-sdk-request`` header on the initial attempt"
+  },
+  {
     "v": "1.34.107",
     "t": "Fix backoff calculation for truncated binary exponential backoff (`#3178 <https://github.com/boto/botocore/issues/3178>`__)"
   },

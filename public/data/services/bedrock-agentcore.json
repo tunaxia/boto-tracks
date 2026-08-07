@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.66",
+    "t": "Add support for capacity provider sessions in Amazon Bedrock AgentCore. Customers can now delete an active session running on a runtime instance launched through their capacity provider."
+  },
+  {
     "v": "1.43.55",
     "t": "Adds support for the Bring Your Own Storage(BYOS) feature in AgentCore Browser and Code Interpreter. Enables mounting S3Files and EFS File Systems via Access points."
   },

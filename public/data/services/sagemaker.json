@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.66",
+    "t": "Releases new Model Customization SequenceLength parameter for Training and g7 instance types for Training and Processing."
+  },
+  {
     "v": "1.43.60",
     "t": "Adds support for g7 family instance types for SageMaker Studio JupyterLab and CodeEditor apps for IAD (us-east-1), PDX (us-west-2), CMH (us-east-2)."
   },

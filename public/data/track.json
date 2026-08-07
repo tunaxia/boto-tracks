@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.66",
+      "date": "2026-08-06"
+    },
+    {
       "id": "1.43.65",
       "date": "2026-08-05"
     },
@@ -9223,6 +9227,8 @@
     "account",
     "acm",
     "acm-pca",
+    "agent-registry",
+    "agent-registry-control",
     "aiops",
     "alexaforbusiness",
     "amp",

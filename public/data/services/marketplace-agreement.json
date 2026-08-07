@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.66",
+    "t": "GetAgreementTerms now returns a new term variant in AcceptedTerm, netPaymentTerm, with a paymentDuePeriod field (example \"P30D\")."
+  },
+  {
     "v": "1.43.19",
     "t": "Adding Entitlements in SearchAgreements Response"
   },

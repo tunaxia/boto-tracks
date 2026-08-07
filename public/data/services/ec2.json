@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.66",
+    "t": "Adds a new optional IncludeLocalZones parameter to the Spot Placement Score API that defaults to false. When set to true, the Spot Placement Score API will consider the relevant Local Zones with Spot capacity when computing the Spot Placement Score."
+  },
+  {
     "v": "1.43.64",
     "t": "Amazon EC2 now supports Application Status Checks, a new status check that monitors your application's health through configurable HTTP(S) paths and ports, so you can detect and automatically respond to application-level impairments."
   },

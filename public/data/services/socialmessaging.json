@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.66",
+    "t": "Add support for WhatsApp Conversions APIs."
+  },
+  {
     "v": "1.43.22",
     "t": "Adding support for WhatsApp flow APIs and adding AccessDeniedByMetaException for Template APIs"
   },

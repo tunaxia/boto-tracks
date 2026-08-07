@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.66",
+    "t": "Security Hub is adding a new public API, ListFreeTrialStatusesV2 to describe the free trial statuses of the Security Hub service and its opt-in features."
+  },
+  {
     "v": "1.43.48",
     "t": "AWS Security Hub now provides an AI inventory, giving central security teams a continuously updated, organization-wide view of AI assets and their security posture"
   },

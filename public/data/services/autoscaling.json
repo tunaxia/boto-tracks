@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.66",
+    "t": "EC2 Auto Scaling now supports being managed by other AWS services via the operator field."
+  },
+  {
     "v": "1.43.38",
     "t": "This release adds support for a new reservations-then-balanced capacity distribution strategy, which first attempts to launch instances into your Capacity Reservations and then balances remaining capacity across healthy Availability Zones."
   },

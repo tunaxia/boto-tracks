@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.66",
+    "t": "AWS Backup now lets you create read-only access points for Amazon S3 recovery points, enabling you to access backup data using S3 APIs without initiating a restore."
+  },
+  {
     "v": "1.43.15",
     "t": "Launching S3 PITR malware scanning support for AWS Backup"
   },
