@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.67",
+    "t": "StreamNameOutputMode - a new optional field on MediaPackageV2 OriginEndpoints that lets customers choose whether egress manifests use numeric stream indices (default) or encoder-assigned stream names from the input"
+  },
+  {
     "v": "1.43.55",
     "t": "This release adds support for non-epoch-locked CMAF ingest in MediaPackageV2 channels."
   },

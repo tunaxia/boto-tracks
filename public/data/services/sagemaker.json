@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.67",
+    "t": "Amazon SageMaker adds maintenance lifecycle statuses for Notebook Instances"
+  },
+  {
     "v": "1.43.66",
     "t": "Releases new Model Customization SequenceLength parameter for Training and g7 instance types for Training and Processing."
   },
