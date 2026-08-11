@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.68",
+    "t": "Added support for the SearchFixtures API and DataSourceConfiguration, enabling customers to map fixture event data onto clipping outputs for improved feature accuracy."
+  },
+  {
     "v": "1.43.62",
     "t": "AWS Elemental Inference now supports graphic composition on cropped video outputs, enabling branded graphics and other visual elements to be overlaid as part of the inference workflow."
   },
