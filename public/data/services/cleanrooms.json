@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.69",
+    "t": "Adds support for exporting redacted query execution logs in AWS Clean Rooms"
+  },
+  {
     "v": "1.43.57",
     "t": "This release adds support for the CR.8X worker type for SQL (32 vCPU)"
   },

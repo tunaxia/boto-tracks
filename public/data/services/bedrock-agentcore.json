@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.69",
+    "t": "Adding online eval arn as input for recommendation API"
+  },
+  {
     "v": "1.43.66",
     "t": "Add support for capacity provider sessions in Amazon Bedrock AgentCore. Customers can now delete an active session running on a runtime instance launched through their capacity provider."
   },

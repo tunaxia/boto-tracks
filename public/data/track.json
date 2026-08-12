@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.69",
+      "date": "2026-08-11"
+    },
+    {
       "id": "1.43.68",
       "date": "2026-08-10"
     },
@@ -9233,6 +9237,7 @@
     "accept-header",
     "accessanalyzer",
     "account",
+    "account-access",
     "acm",
     "acm-pca",
     "agent-registry",

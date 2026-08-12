@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.69",
+    "t": "Added an end-of-support notice to Amazon Cloud Directory public CLI reference documentation."
+  },
+  {
     "v": "1.40.63",
     "t": "Update endpoint ruleset parameters casing"
   },

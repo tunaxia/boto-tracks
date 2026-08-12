@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.69",
+    "t": "Documentation update for AWS Organizations that clarifies valid input values for the HandshakePartyType parameter in the InviteAccountToOrganization. API ORGANIZATION is valid in responses only. valid input values are ACCOUNT and EMAIL"
+  },
+  {
     "v": "1.43.64",
     "t": "Improved accuracy of CloudTrail event documentation for AWS Organizations membership operations."
   },

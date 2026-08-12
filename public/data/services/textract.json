@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.69",
+    "t": "Amazon A2I entered maintenance mode in July 2026 and now rejects StartHumanLoop requests from accounts that it does not recognize as existing customers. This update adds a corresponding note to the HumanLoopConfig parameter documentation so that the API Reference and SDK docs explain this behavior."
+  },
+  {
     "v": "1.40.64",
     "t": "Update endpoint ruleset parameters casing"
   },

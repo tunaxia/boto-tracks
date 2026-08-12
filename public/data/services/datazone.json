@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.69",
+    "t": "GetSubscriptionGrant now returns materialized asset scope name for mapping Lake Formation data cell filters or Redshift views to subscription grants."
+  },
+  {
     "v": "1.43.62",
     "t": "Adding support for enhanced Git experience in Sagemaker Unified Studio."
   },
