@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.70",
+    "t": "Adds support for Oracle Exadata on Exascale Infrastructure (ExaDB-XS) resources including storage vaults and VM clusters."
+  },
+  {
     "v": "1.43.56",
     "t": "Documentation-only update to clarify the operation-specific valid values for the externalIdType field."
   },

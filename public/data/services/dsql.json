@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.70",
+    "t": "Improved validation of Kinesis stream ARN format to ensure only valid ARN characters are accepted"
+  },
+  {
     "v": "1.43.64",
     "t": "UpdateCluster now checks the RemovePeerCluster permission on the specific cluster being removed, not a wildcard and docs now clarify how to set kmsEncryptionKey so the cluster uses the AWS-owned key."
   },

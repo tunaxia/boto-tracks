@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.70",
+    "t": "Documentation updates for materialized views APIs."
+  },
+  {
     "v": "1.43.65",
     "t": "Added the PutDataCatalogExportConfiguration to export Glue Data Catalog metadata to systems tables stored in S3 Tables."
   },
