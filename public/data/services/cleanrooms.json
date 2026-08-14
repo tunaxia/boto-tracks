@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.71",
+    "t": "This release adds support for minimum aggregation thresholds and comparison controls to the Custom analysis rule type."
+  },
+  {
     "v": "1.43.69",
     "t": "Adds support for exporting redacted query execution logs in AWS Clean Rooms"
   },
