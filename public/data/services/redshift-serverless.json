@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.72",
+    "t": "Amazon Redshift now unlocks a locked admin user account and resets the failed-login counter when you update the admin password using the UpdateNamespace API. This option is available only when account lockout security is enabled."
+  },
+  {
     "v": "1.43.47",
     "t": "Add support for preserving datasharing, zero-ETL and S3 event integrations on snapshot restore to serverless namespace."
   },

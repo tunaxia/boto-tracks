@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.72",
+    "t": "Adds AgentCore Payments support for CMK, Marketplace Subscriptions and QuickCreate"
+  },
+  {
     "v": "1.43.66",
     "t": "Add support for Gateway rate limits and Runtime instances in Amazon Bedrock AgentCore. Customers can now configure rate limits scoped to control request rates, token consumption rates, and active connection rates. Customers can now create capacity providers to launch runtimes on their EC2 instances."
   },

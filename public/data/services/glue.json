@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.72",
+    "t": "Added support for associating glossary terms with iterable form items, such as table columns."
+  },
+  {
     "v": "1.43.70",
     "t": "Documentation updates for materialized views APIs."
   },
