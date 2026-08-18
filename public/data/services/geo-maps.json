@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.73",
+    "t": "Amazon Location Service now supports POI density and category filtering on dynamic maps. The GetStyleDescriptor API adds two optional parameters. PoiDensity (Off to VeryDense) controls POI volume, and PoiCategories filters by up to nine categories. Available on HERE and Grab map styles."
+  },
+  {
     "v": "1.42.84",
     "t": "This release updates API reference documentation for Amazon Location Service Maps APIs to reflect regional restrictions for Grab Maps users"
   },

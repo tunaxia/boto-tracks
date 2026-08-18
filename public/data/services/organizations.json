@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.73",
+    "t": "Add new Transfer Responsibility error codes and document related CloudTrail events for accepting and terminating a Transfer Responsibility."
+  },
+  {
     "v": "1.43.69",
     "t": "Documentation update for AWS Organizations that clarifies valid input values for the HandshakePartyType parameter in the InviteAccountToOrganization. API ORGANIZATION is valid in responses only. valid input values are ACCOUNT and EMAIL"
   },

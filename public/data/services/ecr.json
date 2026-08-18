@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.73",
+    "t": "Documentation update for the ECR PutReplicationConfiguration API to increase the replication rule limit from 10 to 25"
+  },
+  {
     "v": "1.43.0",
     "t": "Removes support for registry policy V1"
   },
