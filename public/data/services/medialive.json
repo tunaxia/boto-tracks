@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.74",
+    "t": "AWS Elemental MediaLive now supports SCTE-35 marker passthrough without IDR frame insertion for CMAF Ingest, MediaPackage V2, and transport stream outputs."
+  },
+  {
     "v": "1.43.68",
     "t": "Added VirtualSourceAddress to multicast output destinations for MediaLive Anywhere channels. Specifies the source IP address for outbound multicast packets when downstream networks enforce source-IP filtering."
   },

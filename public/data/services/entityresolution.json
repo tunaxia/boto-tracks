@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.74",
+    "t": "Added ResourceNotFoundException to DeleteSchemaMapping, DeleteMatchingWorkflow, DeleteIdMappingWorkflow, and DeleteIdNamespace. These operations now return a 404 ResourceNotFoundException (previously a 200 Success) when the target resource does not exist."
+  },
+  {
     "v": "1.43.53",
     "t": "Add support for real time matching with AWS Entity Resolution matching workflows with advanced rule sets."
   },

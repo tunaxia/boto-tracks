@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.74",
+    "t": "Update AWS Batch documentation with newer Fargate Supported configurations, notes, and fix broken Docker link re-directs."
+  },
+  {
     "v": "1.43.33",
     "t": "Adds Support for ordered allocation strategies- BEST-FIT-PROGRESSIVE-ORDERED or SPOT-CAPACITY-OPTIMIZED-PRIORITIZED"
   },

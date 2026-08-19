@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.74",
+    "t": "Introducing two new APIs, DescribeAssessment and ListAssessments. These APIs expose validation issues on Marketplace resources. The validation issues are exposed via a newly created resource called Assessment."
+  },
+  {
     "v": "1.43.62",
     "t": "This release enhances the ListEntities API to support TargetAgreementId, TargetAgreementIntent, and CreatedBySource filters for the Offer entity type."
   },
