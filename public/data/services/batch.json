@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.75",
+    "t": "AWS Batch now supports managing CloudWatch Container Insights on compute environments via CreateComputeEnvironment and UpdateComputeEnvironment."
+  },
+  {
     "v": "1.43.74",
     "t": "Update AWS Batch documentation with newer Fargate Supported configurations, notes, and fix broken Docker link re-directs."
   },

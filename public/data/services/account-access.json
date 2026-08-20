@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.75",
+    "t": "Adds throttling exceptions to operation outputs that were previously inconsistent with other operations."
+  },
+  {
     "v": "1.43.69",
     "t": "Adds SDK support for AWS IAM account access manager, a feature that enables mapping of IAM roles to the users and groups in AWS IAM Identity Center."
   }

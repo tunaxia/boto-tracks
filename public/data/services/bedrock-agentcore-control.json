@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.75",
+    "t": "AgentCore Memory now supports Flexible Namespaces"
+  },
+  {
     "v": "1.43.73",
     "t": "Adds implementations of third-party evaluators, both managed-as-a-service and as templates within custom evaluators."
   },

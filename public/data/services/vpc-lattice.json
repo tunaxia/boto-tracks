@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.75",
+    "t": "Amazon VPC Lattice now supports modification of private DNS options on Service Network VPC Associations"
+  },
+  {
     "v": "1.43.37",
     "t": "Amazon VPC Lattice now supports mutable idle timeout configuration on VPC Lattice Services"
   },

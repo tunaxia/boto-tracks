@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.75",
+    "t": "Adds support for EKS cluster certificate authorities (CA)"
+  },
+  {
     "v": "1.43.69",
     "t": "This feature would give customers the ability to selectively tune certain configurations of Kubernetes control plane components in an Amazon EKS cluster."
   },
