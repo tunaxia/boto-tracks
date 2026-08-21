@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.76",
+    "t": "Adds support for Rds switchover read replica for Oracle databases in Region switch plans"
+  },
+  {
     "v": "1.43.54",
     "t": "Adds support for a client token in StartPlanExecution to make plan execution requests idempotent for safe retries."
   },

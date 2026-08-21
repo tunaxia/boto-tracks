@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.76",
+    "t": "Documentation update for the CreateSubscription API to correct the default value of the approval mode parameter. The default value for paid subscriptions is MANUAL, not IMMEDIATE as previously documented. The default value remains IMMEDIATE for FREE tier subscriptions."
+  },
+  {
     "v": "1.43.60",
     "t": "Adds support for Public PricingPlanManager SDK"
   }

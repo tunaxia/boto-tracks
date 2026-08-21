@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.76",
+    "t": "Added IAM Identity Center (IdC) support to CreatePartnerApp and UpdatePartnerApp APIs. Added Customer Managed Key (CMK) support to CreateMlflowApp and DescribeMlflowApp."
+  },
+  {
     "v": "1.43.72",
     "t": "Release support for g7.2xlarge, g7.4xlarge, g7.8xlarge, g7.12xlarge, g7.24xlarge, and g7.48xlarge instance types for SageMaker HyperPod"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.76",
+    "t": "Increased the maximum allowed length from 255 to 4,096 characters to support longer access tokens."
+  },
+  {
     "v": "1.43.67",
     "t": "Increased the maximum allowed length of the oauthToken parameter in the CreateApp and UpdateApp APIs to support longer OAuth tokens issued by third-party Git providers."
   },

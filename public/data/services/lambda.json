@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.76",
+    "t": "Adds support for full JSON resource-based policies, enabling customers to create, retrieve, update, and delete function resource policies as complete JSON documents."
+  },
+  {
     "v": "1.43.60",
     "t": "Add Python3.15 (python3.15) and NodeJs 26 (nodejs26.x) support to AWS Lambda"
   },

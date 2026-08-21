@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.76",
+    "t": "EC2 marks UEFI instance metadata field as sensitive."
+  },
+  {
     "v": "1.43.74",
     "t": "Doc release for CreateImage support for instances with local snapshots in Outpost"
   },
