@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.78",
+    "t": "Update Dataset schema to THIRDPARTYEVALUATIONV1"
+  },
+  {
     "v": "1.43.75",
     "t": "AgentCore Memory now supports Flexible Namespaces"
   },

@@ -1,0 +1,7 @@
+[
+  {
+    "category": "http",
+    "description": "Fixed an issue where reused connections could return a cached response status, dropping response headers.",
+    "type": "bugfix"
+  }
+]

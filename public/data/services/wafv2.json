@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.78",
+    "t": "DataProtectionConfig field Key Documentation Update"
+  },
+  {
     "v": "1.43.63",
     "t": "Updated descriptions for number of PreParseTextTransformations allowed per rule statement"
   },

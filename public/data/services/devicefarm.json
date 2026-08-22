@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.78",
+    "t": "Added support to CreateRemoveAccessSession for selecting a server version on the mobile WebDriver endpoint."
+  },
+  {
     "v": "1.43.66",
     "t": "Adds support for service generated insights across runs, jobs, and tests."
   },

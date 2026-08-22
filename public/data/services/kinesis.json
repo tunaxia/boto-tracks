@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.78",
+    "t": "Generate account endpoint for Kinesis Data Streams requests when the account ID is available"
+  },
+  {
     "v": "1.42.41",
     "t": "Adds StreamId parameter to AWS Kinesis Data Streams APIs that is reserved for future use."
   },

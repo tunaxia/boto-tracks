@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.78",
+    "t": "Increase spans count from 1k to 20k"
+  },
+  {
     "v": "1.43.75",
     "t": "AgentCore Memory now supports Flexible Namespaces and Non-Conversational Payloads in CreateEvent API"
   },

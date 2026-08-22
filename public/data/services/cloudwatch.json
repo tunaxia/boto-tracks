@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.78",
+    "t": "Allows customers to specify an initial warm up period to wait for metrics to arrive when creating metric or log alarms"
+  },
+  {
     "v": "1.43.54",
     "t": "Adds documented value constraints for CloudWatch Log Alarm scheduled query configuration fields, and makes LogGroupIdentifiers optional for log alarms."
   },
