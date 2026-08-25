@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.79",
+    "t": "This release adds the ExtractedInformation segment to the ListRealtimeContactAnalysisSegmentsV2 API, enabling customers to retrieve information extracted from real-time contact analysis."
+  },
+  {
     "v": "1.43.73",
     "t": "This release adds new APIs to create, describe, update, delete, and list extraction definitions, enabling customers to manage lifecycle of extraction definition resources. Additionally, this release adds new event sources for Rules related to ACW and new action to Extract Information."
   },

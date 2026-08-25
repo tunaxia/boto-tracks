@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.79",
+    "t": "Service-managed parameter groups now only apply optimized defaults to DB Clusters automatically. New field effectiveDbParameterGroupIdentifier surfaces the parameter group actually applied."
+  },
+  {
     "v": "1.43.63",
     "t": "This release adds support for customer-managed backup restore, and encryption of new DbInstances and DbClusters using customer-managed KMS keys."
   },

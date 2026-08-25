@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.79",
+    "t": "Corrected the validation pattern on the ServiceName response field in the GetVpcEndpointServiceName API to match the values Amazon Aurora DSQL actually returns."
+  },
+  {
     "v": "1.43.70",
     "t": "Improved validation of Kinesis stream ARN format to ensure only valid ARN characters are accepted"
   },

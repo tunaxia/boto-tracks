@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.79",
+    "t": "This release adds the ExtractedInformation segment to the ListRealtimeContactAnalysisSegments API, enabling customers to retrieve information extracted from real-time contact analysis."
+  },
+  {
     "v": "1.40.58",
     "t": "Update endpoint ruleset parameters casing"
   },

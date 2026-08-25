@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.79",
+    "t": "Adding private and self-signed certificate configuration support for penetration tests"
+  },
+  {
     "v": "1.43.71",
     "t": "Add support for setting a maximum task-hour budget cap on penetration tests and code reviews, and for revalidating previously reported findings via a new REVALIDATION job type."
   },

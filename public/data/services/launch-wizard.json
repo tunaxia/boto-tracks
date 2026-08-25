@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.79",
+    "t": "Added accountConstraints and patternType to GetWorkload, ListWorkloads, GetWorkloadDeploymentPattern and ListWorkloadDeploymentPatterns for Launch Wizard"
+  },
+  {
     "v": "1.42.30",
     "t": "Added UpdateDeployment, ListDeploymentPatternVersions and GetDeploymentPatternVersion APIs for Launch Wizard"
   },
