@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.80",
+    "t": "This feature would give customers the ability to tune TerminatedPodGcThreshold configuration in an Amazon EKS cluster."
+  },
+  {
     "v": "1.43.75",
     "t": "Adds support for EKS cluster certificate authorities (CA)"
   },

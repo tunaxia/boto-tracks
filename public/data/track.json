@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.80",
+      "date": "2026-08-25"
+    },
+    {
       "id": "1.43.79",
       "date": "2026-08-24"
     },
@@ -9505,6 +9509,7 @@
     "http",
     "http-session",
     "iam",
+    "iam-toolbox",
     "identity",
     "identitystore",
     "imagebuilder",

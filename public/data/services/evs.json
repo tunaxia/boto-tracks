@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.80",
+    "t": "EVS now supports i7i.metal-48xl EC2 bare metal instance type, delivering high random IOPS performance with real-time latency, ideal for IO intensive and latency-sensitive workloads such as transactional databases, real-time analytics, and AI ML pre-processing."
+  },
+  {
     "v": "1.43.37",
     "t": "Amazon EVS introduces a VMware Cloud Foundation (VCF) self-deployed mode, along with new connectors to VCF components such as the Operations and SDDC managers to monitor coverage and usage."
   },

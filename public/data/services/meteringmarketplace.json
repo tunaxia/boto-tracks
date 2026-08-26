@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.80",
+    "t": "Updated documentation to clarify duplicate-billing prevention and BatchMeterUsage retry guidance"
+  },
+  {
     "v": "1.43.52",
     "t": "For new SaaS product integrations, CustomerIdentifier is not populated in ResolveCustomer responses and is not supported in BatchMeterUsage. Use CustomerAWSAccountId and LicenseArn instead."
   },
