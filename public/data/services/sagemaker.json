@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.81",
+    "t": "Amazon SageMaker AI now supports ml.g7 instances for model optimization. You can now run model optimization jobs on ml.g7 instances, in supported AWS Regions."
+  },
+  {
     "v": "1.43.76",
     "t": "Added IAM Identity Center (IdC) support to CreatePartnerApp and UpdatePartnerApp APIs. Added Customer Managed Key (CMK) support to CreateMlflowApp and DescribeMlflowApp."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.81",
+    "t": "Released support for License Expiry field in ListProductSubscriptions API"
+  },
+  {
     "v": "1.40.55",
     "t": "Update endpoint ruleset parameters casing"
   },
