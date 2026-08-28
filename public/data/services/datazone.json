@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.82",
+    "t": "Add cascadeDelete to DeleteDomain. When specified, DataZone recursively deletes all projects, environments, subscriptions, and their underlying AWS resources before removing the domain. Deletion progress is reported via deleteProgress and resource failures via failureReasons on GetDomain."
+  },
+  {
     "v": "1.43.69",
     "t": "GetSubscriptionGrant now returns materialized asset scope name for mapping Lake Formation data cell filters or Redshift views to subscription grants."
   },

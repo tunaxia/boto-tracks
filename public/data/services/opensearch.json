@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.82",
+    "t": "Updating SDK and CLI documentation for AttachDataSource API."
+  },
+  {
     "v": "1.43.41",
     "t": "This release introduces Saved Object Migration APIs, enabling users to migrate dashboards, visualizations, index patterns, and other saved objects from a data source into an Amazon OpenSearch Service application workspace with configurable export filters and conflict resolution strategies."
   },

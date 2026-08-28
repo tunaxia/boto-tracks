@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.82",
+    "t": "Adding support for the full snapshot size, in bytes, of DB instance snapshots."
+  },
+  {
     "v": "1.43.62",
     "t": "Adds StorageOperationStatus and StorageOperationPercentProgress to DescribeDBInstances, letting you monitor RDS storage initialization and optimization progress."
   },

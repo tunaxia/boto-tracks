@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.82",
+    "t": "Added a deploymentMode parameter to CreateDeployment. Set it to RESTART to restart an EC2 and on-premises fleet, using the last successful revision, honoring Deployment Configuration."
+  },
+  {
     "v": "1.40.63",
     "t": "Update endpoint ruleset parameters casing"
   },

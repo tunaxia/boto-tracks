@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.82",
+    "t": "EC2 allows AMI owners to define compatible instance types on their AMIs, blocking RunInstances calls automatically for launches on non-permitted instance types."
+  },
+  {
     "v": "1.43.81",
     "t": "Adds deleting state to possible VPC States."
   },

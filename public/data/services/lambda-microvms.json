@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.82",
+    "t": "Added InsufficientCapacityException to RunMicrovm for capacity-related failures. Added lifecycle status field (AVAILABLE, DEPRECATED) to ListManagedMicrovmImageVersions. Added ConflictException to CreateMicrovmAuthToken and CreateMicrovmShellAuthToken for unregistered MicroVMs."
+  },
+  {
     "v": "1.43.35",
     "t": "Lambda MicroVMs GA launch. Lambda MicroVMs enable isolated and highly responsive execution of user-supplied or LLM-generated code."
   }
