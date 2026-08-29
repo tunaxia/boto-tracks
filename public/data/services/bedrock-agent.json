@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.83",
+    "t": "Adds an optional syncSchedule field to CreateDataSource and UpdateDataSource for Managed Knowledge Bases data source connectors, so a data source can sync automatically on a daily, weekly, or monthly schedule."
+  },
+  {
     "v": "1.43.34",
     "t": "Add support for metadata-only retrieval on GetFlow, GetFlowVersion, and GetPrompt APIs."
   },

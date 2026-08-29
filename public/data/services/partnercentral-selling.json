@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.83",
+    "t": "Releasing PARC, new APN Program that lets sellers add solftware revenue details to aws opportunity summary"
+  },
+  {
     "v": "1.43.64",
     "t": "Partners can now create leads with only 5 required fields and free-text values for all other fields, reducing import friction. Engagement invitations now include enrichment data (propensity scores, lead readiness) directly in the response."
   },

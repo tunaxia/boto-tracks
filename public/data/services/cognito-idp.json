@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.83",
+    "t": "Adds two new operations - GetClientToken which allows M2M auth through the SDK, and DescribeTermsByClient to find which Terms are associated with a user-pool client without knowing the Terms resource id."
+  },
+  {
     "v": "1.43.82",
     "t": "Adds the AdminDeleteSoftwareToken API operation, enabling administrators to remove a user's registered TOTP (software token) MFA configuration from a user pool."
   },

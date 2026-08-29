@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.83",
+    "t": "AgentCore Memory now supports direct ingestion into long-term memory via IngestData API"
+  },
+  {
     "v": "1.43.78",
     "t": "Increase spans count from 1k to 20k"
   },
