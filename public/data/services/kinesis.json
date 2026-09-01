@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.84",
+    "t": "Adds support for data delivery to Amazon S3 Tables (Apache Iceberg) and general purpose Amazon S3 buckets with new CreateChannel, UpdateChannel, DeleteChannel, DescribeChannel, and ListChannels APIs for Amazon Kinesis Data Streams."
+  },
+  {
     "v": "1.43.78",
     "t": "Generate account endpoint for Kinesis Data Streams requests when the account ID is available"
   },

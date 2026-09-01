@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.84",
+    "t": "Added support for global routing on Amazon Connect Global Resiliency instances. New APIs GetCrossRegionRouting and UpdateCrossRegionRouting allow you to view and control cross-region contact routing between linked instances, so both Regions are active at all times."
+  },
+  {
     "v": "1.43.79",
     "t": "This release adds the ExtractedInformation segment to the ListRealtimeContactAnalysisSegmentsV2 API, enabling customers to retrieve information extracted from real-time contact analysis."
   },

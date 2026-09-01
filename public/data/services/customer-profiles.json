@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.84",
+    "t": "This release introduces new APIs for segment membership events allowing segment definition membership events to be exported to a kinesis stream for downstream processing. Additionally, includes new calculated attribute statistic and 2 new segment dimension types."
+  },
+  {
     "v": "1.43.40",
     "t": "Amazon Connect Customer Profiles adds support for diversityConfig to recommenderConfig which can be used for diversifying the recommendations. This release also includes model versioning support which helps customer to rollback trained models."
   },

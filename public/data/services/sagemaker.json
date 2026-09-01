@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.84",
+    "t": "Amazon SageMaker Batch Transform now supports G6e instances, powered by NVIDIA L40S Tensor Core GPUs. G6e instances are the most cost-efficient GPU instances for deploying generative AI models and the highest-performance GPU instances for spatial computing workloads."
+  },
+  {
     "v": "1.43.81",
     "t": "Amazon SageMaker AI now supports ml.g7 instances for model optimization. You can now run model optimization jobs on ml.g7 instances, in supported AWS Regions."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.84",
+    "t": "AWS Support now allows up to 10 attachments (150 MB each) per case correspondence, up from 3 at 5 MB. Customers can share large diagnostic logs, heap dumps, and packet captures directly in cases to reduce back-and-forth and speed up resolution. Available in US East, US West, and Europe (Ireland)."
+  },
+  {
     "v": "1.43.28",
     "t": "Adding new BDD representation of endpoint ruleset"
   },

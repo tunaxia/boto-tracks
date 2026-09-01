@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.84",
+    "t": "AWS Agent Registry becomes Generally Available"
+  },
+  {
     "v": "1.43.66",
     "t": "Agent Registry's Public Preview release"
   }

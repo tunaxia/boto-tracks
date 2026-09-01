@@ -1,5 +1,13 @@
 [
   {
+    "v": "1.43.85",
+    "t": "Release HTTP and AGUI descriptors to the dataplane model"
+  },
+  {
+    "v": "1.43.84",
+    "t": "AWS Agent Registry becomes Generally Available"
+  },
+  {
     "v": "1.43.66",
     "t": "Agent Registry's Public Preview release"
   }
