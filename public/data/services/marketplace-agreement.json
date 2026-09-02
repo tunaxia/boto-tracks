@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.86",
+    "t": "This release adds renewal support for AWS Marketplace private offers. Agreements report whether they renew and, if not, why. Renewal terms add price increases, renewal limits, renewal decision deadlines, and payment schedule templates. SearchAgreements adds filters."
+  },
+  {
     "v": "1.43.66",
     "t": "GetAgreementTerms now returns a new term variant in AcceptedTerm, netPaymentTerm, with a paymentDuePeriod field (example \"P30D\")."
   },

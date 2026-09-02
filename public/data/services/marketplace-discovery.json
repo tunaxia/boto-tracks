@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.86",
+    "t": "GetOfferTerms now returns renewalTerm for offers with pre-authorized renewals, exposing maxRenewals, lockoutPeriod, adjustmentDeadline, priceIncrease (fixed percentage or percentage range), and termTemplates (renewal payment schedules). Enables buyers to view renewal pricing and terms."
+  },
+  {
     "v": "1.43.66",
     "t": "GetOfferTerms now returns netPaymentTerm in offerTerms, specifying payment due period after invoice date. The paymentDuePeriod field uses ISO 8601 duration format (e.g., \"P30D\" for net 30 days). This is a backward-compatible addition. See API documentation for full structure and examples."
   },

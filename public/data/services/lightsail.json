@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.86",
+    "t": "This release adds support for the Amazon Lightsail GetProfile API, which returns the profile for the specified account."
+  },
+  {
     "v": "1.43.27",
     "t": "This release adds support for Asia Pacific (Hong Kong) (ap-east-1), Europe (Spain) (eu-south-2) and South America (Sao Paulo) (sa-east-1) Regions."
   },

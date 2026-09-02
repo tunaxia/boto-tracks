@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.86",
+    "t": "Online evaluation configurations now support up to 25 evaluators. CloudWatch Logs data sources for online evaluation now support up to 10 log groups."
+  },
+  {
     "v": "1.43.78",
     "t": "Update Dataset schema to THIRDPARTYEVALUATIONV1"
   },

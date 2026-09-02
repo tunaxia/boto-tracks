@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.86",
+    "t": "France and Monaco Additional Info changes"
+  },
+  {
     "v": "1.43.25",
     "t": "Adds support for additional tax information fields for Philippines, Belgium, Chile, France, Poland, and Italy in the Tax Settings API."
   },
