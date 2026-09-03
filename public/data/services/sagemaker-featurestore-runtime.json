@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.87",
+    "t": "Amazon SageMaker Feature Store now supports the UpdateRecord API, enabling partial updates to individual feature values in an existing Online Store record without rewriting the entire record. This reduces write payloads and latency for high-frequency feature-level writes ."
+  },
+  {
     "v": "1.43.37",
     "t": "Add support for ListRecords and BatchWriteRecord APIs to Feature Store."
   },

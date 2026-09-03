@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.87",
+    "t": "Adds the ListFlexComponents API for listing the flex components available for a given DB system shape."
+  },
+  {
     "v": "1.43.70",
     "t": "Adds support for Oracle Exadata on Exascale Infrastructure (ExaDB-XS) resources including storage vaults and VM clusters."
   },

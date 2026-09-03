@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.87",
+    "t": "AWS Elemental MediaLive now supports AB forensic video watermarking"
+  },
+  {
     "v": "1.43.75",
     "t": "AWS Elemental MediaLive now supports video cropping and output positioning. Use cropRectangle and outputPositionRectangle to position the encoded video within the output frame, with the surrounding area filled with black."
   },
