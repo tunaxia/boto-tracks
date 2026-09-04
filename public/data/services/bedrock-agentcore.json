@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.88",
+    "t": "Adds log group name prefix trace source selection, custom or source log group result destinations, and metrics namespace customization"
+  },
+  {
     "v": "1.43.87",
     "t": "Batch evaluation now supports up to 10 CloudWatch log groups per CloudWatchLogsSource"
   },

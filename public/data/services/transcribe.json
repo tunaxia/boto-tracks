@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.88",
+    "t": "Amazon Transcribe now supports specifying up to 29 PII entity types in the ContentRedaction configuration of a StartTranscriptionJob request, allowing all supported entity types to be redacted in a single batch transcription job."
+  },
+  {
     "v": "1.43.20",
     "t": "Release new Language locales including am-ET, es-MX, fa-AF, ht-HT, jv-ID, km-KH, my-MM, sq-AL, ne-NP. The commit shows past locales that have already been release which include cy-gb, ga-ie, gd-gb."
   },

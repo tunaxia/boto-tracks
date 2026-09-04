@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.88",
+    "t": "This release adds support for sending TCP resets for Gateway Load Balancer when a flow's idle timeout expires, or when a target becomes unhealthy or is deregistered. This adds updates the CLI documentation."
+  },
+  {
     "v": "1.43.54",
     "t": "This adds CLI examples for the IpAddressType field on SourceIpConfig, enabling Network Load Balancer listener rules to match traffic based on whether the source IP is IPv4 or IPv6."
   },

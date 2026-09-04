@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.88",
+    "t": "Adding support for WhatsApp Flows with endpoints."
+  },
+  {
     "v": "1.43.66",
     "t": "Add support for WhatsApp Conversions APIs."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.88",
+    "t": "Adding support for Sequence Activities in GuardDuty Findings"
+  },
+  {
     "v": "1.43.86",
     "t": "Amazon GuardDuty now supports custom detection rules, including APIs to manage rule associations and organization-level configurations."
   },

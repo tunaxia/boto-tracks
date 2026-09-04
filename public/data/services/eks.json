@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.88",
+    "t": "Deprecate EncryptionConfig resources field. Amazon EKS encrypts all Kubernetes API data with envelope encryption by default for clusters running Kubernetes version 1.28 or higher, so this field no longer affects which resources are encrypted."
+  },
+  {
     "v": "1.43.80",
     "t": "This feature would give customers the ability to tune TerminatedPodGcThreshold configuration in an Amazon EKS cluster."
   },

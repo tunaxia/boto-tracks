@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.88",
+    "t": "This release enables TagOnCreate for Rule resource on CreateRule API. It also introduces a new field called PreEvaluationFilters to Rule resource, thereby impacting all Create, Update, Describe and Search APIs for Rules"
+  },
+  {
     "v": "1.43.84",
     "t": "Added support for global routing on Amazon Connect Global Resiliency instances. New APIs GetCrossRegionRouting and UpdateCrossRegionRouting allow you to view and control cross-region contact routing between linked instances, so both Regions are active at all times."
   },
