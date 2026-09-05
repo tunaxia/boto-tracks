@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.89",
+    "t": "New AWS REVIEW mode as supported data retention mode for Bedrock models"
+  },
+  {
     "v": "1.43.79",
     "t": "Adds support for specifying an inference profile ID or ARN, or an application inference profile ARN as the target model in CreateAdvancedPromptOptimizationJob."
   },

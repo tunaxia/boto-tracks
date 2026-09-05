@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.89",
+    "t": "Adds support for ValidateSecurityGroupQuotasForInterface, an API that specifically authorized AWS services use to validate security group rule quotas before creating an elastic network interface."
+  },
+  {
     "v": "1.43.87",
     "t": "This release adds support to retain interruptible Capacity Reservations in an active state when all capacity is reclaimed."
   },
