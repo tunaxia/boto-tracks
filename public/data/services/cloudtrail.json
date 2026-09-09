@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.90",
+    "t": "Adds support for the RecursiveLogging trail setting, which suppresses recursive events generated when CloudTrail delivers logs to a trail's destinations."
+  },
+  {
     "v": "1.41.1",
     "t": "AWS launches CloudTrail aggregated events to simplify monitoring of data events at scale. This feature delivers both granular and summarized data events for resources like S3/Lambda, helping security teams identify patterns without custom aggregation logic."
   },

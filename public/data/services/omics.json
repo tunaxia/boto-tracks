@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.90",
+    "t": "Added support for session policies in AWS HealthOmics Workflows, allowing customers to scope down IAM permissions for individual workflow runs without modifying the service role."
+  },
+  {
     "v": "1.43.50",
     "t": "Adds support for returning the task UUID (universally unique identifier) in GetRunTask and ListRunTasks responses"
   },

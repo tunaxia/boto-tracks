@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.90",
+    "t": "Adds support for Amazon S3 Object Lock variable retention.  Existing S3 APIs that support S3 Object Lock parameters now support two new parameters EventHold and EventHoldDuration at the object level, and DefaultEventHoldDuration at the bucket level."
+  },
+  {
     "v": "1.43.17",
     "t": "Update the minimum value of MinStorageBytesPercentage in StorageLensPrefixLevel.SelectionCriteria from 0.1 to 1, aligning the model with the documented contract."
   },
