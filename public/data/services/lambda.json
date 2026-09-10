@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.91",
+    "t": "Updates documentation for lambda function timeout."
+  },
+  {
     "v": "1.43.86",
     "t": "AWS Lambda now provides configurable control over S3 direct access, allowing you to explicitly enable or disable how functions stream file reads directly from S3 buckets. This gives you flexibility to tune data access behavior based on your workload requirements, independent of memory size."
   },

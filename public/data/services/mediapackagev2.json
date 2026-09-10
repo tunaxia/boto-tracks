@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.91",
+    "t": "Dynamic Multiview enables viewers to watch multiple live video streams in a single combined output. Viewers can select from 6 preset tiled layouts. Create MediaPackage channels with Input Type MULTIVIEW and configure Available Layouts and Available Sources. See the API Documentation for details."
+  },
+  {
     "v": "1.43.67",
     "t": "StreamNameOutputMode - a new optional field on MediaPackageV2 OriginEndpoints that lets customers choose whether egress manifests use numeric stream indices (default) or encoder-assigned stream names from the input"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.91",
+    "t": "This release adds contextual metadata, a feed output type that generates a descriptive summary of your media content along with IAB taxonomy and GARM suitability classifications. It also adds feed resource policies for granting cross-account access to a feed."
+  },
+  {
     "v": "1.43.79",
     "t": "Added support for the GetFixture API, enabling customers to retrieve the details of a fixture from its fixture ID, and added the access role ARN to the CreateFeed, GetFeed, and UpdateFeed responses."
   },

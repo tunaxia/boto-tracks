@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.91",
+    "t": "Add metric configuration field to evaluation forms and ListEvaluationFormAIVersions API for retrieving AI-generated evaluation form versions"
+  },
+  {
     "v": "1.43.90",
     "t": "Releasing workload types feature. A proper launch announcement or details will follow up."
   },
