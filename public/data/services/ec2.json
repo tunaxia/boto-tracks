@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.92",
+    "t": "The CreateImage API now supports a BootModeOverride parameter to explicitly set UEFI boot mode on a new AMI, overriding the source instance's inherited boot mode."
+  },
+  {
     "v": "1.43.91",
     "t": "This release adds support for sharing Amazon EBS volumes across AWS accounts using AWS Resource Access Manager (RAM). Consuming accounts can view shared volume metadata and create copies of shared volumes within the same Availability Zone, with optional re-encryption using their own KMS key."
   },

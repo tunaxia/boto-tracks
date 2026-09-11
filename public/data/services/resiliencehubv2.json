@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.92",
+    "t": "This release adds the ListTestRunSourceEvents and ListTestRunDependencies APIs, which return the alarm state changes during a test run and the dependencies the run blocked."
+  },
+  {
     "v": "1.43.62",
     "t": "Adding support for new testing capability in AWS Resilience Hub."
   },

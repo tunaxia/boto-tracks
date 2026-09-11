@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.92",
+    "t": "This release adds the ability for customers to attach customer owned Elastic Network Interfaces (ENIs) to HyperPod cluster nodes."
+  },
+  {
     "v": "1.43.90",
     "t": "Add support for InstancePreferences list for multiple instance type input support on SageMaker Training and Processing"
   },
