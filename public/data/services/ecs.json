@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.93",
+    "t": "This feature adds support for setting the cpu architecture type that should be used to launch tasks for an Express Gateway Service."
+  },
+  {
     "v": "1.43.88",
     "t": "Adds a critical parameter to the Amazon ECS managed daemon APIs that controls whether a daemon task failure drains the container instance. Non-critical daemon failures no longer drain the instance or block instance registration."
   },

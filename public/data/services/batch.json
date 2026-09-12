@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.93",
+    "t": "Added new bulk job APIs (CancelJobs, TerminateJobs, TerminateServiceJobs) and new fields on ListJobs and ListServiceJobs responses. This allows customers to cancel or terminate multiple jobs in a single request. ListJobs and ListServiceJobs responses now include isCancelled and isTerminated fields."
+  },
+  {
     "v": "1.43.79",
     "t": "Doc Update, Add note that UpdatePolicy applies only to EC2 managed compute environments"
   },

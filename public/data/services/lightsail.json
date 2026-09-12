@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.93",
+    "t": "Amazon Lightsail now lets you serve website content from a private Lightsail bucket through a Lightsail distribution. This release adds enablePrivateOriginAccess to the CreateDistribution and UpdateDistribution actions, plus new defaultRootObject and customErrorResponses options."
+  },
+  {
     "v": "1.43.86",
     "t": "This release adds support for the Amazon Lightsail GetProfile API, which returns the profile for the specified account."
   },
