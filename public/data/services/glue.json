@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.94",
+    "t": "Amazon Glue releasing the new API ListIntegrationTableProperties and adding IntegrationArn to TargetTableConfig"
+  },
+  {
     "v": "1.43.72",
     "t": "Added support for associating glossary terms with iterable form items, such as table columns."
   },

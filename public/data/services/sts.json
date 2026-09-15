@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.94",
+    "t": "Increases the maximum session token size to 4,096 bytes and removes the packed policy size limit. Adds SessionTokenSize and SessionTokenUtilization fields and a new MinimumSessionTokenSize parameter. PackedPolicySize is deprecated."
+  },
+  {
     "v": "1.42.91",
     "t": "The STS client now supports configuring SigV4a through the auth scheme preference setting. SigV4a uses asymmetric cryptography, enabling customers using long-term IAM credentials to continue making STS API calls even when a region is isolated from the partition leader."
   },
