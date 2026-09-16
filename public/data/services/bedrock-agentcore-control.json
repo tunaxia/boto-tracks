@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.95",
+    "t": "Amazon Bedrock AgentCore Runtime now supports specifying the platform version of an agent runtime through the new platformVersion field on CreateAgentRuntime, UpdateAgentRuntime, and GetAgentRuntime."
+  },
+  {
     "v": "1.43.88",
     "t": "AgentCore Identity adds Consent Portal APIs to manage portals that let end users grant OAuth authorization for agents to access resources. AgentCore Evaluation adds trace source selection by log group prefix, custom or source log group result destinations, and metrics namespace customization."
   },

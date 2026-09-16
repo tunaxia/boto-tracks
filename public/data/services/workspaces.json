@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.95",
+    "t": "Added support for 4 new graphics-optimized compute types - Graphics.g7 (2xlarge, 4xlarge, 8xlarge, 12xlarge)."
+  },
+  {
     "v": "1.43.74",
     "t": "Amazon WorkSpaces now supports nested virtualization, allowing you to run hypervisors and virtualization-based workloads within your WorkSpaces. You can enable or disable nested virtualization when creating a WorkSpace or by modifying an existing WorkSpace's properties."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.95",
+    "t": "AWS Transfer Family now preserves the original source IP address using Proxy Protocol v2 when you place a Network Load Balancer in front of your server for SFTP connections."
+  },
+  {
     "v": "1.43.88",
     "t": "AWS Transfer Family SFTP Connectors now support specifying an ordered list of AWS Secrets Manager version stages for secret retrieval. This enables seamless credential rotation workflows where external partners may take time to update their systems with new credentials."
   },
