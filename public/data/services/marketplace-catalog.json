@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.96",
+    "t": "This release enhances the ListEntities API to support issuerAccountId and SourceAuthorization filter for ResaleAuthorization entity."
+  },
+  {
     "v": "1.43.74",
     "t": "Introducing two new APIs, DescribeAssessment and ListAssessments. These APIs expose validation issues on Marketplace resources. The validation issues are exposed via a newly created resource called Assessment."
   },

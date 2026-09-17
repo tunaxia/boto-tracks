@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.96",
+    "t": "Next Gen Resilience Hub now supports dependency insights (LLM-based insights about customer's service dependencies) and organization-level policy sharing (provision to share policy with member accounts for an organization)"
+  },
+  {
     "v": "1.43.92",
     "t": "This release adds the ListTestRunSourceEvents and ListTestRunDependencies APIs, which return the alarm state changes during a test run and the dependencies the run blocked."
   },

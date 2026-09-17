@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.96",
+    "t": "Adds support for a new DELETE FAILED status for Bedrock AgentCore Runtimes and Bedrock AgentCore Runtime Endpoints."
+  },
+  {
     "v": "1.43.95",
     "t": "Amazon Bedrock AgentCore Runtime now supports specifying the platform version of an agent runtime through the new platformVersion field on CreateAgentRuntime, UpdateAgentRuntime, and GetAgentRuntime."
   },
