@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.97",
+    "t": "Adds Multi-frame GNSS support to the AWS IoT Core Device Location GetPositionEstimate API. The new GnssMultiFrame measurement type improves location accuracy by combining multiple GNSS signal captures (2, 4, 8, 16, or 32) from the same device to estimate its position."
+  },
+  {
     "v": "1.43.43",
     "t": "Default session downlink transmission parameters have been added to the existing Multicast Group APIs. Explicit transmission parameters are no longer required when starting a multicast session during the FUOTA procedure."
   },

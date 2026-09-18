@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.97",
+    "t": "Adding support for CIDR Resource Configuration"
+  },
+  {
     "v": "1.43.75",
     "t": "Amazon VPC Lattice now supports modification of private DNS options on Service Network VPC Associations"
   },

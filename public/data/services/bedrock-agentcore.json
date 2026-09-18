@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.97",
+    "t": "Batch evaluation now supports evaluating specific traces within a session. Each session can specify up to 100 trace IDs to evaluate."
+  },
+  {
     "v": "1.43.88",
     "t": "Adds log group name prefix trace source selection, custom or source log group result destinations, and metrics namespace customization"
   },

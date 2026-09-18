@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.97",
+    "t": "Added support for attachments on managed notification events. Added support to access and subscribe sensitive managed notification events."
+  },
+  {
     "v": "1.40.61",
     "t": "Update endpoint ruleset parameters casing"
   },

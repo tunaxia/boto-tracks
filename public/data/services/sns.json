@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.97",
+    "t": "SNS API reference documentation update"
+  },
+  {
     "v": "1.43.23",
     "t": "Adding new BDD representation of endpoint ruleset"
   },
