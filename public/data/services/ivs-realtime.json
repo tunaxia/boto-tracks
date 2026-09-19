@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.98",
+    "t": "GetParticipant, ListParticipantEvents, ListParticipantReplicas, StartParticipantReplication, and StopParticipantReplication now accept participant IDs containing underscores."
+  },
+  {
     "v": "1.42.86",
     "t": "Adds support for Amazon IVS real-time streaming redundant ingest."
   },

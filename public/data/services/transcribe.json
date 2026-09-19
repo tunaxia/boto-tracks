@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.98",
+    "t": "Amazon Transcribe now lets you encrypt your custom vocabularies, custom vocabulary filters, and custom language models with a customer managed AWS KMS key instead of an AWS owned key, and adds a new UpdateLanguageModel operation to transition CLM encryption to a different KMS key."
+  },
+  {
     "v": "1.43.88",
     "t": "Amazon Transcribe now supports specifying up to 29 PII entity types in the ContentRedaction configuration of a StartTranscriptionJob request, allowing all supported entity types to be redacted in a single batch transcription job."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.98",
+    "t": "This release adds support for A2A servers via the ApplicationType and AuthConfig fields, allowing customers to register their agent-to-agent servers with API key authentication."
+  },
+  {
     "v": "1.43.87",
     "t": "This release adds a force parameter to DeleteApplication and a ConflictException to UpdateApplication, letting customers delete applications with existing associations in one call and get a clear error when an update conflicts with the application's current state."
   },

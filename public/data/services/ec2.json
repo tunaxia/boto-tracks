@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.98",
+    "t": "This release adds documentation for the T8i instance family to the EC2 ModifyDefaultCreditSpecification and GetDefaultCreditSpecification APIs."
+  },
+  {
     "v": "1.43.97",
     "t": "Adding support for \"Tunnel\" VPC Endpoint"
   },
