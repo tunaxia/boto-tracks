@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.99",
+    "t": "Amazon Bedrock AgentCore Harness now supports lifecycle hooks for invocations and tool calls, with Lambda, SNS, and EventBridge targets. This release also adds apiBase for custom OpenAI-compatible endpoints"
+  },
+  {
     "v": "1.43.96",
     "t": "Adds support for a new DELETE FAILED status for Bedrock AgentCore Runtimes and Bedrock AgentCore Runtime Endpoints."
   },

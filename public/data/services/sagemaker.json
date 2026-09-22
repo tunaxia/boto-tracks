@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.99",
+    "t": "Add support for r6i, m8i, c8i, r8i instance types in Training and Processing"
+  },
+  {
     "v": "1.43.98",
     "t": "Adds support for the hub content resource in SageMaker Search."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.99",
+    "t": "Amazon Bedrock AgentCore Harness now supports lifecycle hooks for invocations and tool calls, with Lambda, SNS, and EventBridge targets. This release also adds apiBase for custom OpenAI-compatible endpoints."
+  },
+  {
     "v": "1.43.97",
     "t": "Batch evaluation now supports evaluating specific traces within a session. Each session can specify up to 100 trace IDs to evaluate."
   },

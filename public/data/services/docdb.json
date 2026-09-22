@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.99",
+    "t": "Add support for CopyTagsToSnapshot field in CreateDbCluster, ModifyDbCluster, RestoreDbClusterFromSnapshot and RestoreDbClusterToPointInTime for DocumentDB."
+  },
+  {
     "v": "1.40.63",
     "t": "Adding FailoverState and TagList to GlobalCluster and SynchronizationStatus to GlobalClusterMember."
   },
