@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.100",
+    "t": "Adding two new fields for Glue Materialized Views feature - (1) SubObjectsStatistics and (2) SparkPipelineInfo."
+  },
+  {
     "v": "1.43.98",
     "t": "Introducing AWS Glue Data Quality advanced rule recommendations for faster recommendations. This capability uses Amazon Athena to analyze a sample of table data and Amazon Bedrock to recommend DQDL rules."
   },

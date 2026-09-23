@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.100",
+    "t": "Amazon CloudWatch Omni is now generally available, an AI-powered unified observability for AI agents, applications, and infrastructure. Centralization now supports context graph for multi-account resource discovery, and dataset integrations makes logs available in CloudWatch datasets."
+  },
+  {
     "v": "1.43.72",
     "t": "CloudWatch Logs centralization rules now support tag propagation. You can configure a TagPropagationConfiguration on your centralization rule to automatically sync resource tags from source to destination log groups, with configurable conflict resolution strategies."
   },

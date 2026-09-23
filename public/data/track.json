@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.100",
+      "date": "2026-09-22"
+    },
+    {
       "id": "1.43.99",
       "date": "2026-09-21"
     },
@@ -9447,6 +9451,7 @@
     "cloudtrail",
     "cloudtrail-data",
     "cloudwatch",
+    "cloudwatchomni",
     "codeartifact",
     "codebuild",
     "codecatalyst",
