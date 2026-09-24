@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.101",
+    "t": "Adds asymmetric key support to ReEncryptData for re-encrypting data between RSA and symmetric data encryption keys."
+  },
+  {
     "v": "1.43.49",
     "t": "Adds support for UnionPay session key derivation to the GenerateAuthRequestCryptogram, VerifyAuthRequestCryptogram, GenerateMac, and VerifyMac APIs."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.101",
+    "t": "Added the ListBillingViewSegments API, which returns billing view segment information for a specified billing view ARN and time range. This API enables customers and integrated tools to programmatically determine the billing context of their accounts."
+  },
+  {
     "v": "1.43.94",
     "t": "Increased the maximum number of services returned in the supportEligibleSpendByService field of ListEnterpriseSupportLinkedAccountCharges"
   },

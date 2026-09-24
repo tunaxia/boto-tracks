@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.101",
+    "t": "Adds support for speaker diarization on Amazon Lex V2 bot locales. Speaker diarization keeps your bot on the primary (loudest) speaker during a streaming voice conversation, so background voices do not start a turn or interrupt a prompt."
+  },
+  {
     "v": "1.43.5",
     "t": "Amazon Lex V2 introduces audio filler support for speech-to-speech bots. Configure melody or typing sounds that play during backend processing to reduce perceived latency and maintain a natural conversational experience for callers."
   },

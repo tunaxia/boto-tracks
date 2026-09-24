@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.101",
+    "t": "Multi language support with code switching, custom template sectionHeader now allows underscores."
+  },
+  {
     "v": "1.43.37",
     "t": "Expand input validation to support Unicode characters and markdown table syntax."
   },
