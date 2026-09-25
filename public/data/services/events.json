@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.102",
+    "t": "Adds a ManagedBy field to the DescribeEventBus and ListEventBuses responses, identifying the AWS service that created an event bus on your behalf."
+  },
+  {
     "v": "1.40.55",
     "t": "Update endpoint ruleset parameters casing"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.102",
+    "t": "Added tagging support for ElastiCache Global DataStore."
+  },
+  {
     "v": "1.43.37",
     "t": "Updated documentation for the ApplyImmediately parameter in ModifyCacheCluster and ModifyReplicationGroup to clarify modification behavior."
   },

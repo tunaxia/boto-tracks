@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.102",
+    "t": "Updates to the ListDatabases and WorkgroupName validation"
+  },
+  {
     "v": "1.43.55",
     "t": "This release include long polling provids a new parameter wait-time-seconds to 5 API operations, new API ListSessions, and a new parameter execution-mode to BatchExecuteStatement"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.102",
+    "t": "This release adds Create, Get, Update, and DeleteResourceMetricsConfiguration to enable detailed metric collection for an AWS resource, and adds UpdateOTelEnrichment plus include and exclude filters on StartOTelEnrichment so you can choose which metric namespaces CloudWatch enriches."
+  },
+  {
     "v": "1.43.78",
     "t": "Allows customers to specify an initial warm up period to wait for metrics to arrive when creating metric or log alarms"
   },

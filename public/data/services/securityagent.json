@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.102",
+    "t": "Added support for Confluence export, enabling customers to publish security findings to Confluence pages."
+  },
+  {
     "v": "1.43.79",
     "t": "Adding private and self-signed certificate configuration support for penetration tests"
   },

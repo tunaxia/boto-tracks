@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.102",
+    "t": "Documentation updates for Route 53 Resolver. Clarifies which Outpost Resolver operations apply to first-generation AWS Outposts and that Resolver is managed automatically on second-generation Outposts. Adds Local Network Interface subnet compatibility notes for Resolver endpoints."
+  },
+  {
     "v": "1.43.31",
     "t": "Adds supports for PartnerManagedRules"
   },
