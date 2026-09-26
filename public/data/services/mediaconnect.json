@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.103",
+    "t": "This release adds support for RTMP push router outputs in AWS Elemental MediaConnect."
+  },
+  {
     "v": "1.43.70",
     "t": "AWS MediaConnect now supports tuning the internal recovery latency between Router Inputs and Outputs to prioritize stream quality versus end-to-end latency."
   },

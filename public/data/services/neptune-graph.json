@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.103",
+    "t": "Add GraphIdentifier filter for ListImportTasks"
+  },
+  {
     "v": "1.43.56",
     "t": "Update validations for Tag Keys and KMS Key ARNs."
   },

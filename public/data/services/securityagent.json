@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.103",
+    "t": "This release adds the ListActorMessages operation, which returns the multi-factor authentication messages received at an actor's server-generated email address"
+  },
+  {
     "v": "1.43.102",
     "t": "Added support for Confluence export, enabling customers to publish security findings to Confluence pages."
   },

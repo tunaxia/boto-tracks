@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.103",
+    "t": "Amazon Bedrock AgentCore Payments now supports credential rotation for payment connectors, letting you rotate API and wallet secrets for Quick Create payment auths from the console. This release also adds Type and Creation type columns to the payment managers views."
+  },
+  {
     "v": "1.43.99",
     "t": "Amazon Bedrock AgentCore Harness now supports lifecycle hooks for invocations and tool calls, with Lambda, SNS, and EventBridge targets. This release also adds apiBase for custom OpenAI-compatible endpoints"
   },

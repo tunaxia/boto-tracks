@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.103",
+    "t": "This release adds support for Feedback and Metadata in the GetFaceLivenessSessionResults response. Feedback returns codes explaining why a Face Liveness check produced its result. Metadata includes the client SDK type."
+  },
+  {
     "v": "1.40.60",
     "t": "Update endpoint ruleset parameters casing"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.103",
+    "t": "Release shapes for the proactive agentic recommendations and the multi-knowledge base search features. Increases the maximum length of QuickResponseContent."
+  },
+  {
     "v": "1.43.98",
     "t": "Amazon Connect AI Agents now support multi-agent orchestration and structured JSON input and output messaging for orchestration agents."
   },

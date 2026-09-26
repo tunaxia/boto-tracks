@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.103",
+    "t": "add support for table level federation"
+  },
+  {
     "v": "1.43.100",
     "t": "Adding two new fields for Glue Materialized Views feature - (1) SubObjectsStatistics and (2) SparkPipelineInfo."
   },
