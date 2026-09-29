@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.104",
+    "t": "Amazon FSx has expanded the model-level maximum on the ThroughputCapacity, ThroughputCapacityPerHAPair, and Iops API parameters. Actual supported values are unchanged and depend on file system type and configuration."
+  },
+  {
     "v": "1.42.1",
     "t": "S3 Access Points support for FSx for NetApp ONTAP"
   },

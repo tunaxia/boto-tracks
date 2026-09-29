@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.104",
+    "t": "API changes to AWS Client VPN to support device posture assessment and Cedar authorization policies"
+  },
+  {
     "v": "1.43.100",
     "t": "Amazon EC2 now supports quote-based start date changes for future-dated Capacity Reservations"
   },

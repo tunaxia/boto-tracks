@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.104",
+    "t": "Added a new exception to several batch APIs"
+  },
+  {
     "v": "1.43.103",
     "t": "add support for table level federation"
   },

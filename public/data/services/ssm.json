@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.104",
+    "t": "Add support for sharing SSM documents with organizations and OUs using RAM."
+  },
+  {
     "v": "1.43.53",
     "t": "Added a WarningMessage field to Automation along with corresponding public documentation."
   },
