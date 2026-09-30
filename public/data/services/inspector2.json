@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.105",
+    "t": "The ListFindingAggregations API now includes Low, Informational, and Untriaged counts alongside the existing severity counts in SeverityCounts."
+  },
+  {
     "v": "1.43.64",
     "t": "Adding Azure SBOM export capability."
   },

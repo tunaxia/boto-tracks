@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.105",
+    "t": "Adds support for Azure DevOps and Bitbucket Data Center integration providers."
+  },
+  {
     "v": "1.43.104",
     "t": "Run automated penetration tests directly from your CI-CD pipeline to scan code changes before they ship, gating deployments on the findings"
   },

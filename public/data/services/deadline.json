@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.105",
+    "t": "AWS Deadline Cloud now supports Docker software add-ons on service-managed fleets. Adds support for Open Job Description EXPR and Feature Bundle 1 job templates with typed job parameters and job, step, and parameter names up to 512 characters."
+  },
+  {
     "v": "1.43.65",
     "t": "AWS Deadline Cloud now reports persistent volume costs alongside compute and license costs. Customers can view per-fleet storage costs in Usage Explorer by selecting the Usage Type grouping, helping them better understand the costs of their infrastructure."
   },

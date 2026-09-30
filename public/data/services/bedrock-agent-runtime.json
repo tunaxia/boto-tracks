@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.105",
+    "t": "Amazon Bedrock Agentic Retrieve now supports the Bedrock Mantle (OpenAI Responses) endpoint via a new MantleFoundationModel configuration with an optional projectId."
+  },
+  {
     "v": "1.43.73",
     "t": "AgenticRetrieveStream API now supports Amazon Bedrock AgentCore Memory. Use the new memoryConfiguration parameter to continue a session from short-term memory and retrieve from long-term memory."
   },

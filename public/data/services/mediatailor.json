@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.105",
+    "t": "AWS Elemental MediaTailor now supports beaconing configuration on playback configurations. In Insights reporting mode, MediaTailor will now gather client side beaconing metrics. Set the reporting mode to Disabled to turn this off."
+  },
+  {
     "v": "1.43.91",
     "t": "Added the AWS Service Request function type for MediaTailor Functions, enabling authenticated requests to AWS Elemental Inference for contextual ad targeting during ad insertion."
   },

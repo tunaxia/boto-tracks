@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.105",
+    "t": "Add support for Glue system-managed materialized views."
+  },
+  {
     "v": "1.43.104",
     "t": "Added a new exception to several batch APIs"
   },

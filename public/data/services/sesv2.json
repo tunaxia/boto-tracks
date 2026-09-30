@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.105",
+    "t": "Added Filter support for ListTenants, ListEmailIdentities, and ListConfigurationSets APIs."
+  },
+  {
     "v": "1.43.97",
     "t": "Added support to query the tenant name for BatchGetMetricData and CreateExportJob APIs to filter metrics and messages at the tenant level."
   },

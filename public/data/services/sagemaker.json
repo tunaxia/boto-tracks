@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.105",
+    "t": "Adds support for cpu flex type instances on SageMaker Training and Processing. Also contains minor updates to DescribeTrainingPlan to support ARN inputs."
+  },
+  {
     "v": "1.43.99",
     "t": "Add support for r6i, m8i, c8i, r8i instance types in Training and Processing"
   },
