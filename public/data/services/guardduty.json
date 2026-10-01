@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.106",
+    "t": "GuardDuty AWS Organizations policy integration. GetDetector and GetMemberDetectors now show whether a GuardDuty policy manages a feature."
+  },
+  {
     "v": "1.43.104",
     "t": "Adding awsServiceName field to GuardDuty Findings"
   },

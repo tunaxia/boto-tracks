@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.106",
+    "t": "This release adds support for private certificate authorities on Amazon Bedrock AgentCore Gateway targets. The new certificateConfigurations parameter on CreateGatewayTarget and UpdateGatewayTarget references a PEM-encoded CA certificate in Amazon S3 or AWS Secrets Manager."
+  },
+  {
     "v": "1.43.104",
     "t": "Amazon Bedrock AgentCore Gateway now supports returning the complete MCP tools list in a single response by disabling pagination for the tools list operation. This feature is available in limited preview."
   },

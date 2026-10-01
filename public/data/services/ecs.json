@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.106",
+    "t": "Releasing VPCL for BlueGreen ecs deployments."
+  },
+  {
     "v": "1.43.93",
     "t": "This feature adds support for setting the cpu architecture type that should be used to launch tasks for an Express Gateway Service."
   },

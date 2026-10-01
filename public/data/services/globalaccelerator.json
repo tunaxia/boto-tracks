@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.106",
+    "t": "IpSets now include the Network Zone for each Static IP address."
+  },
+  {
     "v": "1.40.54",
     "t": "Update endpoint ruleset parameters casing"
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.106",
+    "t": "Amazon Bedrock Automated Reasoning policies now accept Unicode letters in identifier names such as type names, type value names, and variable names. You can now author policies in non-English languages using accented or non-Latin characters."
+  },
+  {
     "v": "1.43.89",
     "t": "New AWS REVIEW mode as supported data retention mode for Bedrock models"
   },

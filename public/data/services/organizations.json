@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.106",
+    "t": "Add support for policy operations on the GUARDDUTY POLICY policy type."
+  },
+  {
     "v": "1.43.73",
     "t": "Add new Transfer Responsibility error codes and document related CloudTrail events for accepting and terminating a Transfer Responsibility."
   },

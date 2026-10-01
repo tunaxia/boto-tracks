@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.106",
+    "t": "Amazon S3 adds a new optional S3 Inventory field, IntelligentTieringReferenceDate, reporting the reference date S3 Intelligent-Tiering uses to evaluate an object's tier-transition eligibility. The value is populated for objects in the Intelligent-Tiering storage class and left blank for others."
+  },
+  {
     "v": "1.43.93",
     "t": "Updated S3 Object Lock Default Retention documentation."
   },

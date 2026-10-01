@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.106",
+    "t": "Enablement for Bedrock PaymentManager logs via Observability Admin Telemetry Rule"
+  },
+  {
     "v": "1.43.100",
     "t": "Amazon CloudWatch Omni is now generally available, an AI-powered unified observability for AI agents, applications, and infrastructure. Centralization now supports context graph for multi-account resource discovery, and dataset integrations makes logs available in CloudWatch datasets."
   },

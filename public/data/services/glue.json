@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.106",
+    "t": "Enable Catalog ID for crawler, column statistics and materialized views."
+  },
+  {
     "v": "1.43.105",
     "t": "Add support for Glue system-managed materialized views."
   },
