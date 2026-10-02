@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.107",
+      "date": "2026-10-01"
+    },
+    {
       "id": "1.43.106",
       "date": "2026-09-30"
     },
@@ -9572,6 +9576,7 @@
     "endpointprovider",
     "endpointresolver",
     "endpoints",
+    "endusermessaging",
     "entityresolution",
     "environment-variables",
     "es",
@@ -9671,6 +9676,7 @@
     "lambda-core",
     "lambda-microvms",
     "lambda-request-header",
+    "lambda-web",
     "launch-wizard",
     "lex-models",
     "lex-runtime",

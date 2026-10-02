@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.107",
+    "t": "Adds DescribeServiceLifecycle operation returning lifecycle information for AWS services, including end-of-support dates, version recommendations, and lifecycle events."
+  },
+  {
     "v": "1.42.59",
     "t": "Updates the regex for validating availabilityZone strings used in the describe events filters."
   },

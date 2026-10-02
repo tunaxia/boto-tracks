@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.107",
+    "t": "Adds GetRemediationsV2 and ListExposuresByRemediationV2 APIs. This feature allows customers to see their highest priority remediations for their Exposure findings. Remediations target key changes customers can make to resources to drive finding resolution."
+  },
+  {
     "v": "1.43.66",
     "t": "Security Hub is adding a new public API, ListFreeTrialStatusesV2 to describe the free trial statuses of the Security Hub service and its opt-in features."
   },
