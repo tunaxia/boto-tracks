@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.108",
+    "t": "AWS End User Messaging SMS CarrierLookup API now supports phone number cleansing on customer opt-in. when selected, the response includes the additional field \"OriginalPhoneNumber\". It can also return additional PhoneNumberType enums, VOIP and PREPAID."
+  },
+  {
     "v": "1.43.90",
     "t": "This feature will allow customers to specify an area-code when requesting a 10DLC number. Why it matters- Customers can now select a number that matches where their business is located."
   },

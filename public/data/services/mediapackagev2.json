@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.108",
+    "t": "Dynamic Multiview enables viewers to watch multiple live video streams in a single combined output. Static filter configuration allows users to configure endpoints with layouts and sources without using query parameters. The number of sources per multiview channel has been increased to 50."
+  },
+  {
     "v": "1.43.101",
     "t": "This release adds support for signalling start and end in the ContentKeyPeriod element in key request from MediaPackageV2"
   },

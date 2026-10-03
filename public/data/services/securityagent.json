@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.108",
+    "t": "Adds trigger filters that control which pull request events, target branches, and labels start an automatic code review."
+  },
+  {
     "v": "1.43.105",
     "t": "Adds support for Azure DevOps and Bitbucket Data Center integration providers."
   },

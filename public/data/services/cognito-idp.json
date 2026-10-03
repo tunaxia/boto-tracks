@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.108",
+    "t": "Amazon Cognito User Pools now supports the OIDC-standard authentication context class reference (ACR) and authentication methods reference (AMR) claims on issued access and Id tokens. Amazon Cognito User Pools also now supports step-up authentication via our existing authentication APIs."
+  },
+  {
     "v": "1.43.83",
     "t": "Adds two new operations - GetClientToken which allows M2M auth through the SDK, and DescribeTermsByClient to find which Terms are associated with a user-pool client without knowing the Terms resource id."
   },

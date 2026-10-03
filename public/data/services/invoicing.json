@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.108",
+    "t": "API and doc updates related to adding MarketplacePunchOutEnabled and MarketplacePunchOutPreference fields to ProcurementPortalPreferences related APIs"
+  },
+  {
     "v": "1.43.93",
     "t": "Add ListProcurementPortals and ListProcurementPortalSuppliers APIs to retrieve AWS-supported 3rd party procurement portals and their suppliers for e-invoice delivery and purchase order retrieval."
   },

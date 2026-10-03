@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.108",
+    "t": "Documentation update for AWS Lambda Web Functions, clarifies that the LambdaWeb APIs are experimental and not yet available to external customers."
+  },
+  {
     "v": "1.43.107",
     "t": "Lambda Web Functions GA launch. Lambda Web Functions enable customers to run web applications and API backends"
   }
