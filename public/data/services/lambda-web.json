@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.109",
+    "t": "Removes operations that are not yet generally available from the Lambda Web."
+  },
+  {
     "v": "1.43.108",
     "t": "Documentation update for AWS Lambda Web Functions, clarifies that the LambdaWeb APIs are experimental and not yet available to external customers."
   },
