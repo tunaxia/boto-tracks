@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.110",
+    "t": "This release adds support for system profile logs for lakeformation enabled Spark connect sessions ."
+  },
+  {
     "v": "1.43.24",
     "t": "Adds support for updating max capacity and custom fields while application is started"
   },

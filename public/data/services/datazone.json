@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.110",
+    "t": "Adds support for multi-file notebook import. StartNotebookImport now accepts an s3Files source location with an ordered list of Amazon S3 objects, creating one notebook cell per file, plus a type field to create either a DATA or SQL notebook."
+  },
+  {
     "v": "1.43.106",
     "t": "Support for setting notebook run notification configurations"
   },

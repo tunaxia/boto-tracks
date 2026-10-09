@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.110",
+    "t": "Release findings export APIs - StartExportJobV2, GetExportJobV2, ListExportJobsV2, and CancelExportJobV2. This supports exporting findings from AWS Security Hub to Amazon S3 bucket."
+  },
+  {
     "v": "1.43.107",
     "t": "Adds GetRemediationsV2 and ListExposuresByRemediationV2 APIs. This feature allows customers to see their highest priority remediations for their Exposure findings. Remediations target key changes customers can make to resources to drive finding resolution."
   },

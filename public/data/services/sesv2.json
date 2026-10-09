@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.110",
+    "t": "SESV2 DEED - Documentation Update"
+  },
+  {
     "v": "1.43.105",
     "t": "Added Filter support for ListTenants, ListEmailIdentities, and ListConfigurationSets APIs."
   },

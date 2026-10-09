@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.110",
+    "t": "Adds support for retrieving finding-lifecycle metrics for an AWS Security Incident Response membership."
+  },
+  {
     "v": "1.41.2",
     "t": "Add ListInvestigations and SendFeedback APIs to support SecurityIR AI agents"
   },

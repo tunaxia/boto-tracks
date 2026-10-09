@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.110",
+    "t": "Adds a product attribute dimension to CreateBudget and UpdateBudget, letting customers filter AWS Budgets costs by structured attributes such as Amazon Bedrock model, provider, inference type, and feature."
+  },
+  {
     "v": "1.43.15",
     "t": "AWS Budget Name Validation Documentation Updates."
   },

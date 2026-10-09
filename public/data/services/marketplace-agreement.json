@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.110",
+    "t": "This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol."
+  },
+  {
     "v": "1.43.86",
     "t": "This release adds renewal support for AWS Marketplace private offers. Agreements report whether they renew and, if not, why. Renewal terms add price increases, renewal limits, renewal decision deadlines, and payment schedule templates. SearchAgreements adds filters."
   },

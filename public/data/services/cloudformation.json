@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.110",
+    "t": "CloudFormation introduces force rollback, a new opt-in capability that lets your stacks complete a rollback even when an individual resource cannot be reverted. Set ForceRollback on ContinueUpdateRollback and CloudFormation records each resource that fails as skipped, completing the rollback."
+  },
+  {
     "v": "1.43.62",
     "t": "Adding enum for sensitive property to DriftIgnoredReason"
   },
