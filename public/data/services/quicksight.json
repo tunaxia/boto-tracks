@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.111",
+    "t": "Adds granular custom permissions for the Gong action connector (GongAction, CreateAndUpdateGongAction, ShareGongAction, UseGongAction) and for create, update, and share operations on 45 data source connectors, such as Amazon S3 and Snowflake, through the Custom Permissions APIs."
+  },
+  {
     "v": "1.43.107",
     "t": "This release adds HierarchyFilter support for Amazon QuickSight analysis and dashboard and 2 legged OAuth for databricks datasources."
   },

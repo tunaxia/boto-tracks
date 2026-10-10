@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.111",
+    "t": "AWS Marketplace Metering Service adds AgreementId to ResolveCustomer API response."
+  },
+  {
     "v": "1.43.80",
     "t": "Updated documentation to clarify duplicate-billing prevention and BatchMeterUsage retry guidance"
   },

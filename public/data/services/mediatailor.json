@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.111",
+    "t": "Add caching settings to http functions"
+  },
+  {
     "v": "1.43.105",
     "t": "AWS Elemental MediaTailor now supports beaconing configuration on playback configurations. In Insights reporting mode, MediaTailor will now gather client side beaconing metrics. Set the reporting mode to Disabled to turn this off."
   },
