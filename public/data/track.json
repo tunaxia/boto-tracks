@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "id": "1.43.112",
+      "date": "2026-10-12"
+    },
+    {
       "id": "1.43.111",
       "date": "2026-10-09"
     },
@@ -9869,6 +9873,7 @@
     "sagemaker-metrics",
     "sagemaker-runtime",
     "sagemakerjobruntime",
+    "sagemakertrainingsessionruntime",
     "savingsplans",
     "scheduler",
     "schemas",

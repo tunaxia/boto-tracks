@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.112",
+    "t": "Adding support for TransactionSearch telemetry rules."
+  },
+  {
     "v": "1.43.106",
     "t": "Enablement for Bedrock PaymentManager logs via Observability Admin Telemetry Rule"
   },

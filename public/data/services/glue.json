@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.112",
+    "t": "Adds new AWS Glue Data Quality APIs to retrieve and list data quality evaluation results. The new GetDataQualityResultV2, BatchGetDataQualityResultV2, and ListDataQualityResultsV2 operations return data quality results published from any supported data processing engine."
+  },
+  {
     "v": "1.43.110",
     "t": "Introduced GetSystemLogsForJobRun and GetSystemLogsForSession APIs, enabling account admins to retrieve system-space logs for FGAC-enabled Glue jobs and sessions."
   },

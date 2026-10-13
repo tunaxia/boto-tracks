@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.112",
+    "t": "AWS HealthOmics now supports private workflow runs using VPC resources shared across accounts via AWS RAM. A new optional vpcOwnerAccountId field in CreateConfiguration's VpcConfig allows customers to specify the account that owns the shared subnets and security groups."
+  },
+  {
     "v": "1.43.90",
     "t": "Added support for session policies in AWS HealthOmics Workflows, allowing customers to scope down IAM permissions for individual workflow runs without modifying the service role."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.112",
+    "t": "Adds support for Jira integration provider in AWS Security Agent."
+  },
+  {
     "v": "1.43.111",
     "t": "Adds a test scope field to specify whether a pentest targets a web application or a generative AI application."
   },

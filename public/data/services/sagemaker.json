@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.112",
+    "t": "Amazon SageMaker Training Session is a managed service for training on shared GPU infrastructure. It provides full lifecycle management of training sessions and exposes low-level primitive APIs for operations like forward-backward passes, optimizer steps, and state management."
+  },
+  {
     "v": "1.43.107",
     "t": "Release support for c8a.16xlarge and m8a.16xlarge instance types for SageMaker HyperPod"
   },
