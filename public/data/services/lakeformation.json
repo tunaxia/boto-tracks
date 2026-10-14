@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.113",
+    "t": "Added new LakeFormation APIs and documentation updates for Simple Row-level Security (RLS)."
+  },
+  {
     "v": "1.42.79",
     "t": "Add setSourceIdentity to DataLakeSettings Parameters"
   },

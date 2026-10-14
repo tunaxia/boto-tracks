@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.113",
+    "t": "Adds support for administrators to require users to re-authenticate OneDrive and Google Drive storage connectors when a streaming session is reused."
+  },
+  {
     "v": "1.43.105",
     "t": "Add support for NVIDIA GRID driver version metadata in Workspace Applications image responses through the new ImageSoftwareMetadata field."
   },

@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.113",
+    "t": "Adds and updates APIs to support criticality. This feature allows customers to create automation rules to assign criticality to resources matching a criteria. With this release, resources and exposure findings will include the criticality."
+  },
+  {
     "v": "1.43.110",
     "t": "Release findings export APIs - StartExportJobV2, GetExportJobV2, ListExportJobsV2, and CancelExportJobV2. This supports exporting findings from AWS Security Hub to Amazon S3 bucket."
   },

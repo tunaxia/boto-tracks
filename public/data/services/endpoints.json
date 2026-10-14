@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.113",
+    "t": "Ignore unrecognized top-level keys (such as serviceId) in endpoint ruleset files instead of failing client creation."
+  },
+  {
     "v": "1.37.0",
     "t": "Generate and use AWS-account-based endpoints for compatible services when the account ID is available. At launch, DynamoDB is the first and only compatible service. The new endpoint URL pattern will be ``https://<account-id>.ddb.<region>.amazonaws.com``. Additional services may be added in the future. See the documentation for details: https://docs.aws.amazon.com/sdkref/latest/guide/feature-account-endpoints.html"
   },
