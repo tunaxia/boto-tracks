@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.114",
+    "t": "Documentation update - added a Get started pointer to the AWS Marketplace AI Metering Agent Skill in the BatchMeterUsage API reference. No API or behavior change."
+  },
+  {
     "v": "1.43.111",
     "t": "AWS Marketplace Metering Service adds AgreementId to ResolveCustomer API response."
   },

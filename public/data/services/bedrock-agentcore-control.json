@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.114",
+    "t": "This release supports scoping Amazon Bedrock AgentCore Gateway rate limits by request header or request body field."
+  },
+  {
     "v": "1.43.112",
     "t": "AgentCore Memory now supports configuring Long-Term Memory Time-to-Live (TTL) on Memory Strategies."
   },

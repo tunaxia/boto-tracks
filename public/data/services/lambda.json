@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.114",
+    "t": "AWS Lambda now supports an optional X-Ray trace header for chained invocations in durable executions, enabling child invocations to be linked to the initiating span."
+  },
+  {
     "v": "1.43.112",
     "t": "Doc updates to reposition Lambda Functions as Lambda Event Functions"
   },

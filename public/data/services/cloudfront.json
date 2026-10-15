@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.114",
+    "t": "This release adds a new \"IpAddressType\" field to \"VPCOriginEndpointConfig\", allowing customers to specify whether their VPC origin accepts IPv4-only or dualstack connections."
+  },
+  {
     "v": "1.43.107",
     "t": "Added always-amz-auth as a supported signing behavior for Origin Access Control (OAC), enabling CloudFront to authenticate requests to Lambda-Web origins."
   },

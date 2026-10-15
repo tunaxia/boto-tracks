@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.114",
+    "t": "AWS Transfer Family now lets you store SFTP server host keys in AWS Secrets Manager in your own AWS account. This gives you greater control over your server identity and helps simplify server migrations and failover."
+  },
+  {
     "v": "1.43.107",
     "t": "AWS Transfer Family Workflows adds support for the structuredLogDestinations option, enabling customers to specify a custom Amazon CloudWatch Logs log group for managed workflow execution logs."
   },

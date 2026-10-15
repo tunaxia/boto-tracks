@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.114",
+    "t": "Releasing support for Custom Detection Rule Runtime Monitoring"
+  },
+  {
     "v": "1.43.110",
     "t": "Added support for GuardDuty RDS Data Activity Monitoring"
   },

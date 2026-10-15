@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.114",
+    "t": "This release adds parentInstance to infrastructure configurations, so builds can use an already-running instance from an Amazon EC2 Auto Scaling group. It also adds terminateInstanceOnCompletion, which keeps build and test instances running after image creation ends."
+  },
+  {
     "v": "1.43.101",
     "t": "Documentation update for EC2 Image Builder - adds API request and response examples for all operations, improves descriptions throughout, and corrects response field patterns for image versions and workflow ARNs."
   },

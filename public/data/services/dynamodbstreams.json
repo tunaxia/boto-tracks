@@ -1,5 +1,9 @@
 [
   {
+    "v": "1.43.114",
+    "t": "Add support for a new iterator type (AT TIMESTAMP) for DynamoDB Streams GetShardIterator API that allows reading from a specific point in time from the stream."
+  },
+  {
     "v": "1.40.59",
     "t": "Update endpoint ruleset parameters casing"
   },
